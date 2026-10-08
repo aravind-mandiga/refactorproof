@@ -1,0 +1,8 @@
+--- reference:verina_basic_10__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_10__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,2 +1,2 @@
+-  unfold isGreater isGreater_postcond
++  unfold isGreater isGreater__rp_helper_d4e98f7f isGreater_postcond
+   simp [Array.all_eq]
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

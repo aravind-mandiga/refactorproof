@@ -1,0 +1,55 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_59",
+ "variant_id": "verina_basic_59__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_59/verina_basic_59__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.767,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": "simp_only",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.261 = ?m.261 : Prop\nbut is expected to have type\n  RPOrig.DoubleQuadruple x h_precond = RPRef.DoubleQuadruple x h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.495 = ?m.495 : Prop\nbut is expected to have type\n  RPOrig.DoubleQuadruple x h_precond = RPRef.DoubleQuadruple x h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  let a := 2 * x;\n  let b := 2 * a;\n  (a, b)\nis not definitionally equal to the right-hand side\n  let a := x * 2;\n  let b := 2 * a;\n  (a, b)\nx : Int\nh_precond : DoubleQuadruple_precond x\n⊢ (let a := 2 * x;\n    let b := 2 * a;\n    (a, b)) =\n    let a := x * 2;\n    let b := 2 * a;\n    (a, b)\n"
+   ]
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": true,
+   "errors": []
+  },
+  "ac_rfl": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

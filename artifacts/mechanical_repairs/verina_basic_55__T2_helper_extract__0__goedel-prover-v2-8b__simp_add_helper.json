@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_55__T2_helper_extract__0",
+ "task_id": "verina_basic_55",
+ "source": "goedel-prover-v2-8b",
+ "transformation": "T2_helper_extract",
+ "template": "simp_add_helper",
+ "function_name": "Compare",
+ "helper": "Compare__rp_helper_56630b5e",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": false,
+ "outcome": "proof_fails",
+ "first_error": "tactic 'aesop' failed, made no progress\nInitial goal:\n  a b : \u2124\n  h_precond : Compare_precond a b\n  h_ne : \u00aca = b\n  \u22a2 Compare__rp_helper_56630b5e a b h_precond = false\n",
+ "proof_before": "  have h\u2081 : a = b \u2192 (Compare (a) (b) h_precond) = true := by\n    intro h_eq\n    -- Simplify the expression using the definition of Compare\n    simp [Compare, h_eq, h_precond]\n    <;> simp_all\n    <;> aesop\n\n  have h\u2082 : a \u2260 b \u2192 (Compare (a) (b) h_precond) = false := by\n    intro h_ne\n    -- Simplify the expression using the definition of Compare\n    simp [Compare, h_ne, h_precond]\n    <;> simp_all\n    <;> aesop\n\n  have h\u2083 : Compare_postcond (a) (b) (Compare (a) (b) h_precond) h_precond := by\n    constructor\n    \u00b7 -- Prove the first part of the conjunction: a = b \u2192 (Compare (a) (b) h_precond) = true\n      intro h_eq\n      exact h\u2081 h_eq\n    \u00b7 -- Prove the second part of the conjunction: a \u2260 b \u2192 (Compare (a) (b) h_precond) = false\n      intro h_ne\n      exact h\u2082 h_ne\n\n  exact h\u2083\n",
+ "proof_after": "  have h\u2081 : a = b \u2192 (Compare (a) (b) h_precond) = true := by\n    intro h_eq\n    -- Simplify the expression using the definition of Compare\n    simp [Compare, h_eq, h_precond, Compare__rp_helper_56630b5e]\n    <;> simp_all\n    <;> aesop\n\n  have h\u2082 : a \u2260 b \u2192 (Compare (a) (b) h_precond) = false := by\n    intro h_ne\n    -- Simplify the expression using the definition of Compare\n    simp [Compare, h_ne, h_precond]\n    <;> simp_all\n    <;> aesop\n\n  have h\u2083 : Compare_postcond (a) (b) (Compare (a) (b) h_precond) h_precond := by\n    constructor\n    \u00b7 -- Prove the first part of the conjunction: a = b \u2192 (Compare (a) (b) h_precond) = true\n      intro h_eq\n      exact h\u2081 h_eq\n    \u00b7 -- Prove the second part of the conjunction: a \u2260 b \u2192 (Compare (a) (b) h_precond) = false\n      intro h_ne\n      exact h\u2082 h_ne\n\n  exact h\u2083\n"
+}

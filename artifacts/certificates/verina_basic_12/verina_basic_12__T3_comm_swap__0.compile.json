@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_12/verina_basic_12__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_12/verina_basic_12__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_12/verina_basic_12__T3_comm_swap__0.lean:14:29: warning: unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_12/verina_basic_12__T3_comm_swap__0.lean:23:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_12/verina_basic_12__T3_comm_swap__0.lean:29:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_12/verina_basic_12__T3_comm_swap__0.lean:36:84: error: type mismatch\n  rfl\nhas type\n  ?m.195 = ?m.195 : Prop\nbut is expected to have type\n  RPOrig.cubeSurfaceArea size h_precond = RPRef.cubeSurfaceArea size h_precond : Prop\nartifacts/certificates/verina_basic_12/verina_basic_12__T3_comm_swap__0.lean:40:84: error: type mismatch\n  rfl\nhas type\n  ?m.397 = ?m.397 : Prop\nbut is expected to have type\n  RPOrig.cubeSurfaceArea size h_precond = RPRef.cubeSurfaceArea size h_precond : Prop\nartifacts/certificates/verina_basic_12/verina_basic_12__T3_comm_swap__0.lean:45:2: error: tactic 'rfl' failed, the left-hand side\n  6 * size * size\nis not definitionally equal to the right-hand side\n  size * 6 * size\nsize : Nat\nh_precond : cubeSurfaceArea_precond size\n⊢ 6 * size * size = size * 6 * size\n",
+ "stderr": "",
+ "elapsed_seconds": 0.776,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 29,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 36,
+   "col": 84,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.195 = ?m.195 : Prop\nbut is expected to have type\n  RPOrig.cubeSurfaceArea size h_precond = RPRef.cubeSurfaceArea size h_precond : Prop"
+  },
+  {
+   "line": 40,
+   "col": 84,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.397 = ?m.397 : Prop\nbut is expected to have type\n  RPOrig.cubeSurfaceArea size h_precond = RPRef.cubeSurfaceArea size h_precond : Prop"
+  },
+  {
+   "line": 45,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  6 * size * size\nis not definitionally equal to the right-hand side\n  size * 6 * size\nsize : Nat\nh_precond : cubeSurfaceArea_precond size\n⊢ 6 * size * size = size * 6 * size\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

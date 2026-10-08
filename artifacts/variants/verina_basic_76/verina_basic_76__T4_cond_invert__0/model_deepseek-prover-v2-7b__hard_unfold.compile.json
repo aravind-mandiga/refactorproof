@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_76/verina_basic_76__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_76/verina_basic_76__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_76/verina_basic_76__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean:15:19: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_76/verina_basic_76__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean:15:29: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_76/verina_basic_76__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean:26:31: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_76/verina_basic_76__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean:39:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_76/verina_basic_76__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean:57:6: error: tactic 'rfl' failed, the left-hand side\n  myMin x y h_precond\nis not definitionally equal to the right-hand side\n  if x < y then x else y\nx y : ℤ\nh_precond : myMin_precond x y\n⊢ myMin x y h_precond = if x < y then x else y\n",
+ "stderr": "",
+ "elapsed_seconds": 6.554,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 57,
+   "col": 6,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  myMin x y h_precond\nis not definitionally equal to the right-hand side\n  if x < y then x else y\nx y : ℤ\nh_precond : myMin_precond x y\n⊢ myMin x y h_precond = if x < y then x else y\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

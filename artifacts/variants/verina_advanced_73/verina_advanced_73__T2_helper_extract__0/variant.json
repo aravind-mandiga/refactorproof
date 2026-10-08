@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_73",
+ "variant_id": "verina_advanced_73__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  smallestMissing__rp_helper_9b939c96 l h_precond\n",
+ "transformed_code_aux": "\nprivate def smallestMissing__rp_helper_9b939c96 (l : List Nat) (h_precond : smallestMissing_precond (l)) : Nat :=\n  let sortedList := l\n  let rec search (lst : List Nat) (n : Nat) : Nat :=\n    match lst with\n    | [] => n\n    | x :: xs =>\n      let isEqual := x = n\n      let isGreater := x > n\n      let nextCand := n + 1\n      if isEqual then\n        search xs nextCand\n      else if isGreater then\n        n\n      else\n        search xs n\n  let result := search sortedList 0\n  result\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "smallestMissing__rp_helper_9b939c96"
+ ],
+ "metadata": {
+  "binders": [
+   "l",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "1740b5517dbc626824eed9a6df6f144490c8d7fa5bd570ad00e604532ed159a1",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "7d8ebf76f972c78601947122762d0b0eab4ce60b52cacfb83ac64337aaa4a4c9",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "smallestMissing",
+ "code_loc_original": 16,
+ "code_loc_refactored": 18
+}

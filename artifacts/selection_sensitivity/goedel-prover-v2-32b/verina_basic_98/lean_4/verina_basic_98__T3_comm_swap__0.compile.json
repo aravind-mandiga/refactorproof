@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_98/lean_4/verina_basic_98__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_98/lean_4/verina_basic_98__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_98/lean_4/verina_basic_98__T3_comm_swap__0.lean:15:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_98/lean_4/verina_basic_98__T3_comm_swap__0.lean:26:22: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_98/lean_4/verina_basic_98__T3_comm_swap__0.lean:38:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_98/lean_4/verina_basic_98__T3_comm_swap__0.lean:76:6: error: type mismatch\n  h₁\nhas type\n  x * 3 / 3 = x : Prop\nbut is expected to have type\n  3 * x / 3 = x : Prop\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_98/lean_4/verina_basic_98__T3_comm_swap__0.lean:78:6: error: type mismatch\n  h₂\nhas type\n  x * 3 / 3 * 3 = x * 3 : Prop\nbut is expected to have type\n  3 * x / 3 * 3 = 3 * x : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 9.617,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 76,
+   "col": 6,
+   "severity": "error",
+   "text": "type mismatch\n  h₁\nhas type\n  x * 3 / 3 = x : Prop\nbut is expected to have type\n  3 * x / 3 = x : Prop"
+  },
+  {
+   "line": 78,
+   "col": 6,
+   "severity": "error",
+   "text": "type mismatch\n  h₂\nhas type\n  x * 3 / 3 * 3 = x * 3 : Prop\nbut is expected to have type\n  3 * x / 3 * 3 = 3 * x : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

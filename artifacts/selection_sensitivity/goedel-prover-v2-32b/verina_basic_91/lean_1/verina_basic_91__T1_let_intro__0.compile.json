@@ -1,0 +1,127 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:15:18: warning: unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:15:28: warning: unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:26:30: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:45:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:69:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:70:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:71:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:72:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:73:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:80:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:84:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:62:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:64:19: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:74:9: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:81:9: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:65:4: warning: '(try {\n    intro h_ne\n    constructor <;> (try intro h_eq) <;> (try apply h_ne) <;> (try simp_all [h_eq]) <;>\n        (try {contradiction\n          }) <;>\n      (try {linarith\n        })\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:75:4: warning: '(try {\n    intro h_eq\n    simp_all [h_eq] <;>\n      (try {contradiction\n        })\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_1/verina_basic_91__T1_let_intro__0.lean:84:4: warning: '(try {tauto\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 10.209,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 18,
+   "severity": "warning",
+   "text": "unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 30,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 45,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 69,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 70,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 71,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 72,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 73,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 80,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 84,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 62,
+   "col": 4,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 64,
+   "col": 19,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 74,
+   "col": 9,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 81,
+   "col": 9,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 65,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {\n    intro h_ne\n    constructor <;> (try intro h_eq) <;> (try apply h_ne) <;> (try simp_all [h_eq]) <;>\n        (try {contradiction\n          }) <;>\n      (try {linarith\n        })\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 75,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {\n    intro h_eq\n    simp_all [h_eq] <;>\n      (try {contradiction\n        })\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 84,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {tauto\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

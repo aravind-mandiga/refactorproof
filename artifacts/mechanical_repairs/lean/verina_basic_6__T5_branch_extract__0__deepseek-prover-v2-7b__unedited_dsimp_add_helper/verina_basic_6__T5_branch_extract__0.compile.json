@@ -1,0 +1,73 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_6__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_6__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_6__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_6__T5_branch_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_6__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_6__T5_branch_extract__0.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_6__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_6__T5_branch_extract__0.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_6__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_6__T5_branch_extract__0.lean:15:44: warning: unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_6__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_6__T5_branch_extract__0.lean:23:74: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_6__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_6__T5_branch_extract__0.lean:23:12: warning: The declaration 'minOfThree__rp_branch_73840f67' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_6__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_6__T5_branch_extract__0.lean:43:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_6__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_6__T5_branch_extract__0.lean:61:22: warning: unused name: h₂\nartifacts/mechanical_repairs/lean/verina_basic_6__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_6__T5_branch_extract__0.lean:61:25: warning: unused name: h₃\nartifacts/mechanical_repairs/lean/verina_basic_6__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_6__T5_branch_extract__0.lean:58:299: error: unsolved goals\ncase neg\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : a ≤ b → c < a\n⊢ (minOfThree__rp_branch_73840f67 a b c h_precond ≤ a ∧\n      minOfThree__rp_branch_73840f67 a b c h_precond ≤ b ∧ minOfThree__rp_branch_73840f67 a b c h_precond ≤ c) ∧\n    (minOfThree__rp_branch_73840f67 a b c h_precond = a ∨\n      minOfThree__rp_branch_73840f67 a b c h_precond = b ∨ minOfThree__rp_branch_73840f67 a b c h_precond = c)\n",
+ "stderr": "",
+ "elapsed_seconds": 8.117,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 74,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'minOfThree__rp_branch_73840f67' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 43,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 61,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused name: h₂"
+  },
+  {
+   "line": 61,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused name: h₃"
+  },
+  {
+   "line": 58,
+   "col": 299,
+   "severity": "error",
+   "text": "unsolved goals\ncase neg\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : a ≤ b → c < a\n⊢ (minOfThree__rp_branch_73840f67 a b c h_precond ≤ a ∧\n      minOfThree__rp_branch_73840f67 a b c h_precond ≤ b ∧ minOfThree__rp_branch_73840f67 a b c h_precond ≤ c) ∧\n    (minOfThree__rp_branch_73840f67 a b c h_precond = a ∨\n      minOfThree__rp_branch_73840f67 a b c h_precond = b ∨ minOfThree__rp_branch_73840f67 a b c h_precond = c)\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

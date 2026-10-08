@@ -1,0 +1,37 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_77/verina_basic_77__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_77/verina_basic_77__T2_helper_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/certificates/verina_basic_77/verina_basic_77__T2_helper_extract__0.lean:13:90: warning: unused variable `val`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_77/verina_basic_77__T2_helper_extract__0.lean:27:94: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_77/verina_basic_77__T2_helper_extract__0.lean:35:122: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n",
+ "stderr": "",
+ "elapsed_seconds": 0.706,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 90,
+   "severity": "warning",
+   "text": "unused variable `val`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 27,
+   "col": 94,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 35,
+   "col": 122,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

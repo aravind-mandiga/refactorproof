@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_14/lean_1/verina_basic_14__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_14/lean_1/verina_basic_14__T1_let_intro__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_14/lean_1/verina_basic_14__T1_let_intro__0.lean:16:23: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_14/lean_1/verina_basic_14__T1_let_intro__0.lean:27:28: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_14/lean_1/verina_basic_14__T1_let_intro__0.lean:41:52: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_14/lean_1/verina_basic_14__T1_let_intro__0.lean:76:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_14/lean_1/verina_basic_14__T1_let_intro__0.lean:76:2: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 10.596,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 23,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 27,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 41,
+   "col": 52,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 76,
+   "col": 2,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 76,
+   "col": 2,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

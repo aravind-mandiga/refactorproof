@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_47",
+ "variant_id": "verina_advanced_47__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_1074bbe0 : List (Prod Int Int) :=\n    -- Insertion sort based on the start of intervals\n    let rec insert (x : Prod Int Int) (sorted : List (Prod Int Int)) : List (Prod Int Int) :=\n      match sorted with\n      | [] => [x]\n      | y :: ys => if x.fst ≤ y.fst then x :: sorted else y :: insert x ys\n\n    let rec sort (xs : List (Prod Int Int)) : List (Prod Int Int) :=\n      match xs with\n      | [] => []\n      | x :: xs' => insert x (sort xs')\n\n    let sorted := sort intervals\n\n    -- Merge sorted intervals\n    let rec merge (xs : List (Prod Int Int)) (acc : List (Prod Int Int)) : List (Prod Int Int) :=\n      match xs, acc with\n      | [], _ => acc.reverse\n      | (s, e) :: rest, [] => merge rest [(s, e)]\n      | (s, e) :: rest, (ps, pe) :: accTail =>\n        if s ≤ pe then\n          merge rest ((ps, max pe e) :: accTail)\n        else\n          merge rest ((s, e) :: (ps, pe) :: accTail)\n\n    merge sorted []\n  __rp_tmp_1074bbe0\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_1074bbe0",
+  "seed": 0
+ },
+ "spec_hash": "ebf8be79b062171aa4b31790f94b0079551520672b6987ccc02c4c18bf68cde3",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "bd209c4141b70bfb03c4186b55dee169ddfd1c898f1d6d48d20dd1068466b098",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "mergeIntervals",
+ "code_loc_original": 19,
+ "code_loc_refactored": 21
+}

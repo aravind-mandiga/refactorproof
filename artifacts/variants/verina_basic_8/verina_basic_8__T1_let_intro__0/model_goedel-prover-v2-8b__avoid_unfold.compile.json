@@ -1,0 +1,241 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:16:19: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:16:29: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:27:31: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:41:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:65:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:66:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:67:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:69:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:71:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:79:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:80:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:81:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:83:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:85:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:92:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:93:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:94:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:96:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:98:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:63:8: warning: '(try {contradiction\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:65:8: warning: '(try {simp_all\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:66:8: warning: '(try {omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:67:8: warning: '(try {exact le_rfl\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:69:8: warning: '(try {exact le_of_lt (by omega)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:71:8: warning: '(try {linarith\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:77:10: warning: '(try {contradiction\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:79:10: warning: '(try {simp_all\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:80:10: warning: '(try {omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:81:10: warning: '(try {exact le_rfl\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:83:10: warning: '(try {exact le_of_lt (by omega)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:85:10: warning: '(try {linarith\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:90:10: warning: '(try {contradiction\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:92:10: warning: '(try {omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:93:10: warning: '(try {exact Or.inl rfl\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:94:10: warning: '(try {exact Or.inr rfl\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:96:10: warning: '(try {aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:98:8: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 8.733,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 16,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 27,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 41,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 65,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 66,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 69,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 71,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 79,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 80,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 83,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 85,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 92,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 93,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 94,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 96,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 98,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 63,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try {contradiction\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 65,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try {simp_all\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 66,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try {omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try {exact le_rfl\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 69,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try {exact le_of_lt (by omega)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 71,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try {linarith\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 77,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try {contradiction\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 79,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try {simp_all\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 80,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try {omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try {exact le_rfl\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 83,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try {exact le_of_lt (by omega)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 85,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try {linarith\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 90,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try {contradiction\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 92,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try {omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 93,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try {exact Or.inl rfl\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 94,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try {exact Or.inr rfl\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 96,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try {aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 98,
+   "col": 8,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

@@ -1,0 +1,14 @@
+--- goedel-prover-v2-8b:verina_basic_99__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_99__T2_helper_extract__0 (dsimp_add_helper)
+@@ -2,7 +2,7 @@
+     by_cases h : x < 18
+     · -- Case: x < 18
+       have h₁ : Triple (x) h_precond = (2 * x + 4 * x) / 2 := by
+-        dsimp [Triple, Triple_precond, h]
++        dsimp [Triple, Triple_precond, h, Triple__rp_helper_5b862de8]
+         <;> simp_all [Int.add_assoc]
+         <;> ring_nf
+         <;> norm_num
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: linarith failed to find a contradiction | case h1.h | x : ℤ | h_precond : Triple_precond x | h : 18 ≤ x | a✝ : Triple__rp_helper_5b862de8 x h_precond < x * 3 | ⊢ False failed | 

@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_3__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_3__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_3__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_3__T2_helper_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_3__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_3__T2_helper_extract__0.lean:14:29: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_3__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_3__T2_helper_extract__0.lean:22:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_3__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_3__T2_helper_extract__0.lean:22:12: warning: The declaration 'isDivisibleBy11__rp_helper_c39b37ae' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_3__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_3__T2_helper_extract__0.lean:39:55: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n",
+ "stderr": "",
+ "elapsed_seconds": 10.507,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'isDivisibleBy11__rp_helper_c39b37ae' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 39,
+   "col": 55,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

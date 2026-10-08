@@ -1,0 +1,11 @@
+--- deepseek-prover-v2-7b:verina_advanced_6__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_advanced_6__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : allVowels (s) h_precond = (List.all ['a', 'e', 'i', 'o', 'u'] (fun v => (normalize_str s).contains v)) := by
+-    unfold allVowels
++    unfold allVowels allVowels__rp_helper_1905f5d2
+     <;> simp [List.all_cons, List.all_nil, List.map]
+     <;> rfl
+ 
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

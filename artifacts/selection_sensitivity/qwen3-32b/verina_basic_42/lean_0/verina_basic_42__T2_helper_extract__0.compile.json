@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/qwen3-32b/verina_basic_42/lean_0/verina_basic_42__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/qwen3-32b/verina_basic_42/lean_0/verina_basic_42__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/qwen3-32b/verina_basic_42/lean_0/verina_basic_42__T2_helper_extract__0.lean:17:25: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/qwen3-32b/verina_basic_42/lean_0/verina_basic_42__T2_helper_extract__0.lean:25:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/qwen3-32b/verina_basic_42/lean_0/verina_basic_42__T2_helper_extract__0.lean:25:12: warning: The declaration 'countDigits__rp_helper_df69abf7' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/qwen3-32b/verina_basic_42/lean_0/verina_basic_42__T2_helper_extract__0.lean:42:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/qwen3-32b/verina_basic_42/lean_0/verina_basic_42__T2_helper_extract__0.lean:55:70: error: unsolved goals\ns : String\nh_precond : countDigits_precond s\n⊢ countDigits__rp_helper_df69abf7 s h_precond - (List.filter isDigit s.data).length = 0 ∧\n    (List.filter isDigit s.data).length - countDigits__rp_helper_df69abf7 s h_precond = 0\n",
+ "stderr": "",
+ "elapsed_seconds": 1.256,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 17,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'countDigits__rp_helper_df69abf7' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 42,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 55,
+   "col": 70,
+   "severity": "error",
+   "text": "unsolved goals\ns : String\nh_precond : countDigits_precond s\n⊢ countDigits__rp_helper_df69abf7 s h_precond - (List.filter isDigit s.data).length = 0 ∧\n    (List.filter isDigit s.data).length - countDigits__rp_helper_df69abf7 s h_precond = 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

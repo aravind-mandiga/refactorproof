@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_65",
+ "variant_id": "verina_basic_65__T3_comm_swap__2",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__2.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 1.349,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1126 = ?m.1126 : Prop\nbut is expected to have type\n  RPOrig.SquareRoot N h_precond = RPRef.SquareRoot N h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.2158 = ?m.2158 : Prop\nbut is expected to have type\n  RPOrig.SquareRoot N h_precond = RPRef.SquareRoot N h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : "
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : ",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.13800'"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : ",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.21163'"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : ",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.23986'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

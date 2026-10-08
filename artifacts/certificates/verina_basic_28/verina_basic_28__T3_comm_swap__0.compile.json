@@ -1,0 +1,103 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean:23:23: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean:35:23: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean:48:62: error: type mismatch\n  rfl\nhas type\n  ?m.24770 = ?m.24770 : Prop\nbut is expected to have type\n  RPOrig.isPrime n h_precond = RPRef.isPrime n h_precond : Prop\nartifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean:52:62: error: type mismatch\n  rfl\nhas type\n  ?m.24862 = ?m.24862 : Prop\nbut is expected to have type\n  RPOrig.isPrime n h_precond = RPRef.isPrime n h_precond : Prop\nartifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean:57:2: error: tactic 'rfl' failed, the left-hand side\n  let bound := n;\n  RPOrig.isPrime.check._unary n ⟨2, bound⟩\nis not definitionally equal to the right-hand side\n  let bound := n;\n  RPRef.isPrime.check._unary n ⟨2, bound⟩\nn : Nat\nh_precond : isPrime_precond n\n⊢ (let bound := n;\n    RPOrig.isPrime.check._unary n ⟨2, bound⟩) =\n    let bound := n;\n    RPRef.isPrime.check._unary n ⟨2, bound⟩\nartifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean:65:190: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.isPrime.check._unary n ⟨2, n⟩\nis not definitionally equal to the right-hand side\n  RPRef.isPrime.check._unary n ⟨2, n⟩\nn : Nat\nh_precond : isPrime_precond n\n⊢ RPOrig.isPrime.check._unary n ⟨2, n⟩ = RPRef.isPrime.check._unary n ⟨2, n⟩\nartifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean:60:62: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean:60:62: error: unknown metavariable '?_uniq.37297'\nartifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean:73:185: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.isPrime.check._unary n ⟨2, n⟩\nis not definitionally equal to the right-hand side\n  RPRef.isPrime.check._unary n ⟨2, n⟩\nn : Nat\nh_precond : isPrime_precond n\n⊢ RPOrig.isPrime.check._unary n ⟨2, n⟩ = RPRef.isPrime.check._unary n ⟨2, n⟩\nartifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean:68:62: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean:68:62: error: unknown metavariable '?_uniq.49300'\nartifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean:77:206: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.isPrime.check._unary n ⟨2, n⟩\nis not definitionally equal to the right-hand side\n  RPRef.isPrime.check._unary n ⟨2, n⟩\nn : Nat\nh_precond : isPrime_precond n\n⊢ RPOrig.isPrime.check._unary n ⟨2, n⟩ = RPRef.isPrime.check._unary n ⟨2, n⟩\nartifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean:76:62: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_28/verina_basic_28__T3_comm_swap__0.lean:76:62: error: unknown metavariable '?_uniq.53264'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.692,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 23,
+   "col": 23,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 35,
+   "col": 23,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 48,
+   "col": 62,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.24770 = ?m.24770 : Prop\nbut is expected to have type\n  RPOrig.isPrime n h_precond = RPRef.isPrime n h_precond : Prop"
+  },
+  {
+   "line": 52,
+   "col": 62,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.24862 = ?m.24862 : Prop\nbut is expected to have type\n  RPOrig.isPrime n h_precond = RPRef.isPrime n h_precond : Prop"
+  },
+  {
+   "line": 57,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  let bound := n;\n  RPOrig.isPrime.check._unary n ⟨2, bound⟩\nis not definitionally equal to the right-hand side\n  let bound := n;\n  RPRef.isPrime.check._unary n ⟨2, bound⟩\nn : Nat\nh_precond : isPrime_precond n\n⊢ (let bound := n;\n    RPOrig.isPrime.check._unary n ⟨2, bound⟩) =\n    let bound := n;\n    RPRef.isPrime.check._unary n ⟨2, bound⟩"
+  },
+  {
+   "line": 65,
+   "col": 190,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.isPrime.check._unary n ⟨2, n⟩\nis not definitionally equal to the right-hand side\n  RPRef.isPrime.check._unary n ⟨2, n⟩\nn : Nat\nh_precond : isPrime_precond n\n⊢ RPOrig.isPrime.check._unary n ⟨2, n⟩ = RPRef.isPrime.check._unary n ⟨2, n⟩"
+  },
+  {
+   "line": 60,
+   "col": 62,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 60,
+   "col": 62,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.37297'"
+  },
+  {
+   "line": 73,
+   "col": 185,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.isPrime.check._unary n ⟨2, n⟩\nis not definitionally equal to the right-hand side\n  RPRef.isPrime.check._unary n ⟨2, n⟩\nn : Nat\nh_precond : isPrime_precond n\n⊢ RPOrig.isPrime.check._unary n ⟨2, n⟩ = RPRef.isPrime.check._unary n ⟨2, n⟩"
+  },
+  {
+   "line": 68,
+   "col": 62,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 68,
+   "col": 62,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.49300'"
+  },
+  {
+   "line": 77,
+   "col": 206,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.isPrime.check._unary n ⟨2, n⟩\nis not definitionally equal to the right-hand side\n  RPRef.isPrime.check._unary n ⟨2, n⟩\nn : Nat\nh_precond : isPrime_precond n\n⊢ RPOrig.isPrime.check._unary n ⟨2, n⟩ = RPRef.isPrime.check._unary n ⟨2, n⟩"
+  },
+  {
+   "line": 76,
+   "col": 62,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 76,
+   "col": 62,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.53264'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

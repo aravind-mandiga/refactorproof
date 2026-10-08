@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_5",
+ "variant_id": "verina_basic_5__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__avoid_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "other",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 6.72,
+ "proof_region_errors": [
+  "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  c - d ≤ -1\nwhere\n c := multiply__rp_helper_3cc08e31 a b h_precond\n d := a * b",
+  "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  c - d ≤ -1\nwhere\n c := a * b\n d := multiply__rp_helper_3cc08e31 a b h_precond\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "704c67a343c2d5e06e9e6f950c1fd58f4dcb0e58b5592e4d3a7f0d96ff1e9eaf",
+ "spec_hash": "fb0e1b99e5101d2e21739f877c4c112fe60644ed1f3f3d4687b975e1527cff42",
+ "proof_text": "  have h₁ : (multiply (a) (b) h_precond) - a * b = 0 := by\n    simp [multiply, h_precond]\n    <;> ring_nf\n    <;> omega\n\n  have h₂ : a * b - (multiply (a) (b) h_precond) = 0 := by\n    simp [multiply, h_precond]\n    <;> ring_nf\n    <;> omega\n\n  exact ⟨h₁, h₂⟩\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "avoid_unfold"
+}

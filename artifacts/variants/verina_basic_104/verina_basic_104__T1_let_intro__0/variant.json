@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_104",
+ "variant_id": "verina_basic_104__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_780bb2d5 : Map Int Int :=\n    let foldFn := fun (acc : Map Int Int) (entry : Int × Int) =>\n      insert acc entry.1 entry.2\n    let updated := m2.entries.foldl foldFn m1\n    ⟨updated.entries.mergeSort (fun a b => a.1 ≤ b.1)⟩\n  __rp_tmp_780bb2d5\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_780bb2d5",
+  "seed": 0
+ },
+ "spec_hash": "b2646ec51c46472c4004bbb7abc820d9148a42f4debf7bed056313d84a8eae90",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "173929c79b9bff7ea405bcb6de68fea5bee18b0473d3d313e3438d31f3423797",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "update_map",
+ "code_loc_original": 4,
+ "code_loc_refactored": 6
+}

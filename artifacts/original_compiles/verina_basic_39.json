@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "external/verina/datasets/verina/verina_basic_39/task.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "external/verina/datasets/verina/verina_basic_39/task.lean",
+ "exit_code": 0,
+ "stdout": "external/verina/datasets/verina/verina_basic_39/task.lean:14:25: warning: unused variable `l`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nexternal/verina/datasets/verina/verina_basic_39/task.lean:14:40: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nexternal/verina/datasets/verina/verina_basic_39/task.lean:25:42: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nexternal/verina/datasets/verina/verina_basic_39/task.lean:44:70: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nexternal/verina/datasets/verina/verina_basic_39/task.lean:59:8: warning: declaration uses 'sorry'\n",
+ "stderr": "",
+ "elapsed_seconds": 0.94,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `l`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 14,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 44,
+   "col": 70,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 59,
+   "col": 8,
+   "severity": "warning",
+   "text": "declaration uses 'sorry'\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

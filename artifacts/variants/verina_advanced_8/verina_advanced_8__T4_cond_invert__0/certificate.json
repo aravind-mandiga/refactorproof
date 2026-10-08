@@ -1,0 +1,75 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_8",
+ "variant_id": "verina_advanced_8__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_8/verina_advanced_8__T4_cond_invert__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 1.077,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": "simp_only",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.4075 = ?m.4075 : Prop\nbut is expected to have type\n  RPOrig.canCompleteCircuit gas cost h_precond = RPRef.canCompleteCircuit gas cost h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.4860 = ?m.4860 : Prop\nbut is expected to have type\n  RPOrig.canCompleteCircuit gas cost h_precond = RPRef.canCompleteCircuit gas cost h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  let totalGas := List.foldl (fun x1 x2 => x1 + x2) 0 gas;\n  let totalCost := List.foldl (fun x1 x2 => x1 + x2) 0 cost;\n  if totalGas < totalCost then -1\n  else\n    let zipped := gas.zip cost;\n    List.brecOn (motive := fun pairs => Nat → Int → Nat → Int) zipped\n      (fun pairs f i tank start =>\n        (match (motive :=\n            (pairs : List (Int × Int)) → List.below (motive := fun pairs => Nat → Int → Nat → Int) pairs → Int)\n            pairs with\n "
+   ]
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if List.foldl (fun x1 x2 => x1 + x2) 0 gas < List.foldl (fun x1 x2 => x1 + x2) 0 cost then -1\n  else\n    List.brecOn (motive := fun pairs => Nat → Int → Nat → Int) (gas.zip cost)\n      (fun pairs f i tank start =>\n        (match (motive :=\n            (pairs : List (Int × Int)) → List.below (motive := fun pairs => Nat → Int → Nat → Int) pairs → Int)\n            pairs with\n          | [] => fun x => ↑start\n          | (g, c) :: rest => fun x =>\n          ",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.12261'"
+   ]
+  },
+  "bycases": {
+   "ok": false,
+   "errors": [
+    "unknown identifier 'totalGas'",
+    "unknown identifier 'totalCost'",
+    "unsolved goals\ngas cost : List Int\nh_precond : canCompleteCircuit_precond gas cost\n⊢ RPOrig.canCompleteCircuit gas cost h_precond = RPRef.canCompleteCircuit gas cost h_precond"
+   ]
+  },
+  "bycases_ite": {
+   "ok": false,
+   "errors": [
+    "unknown identifier 'totalGas'",
+    "unknown identifier 'totalCost'",
+    "unsolved goals\ngas cost : List Int\nh_precond : canCompleteCircuit_precond gas cost\n⊢ RPOrig.canCompleteCircuit gas cost h_precond = RPRef.canCompleteCircuit gas cost h_precond\n"
+   ]
+  },
+  "split_simp_all": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

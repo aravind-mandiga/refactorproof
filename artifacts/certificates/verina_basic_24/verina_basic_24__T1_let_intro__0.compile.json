@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_24/verina_basic_24__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_24/verina_basic_24__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_24/verina_basic_24__T1_let_intro__0.lean:29:44: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_24/verina_basic_24__T1_let_intro__0.lean:46:44: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_24/verina_basic_24__T1_let_intro__0.lean:66:92: error: type mismatch\n  rfl\nhas type\n  ?m.61295 = ?m.61295 : Prop\nbut is expected to have type\n  RPOrig.firstEvenOddDifference a h_precond = RPRef.firstEvenOddDifference a h_precond : Prop\nartifacts/certificates/verina_basic_24/verina_basic_24__T1_let_intro__0.lean:70:92: error: type mismatch\n  rfl\nhas type\n  ?m.61390 = ?m.61390 : Prop\nbut is expected to have type\n  RPOrig.firstEvenOddDifference a h_precond = RPRef.firstEvenOddDifference a h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 1.676,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 29,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 46,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 66,
+   "col": 92,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.61295 = ?m.61295 : Prop\nbut is expected to have type\n  RPOrig.firstEvenOddDifference a h_precond = RPRef.firstEvenOddDifference a h_precond : Prop"
+  },
+  {
+   "line": 70,
+   "col": 92,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.61390 = ?m.61390 : Prop\nbut is expected to have type\n  RPOrig.firstEvenOddDifference a h_precond = RPRef.firstEvenOddDifference a h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,10 @@
+--- reference:verina_basic_9__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_9__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold hasCommonElement hasCommonElement_postcond
++  unfold hasCommonElement hasCommonElement__rp_helper_db5fe7c5 hasCommonElement_postcond
+   constructor
+   · intro h
+     rcases h with ⟨i, j, hi, hj, heq⟩
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

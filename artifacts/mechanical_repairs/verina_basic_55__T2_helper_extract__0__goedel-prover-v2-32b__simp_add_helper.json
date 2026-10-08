@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_55__T2_helper_extract__0",
+ "task_id": "verina_basic_55",
+ "source": "goedel-prover-v2-32b",
+ "transformation": "T2_helper_extract",
+ "template": "simp_add_helper",
+ "function_name": "Compare",
+ "helper": "Compare__rp_helper_56630b5e",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": false,
+ "outcome": "proof_fails",
+ "first_error": "tactic 'aesop' failed, made no progress\nInitial goal:\n  a b : \u2124\n  h_precond : Compare_precond a b\n  h_ab_ne : \u00aca = b\n  \u22a2 Compare__rp_helper_56630b5e a b h_precond = false\n",
+ "proof_before": "  have h_main : (a = b \u2192 Compare (a) (b) h_precond = true) \u2227 (a \u2260 b \u2192 Compare (a) (b) h_precond = false) := by\n    constructor\n    \u00b7 -- Prove the first part: a = b \u2192 Compare (a) (b) h_precond = true\n      intro h_ab\n      have h\u2081 : Compare (a) (b) h_precond = true := by\n        simp [Compare, h_ab]\n        <;> simp_all [Compare_precond]\n        <;> aesop\n      exact h\u2081\n    \u00b7 -- Prove the second part: a \u2260 b \u2192 Compare (a) (b) h_precond = false\n      intro h_ab_ne\n      have h\u2081 : Compare (a) (b) h_precond = false := by\n        simp [Compare, h_ab_ne]\n        <;> simp_all [Compare_precond]\n        <;> aesop\n      exact h\u2081\n\n  -- Convert the main result to the required form\n  simp_all [Compare_postcond, Compare_precond]\n  <;> aesop\n",
+ "proof_after": "  have h_main : (a = b \u2192 Compare (a) (b) h_precond = true) \u2227 (a \u2260 b \u2192 Compare (a) (b) h_precond = false) := by\n    constructor\n    \u00b7 -- Prove the first part: a = b \u2192 Compare (a) (b) h_precond = true\n      intro h_ab\n      have h\u2081 : Compare (a) (b) h_precond = true := by\n        simp [Compare, h_ab, Compare__rp_helper_56630b5e]\n        <;> simp_all [Compare_precond]\n        <;> aesop\n      exact h\u2081\n    \u00b7 -- Prove the second part: a \u2260 b \u2192 Compare (a) (b) h_precond = false\n      intro h_ab_ne\n      have h\u2081 : Compare (a) (b) h_precond = false := by\n        simp [Compare, h_ab_ne]\n        <;> simp_all [Compare_precond]\n        <;> aesop\n      exact h\u2081\n\n  -- Convert the main result to the required form\n  simp_all [Compare_postcond, Compare_precond]\n  <;> aesop\n"
+}

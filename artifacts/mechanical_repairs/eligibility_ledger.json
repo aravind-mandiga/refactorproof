@@ -1,0 +1,1416 @@
+[
+ {
+  "variant_id": "verina_basic_1__T2_helper_extract__0",
+  "task_id": "verina_basic_1",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_10__T2_helper_extract__0",
+  "task_id": "verina_basic_10",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_100__T2_helper_extract__0",
+  "task_id": "verina_basic_100",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_100__T5_branch_extract__0",
+  "task_id": "verina_basic_100",
+  "source": "reference",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_101__T2_helper_extract__0",
+  "task_id": "verina_basic_101",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_11__T2_helper_extract__0",
+  "task_id": "verina_basic_11",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_12__T2_helper_extract__0",
+  "task_id": "verina_basic_12",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_13__T2_helper_extract__0",
+  "task_id": "verina_basic_13",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_14__T2_helper_extract__0",
+  "task_id": "verina_basic_14",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_15__T2_helper_extract__0",
+  "task_id": "verina_basic_15",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_16__T2_helper_extract__0",
+  "task_id": "verina_basic_16",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_17__T2_helper_extract__0",
+  "task_id": "verina_basic_17",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_19__T2_helper_extract__0",
+  "task_id": "verina_basic_19",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_19__T5_branch_extract__0",
+  "task_id": "verina_basic_19",
+  "source": "reference",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_2__T2_helper_extract__0",
+  "task_id": "verina_basic_2",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_26__T2_helper_extract__0",
+  "task_id": "verina_basic_26",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_29__T2_helper_extract__0",
+  "task_id": "verina_basic_29",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_3__T2_helper_extract__0",
+  "task_id": "verina_basic_3",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_30__T2_helper_extract__0",
+  "task_id": "verina_basic_30",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_31__T2_helper_extract__0",
+  "task_id": "verina_basic_31",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_32__T2_helper_extract__0",
+  "task_id": "verina_basic_32",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_36__T2_helper_extract__0",
+  "task_id": "verina_basic_36",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_4__T2_helper_extract__0",
+  "task_id": "verina_basic_4",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_42__T2_helper_extract__0",
+  "task_id": "verina_basic_42",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_44__T2_helper_extract__0",
+  "task_id": "verina_basic_44",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_45__T2_helper_extract__0",
+  "task_id": "verina_basic_45",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_48__T2_helper_extract__0",
+  "task_id": "verina_basic_48",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_49__T2_helper_extract__0",
+  "task_id": "verina_basic_49",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_5__T2_helper_extract__0",
+  "task_id": "verina_basic_5",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_50__T2_helper_extract__0",
+  "task_id": "verina_basic_50",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_53__T2_helper_extract__0",
+  "task_id": "verina_basic_53",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_55__T2_helper_extract__0",
+  "task_id": "verina_basic_55",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_55__T5_branch_extract__0",
+  "task_id": "verina_basic_55",
+  "source": "reference",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_6__T2_helper_extract__0",
+  "task_id": "verina_basic_6",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_6__T5_branch_extract__0",
+  "task_id": "verina_basic_6",
+  "source": "reference",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_66__T2_helper_extract__0",
+  "task_id": "verina_basic_66",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_66__T5_branch_extract__0",
+  "task_id": "verina_basic_66",
+  "source": "reference",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_68__T2_helper_extract__0",
+  "task_id": "verina_basic_68",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_76__T2_helper_extract__0",
+  "task_id": "verina_basic_76",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_76__T5_branch_extract__0",
+  "task_id": "verina_basic_76",
+  "source": "reference",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_78__T2_helper_extract__0",
+  "task_id": "verina_basic_78",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_8__T2_helper_extract__0",
+  "task_id": "verina_basic_8",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_8__T5_branch_extract__0",
+  "task_id": "verina_basic_8",
+  "source": "reference",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_81__T2_helper_extract__0",
+  "task_id": "verina_basic_81",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_81__T5_branch_extract__0",
+  "task_id": "verina_basic_81",
+  "source": "reference",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_9__T2_helper_extract__0",
+  "task_id": "verina_basic_9",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_91__T2_helper_extract__0",
+  "task_id": "verina_basic_91",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_92__T2_helper_extract__0",
+  "task_id": "verina_basic_92",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_95__T2_helper_extract__0",
+  "task_id": "verina_basic_95",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_96__T2_helper_extract__0",
+  "task_id": "verina_basic_96",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_97__T2_helper_extract__0",
+  "task_id": "verina_basic_97",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_98__T2_helper_extract__0",
+  "task_id": "verina_basic_98",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_99__T2_helper_extract__0",
+  "task_id": "verina_basic_99",
+  "source": "reference",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_99__T5_branch_extract__0",
+  "task_id": "verina_basic_99",
+  "source": "reference",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_advanced_41__T2_helper_extract__0",
+  "task_id": "verina_advanced_41",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_advanced_41__T5_branch_extract__0",
+  "task_id": "verina_advanced_41",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_advanced_6__T2_helper_extract__0",
+  "task_id": "verina_advanced_6",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_advanced_6__T2_helper_extract__0",
+  "task_id": "verina_advanced_6",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_advanced_6__T2_helper_extract__0",
+  "task_id": "verina_advanced_6",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_advanced_72__T2_helper_extract__0",
+  "task_id": "verina_advanced_72",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_advanced_72__T5_branch_extract__0",
+  "task_id": "verina_advanced_72",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_1__T2_helper_extract__0",
+  "task_id": "verina_basic_1",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_1__T2_helper_extract__0",
+  "task_id": "verina_basic_1",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_1__T2_helper_extract__0",
+  "task_id": "verina_basic_1",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [],
+  "skip_reason": "no pre-registered template is syntactically applicable"
+ },
+ {
+  "variant_id": "verina_basic_100__T2_helper_extract__0",
+  "task_id": "verina_basic_100",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_100__T2_helper_extract__0",
+  "task_id": "verina_basic_100",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_100__T2_helper_extract__0",
+  "task_id": "verina_basic_100",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_100__T5_branch_extract__0",
+  "task_id": "verina_basic_100",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_100__T5_branch_extract__0",
+  "task_id": "verina_basic_100",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_100__T5_branch_extract__0",
+  "task_id": "verina_basic_100",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_101__T2_helper_extract__0",
+  "task_id": "verina_basic_101",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_101__T2_helper_extract__0",
+  "task_id": "verina_basic_101",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_101__T2_helper_extract__0",
+  "task_id": "verina_basic_101",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_107__T2_helper_extract__0",
+  "task_id": "verina_basic_107",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_107__T2_helper_extract__0",
+  "task_id": "verina_basic_107",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_12__T2_helper_extract__0",
+  "task_id": "verina_basic_12",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_12__T2_helper_extract__0",
+  "task_id": "verina_basic_12",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_12__T2_helper_extract__0",
+  "task_id": "verina_basic_12",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_14__T2_helper_extract__0",
+  "task_id": "verina_basic_14",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_14__T2_helper_extract__0",
+  "task_id": "verina_basic_14",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_16__T2_helper_extract__0",
+  "task_id": "verina_basic_16",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_17__T2_helper_extract__0",
+  "task_id": "verina_basic_17",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_26__T2_helper_extract__0",
+  "task_id": "verina_basic_26",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_26__T2_helper_extract__0",
+  "task_id": "verina_basic_26",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_26__T2_helper_extract__0",
+  "task_id": "verina_basic_26",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_3__T2_helper_extract__0",
+  "task_id": "verina_basic_3",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [],
+  "skip_reason": "no pre-registered template is syntactically applicable"
+ },
+ {
+  "variant_id": "verina_basic_3__T2_helper_extract__0",
+  "task_id": "verina_basic_3",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_3__T2_helper_extract__0",
+  "task_id": "verina_basic_3",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_31__T2_helper_extract__0",
+  "task_id": "verina_basic_31",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_36__T2_helper_extract__0",
+  "task_id": "verina_basic_36",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_5__T2_helper_extract__0",
+  "task_id": "verina_basic_5",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [],
+  "skip_reason": "no pre-registered template is syntactically applicable"
+ },
+ {
+  "variant_id": "verina_basic_5__T2_helper_extract__0",
+  "task_id": "verina_basic_5",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_5__T2_helper_extract__0",
+  "task_id": "verina_basic_5",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_50__T2_helper_extract__0",
+  "task_id": "verina_basic_50",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_50__T2_helper_extract__0",
+  "task_id": "verina_basic_50",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_50__T2_helper_extract__0",
+  "task_id": "verina_basic_50",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_50__T5_branch_extract__0",
+  "task_id": "verina_basic_50",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_50__T5_branch_extract__0",
+  "task_id": "verina_basic_50",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_50__T5_branch_extract__0",
+  "task_id": "verina_basic_50",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_55__T2_helper_extract__0",
+  "task_id": "verina_basic_55",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_55__T2_helper_extract__0",
+  "task_id": "verina_basic_55",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_55__T2_helper_extract__0",
+  "task_id": "verina_basic_55",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_59__T2_helper_extract__0",
+  "task_id": "verina_basic_59",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_59__T2_helper_extract__0",
+  "task_id": "verina_basic_59",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_59__T2_helper_extract__0",
+  "task_id": "verina_basic_59",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_6__T2_helper_extract__0",
+  "task_id": "verina_basic_6",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_6__T2_helper_extract__0",
+  "task_id": "verina_basic_6",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_6__T5_branch_extract__0",
+  "task_id": "verina_basic_6",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_6__T5_branch_extract__0",
+  "task_id": "verina_basic_6",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_66__T2_helper_extract__0",
+  "task_id": "verina_basic_66",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_66__T2_helper_extract__0",
+  "task_id": "verina_basic_66",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_66__T2_helper_extract__0",
+  "task_id": "verina_basic_66",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_66__T5_branch_extract__0",
+  "task_id": "verina_basic_66",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "unfold_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_66__T5_branch_extract__0",
+  "task_id": "verina_basic_66",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_66__T5_branch_extract__0",
+  "task_id": "verina_basic_66",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_76__T2_helper_extract__0",
+  "task_id": "verina_basic_76",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_76__T2_helper_extract__0",
+  "task_id": "verina_basic_76",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_76__T2_helper_extract__0",
+  "task_id": "verina_basic_76",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_76__T5_branch_extract__0",
+  "task_id": "verina_basic_76",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_76__T5_branch_extract__0",
+  "task_id": "verina_basic_76",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_78__T2_helper_extract__0",
+  "task_id": "verina_basic_78",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_78__T2_helper_extract__0",
+  "task_id": "verina_basic_78",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_78__T2_helper_extract__0",
+  "task_id": "verina_basic_78",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_8__T2_helper_extract__0",
+  "task_id": "verina_basic_8",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_8__T2_helper_extract__0",
+  "task_id": "verina_basic_8",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_8__T2_helper_extract__0",
+  "task_id": "verina_basic_8",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_8__T5_branch_extract__0",
+  "task_id": "verina_basic_8",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_8__T5_branch_extract__0",
+  "task_id": "verina_basic_8",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_8__T5_branch_extract__0",
+  "task_id": "verina_basic_8",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_88__T2_helper_extract__0",
+  "task_id": "verina_basic_88",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_91__T2_helper_extract__0",
+  "task_id": "verina_basic_91",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_91__T2_helper_extract__0",
+  "task_id": "verina_basic_91",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_92__T2_helper_extract__0",
+  "task_id": "verina_basic_92",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_92__T2_helper_extract__0",
+  "task_id": "verina_basic_92",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_92__T2_helper_extract__0",
+  "task_id": "verina_basic_92",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_98__T2_helper_extract__0",
+  "task_id": "verina_basic_98",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "simp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_99__T2_helper_extract__0",
+  "task_id": "verina_basic_99",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_99__T2_helper_extract__0",
+  "task_id": "verina_basic_99",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_99__T2_helper_extract__0",
+  "task_id": "verina_basic_99",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T2_helper_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_99__T5_branch_extract__0",
+  "task_id": "verina_basic_99",
+  "source": "deepseek-prover-v2-7b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_99__T5_branch_extract__0",
+  "task_id": "verina_basic_99",
+  "source": "goedel-prover-v2-32b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ },
+ {
+  "variant_id": "verina_basic_99__T5_branch_extract__0",
+  "task_id": "verina_basic_99",
+  "source": "goedel-prover-v2-8b",
+  "transformation": "T5_branch_extract",
+  "applicable_templates": [
+   "dsimp_add_helper"
+  ],
+  "skip_reason": null
+ }
+]

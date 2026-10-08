@@ -1,0 +1,85 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:20:25: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:28:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:28:12: warning: The declaration 'toLowercase__rp_helper_b6759a4e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:47:56: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:70:4: error: tactic 'rfl' failed, the left-hand side\n  (toLowercase__rp_helper_b6759a4e s h_precond).length\nis not definitionally equal to the right-hand side\n  s.length\ns : String\nh_precond : toLowercase_precond s\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).length = s.length\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:79:11: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:75:4: error: unsolved goals\ns : String\nh_precond : toLowercase_precond s\nh_len_1 : (toLowercase s h_precond).length = s.length\ni : ℕ\nhi_1 : i < s.length\nh_len : (toLowercase__rp_helper_b6759a4e s h_precond).length = s.length\nh : isUpperCase s.data[i] = true\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).data[i] = shift32 s.data[i]\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:112:11: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:108:4: error: unsolved goals\ns : String\nh_precond : toLowercase_precond s\nh_len_1 : (toLowercase s h_precond).length = s.length\ni : ℕ\nhi_1 : i < s.length\nh_len : (toLowercase__rp_helper_b6759a4e s h_precond).length = s.length\nh : isUpperCase s.data[i] = false\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).data[i] = s.data[i]\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:146:4: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:144:2: error: unsolved goals\ncase right.left\ns : String\nh_precond : toLowercase_precond s\nh_len : (toLowercase s h_precond).length = s.length\ni : ℕ\nhi : i < s.length\nh_main :\n  ∀ (i : ℕ) (a : i < s.length),\n    (isUpperCase s.data[i] = true → (toLowercase s h_precond).data[i] = shift32 s.data[i]) ∧\n      (isUpperCase s.data[i] = false → (toLowercase s h_precond).data[i] = s.data[i])\na : isUpperCase s.data[i] = true\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).data[i]?.getD 'A' = shift32 s.data[i]\n\ncase right.right\ns : String\nh_precond : toLowercase_precond s\nh_len : (toLowercase s h_precond).length = s.length\ni : ℕ\nhi : i < s.length\nh_main :\n  ∀ (i : ℕ) (a : i < s.length),\n    (isUpperCase s.data[i] = true → (toLowercase s h_precond).data[i] = shift32 s.data[i]) ∧\n      (isUpperCase s.data[i] = false → (toLowercase s h_precond).data[i] = s.data[i])\na : isUpperCase s.data[i] = false\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).data[i]?.getD 'A' = s.data[i]\n",
+ "stderr": "",
+ "elapsed_seconds": 14.351,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 20,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'toLowercase__rp_helper_b6759a4e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 47,
+   "col": 56,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 70,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  (toLowercase__rp_helper_b6759a4e s h_precond).length\nis not definitionally equal to the right-hand side\n  s.length\ns : String\nh_precond : toLowercase_precond s\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).length = s.length"
+  },
+  {
+   "line": 79,
+   "col": 11,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 75,
+   "col": 4,
+   "severity": "error",
+   "text": "unsolved goals\ns : String\nh_precond : toLowercase_precond s\nh_len_1 : (toLowercase s h_precond).length = s.length\ni : ℕ\nhi_1 : i < s.length\nh_len : (toLowercase__rp_helper_b6759a4e s h_precond).length = s.length\nh : isUpperCase s.data[i] = true\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).data[i] = shift32 s.data[i]"
+  },
+  {
+   "line": 112,
+   "col": 11,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 108,
+   "col": 4,
+   "severity": "error",
+   "text": "unsolved goals\ns : String\nh_precond : toLowercase_precond s\nh_len_1 : (toLowercase s h_precond).length = s.length\ni : ℕ\nhi_1 : i < s.length\nh_len : (toLowercase__rp_helper_b6759a4e s h_precond).length = s.length\nh : isUpperCase s.data[i] = false\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).data[i] = s.data[i]"
+  },
+  {
+   "line": 146,
+   "col": 4,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 144,
+   "col": 2,
+   "severity": "error",
+   "text": "unsolved goals\ncase right.left\ns : String\nh_precond : toLowercase_precond s\nh_len : (toLowercase s h_precond).length = s.length\ni : ℕ\nhi : i < s.length\nh_main :\n  ∀ (i : ℕ) (a : i < s.length),\n    (isUpperCase s.data[i] = true → (toLowercase s h_precond).data[i] = shift32 s.data[i]) ∧\n      (isUpperCase s.data[i] = false → (toLowercase s h_precond).data[i] = s.data[i])\na : isUpperCase s.data[i] = true\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).data[i]?.getD 'A' = shift32 s.data[i]\n\ncase right.right\ns : String\nh_precond : toLowercase_precond s\nh_len : (toLowercase s h_precond).length = s.length\ni : ℕ\nhi : i < s.length\nh_main :\n  ∀ (i : ℕ) (a : i < s.length),\n    (isUpperCase s.data[i] = true → (toLowercase s h_precond).data[i] = shift32 s.data[i]) ∧\n      (isUpperCase s.data[i] = false → (toLowercase s h_precond).data[i] = s.data[i])\na : isUpperCase s.data[i] = false\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).data[i]?.getD 'A' = s.data[i]\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

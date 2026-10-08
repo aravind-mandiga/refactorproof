@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_88/verina_basic_88__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_88/verina_basic_88__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_88/verina_basic_88__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:15:21: warning: unused variable `xs`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_88/verina_basic_88__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:23:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_88/verina_basic_88__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:23:12: warning: The declaration 'ToArray__rp_helper_a2d904a6' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_88/verina_basic_88__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:40:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_88/verina_basic_88__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:64:10: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  xs : List ℤ\n  h_precond : ToArray_precond xs\n  h_size : (ToArray xs h_precond).size = xs.length\n  i : ℕ\n  h : i < xs.length\n  ⊢ (ToArray__rp_helper_a2d904a6 xs h_precond)[i]! = xs[i]\n",
+ "stderr": "",
+ "elapsed_seconds": 8.265,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 21,
+   "severity": "warning",
+   "text": "unused variable `xs`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'ToArray__rp_helper_a2d904a6' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 64,
+   "col": 10,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  xs : List ℤ\n  h_precond : ToArray_precond xs\n  h_size : (ToArray xs h_precond).size = xs.length\n  i : ℕ\n  h : i < xs.length\n  ⊢ (ToArray__rp_helper_a2d904a6 xs h_precond)[i]! = xs[i]\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

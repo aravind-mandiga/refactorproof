@@ -1,0 +1,181 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:15:28: warning: unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:15:38: warning: unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:26:40: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:45:71: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:66:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:67:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:72:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:73:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:79:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:80:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:81:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:86:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:87:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:91:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:95:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:77:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:66:6: warning: 'ring_nf' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:67:6: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:72:6: warning: 'ring_nf' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:73:6: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:79:6: warning: '(try simp_all [ne_eq, Prod.fst, Prod.snd])' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:80:6: warning: '(try norm_num)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:81:6: warning: '(try {cases X <;> cases Y <;> norm_num at * <;> aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:86:6: warning: '(try ring_nf at *)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:87:6: warning: '(try {omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:91:6: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_92/lean_0/verina_basic_92__T1_let_intro__0.lean:95:6: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 10.032,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 38,
+   "severity": "warning",
+   "text": "unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 45,
+   "col": 71,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 66,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 72,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 73,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 79,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 80,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 86,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 87,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 91,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 95,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 77,
+   "col": 6,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 66,
+   "col": 6,
+   "severity": "warning",
+   "text": "'ring_nf' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 6,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 72,
+   "col": 6,
+   "severity": "warning",
+   "text": "'ring_nf' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 73,
+   "col": 6,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 79,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(try simp_all [ne_eq, Prod.fst, Prod.snd])' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 80,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(try norm_num)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(try {cases X <;> cases Y <;> norm_num at * <;> aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 86,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(try ring_nf at *)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 87,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(try {omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 91,
+   "col": 6,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 95,
+   "col": 6,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

@@ -1,0 +1,13 @@
+--- goedel-prover-v2-32b:verina_basic_107__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_107__T2_helper_extract__0 (simp_add_helper)
+@@ -4,7 +4,7 @@
+       ring_nf at h₂ ⊢
+       <;> omega
+     have h₂ : 2 * (ComputeAvg a b h_precond) = 2 * ((a + b) / 2) := by
+-      simp [ComputeAvg]
++      simp [ComputeAvg, ComputeAvg__rp_helper_860051f2]
+       <;> ring_nf
+     rw [h₂]
+     have h₃ : a + b - (a + b) % 2 = 2 * ((a + b) / 2) := by
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

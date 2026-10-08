@@ -1,0 +1,67 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_62/verina_advanced_62__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_62/verina_advanced_62__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_62/verina_advanced_62__T4_cond_invert__0.lean:22:33: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_62/verina_advanced_62__T4_cond_invert__0.lean:48:33: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_62/verina_advanced_62__T4_cond_invert__0.lean:76:68: error: type mismatch\n  rfl\nhas type\n  ?m.13939 = ?m.13939 : Prop\nbut is expected to have type\n  RPOrig.rain heights h_precond = RPRef.rain heights h_precond : Prop\nartifacts/certificates/verina_advanced_62/verina_advanced_62__T4_cond_invert__0.lean:80:68: error: type mismatch\n  rfl\nhas type\n  ?m.15500 = ?m.15500 : Prop\nbut is expected to have type\n  RPOrig.rain heights h_precond = RPRef.rain heights h_precond : Prop\nartifacts/certificates/verina_advanced_62/verina_advanced_62__T4_cond_invert__0.lean:85:2: error: tactic 'rfl' failed, the left-hand side\n  if heights.length < 3 then 0\n  else\n    let n := heights.length;\n    RPOrig.rain.aux._unary heights ⟨0, ⟨n - 1, ⟨heights[0]!, ⟨heights[n - 1]!, 0⟩⟩⟩⟩\nis not definitionally equal to the right-hand side\n  if ¬heights.length < 3 then\n    let n := heights.length;\n    RPRef.rain.aux._unary heights ⟨0, ⟨n - 1, ⟨heights[0]!, ⟨heights[n - 1]!, 0⟩⟩⟩⟩\n  else 0\nheights : List Int\nh_precond : rain_precond heights\n⊢ (if heights.length < 3 then 0\n    else\n      let n := heights.length;\n      RPOrig.rain.aux._unary heights ⟨0, ⟨n - 1, ⟨heights[0]!, ⟨heights[n - 1]!, 0⟩⟩⟩⟩) =\n    if ¬heights.length < 3 then\n      let n := heights.length;\n      RPRef.rain.aux._unary heights ⟨0, ⟨n - 1, ⟨heights[0]!, ⟨heights[n - 1]!, 0⟩⟩⟩⟩\n    else 0\nartifacts/certificates/verina_advanced_62/verina_advanced_62__T4_cond_invert__0.lean:99:163: error: tactic 'rfl' failed, the left-hand side\n  if heights.length < 3 then 0\n  else\n    RPOrig.rain.aux._unary heights\n      ⟨0, ⟨heights.length - 1, ⟨heights[0]?.getD 0, ⟨heights[heights.length - 1]?.getD 0, 0⟩⟩⟩⟩\nis not definitionally equal to the right-hand side\n  if 3 ≤ heights.length then\n    RPRef.rain.aux._unary heights\n      ⟨0, ⟨heights.length - 1, ⟨heights[0]?.getD 0, ⟨heights[heights.length - 1]?.getD 0, 0⟩⟩⟩⟩\n  else 0\nheights : List Int\nh_precond : rain_precond heights\n⊢ (if heights.length < 3 then 0\n    else\n      RPOrig.rain.aux._unary heights\n        ⟨0, ⟨heights.length - 1, ⟨heights[0]?.getD 0, ⟨heights[heights.length - 1]?.getD 0, 0⟩⟩⟩⟩) =\n    if 3 ≤ heights.length then\n      RPRef.rain.aux._unary heights\n        ⟨0, ⟨heights.length - 1, ⟨heights[0]?.getD 0, ⟨heights[heights.length - 1]?.getD 0, 0⟩⟩⟩⟩\n    else 0\nartifacts/certificates/verina_advanced_62/verina_advanced_62__T4_cond_invert__0.lean:95:68: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_advanced_62/verina_advanced_62__T4_cond_invert__0.lean:95:68: error: unknown metavariable '?_uniq.24673'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.364,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 33,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 48,
+   "col": 33,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 76,
+   "col": 68,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.13939 = ?m.13939 : Prop\nbut is expected to have type\n  RPOrig.rain heights h_precond = RPRef.rain heights h_precond : Prop"
+  },
+  {
+   "line": 80,
+   "col": 68,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.15500 = ?m.15500 : Prop\nbut is expected to have type\n  RPOrig.rain heights h_precond = RPRef.rain heights h_precond : Prop"
+  },
+  {
+   "line": 85,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if heights.length < 3 then 0\n  else\n    let n := heights.length;\n    RPOrig.rain.aux._unary heights ⟨0, ⟨n - 1, ⟨heights[0]!, ⟨heights[n - 1]!, 0⟩⟩⟩⟩\nis not definitionally equal to the right-hand side\n  if ¬heights.length < 3 then\n    let n := heights.length;\n    RPRef.rain.aux._unary heights ⟨0, ⟨n - 1, ⟨heights[0]!, ⟨heights[n - 1]!, 0⟩⟩⟩⟩\n  else 0\nheights : List Int\nh_precond : rain_precond heights\n⊢ (if heights.length < 3 then 0\n    else\n      let n := heights.length;\n      RPOrig.rain.aux._unary heights ⟨0, ⟨n - 1, ⟨heights[0]!, ⟨heights[n - 1]!, 0⟩⟩⟩⟩) =\n    if ¬heights.length < 3 then\n      let n := heights.length;\n      RPRef.rain.aux._unary heights ⟨0, ⟨n - 1, ⟨heights[0]!, ⟨heights[n - 1]!, 0⟩⟩⟩⟩\n    else 0"
+  },
+  {
+   "line": 99,
+   "col": 163,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if heights.length < 3 then 0\n  else\n    RPOrig.rain.aux._unary heights\n      ⟨0, ⟨heights.length - 1, ⟨heights[0]?.getD 0, ⟨heights[heights.length - 1]?.getD 0, 0⟩⟩⟩⟩\nis not definitionally equal to the right-hand side\n  if 3 ≤ heights.length then\n    RPRef.rain.aux._unary heights\n      ⟨0, ⟨heights.length - 1, ⟨heights[0]?.getD 0, ⟨heights[heights.length - 1]?.getD 0, 0⟩⟩⟩⟩\n  else 0\nheights : List Int\nh_precond : rain_precond heights\n⊢ (if heights.length < 3 then 0\n    else\n      RPOrig.rain.aux._unary heights\n        ⟨0, ⟨heights.length - 1, ⟨heights[0]?.getD 0, ⟨heights[heights.length - 1]?.getD 0, 0⟩⟩⟩⟩) =\n    if 3 ≤ heights.length then\n      RPRef.rain.aux._unary heights\n        ⟨0, ⟨heights.length - 1, ⟨heights[0]?.getD 0, ⟨heights[heights.length - 1]?.getD 0, 0⟩⟩⟩⟩\n    else 0"
+  },
+  {
+   "line": 95,
+   "col": 68,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 95,
+   "col": 68,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.24673'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

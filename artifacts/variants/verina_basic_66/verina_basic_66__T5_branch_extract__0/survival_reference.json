@@ -1,0 +1,26 @@
+{
+ "task_id": "verina_basic_66",
+ "variant_id": "verina_basic_66__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 19.033,
+ "proof_region_errors": [
+  "tactic 'rfl' failed, the left-hand side\n  2 ∣ x ∨ ComputeIsEven__rp_branch_87fb4e70 x h_precond = true\nis not definitionally equal to the right-hand side\n  ∃ k, x = 2 * k\nx : ℤ\nh_precond : ComputeIsEven_precond x\n⊢ 2 ∣ x ∨ ComputeIsEven__rp_branch_87fb4e70 x h_precond = true ↔ ∃ k, x = 2 * k\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "738b44058f5a36560a1133007b0475769ed1a63f455c6241725130c1061e5ac4",
+ "spec_hash": "9300d16b9957b06554011b12d8985caa114c512f6eac35f42f2319056238a3b4"
+}

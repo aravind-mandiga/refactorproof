@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_11/lean_4/verina_basic_11__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_11/lean_4/verina_basic_11__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_11/lean_4/verina_basic_11__T2_helper_extract__0.lean:16:23: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_11/lean_4/verina_basic_11__T2_helper_extract__0.lean:24:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_11/lean_4/verina_basic_11__T2_helper_extract__0.lean:24:12: warning: The declaration 'lastDigit__rp_helper_8d571788' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_11/lean_4/verina_basic_11__T2_helper_extract__0.lean:41:48: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_11/lean_4/verina_basic_11__T2_helper_extract__0.lean:63:10: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≥ 10\nwhere\n a := ↑(lastDigit__rp_helper_8d571788 n h_precond)\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_11/lean_4/verina_basic_11__T2_helper_extract__0.lean:70:13: error: unsolved goals\nn : ℕ\nh_precond : lastDigit_precond n\nh1 : lastDigit__rp_helper_8d571788 n h_precond < 10\n⊢ n % 10 - lastDigit__rp_helper_8d571788 n h_precond = 0 ∧ lastDigit__rp_helper_8d571788 n h_precond - n % 10 = 0\n",
+ "stderr": "",
+ "elapsed_seconds": 9.671,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 23,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'lastDigit__rp_helper_8d571788' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 41,
+   "col": 48,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 63,
+   "col": 10,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≥ 10\nwhere\n a := ↑(lastDigit__rp_helper_8d571788 n h_precond)"
+  },
+  {
+   "line": 70,
+   "col": 13,
+   "severity": "error",
+   "text": "unsolved goals\nn : ℕ\nh_precond : lastDigit_precond n\nh1 : lastDigit__rp_helper_8d571788 n h_precond < 10\n⊢ n % 10 - lastDigit__rp_helper_8d571788 n h_precond = 0 ∧ lastDigit__rp_helper_8d571788 n h_precond - n % 10 = 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "other"
+}

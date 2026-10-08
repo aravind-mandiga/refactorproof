@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_19__T2_helper_extract__0",
+ "task_id": "verina_basic_19",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "isSorted",
+ "helper": "isSorted__rp_helper_f8cad7cc",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold isSorted isSorted_postcond\n  simp_all\n  cases a with | mk a =>\n    simp\n    cases a with\n    | nil => simp\n    | cons x xs =>\n      simp\n      cases xs with\n      | nil => simp\n      | cons x' xs =>\n        simp\n        constructor <;> simp_all\n\n",
+ "proof_after": "  unfold isSorted isSorted__rp_helper_f8cad7cc isSorted_postcond\n  simp_all\n  cases a with | mk a =>\n    simp\n    cases a with\n    | nil => simp\n    | cons x xs =>\n      simp\n      cases xs with\n      | nil => simp\n      | cons x' xs =>\n        simp\n        constructor <;> simp_all\n\n"
+}

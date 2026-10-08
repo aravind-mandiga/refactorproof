@@ -1,0 +1,67 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_8/verina_basic_8__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_8/verina_basic_8__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_8/verina_basic_8__T4_cond_invert__0.lean:14:19: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_8/verina_basic_8__T4_cond_invert__0.lean:14:29: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_8/verina_basic_8__T4_cond_invert__0.lean:23:31: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_8/verina_basic_8__T4_cond_invert__0.lean:29:31: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_8/verina_basic_8__T4_cond_invert__0.lean:37:62: error: type mismatch\n  rfl\nhas type\n  ?m.107 = ?m.107 : Prop\nbut is expected to have type\n  RPOrig.myMin a b h_precond = RPRef.myMin a b h_precond : Prop\nartifacts/certificates/verina_basic_8/verina_basic_8__T4_cond_invert__0.lean:41:62: error: type mismatch\n  rfl\nhas type\n  ?m.738 = ?m.738 : Prop\nbut is expected to have type\n  RPOrig.myMin a b h_precond = RPRef.myMin a b h_precond : Prop\nartifacts/certificates/verina_basic_8/verina_basic_8__T4_cond_invert__0.lean:46:2: error: tactic 'rfl' failed, the left-hand side\n  if a ≤ b then a else b\nis not definitionally equal to the right-hand side\n  if ¬a ≤ b then b else a\na b : Int\nh_precond : myMin_precond a b\n⊢ (if a ≤ b then a else b) = if ¬a ≤ b then b else a\nartifacts/certificates/verina_basic_8/verina_basic_8__T4_cond_invert__0.lean:60:104: error: tactic 'delta' failed, did not delta reduce [RPOrig.myMin, RPRef.myMin]\na b : Int\nh_precond : myMin_precond a b\n⊢ (if a ≤ b then a else b) = if b < a then b else a\n",
+ "stderr": "",
+ "elapsed_seconds": 0.871,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 29,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 37,
+   "col": 62,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.107 = ?m.107 : Prop\nbut is expected to have type\n  RPOrig.myMin a b h_precond = RPRef.myMin a b h_precond : Prop"
+  },
+  {
+   "line": 41,
+   "col": 62,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.738 = ?m.738 : Prop\nbut is expected to have type\n  RPOrig.myMin a b h_precond = RPRef.myMin a b h_precond : Prop"
+  },
+  {
+   "line": 46,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if a ≤ b then a else b\nis not definitionally equal to the right-hand side\n  if ¬a ≤ b then b else a\na b : Int\nh_precond : myMin_precond a b\n⊢ (if a ≤ b then a else b) = if ¬a ≤ b then b else a"
+  },
+  {
+   "line": 60,
+   "col": 104,
+   "severity": "error",
+   "text": "tactic 'delta' failed, did not delta reduce [RPOrig.myMin, RPRef.myMin]\na b : Int\nh_precond : myMin_precond a b\n⊢ (if a ≤ b then a else b) = if b < a then b else a\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

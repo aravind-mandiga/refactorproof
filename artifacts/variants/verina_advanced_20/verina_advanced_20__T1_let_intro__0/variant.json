@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_20",
+ "variant_id": "verina_advanced_20__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_eba621c4 : Bool :=\n    let rec hasDigitEight (m : Nat) : Bool :=\n      if m <= 0 then false\n      else if m % 10 == 8 then true\n      else hasDigitEight (m / 10)\n      termination_by m\n\n    let absN := Int.natAbs n\n    n % 8 == 0 || hasDigitEight absN\n  __rp_tmp_eba621c4\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_eba621c4",
+  "seed": 0
+ },
+ "spec_hash": "9afb9095bc3ef665cff12b40ec28e25e928309435b28dc409cf23fd6f3752532",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "7374b2c18c4a075b82ce03a44662afb9b739852d27d63f1b6b150da5f9c93833",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "isItEight",
+ "code_loc_original": 7,
+ "code_loc_refactored": 9
+}

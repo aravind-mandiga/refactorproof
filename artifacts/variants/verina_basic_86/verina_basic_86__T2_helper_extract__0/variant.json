@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_86",
+ "variant_id": "verina_basic_86__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  rotate__rp_helper_601d1c2a a offset h_precond\n",
+ "transformed_code_aux": "def rotateAux (a : Array Int) (offset : Int) (i : Nat) (len : Nat) (b : Array Int) : Array Int :=\n  if i < len then\n    let idx_int : Int := (Int.ofNat i + offset) % (Int.ofNat len)\n    let idx_int_adjusted := if idx_int < 0 then idx_int + Int.ofNat len else idx_int\n    let idx_nat : Nat := Int.toNat idx_int_adjusted\n    let new_b := b.set! i (a[idx_nat]!)\n    rotateAux a offset (i + 1) len new_b\n  else b\n\nprivate def rotate__rp_helper_601d1c2a (a : Array Int) (offset : Int) (h_precond : rotate_precond (a) (offset)) : Array Int :=\n  let len := a.size\n  let default_val : Int := if len > 0 then a[0]! else 0\n  let b0 := Array.mkArray len default_val\n  rotateAux a offset 0 len b0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "rotate__rp_helper_601d1c2a"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "offset",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "2c1c3c89cfaf4fed2dc15ed74a80a2b652d6d48c4de163b15af5495c8de574c3",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "8911cbd1826fb7e2094364a37147de64a1dc21e28f91c2b00c776b212645462c",
+ "code_aux_hash_original": "a9aaf5d6b383847e6c9b69500776c6d8050c7461b1e9462407099a6904175c5d",
+ "tier": "basic",
+ "function_name": "rotate",
+ "code_loc_original": 4,
+ "code_loc_refactored": 6
+}

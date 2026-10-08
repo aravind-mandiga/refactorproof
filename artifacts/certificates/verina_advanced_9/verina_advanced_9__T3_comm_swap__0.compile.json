@@ -1,0 +1,109 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:17:33: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:30:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:42:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:55:90: error: type mismatch\n  rfl\nhas type\n  ?m.6671 = ?m.6671 : Prop\nbut is expected to have type\n  RPOrig.countSumDivisibleBy n d h_precond = RPRef.countSumDivisibleBy n d h_precond : Prop\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:59:90: error: type mismatch\n  rfl\nhas type\n  ?m.6799 = ?m.6799 : Prop\nbut is expected to have type\n  RPOrig.countSumDivisibleBy n d h_precond = RPRef.countSumDivisibleBy n d h_precond : Prop\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:64:2: error: tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n          x.1 acc')\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n          x.1 acc')\n        f)\n    0\nn d : Nat\nh_precond : countSumDivisibleBy_precond n d\n⊢ Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n            x.1 acc')\n          f)\n      0 =\n    Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n            x.1 acc')\n          f)\n      0\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:72:256: error: tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n          x.1 acc')\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n          x.1 acc')\n        f)\n    0\nn d : Nat\nh_precond : countSumDivisibleBy_precond n d\n⊢ Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n            x.1 acc')\n          f)\n      0 =\n    Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n            x.1 acc')\n          f)\n      0\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:67:90: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:67:90: error: unknown metavariable '?_uniq.11834'\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:80:251: error: tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n          x.1 acc')\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n          x.1 acc')\n        f)\n    0\nn d : Nat\nh_precond : countSumDivisibleBy_precond n d\n⊢ Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n            x.1 acc')\n          f)\n      0 =\n    Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n            x.1 acc')\n          f)\n      0\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:75:90: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:75:90: error: unknown metavariable '?_uniq.14878'\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:84:272: error: tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n          x.1 acc')\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n          x.1 acc')\n        f)\n    0\nn d : Nat\nh_precond : countSumDivisibleBy_precond n d\n⊢ Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n            x.1 acc')\n          f)\n      0 =\n    Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n            x.1 acc')\n          f)\n      0\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:83:90: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T3_comm_swap__0.lean:83:90: error: unknown metavariable '?_uniq.16009'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.149,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 17,
+   "col": 33,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 30,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 42,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 55,
+   "col": 90,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.6671 = ?m.6671 : Prop\nbut is expected to have type\n  RPOrig.countSumDivisibleBy n d h_precond = RPRef.countSumDivisibleBy n d h_precond : Prop"
+  },
+  {
+   "line": 59,
+   "col": 90,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.6799 = ?m.6799 : Prop\nbut is expected to have type\n  RPOrig.countSumDivisibleBy n d h_precond = RPRef.countSumDivisibleBy n d h_precond : Prop"
+  },
+  {
+   "line": 64,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n          x.1 acc')\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n          x.1 acc')\n        f)\n    0\nn d : Nat\nh_precond : countSumDivisibleBy_precond n d\n⊢ Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n            x.1 acc')\n          f)\n      0 =\n    Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n            x.1 acc')\n          f)\n      0"
+  },
+  {
+   "line": 72,
+   "col": 256,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n          x.1 acc')\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n          x.1 acc')\n        f)\n    0\nn d : Nat\nh_precond : countSumDivisibleBy_precond n d\n⊢ Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n            x.1 acc')\n          f)\n      0 =\n    Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n            x.1 acc')\n          f)\n      0"
+  },
+  {
+   "line": 67,
+   "col": 90,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 67,
+   "col": 90,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.11834'"
+  },
+  {
+   "line": 80,
+   "col": 251,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n          x.1 acc')\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n          x.1 acc')\n        f)\n    0\nn d : Nat\nh_precond : countSumDivisibleBy_precond n d\n⊢ Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n            x.1 acc')\n          f)\n      0 =\n    Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n            x.1 acc')\n          f)\n      0"
+  },
+  {
+   "line": 75,
+   "col": 90,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 75,
+   "col": 90,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.14878'"
+  },
+  {
+   "line": 84,
+   "col": 272,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n          x.1 acc')\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun i => Nat → Nat) n\n    (fun i f acc =>\n      (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n        | 0 => fun x => acc\n        | i'.succ => fun x =>\n          let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n          x.1 acc')\n        f)\n    0\nn d : Nat\nh_precond : countSumDivisibleBy_precond n d\n⊢ Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then acc + 1 else acc;\n            x.1 acc')\n          f)\n      0 =\n    Nat.brecOn (motive := fun i => Nat → Nat) n\n      (fun i f acc =>\n        (match (motive := (i : Nat) → Nat.below (motive := fun i => Nat → Nat) i → Nat) i with\n          | 0 => fun x => acc\n          | i'.succ => fun x =>\n            let acc' := if isSumDivisibleBy i' d = true then 1 + acc else acc;\n            x.1 acc')\n          f)\n      0"
+  },
+  {
+   "line": 83,
+   "col": 90,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 83,
+   "col": 90,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.16009'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

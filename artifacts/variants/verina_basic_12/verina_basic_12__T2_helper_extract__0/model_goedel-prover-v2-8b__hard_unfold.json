@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_12",
+ "variant_id": "verina_basic_12__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__hard_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.09,
+ "proof_region_errors": [
+  "unsolved goals\ncase left\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\n⊢ cubeSurfaceArea__rp_helper_67e54167 size h_precond - 6 * size * size = 0\n\ncase right\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\n⊢ 6 * size * size - cubeSurfaceArea__rp_helper_67e54167 size h_precond = 0\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "b2bd5c1956c6456c2610f159e109f232a8f1f4f7a5cfa9f1d3fb36ae941502fc",
+ "spec_hash": "35aa279200d65ed096def6c82bb7a725efca6faffdd9afab3f82ec84271da3ca",
+ "proof_text": "  unfold cubeSurfaceArea cubeSurfaceArea_postcond\n  have h1 : 6 * size * size - (6 * size * size) = 0 := by\n    have h₁ : 6 * size * size ≥ 0 := by positivity\n    have h₂ : 6 * size * size - (6 * size * size) = 0 := by\n      simp [Nat.sub_self]\n    exact h₂\n\n  have h2 : 6 * size * size - (6 * size * size) = 0 := by\n    have h₂ : 6 * size * size - (6 * size * size) = 0 := by\n      simp [Nat.sub_self]\n    exact h₂\n\n  simp_all [cubeSurfaceArea, cubeSurfaceArea_postcond, cubeSurfaceArea_precond]\n  <;> aesop\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "hard_unfold"
+}

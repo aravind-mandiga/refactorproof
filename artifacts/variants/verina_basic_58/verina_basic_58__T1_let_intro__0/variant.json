@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_58",
+ "variant_id": "verina_basic_58__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_a673ff49 : Array Int :=\n    double_array_elements_aux s s 0\n  __rp_tmp_a673ff49\n",
+ "transformed_code_aux": "def double_array_elements_aux (s_old s : Array Int) (i : Nat) : Array Int :=\n  if i < s.size then\n    let new_s := s.set! i (2 * (s_old[i]!))\n    double_array_elements_aux s_old new_s (i + 1)\n  else\n    s\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_a673ff49",
+  "seed": 0
+ },
+ "spec_hash": "ab44a8d21dc1ad68d151e89bd8a1b19992164ca810d1366369d9218a16f5c199",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "52cccce05e59a8cbb5a646434699a24e811b52fa11f6d8e3a22eb1615c59aa6b",
+ "code_aux_hash_original": "3dbcab514aacbdef4d3a85803b1274480d7c51b8a5f93dda619cb84a4ffeef53",
+ "tier": "basic",
+ "function_name": "double_array_elements",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean:16:29: warning: unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean:24:62: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean:24:12: warning: The declaration 'cubeSurfaceArea__rp_helper_67e54167' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean:41:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean:56:68: error: unsolved goals\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\n⊢ cubeSurfaceArea__rp_helper_67e54167 size h_precond = 6 * size * size\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean:66:68: error: unsolved goals\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\nh₁ : cubeSurfaceArea size h_precond - 6 * size * size = 0\n⊢ cubeSurfaceArea__rp_helper_67e54167 size h_precond = 6 * size * size\n",
+ "stderr": "",
+ "elapsed_seconds": 10.155,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 62,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'cubeSurfaceArea__rp_helper_67e54167' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 41,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 56,
+   "col": 68,
+   "severity": "error",
+   "text": "unsolved goals\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\n⊢ cubeSurfaceArea__rp_helper_67e54167 size h_precond = 6 * size * size"
+  },
+  {
+   "line": 66,
+   "col": 68,
+   "severity": "error",
+   "text": "unsolved goals\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\nh₁ : cubeSurfaceArea size h_precond - 6 * size * size = 0\n⊢ cubeSurfaceArea__rp_helper_67e54167 size h_precond = 6 * size * size\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

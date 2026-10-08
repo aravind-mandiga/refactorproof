@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_21",
+ "variant_id": "verina_basic_21__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  isSublist__rp_helper_dfffab77 sub main h_precond\n",
+ "transformed_code_aux": "\nprivate def isSublist__rp_helper_dfffab77 (sub : List Int) (main : List Int) (h_precond : isSublist_precond (sub) (main)) : Bool :=\n  let subLen := sub.length\n  let mainLen := main.length\n  if subLen > mainLen then\n    false\n  else\n    let rec check (i : Nat) : Bool :=\n      if i + subLen > mainLen then\n        false\n      else if sub = (main.drop i).take subLen then\n        true\n      else if i + 1 ≤ mainLen then\n        check (i + 1)\n      else\n        false\n    termination_by mainLen - i\n    check 0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "isSublist__rp_helper_dfffab77"
+ ],
+ "metadata": {
+  "binders": [
+   "sub",
+   "main",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "4d17e3cf047cf016d4c24ad56131ad6fb0b611ebcd25935082b3100e0ec1ef40",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "13ee096f03b3bb3b04f77b5aca37001124515dc946b4c45fa78b4e55ede2ce21",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "isSublist",
+ "code_loc_original": 16,
+ "code_loc_refactored": 18
+}

@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_2/verina_basic_5__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_2/verina_basic_5__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_2/verina_basic_5__T3_comm_swap__0.lean:16:22: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_2/verina_basic_5__T3_comm_swap__0.lean:16:32: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_2/verina_basic_5__T3_comm_swap__0.lean:27:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_2/verina_basic_5__T3_comm_swap__0.lean:39:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_2/verina_basic_5__T3_comm_swap__0.lean:54:52: error: unsolved goals\na b : ℤ\n⊢ b * a = a * b\n",
+ "stderr": "",
+ "elapsed_seconds": 9.918,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 16,
+   "col": 32,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 27,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 54,
+   "col": 52,
+   "severity": "error",
+   "text": "unsolved goals\na b : ℤ\n⊢ b * a = a * b\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

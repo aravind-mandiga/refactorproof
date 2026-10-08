@@ -1,0 +1,55 @@
+{
+ "task_id": "verina_advanced_52",
+ "variant_id": "verina_advanced_52__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "transformed_code": "  -- edge case k=0, requires 0 operations\n  if ¬ (k == 0) then\n  -- recursive helper function\n  let rec loop (remaining : List Nat) (collected : List Nat) (collected_count : Nat) (ops : Nat) : Nat :=\n    match remaining with\n    | [] => ops -- base case\n    | head :: tail =>\n      let ops' := ops + 1\n      -- check if the element is relevant (1 <= head <= k) and not already collected\n      -- use a list `collected` to keep track of unique numbers found so far\n      if head > 0 && head <= k && !(List.elem head collected) then\n          let collected' := head :: collected -- add new unique element to our tracking list\n          let collected_count' := collected_count + 1\n          if collected_count' == k then\n            ops' -- found all k distinct required numbers\n          else\n            loop tail collected' collected_count' ops' -- continue searching, count increased\n      else\n        -- element is irrelevant (> k), zero/negative, or a duplicate (already in `collected`)\n        loop tail collected collected_count ops' -- continue searching, count not increased\n  -- start the loop, initially empty collection, 0 count, 0 operations\n  loop nums.reverse [] 0 0\n  else 0\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [
+  "ite_not"
+ ],
+ "helper_names": [],
+ "metadata": {
+  "law_sets": [
+   [
+    "ite_not"
+   ],
+   [
+    "ite_not",
+    "Bool.not_eq_true",
+    "decide_not",
+    "Nat.not_lt",
+    "Nat.not_le",
+    "Int.not_lt",
+    "Int.not_le"
+   ]
+  ],
+  "condition": "k == 0",
+  "then_multiline": false,
+  "seed": 0
+ },
+ "extra_levels": [
+  [
+   "bycases",
+   "by_cases h : (k == 0) <;> (try simp [h, {DEFS}]) <;> {CLOSER}"
+  ],
+  [
+   "bycases_ite",
+   "by_cases h : (k == 0) <;> (try simp [h, ite_not, {DEFS}]) <;> {CLOSER}"
+  ],
+  [
+   "split_simp_all",
+   "simp only [{DEFS}]; split <;> (try simp_all) <;> {CLOSER}"
+  ]
+ ],
+ "spec_hash": "065ae21f0ef5e0b77e6bbc9f799b0917574fee1b5c5afe7036ee086a6531484c",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "bc4f0d21d89b272011d4cdebf42eb3dd03f9aa3051128eeabcf5feaa12e0bfd8",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "minOperations",
+ "code_loc_original": 16,
+ "code_loc_refactored": 17
+}

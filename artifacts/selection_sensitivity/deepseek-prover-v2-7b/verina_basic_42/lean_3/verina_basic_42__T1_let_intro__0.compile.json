@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_42/lean_3/verina_basic_42__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_42/lean_3/verina_basic_42__T1_let_intro__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_42/lean_3/verina_basic_42__T1_let_intro__0.lean:17:25: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_42/lean_3/verina_basic_42__T1_let_intro__0.lean:28:30: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_42/lean_3/verina_basic_42__T1_let_intro__0.lean:42:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_42/lean_3/verina_basic_42__T1_let_intro__0.lean:60:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_42/lean_3/verina_basic_42__T1_let_intro__0.lean:65:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_42/lean_3/verina_basic_42__T1_let_intro__0.lean:60:4: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_42/lean_3/verina_basic_42__T1_let_intro__0.lean:65:4: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 9.283,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 17,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 30,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 42,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 60,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 65,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 4,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 65,
+   "col": 4,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

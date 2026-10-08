@@ -1,0 +1,11 @@
+--- deepseek-prover-v2-7b:verina_basic_100__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_100__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : ((Triple (x) h_precond) / 3 = x) ∧ ((Triple (x) h_precond) / 3 * 3 = Triple (x) h_precond) := by
+-    dsimp [Triple, Triple_precond, Triple_postcond]
++    dsimp [Triple, Triple_precond, Triple_postcond, Triple__rp_helper_574d859a]
+     split_ifs <;> simp_all [Int.mul_emod, Int.add_emod, Int.emod_emod]
+     <;>
+     (try omega) <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

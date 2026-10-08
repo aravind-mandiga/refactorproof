@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_27",
+ "variant_id": "verina_basic_27__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_188cb1b2 : Option Char :=\n    let cs := s.toList\n    let rec loop (i : Nat) (seen : Std.HashSet Char) : Option Char :=\n      if i < cs.length then\n        let c := cs[i]!\n        if seen.contains c then\n          some c\n        else\n          loop (i + 1) (seen.insert c)\n      else\n        -- When no repeated char is found, return (false, arbitrary char)\n        none\n    loop 0 Std.HashSet.empty\n  __rp_tmp_188cb1b2\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_188cb1b2",
+  "seed": 0
+ },
+ "spec_hash": "e14383abbe2f43d2753a8b44469d4247fd6dfc8b867ba36d15bc167b109f123d",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "de654791210840a1c65bdc906a793ce3bc9d8a4096c24b48dc95d0da4c6592a8",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "findFirstRepeatedChar",
+ "code_loc_original": 11,
+ "code_loc_refactored": 13
+}

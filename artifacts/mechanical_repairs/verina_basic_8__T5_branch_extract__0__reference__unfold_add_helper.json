@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_8__T5_branch_extract__0",
+ "task_id": "verina_basic_8",
+ "source": "reference",
+ "transformation": "T5_branch_extract",
+ "template": "unfold_add_helper",
+ "function_name": "myMin",
+ "helper": "myMin__rp_branch_c77e3e9a",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold myMin myMin_postcond\n  constructor\n  \u00b7 split\n    case left.isTrue h =>\n      simp\n      exact h\n    case left.isFalse h =>\n      simp\n      rw [Int.not_le] at h\n      exact Int.le_of_lt h\n  \u00b7 split <;> simp\n",
+ "proof_after": "  unfold myMin myMin__rp_branch_c77e3e9a myMin_postcond\n  constructor\n  \u00b7 split\n    case left.isTrue h =>\n      simp\n      exact h\n    case left.isFalse h =>\n      simp\n      rw [Int.not_le] at h\n      exact Int.le_of_lt h\n  \u00b7 split <;> simp\n"
+}

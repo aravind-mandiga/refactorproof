@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_1",
+ "variant_id": "verina_advanced_1__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  FindSingleNumber__rp_helper_cec7bc45 nums h_precond\n",
+ "transformed_code_aux": "\nprivate def FindSingleNumber__rp_helper_cec7bc45 (nums : List Int) (h_precond : FindSingleNumber_precond (nums)) : Int :=\n  let rec findUnique (remaining : List Int) : Int :=\n    match remaining with\n    | [] =>\n      0\n    | x :: xs =>\n      let filtered : List Int :=\n        filterlist x nums\n      let count : Nat :=\n        filtered.length\n      if count = 1 then\n        x\n      else\n        findUnique xs\n  findUnique nums\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "FindSingleNumber__rp_helper_cec7bc45"
+ ],
+ "metadata": {
+  "binders": [
+   "nums",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "2d578cc1a2597ff416983309b7410b9d51faaf4e2a2f0a13d9263b77f53facdb",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "6b9a4395d37e23c1a35326c840a7843d731f70c6aacca18c426fa403f1b06af7",
+ "code_aux_hash_original": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "tier": "advanced",
+ "function_name": "FindSingleNumber",
+ "code_loc_original": 14,
+ "code_loc_refactored": 16
+}

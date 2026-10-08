@@ -1,0 +1,10 @@
+--- reference:verina_basic_13__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_13__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold cubeElements cubeElements_postcond
++  unfold cubeElements cubeElements__rp_helper_2cb44842 cubeElements_postcond
+   simp_all
+   intro i hi
+   have h_maplen : (Array.map (fun x => x * x * x) a).size = a.size := by
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

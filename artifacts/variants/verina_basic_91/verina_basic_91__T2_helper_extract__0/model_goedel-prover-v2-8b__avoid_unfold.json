@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_91",
+ "variant_id": "verina_basic_91__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__avoid_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "simp_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.977,
+ "proof_region_errors": [
+  "simp_all made no progress",
+  "simp_all made no progress\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "3221b6661f2ada8a94c2d0a81d935aec8f92aed717ec3635b67015b59c012d01",
+ "spec_hash": "590c7e16696da262a23fc9280a6e4bbb0efa987345d34f6ae93bdb47eb9f202b",
+ "proof_text": "  have h₁ : (Swap (X) (Y) h_precond).fst = Y := by\n    dsimp [Swap]\n    <;> simp_all [Prod.fst]\n    <;> aesop\n\n  have h₂ : (Swap (X) (Y) h_precond).snd = X := by\n    dsimp [Swap]\n    <;> simp_all [Prod.snd]\n    <;> aesop\n\n  have h₃ : X ≠ Y → (Swap (X) (Y) h_precond).fst ≠ X ∧ (Swap (X) (Y) h_precond).snd ≠ Y := by\n    intro h_ne\n    dsimp [Swap] at *\n    constructor <;> simp_all [Prod.fst, Prod.snd]\n    <;>\n    (try omega) <;>\n    (try aesop) <;>\n    (try\n      {\n        intro h\n        apply h_ne\n        <;> omega\n      })\n\n  dsimp [Swap_postcond, Swap_precond] at *\n  <;> simp_all\n  <;> aesop\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "avoid_unfold"
+}

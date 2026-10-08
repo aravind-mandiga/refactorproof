@@ -1,0 +1,109 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:14:29: warning: unused variable `arr`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:23:39: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:37:39: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:52:82: error: type mismatch\n  rfl\nhas type\n  ?m.48583 = ?m.48583 : Prop\nbut is expected to have type\n  RPOrig.FindEvenNumbers arr h_precond = RPRef.FindEvenNumbers arr h_precond : Prop\nartifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:56:82: error: type mismatch\n  rfl\nhas type\n  ?m.48677 = ?m.48677 : Prop\nbut is expected to have type\n  RPOrig.FindEvenNumbers arr h_precond = RPRef.FindEvenNumbers arr h_precond : Prop\nartifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:61:2: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\nis not definitionally equal to the right-hand side\n  RPRef.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\narr : Array Int\nh_precond : FindEvenNumbers_precond arr\n⊢ RPOrig.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩ =\n    RPRef.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\nartifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:69:236: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\nis not definitionally equal to the right-hand side\n  RPRef.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\narr : Array Int\nh_precond : FindEvenNumbers_precond arr\n⊢ RPOrig.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩ =\n    RPRef.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\nartifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:64:82: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:64:82: error: unknown metavariable '?_uniq.61380'\nartifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:77:231: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.FindEvenNumbers.loop._unary arr ⟨0, #[]⟩\nis not definitionally equal to the right-hand side\n  RPRef.FindEvenNumbers.loop._unary arr ⟨0, #[]⟩\narr : Array Int\nh_precond : FindEvenNumbers_precond arr\n⊢ RPOrig.FindEvenNumbers.loop._unary arr ⟨0, #[]⟩ = RPRef.FindEvenNumbers.loop._unary arr ⟨0, #[]⟩\nartifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:72:82: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:72:82: error: unknown metavariable '?_uniq.73660'\nartifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:81:252: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\nis not definitionally equal to the right-hand side\n  RPRef.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\narr : Array Int\nh_precond : FindEvenNumbers_precond arr\n⊢ RPOrig.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩ =\n    RPRef.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\nartifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:80:82: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_60/verina_basic_60__T3_comm_swap__0.lean:80:82: error: unknown metavariable '?_uniq.77603'\n",
+ "stderr": "",
+ "elapsed_seconds": 2.213,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `arr`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 37,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 52,
+   "col": 82,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.48583 = ?m.48583 : Prop\nbut is expected to have type\n  RPOrig.FindEvenNumbers arr h_precond = RPRef.FindEvenNumbers arr h_precond : Prop"
+  },
+  {
+   "line": 56,
+   "col": 82,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.48677 = ?m.48677 : Prop\nbut is expected to have type\n  RPOrig.FindEvenNumbers arr h_precond = RPRef.FindEvenNumbers arr h_precond : Prop"
+  },
+  {
+   "line": 61,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\nis not definitionally equal to the right-hand side\n  RPRef.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\narr : Array Int\nh_precond : FindEvenNumbers_precond arr\n⊢ RPOrig.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩ =\n    RPRef.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩"
+  },
+  {
+   "line": 69,
+   "col": 236,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\nis not definitionally equal to the right-hand side\n  RPRef.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\narr : Array Int\nh_precond : FindEvenNumbers_precond arr\n⊢ RPOrig.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩ =\n    RPRef.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩"
+  },
+  {
+   "line": 64,
+   "col": 82,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 64,
+   "col": 82,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.61380'"
+  },
+  {
+   "line": 77,
+   "col": 231,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.FindEvenNumbers.loop._unary arr ⟨0, #[]⟩\nis not definitionally equal to the right-hand side\n  RPRef.FindEvenNumbers.loop._unary arr ⟨0, #[]⟩\narr : Array Int\nh_precond : FindEvenNumbers_precond arr\n⊢ RPOrig.FindEvenNumbers.loop._unary arr ⟨0, #[]⟩ = RPRef.FindEvenNumbers.loop._unary arr ⟨0, #[]⟩"
+  },
+  {
+   "line": 72,
+   "col": 82,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 72,
+   "col": 82,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.73660'"
+  },
+  {
+   "line": 81,
+   "col": 252,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\nis not definitionally equal to the right-hand side\n  RPRef.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩\narr : Array Int\nh_precond : FindEvenNumbers_precond arr\n⊢ RPOrig.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩ =\n    RPRef.FindEvenNumbers.loop._unary arr ⟨0, Array.mkEmpty 0⟩"
+  },
+  {
+   "line": 80,
+   "col": 82,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 80,
+   "col": 82,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.77603'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

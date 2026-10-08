@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_qwen3-32b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_qwen3-32b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_qwen3-32b.lean:15:29: warning: unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_qwen3-32b.lean:26:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_qwen3-32b.lean:38:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_qwen3-32b.lean:50:84: error: unsolved goals\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\n⊢ size * (6 * size) - 6 * (size * size) = 0 ∧ 6 * (size * size) - size * (6 * size) = 0\n",
+ "stderr": "",
+ "elapsed_seconds": 1.65,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 50,
+   "col": 84,
+   "severity": "error",
+   "text": "unsolved goals\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\n⊢ size * (6 * size) - 6 * (size * size) = 0 ∧ 6 * (size * size) - size * (6 * size) = 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

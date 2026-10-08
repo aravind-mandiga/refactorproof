@@ -1,0 +1,55 @@
+{
+ "task_id": "verina_basic_39",
+ "variant_id": "verina_basic_39__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "transformed_code": "  let len := l.length\n  if ¬ (len = 0) then\n    (List.range len).map (fun i : Nat =>\n      let idx_int : Int := ((Int.ofNat i - Int.ofNat n + Int.ofNat len) % Int.ofNat len)\n      let idx_nat : Nat := Int.toNat idx_int\n      l.getD idx_nat (l.headD 0)\n    )\n  else l\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [
+  "ite_not"
+ ],
+ "helper_names": [],
+ "metadata": {
+  "law_sets": [
+   [
+    "ite_not"
+   ],
+   [
+    "ite_not",
+    "Bool.not_eq_true",
+    "decide_not",
+    "Nat.not_lt",
+    "Nat.not_le",
+    "Int.not_lt",
+    "Int.not_le"
+   ]
+  ],
+  "condition": "len = 0",
+  "then_multiline": true,
+  "seed": 0
+ },
+ "extra_levels": [
+  [
+   "bycases",
+   "by_cases h : (len = 0) <;> (try simp [h, {DEFS}]) <;> {CLOSER}"
+  ],
+  [
+   "bycases_ite",
+   "by_cases h : (len = 0) <;> (try simp [h, ite_not, {DEFS}]) <;> {CLOSER}"
+  ],
+  [
+   "split_simp_all",
+   "simp only [{DEFS}]; split <;> (try simp_all) <;> {CLOSER}"
+  ]
+ ],
+ "spec_hash": "e1971ef4180087ef161b3b6d7d4350640adbb3ab9a48ff1725bb4605ec3f33ec",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "8e7bbb2d18481830d84dc38ec1f6ecd996b0937e02b7e8ba55b3126ea3bf9d20",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "rotateRight",
+ "code_loc_original": 8,
+ "code_loc_refactored": 8
+}

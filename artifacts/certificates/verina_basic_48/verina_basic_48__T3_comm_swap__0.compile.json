@@ -1,0 +1,97 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean:14:29: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean:54:58: error: type mismatch\n  rfl\nhas type\n  ?m.1104 = ?m.1104 : Prop\nbut is expected to have type\n  RPOrig.isPerfectSquare n = RPRef.isPerfectSquare n : Prop\nartifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean:58:58: error: type mismatch\n  rfl\nhas type\n  ?m.1676 = ?m.1676 : Prop\nbut is expected to have type\n  RPOrig.isPerfectSquare n = RPRef.isPerfectSquare n : Prop\nartifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean:63:2: error: tactic 'rfl' failed, the left-hand side\n  if n = 0 then true\n  else\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n          f)\n      1\nis not definitionally equal to the right-hand side\n  if n = 0 then true\n  else\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n          f)\n      1\nn : ℕ\n⊢ (if n = 0 then true\n    else\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n            f)\n        1) =\n    if n = 0 then true\n    else\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n            f)\n        1\nartifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean:71:238: error: tactic 'rfl' failed, the left-hand side\n  if n = 0 then true\n  else\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n          f)\n      1\nis not definitionally equal to the right-hand side\n  if n = 0 then true\n  else\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n          f)\n      1\nn : ℕ\n⊢ (if n = 0 then true\n    else\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n            f)\n        1) =\n    if n = 0 then true\n    else\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n            f)\n        1\nartifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean:66:58: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean:66:58: error: unknown metavariable '?_uniq.10684'\nartifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean:79:233: error: tactic 'rfl' failed, the left-hand side\n  decide (n = 0) ||\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n          f)\n      1\nis not definitionally equal to the right-hand side\n  decide (n = 0) ||\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n          f)\n      1\nn : ℕ\n⊢ (decide (n = 0) ||\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n            f)\n        1) =\n    (decide (n = 0) ||\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n            f)\n        1)\nartifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean:74:58: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean:74:58: error: unknown metavariable '?_uniq.18052'\nartifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean:83:254: error: tactic 'rfl' failed, the left-hand side\n  if n = 0 then true\n  else\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n          f)\n      1\nis not definitionally equal to the right-hand side\n  if n = 0 then true\n  else\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n          f)\n      1\nn : ℕ\n⊢ (if n = 0 then true\n    else\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n            f)\n        1) =\n    if n = 0 then true\n    else\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n            f)\n        1\nartifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean:82:58: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_48/verina_basic_48__T3_comm_swap__0.lean:82:58: error: unknown metavariable '?_uniq.19957'\n",
+ "stderr": "",
+ "elapsed_seconds": 6.101,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 54,
+   "col": 58,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1104 = ?m.1104 : Prop\nbut is expected to have type\n  RPOrig.isPerfectSquare n = RPRef.isPerfectSquare n : Prop"
+  },
+  {
+   "line": 58,
+   "col": 58,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1676 = ?m.1676 : Prop\nbut is expected to have type\n  RPOrig.isPerfectSquare n = RPRef.isPerfectSquare n : Prop"
+  },
+  {
+   "line": 63,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if n = 0 then true\n  else\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n          f)\n      1\nis not definitionally equal to the right-hand side\n  if n = 0 then true\n  else\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n          f)\n      1\nn : ℕ\n⊢ (if n = 0 then true\n    else\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n            f)\n        1) =\n    if n = 0 then true\n    else\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n            f)\n        1"
+  },
+  {
+   "line": 71,
+   "col": 238,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if n = 0 then true\n  else\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n          f)\n      1\nis not definitionally equal to the right-hand side\n  if n = 0 then true\n  else\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n          f)\n      1\nn : ℕ\n⊢ (if n = 0 then true\n    else\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n            f)\n        1) =\n    if n = 0 then true\n    else\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n            f)\n        1"
+  },
+  {
+   "line": 66,
+   "col": 58,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 66,
+   "col": 58,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.10684'"
+  },
+  {
+   "line": 79,
+   "col": 233,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  decide (n = 0) ||\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n          f)\n      1\nis not definitionally equal to the right-hand side\n  decide (n = 0) ||\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n          f)\n      1\nn : ℕ\n⊢ (decide (n = 0) ||\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n            f)\n        1) =\n    (decide (n = 0) ||\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n            f)\n        1)"
+  },
+  {
+   "line": 74,
+   "col": 58,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 74,
+   "col": 58,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.18052'"
+  },
+  {
+   "line": 83,
+   "col": 254,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if n = 0 then true\n  else\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n          f)\n      1\nis not definitionally equal to the right-hand side\n  if n = 0 then true\n  else\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n          f)\n      1\nn : ℕ\n⊢ (if n = 0 then true\n    else\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n            f)\n        1) =\n    if n = 0 then true\n    else\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (1 + x))\n            f)\n        1"
+  },
+  {
+   "line": 82,
+   "col": 58,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 82,
+   "col": 58,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.19957'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

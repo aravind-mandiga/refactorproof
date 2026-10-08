@@ -1,0 +1,37 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_30/verina_basic_30__T2_helper_extract__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_30/verina_basic_30__T2_helper_extract__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_30/verina_basic_30__T2_helper_extract__0/reference.lean:23:83: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_30/verina_basic_30__T2_helper_extract__0/reference.lean:40:84: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_30/verina_basic_30__T2_helper_extract__0/reference.lean:58:8: error: tactic 'introN' failed, insufficient number of binders\na b : Array Int\nh_precond : a.size = b.size ∧ a.size > 0 ∧ ∀ (i : Nat), i < b.size → b[i]! ≠ 0\n⊢ (elementWiseModulo__rp_helper_81e2cf70 a b h_precond).size = b.size ∧\n    ∀ (i : Nat),\n      i < (elementWiseModulo__rp_helper_81e2cf70 a b h_precond).size →\n        (elementWiseModulo__rp_helper_81e2cf70 a b h_precond)[i]! = a[i]! % b[i]!\n",
+ "stderr": "",
+ "elapsed_seconds": 0.674,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 23,
+   "col": 83,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 40,
+   "col": 84,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 8,
+   "severity": "error",
+   "text": "tactic 'introN' failed, insufficient number of binders\na b : Array Int\nh_precond : a.size = b.size ∧ a.size > 0 ∧ ∀ (i : Nat), i < b.size → b[i]! ≠ 0\n⊢ (elementWiseModulo__rp_helper_81e2cf70 a b h_precond).size = b.size ∧\n    ∀ (i : Nat),\n      i < (elementWiseModulo__rp_helper_81e2cf70 a b h_precond).size →\n        (elementWiseModulo__rp_helper_81e2cf70 a b h_precond)[i]! = a[i]! % b[i]!\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

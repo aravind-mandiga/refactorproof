@@ -1,0 +1,10 @@
+--- reference:verina_basic_76__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_76__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold myMin_postcond myMin
++  unfold myMin_postcond myMin myMin__rp_helper_5e5dcb4d
+   simp
+   have h_left : (x ≤ y → y ≤ x → y = x) := by
+     intro h₁ h₂
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

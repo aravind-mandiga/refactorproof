@@ -1,0 +1,127 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:14:27: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:25:29: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:39:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:77:2: warning: try 'simp' instead of 'simpa'\nnote: this linter can be disabled with `set_option linter.unnecessarySimpa false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:60:12: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:60:22: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:61:12: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:71:12: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:74:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:74:20: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:75:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:60:12: warning: 'split' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:60:22: warning: 'simp_all (config := { contextual := true }) [Int.emod_eq_emod_iff_emod_sub_eq_zero]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:61:12: warning: 'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:71:12: warning: 'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:74:10: warning: 'split' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:74:20: warning: 'simp_all (config := { contextual := true }) [Int.emod_eq_emod_iff_emod_sub_eq_zero]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_66/lean_2/verina_basic_66__T1_let_intro__0.lean:75:10: warning: 'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 10.483,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 27,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 77,
+   "col": 2,
+   "severity": "warning",
+   "text": "try 'simp' instead of 'simpa'\nnote: this linter can be disabled with `set_option linter.unnecessarySimpa false`"
+  },
+  {
+   "line": 60,
+   "col": 12,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 22,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 12,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 71,
+   "col": 12,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 74,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 74,
+   "col": 20,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 75,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 12,
+   "severity": "warning",
+   "text": "'split' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 22,
+   "severity": "warning",
+   "text": "'simp_all (config := { contextual := true }) [Int.emod_eq_emod_iff_emod_sub_eq_zero]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 12,
+   "severity": "warning",
+   "text": "'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 71,
+   "col": 12,
+   "severity": "warning",
+   "text": "'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 74,
+   "col": 10,
+   "severity": "warning",
+   "text": "'split' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 74,
+   "col": 20,
+   "severity": "warning",
+   "text": "'simp_all (config := { contextual := true }) [Int.emod_eq_emod_iff_emod_sub_eq_zero]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 75,
+   "col": 10,
+   "severity": "warning",
+   "text": "'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

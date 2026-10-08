@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_92/lean_2/verina_basic_92__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_92/lean_2/verina_basic_92__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_92/lean_2/verina_basic_92__T2_helper_extract__0.lean:15:28: warning: unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_92/lean_2/verina_basic_92__T2_helper_extract__0.lean:15:38: warning: unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_92/lean_2/verina_basic_92__T2_helper_extract__0.lean:23:68: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_92/lean_2/verina_basic_92__T2_helper_extract__0.lean:23:12: warning: The declaration 'SwapArithmetic__rp_helper_2265221a' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_92/lean_2/verina_basic_92__T2_helper_extract__0.lean:45:71: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_92/lean_2/verina_basic_92__T2_helper_extract__0.lean:91:4: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_92/lean_2/verina_basic_92__T2_helper_extract__0.lean:60:96: error: unsolved goals\ncase left\nX Y : ℤ\nh_precond : SwapArithmetic_precond X Y\n⊢ (SwapArithmetic__rp_helper_2265221a X Y h_precond).1 = Y\n\ncase right.left\nX Y : ℤ\nh_precond : SwapArithmetic_precond X Y\n⊢ (SwapArithmetic__rp_helper_2265221a X Y h_precond).2 = X\n\ncase right.right.left.h\nX Y : ℤ\nh_precond : SwapArithmetic_precond X Y\na : ¬X = Y\na_1 : (SwapArithmetic__rp_helper_2265221a X Y h_precond).1 = X\n⊢ False\n\ncase right.right.right.h\nX Y : ℤ\nh_precond : SwapArithmetic_precond X Y\na : ¬X = Y\na_1 : (SwapArithmetic__rp_helper_2265221a X Y h_precond).2 = Y\n⊢ False\n",
+ "stderr": "",
+ "elapsed_seconds": 10.948,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 38,
+   "severity": "warning",
+   "text": "unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 68,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'SwapArithmetic__rp_helper_2265221a' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 45,
+   "col": 71,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 91,
+   "col": 4,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 60,
+   "col": 96,
+   "severity": "error",
+   "text": "unsolved goals\ncase left\nX Y : ℤ\nh_precond : SwapArithmetic_precond X Y\n⊢ (SwapArithmetic__rp_helper_2265221a X Y h_precond).1 = Y\n\ncase right.left\nX Y : ℤ\nh_precond : SwapArithmetic_precond X Y\n⊢ (SwapArithmetic__rp_helper_2265221a X Y h_precond).2 = X\n\ncase right.right.left.h\nX Y : ℤ\nh_precond : SwapArithmetic_precond X Y\na : ¬X = Y\na_1 : (SwapArithmetic__rp_helper_2265221a X Y h_precond).1 = X\n⊢ False\n\ncase right.right.right.h\nX Y : ℤ\nh_precond : SwapArithmetic_precond X Y\na : ¬X = Y\na_1 : (SwapArithmetic__rp_helper_2265221a X Y h_precond).2 = Y\n⊢ False\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

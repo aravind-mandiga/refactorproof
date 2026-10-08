@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "external/verina/datasets/verina/verina_advanced_27/task.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "external/verina/datasets/verina/verina_advanced_27/task.lean",
+ "exit_code": 0,
+ "stdout": "external/verina/datasets/verina/verina_advanced_27/task.lean:13:38: warning: unused variable `s1`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nexternal/verina/datasets/verina/verina_advanced_27/task.lean:13:52: warning: unused variable `s2`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nexternal/verina/datasets/verina/verina_advanced_27/task.lean:41:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nexternal/verina/datasets/verina/verina_advanced_27/task.lean:55:84: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nexternal/verina/datasets/verina/verina_advanced_27/task.lean:70:8: warning: declaration uses 'sorry'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.553,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 38,
+   "severity": "warning",
+   "text": "unused variable `s1`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 52,
+   "severity": "warning",
+   "text": "unused variable `s2`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 41,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 55,
+   "col": 84,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 70,
+   "col": 8,
+   "severity": "warning",
+   "text": "declaration uses 'sorry'\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

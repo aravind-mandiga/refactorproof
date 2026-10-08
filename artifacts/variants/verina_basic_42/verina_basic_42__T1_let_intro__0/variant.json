@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_42",
+ "variant_id": "verina_basic_42__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_82b48cb8 : Nat :=\n    List.length (List.filter isDigit s.toList)\n  __rp_tmp_82b48cb8\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_82b48cb8",
+  "seed": 0
+ },
+ "spec_hash": "b3d6f5ca1418b1e4938883c8d0977c43b060642c3f8f37bf193d4b4106177533",
+ "proof_hash": "3b4b09ef4d0c2e2891cacae2a4ac25b7bcace5694ab6aec3b46dfd25caa6b950",
+ "code_hash_original": "0fbf69cf66224a5f0539c501bb207a50748edb21a878068b99d48e2a41cc1b5a",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "countDigits",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

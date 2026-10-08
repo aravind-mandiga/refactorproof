@@ -1,0 +1,5 @@
+{
+ "unfold_add_helper": "if the proof contains `unfold <f>`, add the generated helper name to that same unfold",
+ "simp_add_helper": "if the proof contains `simp [... <f> ...]`, add the generated helper name to that simp list",
+ "dsimp_add_helper": "if the proof contains `dsimp [... <f> ...]`, add the generated helper name to that dsimp list"
+}

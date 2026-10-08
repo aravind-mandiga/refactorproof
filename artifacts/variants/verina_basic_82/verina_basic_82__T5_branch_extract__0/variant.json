@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_82",
+ "variant_id": "verina_basic_82__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  if a.size > 0 then\n    let c := copyFrom a 1 (Array.mkEmpty (a.size - 1))\n    c\n  else\n    remove_front__rp_branch_24511c77 a h_precond\n",
+ "transformed_code_aux": "def copyFrom (a : Array Int) (i : Nat) (acc : Array Int) : Array Int :=\n  if i < a.size then\n    copyFrom a (i + 1) (acc.push (a[i]!))\n  else\n    acc\n\nprivate def remove_front__rp_branch_24511c77 (a : Array Int) (h_precond : remove_front_precond (a)) : Array Int :=\n  panic \"Precondition violation: array is empty\"\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "remove_front__rp_branch_24511c77"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "h_precond"
+  ],
+  "extracted": "else_branch",
+  "seed": 0
+ },
+ "extra_levels": [],
+ "spec_hash": "5b0f97534952693427d718fe2835684542cace047ccc8a36ed155f74aadc1677",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "bcd85f38926d3cb3b500be8b7692c15cba855079f7f39a7cad2b01d6b690eb87",
+ "code_aux_hash_original": "ace6f3f144608340e405d87013c784f475a91f8c5ad2f5276ec6f89e0ab1c9c0",
+ "tier": "basic",
+ "function_name": "remove_front",
+ "code_loc_original": 5,
+ "code_loc_refactored": 7
+}

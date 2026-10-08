@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_106/verina_basic_106__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_106/verina_basic_106__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_106/verina_basic_106__T4_cond_invert__0.lean:22:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_106/verina_basic_106__T4_cond_invert__0.lean:38:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_106/verina_basic_106__T4_cond_invert__0.lean:55:68: error: type mismatch\n  rfl\nhas type\n  ?m.40234 = ?m.40234 : Prop\nbut is expected to have type\n  RPOrig.arraySum a b h_precond = RPRef.arraySum a b h_precond : Prop\nartifacts/certificates/verina_basic_106/verina_basic_106__T4_cond_invert__0.lean:59:68: error: type mismatch\n  rfl\nhas type\n  ?m.41301 = ?m.41301 : Prop\nbut is expected to have type\n  RPOrig.arraySum a b h_precond = RPRef.arraySum a b h_precond : Prop\nartifacts/certificates/verina_basic_106/verina_basic_106__T4_cond_invert__0.lean:64:2: error: tactic 'rfl' failed, the left-hand side\n  if a.size ≠ b.size then panicWithPosWithDecl \"_stdin\" \"RPOrig.arraySum\" 24 4 \"Array lengths mismatch\"\n  else\n    let n := a.size;\n    let c := mkArray n 0;\n    RPOrig.arraySum.loop._unary a b n ⟨0, c⟩\nis not definitionally equal to the right-hand side\n  if ¬a.size ≠ b.size then\n    let n := a.size;\n    let c := mkArray n 0;\n    RPRef.arraySum.loop._unary a b n ⟨0, c⟩\n  else panicWithPosWithDecl \"_stdin\" \"RPRef.arraySum\" 49 4 \"Array lengths mismatch\"\na b : Array Int\nh_precond : arraySum_precond a b\n⊢ (if a.size ≠ b.size then panicWithPosWithDecl \"_stdin\" \"RPOrig.arraySum\" 24 4 \"Array lengths mismatch\"\n    else\n      let n := a.size;\n      let c := mkArray n 0;\n      RPOrig.arraySum.loop._unary a b n ⟨0, c⟩) =\n    if ¬a.size ≠ b.size then\n      let n := a.size;\n      let c := mkArray n 0;\n      RPRef.arraySum.loop._unary a b n ⟨0, c⟩\n    else panicWithPosWithDecl \"_stdin\" \"RPRef.arraySum\" 49 4 \"Array lengths mismatch\"\n",
+ "stderr": "",
+ "elapsed_seconds": 2.945,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 55,
+   "col": 68,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.40234 = ?m.40234 : Prop\nbut is expected to have type\n  RPOrig.arraySum a b h_precond = RPRef.arraySum a b h_precond : Prop"
+  },
+  {
+   "line": 59,
+   "col": 68,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.41301 = ?m.41301 : Prop\nbut is expected to have type\n  RPOrig.arraySum a b h_precond = RPRef.arraySum a b h_precond : Prop"
+  },
+  {
+   "line": 64,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if a.size ≠ b.size then panicWithPosWithDecl \"_stdin\" \"RPOrig.arraySum\" 24 4 \"Array lengths mismatch\"\n  else\n    let n := a.size;\n    let c := mkArray n 0;\n    RPOrig.arraySum.loop._unary a b n ⟨0, c⟩\nis not definitionally equal to the right-hand side\n  if ¬a.size ≠ b.size then\n    let n := a.size;\n    let c := mkArray n 0;\n    RPRef.arraySum.loop._unary a b n ⟨0, c⟩\n  else panicWithPosWithDecl \"_stdin\" \"RPRef.arraySum\" 49 4 \"Array lengths mismatch\"\na b : Array Int\nh_precond : arraySum_precond a b\n⊢ (if a.size ≠ b.size then panicWithPosWithDecl \"_stdin\" \"RPOrig.arraySum\" 24 4 \"Array lengths mismatch\"\n    else\n      let n := a.size;\n      let c := mkArray n 0;\n      RPOrig.arraySum.loop._unary a b n ⟨0, c⟩) =\n    if ¬a.size ≠ b.size then\n      let n := a.size;\n      let c := mkArray n 0;\n      RPRef.arraySum.loop._unary a b n ⟨0, c⟩\n    else panicWithPosWithDecl \"_stdin\" \"RPRef.arraySum\" 49 4 \"Array lengths mismatch\"\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

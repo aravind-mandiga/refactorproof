@@ -1,0 +1,67 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_63/verina_basic_63__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_63/verina_basic_63__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_63/verina_basic_63__T3_comm_swap__0.lean:51:67: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_63/verina_basic_63__T3_comm_swap__0.lean:71:67: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_63/verina_basic_63__T3_comm_swap__0.lean:92:116: error: type mismatch\n  rfl\nhas type\n  ?m.48993 = ?m.48993 : Prop\nbut is expected to have type\n  RPOrig.has_close_elements numbers threshold h_precond = RPRef.has_close_elements numbers threshold h_precond : Prop\nartifacts/certificates/verina_basic_63/verina_basic_63__T3_comm_swap__0.lean:96:116: error: type mismatch\n  rfl\nhas type\n  ?m.49091 = ?m.49091 : Prop\nbut is expected to have type\n  RPOrig.has_close_elements numbers threshold h_precond = RPRef.has_close_elements numbers threshold h_precond : Prop\nartifacts/certificates/verina_basic_63/verina_basic_63__T3_comm_swap__0.lean:103:42: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.has_close_elements numbers threshold h_precond\nis not definitionally equal to the right-hand side\n  RPRef.has_close_elements numbers threshold h_precond\nnumbers : List Float\nthreshold : Float\nh_precond : has_close_elements_precond numbers threshold\n⊢ RPOrig.has_close_elements numbers threshold h_precond = RPRef.has_close_elements numbers threshold h_precond\nartifacts/certificates/verina_basic_63/verina_basic_63__T3_comm_swap__0.lean:111:734: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.has_close_elements.outer numbers threshold numbers.length 0\nis not definitionally equal to the right-hand side\n  RPRef.has_close_elements.outer numbers threshold numbers.length 0\nnumbers : List Float\nthreshold : Float\nh_precond : has_close_elements_precond numbers threshold\n⊢ RPOrig.has_close_elements.outer numbers threshold numbers.length 0 =\n    RPRef.has_close_elements.outer numbers threshold numbers.length 0\nartifacts/certificates/verina_basic_63/verina_basic_63__T3_comm_swap__0.lean:119:729: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.has_close_elements.outer numbers threshold numbers.length 0\nis not definitionally equal to the right-hand side\n  RPRef.has_close_elements.outer numbers threshold numbers.length 0\nnumbers : List Float\nthreshold : Float\nh_precond : has_close_elements_precond numbers threshold\n⊢ RPOrig.has_close_elements.outer numbers threshold numbers.length 0 =\n    RPRef.has_close_elements.outer numbers threshold numbers.length 0\nartifacts/certificates/verina_basic_63/verina_basic_63__T3_comm_swap__0.lean:123:750: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.has_close_elements.outer numbers threshold numbers.length 0\nis not definitionally equal to the right-hand side\n  RPRef.has_close_elements.outer numbers threshold numbers.length 0\nnumbers : List Float\nthreshold : Float\nh_precond : has_close_elements_precond numbers threshold\n⊢ RPOrig.has_close_elements.outer numbers threshold numbers.length 0 =\n    RPRef.has_close_elements.outer numbers threshold numbers.length 0\n",
+ "stderr": "",
+ "elapsed_seconds": 1.834,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 51,
+   "col": 67,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 71,
+   "col": 67,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 92,
+   "col": 116,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.48993 = ?m.48993 : Prop\nbut is expected to have type\n  RPOrig.has_close_elements numbers threshold h_precond = RPRef.has_close_elements numbers threshold h_precond : Prop"
+  },
+  {
+   "line": 96,
+   "col": 116,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.49091 = ?m.49091 : Prop\nbut is expected to have type\n  RPOrig.has_close_elements numbers threshold h_precond = RPRef.has_close_elements numbers threshold h_precond : Prop"
+  },
+  {
+   "line": 103,
+   "col": 42,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.has_close_elements numbers threshold h_precond\nis not definitionally equal to the right-hand side\n  RPRef.has_close_elements numbers threshold h_precond\nnumbers : List Float\nthreshold : Float\nh_precond : has_close_elements_precond numbers threshold\n⊢ RPOrig.has_close_elements numbers threshold h_precond = RPRef.has_close_elements numbers threshold h_precond"
+  },
+  {
+   "line": 111,
+   "col": 734,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.has_close_elements.outer numbers threshold numbers.length 0\nis not definitionally equal to the right-hand side\n  RPRef.has_close_elements.outer numbers threshold numbers.length 0\nnumbers : List Float\nthreshold : Float\nh_precond : has_close_elements_precond numbers threshold\n⊢ RPOrig.has_close_elements.outer numbers threshold numbers.length 0 =\n    RPRef.has_close_elements.outer numbers threshold numbers.length 0"
+  },
+  {
+   "line": 119,
+   "col": 729,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.has_close_elements.outer numbers threshold numbers.length 0\nis not definitionally equal to the right-hand side\n  RPRef.has_close_elements.outer numbers threshold numbers.length 0\nnumbers : List Float\nthreshold : Float\nh_precond : has_close_elements_precond numbers threshold\n⊢ RPOrig.has_close_elements.outer numbers threshold numbers.length 0 =\n    RPRef.has_close_elements.outer numbers threshold numbers.length 0"
+  },
+  {
+   "line": 123,
+   "col": 750,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.has_close_elements.outer numbers threshold numbers.length 0\nis not definitionally equal to the right-hand side\n  RPRef.has_close_elements.outer numbers threshold numbers.length 0\nnumbers : List Float\nthreshold : Float\nh_precond : has_close_elements_precond numbers threshold\n⊢ RPOrig.has_close_elements.outer numbers threshold numbers.length 0 =\n    RPRef.has_close_elements.outer numbers threshold numbers.length 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

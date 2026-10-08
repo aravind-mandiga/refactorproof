@@ -1,0 +1,109 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:16:23: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:27:28: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:41:52: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:60:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:61:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:62:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:63:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:70:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:74:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:60:4: warning: '(try simp_all [containsZ_precond])' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:61:4: warning: '(try simp_all [containsZ])' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:62:4: warning: '(try aesop)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:63:4: warning: '(try\n    {by_cases h₀ : s.toList.any fun c => c = 'z' ∨ c = 'Z' <;> by_cases h₁ : ∃ x, x ∈ s.toList ∧ (x = 'z' ∨ x = 'Z') <;>\n        simp_all [List.any_iff_exists] <;>\n      aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:70:4: warning: '(try {aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_14/verina_basic_14__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:74:4: warning: '(try {simp_all [List.any_iff_exists] <;> tauto\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 10.998,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 23,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 27,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 41,
+   "col": 52,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 60,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 62,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 63,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 70,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 74,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try simp_all [containsZ_precond])' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try simp_all [containsZ])' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 62,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try aesop)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 63,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try\n    {by_cases h₀ : s.toList.any fun c => c = 'z' ∨ c = 'Z' <;> by_cases h₁ : ∃ x, x ∈ s.toList ∧ (x = 'z' ∨ x = 'Z') <;>\n        simp_all [List.any_iff_exists] <;>\n      aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 70,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 74,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {simp_all [List.any_iff_exists] <;> tauto\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

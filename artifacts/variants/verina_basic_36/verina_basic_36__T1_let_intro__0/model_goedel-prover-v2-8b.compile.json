@@ -1,0 +1,115 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:20:30: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:31:35: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:47:61: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:70:30: warning: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:72:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:78:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:79:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:89:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:93:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:100:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:72:6: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:78:6: warning: '(try aesop)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:79:6: warning: '(try\n    {by_cases h : isSpaceCommaDot (s.toList.get ⟨i, hi⟩) <;> simp_all [isSpaceCommaDot, List.get] <;>\n              (try {aesop\n                }) <;>\n            (try {simp_all [List.get]\n              }) <;>\n          (try {aesop\n            }) <;>\n        (try {simp_all [List.get]\n          }) <;>\n      (try {aesop\n        })\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:89:6: warning: '(try {aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:93:6: warning: '(try {simp_all [List.get] <;> aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_36/verina_basic_36__T1_let_intro__0/model_goedel-prover-v2-8b.lean:100:6: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 6.831,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 20,
+   "col": 30,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 31,
+   "col": 35,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 47,
+   "col": 61,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 70,
+   "col": 30,
+   "severity": "warning",
+   "text": "`List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead"
+  },
+  {
+   "line": 72,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 78,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 79,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 89,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 93,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 100,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 72,
+   "col": 6,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 78,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(try aesop)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 79,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(try\n    {by_cases h : isSpaceCommaDot (s.toList.get ⟨i, hi⟩) <;> simp_all [isSpaceCommaDot, List.get] <;>\n              (try {aesop\n                }) <;>\n            (try {simp_all [List.get]\n              }) <;>\n          (try {aesop\n            }) <;>\n        (try {simp_all [List.get]\n          }) <;>\n      (try {aesop\n        })\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 89,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(try {aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 93,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(try {simp_all [List.get] <;> aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 100,
+   "col": 6,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

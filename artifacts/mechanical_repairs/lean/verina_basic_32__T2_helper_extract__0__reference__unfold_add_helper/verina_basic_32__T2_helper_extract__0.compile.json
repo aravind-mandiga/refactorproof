@@ -1,0 +1,37 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_32__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_32__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_32__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_32__T2_helper_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_32__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_32__T2_helper_extract__0.lean:23:66: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_32__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_32__T2_helper_extract__0.lean:23:12: warning: The declaration 'swapFirstAndLast__rp_helper_6bb66f38' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_32__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_32__T2_helper_extract__0.lean:40:68: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n",
+ "stderr": "",
+ "elapsed_seconds": 12.178,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 23,
+   "col": 66,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'swapFirstAndLast__rp_helper_6bb66f38' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 68,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

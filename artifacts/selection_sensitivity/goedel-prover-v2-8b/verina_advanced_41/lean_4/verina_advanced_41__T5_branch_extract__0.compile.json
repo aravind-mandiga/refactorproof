@@ -1,0 +1,115 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:15:44: warning: unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:23:74: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:23:12: warning: The declaration 'maxOfThree__rp_branch_81742a90' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:43:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:66:14: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  d - e ≥ 0\n  d - f ≤ -1\n  d - g ≥ 1\nwhere\n d := a\n e := b\n f := c\n g := maxOfThree__rp_branch_81742a90 a b c h_precond\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:71:14: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  e - g ≥ 1\n  d - e ≥ 1\n  d - f ≥ 0\nwhere\n d := b\n e := a\n f := c\n g := maxOfThree__rp_branch_81742a90 a b c h_precond\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:74:14: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  e - g ≥ 1\n  d - e ≥ 1\n  d - f ≤ -1\nwhere\n d := b\n e := a\n f := c\n g := maxOfThree__rp_branch_81742a90 a b c h_precond\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:88:14: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  e - f ≥ 0\n  e - g ≥ 1\n  d - e ≤ -1\n  d - g ≤ 0\nwhere\n d := a\n e := b\n f := c\n g := if b ≤ a ∧ c ≤ a then a else maxOfThree__rp_branch_81742a90 a b c h_precond\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:91:14: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  e - f ≤ -1\n  e - g ≥ 1\n  d - e ≤ -1\n  d - g ≤ 0\nwhere\n d := a\n e := b\n f := c\n g := if b ≤ a ∧ c ≤ a then a else maxOfThree__rp_branch_81742a90 a b c h_precond\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:100:14: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f - g ≥ 1\n  e - g ≤ 0\n  d - e ≥ 0\n  d - f ≤ -1\n  d - g ≤ 0\nwhere\n d := a\n e := b\n f := c\n g := if c ≤ a then a else maxOfThree__rp_branch_81742a90 a b c h_precond\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:108:14: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f - g ≥ 1\n  e - f ≤ -1\n  e - g ≤ 0\n  d - e ≤ -1\n  d - g ≤ 0\nwhere\n d := a\n e := b\n f := c\n g := if b ≤ a ∧ c ≤ a then a else maxOfThree__rp_branch_81742a90 a b c h_precond\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:117:14: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f - g ≤ -1\n  e - g ≤ -1\n  d - e ≥ 0\n  d - f ≤ -1\n  d - g ≤ -1\nwhere\n d := a\n e := b\n f := c\n g := if c ≤ a then a else maxOfThree__rp_branch_81742a90 a b c h_precond\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:122:14: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f - g ≤ -1\n  e - f ≥ 0\n  e - g ≤ -1\n  d - e ≤ -1\n  d - g ≤ -1\nwhere\n d := a\n e := b\n f := c\n g := if b ≤ a ∧ c ≤ a then a else maxOfThree__rp_branch_81742a90 a b c h_precond\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_4/verina_advanced_41__T5_branch_extract__0.lean:125:14: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f - g ≤ -1\n  e - f ≤ -1\n  e - g ≤ -1\n  d - e ≤ -1\n  d - g ≤ -1\nwhere\n d := a\n e := b\n f := c\n g := if b ≤ a ∧ c ≤ a then a else maxOfThree__rp_branch_81742a90 a b c h_precond\n",
+ "stderr": "",
+ "elapsed_seconds": 13.85,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 74,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'maxOfThree__rp_branch_81742a90' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 43,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 66,
+   "col": 14,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  d - e ≥ 0\n  d - f ≤ -1\n  d - g ≥ 1\nwhere\n d := a\n e := b\n f := c\n g := maxOfThree__rp_branch_81742a90 a b c h_precond"
+  },
+  {
+   "line": 71,
+   "col": 14,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  e - g ≥ 1\n  d - e ≥ 1\n  d - f ≥ 0\nwhere\n d := b\n e := a\n f := c\n g := maxOfThree__rp_branch_81742a90 a b c h_precond"
+  },
+  {
+   "line": 74,
+   "col": 14,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  e - g ≥ 1\n  d - e ≥ 1\n  d - f ≤ -1\nwhere\n d := b\n e := a\n f := c\n g := maxOfThree__rp_branch_81742a90 a b c h_precond"
+  },
+  {
+   "line": 88,
+   "col": 14,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  e - f ≥ 0\n  e - g ≥ 1\n  d - e ≤ -1\n  d - g ≤ 0\nwhere\n d := a\n e := b\n f := c\n g := if b ≤ a ∧ c ≤ a then a else maxOfThree__rp_branch_81742a90 a b c h_precond"
+  },
+  {
+   "line": 91,
+   "col": 14,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  e - f ≤ -1\n  e - g ≥ 1\n  d - e ≤ -1\n  d - g ≤ 0\nwhere\n d := a\n e := b\n f := c\n g := if b ≤ a ∧ c ≤ a then a else maxOfThree__rp_branch_81742a90 a b c h_precond"
+  },
+  {
+   "line": 100,
+   "col": 14,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f - g ≥ 1\n  e - g ≤ 0\n  d - e ≥ 0\n  d - f ≤ -1\n  d - g ≤ 0\nwhere\n d := a\n e := b\n f := c\n g := if c ≤ a then a else maxOfThree__rp_branch_81742a90 a b c h_precond"
+  },
+  {
+   "line": 108,
+   "col": 14,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f - g ≥ 1\n  e - f ≤ -1\n  e - g ≤ 0\n  d - e ≤ -1\n  d - g ≤ 0\nwhere\n d := a\n e := b\n f := c\n g := if b ≤ a ∧ c ≤ a then a else maxOfThree__rp_branch_81742a90 a b c h_precond"
+  },
+  {
+   "line": 117,
+   "col": 14,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f - g ≤ -1\n  e - g ≤ -1\n  d - e ≥ 0\n  d - f ≤ -1\n  d - g ≤ -1\nwhere\n d := a\n e := b\n f := c\n g := if c ≤ a then a else maxOfThree__rp_branch_81742a90 a b c h_precond"
+  },
+  {
+   "line": 122,
+   "col": 14,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f - g ≤ -1\n  e - f ≥ 0\n  e - g ≤ -1\n  d - e ≤ -1\n  d - g ≤ -1\nwhere\n d := a\n e := b\n f := c\n g := if b ≤ a ∧ c ≤ a then a else maxOfThree__rp_branch_81742a90 a b c h_precond"
+  },
+  {
+   "line": 125,
+   "col": 14,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f - g ≤ -1\n  e - f ≤ -1\n  e - g ≤ -1\n  d - e ≤ -1\n  d - g ≤ -1\nwhere\n d := a\n e := b\n f := c\n g := if b ≤ a ∧ c ≤ a then a else maxOfThree__rp_branch_81742a90 a b c h_precond\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "other"
+}

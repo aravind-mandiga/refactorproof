@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_1/verina_basic_1__T3_comm_swap__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_1/verina_basic_1__T3_comm_swap__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_1/verina_basic_1__T3_comm_swap__0/reference.lean:14:29: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_1/verina_basic_1__T3_comm_swap__0/reference.lean:14:39: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_1/verina_basic_1__T3_comm_swap__0/reference.lean:25:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_1/verina_basic_1__T3_comm_swap__0/reference.lean:37:65: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_1/verina_basic_1__T3_comm_swap__0/reference.lean:60:38: error: application type mismatch\n  Int.mul_neg_of_neg_of_pos ha\nargument\n  ha\nhas type\n  a < 0 : Prop\nbut is expected to have type\n  b < 0 : Prop\nartifacts/variants/verina_basic_1/verina_basic_1__T3_comm_swap__0/reference.lean:65:38: error: application type mismatch\n  Int.mul_neg_of_neg_of_pos hb\nargument\n  hb\nhas type\n  b < 0 : Prop\nbut is expected to have type\n  a < 0 : Prop\nartifacts/variants/verina_basic_1/verina_basic_1__T3_comm_swap__0/reference.lean:67:2: error: unsolved goals\ncase right\na b : ℤ\n⊢ (a < 0 → b ≤ 0) → (0 < a → 0 ≤ b) → (0 < b → 0 ≤ a) ∧ (b < 0 → a ≤ 0)\n",
+ "stderr": "",
+ "elapsed_seconds": 9.29,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 14,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 37,
+   "col": 65,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 60,
+   "col": 38,
+   "severity": "error",
+   "text": "application type mismatch\n  Int.mul_neg_of_neg_of_pos ha\nargument\n  ha\nhas type\n  a < 0 : Prop\nbut is expected to have type\n  b < 0 : Prop"
+  },
+  {
+   "line": 65,
+   "col": 38,
+   "severity": "error",
+   "text": "application type mismatch\n  Int.mul_neg_of_neg_of_pos hb\nargument\n  hb\nhas type\n  b < 0 : Prop\nbut is expected to have type\n  a < 0 : Prop"
+  },
+  {
+   "line": 67,
+   "col": 2,
+   "severity": "error",
+   "text": "unsolved goals\ncase right\na b : ℤ\n⊢ (a < 0 → b ≤ 0) → (0 < a → 0 ≤ b) → (0 < b → 0 ≤ a) ∧ (b < 0 → a ≤ 0)\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

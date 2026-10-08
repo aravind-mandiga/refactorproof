@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-8b__avoid_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-8b__avoid_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-8b__avoid_unfold.lean:15:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-8b__avoid_unfold.lean:26:22: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-8b__avoid_unfold.lean:38:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-8b__avoid_unfold.lean:75:44: error: unsolved goals\nx : ℤ\nh_precond : Triple_precond x\nh₁ : x * 3 / 3 = x\nh₂ : x * 3 / 3 * 3 = x * 3\n⊢ 3 * x = x * 3\n",
+ "stderr": "",
+ "elapsed_seconds": 7.705,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 75,
+   "col": 44,
+   "severity": "error",
+   "text": "unsolved goals\nx : ℤ\nh_precond : Triple_precond x\nh₁ : x * 3 / 3 = x\nh₂ : x * 3 / 3 * 3 = x * 3\n⊢ 3 * x = x * 3\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_75",
+ "variant_id": "verina_basic_75__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  minArray__rp_helper_c465a41f a h_precond\n",
+ "transformed_code_aux": "def loop (a : Array Int) (i : Nat) (currentMin : Int) : Int :=\n  if i < a.size then\n    let newMin := if currentMin > a[i]! then a[i]! else currentMin\n    loop a (i + 1) newMin\n  else\n    currentMin\n\nprivate def minArray__rp_helper_c465a41f (a : Array Int) (h_precond : minArray_precond (a)) : Int :=\n  loop a 1 (a[0]!)\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "minArray__rp_helper_c465a41f"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "fffd3ac40f2cb01700a5c3354770cde8deeba2f9b169900e06dc07c82f75bae6",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "1393486727fd0d7a6c8e6dca7c8d772d52063657367abc046e846acb5d7d844c",
+ "code_aux_hash_original": "a15c34f7aac57e499c096d021b682395abbfc27ca8189674b894a7816265fded",
+ "tier": "basic",
+ "function_name": "minArray",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

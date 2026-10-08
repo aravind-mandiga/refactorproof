@@ -1,0 +1,85 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_31/verina_basic_31__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_31/verina_basic_31__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_31/verina_basic_31__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:20:25: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_31/verina_basic_31__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:28:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_31/verina_basic_31__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:28:12: warning: The declaration 'toUppercase__rp_helper_8bd90157' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_31/verina_basic_31__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:47:56: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_31/verina_basic_31__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:71:32: error: unknown constant 'String.toList_cons'\nartifacts/variants/verina_basic_31/verina_basic_31__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:71:52: error: unknown constant 'Char.toNat_add'\nartifacts/variants/verina_basic_31/verina_basic_31__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:74:6: error: tactic 'rfl' failed, the left-hand side\n  (toUppercase__rp_helper_8bd90157 { data := data✝ } h_precond).length\nis not definitionally equal to the right-hand side\n  data✝.length\ncase mk\ndata✝ : List Char\nh_precond : toUppercase_precond { data := data✝ }\n⊢ (toUppercase__rp_helper_8bd90157 { data := data✝ } h_precond).length = data✝.length\nartifacts/variants/verina_basic_31/verina_basic_31__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:81:14: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_31/verina_basic_31__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:79:90: error: unsolved goals\ns : String\nh_precond : toUppercase_precond s\nh₁_1 : (toUppercase s h_precond).length = s.length\ni : ℕ\nhi_1 : i < s.length\nh₁ : (toUppercase__rp_helper_8bd90157 s h_precond).length = s.length\nh : isLowerCase s.data[i] = true\n⊢ (toUppercase__rp_helper_8bd90157 s h_precond).data[i] = shiftMinus32 s.data[i]\nartifacts/variants/verina_basic_31/verina_basic_31__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:87:14: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_31/verina_basic_31__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:85:75: error: unsolved goals\ns : String\nh_precond : toUppercase_precond s\nh₁_1 : (toUppercase s h_precond).length = s.length\ni : ℕ\nhi_1 : i < s.length\nh₁ : (toUppercase__rp_helper_8bd90157 s h_precond).length = s.length\nh : isLowerCase s.data[i] = false\n⊢ (toUppercase__rp_helper_8bd90157 s h_precond).data[i] = s.data[i]\n",
+ "stderr": "",
+ "elapsed_seconds": 8.178,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 20,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'toUppercase__rp_helper_8bd90157' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 47,
+   "col": 56,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 71,
+   "col": 32,
+   "severity": "error",
+   "text": "unknown constant 'String.toList_cons'"
+  },
+  {
+   "line": 71,
+   "col": 52,
+   "severity": "error",
+   "text": "unknown constant 'Char.toNat_add'"
+  },
+  {
+   "line": 74,
+   "col": 6,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  (toUppercase__rp_helper_8bd90157 { data := data✝ } h_precond).length\nis not definitionally equal to the right-hand side\n  data✝.length\ncase mk\ndata✝ : List Char\nh_precond : toUppercase_precond { data := data✝ }\n⊢ (toUppercase__rp_helper_8bd90157 { data := data✝ } h_precond).length = data✝.length"
+  },
+  {
+   "line": 81,
+   "col": 14,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 79,
+   "col": 90,
+   "severity": "error",
+   "text": "unsolved goals\ns : String\nh_precond : toUppercase_precond s\nh₁_1 : (toUppercase s h_precond).length = s.length\ni : ℕ\nhi_1 : i < s.length\nh₁ : (toUppercase__rp_helper_8bd90157 s h_precond).length = s.length\nh : isLowerCase s.data[i] = true\n⊢ (toUppercase__rp_helper_8bd90157 s h_precond).data[i] = shiftMinus32 s.data[i]"
+  },
+  {
+   "line": 87,
+   "col": 14,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 85,
+   "col": 75,
+   "severity": "error",
+   "text": "unsolved goals\ns : String\nh_precond : toUppercase_precond s\nh₁_1 : (toUppercase s h_precond).length = s.length\ni : ℕ\nhi_1 : i < s.length\nh₁ : (toUppercase__rp_helper_8bd90157 s h_precond).length = s.length\nh : isLowerCase s.data[i] = false\n⊢ (toUppercase__rp_helper_8bd90157 s h_precond).data[i] = s.data[i]\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unknown_constant_or_identifier"
+}

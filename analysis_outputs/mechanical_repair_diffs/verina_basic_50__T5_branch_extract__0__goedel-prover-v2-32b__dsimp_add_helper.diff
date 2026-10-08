@@ -1,0 +1,13 @@
+--- goedel-prover-v2-32b:verina_basic_50__T5_branch_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_50__T5_branch_extract__0 (dsimp_add_helper)
+@@ -3,7 +3,7 @@
+     · -- Prove x ≥ 0 → x = Abs (x) h_precond
+       intro hx
+       have h₁ : Abs (x) h_precond = x := by
+-        dsimp [Abs]
++        dsimp [Abs, Abs__rp_branch_c6672445]
+         split_ifs <;>
+         (try { contradiction }) <;>
+         (try { linarith }) <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

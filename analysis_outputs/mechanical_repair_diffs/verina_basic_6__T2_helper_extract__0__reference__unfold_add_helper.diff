@@ -1,0 +1,10 @@
+--- reference:verina_basic_6__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_6__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold minOfThree minOfThree_postcond
++  unfold minOfThree minOfThree__rp_helper_d6baf0a7 minOfThree_postcond
+ 
+   split
+ 
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

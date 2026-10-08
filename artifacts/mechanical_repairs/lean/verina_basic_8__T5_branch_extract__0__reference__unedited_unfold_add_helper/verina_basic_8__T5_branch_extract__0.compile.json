@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_8__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_8__T5_branch_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_8__T5_branch_extract__0.lean:14:19: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_8__T5_branch_extract__0.lean:14:29: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_8__T5_branch_extract__0.lean:22:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_8__T5_branch_extract__0.lean:40:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_8__T5_branch_extract__0.lean:62:6: error: simp made no progress\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_8__T5_branch_extract__0.lean:65:14: error: simp made no progress\n",
+ "stderr": "",
+ "elapsed_seconds": 0.865,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 40,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 62,
+   "col": 6,
+   "severity": "error",
+   "text": "simp made no progress"
+  },
+  {
+   "line": 65,
+   "col": 14,
+   "severity": "error",
+   "text": "simp made no progress\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "simp_failed"
+}

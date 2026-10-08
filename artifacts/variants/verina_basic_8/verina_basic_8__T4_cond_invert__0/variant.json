@@ -1,0 +1,55 @@
+{
+ "task_id": "verina_basic_8",
+ "variant_id": "verina_basic_8__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "transformed_code": "  if ¬ (a <= b) then b\n  else a\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [
+  "ite_not"
+ ],
+ "helper_names": [],
+ "metadata": {
+  "law_sets": [
+   [
+    "ite_not"
+   ],
+   [
+    "ite_not",
+    "Bool.not_eq_true",
+    "decide_not",
+    "Nat.not_lt",
+    "Nat.not_le",
+    "Int.not_lt",
+    "Int.not_le"
+   ]
+  ],
+  "condition": "a <= b",
+  "then_multiline": false,
+  "seed": 0
+ },
+ "extra_levels": [
+  [
+   "bycases",
+   "by_cases h : (a <= b) <;> (try simp [h, {DEFS}]) <;> {CLOSER}"
+  ],
+  [
+   "bycases_ite",
+   "by_cases h : (a <= b) <;> (try simp [h, ite_not, {DEFS}]) <;> {CLOSER}"
+  ],
+  [
+   "split_simp_all",
+   "simp only [{DEFS}]; split <;> (try simp_all) <;> {CLOSER}"
+  ]
+ ],
+ "spec_hash": "9ea5f34068afa9e380bc3377f48eb3fe98217f15035d181f98b5d77bc020361e",
+ "proof_hash": "7ad2ae3dae289ae6f6eea98bac4689679d43ee5cdae259c501b5bcf2b7ea6215",
+ "code_hash_original": "7aadc1a1034b173ef9c5275d5679c475e523a3dc0d7951db6d74c4449dfefbe2",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "myMin",
+ "code_loc_original": 1,
+ "code_loc_refactored": 2
+}

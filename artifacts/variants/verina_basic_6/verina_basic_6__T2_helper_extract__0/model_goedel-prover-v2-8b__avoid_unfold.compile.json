@@ -1,0 +1,163 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:15:44: warning: unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:23:74: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:23:12: warning: The declaration 'minOfThree__rp_helper_d6baf0a7' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:42:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:64:14: error: simp_all made no progress\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:73:16: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  e - f ≤ 0\n  e - g ≥ 1\n  d - e ≥ 1\nwhere\n d := a\n e := b\n f := c\n g := minOfThree__rp_helper_d6baf0a7 a b c h_precond\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:81:16: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f - g ≥ 1\n  d - e ≥ 1\n  d - g ≤ -1\nwhere\n d := c\n e := minOfThree__rp_helper_d6baf0a7 a b c h_precond\n f := b\n g := a\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:85:34: error: linarith failed to find a contradiction\ncase h\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\na✝ : a ≥ c\n⊢ False failed\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:88:36: error: linarith failed to find a contradiction\ncase h\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₅ : a < c\na✝ : b ≥ a\n⊢ False failed\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:86:31: error: unsolved goals\ncase refine_2\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₅ : a < c\nh₆ : ¬a ≤ b\n⊢ False\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:102:36: error: linarith failed to find a contradiction\ncase h\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₅ : a < c\nh₆ : a ≤ b\na✝ : c ≥ a\n⊢ False failed\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:100:31: error: unsolved goals\ncase refine_2\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₅ : a < c\nh₆ : a ≤ b\nh₇ : ¬a ≤ c\n⊢ False\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:83:29: error: unsolved goals\ncase refine_2\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₄ : ¬c ≤ a\n⊢ False\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:111:34: error: linarith failed to find a contradiction\ncase h\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₄ : c ≤ a\na✝ : b ≥ c\n⊢ False failed\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:114:36: error: linarith failed to find a contradiction\ncase h\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₄ : c ≤ a\nh₆ : b < c\na✝ : a ≥ b\n⊢ False failed\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:112:31: error: unsolved goals\ncase refine_2\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₄ : c ≤ a\nh₆ : b < c\nh₇ : ¬b ≤ a\n⊢ False\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:128:36: error: linarith failed to find a contradiction\ncase h\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₄ : c ≤ a\nh₆ : b < c\nh₇ : b ≤ a\na✝ : c ≥ b\n⊢ False failed\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:126:31: error: unsolved goals\ncase refine_2\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₄ : c ≤ a\nh₆ : b < c\nh₇ : b ≤ a\nh₈ : ¬b ≤ c\n⊢ False\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:109:29: error: unsolved goals\ncase refine_2\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₄ : c ≤ a\nh₅ : ¬c ≤ b\n⊢ False\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:142:14: error: simp_all made no progress\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:151:16: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  e - f ≤ 0\n  e - g ≥ 1\n  d - e ≥ 1\nwhere\n d := a\n e := b\n f := c\n g := minOfThree__rp_helper_d6baf0a7 a b c h_precond\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:159:16: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f - g ≥ 1\n  d - e ≥ 1\n  d - g ≤ -1\nwhere\n d := c\n e := minOfThree__rp_helper_d6baf0a7 a b c h_precond\n f := b\n g := a\n",
+ "stderr": "",
+ "elapsed_seconds": 7.231,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 74,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'minOfThree__rp_helper_d6baf0a7' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 42,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 64,
+   "col": 14,
+   "severity": "error",
+   "text": "simp_all made no progress"
+  },
+  {
+   "line": 73,
+   "col": 16,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  e - f ≤ 0\n  e - g ≥ 1\n  d - e ≥ 1\nwhere\n d := a\n e := b\n f := c\n g := minOfThree__rp_helper_d6baf0a7 a b c h_precond"
+  },
+  {
+   "line": 81,
+   "col": 16,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f - g ≥ 1\n  d - e ≥ 1\n  d - g ≤ -1\nwhere\n d := c\n e := minOfThree__rp_helper_d6baf0a7 a b c h_precond\n f := b\n g := a"
+  },
+  {
+   "line": 85,
+   "col": 34,
+   "severity": "error",
+   "text": "linarith failed to find a contradiction\ncase h\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\na✝ : a ≥ c\n⊢ False failed"
+  },
+  {
+   "line": 88,
+   "col": 36,
+   "severity": "error",
+   "text": "linarith failed to find a contradiction\ncase h\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₅ : a < c\na✝ : b ≥ a\n⊢ False failed"
+  },
+  {
+   "line": 86,
+   "col": 31,
+   "severity": "error",
+   "text": "unsolved goals\ncase refine_2\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₅ : a < c\nh₆ : ¬a ≤ b\n⊢ False"
+  },
+  {
+   "line": 102,
+   "col": 36,
+   "severity": "error",
+   "text": "linarith failed to find a contradiction\ncase h\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₅ : a < c\nh₆ : a ≤ b\na✝ : c ≥ a\n⊢ False failed"
+  },
+  {
+   "line": 100,
+   "col": 31,
+   "severity": "error",
+   "text": "unsolved goals\ncase refine_2\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₅ : a < c\nh₆ : a ≤ b\nh₇ : ¬a ≤ c\n⊢ False"
+  },
+  {
+   "line": 83,
+   "col": 29,
+   "severity": "error",
+   "text": "unsolved goals\ncase refine_2\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₄ : ¬c ≤ a\n⊢ False"
+  },
+  {
+   "line": 111,
+   "col": 34,
+   "severity": "error",
+   "text": "linarith failed to find a contradiction\ncase h\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₄ : c ≤ a\na✝ : b ≥ c\n⊢ False failed"
+  },
+  {
+   "line": 114,
+   "col": 36,
+   "severity": "error",
+   "text": "linarith failed to find a contradiction\ncase h\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₄ : c ≤ a\nh₆ : b < c\na✝ : a ≥ b\n⊢ False failed"
+  },
+  {
+   "line": 112,
+   "col": 31,
+   "severity": "error",
+   "text": "unsolved goals\ncase refine_2\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₄ : c ≤ a\nh₆ : b < c\nh₇ : ¬b ≤ a\n⊢ False"
+  },
+  {
+   "line": 128,
+   "col": 36,
+   "severity": "error",
+   "text": "linarith failed to find a contradiction\ncase h\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₄ : c ≤ a\nh₆ : b < c\nh₇ : b ≤ a\na✝ : c ≥ b\n⊢ False failed"
+  },
+  {
+   "line": 126,
+   "col": 31,
+   "severity": "error",
+   "text": "unsolved goals\ncase refine_2\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₄ : c ≤ a\nh₆ : b < c\nh₇ : b ≤ a\nh₈ : ¬b ≤ c\n⊢ False"
+  },
+  {
+   "line": 109,
+   "col": 29,
+   "severity": "error",
+   "text": "unsolved goals\ncase refine_2\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh₁ : ¬(a ≤ b ∧ a ≤ c)\nh₂ : ¬(b ≤ a ∧ b ≤ c)\nh₃ : minOfThree a b c h_precond = c\nh₄ : c ≤ a\nh₅ : ¬c ≤ b\n⊢ False"
+  },
+  {
+   "line": 142,
+   "col": 14,
+   "severity": "error",
+   "text": "simp_all made no progress"
+  },
+  {
+   "line": 151,
+   "col": 16,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  e - f ≤ 0\n  e - g ≥ 1\n  d - e ≥ 1\nwhere\n d := a\n e := b\n f := c\n g := minOfThree__rp_helper_d6baf0a7 a b c h_precond"
+  },
+  {
+   "line": 159,
+   "col": 16,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f - g ≥ 1\n  d - e ≥ 1\n  d - g ≤ -1\nwhere\n d := c\n e := minOfThree__rp_helper_d6baf0a7 a b c h_precond\n f := b\n g := a\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "simp_failed"
+}

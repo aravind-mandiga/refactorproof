@@ -1,0 +1,59 @@
+{
+ "model_id": "goedel-prover-v2-8b",
+ "task_id": "verina_basic_99",
+ "attempt": 2,
+ "proof_hash": "0a0051012d4da93b5efd679d382dd6f270e060ea60b5ef8404efd54a7dc88625",
+ "proof_loc": 50,
+ "proof_tokens": 415,
+ "survival": [
+  {
+   "variant_id": "verina_basic_99__T1_let_intro__0",
+   "transformation": "T1_let_intro",
+   "severity": "D",
+   "survives": true,
+   "outcome": "survives"
+  },
+  {
+   "variant_id": "verina_basic_99__T2_helper_extract__0",
+   "transformation": "T2_helper_extract",
+   "severity": "S",
+   "survives": false,
+   "outcome": "proof_fails"
+  },
+  {
+   "variant_id": "verina_basic_99__T3_comm_swap__0",
+   "transformation": "T3_comm_swap",
+   "severity": "E",
+   "survives": true,
+   "outcome": "survives"
+  },
+  {
+   "variant_id": "verina_basic_99__T3_comm_swap__1",
+   "transformation": "T3_comm_swap",
+   "severity": "E",
+   "survives": true,
+   "outcome": "survives"
+  },
+  {
+   "variant_id": "verina_basic_99__T3_comm_swap__2",
+   "transformation": "T3_comm_swap",
+   "severity": "E",
+   "survives": true,
+   "outcome": "survives"
+  },
+  {
+   "variant_id": "verina_basic_99__T4_cond_invert__0",
+   "transformation": "T4_cond_invert",
+   "severity": "E",
+   "survives": true,
+   "outcome": "survives"
+  },
+  {
+   "variant_id": "verina_basic_99__T5_branch_extract__0",
+   "transformation": "T5_branch_extract",
+   "severity": "S",
+   "survives": false,
+   "outcome": "proof_fails"
+  }
+ ]
+}

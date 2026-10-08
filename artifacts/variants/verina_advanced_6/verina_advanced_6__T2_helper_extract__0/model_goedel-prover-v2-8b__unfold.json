@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_advanced_6",
+ "variant_id": "verina_advanced_6__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.288,
+ "proof_region_errors": [
+  "unsolved goals\ncase mp.left\ns : String\nh_precond : allVowels_precond s\na : allVowels__rp_helper_1905f5d2 s h_precond = true\n⊢ ∃ a ∈ s.data, toLower a = 'a'\n\ncase mp.right.left\ns : String\nh_precond : allVowels_precond s\na : allVowels__rp_helper_1905f5d2 s h_precond = true\n⊢ ∃ a ∈ s.data, toLower a = 'e'\n\ncase mp.right.right.left\ns : String\nh_precond : allVowels_precond s\na : allVowels__rp_helper_1905f5d2 s h_precond = true\n⊢ ∃ a ∈ s.data, toLower a = 'i'\n\ncase mp.right.right.right.left\ns : String"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "32634d9a74b87dc8a4ea84d51b57c3da52e7aee1dc7d9de9060ac0e7ebb2a12e",
+ "spec_hash": "93554fe415ccfb4d51b92405c5220441d6f97b9748a3f5b58430bf14bbc39d6c",
+ "proof_text": "  have h₁ : allVowels_postcond s (allVowels s h_precond) h_precond := by\n    dsimp [allVowels_postcond, allVowels, normalize_str, List.all_cons, List.all_nil]\n    <;> aesop\n\n  exact h₁\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "unfold_oriented"
+}

@@ -1,0 +1,27 @@
+{
+ "task_id": "verina_basic_99",
+ "variant_id": "verina_basic_99__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_level": "simp_only",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "rewrite_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 5.25,
+ "proof_region_errors": [
+  "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  ?a * ?c + ?b * ?c\ncase pos\nx : ℤ\nh_precond : Triple_precond x\nh₁ : 18 ≤ x\n⊢ (x + 2 * x) / 3 = x ∧ (x + 2 * x) / 3 * 3 = x + 2 * x",
+  "unsolved goals\ncase neg\nx : ℤ\nh_precond : Triple_precond x\nh₁ : ¬18 ≤ x\n⊢ 6 * x / 2 / 3 = x ∧ -(6 * x / 2) + 3 * (6 * x / 2 / 3) = 0\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "2572871e989024d02382816ae1e567ec1cc9198e8c597ccde123cb1b5d979b13",
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c"
+}

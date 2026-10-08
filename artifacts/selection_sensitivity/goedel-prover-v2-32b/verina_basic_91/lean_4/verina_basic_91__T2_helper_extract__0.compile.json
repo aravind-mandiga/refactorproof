@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_4/verina_basic_91__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_4/verina_basic_91__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_4/verina_basic_91__T2_helper_extract__0.lean:15:18: warning: unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_4/verina_basic_91__T2_helper_extract__0.lean:15:28: warning: unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_4/verina_basic_91__T2_helper_extract__0.lean:23:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_4/verina_basic_91__T2_helper_extract__0.lean:23:12: warning: The declaration 'Swap__rp_helper_6bee5f12' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_4/verina_basic_91__T2_helper_extract__0.lean:45:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_91/lean_4/verina_basic_91__T2_helper_extract__0.lean:60:76: error: unsolved goals\ncase right\nX Y : ℤ\nh_precond : Swap_precond X Y\n⊢ (Swap__rp_helper_6bee5f12 X Y h_precond).2 = X ∧\n    (¬X = Y → ¬(Swap__rp_helper_6bee5f12 X Y h_precond).1 = X ∧ ¬(Swap__rp_helper_6bee5f12 X Y h_precond).2 = Y)\n",
+ "stderr": "",
+ "elapsed_seconds": 10.255,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 18,
+   "severity": "warning",
+   "text": "unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'Swap__rp_helper_6bee5f12' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 45,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 60,
+   "col": 76,
+   "severity": "error",
+   "text": "unsolved goals\ncase right\nX Y : ℤ\nh_precond : Swap_precond X Y\n⊢ (Swap__rp_helper_6bee5f12 X Y h_precond).2 = X ∧\n    (¬X = Y → ¬(Swap__rp_helper_6bee5f12 X Y h_precond).1 = X ∧ ¬(Swap__rp_helper_6bee5f12 X Y h_precond).2 = Y)\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

@@ -1,0 +1,127 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:16:19: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:16:29: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:27:31: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:40:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:58:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:59:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:61:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:63:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:66:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:71:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:76:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:58:4: warning: '(try {omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:59:4: warning: '(try {exact Or.inl (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:61:4: warning: '(try {exact Or.inr (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:63:4: warning: '(try {exact ⟨by linarith, by linarith⟩\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:66:4: warning: '(try {exact Or.inl (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:71:4: warning: '(try {exact Or.inr (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_deepseek-prover-v2-7b.lean:76:4: warning: '(try {exact ⟨by linarith, by linarith⟩\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 7.922,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 16,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 27,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 40,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 59,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 63,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 66,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 71,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 76,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 58,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 59,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact Or.inl (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact Or.inr (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 63,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact ⟨by linarith, by linarith⟩\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 66,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact Or.inl (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 71,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact Or.inr (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 76,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact ⟨by linarith, by linarith⟩\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

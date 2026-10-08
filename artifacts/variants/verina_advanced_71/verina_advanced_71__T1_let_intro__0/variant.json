@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_71",
+ "variant_id": "verina_advanced_71__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_0861bc19 : String :=\n    let chars := s.data\n    let candidates := allSubstrings chars |>.filter (fun sub => countOnes sub = k)\n\n    let compare (a b : List Char) : Bool :=\n      a.length < b.length ∨ (a.length = b.length ∧ isLexSmaller a b)\n\n    let best := candidates.foldl (fun acc cur =>\n      match acc with\n      | none => some cur\n      | some best => if compare cur best then some cur else some best) none\n    match best with\n    | some b => listToString b\n    | none => \"\"\n  __rp_tmp_0861bc19\n",
+ "transformed_code_aux": "def listToString (lst : List Char) : String :=\n  String.mk lst\ndef isLexSmaller (a b : List Char) : Bool :=\n  listToString a < listToString b\ndef allSubstrings (s : List Char) : List (List Char) :=\n  let n := s.length\n  (List.range n).flatMap (fun i =>\n    (List.range (n - i)).map (fun j =>\n      s.drop i |>.take (j + 1)))\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_0861bc19",
+  "seed": 0
+ },
+ "spec_hash": "6f1480d29376a0414ca8603ffa2d9b3fea89c82a401d8ad0f3a22fc342e3057e",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "5271d3996161100d45a87740cd98ad1d131a736d31bf6fc78fb73cb027640c4c",
+ "code_aux_hash_original": "2bf48e7c25262774819b86a9ffdc46afbaa1ba76a748c872139c969d9dc54e92",
+ "tier": "advanced",
+ "function_name": "shortestBeautifulSubstring",
+ "code_loc_original": 11,
+ "code_loc_refactored": 13
+}

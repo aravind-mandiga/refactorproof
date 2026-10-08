@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_20",
+ "variant_id": "verina_basic_20__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_0ada267e : Int :=\n    let rec loop (i : Nat) (seen : Std.HashSet Int) (product : Int) : Int :=\n      if i < arr.size then\n        let x := arr[i]!\n        if seen.contains x then\n          loop (i + 1) seen product\n        else\n          loop (i + 1) (seen.insert x) (product * x)\n      else\n        product\n    loop 0 Std.HashSet.empty 1\n  __rp_tmp_0ada267e\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_0ada267e",
+  "seed": 0
+ },
+ "spec_hash": "8136fc3eb378cab542519cd9f3779b5f298e8236ae2f678b778531cce71a68a8",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "ff4cfe4c1244cc9b9fa89a51c24ffe5f9c3d05dd5a6124ec8a9790328ee10650",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "uniqueProduct",
+ "code_loc_original": 10,
+ "code_loc_refactored": 12
+}

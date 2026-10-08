@@ -1,0 +1,133 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:15:44: warning: unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:26:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:42:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:64:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:65:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:66:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:67:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:69:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:72:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:75:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:64:6: warning: '(try exact ⟨by omega, by omega, by omega⟩)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:65:6: warning: '(try exact Or.inl (by omega))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:66:6: warning: '(try exact Or.inr (Or.inl (by omega)))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:67:6: warning: '(try exact Or.inr (Or.inr (by omega)))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:69:4: warning: '(try {exact ⟨⟨by omega, by omega, by omega⟩, Or.inr (Or.inr (by omega))⟩\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:72:4: warning: '(try {exact ⟨⟨by omega, by omega, by omega⟩, Or.inr (Or.inl (by omega))⟩\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_6/lean_4/verina_basic_6__T1_let_intro__0.lean:75:4: warning: '(try {exact ⟨⟨by omega, by omega, by omega⟩, Or.inl (by omega)⟩\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 9.449,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 42,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 64,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 65,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 66,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 69,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 72,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 75,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 64,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(try exact ⟨by omega, by omega, by omega⟩)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 65,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(try exact Or.inl (by omega))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 66,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(try exact Or.inr (Or.inl (by omega)))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(try exact Or.inr (Or.inr (by omega)))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 69,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact ⟨⟨by omega, by omega, by omega⟩, Or.inr (Or.inr (by omega))⟩\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 72,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact ⟨⟨by omega, by omega, by omega⟩, Or.inr (Or.inl (by omega))⟩\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 75,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact ⟨⟨by omega, by omega, by omega⟩, Or.inl (by omega)⟩\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

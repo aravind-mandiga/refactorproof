@@ -1,0 +1,70 @@
+-- !benchmark @start import type=solution
+
+-- !benchmark @end import
+
+-- !benchmark @start solution_aux
+def isOdd (x : Int) : Bool :=
+  x % 2 ≠ 0
+-- !benchmark @end solution_aux
+
+-- !benchmark @start precond_aux
+
+-- !benchmark @end precond_aux
+
+@[reducible, simp]
+def findFirstOdd_precond (a : Array Int) : Prop :=
+  -- !benchmark @start precond
+  a.size > 0
+  -- !benchmark @end precond
+
+
+
+namespace RPOrig
+
+def findFirstOdd (a : Array Int) (h_precond : findFirstOdd_precond (a)) : Option Nat :=
+  -- Creates list of (index, value) pairs
+  let indexed := a.toList.zipIdx
+
+  -- Find the first pair where the value is odd
+  let found := List.find? (fun (x, _) => isOdd x) indexed
+
+  -- Extract the index from the found pair (if any)
+  Option.map (fun (_, i) => i) found
+end RPOrig
+
+namespace RPRef
+
+def findFirstOdd (a : Array Int) (h_precond : findFirstOdd_precond (a)) : Option Nat :=
+  let __rp_tmp_a73b1c2d : Option Nat :=
+    -- Creates list of (index, value) pairs
+    let indexed := a.toList.zipIdx
+
+    -- Find the first pair where the value is odd
+    let found := List.find? (fun (x, _) => isOdd x) indexed
+
+    -- Extract the index from the found pair (if any)
+    Option.map (fun (_, i) => i) found
+  __rp_tmp_a73b1c2d
+end RPRef
+
+set_option maxHeartbeats 400000
+
+theorem rp_equiv_rfl (a : Array Int) (h_precond : findFirstOdd_precond (a)) :
+    RPOrig.findFirstOdd a h_precond = RPRef.findFirstOdd a h_precond := rfl
+
+set_option smartUnfolding false in
+theorem rp_equiv_rfl_nosmart (a : Array Int) (h_precond : findFirstOdd_precond (a)) :
+    RPOrig.findFirstOdd a h_precond = RPRef.findFirstOdd a h_precond := rfl
+
+theorem rp_equiv_delta_rfl (a : Array Int) (h_precond : findFirstOdd_precond (a)) :
+    RPOrig.findFirstOdd a h_precond = RPRef.findFirstOdd a h_precond := by
+  delta RPOrig.findFirstOdd RPRef.findFirstOdd
+  rfl
+
+theorem rp_equiv_simp_only (a : Array Int) (h_precond : findFirstOdd_precond (a)) :
+    RPOrig.findFirstOdd a h_precond = RPRef.findFirstOdd a h_precond := by
+  (simp only [RPOrig.findFirstOdd, RPRef.findFirstOdd]) <;> (first | rfl | (set_option smartUnfolding false in rfl) | (delta RPOrig.findFirstOdd RPRef.findFirstOdd; rfl))
+
+theorem rp_equiv_simp (a : Array Int) (h_precond : findFirstOdd_precond (a)) :
+    RPOrig.findFirstOdd a h_precond = RPRef.findFirstOdd a h_precond := by
+  (simp [RPOrig.findFirstOdd, RPRef.findFirstOdd]) <;> (first | rfl | (set_option smartUnfolding false in rfl) | (delta RPOrig.findFirstOdd RPRef.findFirstOdd; rfl))

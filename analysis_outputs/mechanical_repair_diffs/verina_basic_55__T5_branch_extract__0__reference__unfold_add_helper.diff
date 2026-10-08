@@ -1,0 +1,8 @@
+--- reference:verina_basic_55__T5_branch_extract__0 (proof as evaluated)
++++ reference:verina_basic_55__T5_branch_extract__0 (unfold_add_helper)
+@@ -1,2 +1,2 @@
+-  unfold Compare_postcond Compare
++  unfold Compare_postcond Compare Compare__rp_branch_e4570326
+   simp
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

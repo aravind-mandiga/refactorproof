@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv*/
+*.egg-info/
+.pytest_cache/
+
+# Pinned upstream checkout, fetched by scripts/setup_verina.sh
+external/
+
+# Lean build output
+*.olean
+.lake/
+
+# Regenerated locally: the per-task generation summaries are expanded from
+# results/model_proofs.jsonl by scripts/materialize_summaries.py
+artifacts/model_proofs/
+
+# Job logs and rendered tables/figures
+logs/
+paper_artifacts/

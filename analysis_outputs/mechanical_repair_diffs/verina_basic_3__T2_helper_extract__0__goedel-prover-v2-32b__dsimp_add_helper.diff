@@ -1,0 +1,13 @@
+--- goedel-prover-v2-32b:verina_basic_3__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_3__T2_helper_extract__0 (dsimp_add_helper)
+@@ -27,7 +27,7 @@
+         contradiction
+       exact h₁
+ 
+-  dsimp [isDivisibleBy11_postcond, isDivisibleBy11] at *
++  dsimp [isDivisibleBy11_postcond, isDivisibleBy11, isDivisibleBy11__rp_helper_c39b37ae] at *
+   split_ifs at h_main <;> simp_all (config := {decide := true})
+   <;>
+   (try { contradiction }) <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

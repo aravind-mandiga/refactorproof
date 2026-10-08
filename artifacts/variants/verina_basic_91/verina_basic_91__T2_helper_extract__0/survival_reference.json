@@ -1,0 +1,27 @@
+{
+ "task_id": "verina_basic_91",
+ "variant_id": "verina_basic_91__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "type_mismatch",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.72,
+ "proof_region_errors": [
+  "function expected at\n  a\nterm has type\n  ?m.780",
+  "type mismatch\n  fun a a_1 => ?m.787\nhas type\n  (a : ?m.780) → (a_1 : ?m.788 a) → ?m.789 a a_1 : Sort (imax ?u.779 ?u.782 ?u.785)\nbut is expected to have type\n  (Swap__rp_helper_6bee5f12 X Y h_precond).fst = Y ∧\n    (Swap__rp_helper_6bee5f12 X Y h_precond).snd = X ∧\n      (¬X = Y →\n        ¬(Swap__rp_helper_6bee5f12 X Y h_precond).fst = X ∧ ¬(Swap__rp_helper_6bee5f12 X Y h_precond).snd = Y) : Prop\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "11a241da7a71c347f0308869f8f07dd088dfbdb373127ef4c276d0407546286b",
+ "spec_hash": "590c7e16696da262a23fc9280a6e4bbb0efa987345d34f6ae93bdb47eb9f202b"
+}

@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_66",
+ "variant_id": "verina_basic_66__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  if x % 2 = 0 then true else\n    ComputeIsEven__rp_branch_87fb4e70 x h_precond\n",
+ "transformed_code_aux": "\nprivate def ComputeIsEven__rp_branch_87fb4e70 (x : Int) (h_precond : ComputeIsEven_precond (x)) : Bool :=\n  false\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "ComputeIsEven__rp_branch_87fb4e70"
+ ],
+ "metadata": {
+  "binders": [
+   "x",
+   "h_precond"
+  ],
+  "extracted": "else_branch",
+  "seed": 0
+ },
+ "extra_levels": [],
+ "spec_hash": "9300d16b9957b06554011b12d8985caa114c512f6eac35f42f2319056238a3b4",
+ "proof_hash": "738b44058f5a36560a1133007b0475769ed1a63f455c6241725130c1061e5ac4",
+ "code_hash_original": "2ba4d600cd657239d55914d155aab43fdfcf9708697b4a630d4aece542cdb5e5",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "ComputeIsEven",
+ "code_loc_original": 1,
+ "code_loc_refactored": 4
+}

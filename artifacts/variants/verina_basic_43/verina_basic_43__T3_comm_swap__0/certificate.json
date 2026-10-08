@@ -1,0 +1,63 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_43",
+ "variant_id": "verina_basic_43__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_43/verina_basic_43__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 1.623,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1231 = ?m.1231 : Prop\nbut is expected to have type\n  RPOrig.sumOfFourthPowerOfOddNumbers n h_precond = RPRef.sumOfFourthPowerOfOddNumbers n h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1356 = ?m.1356 : Prop\nbut is expected to have type\n  RPOrig.sumOfFourthPowerOfOddNumbers n h_precond = RPRef.sumOfFourthPowerOfOddNumbers n h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n    (fun n f h_precond =>\n      (match (motive :=\n          (n : Nat) →\n            sumOfFourthPowerOfOddNumbers_precond n →\n              Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n          n, h_precond with\n        | 0, h_precond => fun x => 0\n        | n.succ, h_precond => fun x =>\n          let prev := x.1 h_precond;\n          let"
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "simp made no progress"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "simp made no progress"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n    (fun n f h_precond =>\n      (match (motive :=\n          (n : Nat) →\n            sumOfFourthPowerOfOddNumbers_precond n →\n              Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n          n, h_precond with\n        | 0, h_precond => fun x => 0\n        | n.succ, h_precond => fun x =>\n          let prev := x.1 h_precond;\n          let",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.28984'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

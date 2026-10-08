@@ -1,0 +1,12 @@
+--- goedel-prover-v2-32b:verina_basic_12__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_12__T2_helper_extract__0 (simp_add_helper)
+@@ -1,6 +1,6 @@
+   have h_main : (cubeSurfaceArea (size) h_precond) - 6 * size * size = 0 ∧ 6 * size * size - (cubeSurfaceArea (size) h_precond) = 0 := by
+     have h₁ : cubeSurfaceArea (size) h_precond = 6 * size * size := by
+-      simp [cubeSurfaceArea]
++      simp [cubeSurfaceArea, cubeSurfaceArea__rp_helper_67e54167]
+     rw [h₁]
+     constructor <;>
+     (try simp [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib, Nat.add_sub_assoc]) <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

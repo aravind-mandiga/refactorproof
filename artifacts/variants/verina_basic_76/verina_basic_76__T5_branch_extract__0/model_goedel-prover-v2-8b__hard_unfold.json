@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_76",
+ "variant_id": "verina_basic_76__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__hard_unfold",
+ "generation_attempt": 1,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "other",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 6.9,
+ "proof_region_errors": [
+  "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a - b ≥ 1\nwhere\n a := x\n b := myMin__rp_branch_b558f2ed x y h_precond",
+  "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  b - c ≥ 1\n  a - b ≥ 1\nwhere\n a := x\n b := y\n c := myMin__rp_branch_b558f2ed x y h_precond\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "4271e3ea3112c059b2f7e94c1e7422c57fd323dcd896ccb731c148d4e36467aa",
+ "spec_hash": "d9901d31ec443cc0361ca053ba855756bcebd3f7b2721795ecbe1c0af761407d",
+ "proof_text": "  unfold myMin myMin_postcond\n  have h_main : myMin_postcond (x) (y) (myMin (x) (y) h_precond) h_precond := by\n    constructor\n    · -- Prove the first part: x ≤ y → myMin x y = x\n      intro h\n      have h₁ : x ≤ y := h\n      -- Consider the cases for x and y\n      by_cases h₂ : x < y\n      · -- Case 1: x < y\n        have h₃ : myMin (x) (y) h_precond = x := by\n          simp [myMin, h₂]\n          <;> omega\n        simp [h₃]\n        <;> omega\n      · -- Case 2: x ≥ y\n        have h₃ : x ≥ y := by omega\n        have h₄ : myMin (x) (y) h_precond = y := by\n          simp [myMin, h₂, h₃]\n          <;> omega\n        have h₅ : x ≤ y := by omega\n        simp [h₄, h₅]\n        <;> omega\n    · -- Prove the second part: x > y → myMin x y = y\n      intro h\n      have h₁ : x > y := h\n      -- Consider the cases for x and y\n      by_cases h₂ : x < y\n      · -- This case is impossible since x > y and x < y cannot both be true\n        exfalso\n        omega\n      · -- Case 1: x ≥ y\n        have h₃ : x ≥ y := by omega\n        have h₄ : myMin (x) (y) h_precond = y := by\n          simp [myMin, h₂, h₃]\n          <;> omega\n        simp [h₄]\n        <;> omega\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "hard_unfold"
+}

@@ -1,0 +1,10 @@
+--- reference:verina_basic_100__T5_branch_extract__0 (proof as evaluated)
++++ reference:verina_basic_100__T5_branch_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold Triple_postcond Triple
++  unfold Triple_postcond Triple Triple__rp_branch_9f218861
+   split_ifs with h₁
+   . rw [h₁]
+     simp
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

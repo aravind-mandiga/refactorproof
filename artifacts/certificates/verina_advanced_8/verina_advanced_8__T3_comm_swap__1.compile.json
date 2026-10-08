@@ -1,0 +1,37 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_8/verina_advanced_8__T3_comm_swap__1.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_8/verina_advanced_8__T3_comm_swap__1.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_8/verina_advanced_8__T3_comm_swap__1.lean:22:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_8/verina_advanced_8__T3_comm_swap__1.lean:56:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_8/verina_advanced_8__T3_comm_swap__1.lean:91:98: error: type mismatch\n  rfl\nhas type\n  ?m.4112 = ?m.4112 : Prop\nbut is expected to have type\n  RPOrig.canCompleteCircuit gas cost h_precond = RPRef.canCompleteCircuit gas cost h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.91,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 56,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 91,
+   "col": 98,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.4112 = ?m.4112 : Prop\nbut is expected to have type\n  RPOrig.canCompleteCircuit gas cost h_precond = RPRef.canCompleteCircuit gas cost h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

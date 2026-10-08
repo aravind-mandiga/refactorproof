@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_100/lean_4/verina_basic_100__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_100/lean_4/verina_basic_100__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_100/lean_4/verina_basic_100__T3_comm_swap__0.lean:14:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_100/lean_4/verina_basic_100__T3_comm_swap__0.lean:25:22: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_100/lean_4/verina_basic_100__T3_comm_swap__0.lean:39:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_100/lean_4/verina_basic_100__T3_comm_swap__0.lean:55:6: error: tactic 'rfl' failed, the left-hand side\n  Triple x h_precond\nis not definitionally equal to the right-hand side\n  if x = 0 then 0 else x + 2 * x\nx : ℤ\nh_precond : Triple_precond x\n⊢ Triple x h_precond = if x = 0 then 0 else x + 2 * x\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_100/lean_4/verina_basic_100__T3_comm_swap__0.lean:97:6: error: tactic 'rfl' failed, the left-hand side\n  Triple x h_precond\nis not definitionally equal to the right-hand side\n  if x = 0 then 0 else x + 2 * x\nx : ℤ\nh_precond : Triple_precond x\nh_main : Triple x h_precond / 3 = x\n⊢ Triple x h_precond = if x = 0 then 0 else x + 2 * x\n",
+ "stderr": "",
+ "elapsed_seconds": 10.351,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 55,
+   "col": 6,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  Triple x h_precond\nis not definitionally equal to the right-hand side\n  if x = 0 then 0 else x + 2 * x\nx : ℤ\nh_precond : Triple_precond x\n⊢ Triple x h_precond = if x = 0 then 0 else x + 2 * x"
+  },
+  {
+   "line": 97,
+   "col": 6,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  Triple x h_precond\nis not definitionally equal to the right-hand side\n  if x = 0 then 0 else x + 2 * x\nx : ℤ\nh_precond : Triple_precond x\nh_main : Triple x h_precond / 3 = x\n⊢ Triple x h_precond = if x = 0 then 0 else x + 2 * x\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

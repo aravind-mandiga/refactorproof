@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_17",
+ "variant_id": "verina_basic_17__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_313f5bc2 : String :=\n    let cs := s.toList\n    let cs' := cs.map (fun c => if isUpperCase c then shift32 c else c)\n    String.mk cs'\n  __rp_tmp_313f5bc2\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_313f5bc2",
+  "seed": 0
+ },
+ "spec_hash": "d839440679889d5d1a206f994624fb1b175593e8717bd61149063e998717c0e7",
+ "proof_hash": "96703100998013e4e52bc8672c90539a6b5d7d141c75154b019125dc1375650a",
+ "code_hash_original": "dccfa720ee190333e11609f63a0f60f581cddd5f6e484ff9222785b73c3632cc",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "toLowercase",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

@@ -1,0 +1,55 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_100",
+ "variant_id": "verina_basic_100__T3_comm_swap__1",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__1.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 5.627,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": "simp_only",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.409 = ?m.409 : Prop\nbut is expected to have type\n  RPOrig.Triple x h_precond = RPRef.Triple x h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1085 = ?m.1085 : Prop\nbut is expected to have type\n  RPOrig.Triple x h_precond = RPRef.Triple x h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if x = 0 then 0\n  else\n    let y := 2 * x;\n    x + y\nis not definitionally equal to the right-hand side\n  if x = 0 then 0\n  else\n    let y := 2 * x;\n    y + x\nx : ℤ\nh_precond : Triple_precond x\n⊢ (if x = 0 then 0\n    else\n      let y := 2 * x;\n      x + y) =\n    if x = 0 then 0\n    else\n      let y := 2 * x;\n      y + x"
+   ]
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": true,
+   "errors": []
+  },
+  "ac_rfl": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

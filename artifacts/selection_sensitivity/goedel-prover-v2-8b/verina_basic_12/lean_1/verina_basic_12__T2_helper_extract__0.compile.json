@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean:16:29: warning: unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean:24:62: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean:24:12: warning: The declaration 'cubeSurfaceArea__rp_helper_67e54167' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean:41:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean:58:8: error: simp_all made no progress\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_12/lean_1/verina_basic_12__T2_helper_extract__0.lean:64:8: error: simp_all made no progress\n",
+ "stderr": "",
+ "elapsed_seconds": 10.816,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 62,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'cubeSurfaceArea__rp_helper_67e54167' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 41,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 8,
+   "severity": "error",
+   "text": "simp_all made no progress"
+  },
+  {
+   "line": 64,
+   "col": 8,
+   "severity": "error",
+   "text": "simp_all made no progress\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "simp_failed"
+}

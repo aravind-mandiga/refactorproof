@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:23:64: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:23:12: warning: The declaration 'ComputeAvg__rp_helper_860051f2' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:40:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:63:2: error: simp_all made no progress\n",
+ "stderr": "",
+ "elapsed_seconds": 7.731,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 64,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'ComputeAvg__rp_helper_860051f2' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 63,
+   "col": 2,
+   "severity": "error",
+   "text": "simp_all made no progress\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "simp_failed"
+}

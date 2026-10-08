@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_46/verina_advanced_46__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_46/verina_advanced_46__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_46/verina_advanced_46__T2_helper_extract__0.lean:13:28: warning: unused variable `numbers`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_46/verina_advanced_46__T2_helper_extract__0.lean:22:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_46/verina_advanced_46__T2_helper_extract__0.lean:30:6: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_46/verina_advanced_46__T2_helper_extract__0.lean:53:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_46/verina_advanced_46__T2_helper_extract__0.lean:61:6: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_46/verina_advanced_46__T2_helper_extract__0.lean:89:88: error: type mismatch\n  rfl\nhas type\n  ?m.2543 = ?m.2543 : Prop\nbut is expected to have type\n  RPOrig.maxSubarraySum numbers h_precond = RPRef.maxSubarraySum numbers h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.742,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `numbers`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 30,
+   "col": 6,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 53,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 61,
+   "col": 6,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 89,
+   "col": 88,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.2543 = ?m.2543 : Prop\nbut is expected to have type\n  RPOrig.maxSubarraySum numbers h_precond = RPRef.maxSubarraySum numbers h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

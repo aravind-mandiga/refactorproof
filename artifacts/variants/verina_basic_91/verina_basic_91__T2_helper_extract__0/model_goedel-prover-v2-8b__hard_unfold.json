@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_91",
+ "variant_id": "verina_basic_91__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__hard_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 10.403,
+ "proof_region_errors": [
+  "unsolved goals\ncase right.right.left.h\nX Y : ℤ\nh_precond : Swap_precond X Y\na : ¬X = Y\na_1 : (Swap__rp_helper_6bee5f12 X Y h_precond).1 = X\n⊢ False\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "5bb18277bc1a968fa66571ccd230c69367f874dd5670dcc3a042af1d926d4692",
+ "spec_hash": "590c7e16696da262a23fc9280a6e4bbb0efa987345d34f6ae93bdb47eb9f202b",
+ "proof_text": "  unfold Swap Swap_postcond\n  have h_main : Swap_postcond (X) (Y) (Swap (X) (Y) h_precond) h_precond := by\n    dsimp [Swap, Swap_postcond] at *\n    <;>\n    (try aesop) <;>\n    (try\n      {\n        by_cases h : X = Y <;> simp_all [Prod.fst, Prod.snd] <;>\n        (try omega) <;>\n        (try aesop)\n      }) <;>\n    (try\n      {\n        simp_all [Prod.fst, Prod.snd] <;>\n        aesop\n      }) <;>\n    (try\n      {\n        by_cases h : X = Y <;> simp_all [Prod.fst, Prod.snd] <;>\n        (try omega) <;>\n        (try aesop)\n      }) <;>\n    (try\n      {\n        aesop\n      }) <;>\n    (try\n      {\n        simp_all [Prod.fst, Prod.snd] <;>\n        aesop\n      }) <;>\n    (try\n      {\n        aesop\n      })\n    <;>\n    (try\n      {\n        simp_all [Prod.fst, Prod.snd] <;>\n        aesop\n      })\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "hard_unfold"
+}

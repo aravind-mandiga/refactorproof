@@ -1,0 +1,65 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_50",
+ "variant_id": "verina_basic_50__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_50/verina_basic_50__T4_cond_invert__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 5.802,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": "simp_only",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.170 = ?m.170 : Prop\nbut is expected to have type\n  RPOrig.Abs x h_precond = RPRef.Abs x h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1217 = ?m.1217 : Prop\nbut is expected to have type\n  RPOrig.Abs x h_precond = RPRef.Abs x h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if x < 0 then -x else x\nis not definitionally equal to the right-hand side\n  if ¬x < 0 then x else -x\nx : ℤ\nh_precond : Abs_precond x\n⊢ (if x < 0 then -x else x) = if ¬x < 0 then x else -x"
+   ]
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'delta' failed, did not delta reduce [RPOrig.Abs, RPRef.Abs]\nx : ℤ\nh_precond : Abs_precond x\n⊢ (if x < 0 then -x else x) = if 0 ≤ x then x else -x"
+   ]
+  },
+  "bycases": {
+   "ok": true,
+   "errors": []
+  },
+  "bycases_ite": {
+   "ok": true,
+   "errors": []
+  },
+  "split_simp_all": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

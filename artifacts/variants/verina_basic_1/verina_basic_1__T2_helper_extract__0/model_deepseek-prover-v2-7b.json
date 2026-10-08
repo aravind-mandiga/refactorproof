@@ -1,0 +1,33 @@
+{
+ "task_id": "verina_basic_1",
+ "variant_id": "verina_basic_1__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b",
+ "generation_attempt": 3,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 11.488,
+ "proof_region_errors": [
+  "unsolved goals\ncase inl\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₂ : a * b < 0\nleft : a < 0\nright : 0 < b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = true",
+  "unsolved goals\ncase inr\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₂ : a * b < 0\nleft : 0 < a\nright : b < 0\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = true",
+  "unsolved goals\ncase pos\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : a < 0\nh₄ : b ≤ 0\nh₅ : a ≤ 0\nh₆ : b < 0\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n\ncase neg\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : a < 0\nh₄ : b ≤ 0\nh₅ : a ≤ 0\nh₆ : 0 ≤ b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n\ncase neg\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : 0 ≤ a\nh₄ : 0 < b\nh₅ : 0 < a\nh₆ : 0 ≤ b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "8c93bb5ba45b166bf1d2a2ad778dac285ffd12c71501ca2b241ebede1a6e3f46",
+ "spec_hash": "43e0a7d0f50b6844ce2ecb2d157e44c1ddca1b1d778219cb4401c97c796e07d2",
+ "proof_text": "  have h_main₁ : (((a < 0 ∧ b > 0) ∨ (a > 0 ∧ b < 0)) → hasOppositeSign a b h_precond = true) := by\n    intro h\n    have h₁ : hasOppositeSign a b h_precond = true := by\n      cases h with\n      | inl h =>\n        -- Case: a < 0 and b > 0\n        have h₂ : a * b < 0 := by\n          nlinarith\n        simp_all [hasOppositeSign, h_precond]\n        <;> norm_num at * <;>\n        (try omega) <;>\n        (try omega) <;>\n        aesop\n      | inr h =>\n        -- Case: a > 0 and b < 0\n        have h₂ : a * b < 0 := by\n          nlinarith\n        simp_all [hasOppositeSign, h_precond]\n        <;> norm_num at * <;>\n        (try omega) <;>\n        (try omega) <;>\n        aesop\n    exact h₁\n  have h_main₂ : (¬((a < 0 ∧ b > 0) ∨ (a > 0 ∧ b < 0)) → hasOppositeSign a b h_precond = false) := by\n    intro h\n    have h₁ : hasOppositeSign a b h_precond = false := by\n      have h₂ : hasOppositeSign a b h_precond = false := by\n        by_cases h₃ : a < 0 <;> by_cases h₄ : b > 0 <;> by_cases h₅ : a > 0 <;> by_cases h₆ : b < 0 <;>\n          simp_all [hasOppositeSign, h_precond, Int.mul_emod]\n          <;>\n          (try omega) <;>\n          (try {\n            aesop\n          }) <;>\n          (try {\n            norm_num at *\n            <;>\n            (try omega) <;>\n            (try nlinarith)\n          })\n        <;>\n        (try {\n          simp_all\n          <;> norm_num <;> nlinarith\n        })\n        <;>\n        (try {\n          exfalso\n          aesop\n        })\n        <;>\n        (try {\n          aesop\n        })\n        <;>\n        (try {\n          norm_num at *\n          <;> nlinarith\n        })\n        <;>\n        (try {\n          aesop\n        })\n        <;>\n        (try {\n          omega\n        })\n      exact h₂\n    exact h₁\n  constructor\n  · -- First condition: if the condition holds, then the result is true\n    intro h\n    simpa [hasOppositeSign, h_precond] using h_main₁ h\n  · -- Second condition: if the condition does not hold, then the result is false\n    intro h\n    simpa [hasOppositeSign, h_precond] using h_main₂ h\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "default"
+}

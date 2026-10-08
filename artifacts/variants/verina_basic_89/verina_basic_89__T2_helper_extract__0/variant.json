@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_89",
+ "variant_id": "verina_basic_89__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  SetToSeq__rp_helper_6b066c9e s h_precond\n",
+ "transformed_code_aux": "\nprivate def SetToSeq__rp_helper_6b066c9e (s : List Int) (h_precond : SetToSeq_precond (s)) : List Int :=\n  s.foldl (fun acc x => if acc.contains x then acc else acc ++ [x]) []\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "SetToSeq__rp_helper_6b066c9e"
+ ],
+ "metadata": {
+  "binders": [
+   "s",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "47870c3fb4ec9a5f32ede6fa85ca7c7acacb85922c3457bcde083b88a077dc4c",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "49abc96f13905c70419157b2355084db86b53c5d179a2f4a704b4fd2379da76d",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "SetToSeq",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

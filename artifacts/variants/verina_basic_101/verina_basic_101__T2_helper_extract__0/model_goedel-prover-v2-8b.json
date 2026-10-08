@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_101",
+ "variant_id": "verina_basic_101__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "other",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.037,
+ "proof_region_errors": [
+  "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  -2 ≤ 3*b - c ≤ 0\n  a - b ≥ 1\nwhere\n a := x\n b := Triple__rp_helper_65b561a3 x h_precond / 3\n c := Triple__rp_helper_65b561a3 x h_precond\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "10e50ff65cd5cf9c7dd23a458846c053e78a2b0471fe3a284ab69159c82dd2e1",
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c",
+ "proof_text": "  have h₁ : ((x * 2) + x) / 3 = x := by\n    have h₁₁ : (x * 2 + x : ℤ) = 3 * x := by\n      ring\n    rw [h₁₁]\n    have h₁₂ : (3 * x : ℤ) / 3 = x := by\n      have h₁₃ : (3 : ℤ) ≠ 0 := by norm_num\n      have h₁₄ : (3 * x : ℤ) / 3 = x := by\n        apply Int.ediv_eq_of_eq_mul_right (by norm_num : (3 : ℤ) ≠ 0)\n        <;> ring\n        <;> norm_num\n        <;> linarith\n      exact h₁₄\n    exact h₁₂\n\n  have h₂ : ((x * 2) + x) / 3 * 3 = (x * 2) + x := by\n    have h₂₁ : ((x * 2) + x : ℤ) = 3 * x := by\n      ring\n    rw [h₁]\n    <;> ring_nf\n    <;> omega\n\n  have h₃ : Triple_postcond x (Triple x h_precond) h_precond := by\n    dsimp [Triple, Triple_postcond, Triple_precond] at *\n    <;> simp_all [Int.mul_ediv_cancel_left]\n    <;> ring_nf at *\n    <;> omega\n\n  exact h₃\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "default"
+}

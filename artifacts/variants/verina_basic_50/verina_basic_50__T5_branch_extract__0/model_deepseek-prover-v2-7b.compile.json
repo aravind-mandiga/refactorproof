@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_50/verina_basic_50__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_50/verina_basic_50__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_50/verina_basic_50__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:14:17: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_50/verina_basic_50__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:22:47: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_50/verina_basic_50__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:22:12: warning: The declaration 'Abs__rp_branch_c6672445' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_50/verina_basic_50__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:40:42: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_50/verina_basic_50__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:58:10: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_50/verina_basic_50__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:56:39: error: unsolved goals\nx : ℤ\nh : 0 ≤ x\nh_1 : x < 0\n⊢ -x = x\n",
+ "stderr": "",
+ "elapsed_seconds": 7.142,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 17,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 47,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'Abs__rp_branch_c6672445' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 10,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 56,
+   "col": 39,
+   "severity": "error",
+   "text": "unsolved goals\nx : ℤ\nh : 0 ≤ x\nh_1 : x < 0\n⊢ -x = x\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_62",
+ "variant_id": "verina_basic_62__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_62/verina_basic_62__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 1.591,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.24323 = ?m.24323 : Prop\nbut is expected to have type\n  RPOrig.Find a key h_precond = RPRef.Find a key h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.24421 = ?m.24421 : Prop\nbut is expected to have type\n  RPOrig.Find a key h_precond = RPRef.Find a key h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun index a_1 =>\n      if h : index < a.size then if h : a[index]! = key then Int.ofNat index else a_1 (index + 1) ⋯ else -1)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun index a_1 =>\n      if h : index < a.size then if h : a[index]! = key then Int.ofNat index else a_1 (1 + index) ⋯ else -1)\n    0\na : Array Int\nkey : Int\nh_precond : Find_precond a key\n⊢ ⋯.fix\n      (fun index a_1 =>\n        if h : index < a.size th"
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun index a_1 =>\n      if h : index < a.size then if h : a[index]! = key then Int.ofNat index else a_1 (index + 1) ⋯ else -1)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun index a_1 =>\n      if h : index < a.size then if h : a[index]! = key then Int.ofNat index else a_1 (1 + index) ⋯ else -1)\n    0\na : Array Int\nkey : Int\nh_precond : Find_precond a key\n⊢ ⋯.fix\n      (fun index a_1 =>\n        if h : index < a.size th",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.34929'"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun index a_1 =>\n      if h : index < a.size then if h : a[index]! = key then Int.ofNat index else a_1 (index + 1) ⋯ else -1)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun index a_1 =>\n      if h : index < a.size then if h : a[index]! = key then Int.ofNat index else a_1 (1 + index) ⋯ else -1)\n    0\na : Array Int\nkey : Int\nh_precond : Find_precond a key\n⊢ ⋯.fix\n      (fun index a_1 =>\n        if h : index < a.size th",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.44963'"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun index a_1 =>\n      if h : index < a.size then if h : a[index]! = key then Int.ofNat index else a_1 (index + 1) ⋯ else -1)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun index a_1 =>\n      if h : index < a.size then if h : a[index]! = key then Int.ofNat index else a_1 (1 + index) ⋯ else -1)\n    0\na : Array Int\nkey : Int\nh_precond : Find_precond a key\n⊢ ⋯.fix\n      (fun index a_1 =>\n        if h : index < a.size th",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.48161'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

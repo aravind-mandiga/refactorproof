@@ -1,0 +1,55 @@
+{
+ "task_id": "verina_advanced_15",
+ "variant_id": "verina_advanced_15__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "transformed_code": "  if ¬ (nums.length < 3) then\n    let rec loop (xs : List Int) (first : Option Int) (second : Option Int) : Bool :=\n    match xs with\n    | [] => false\n    | x :: rest =>\n      match first with\n      | none => loop rest (some x) none\n      | some f =>\n        if x ≤ f then loop rest (some x) second\n        else match second with\n        | none => loop rest first (some x)\n        | some s =>\n          if x ≤ s then loop rest first (some x)\n          else true\n  loop nums none none\n  else\n    false\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [
+  "ite_not"
+ ],
+ "helper_names": [],
+ "metadata": {
+  "law_sets": [
+   [
+    "ite_not"
+   ],
+   [
+    "ite_not",
+    "Bool.not_eq_true",
+    "decide_not",
+    "Nat.not_lt",
+    "Nat.not_le",
+    "Int.not_lt",
+    "Int.not_le"
+   ]
+  ],
+  "condition": "nums.length < 3",
+  "then_multiline": true,
+  "seed": 0
+ },
+ "extra_levels": [
+  [
+   "bycases",
+   "by_cases h : (nums.length < 3) <;> (try simp [h, {DEFS}]) <;> {CLOSER}"
+  ],
+  [
+   "bycases_ite",
+   "by_cases h : (nums.length < 3) <;> (try simp [h, ite_not, {DEFS}]) <;> {CLOSER}"
+  ],
+  [
+   "split_simp_all",
+   "simp only [{DEFS}]; split <;> (try simp_all) <;> {CLOSER}"
+  ]
+ ],
+ "spec_hash": "f70874c7acc5b758e9c47c3f9ba588a6384ca247526e1117f89ba80b6e774344",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "0b0b27e12e56af672a21f300ed2b976595e737d2c40bf564b6476ae6c6ed3ae0",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "increasingTriplet",
+ "code_loc_original": 17,
+ "code_loc_refactored": 17
+}

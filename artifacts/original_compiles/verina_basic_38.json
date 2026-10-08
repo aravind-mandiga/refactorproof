@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "external/verina/datasets/verina/verina_basic_38/task.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "external/verina/datasets/verina/verina_basic_38/task.lean",
+ "exit_code": 0,
+ "stdout": "external/verina/datasets/verina/verina_basic_38/task.lean:14:31: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nexternal/verina/datasets/verina/verina_basic_38/task.lean:25:36: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nexternal/verina/datasets/verina/verina_basic_38/task.lean:39:60: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nexternal/verina/datasets/verina/verina_basic_38/task.lean:52:8: warning: declaration uses 'sorry'\n",
+ "stderr": "",
+ "elapsed_seconds": 0.937,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 36,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 60,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 52,
+   "col": 8,
+   "severity": "warning",
+   "text": "declaration uses 'sorry'\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

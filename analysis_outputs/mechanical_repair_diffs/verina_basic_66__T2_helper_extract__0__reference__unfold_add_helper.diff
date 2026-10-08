@@ -1,0 +1,9 @@
+--- reference:verina_basic_66__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_66__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,3 +1,3 @@
+-  unfold ComputeIsEven ComputeIsEven_postcond
++  unfold ComputeIsEven ComputeIsEven__rp_helper_c370e361 ComputeIsEven_postcond
+   simp
+   rfl
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/qwen3-14b/verina_basic_5/lean_2/verina_basic_5__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/qwen3-14b/verina_basic_5/lean_2/verina_basic_5__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/qwen3-14b/verina_basic_5/lean_2/verina_basic_5__T2_helper_extract__0.lean:14:22: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/qwen3-14b/verina_basic_5/lean_2/verina_basic_5__T2_helper_extract__0.lean:14:32: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/qwen3-14b/verina_basic_5/lean_2/verina_basic_5__T2_helper_extract__0.lean:22:62: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/qwen3-14b/verina_basic_5/lean_2/verina_basic_5__T2_helper_extract__0.lean:39:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/qwen3-14b/verina_basic_5/lean_2/verina_basic_5__T2_helper_extract__0.lean:54:2: error: simp_all made no progress\n",
+ "stderr": "",
+ "elapsed_seconds": 0.607,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 14,
+   "col": 32,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 62,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 54,
+   "col": 2,
+   "severity": "error",
+   "text": "simp_all made no progress\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "simp_failed"
+}

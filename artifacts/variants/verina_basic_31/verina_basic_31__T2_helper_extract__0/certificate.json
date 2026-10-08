@@ -1,0 +1,45 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_31",
+ "variant_id": "verina_basic_31__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_31/verina_basic_31__T2_helper_extract__0.lean",
+ "lean_exit_code": 0,
+ "lean_elapsed_seconds": 0.699,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_closed_by_plain_rfl": true,
+ "rfl_level": "rfl",
+ "certificate_level": "rfl",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": true,
+   "errors": []
+  },
+  "rfl_nosmart": {
+   "ok": true,
+   "errors": []
+  },
+  "delta_rfl": {
+   "ok": true,
+   "errors": []
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

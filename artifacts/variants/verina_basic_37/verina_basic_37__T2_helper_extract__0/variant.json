@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_37",
+ "variant_id": "verina_basic_37__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  findFirstOccurrence__rp_helper_2f798f80 arr target h_precond\n",
+ "transformed_code_aux": "\nprivate def findFirstOccurrence__rp_helper_2f798f80 (arr : Array Int) (target : Int) (h_precond : findFirstOccurrence_precond (arr) (target)) : Int :=\n  let rec loop (i : Nat) : Int :=\n    if i < arr.size then\n      let a := arr[i]!\n      if a = target then i\n      else if a > target then -1\n      else loop (i + 1)\n    else -1\n  loop 0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "findFirstOccurrence__rp_helper_2f798f80"
+ ],
+ "metadata": {
+  "binders": [
+   "arr",
+   "target",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "665b5316e991e1f01ddfb147fedd9c08d58725269bcc3afd4cb88bc1f8f75d63",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "092955c16141c41d1a65143bc312a1ca0cd3692cf3eab0ef187b52f2db52a827",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "findFirstOccurrence",
+ "code_loc_original": 8,
+ "code_loc_refactored": 10
+}

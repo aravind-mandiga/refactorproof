@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_53/verina_basic_53__T2_helper_extract__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_53/verina_basic_53__T2_helper_extract__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_53/verina_basic_53__T2_helper_extract__0/reference.lean:13:20: warning: unused variable `N`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_53/verina_basic_53__T2_helper_extract__0/reference.lean:21:50: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_53/verina_basic_53__T2_helper_extract__0/reference.lean:41:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_53/verina_basic_53__T2_helper_extract__0/reference.lean:58:11: error: unknown constant 'CalSum.loop'\nartifacts/variants/verina_basic_53/verina_basic_53__T2_helper_extract__0/reference.lean:62:4: error: simp made no progress\n",
+ "stderr": "",
+ "elapsed_seconds": 0.691,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `N`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 50,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 41,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 11,
+   "severity": "error",
+   "text": "unknown constant 'CalSum.loop'"
+  },
+  {
+   "line": 62,
+   "col": 4,
+   "severity": "error",
+   "text": "simp made no progress\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unknown_constant_or_identifier"
+}

@@ -1,0 +1,73 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_68/verina_basic_68__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_68/verina_basic_68__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_68/verina_basic_68__T2_helper_extract__0.lean:13:26: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_68/verina_basic_68__T2_helper_extract__0.lean:13:42: warning: unused variable `e`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_68/verina_basic_68__T2_helper_extract__0.lean:22:44: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_68/verina_basic_68__T2_helper_extract__0.lean:32:72: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_68/verina_basic_68__T2_helper_extract__0.lean:32:12: warning: The declaration 'LinearSearch__rp_helper_bd5bba3d' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/certificates/verina_basic_68/verina_basic_68__T2_helper_extract__0.lean:47:76: error: type mismatch\n  rfl\nhas type\n  ?m.662949 = ?m.662949 : Prop\nbut is expected to have type\n  RPOrig.LinearSearch a e h_precond = RPRef.LinearSearch a e h_precond : Prop\nartifacts/certificates/verina_basic_68/verina_basic_68__T2_helper_extract__0.lean:51:76: error: type mismatch\n  rfl\nhas type\n  ?m.663047 = ?m.663047 : Prop\nbut is expected to have type\n  RPOrig.LinearSearch a e h_precond = RPRef.LinearSearch a e h_precond : Prop\nartifacts/certificates/verina_basic_68/verina_basic_68__T2_helper_extract__0.lean:60:96: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_basic_68/verina_basic_68__T2_helper_extract__0.lean:64:91: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n",
+ "stderr": "",
+ "elapsed_seconds": 7.061,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 26,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `e`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 32,
+   "col": 72,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 32,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'LinearSearch__rp_helper_bd5bba3d' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 47,
+   "col": 76,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.662949 = ?m.662949 : Prop\nbut is expected to have type\n  RPOrig.LinearSearch a e h_precond = RPRef.LinearSearch a e h_precond : Prop"
+  },
+  {
+   "line": 51,
+   "col": 76,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.663047 = ?m.663047 : Prop\nbut is expected to have type\n  RPOrig.LinearSearch a e h_precond = RPRef.LinearSearch a e h_precond : Prop"
+  },
+  {
+   "line": 60,
+   "col": 96,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 64,
+   "col": 91,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

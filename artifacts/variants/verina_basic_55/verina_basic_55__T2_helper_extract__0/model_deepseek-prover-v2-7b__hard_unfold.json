@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_55",
+ "variant_id": "verina_basic_55__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b__hard_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 9.559,
+ "proof_region_errors": [
+  "unsolved goals\ncase left\na b : ℤ\nh_precond : Compare_precond a b\nh : a = b\n⊢ Compare__rp_helper_56630b5e b b ⋯ = true",
+  "unsolved goals\ncase right\na b : ℤ\nh_precond : Compare_precond a b\nh : ¬a = b\n⊢ Compare__rp_helper_56630b5e a b h_precond = false\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "b80b1175ebd16fe6337c3d4eca425f3a8ce2e650ea4c35760ed51abaaf5c75a1",
+ "spec_hash": "16171a90eebbe81b63af4c319ac6166daccb7f4f8788cb9f1ce378382e72c512",
+ "proof_text": "  unfold Compare Compare_postcond\n  have h_main : (a = b → Compare a b h_precond = true) ∧ (a ≠ b → Compare a b h_precond = false) := by\n    constructor\n    · -- Prove the first implication: if a = b then Compare a b h_precond = true\n      intro h\n      simp [Compare, h]\n    · -- Prove the second implication: if a ≠ b then Compare a b h_precond = false\n      intro h\n      simp [Compare, h]\n      <;> aesop\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "hard_unfold"
+}

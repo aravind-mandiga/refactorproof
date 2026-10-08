@@ -1,0 +1,55 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_19",
+ "variant_id": "verina_basic_19__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_19/verina_basic_19__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 4.215,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": "simp_only",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.994 = ?m.994 : Prop\nbut is expected to have type\n  RPOrig.isSorted a h_precond = RPRef.isSorted a h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.43399 = ?m.43399 : Prop\nbut is expected to have type\n  RPOrig.isSorted a h_precond = RPRef.isSorted a h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if a.size ≤ 1 then true\n  else (Array.mapIdx (fun i x => if h : i + 1 < a.size then decide (x ≤ a[i + 1]) else true) a).all id\nis not definitionally equal to the right-hand side\n  if a.size ≤ 1 then true\n  else (Array.mapIdx (fun i x => if h : i + 1 < a.size then decide (x ≤ a[1 + i]) else true) a).all id\na : Array Int\nh_precond : isSorted_precond a\n⊢ (if a.size ≤ 1 then true\n    else (Array.mapIdx (fun i x => if h : i + 1 < a.size then decide (x ≤ a[i +"
+   ]
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": true,
+   "errors": []
+  },
+  "ac_rfl": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

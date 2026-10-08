@@ -1,0 +1,11 @@
+--- reference:verina_basic_53__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_53__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold CalSum_postcond CalSum
++  unfold CalSum_postcond CalSum CalSum__rp_helper_f974fb52
+   induction N with
+   | zero =>
+     unfold CalSum.loop
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: unknown constant 'CalSum.loop'

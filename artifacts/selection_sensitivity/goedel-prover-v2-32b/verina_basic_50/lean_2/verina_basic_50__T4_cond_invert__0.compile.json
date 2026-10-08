@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_50/lean_2/verina_basic_50__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_50/lean_2/verina_basic_50__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_50/lean_2/verina_basic_50__T4_cond_invert__0.lean:14:17: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_50/lean_2/verina_basic_50__T4_cond_invert__0.lean:25:19: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_50/lean_2/verina_basic_50__T4_cond_invert__0.lean:38:42: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_50/lean_2/verina_basic_50__T4_cond_invert__0.lean:73:2: error: tauto failed to solve some goals.\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_50/lean_2/verina_basic_50__T4_cond_invert__0.lean:73:2: error: unsolved goals\ncase intro.left.inr.inl\nx : ℤ\nh_precond : Abs_precond x\na✝ : x ≥ 0\nleft✝ : x = if x < 0 then -x else x\nright✝ : ¬x < 0\n⊢ x = if ¬x < 0 then x else -x\n\ncase intro.left.inr.inr\nx : ℤ\nh_precond : Abs_precond x\na✝ : x ≥ 0\nleft✝ : x = if x < 0 then -x else x\nright✝ : (x + if x < 0 then -x else x) = 0\n⊢ x = if ¬x < 0 then x else -x\n\ncase intro.right.inl.inr\nx : ℤ\nh_precond : Abs_precond x\na✝ : x < 0\nleft✝ : ¬x ≥ 0\nright✝ : (x + if x < 0 then -x else x) = 0\n⊢ (x + if ¬x < 0 then x else -x) = 0\n\ncase intro.right.inr.inr\nx : ℤ\nh_precond : Abs_precond x\na✝ : x < 0\nleft✝ : x = if x < 0 then -x else x\nright✝ : (x + if x < 0 then -x else x) = 0\n⊢ (x + if ¬x < 0 then x else -x) = 0\n",
+ "stderr": "",
+ "elapsed_seconds": 9.904,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 17,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 73,
+   "col": 2,
+   "severity": "error",
+   "text": "tauto failed to solve some goals."
+  },
+  {
+   "line": 73,
+   "col": 2,
+   "severity": "error",
+   "text": "unsolved goals\ncase intro.left.inr.inl\nx : ℤ\nh_precond : Abs_precond x\na✝ : x ≥ 0\nleft✝ : x = if x < 0 then -x else x\nright✝ : ¬x < 0\n⊢ x = if ¬x < 0 then x else -x\n\ncase intro.left.inr.inr\nx : ℤ\nh_precond : Abs_precond x\na✝ : x ≥ 0\nleft✝ : x = if x < 0 then -x else x\nright✝ : (x + if x < 0 then -x else x) = 0\n⊢ x = if ¬x < 0 then x else -x\n\ncase intro.right.inl.inr\nx : ℤ\nh_precond : Abs_precond x\na✝ : x < 0\nleft✝ : ¬x ≥ 0\nright✝ : (x + if x < 0 then -x else x) = 0\n⊢ (x + if ¬x < 0 then x else -x) = 0\n\ncase intro.right.inr.inr\nx : ℤ\nh_precond : Abs_precond x\na✝ : x < 0\nleft✝ : x = if x < 0 then -x else x\nright✝ : (x + if x < 0 then -x else x) = 0\n⊢ (x + if ¬x < 0 then x else -x) = 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

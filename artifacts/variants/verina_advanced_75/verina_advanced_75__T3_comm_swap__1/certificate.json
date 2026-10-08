@@ -1,0 +1,55 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_75",
+ "variant_id": "verina_advanced_75__T3_comm_swap__1",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_75/verina_advanced_75__T3_comm_swap__1.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 1.106,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": "simp_only",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.992 = ?m.992 : Prop\nbut is expected to have type\n  RPOrig.task_code sequence h_precond = RPRef.task_code sequence h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.6794 = ?m.6794 : Prop\nbut is expected to have type\n  RPOrig.task_code sequence h_precond = RPRef.task_code sequence h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  match sequence, h_precond with\n  | [], h_precond => 0\n  | x :: xs, h_precond =>\n    match\n      List.foldl\n        (fun acc x =>\n          match acc with\n          | (cur, maxSoFar) =>\n            let newCur := if cur + x ≥ x then cur + x else x;\n            let newMax := if maxSoFar ≥ newCur then maxSoFar else newCur;\n            (newCur, newMax))\n        (x, x) xs with\n    | (fst, maxSoFar) => maxSoFar\nis not definitionally equal to the right-hand side"
+   ]
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": true,
+   "errors": []
+  },
+  "ac_rfl": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

@@ -1,0 +1,103 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean:27:51: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean:46:51: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean:66:82: error: type mismatch\n  rfl\nhas type\n  ?m.39247 = ?m.39247 : Prop\nbut is expected to have type\n  RPOrig.addTwoNumbers l1 l2 h_precond = RPRef.addTwoNumbers l1 l2 h_precond : Prop\nartifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean:70:82: error: type mismatch\n  rfl\nhas type\n  ?m.39346 = ?m.39346 : Prop\nbut is expected to have type\n  RPOrig.addTwoNumbers l1 l2 h_precond = RPRef.addTwoNumbers l1 l2 h_precond : Prop\nartifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean:75:2: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nl1 l2 : List Nat\nh_precond : addTwoNumbers_precond l1 l2\n⊢ RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩ = RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nartifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean:83:228: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nl1 l2 : List Nat\nh_precond : addTwoNumbers_precond l1 l2\n⊢ RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩ = RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nartifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean:78:82: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean:78:82: error: unknown metavariable '?_uniq.42224'\nartifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean:91:223: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nl1 l2 : List Nat\nh_precond : addTwoNumbers_precond l1 l2\n⊢ RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩ = RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nartifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean:86:82: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean:86:82: error: unknown metavariable '?_uniq.44625'\nartifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean:95:244: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nl1 l2 : List Nat\nh_precond : addTwoNumbers_precond l1 l2\n⊢ RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩ = RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nartifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean:94:82: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean:94:82: error: unknown metavariable '?_uniq.45278'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.444,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 27,
+   "col": 51,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 46,
+   "col": 51,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 66,
+   "col": 82,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.39247 = ?m.39247 : Prop\nbut is expected to have type\n  RPOrig.addTwoNumbers l1 l2 h_precond = RPRef.addTwoNumbers l1 l2 h_precond : Prop"
+  },
+  {
+   "line": 70,
+   "col": 82,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.39346 = ?m.39346 : Prop\nbut is expected to have type\n  RPOrig.addTwoNumbers l1 l2 h_precond = RPRef.addTwoNumbers l1 l2 h_precond : Prop"
+  },
+  {
+   "line": 75,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nl1 l2 : List Nat\nh_precond : addTwoNumbers_precond l1 l2\n⊢ RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩ = RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩"
+  },
+  {
+   "line": 83,
+   "col": 228,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nl1 l2 : List Nat\nh_precond : addTwoNumbers_precond l1 l2\n⊢ RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩ = RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩"
+  },
+  {
+   "line": 78,
+   "col": 82,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 78,
+   "col": 82,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.42224'"
+  },
+  {
+   "line": 91,
+   "col": 223,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nl1 l2 : List Nat\nh_precond : addTwoNumbers_precond l1 l2\n⊢ RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩ = RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩"
+  },
+  {
+   "line": 86,
+   "col": 82,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 86,
+   "col": 82,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.44625'"
+  },
+  {
+   "line": 95,
+   "col": 244,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nl1 l2 : List Nat\nh_precond : addTwoNumbers_precond l1 l2\n⊢ RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩ = RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩"
+  },
+  {
+   "line": 94,
+   "col": 82,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 94,
+   "col": 82,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.45278'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,319 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:20:25: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:28:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:28:12: warning: The declaration 'toLowercase__rp_helper_b6759a4e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:47:56: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:71:18: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:71:37: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:71:90: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:72:19: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:72:38: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:72:82: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:77:16: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:77:69: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:90:16: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:90:60: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:110:30: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:110:49: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:110:102: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:111:31: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:111:50: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:111:94: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:68:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:80:24: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:80:37: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:81:14: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:81:24: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:81:48: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:86:12: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:93:24: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:93:37: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:94:14: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:94:24: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:94:48: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:99:12: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:113:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:80:10: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:93:10: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:68:8: warning: 'rfl' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:80:24: warning: 'funext c' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:80:37: warning: 'simp [shift32]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:81:14: warning: 'split' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:81:24: warning: 'simp_all [List.get]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:81:48: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:86:12: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:93:24: warning: 'funext c' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:93:37: warning: 'simp [shift32]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:94:14: warning: 'split' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:94:24: warning: 'simp_all [List.get]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:94:48: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:99:12: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_17__T2_helper_extract__0.lean:113:10: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 9.4,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 20,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'toLowercase__rp_helper_b6759a4e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 47,
+   "col": 56,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 71,
+   "col": 18,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 71,
+   "col": 37,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 71,
+   "col": 90,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 72,
+   "col": 19,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 72,
+   "col": 38,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 72,
+   "col": 82,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 77,
+   "col": 16,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 77,
+   "col": 69,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 90,
+   "col": 16,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 90,
+   "col": 60,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 110,
+   "col": 30,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 110,
+   "col": 49,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 110,
+   "col": 102,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 111,
+   "col": 31,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 111,
+   "col": 50,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 111,
+   "col": 94,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 68,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 80,
+   "col": 24,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 80,
+   "col": 37,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 14,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 24,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 48,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 86,
+   "col": 12,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 93,
+   "col": 24,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 93,
+   "col": 37,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 94,
+   "col": 14,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 94,
+   "col": 24,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 94,
+   "col": 48,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 99,
+   "col": 12,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 113,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 80,
+   "col": 10,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 93,
+   "col": 10,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 68,
+   "col": 8,
+   "severity": "warning",
+   "text": "'rfl' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 80,
+   "col": 24,
+   "severity": "warning",
+   "text": "'funext c' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 80,
+   "col": 37,
+   "severity": "warning",
+   "text": "'simp [shift32]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 14,
+   "severity": "warning",
+   "text": "'split' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 24,
+   "severity": "warning",
+   "text": "'simp_all [List.get]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 48,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 86,
+   "col": 12,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 93,
+   "col": 24,
+   "severity": "warning",
+   "text": "'funext c' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 93,
+   "col": 37,
+   "severity": "warning",
+   "text": "'simp [shift32]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 94,
+   "col": 14,
+   "severity": "warning",
+   "text": "'split' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 94,
+   "col": 24,
+   "severity": "warning",
+   "text": "'simp_all [List.get]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 94,
+   "col": 48,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 99,
+   "col": 12,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 113,
+   "col": 10,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

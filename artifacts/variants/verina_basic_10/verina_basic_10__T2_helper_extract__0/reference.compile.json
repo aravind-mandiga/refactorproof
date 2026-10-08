@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_10/verina_basic_10__T2_helper_extract__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_10/verina_basic_10__T2_helper_extract__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_10/verina_basic_10__T2_helper_extract__0/reference.lean:14:23: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_10/verina_basic_10__T2_helper_extract__0/reference.lean:22:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_10/verina_basic_10__T2_helper_extract__0/reference.lean:39:65: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_10/verina_basic_10__T2_helper_extract__0/reference.lean:51:74: error: unsolved goals\nn : Int\na : Array Int\nh_precond : isGreater_precond n a\n⊢ (∀ (i : Nat) (hi : i < a.size), a[i] < n) ↔ isGreater__rp_helper_d4e98f7f n a h_precond = true\n",
+ "stderr": "",
+ "elapsed_seconds": 0.886,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 23,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 65,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 51,
+   "col": 74,
+   "severity": "error",
+   "text": "unsolved goals\nn : Int\na : Array Int\nh_precond : isGreater_precond n a\n⊢ (∀ (i : Nat) (hi : i < a.size), a[i] < n) ↔ isGreater__rp_helper_d4e98f7f n a h_precond = true\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

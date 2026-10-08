@@ -1,0 +1,259 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:15:44: warning: unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:23:74: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:23:12: warning: The declaration 'maxOfThree__rp_branch_81742a90' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:43:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:68:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:69:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:76:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:81:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:82:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:89:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:95:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:102:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:111:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:112:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:113:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:123:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:124:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:125:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:135:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:136:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:137:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:68:8: warning: '(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:69:8: warning: '(try\n    {cases' le_total a b with hab hab <;> cases' le_total a c with hac hac <;> cases' le_total b c with hbc hbc <;>\n        simp_all [max_eq_left, max_eq_right, le_refl, le_of_lt, le_trans] <;>\n      omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:76:8: warning: 'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:81:8: warning: '(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:82:8: warning: '(try\n    {cases' le_total a b with hab hab <;> cases' le_total a c with hac hac <;> cases' le_total b c with hbc hbc <;>\n        simp_all [max_eq_left, max_eq_right, le_refl, le_of_lt, le_trans] <;>\n      omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:89:8: warning: 'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:95:8: warning: '(try\n    {cases' le_total a b with hab hab <;> cases' le_total a c with hac hac <;> cases' le_total b c with hbc hbc <;>\n        simp_all [max_eq_left, max_eq_right, le_refl, le_of_lt, le_trans] <;>\n      omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:102:8: warning: 'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:111:8: warning: '(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:112:8: warning: '(try aesop)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:113:8: warning: '(try\n    {cases' le_total a b with hab hab <;> cases' le_total a c with hac hac <;> cases' le_total b c with hbc hbc <;>\n        simp_all [max_eq_left, max_eq_right, le_refl, le_of_lt, le_trans] <;>\n      omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:123:8: warning: '(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:124:8: warning: '(try aesop)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:125:8: warning: '(try\n    {cases' le_total a b with hab hab <;> cases' le_total a c with hac hac <;> cases' le_total b c with hbc hbc <;>\n        simp_all [max_eq_left, max_eq_right, le_refl, le_of_lt, le_trans] <;>\n      omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:135:8: warning: '(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:136:8: warning: '(try aesop)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_advanced_41/lean_1/verina_advanced_41__T5_branch_extract__0.lean:137:8: warning: '(try\n    {cases' le_total a b with hab hab <;> cases' le_total a c with hac hac <;> cases' le_total b c with hbc hbc <;>\n        simp_all [max_eq_left, max_eq_right, le_refl, le_of_lt, le_trans] <;>\n      omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 13.044,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 74,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'maxOfThree__rp_branch_81742a90' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 43,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 68,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 69,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 76,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 82,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 89,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 95,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 102,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 111,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 112,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 113,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 123,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 124,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 125,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 135,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 136,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 137,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 68,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 69,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try\n    {cases' le_total a b with hab hab <;> cases' le_total a c with hac hac <;> cases' le_total b c with hbc hbc <;>\n        simp_all [max_eq_left, max_eq_right, le_refl, le_of_lt, le_trans] <;>\n      omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 76,
+   "col": 8,
+   "severity": "warning",
+   "text": "'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 82,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try\n    {cases' le_total a b with hab hab <;> cases' le_total a c with hac hac <;> cases' le_total b c with hbc hbc <;>\n        simp_all [max_eq_left, max_eq_right, le_refl, le_of_lt, le_trans] <;>\n      omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 89,
+   "col": 8,
+   "severity": "warning",
+   "text": "'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 95,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try\n    {cases' le_total a b with hab hab <;> cases' le_total a c with hac hac <;> cases' le_total b c with hbc hbc <;>\n        simp_all [max_eq_left, max_eq_right, le_refl, le_of_lt, le_trans] <;>\n      omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 102,
+   "col": 8,
+   "severity": "warning",
+   "text": "'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 111,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 112,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try aesop)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 113,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try\n    {cases' le_total a b with hab hab <;> cases' le_total a c with hac hac <;> cases' le_total b c with hbc hbc <;>\n        simp_all [max_eq_left, max_eq_right, le_refl, le_of_lt, le_trans] <;>\n      omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 123,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 124,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try aesop)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 125,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try\n    {cases' le_total a b with hab hab <;> cases' le_total a c with hac hac <;> cases' le_total b c with hbc hbc <;>\n        simp_all [max_eq_left, max_eq_right, le_refl, le_of_lt, le_trans] <;>\n      omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 135,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 136,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try aesop)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 137,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try\n    {cases' le_total a b with hab hab <;> cases' le_total a c with hac hac <;> cases' le_total b c with hbc hbc <;>\n        simp_all [max_eq_left, max_eq_right, le_refl, le_of_lt, le_trans] <;>\n      omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

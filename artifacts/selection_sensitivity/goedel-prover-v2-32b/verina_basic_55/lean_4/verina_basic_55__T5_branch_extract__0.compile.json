@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_55/lean_4/verina_basic_55__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_55/lean_4/verina_basic_55__T5_branch_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_55/lean_4/verina_basic_55__T5_branch_extract__0.lean:15:21: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_55/lean_4/verina_basic_55__T5_branch_extract__0.lean:15:31: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_55/lean_4/verina_basic_55__T5_branch_extract__0.lean:23:61: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_55/lean_4/verina_basic_55__T5_branch_extract__0.lean:23:12: warning: The declaration 'Compare__rp_branch_e4570326' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_55/lean_4/verina_basic_55__T5_branch_extract__0.lean:41:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_55/lean_4/verina_basic_55__T5_branch_extract__0.lean:78:12: error: simp_all made no progress\n",
+ "stderr": "",
+ "elapsed_seconds": 9.662,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 21,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 61,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'Compare__rp_branch_e4570326' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 41,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 78,
+   "col": 12,
+   "severity": "error",
+   "text": "simp_all made no progress\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "simp_failed"
+}

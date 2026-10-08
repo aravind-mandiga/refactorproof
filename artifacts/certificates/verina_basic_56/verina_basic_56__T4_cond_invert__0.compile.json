@@ -1,0 +1,67 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_56/verina_basic_56__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_56/verina_basic_56__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_56/verina_basic_56__T4_cond_invert__0.lean:23:7: warning: unused variable `src`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_56/verina_basic_56__T4_cond_invert__0.lean:23:12: warning: unused variable `sStart`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_56/verina_basic_56__T4_cond_invert__0.lean:23:20: warning: unused variable `dStart`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_56/verina_basic_56__T4_cond_invert__0.lean:30:89: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_56/verina_basic_56__T4_cond_invert__0.lean:39:89: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_56/verina_basic_56__T4_cond_invert__0.lean:49:106: error: type mismatch\n  rfl\nhas type\n  ?m.1153 = ?m.1153 : Prop\nbut is expected to have type\n  RPOrig.copy src sStart dest dStart len h_precond = RPRef.copy src sStart dest dStart len h_precond : Prop\nartifacts/certificates/verina_basic_56/verina_basic_56__T4_cond_invert__0.lean:53:106: error: type mismatch\n  rfl\nhas type\n  ?m.1800 = ?m.1800 : Prop\nbut is expected to have type\n  RPOrig.copy src sStart dest dStart len h_precond = RPRef.copy src sStart dest dStart len h_precond : Prop\nartifacts/certificates/verina_basic_56/verina_basic_56__T4_cond_invert__0.lean:58:2: error: tactic 'rfl' failed, the left-hand side\n  if len = 0 then dest\n  else\n    let r := dest;\n    updateSegment r src sStart dStart len\nis not definitionally equal to the right-hand side\n  if ¬len = 0 then\n    let r := dest;\n    updateSegment r src sStart dStart len\n  else dest\nsrc : Array Int\nsStart : Nat\ndest : Array Int\ndStart len : Nat\nh_precond : copy_precond src sStart dest dStart len\n⊢ (if len = 0 then dest\n    else\n      let r := dest;\n      updateSegment r src sStart dStart len) =\n    if ¬len = 0 then\n      let r := dest;\n      updateSegment r src sStart dStart len\n    else dest\n",
+ "stderr": "",
+ "elapsed_seconds": 0.824,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 23,
+   "col": 7,
+   "severity": "warning",
+   "text": "unused variable `src`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "unused variable `sStart`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `dStart`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 30,
+   "col": 89,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 89,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 49,
+   "col": 106,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1153 = ?m.1153 : Prop\nbut is expected to have type\n  RPOrig.copy src sStart dest dStart len h_precond = RPRef.copy src sStart dest dStart len h_precond : Prop"
+  },
+  {
+   "line": 53,
+   "col": 106,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1800 = ?m.1800 : Prop\nbut is expected to have type\n  RPOrig.copy src sStart dest dStart len h_precond = RPRef.copy src sStart dest dStart len h_precond : Prop"
+  },
+  {
+   "line": 58,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if len = 0 then dest\n  else\n    let r := dest;\n    updateSegment r src sStart dStart len\nis not definitionally equal to the right-hand side\n  if ¬len = 0 then\n    let r := dest;\n    updateSegment r src sStart dStart len\n  else dest\nsrc : Array Int\nsStart : Nat\ndest : Array Int\ndStart len : Nat\nh_precond : copy_precond src sStart dest dStart len\n⊢ (if len = 0 then dest\n    else\n      let r := dest;\n      updateSegment r src sStart dStart len) =\n    if ¬len = 0 then\n      let r := dest;\n      updateSegment r src sStart dStart len\n    else dest\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

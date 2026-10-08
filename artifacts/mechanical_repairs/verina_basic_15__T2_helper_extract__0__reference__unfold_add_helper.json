@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_15__T2_helper_extract__0",
+ "task_id": "verina_basic_15",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "containsConsecutiveNumbers",
+ "helper": "containsConsecutiveNumbers__rp_helper_906cb743",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold containsConsecutiveNumbers containsConsecutiveNumbers_postcond\n  constructor\n  \u00b7 simp_all\n    intro i hi hconsec\n    have hi' : 1 + i < a.size := by\n        rw [Nat.add_comm]\n        exact Nat.add_lt_of_lt_sub hi\n    have hi'' : i < a.size := by\n      have : i < 1 + i := by\n        simp [Nat.lt_add_of_pos_left]\n      exact Nat.lt_trans this hi'\n    constructor\n    \u00b7 exact Nat.lt_of_add_right_lt hi'\n    \u00b7 apply Array.any_iff_exists.mpr\n      simp\n      exists i\n      simp [hi, hi'']\n      have : a[i]! = a[i] := by\n        exact getElem!_pos a i hi''\n      rw [\u2190this]\n      exact hconsec\n  \u00b7 simp\n    intro ha h\n    have h' := Array.any_iff_exists.mp h\n    simp at h'\n    rcases h' with \u27e8i, hi, \u27e8hi', hconsec\u27e9\u27e9\n    have : a[i]! = a[i] := by\n      exact getElem!_pos a i hi\n    exists i\n    rw [this]\n    simp_all\n",
+ "proof_after": "  unfold containsConsecutiveNumbers containsConsecutiveNumbers__rp_helper_906cb743 containsConsecutiveNumbers_postcond\n  constructor\n  \u00b7 simp_all\n    intro i hi hconsec\n    have hi' : 1 + i < a.size := by\n        rw [Nat.add_comm]\n        exact Nat.add_lt_of_lt_sub hi\n    have hi'' : i < a.size := by\n      have : i < 1 + i := by\n        simp [Nat.lt_add_of_pos_left]\n      exact Nat.lt_trans this hi'\n    constructor\n    \u00b7 exact Nat.lt_of_add_right_lt hi'\n    \u00b7 apply Array.any_iff_exists.mpr\n      simp\n      exists i\n      simp [hi, hi'']\n      have : a[i]! = a[i] := by\n        exact getElem!_pos a i hi''\n      rw [\u2190this]\n      exact hconsec\n  \u00b7 simp\n    intro ha h\n    have h' := Array.any_iff_exists.mp h\n    simp at h'\n    rcases h' with \u27e8i, hi, \u27e8hi', hconsec\u27e9\u27e9\n    have : a[i]! = a[i] := by\n      exact getElem!_pos a i hi\n    exists i\n    rw [this]\n    simp_all\n"
+}

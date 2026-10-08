@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_11",
+ "variant_id": "verina_basic_11__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__hard_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.375,
+ "proof_region_errors": [
+  "unsolved goals\nn : ℕ\nh_precond : lastDigit_precond n\n⊢ lastDigit__rp_helper_8d571788 n h_precond < 10 ∧\n    n % 10 - lastDigit__rp_helper_8d571788 n h_precond = 0 ∧ lastDigit__rp_helper_8d571788 n h_precond - n % 10 = 0\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "04b6aa65ccb4f8021cbe1b4f74e53e88fd4a19c448ea840c08274cfd4c47313f",
+ "spec_hash": "971b5573012e5ab51016af84f8536d8b6668130cc30f066c18f90e67fdbd4ce3",
+ "proof_text": "  unfold lastDigit lastDigit_postcond\n  have h₁ : lastDigit_postcond (n) (lastDigit (n) h_precond) h_precond := by\n    simp [lastDigit, lastDigit_postcond, lastDigit_precond, Nat.mod_eq_of_lt]\n    <;>\n    (try omega) <;>\n    (try\n      {\n        constructor <;>\n        (try omega) <;>\n        (try\n          {\n            simp [Nat.mod_eq_of_lt]\n            <;> omega\n          })\n      }) <;>\n    (try\n      {\n        constructor <;>\n        omega\n      }) <;>\n    (try\n      {\n        simp [Nat.mod_eq_of_lt]\n        <;> omega\n      })\n    <;>\n    (try\n      {\n        omega\n      })\n  exact h₁\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "hard_unfold"
+}

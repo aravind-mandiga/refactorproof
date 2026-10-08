@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_76",
+ "variant_id": "verina_basic_76__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.502,
+ "proof_region_errors": [
+  "tactic 'aesop' failed, made no progress\nInitial goal:\n  case left\n  x y : ℤ\n  h_precond : myMin_precond x y\n  h : x ≤ y\n  h₁ : y ≤ x → y = x\n  ⊢ myMin__rp_helper_5e5dcb4d x y h_precond = x",
+  "tactic 'aesop' failed, made no progress\nInitial goal:\n  case right\n  x y : ℤ\n  h_precond : myMin_precond x y\n  h : y < x\n  h₁ : x < y → x = y\n  ⊢ myMin__rp_helper_5e5dcb4d x y h_precond = y\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "e00b8d5af5266f50ecfb1587634d4dea812fc3620c32e7be994c8dbb37e0f46b",
+ "spec_hash": "d9901d31ec443cc0361ca053ba855756bcebd3f7b2721795ecbe1c0af761407d",
+ "proof_text": "  have h_main : myMin_postcond x y (myMin x y h_precond) h_precond := by\n    unfold myMin_postcond\n    constructor\n    · -- Prove x ≤ y → myMin x y h_precond = x\n      intro h\n      have h₁ : (if x < y then x else y) = x := by\n        split_ifs <;> simp_all [myMin, myMin_precond] <;> omega\n      simp_all [myMin]\n      <;> aesop\n    · -- Prove x > y → myMin x y h_precond = y\n      intro h\n      have h₁ : (if x < y then x else y) = y := by\n        split_ifs <;> simp_all [myMin, myMin_precond] <;> try omega\n        <;> try linarith\n      simp_all [myMin]\n      <;> aesop\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "default"
+}

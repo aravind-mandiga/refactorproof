@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_59",
+ "variant_id": "verina_basic_59__T3_comm_swap__1",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_level": "simp_only",
+ "proof_source": "model",
+ "model_id": "qwen3-14b",
+ "generation_attempt": 1,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.841,
+ "proof_region_errors": [
+  "unsolved goals\nx : Int\n⊢ 2 * x * 2 = 2 * (2 * x)\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "0a2593fadc2b48c9f5ab37c185fa6a50f2ec9b8cceb7a0f4618d7aac80272f62",
+ "spec_hash": "92aaa4d259c67625406f056da6f929a6ac3231366f2353189b87f378030d398b",
+ "proof_text": "  unfold DoubleQuadruple DoubleQuadruple_postcond\n  simp_all\n",
+ "proof_aux_text": "\n",
+ "model_family": "qwen3",
+ "base_model": "qwen3-14b",
+ "strategy_condition": "default"
+}

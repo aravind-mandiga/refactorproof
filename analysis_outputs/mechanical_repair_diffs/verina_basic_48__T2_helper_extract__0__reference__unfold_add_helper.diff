@@ -1,0 +1,11 @@
+--- reference:verina_basic_48__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_48__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold isPerfectSquare_postcond isPerfectSquare
++  unfold isPerfectSquare_postcond isPerfectSquare isPerfectSquare__rp_helper_521a2256
+   simp
+   cases n with
+   | zero => simp
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: unknown constant 'isPerfectSquare.check'

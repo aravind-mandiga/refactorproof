@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_45",
+ "variant_id": "verina_basic_45__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  findProduct__rp_helper_883509e2 lst h_precond\n",
+ "transformed_code_aux": "\nprivate def findProduct__rp_helper_883509e2 (lst : List Int) (h_precond : findProduct_precond (lst)) : Int :=\n  match firstEvenOddIndices lst with\n  | some (ei, oi) => lst[ei]! * lst[oi]!\n  | none => 0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "findProduct__rp_helper_883509e2"
+ ],
+ "metadata": {
+  "binders": [
+   "lst",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "43f980abe9bbf7fc3b240fd3b0dd1e82e3b0dad1b0cb970238ae4eca100fbf92",
+ "proof_hash": "a3f0d2e0f29b439fde3c0334443720817d7d65b8939422a6b06cc515a7fb00e3",
+ "code_hash_original": "93414c1cfdc0902746d61829efdb94ad53329b44d5bedb32002a47badc62c9dd",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "findProduct",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

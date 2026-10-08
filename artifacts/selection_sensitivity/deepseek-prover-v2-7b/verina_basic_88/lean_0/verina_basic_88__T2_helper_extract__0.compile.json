@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_88/lean_0/verina_basic_88__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_88/lean_0/verina_basic_88__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_88/lean_0/verina_basic_88__T2_helper_extract__0.lean:15:21: warning: unused variable `xs`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_88/lean_0/verina_basic_88__T2_helper_extract__0.lean:23:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_88/lean_0/verina_basic_88__T2_helper_extract__0.lean:23:12: warning: The declaration 'ToArray__rp_helper_a2d904a6' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_88/lean_0/verina_basic_88__T2_helper_extract__0.lean:40:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_88/lean_0/verina_basic_88__T2_helper_extract__0.lean:63:8: error: unknown constant 'List.get_toArray'\n",
+ "stderr": "",
+ "elapsed_seconds": 9.689,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 21,
+   "severity": "warning",
+   "text": "unused variable `xs`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'ToArray__rp_helper_a2d904a6' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 63,
+   "col": 8,
+   "severity": "error",
+   "text": "unknown constant 'List.get_toArray'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unknown_constant_or_identifier"
+}

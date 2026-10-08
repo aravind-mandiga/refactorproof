@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_57/verina_advanced_57__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_57/verina_advanced_57__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_57/verina_advanced_57__T2_helper_extract__0.lean:24:62: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_57/verina_advanced_57__T2_helper_extract__0.lean:75:90: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_57/verina_advanced_57__T2_helper_extract__0.lean:131:104: error: type mismatch\n  rfl\nhas type\n  ?m.16340 = ?m.16340 : Prop\nbut is expected to have type\n  RPOrig.nextGreaterElement nums1 nums2 h_precond = RPRef.nextGreaterElement nums1 nums2 h_precond : Prop\nartifacts/certificates/verina_advanced_57/verina_advanced_57__T2_helper_extract__0.lean:135:104: error: type mismatch\n  rfl\nhas type\n  ?m.16445 = ?m.16445 : Prop\nbut is expected to have type\n  RPOrig.nextGreaterElement nums1 nums2 h_precond = RPRef.nextGreaterElement nums1 nums2 h_precond : Prop\nartifacts/certificates/verina_advanced_57/verina_advanced_57__T2_helper_extract__0.lean:142:42: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.nextGreaterElement nums1 nums2 h_precond\nis not definitionally equal to the right-hand side\n  RPRef.nextGreaterElement nums1 nums2 h_precond\nnums1 nums2 : List Int\nh_precond : nextGreaterElement_precond nums1 nums2\n⊢ RPOrig.nextGreaterElement nums1 nums2 h_precond = RPRef.nextGreaterElement nums1 nums2 h_precond\nartifacts/certificates/verina_advanced_57/verina_advanced_57__T2_helper_extract__0.lean:146:1698: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nis not definitionally equal to the right-hand side\n  RPRef.nextGreaterElement__rp_helper_a6d69d4b.resultLoop nums1 nums1.length\n    (RPRef.nextGreaterElement__rp_helper_a6d69d4b.mapLoop nums2 0 [] []) 0 []\nnums1 nums2 : List Int\nh_precond : nextGreaterElement_precond nums1 nums2\n⊢ RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 [] =\n    RPRef.nextGreaterElement__rp_helper_a6d69d4b.resultLoop nums1 nums1.length\n      (RPRef.nextGreaterElement__rp_helper_a6d69d4b.mapLoop nums2 0 [] []) 0 []\nartifacts/certificates/verina_advanced_57/verina_advanced_57__T2_helper_extract__0.lean:150:1693: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nis not definitionally equal to the right-hand side\n  RPRef.nextGreaterElement__rp_helper_a6d69d4b.resultLoop nums1 nums1.length\n    (RPRef.nextGreaterElement__rp_helper_a6d69d4b.mapLoop nums2 0 [] []) 0 []\nnums1 nums2 : List Int\nh_precond : nextGreaterElement_precond nums1 nums2\n⊢ RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 [] =\n    RPRef.nextGreaterElement__rp_helper_a6d69d4b.resultLoop nums1 nums1.length\n      (RPRef.nextGreaterElement__rp_helper_a6d69d4b.mapLoop nums2 0 [] []) 0 []\n",
+ "stderr": "",
+ "elapsed_seconds": 1.175,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 24,
+   "col": 62,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 75,
+   "col": 90,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 131,
+   "col": 104,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.16340 = ?m.16340 : Prop\nbut is expected to have type\n  RPOrig.nextGreaterElement nums1 nums2 h_precond = RPRef.nextGreaterElement nums1 nums2 h_precond : Prop"
+  },
+  {
+   "line": 135,
+   "col": 104,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.16445 = ?m.16445 : Prop\nbut is expected to have type\n  RPOrig.nextGreaterElement nums1 nums2 h_precond = RPRef.nextGreaterElement nums1 nums2 h_precond : Prop"
+  },
+  {
+   "line": 142,
+   "col": 42,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.nextGreaterElement nums1 nums2 h_precond\nis not definitionally equal to the right-hand side\n  RPRef.nextGreaterElement nums1 nums2 h_precond\nnums1 nums2 : List Int\nh_precond : nextGreaterElement_precond nums1 nums2\n⊢ RPOrig.nextGreaterElement nums1 nums2 h_precond = RPRef.nextGreaterElement nums1 nums2 h_precond"
+  },
+  {
+   "line": 146,
+   "col": 1698,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nis not definitionally equal to the right-hand side\n  RPRef.nextGreaterElement__rp_helper_a6d69d4b.resultLoop nums1 nums1.length\n    (RPRef.nextGreaterElement__rp_helper_a6d69d4b.mapLoop nums2 0 [] []) 0 []\nnums1 nums2 : List Int\nh_precond : nextGreaterElement_precond nums1 nums2\n⊢ RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 [] =\n    RPRef.nextGreaterElement__rp_helper_a6d69d4b.resultLoop nums1 nums1.length\n      (RPRef.nextGreaterElement__rp_helper_a6d69d4b.mapLoop nums2 0 [] []) 0 []"
+  },
+  {
+   "line": 150,
+   "col": 1693,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nis not definitionally equal to the right-hand side\n  RPRef.nextGreaterElement__rp_helper_a6d69d4b.resultLoop nums1 nums1.length\n    (RPRef.nextGreaterElement__rp_helper_a6d69d4b.mapLoop nums2 0 [] []) 0 []\nnums1 nums2 : List Int\nh_precond : nextGreaterElement_precond nums1 nums2\n⊢ RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 [] =\n    RPRef.nextGreaterElement__rp_helper_a6d69d4b.resultLoop nums1 nums1.length\n      (RPRef.nextGreaterElement__rp_helper_a6d69d4b.mapLoop nums2 0 [] []) 0 []\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_advanced_41",
+ "variant_id": "verina_advanced_41__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__avoid_unfold",
+ "generation_attempt": 1,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.722,
+ "proof_region_errors": [
+  "tactic 'split_ifs' failed, no if-then-else conditions to split\na b c : ℤ\nh_precond : maxOfThree_precond a b c\n⊢ (maxOfThree__rp_helper_7c6c6d3d a b c h_precond ≥ a ∧\n      maxOfThree__rp_helper_7c6c6d3d a b c h_precond ≥ b ∧ maxOfThree__rp_helper_7c6c6d3d a b c h_precond ≥ c) ∧\n    (maxOfThree__rp_helper_7c6c6d3d a b c h_precond = a ∨\n      maxOfThree__rp_helper_7c6c6d3d a b c h_precond = b ∨ maxOfThree__rp_helper_7c6c6d3d a b c h_precond = c)\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "fdd9545d509df84315dde14cf6e740038883d158a4ec436f67e94243845c2c5c",
+ "spec_hash": "29128d6527435b82d1289774bfcd553408b4defe3af053982c1b9111688cb50a",
+ "proof_text": "  have h_main : maxOfThree_postcond (a) (b) (c) (maxOfThree (a) (b) (c) h_precond) h_precond := by\n    simp only [maxOfThree_postcond, maxOfThree_precond, maxOfThree, maxOfThree_precond] at *\n    split_ifs <;> simp_all [le_refl, le_of_lt]\n    <;> norm_num <;>\n    (try omega) <;>\n    (try\n      {\n        by_cases h : a ≥ b <;> by_cases h' : a ≥ c <;> by_cases h'' : b ≥ c <;>\n          by_cases h''' : b ≥ a <;> by_cases h'''' : c ≥ a <;> by_cases h''''' : c ≥ b <;>\n            simp_all [max_eq_left, max_eq_right, le_refl, le_of_lt] <;>\n            (try omega) <;>\n            (try { aesop }) <;>\n            (try {\n              cases' le_total a b with hab hab <;> cases' le_total b c with hbc hbc <;> cases' le_total c a with hac hac <;>\n                simp_all [max_eq_left, max_eq_right, le_refl, le_of_lt] <;>\n                (try omega) <;>\n                (try { aesop })\n            })\n      }) <;>\n    (try {\n      omega\n    }) <;>\n    (try {\n      aesop\n    }) <;>\n    (try {\n      norm_num\n      <;> omega\n    }) <;>\n    (try {\n      norm_num\n      <;> omega\n    }) <;>\n    (try {\n      omega\n    })\n    <;>\n    (try {\n      aesop\n    })\n    <;>\n    (try {\n      norm_num\n      <;> omega\n    })\n    <;>\n    (try {\n      omega\n    })\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "avoid_unfold"
+}

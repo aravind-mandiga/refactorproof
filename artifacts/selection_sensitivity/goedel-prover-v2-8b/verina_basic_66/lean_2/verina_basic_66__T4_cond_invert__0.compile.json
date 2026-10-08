@@ -1,0 +1,73 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_2/verina_basic_66__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_2/verina_basic_66__T4_cond_invert__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_2/verina_basic_66__T4_cond_invert__0.lean:14:27: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_2/verina_basic_66__T4_cond_invert__0.lean:25:29: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_2/verina_basic_66__T4_cond_invert__0.lean:38:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_2/verina_basic_66__T4_cond_invert__0.lean:68:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_2/verina_basic_66__T4_cond_invert__0.lean:75:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_2/verina_basic_66__T4_cond_invert__0.lean:61:9: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_2/verina_basic_66__T4_cond_invert__0.lean:69:9: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_2/verina_basic_66__T4_cond_invert__0.lean:62:4: warning: '(try {\n    -- Prove the backward direction: if there exists k such that x = 2 * k, then x % 2 = 0\n    have h₁ : x % 2 = 0 := by\n      -- Use the fact that x = 2 * k to show x % 2 = 0omega\n    omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_2/verina_basic_66__T4_cond_invert__0.lean:75:4: warning: '(try {\n    -- Handle the case when x % 2 = 1omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 14.255,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 27,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 68,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 75,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 9,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 69,
+   "col": 9,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 62,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {\n    -- Prove the backward direction: if there exists k such that x = 2 * k, then x % 2 = 0\n    have h₁ : x % 2 = 0 := by\n      -- Use the fact that x = 2 * k to show x % 2 = 0omega\n    omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 75,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {\n    -- Handle the case when x % 2 = 1omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

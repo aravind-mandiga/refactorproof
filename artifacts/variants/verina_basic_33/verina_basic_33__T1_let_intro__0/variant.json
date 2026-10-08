@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_33",
+ "variant_id": "verina_basic_33__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_8190b2c6 : Nat :=\n    let rec findMissing (v : Nat) (l : List Nat) : Nat :=\n      match l with\n      | [] => v\n      | x :: xs =>\n        if x > v then v\n        else if x = v then findMissing (v + 1) xs\n        else findMissing v xs\n    findMissing 0 s\n  __rp_tmp_8190b2c6\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_8190b2c6",
+  "seed": 0
+ },
+ "spec_hash": "1ef2dc262094114d379da34624fbcec8a0371ba31284aaf0e2ea36cf9be640b7",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "efca964f8f5a8dbbf0c4910851c8525a10ed6c32065eb0bdcd46ccf5ac27295a",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "smallestMissingNumber",
+ "code_loc_original": 8,
+ "code_loc_refactored": 10
+}

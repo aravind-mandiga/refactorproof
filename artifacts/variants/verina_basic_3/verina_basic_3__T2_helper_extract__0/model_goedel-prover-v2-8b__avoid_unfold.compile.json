@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_3/verina_basic_3__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_3/verina_basic_3__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_3/verina_basic_3__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:15:29: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_3/verina_basic_3__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:23:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_3/verina_basic_3__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:23:12: warning: The declaration 'isDivisibleBy11__rp_helper_c39b37ae' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_3/verina_basic_3__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:40:55: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_3/verina_basic_3__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:57:33: error: type mismatch, term\n  h\nafter simplification has type\n  isDivisibleBy11__rp_helper_c39b37ae n h_precond = true : Prop\nbut is expected to have type\n  11 ∣ n : Prop\nartifacts/variants/verina_basic_3/verina_basic_3__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:79:12: error: tauto failed to solve some goals.\nartifacts/variants/verina_basic_3/verina_basic_3__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:79:12: error: unsolved goals\ncase inl.mpr\nn : ℤ\nh_precond : isDivisibleBy11_precond n\nh : ¬isDivisibleBy11 n h_precond = true\nk : ℤ\nhk : n = 11 * k\nh₃ : n % 11 = 0\nh₄ h₁ : ¬isDivisibleBy11 n h_precond = true\na✝ : 11 ∣ n\n⊢ isDivisibleBy11__rp_helper_c39b37ae n h_precond = true\n\ncase inr.intro.mpr\nn : ℤ\nh_precond : isDivisibleBy11_precond n\nh : ¬isDivisibleBy11 n h_precond = true\nk : ℤ\nhk : n = 11 * k\nh₃ : n % 11 = 0\nh₄ : ¬isDivisibleBy11 n h_precond = true\nw✝ : ℤ\nh✝ : n = 11 * w✝\na✝ : 11 ∣ n\n⊢ isDivisibleBy11__rp_helper_c39b37ae n h_precond = true\n",
+ "stderr": "",
+ "elapsed_seconds": 8.239,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'isDivisibleBy11__rp_helper_c39b37ae' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 55,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 57,
+   "col": 33,
+   "severity": "error",
+   "text": "type mismatch, term\n  h\nafter simplification has type\n  isDivisibleBy11__rp_helper_c39b37ae n h_precond = true : Prop\nbut is expected to have type\n  11 ∣ n : Prop"
+  },
+  {
+   "line": 79,
+   "col": 12,
+   "severity": "error",
+   "text": "tauto failed to solve some goals."
+  },
+  {
+   "line": 79,
+   "col": 12,
+   "severity": "error",
+   "text": "unsolved goals\ncase inl.mpr\nn : ℤ\nh_precond : isDivisibleBy11_precond n\nh : ¬isDivisibleBy11 n h_precond = true\nk : ℤ\nhk : n = 11 * k\nh₃ : n % 11 = 0\nh₄ h₁ : ¬isDivisibleBy11 n h_precond = true\na✝ : 11 ∣ n\n⊢ isDivisibleBy11__rp_helper_c39b37ae n h_precond = true\n\ncase inr.intro.mpr\nn : ℤ\nh_precond : isDivisibleBy11_precond n\nh : ¬isDivisibleBy11 n h_precond = true\nk : ℤ\nhk : n = 11 * k\nh₃ : n % 11 = 0\nh₄ : ¬isDivisibleBy11 n h_precond = true\nw✝ : ℤ\nh✝ : n = 11 * w✝\na✝ : 11 ∣ n\n⊢ isDivisibleBy11__rp_helper_c39b37ae n h_precond = true\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

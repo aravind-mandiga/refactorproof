@@ -1,0 +1,10 @@
+--- reference:verina_basic_49__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_49__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold findFirstOdd findFirstOdd_postcond
++  unfold findFirstOdd findFirstOdd__rp_helper_ae0c5502 findFirstOdd_postcond
+   let la := a.toList
+   have h_la : la = a.toList := by rfl
+   let indexed := la.zipIdx
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_52",
+ "variant_id": "verina_advanced_52__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_52/verina_advanced_52__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 1.972,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1989 = ?m.1989 : Prop\nbut is expected to have type\n  RPOrig.minOperations nums k h_precond = RPRef.minOperations nums k h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.2920 = ?m.2920 : Prop\nbut is expected to have type\n  RPOrig.minOperations nums k h_precond = RPRef.minOperations nums k h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if (k == 0) = true then 0\n  else\n    List.brecOn (motive := fun remaining => List Nat → Nat → Nat → Nat) nums.reverse\n      (fun remaining f collected collected_count ops =>\n        (match (motive :=\n            (remaining : List Nat) → List.below (motive := fun remaining => List Nat → Nat → Nat → Nat) remaining → Nat)\n            remaining with\n          | [] => fun x => ops\n          | head :: tail => fun x =>\n            let ops' := ops + 1;\n         "
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if (k == 0) = true then 0\n  else\n    List.brecOn (motive := fun remaining => List Nat → Nat → Nat → Nat) nums.reverse\n      (fun remaining f collected collected_count ops =>\n        (match (motive :=\n            (remaining : List Nat) → List.below (motive := fun remaining => List Nat → Nat → Nat → Nat) remaining → Nat)\n            remaining with\n          | [] => fun x => ops\n          | head :: tail => fun x =>\n            let ops' := ops + 1;\n         ",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.36084'"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if k = 0 then 0\n  else\n    List.brecOn (motive := fun remaining => List Nat → Nat → Nat → Nat) nums.reverse\n      (fun remaining f collected collected_count ops =>\n        (match (motive :=\n            (remaining : List Nat) → List.below (motive := fun remaining => List Nat → Nat → Nat → Nat) remaining → Nat)\n            remaining with\n          | [] => fun x => ops\n          | head :: tail => fun x =>\n            let ops' := ops + 1;\n            if (dec",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.53536'"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if (k == 0) = true then 0\n  else\n    List.brecOn (motive := fun remaining => List Nat → Nat → Nat → Nat) nums.reverse\n      (fun remaining f collected collected_count ops =>\n        (match (motive :=\n            (remaining : List Nat) → List.below (motive := fun remaining => List Nat → Nat → Nat → Nat) remaining → Nat)\n            remaining with\n          | [] => fun x => ops\n          | head :: tail => fun x =>\n            let ops' := ops + 1;\n         ",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.59900'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

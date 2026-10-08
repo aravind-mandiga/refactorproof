@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_12",
+ "variant_id": "verina_basic_12__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "qwen3-32b",
+ "generation_attempt": 3,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 1.689,
+ "proof_region_errors": [
+  "unsolved goals\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\n⊢ cubeSurfaceArea__rp_helper_67e54167 size h_precond - 6 * (size * size) = 0 ∧\n    6 * (size * size) - cubeSurfaceArea__rp_helper_67e54167 size h_precond = 0\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "4bf645462bb6be274a0db480ee6d571502cc974e609d364dd523bc16162a46e4",
+ "spec_hash": "35aa279200d65ed096def6c82bb7a725efca6faffdd9afab3f82ec84271da3ca",
+ "proof_text": "  unfold cubeSurfaceArea cubeSurfaceArea_postcond\n  simp [Nat.mul_assoc]\n",
+ "proof_aux_text": "\n",
+ "model_family": "qwen3",
+ "base_model": "qwen3-32b",
+ "strategy_condition": "default"
+}

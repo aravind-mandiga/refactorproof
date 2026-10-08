@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_99",
+ "variant_id": "verina_basic_99__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-32b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "other",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.627,
+ "proof_region_errors": [
+  "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  -2 ≤ 3*b - c ≤ 0\n  a ≥ 18\n  a - b ≥ 1\nwhere\n a := x\n b := Triple__rp_branch_609232c2 x h_precond / 3\n c := Triple__rp_branch_609232c2 x h_precond",
+  "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≥ 18\n  -2 ≤ 3*a - b ≤ 0\n  3*a - c ≥ 1\nwhere\n a := x\n b := Triple x h_precond\n c := Triple__rp_branch_609232c2 x h_precond\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "c33d78150a7b884001ee1d2b082c63220d5dc367ec8353840561c75390e8ba82",
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c",
+ "proof_text": "  have h_main : (Triple (x) h_precond) / 3 = x := by\n    dsimp [Triple]\n    split_ifs with h\n    · -- Case: x < 18\n      have h₁ : ((2 * x + 4 * x) / 2 : ℤ) = 3 * x := by\n        have h₂ : (2 * x + 4 * x : ℤ) = 6 * x := by ring\n        rw [h₂]\n        have h₃ : (6 * x : ℤ) / 2 = 3 * x := by\n          have h₄ : (6 * x : ℤ) = 2 * (3 * x) := by ring\n          rw [h₄]\n          -- Since 2 * (3 * x) is divisible by 2, the division is exact.\n          have h₅ : (2 * (3 * x) : ℤ) / 2 = 3 * x := by\n            have h₆ : (2 : ℤ) ≠ 0 := by norm_num\n            have h₇ : (2 * (3 * x) : ℤ) / 2 = 3 * x := by\n              apply Int.ediv_eq_of_eq_mul_right (by norm_num : (2 : ℤ) ≠ 0)\n              <;> ring\n            exact h₇\n          exact h₅\n        rw [h₃]\n      rw [h₁]\n      -- Now we need to show (3 * x) / 3 = x\n      have h₂ : (3 * x : ℤ) / 3 = x := by\n        have h₃ : (3 : ℤ) ≠ 0 := by norm_num\n        have h₄ : (3 * x : ℤ) / 3 = x := by\n          apply Int.ediv_eq_of_eq_mul_right (by norm_num : (3 : ℤ) ≠ 0)\n          <;> ring\n        exact h₄\n      rw [h₂]\n    · -- Case: x ≥ 18\n      have h₁ : (x + 2 * x : ℤ) = 3 * x := by ring\n      have h₂ : (x + 2 * x : ℤ) = 3 * x := by ring\n      have h₃ : (3 * x : ℤ) / 3 = x := by\n        have h₄ : (3 : ℤ) ≠ 0 := by norm_num\n        have h₅ : (3 * x : ℤ) / 3 = x := by\n          apply Int.ediv_eq_of_eq_mul_right (by norm_num : (3 : ℤ) ≠ 0)\n          <;> ring\n        exact h₅\n      simp_all [h₁, h₂]\n      <;> ring_nf at *\n      <;> omega\n\n  have h_main₂ : (Triple (x) h_precond) / 3 * 3 = (Triple (x) h_precond) := by\n    have h₁ : (Triple (x) h_precond) / 3 = x := h_main\n    have h₂ : (Triple (x) h_precond) / 3 * 3 = x * 3 := by\n      rw [h₁]\n      <;> ring\n    have h₃ : x * 3 = (Triple (x) h_precond) := by\n      have h₄ : (Triple (x) h_precond) = 3 * x := by\n        dsimp [Triple]\n        split_ifs with h\n        · -- Case: x < 18\n          have h₅ : ((2 * x + 4 * x) / 2 : ℤ) = 3 * x := by\n            have h₆ : (2 * x + 4 * x : ℤ) = 6 * x := by ring\n            rw [h₆]\n            have h₇ : (6 * x : ℤ) / 2 = 3 * x := by\n              have h₈ : (6 * x : ℤ) = 2 * (3 * x) := by ring\n              rw [h₈]\n              -- Since 2 * (3 * x) is divisible by 2, the division is exact.\n              have h₉ : (2 * (3 * x) : ℤ) / 2 = 3 * x := by\n                have h₁₀ : (2 : ℤ) ≠ 0 := by norm_num\n                have h₁₁ : (2 * (3 * x) : ℤ) / 2 = 3 * x := by\n                  apply Int.ediv_eq_of_eq_mul_right (by norm_num : (2 : ℤ) ≠ 0)\n                  <;> ring\n                exact h₁₁\n              exact h₉\n            rw [h₇]\n          rw [h₅]\n          <;> ring\n        · -- Case: x ≥ 18\n          have h₅ : (x + 2 * x : ℤ) = 3 * x := by ring\n          simp_all [h₅]\n          <;> ring_nf at *\n          <;> omega\n      rw [h₄]\n      <;> ring\n      <;> omega\n    linarith\n\n  constructor\n  · -- Prove the first part: (Triple x) / 3 = x\n    exact h_main\n  · -- Prove the second part: (Triple x) / 3 * 3 = Triple x\n    exact h_main₂\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-32b",
+ "strategy_condition": "default"
+}

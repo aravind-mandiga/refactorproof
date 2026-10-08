@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_58",
+ "variant_id": "verina_advanced_58__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  nthUglyNumber__rp_helper_82da11ef n h_precond\n",
+ "transformed_code_aux": "def nextUgly (seq : List Nat) (c2 c3 c5 : Nat) : (Nat × Nat × Nat × Nat) :=\n  let i2 := seq[c2]! * 2\n  let i3 := seq[c3]! * 3\n  let i5 := seq[c5]! * 5\n  let next := min i2 (min i3 i5)\n  let c2' := if next = i2 then c2 + 1 else c2\n  let c3' := if next = i3 then c3 + 1 else c3\n  let c5' := if next = i5 then c5 + 1 else c5\n  (next, c2', c3', c5')\n\nprivate def nthUglyNumber__rp_helper_82da11ef (n : Nat) (h_precond : nthUglyNumber_precond (n)) : Nat :=\n  let rec loop (i : Nat) (seq : List Nat) (c2 c3 c5 : Nat) : List Nat :=\n    match i with\n    | 0 => seq\n    | Nat.succ i' =>\n      let (next, c2', c3', c5') := nextUgly seq c2 c3 c5\n      loop i' (seq ++ [next]) c2' c3' c5'\n  (loop (n - 1) [1] 0 0 0)[(n - 1)]!\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "nthUglyNumber__rp_helper_82da11ef"
+ ],
+ "metadata": {
+  "binders": [
+   "n",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "4cc03b4122ae03585008eabc50147308bd033c119d960f7f515bf33328279a5f",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "216df7ea96df3d94bb8e2b882f4d2c66242e0acaa7fe652d8d40a5bb2267b286",
+ "code_aux_hash_original": "ff050b94e798c469474912ea5dd9348d9fc775b6ebeed213a580361dec59368e",
+ "tier": "advanced",
+ "function_name": "nthUglyNumber",
+ "code_loc_original": 7,
+ "code_loc_refactored": 9
+}

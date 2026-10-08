@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_22",
+ "variant_id": "verina_advanced_22__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_22/verina_advanced_22__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.872,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1046 = ?m.1046 : Prop\nbut is expected to have type\n  RPOrig.isPeakValley lst h_precond = RPRef.isPeakValley lst h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1172 = ?m.1172 : Prop\nbut is expected to have type\n  RPOrig.isPeakValley lst h_precond = RPRef.isPeakValley lst h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun l => Bool → Bool → Bool) lst\n    (fun l f increasing startedDecreasing =>\n      (match (motive := (l : List Int) → List.below (motive := fun l => Bool → Bool → Bool) l → Bool) l with\n        | x :: y :: rest => fun x_1 =>\n          if x < y then if startedDecreasing = true then false else x_1.1 true startedDecreasing\n          else if x > y then if increasing = true then x_1.1 increasing true else false else false\n        | x ="
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun l => Bool → Bool → Bool) lst\n    (fun l f increasing startedDecreasing =>\n      (match (motive := (l : List Int) → List.below (motive := fun l => Bool → Bool → Bool) l → Bool) l with\n        | x :: y :: rest => fun x_1 =>\n          if x < y then if startedDecreasing = true then false else x_1.1 true startedDecreasing\n          else if x > y then if increasing = true then x_1.1 increasing true else false else false\n        | x =",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.2463'"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun l => Bool → Bool → Bool) lst\n    (fun l f increasing startedDecreasing =>\n      (match (motive := (l : List Int) → List.below (motive := fun l => Bool → Bool → Bool) l → Bool) l with\n        | x :: y :: rest => fun x_1 =>\n          if x < y then if startedDecreasing = true then false else x_1.1 true startedDecreasing\n          else if x > y then if increasing = true then x_1.1 increasing true else false else false\n        | x =",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.3296'"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun l => Bool → Bool → Bool) lst\n    (fun l f increasing startedDecreasing =>\n      (match (motive := (l : List Int) → List.below (motive := fun l => Bool → Bool → Bool) l → Bool) l with\n        | x :: y :: rest => fun x_1 =>\n          if x < y then if startedDecreasing = true then false else x_1.1 true startedDecreasing\n          else if x > y then if increasing = true then x_1.1 increasing true else false else false\n        | x =",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.3571'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

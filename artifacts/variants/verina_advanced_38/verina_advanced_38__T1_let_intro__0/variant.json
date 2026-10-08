@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_38",
+ "variant_id": "verina_advanced_38__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_73251cad : Nat :=\n    let n := intervals.length\n    if n ≤ 1 then 0\n    else\n      (List.range n).foldl (fun acc i =>\n        let remaining := List.eraseIdx intervals i\n        let sorted := List.mergeSort remaining (fun (a b : Nat × Nat) => a.1 ≤ b.1)\n        let merged := sorted.foldl (fun acc curr =>\n          match acc with\n          | [] => [curr]\n          | (s, e) :: rest => if curr.1 ≤ e then (s, max e curr.2) :: rest else curr :: acc\n        ) []\n        let coverage := merged.reverse.foldl (fun acc (s, e) => acc + (e - s)) 0\n        max acc coverage\n      ) 0\n  __rp_tmp_73251cad\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_73251cad",
+  "seed": 0
+ },
+ "spec_hash": "689c99c07eb989726491ad95dde13750624bc9eeb6c9667c39c11265f172ae27",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "7f733fb46eec3434294e4f182d34a0da562839c0c835bb4ece2ea1dde1edc5c6",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "maxCoverageAfterRemovingOne",
+ "code_loc_original": 14,
+ "code_loc_refactored": 16
+}

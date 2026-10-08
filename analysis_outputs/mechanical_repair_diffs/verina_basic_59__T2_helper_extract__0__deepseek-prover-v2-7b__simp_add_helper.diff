@@ -1,0 +1,14 @@
+--- deepseek-prover-v2-7b:verina_basic_59__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_59__T2_helper_extract__0 (simp_add_helper)
+@@ -1,7 +1,7 @@
+   have h_main : (DoubleQuadruple (x) h_precond).fst = 2 * x ∧ (DoubleQuadruple (x) h_precond).snd = 2 * (DoubleQuadruple (x) h_precond).fst := by
+     constructor
+     · -- Prove the first part: (DoubleQuadruple (x) h_precond).fst = 2 * x
+-      simp [DoubleQuadruple, DoubleQuadruple_precond, Int.mul_emod]
++      simp [DoubleQuadruple, DoubleQuadruple_precond, Int.mul_emod, DoubleQuadruple__rp_helper_8062be2e]
+       <;> ring_nf
+       <;> aesop
+     · -- Prove the second part: (DoubleQuadruple (x) h_precond).snd = 2 * (DoubleQuadruple (x) h_precond).fst
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: tactic 'aesop' failed, made no progress | Initial goal: |   case right |   x : ℤ |   h_precond : DoubleQuadruple_precond x |   ⊢ (DoubleQuadruple__rp_helper_8062be2e x h_precond).2 = (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 * 2 | 

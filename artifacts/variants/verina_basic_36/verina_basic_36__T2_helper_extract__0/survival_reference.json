@@ -1,0 +1,27 @@
+{
+ "task_id": "verina_basic_36",
+ "variant_id": "verina_basic_36__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.745,
+ "proof_region_errors": [
+  "unsolved goals\ncase left\ns : String\nh_precond : replaceWithColon_precond s\n⊢ (replaceWithColon__rp_helper_3e0fbdec s h_precond).data.length = s.data.length",
+  "unsolved goals\ncase right.left\ns : String\nh_precond : replaceWithColon_precond s\ni : Nat\nhi : i < s.length\nhi' : i < s.data.length\n⊢ isSpaceCommaDot s.data[i] = true → (replaceWithColon__rp_helper_3e0fbdec s h_precond).data[i]?.getD 'A' = ':'\n\ncase right.right\ns : String\nh_precond : replaceWithColon_precond s\ni : Nat\nhi : i < s.length\nhi' : i < s.data.length\n⊢ isSpaceCommaDot s.data[i] = false → (replaceWithColon__rp_helper_3e0fbdec s h_precond).data[i]?.getD 'A' = s.data[i]\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "37368631be332ce81fdd9d8be1007e5e79f8dc55169ce2fc4e6bdc4638064b62",
+ "spec_hash": "98c548169d33beadb4e778cf11d243bea9371eb3e69d19b4713a14a195f5ede4"
+}

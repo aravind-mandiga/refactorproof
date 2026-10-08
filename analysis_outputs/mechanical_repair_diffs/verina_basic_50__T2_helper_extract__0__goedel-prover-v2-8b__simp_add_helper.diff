@@ -1,0 +1,14 @@
+--- goedel-prover-v2-8b:verina_basic_50__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_50__T2_helper_extract__0 (simp_add_helper)
+@@ -10,7 +10,7 @@
+         · -- Case: x ≥ 0
+           have h₂ : x ≥ 0 := by linarith
+           have h₃ : Abs (x) h_precond = x := by
+-            simp [Abs, h₂]
++            simp [Abs, h₂, Abs__rp_helper_4386b369]
+             <;> omega
+           simp_all
+           <;> omega
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: omega could not prove the goal: | a possible counterexample may satisfy the constraints |   a ≤ -1 |   a + b ≤ -1 | where |  a := x |  b := Abs__rp_helper_4386b369 x h_precond | 

@@ -1,0 +1,14 @@
+--- goedel-prover-v2-8b:verina_basic_5__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_5__T2_helper_extract__0 (simp_add_helper)
+@@ -1,7 +1,7 @@
+   have h_main : multiply_postcond (a) (b) (multiply (a) (b) h_precond) h_precond := by
+     constructor
+     · -- Prove the first part: (a * b) - a * b = 0
+-      simp [multiply, h_precond, multiply_precond]
++      simp [multiply, h_precond, multiply_precond, multiply__rp_helper_3cc08e31]
+       <;> ring
+       <;> simp_all
+       <;> omega
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: simp_all made no progress | 

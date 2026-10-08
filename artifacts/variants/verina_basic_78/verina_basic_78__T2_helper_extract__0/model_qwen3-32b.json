@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_78",
+ "variant_id": "verina_basic_78__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "qwen3-32b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "simp_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.916,
+ "proof_region_errors": [
+  "simp made no progress\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "26c454dad475e8f54ba6efc6da4e4b3fdd78829dc60c2b969a11d05521b9cdfb",
+ "spec_hash": "1023c80e4b2fff27002508b81c3d6b5ac10976a798683e4c6ffd59d089cbc2d9",
+ "proof_text": "  unfold MultipleReturns_postcond\n  unfold MultipleReturns\n  constructor\n  · rfl\n  · simp [Int.sub_add_cancel]\n",
+ "proof_aux_text": "\n",
+ "model_family": "qwen3",
+ "base_model": "qwen3-32b",
+ "strategy_condition": "default"
+}

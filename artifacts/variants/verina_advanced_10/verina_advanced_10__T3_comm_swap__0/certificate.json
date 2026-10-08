@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_10",
+ "variant_id": "verina_advanced_10__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_10/verina_advanced_10__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.786,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.31718 = ?m.31718 : Prop\nbut is expected to have type\n  RPOrig.findExponents n primes h_precond = RPRef.findExponents n primes h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.31848 = ?m.31848 : Prop\nbut is expected to have type\n  RPOrig.findExponents n primes h_precond = RPRef.findExponents n primes h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun primes => ℕ → List (ℕ × ℕ)) primes\n    (fun primes f n =>\n      (match (motive := (primes : List ℕ) → List.below (motive := fun primes => ℕ → List (ℕ × ℕ)) primes → List (ℕ × ℕ))\n          primes with\n        | [] => fun x => []\n        | p :: ps => fun x =>\n          match RPOrig.findExponents.countFactor n p 0 with\n          | (count, n') => (p, count) :: x.1 n')\n        f)\n    n\nis not definitionally equal to the right-hand "
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun primes => ℕ → List (ℕ × ℕ)) primes\n    (fun primes f n =>\n      (match (motive := (primes : List ℕ) → List.below (motive := fun primes => ℕ → List (ℕ × ℕ)) primes → List (ℕ × ℕ))\n          primes with\n        | [] => fun x => []\n        | p :: ps => fun x =>\n          match RPOrig.findExponents.countFactor n p 0 with\n          | (count, n') => (p, count) :: x.1 n')\n        f)\n    n\nis not definitionally equal to the right-hand ",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.33568'"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun primes => ℕ → List (ℕ × ℕ)) primes\n    (fun primes f n =>\n      (match (motive := (primes : List ℕ) → List.below (motive := fun primes => ℕ → List (ℕ × ℕ)) primes → List (ℕ × ℕ))\n          primes with\n        | [] => fun x => []\n        | p :: ps => fun x =>\n          match RPOrig.findExponents.countFactor n p 0 with\n          | (count, n') => (p, count) :: x.1 n')\n        f)\n    n\nis not definitionally equal to the right-hand ",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.34797'"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun primes => ℕ → List (ℕ × ℕ)) primes\n    (fun primes f n =>\n      (match (motive := (primes : List ℕ) → List.below (motive := fun primes => ℕ → List (ℕ × ℕ)) primes → List (ℕ × ℕ))\n          primes with\n        | [] => fun x => []\n        | p :: ps => fun x =>\n          match RPOrig.findExponents.countFactor n p 0 with\n          | (count, n') => (p, count) :: x.1 n')\n        f)\n    n\nis not definitionally equal to the right-hand ",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.35067'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

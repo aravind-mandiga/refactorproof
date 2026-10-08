@@ -1,0 +1,11 @@
+--- goedel-prover-v2-8b:verina_basic_8__T5_branch_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_8__T5_branch_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : myMin_postcond (a) (b) (myMin (a) (b) h_precond) h_precond := by
+-    dsimp [myMin, myMin_precond, myMin_postcond] at *
++    dsimp [myMin, myMin_precond, myMin_postcond, myMin__rp_branch_c77e3e9a] at *
+     <;>
+     split_ifs <;>
+     (try {
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

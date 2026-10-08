@@ -1,0 +1,11 @@
+--- goedel-prover-v2-8b:verina_basic_66__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_66__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : ((ComputeIsEven (x) h_precond) = true ↔ ∃ (k : Int), x = 2 * k) := by
+-    dsimp [ComputeIsEven]
++    dsimp [ComputeIsEven, ComputeIsEven__rp_helper_c370e361]
+     constructor
+     · -- Prove the forward direction: if x % 2 = 0, then ∃ k, x = 2 * k
+       intro h
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_12",
+ "variant_id": "verina_basic_12__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_level": "simp_only",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.927,
+ "proof_region_errors": [
+  "unsolved goals\nsize : ℕ\n⊢ True ∨ size = 0\nTry this: ring_nf",
+  "unsolved goals\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\nh₁ : cubeSurfaceArea size h_precond - 6 * size * size = 0\n⊢ True ∨ size = 0\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "278dfd94402f7b3e83fd43a093db4fa76c8fd2db478ae09d0b86b0c8382eaead",
+ "spec_hash": "35aa279200d65ed096def6c82bb7a725efca6faffdd9afab3f82ec84271da3ca",
+ "proof_text": "  have h₁ : cubeSurfaceArea (size) h_precond - 6 * size * size = 0 := by\n    have h : cubeSurfaceArea (size) h_precond = 6 * size * size := by\n      unfold cubeSurfaceArea\n      <;> simp_all [cubeSurfaceArea_precond]\n      <;> ring\n    rw [h]\n    <;> simp [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib]\n    <;> induction size <;> simp_all [Nat.mul_succ, Nat.mul_zero, Nat.add_zero]\n    <;> ring_nf at * <;> omega\n\n  have h₂ : 6 * size * size - cubeSurfaceArea (size) h_precond = 0 := by\n    have h : cubeSurfaceArea (size) h_precond = 6 * size * size := by\n      unfold cubeSurfaceArea\n      <;> simp_all [cubeSurfaceArea_precond]\n      <;> ring\n    rw [h]\n    <;> simp [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib]\n    <;> induction size <;> simp_all [Nat.mul_succ, Nat.mul_zero, Nat.add_zero]\n    <;> ring_nf at * <;> omega\n\n  have h₃ : cubeSurfaceArea_postcond (size) (cubeSurfaceArea (size) h_precond) h_precond := by\n    constructor\n    · -- Prove the first part of the conjunction\n      exact h₁\n    · -- Prove the second part of the conjunction\n      exact h₂\n\n  exact h₃\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "default"
+}

@@ -1,0 +1,14 @@
+--- deepseek-prover-v2-7b:verina_basic_1__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_1__T2_helper_extract__0 (simp_add_helper)
+@@ -6,7 +6,7 @@
+         -- Case: a < 0 and b > 0
+         have h₂ : a * b < 0 := by
+           nlinarith
+-        simp_all [hasOppositeSign, h_precond]
++        simp_all [hasOppositeSign, h_precond, hasOppositeSign__rp_helper_5272bffb]
+         <;> norm_num at * <;>
+         (try omega) <;>
+         (try omega) <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: unsolved goals | case inr | a b : ℤ | h_precond : hasOppositeSign_precond a b | h₂ : a * b < 0 | left : 0 < a | right : b < 0 | ⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = true

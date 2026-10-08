@@ -1,0 +1,37 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_13/verina_advanced_13__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_13/verina_advanced_13__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_13/verina_advanced_13__T1_let_intro__0.lean:25:63: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_13/verina_advanced_13__T1_let_intro__0.lean:63:63: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_13/verina_advanced_13__T1_let_intro__0.lean:104:102: error: type mismatch\n  rfl\nhas type\n  ?m.7513 = ?m.7513 : Prop\nbut is expected to have type\n  RPOrig.hasChordIntersection N chords h_precond = RPRef.hasChordIntersection N chords h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 1.207,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 25,
+   "col": 63,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 63,
+   "col": 63,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 104,
+   "col": 102,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.7513 = ?m.7513 : Prop\nbut is expected to have type\n  RPOrig.hasChordIntersection N chords h_precond = RPRef.hasChordIntersection N chords h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

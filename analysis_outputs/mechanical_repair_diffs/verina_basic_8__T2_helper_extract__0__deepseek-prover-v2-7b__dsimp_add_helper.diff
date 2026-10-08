@@ -1,0 +1,11 @@
+--- deepseek-prover-v2-7b:verina_basic_8__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_8__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : (myMin a b h_precond ≤ a ∧ myMin a b h_precond ≤ b) ∧ (myMin a b h_precond = a ∨ myMin a b h_precond = b) := by
+-    dsimp [myMin, myMin_precond] at *
++    dsimp [myMin, myMin_precond, myMin__rp_helper_829c4a21] at *
+     split_ifs <;> simp_all [Int.le_refl, Int.le_of_lt] <;>
+     (try { omega }) <;>
+     (try {
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

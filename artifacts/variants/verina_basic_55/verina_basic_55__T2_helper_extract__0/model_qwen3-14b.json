@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_55",
+ "variant_id": "verina_basic_55__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "qwen3-14b",
+ "generation_attempt": 1,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.861,
+ "proof_region_errors": [
+  "unsolved goals\na b : Int\nh_precond : Compare_precond a b\n⊢ (∀ (a_1 : a = b), Compare__rp_helper_56630b5e b b ⋯ = true) ∧\n    (¬a = b → Compare__rp_helper_56630b5e a b h_precond = false)\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "f8222a45175152f5df6ac1c771839df0fc5f307066881fde5038cbacc8bd2fc3",
+ "spec_hash": "16171a90eebbe81b63af4c319ac6166daccb7f4f8788cb9f1ce378382e72c512",
+ "proof_text": "  unfold Compare Compare_postcond\n  simp_all\n",
+ "proof_aux_text": "\n",
+ "model_family": "qwen3",
+ "base_model": "qwen3-14b",
+ "strategy_condition": "default"
+}

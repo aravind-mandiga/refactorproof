@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_91__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_91__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_91__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_91__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_91__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_91__T2_helper_extract__0.lean:13:18: warning: unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_91__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_91__T2_helper_extract__0.lean:13:28: warning: unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_91__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_91__T2_helper_extract__0.lean:21:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_91__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_91__T2_helper_extract__0.lean:43:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_91__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_91__T2_helper_extract__0.lean:60:21: error: function expected at\n  a\nterm has type\n  ?m.780\nartifacts/mechanical_repairs/lean/verina_basic_91__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_91__T2_helper_extract__0.lean:60:2: error: type mismatch\n  fun a a_1 => ?m.787\nhas type\n  (a : ?m.780) → (a_1 : ?m.788 a) → ?m.789 a a_1 : Sort (imax ?u.779 ?u.782 ?u.785)\nbut is expected to have type\n  (Swap__rp_helper_6bee5f12 X Y h_precond).fst = Y ∧\n    (Swap__rp_helper_6bee5f12 X Y h_precond).snd = X ∧\n      (¬X = Y →\n        ¬(Swap__rp_helper_6bee5f12 X Y h_precond).fst = X ∧ ¬(Swap__rp_helper_6bee5f12 X Y h_precond).snd = Y) : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.844,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 18,
+   "severity": "warning",
+   "text": "unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 43,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 60,
+   "col": 21,
+   "severity": "error",
+   "text": "function expected at\n  a\nterm has type\n  ?m.780"
+  },
+  {
+   "line": 60,
+   "col": 2,
+   "severity": "error",
+   "text": "type mismatch\n  fun a a_1 => ?m.787\nhas type\n  (a : ?m.780) → (a_1 : ?m.788 a) → ?m.789 a a_1 : Sort (imax ?u.779 ?u.782 ?u.785)\nbut is expected to have type\n  (Swap__rp_helper_6bee5f12 X Y h_precond).fst = Y ∧\n    (Swap__rp_helper_6bee5f12 X Y h_precond).snd = X ∧\n      (¬X = Y →\n        ¬(Swap__rp_helper_6bee5f12 X Y h_precond).fst = X ∧ ¬(Swap__rp_helper_6bee5f12 X Y h_precond).snd = Y) : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

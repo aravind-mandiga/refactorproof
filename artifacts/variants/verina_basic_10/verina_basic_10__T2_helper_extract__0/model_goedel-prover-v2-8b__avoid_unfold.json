@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_10",
+ "variant_id": "verina_basic_10__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__avoid_unfold",
+ "generation_attempt": 3,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.945,
+ "proof_region_errors": [
+  "unsolved goals\ncase mp\nn : ℤ\na : Array ℤ\nh_precond : isGreater_precond n a\na_1 : ∀ (i : ℕ) (hi : i < a.size), a[i] + 1 ≤ n\n⊢ isGreater__rp_helper_d4e98f7f n a h_precond = true\n\ncase mpr\nn : ℤ\na : Array ℤ\nh_precond : isGreater_precond n a\na_1 : isGreater__rp_helper_d4e98f7f n a h_precond = true\ni : ℕ\nhi : i < a.size\n⊢ 1 + a[i] ≤ n\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "0dfe4f6811c4a29af2a0d36105f4e730005750de666e37ac93910a6bda6239d9",
+ "spec_hash": "6b685531fd1dac53ef004523d208959ca04309d5100dc7b60307820548ead3d0",
+ "proof_text": "  have h_main : isGreater_postcond (n) (a) (isGreater (n) (a) h_precond) h_precond := by\n    simp [isGreater_postcond, isGreater, isGreater_precond, h_precond]\n    <;>\n    (try decide) <;>\n    (try ring_nf) <;>\n    (try simp_all [Array.all, Int.lt_iff_add_one_le]) <;>\n    (try omega) <;>\n    (try aesop) <;>\n    (try norm_num) <;>\n    (try ring_nf) <;>\n    (try omega)\n    <;>\n    (try aesop)\n    <;>\n    (try norm_num)\n    <;>\n    (try ring_nf)\n    <;>\n    (try omega)\n    <;>\n    (try aesop)\n    <;>\n    (try norm_num)\n    <;>\n    (try ring_nf)\n    <;>\n    (try omega)\n    <;>\n    (try aesop)\n    <;>\n    (try norm_num)\n    <;>\n    (try ring_nf)\n    <;>\n    (try omega)\n    <;>\n    (try aesop)\n    <;>\n    (try norm_num)\n    <;>\n    (try ring_nf)\n    <;>\n    (try omega)\n    <;>\n    (try aesop)\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "avoid_unfold"
+}

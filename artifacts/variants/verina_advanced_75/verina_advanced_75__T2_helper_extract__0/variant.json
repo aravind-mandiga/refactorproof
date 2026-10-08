@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_75",
+ "variant_id": "verina_advanced_75__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  task_code__rp_helper_2348297c sequence h_precond\n",
+ "transformed_code_aux": "\nprivate def task_code__rp_helper_2348297c (sequence : List Int) (h_precond : task_code_precond (sequence)) : Int :=\n  match sequence with\n  | []      => 0  -- If no elements are provided (should not happen according to the problem)\n  | x :: xs =>\n      let (_, maxSoFar) :=\n        xs.foldl (fun (acc : Int × Int) (x : Int) =>\n          let (cur, maxSoFar) := acc\n          let newCur := if cur + x >= x then cur + x else x\n          let newMax := if maxSoFar >= newCur then maxSoFar else newCur\n          (newCur, newMax)\n        ) (x, x)\n      maxSoFar\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "task_code__rp_helper_2348297c"
+ ],
+ "metadata": {
+  "binders": [
+   "sequence",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "2af596527380e575b881b694ae451e86261e95e57ad33d54f67eb800a0d7ebd8",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "8e960ed560ef668ac053e090f1f7a5a1dab690b7423398b7e06309983fd94e19",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "task_code",
+ "code_loc_original": 11,
+ "code_loc_refactored": 13
+}

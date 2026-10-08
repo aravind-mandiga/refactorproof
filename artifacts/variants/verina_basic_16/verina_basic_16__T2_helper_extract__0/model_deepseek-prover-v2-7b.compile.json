@@ -1,0 +1,67 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_16/verina_basic_16__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_16/verina_basic_16__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_16/verina_basic_16__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:16:26: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:16:39: warning: unused variable `oldChar`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:16:56: warning: unused variable `newChar`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:24:93: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:24:12: warning: The declaration 'replaceChars__rp_helper_e8782fcd' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_16/verina_basic_16__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:43:91: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:96:4: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_16/verina_basic_16__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:62:124: error: unsolved goals\ncase left\ns : String\noldChar newChar : Char\nh_precond : replaceChars_precond s oldChar newChar\n⊢ (replaceChars__rp_helper_e8782fcd s oldChar newChar h_precond).length = s.length\n\ncase right.left\ns : String\nnewChar : Char\ni : ℕ\na : i < s.length\nh_precond : replaceChars_precond s s.data[i] newChar\n⊢ (replaceChars__rp_helper_e8782fcd s s.data[i] newChar h_precond).data[i]?.getD 'A' = newChar\n\ncase right.right\ns : String\noldChar newChar : Char\nh_precond : replaceChars_precond s oldChar newChar\ni : ℕ\na : i < s.length\na_1 : ¬s.data[i] = oldChar\n⊢ (replaceChars__rp_helper_e8782fcd s oldChar newChar h_precond).data[i]?.getD 'A' = s.data[i]\n",
+ "stderr": "",
+ "elapsed_seconds": 8.161,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 26,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 16,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `oldChar`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 16,
+   "col": 56,
+   "severity": "warning",
+   "text": "unused variable `newChar`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 93,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'replaceChars__rp_helper_e8782fcd' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 43,
+   "col": 91,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 96,
+   "col": 4,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 62,
+   "col": 124,
+   "severity": "error",
+   "text": "unsolved goals\ncase left\ns : String\noldChar newChar : Char\nh_precond : replaceChars_precond s oldChar newChar\n⊢ (replaceChars__rp_helper_e8782fcd s oldChar newChar h_precond).length = s.length\n\ncase right.left\ns : String\nnewChar : Char\ni : ℕ\na : i < s.length\nh_precond : replaceChars_precond s s.data[i] newChar\n⊢ (replaceChars__rp_helper_e8782fcd s s.data[i] newChar h_precond).data[i]?.getD 'A' = newChar\n\ncase right.right\ns : String\noldChar newChar : Char\nh_precond : replaceChars_precond s oldChar newChar\ni : ℕ\na : i < s.length\na_1 : ¬s.data[i] = oldChar\n⊢ (replaceChars__rp_helper_e8782fcd s oldChar newChar h_precond).data[i]?.getD 'A' = s.data[i]\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

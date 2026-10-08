@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_99__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_99__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_99__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_99__T5_branch_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_99__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_99__T5_branch_extract__0.lean:13:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_99__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_99__T5_branch_extract__0.lean:21:50: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_99__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_99__T5_branch_extract__0.lean:21:12: warning: The declaration 'Triple__rp_branch_609232c2' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_99__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_99__T5_branch_extract__0.lean:44:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_99__T5_branch_extract__0__reference__unedited_unfold_add_helper/verina_basic_99__T5_branch_extract__0.lean:70:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  ?a * ?c + ?b * ?c\ncase neg\nx : ℤ\nh_precond : Triple_precond x\nh₁ : ¬x < 18\n⊢ Triple__rp_branch_609232c2 (1 * x) h_precond / 3 = x ∧\n    Triple__rp_branch_609232c2 x h_precond / 3 * 3 = Triple__rp_branch_609232c2 x h_precond\n",
+ "stderr": "",
+ "elapsed_seconds": 48.56,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 50,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'Triple__rp_branch_609232c2' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 44,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 70,
+   "col": 8,
+   "severity": "error",
+   "text": "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  ?a * ?c + ?b * ?c\ncase neg\nx : ℤ\nh_precond : Triple_precond x\nh₁ : ¬x < 18\n⊢ Triple__rp_branch_609232c2 (1 * x) h_precond / 3 = x ∧\n    Triple__rp_branch_609232c2 x h_precond / 3 * 3 = Triple__rp_branch_609232c2 x h_precond\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "rewrite_failed"
+}

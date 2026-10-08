@@ -1,0 +1,109 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:15:44: warning: unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:23:74: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:23:12: warning: The declaration 'maxOfThree__rp_helper_7c6c6d3d' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:42:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:60:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:66:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:70:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:75:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:58:56: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:60:4: warning: '(try (cases h <;> simp_all (config := { decide := true }) <;> omega))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:66:4: warning: '(try (aesop))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:70:4: warning: '(try (omega))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_advanced_41__T2_helper_extract__0.lean:75:4: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 10.739,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 74,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'maxOfThree__rp_helper_7c6c6d3d' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 42,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 60,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 66,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 70,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 75,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 58,
+   "col": 56,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 60,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try (cases h <;> simp_all (config := { decide := true }) <;> omega))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 66,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try (aesop))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 70,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try (omega))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 75,
+   "col": 4,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

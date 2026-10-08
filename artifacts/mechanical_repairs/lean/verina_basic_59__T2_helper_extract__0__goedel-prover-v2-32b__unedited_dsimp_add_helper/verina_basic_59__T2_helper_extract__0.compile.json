@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_59__T2_helper_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_59__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_59__T2_helper_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_59__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_59__T2_helper_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_59__T2_helper_extract__0.lean:15:29: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_59__T2_helper_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_59__T2_helper_extract__0.lean:23:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_59__T2_helper_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_59__T2_helper_extract__0.lean:23:12: warning: The declaration 'DoubleQuadruple__rp_helper_8062be2e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_59__T2_helper_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_59__T2_helper_extract__0.lean:42:62: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_59__T2_helper_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_59__T2_helper_extract__0.lean:56:90: error: unsolved goals\ncase left\nx : ℤ\nh_precond : DoubleQuadruple_precond x\n⊢ (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 = x * 2\n\ncase right\nx : ℤ\nh_precond : DoubleQuadruple_precond x\n⊢ (DoubleQuadruple__rp_helper_8062be2e x h_precond).2 = (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 * 2\n",
+ "stderr": "",
+ "elapsed_seconds": 8.928,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'DoubleQuadruple__rp_helper_8062be2e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 42,
+   "col": 62,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 56,
+   "col": 90,
+   "severity": "error",
+   "text": "unsolved goals\ncase left\nx : ℤ\nh_precond : DoubleQuadruple_precond x\n⊢ (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 = x * 2\n\ncase right\nx : ℤ\nh_precond : DoubleQuadruple_precond x\n⊢ (DoubleQuadruple__rp_helper_8062be2e x h_precond).2 = (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 * 2\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

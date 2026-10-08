@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_advanced_6__T2_helper_extract__0",
+ "task_id": "verina_advanced_6",
+ "source": "goedel-prover-v2-32b",
+ "transformation": "T2_helper_extract",
+ "template": "dsimp_add_helper",
+ "function_name": "allVowels",
+ "helper": "allVowels__rp_helper_1905f5d2",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_main : allVowels_postcond (s) (allVowels (s) h_precond) h_precond := by\n    dsimp only [allVowels_postcond, allVowels]\n    <;>\n    (try simp_all) <;>\n    (try\n      {\n        -- Use the fact that the Boolean and Propositional `all` are equivalent\n        cases (List.all ['a', 'e', 'i', 'o', 'u'] (fun v => (normalize_str s).contains v) : Bool) <;>\n        simp_all [List.all_iff]\n        <;>\n        (try\n          {\n            -- For each case, check that the equivalence holds\n            aesop\n          })\n      }) <;>\n    (try\n      {\n        -- Use `decide` to automatically check the equivalence\n        decide\n      })\n  exact h_main\n",
+ "proof_after": "  have h_main : allVowels_postcond (s) (allVowels (s) h_precond) h_precond := by\n    dsimp only [allVowels_postcond, allVowels, allVowels__rp_helper_1905f5d2]\n    <;>\n    (try simp_all) <;>\n    (try\n      {\n        -- Use the fact that the Boolean and Propositional `all` are equivalent\n        cases (List.all ['a', 'e', 'i', 'o', 'u'] (fun v => (normalize_str s).contains v) : Bool) <;>\n        simp_all [List.all_iff]\n        <;>\n        (try\n          {\n            -- For each case, check that the equivalence holds\n            aesop\n          })\n      }) <;>\n    (try\n      {\n        -- Use `decide` to automatically check the equivalence\n        decide\n      })\n  exact h_main\n"
+}

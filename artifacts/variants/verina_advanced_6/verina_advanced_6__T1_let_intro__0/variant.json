@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_6",
+ "variant_id": "verina_advanced_6__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_a77f67f1 : Bool :=\n    let chars := normalize_str s\n    let vowelSet := ['a', 'e', 'i', 'o', 'u']\n    vowelSet.all (fun v => chars.contains v)\n  __rp_tmp_a77f67f1\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_a77f67f1",
+  "seed": 0
+ },
+ "spec_hash": "93554fe415ccfb4d51b92405c5220441d6f97b9748a3f5b58430bf14bbc39d6c",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "a50ec2392aedbb16d754c36996558c3e3f0059be38ceabed6e178d260c45a0a5",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "allVowels",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

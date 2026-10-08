@@ -1,0 +1,3 @@
+contrast,bridge_tasks_with_survivor,bridge_tasks,other_tasks_with_survivor,other_tasks,tasks_in_both_groups,fisher_p_two_sided
+structural_rfl_vs_all_other,6,6,6,31,5,0.00039745627980922096
+semantic_rfl_vs_simp,0,3,17,19,3,0.006493506493506493

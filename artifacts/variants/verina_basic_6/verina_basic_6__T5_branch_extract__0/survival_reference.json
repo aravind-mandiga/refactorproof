@@ -1,0 +1,26 @@
+{
+ "task_id": "verina_basic_6",
+ "variant_id": "verina_basic_6__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 18.994,
+ "proof_region_errors": [
+  "tactic 'split' failed, consider using `set_option trace.split.failure true`\ncase isFalse\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh✝ : ¬(decide (a ≤ b) && decide (a ≤ c)) = true\n⊢ (minOfThree__rp_branch_73840f67 a b c h_precond ≤ a ∧\n      minOfThree__rp_branch_73840f67 a b c h_precond ≤ b ∧ minOfThree__rp_branch_73840f67 a b c h_precond ≤ c) ∧\n    (minOfThree__rp_branch_73840f67 a b c h_precond = a ∨\n      minOfThree__rp_branch_73840f67 a b c h_precond = b ∨ minOfThree__rp_branch_73840f67"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "f5e345eda33dc41ac54b46013767babc5edf641aa72d5b07c9a4e9c5a4e24f94",
+ "spec_hash": "9da95e2e35cc3731ffceb30e0af09791534c0e36e1651f399906215b247ecfaa"
+}

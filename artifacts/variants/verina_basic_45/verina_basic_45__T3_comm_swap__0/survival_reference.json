@@ -1,0 +1,26 @@
+{
+ "task_id": "verina_basic_45",
+ "variant_id": "verina_basic_45__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_level": "simp_only",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.675,
+ "proof_region_errors": [
+  "unsolved goals\nlst : List Int\nh_precond : findProduct_precond lst\nx✝¹ : Option (Nat × Nat)\nei oi : Nat\nheq✝ : firstEvenOddIndices lst = some (ei, oi)\nx✝ : Option (Nat × Nat)\nei' oi' : Nat\nheq : some (ei, oi) = some (ei', oi')\nthis : ei = ei' ∧ oi = oi'\n⊢ lst[oi']?.getD 0 * lst[ei']?.getD 0 = lst[ei']?.getD 0 * lst[oi']?.getD 0\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "a3f0d2e0f29b439fde3c0334443720817d7d65b8939422a6b06cc515a7fb00e3",
+ "spec_hash": "43f980abe9bbf7fc3b240fd3b0dd1e82e3b0dad1b0cb970238ae4eca100fbf92"
+}

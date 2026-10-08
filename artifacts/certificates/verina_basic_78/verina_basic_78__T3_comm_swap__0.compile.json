@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_78/verina_basic_78__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_78/verina_basic_78__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_78/verina_basic_78__T3_comm_swap__0.lean:13:29: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_78/verina_basic_78__T3_comm_swap__0.lean:13:39: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_78/verina_basic_78__T3_comm_swap__0.lean:22:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_78/verina_basic_78__T3_comm_swap__0.lean:30:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_78/verina_basic_78__T3_comm_swap__0.lean:39:82: error: type mismatch\n  rfl\nhas type\n  ?m.240 = ?m.240 : Prop\nbut is expected to have type\n  RPOrig.MultipleReturns x y h_precond = RPRef.MultipleReturns x y h_precond : Prop\nartifacts/certificates/verina_basic_78/verina_basic_78__T3_comm_swap__0.lean:43:82: error: type mismatch\n  rfl\nhas type\n  ?m.506 = ?m.506 : Prop\nbut is expected to have type\n  RPOrig.MultipleReturns x y h_precond = RPRef.MultipleReturns x y h_precond : Prop\nartifacts/certificates/verina_basic_78/verina_basic_78__T3_comm_swap__0.lean:48:2: error: tactic 'rfl' failed, the left-hand side\n  let more := x + y;\n  let less := x - y;\n  (more, less)\nis not definitionally equal to the right-hand side\n  let more := y + x;\n  let less := x - y;\n  (more, less)\nx y : Int\nh_precond : MultipleReturns_precond x y\n⊢ (let more := x + y;\n    let less := x - y;\n    (more, less)) =\n    let more := y + x;\n    let less := x - y;\n    (more, less)\n",
+ "stderr": "",
+ "elapsed_seconds": 0.737,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 30,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 82,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.240 = ?m.240 : Prop\nbut is expected to have type\n  RPOrig.MultipleReturns x y h_precond = RPRef.MultipleReturns x y h_precond : Prop"
+  },
+  {
+   "line": 43,
+   "col": 82,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.506 = ?m.506 : Prop\nbut is expected to have type\n  RPOrig.MultipleReturns x y h_precond = RPRef.MultipleReturns x y h_precond : Prop"
+  },
+  {
+   "line": 48,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  let more := x + y;\n  let less := x - y;\n  (more, less)\nis not definitionally equal to the right-hand side\n  let more := y + x;\n  let less := x - y;\n  (more, less)\nx y : Int\nh_precond : MultipleReturns_precond x y\n⊢ (let more := x + y;\n    let less := x - y;\n    (more, less)) =\n    let more := y + x;\n    let less := x - y;\n    (more, less)\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

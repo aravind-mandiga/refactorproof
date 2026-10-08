@@ -1,0 +1,175 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:14:29: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:14:39: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:23:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:29:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:36:82: error: type mismatch\n  rfl\nhas type\n  ?m.298 = ?m.298 : Prop\nbut is expected to have type\n  RPOrig.hasOppositeSign a b h_precond = RPRef.hasOppositeSign a b h_precond : Prop\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:40:82: error: type mismatch\n  rfl\nhas type\n  ?m.3098 = ?m.3098 : Prop\nbut is expected to have type\n  RPOrig.hasOppositeSign a b h_precond = RPRef.hasOppositeSign a b h_precond : Prop\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:45:2: error: tactic 'rfl' failed, the left-hand side\n  decide (a * b < 0)\nis not definitionally equal to the right-hand side\n  decide (b * a < 0)\na b : ℤ\nh_precond : hasOppositeSign_precond a b\n⊢ decide (a * b < 0) = decide (b * a < 0)\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:50:310: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:51:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:52:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:53:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:50:310: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:51:6: warning: '(simp only [RPOrig.hasOppositeSign, RPRef.hasOppositeSign, Nat.add_comm, Nat.add_left_comm, Nat.add_assoc,\n      Nat.mul_comm, Nat.mul_left_comm, Nat.mul_assoc, Int.add_comm, Int.add_left_comm, Int.add_assoc, Int.mul_comm,\n      Int.mul_left_comm, Int.mul_assoc, Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm,\n      Bool.or_left_comm, Bool.or_assoc, and_comm, and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:52:6: warning: '(simp only [RPOrig.hasOppositeSign, RPRef.hasOppositeSign, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm,\n      Bool.and_comm, Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:53:6: warning: '(simp only [RPOrig.hasOppositeSign, RPRef.hasOppositeSign]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:58:305: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:59:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:60:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:61:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:58:305: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:59:6: warning: '(simp [RPOrig.hasOppositeSign, RPRef.hasOppositeSign, Nat.add_comm, Nat.add_left_comm, Nat.add_assoc, Nat.mul_comm,\n      Nat.mul_left_comm, Nat.mul_assoc, Int.add_comm, Int.add_left_comm, Int.add_assoc, Int.mul_comm, Int.mul_left_comm,\n      Int.mul_assoc, Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm, Bool.or_left_comm, Bool.or_assoc,\n      and_comm, and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:60:6: warning: '(simp [RPOrig.hasOppositeSign, RPRef.hasOppositeSign, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm,\n      Bool.and_comm, Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:61:6: warning: '(simp [RPOrig.hasOppositeSign, RPRef.hasOppositeSign]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:65:86: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:65:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T3_comm_swap__0.lean:65:86: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 5.827,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 14,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 29,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 36,
+   "col": 82,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.298 = ?m.298 : Prop\nbut is expected to have type\n  RPOrig.hasOppositeSign a b h_precond = RPRef.hasOppositeSign a b h_precond : Prop"
+  },
+  {
+   "line": 40,
+   "col": 82,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.3098 = ?m.3098 : Prop\nbut is expected to have type\n  RPOrig.hasOppositeSign a b h_precond = RPRef.hasOppositeSign a b h_precond : Prop"
+  },
+  {
+   "line": 45,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  decide (a * b < 0)\nis not definitionally equal to the right-hand side\n  decide (b * a < 0)\na b : ℤ\nh_precond : hasOppositeSign_precond a b\n⊢ decide (a * b < 0) = decide (b * a < 0)"
+  },
+  {
+   "line": 50,
+   "col": 310,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 51,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 52,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 53,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 50,
+   "col": 310,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 51,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.hasOppositeSign, RPRef.hasOppositeSign, Nat.add_comm, Nat.add_left_comm, Nat.add_assoc,\n      Nat.mul_comm, Nat.mul_left_comm, Nat.mul_assoc, Int.add_comm, Int.add_left_comm, Int.add_assoc, Int.mul_comm,\n      Int.mul_left_comm, Int.mul_assoc, Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm,\n      Bool.or_left_comm, Bool.or_assoc, and_comm, and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 52,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.hasOppositeSign, RPRef.hasOppositeSign, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm,\n      Bool.and_comm, Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 53,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.hasOppositeSign, RPRef.hasOppositeSign]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 58,
+   "col": 305,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 59,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 58,
+   "col": 305,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 59,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp [RPOrig.hasOppositeSign, RPRef.hasOppositeSign, Nat.add_comm, Nat.add_left_comm, Nat.add_assoc, Nat.mul_comm,\n      Nat.mul_left_comm, Nat.mul_assoc, Int.add_comm, Int.add_left_comm, Int.add_assoc, Int.mul_comm, Int.mul_left_comm,\n      Int.mul_assoc, Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm, Bool.or_left_comm, Bool.or_assoc,\n      and_comm, and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp [RPOrig.hasOppositeSign, RPRef.hasOppositeSign, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm,\n      Bool.and_comm, Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp [RPOrig.hasOppositeSign, RPRef.hasOppositeSign]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 65,
+   "col": 86,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 65,
+   "col": 66,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 65,
+   "col": 86,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

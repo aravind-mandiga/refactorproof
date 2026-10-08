@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_21",
+ "variant_id": "verina_advanced_21__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_21/verina_advanced_21__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 2.824,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.26018 = ?m.26018 : Prop\nbut is expected to have type\n  RPOrig.isPalindrome s h_precond = RPRef.isPalindrome s h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.27595 = ?m.27595 : Prop\nbut is expected to have type\n  RPOrig.isPalindrome s h_precond = RPRef.isPalindrome s h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  let length := s.length;\n  if length ≤ 1 then true\n  else\n    let arr := s.toList;\n    let approach1 := RPOrig.isPalindrome.checkIndices._unary ⟨0, ⟨length - 1, arr⟩⟩;\n    let reversed :=\n      List.brecOn (motive := fun xs => List Char → List Char) arr\n        (fun xs f acc =>\n          (match (motive := (xs : List Char) → List.below (motive := fun xs => List Char → List Char) xs → List Char)\n              xs with\n            | [] => fun x => acc\n       "
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if s.length ≤ 1 then true\n  else\n    RPOrig.isPalindrome.checkIndices._unary ⟨0, ⟨s.length - 1, s.toList⟩⟩ &&\n      s.toList ==\n        List.brecOn (motive := fun xs => List Char → List Char) s.toList\n          (fun xs f acc =>\n            (match (motive := (xs : List Char) → List.below (motive := fun xs => List Char → List Char) xs → List Char)\n                xs with\n              | [] => fun x => acc\n              | h :: t => fun x => x.1 (h :: acc))\n",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.49071'"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  decide (s.length ≤ 1) ||\n    RPOrig.isPalindrome.checkIndices._unary ⟨0, ⟨s.length - 1, s.data⟩⟩ &&\n      s.data ==\n        List.brecOn (motive := fun xs => List Char → List Char) s.data\n          (fun xs f acc =>\n            (match (motive := (xs : List Char) → List.below (motive := fun xs => List Char → List Char) xs → List Char)\n                xs with\n              | [] => fun x => acc\n              | h :: t => fun x => x.1 (h :: acc))\n              ",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.68994'"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if s.length ≤ 1 then true\n  else\n    RPOrig.isPalindrome.checkIndices._unary ⟨0, ⟨s.length - 1, s.toList⟩⟩ &&\n      s.toList ==\n        List.brecOn (motive := fun xs => List Char → List Char) s.toList\n          (fun xs f acc =>\n            (match (motive := (xs : List Char) → List.below (motive := fun xs => List Char → List Char) xs → List Char)\n                xs with\n              | [] => fun x => acc\n              | h :: t => fun x => x.1 (h :: acc))\n",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.76000'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

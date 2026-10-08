@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_67",
+ "variant_id": "verina_advanced_67__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_ec3515e2 : List (Char × Nat) :=\n    let chars := s.data\n\n    let rec encodeAux (acc : List (Char × Nat)) (rest : List Char) : List (Char × Nat) :=\n      match rest with\n      | [] => acc.reverse\n      | h :: t =>\n        match acc with\n        | (ch, count) :: accTail =>\n          if ch = h then\n            encodeAux ((ch, count + 1) :: accTail) t\n          else\n            encodeAux ((h, 1) :: (ch, count) :: accTail) t\n        | [] =>\n          encodeAux ([(h, 1)]) t\n\n    let encoded := encodeAux [] chars\n    encoded\n  __rp_tmp_ec3515e2\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_ec3515e2",
+  "seed": 0
+ },
+ "spec_hash": "cb3af1571cd4fe5a8a7351ce06627bb5f1d6a5805e44177ba031cfb7938b66ed",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "a724a92711cd68b435ed1a78b61b3277dcca94e4928009886dcaa726047221d5",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "runLengthEncode",
+ "code_loc_original": 15,
+ "code_loc_refactored": 17
+}

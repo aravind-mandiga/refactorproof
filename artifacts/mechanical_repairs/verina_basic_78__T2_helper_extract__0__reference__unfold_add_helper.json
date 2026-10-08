@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_78__T2_helper_extract__0",
+ "task_id": "verina_basic_78",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "MultipleReturns",
+ "helper": "MultipleReturns__rp_helper_39d93fc9",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold MultipleReturns_postcond MultipleReturns\n  simp\n",
+ "proof_after": "  unfold MultipleReturns_postcond MultipleReturns MultipleReturns__rp_helper_39d93fc9\n  simp\n"
+}

@@ -1,0 +1,79 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:15:28: warning: unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:15:38: warning: unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:23:68: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:23:12: warning: The declaration 'SwapArithmetic__rp_helper_2265221a' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:45:71: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:64:6: error: simp made no progress\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:70:6: error: simp made no progress\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:78:11: warning: aesop: failed to prove the goal. Some goals were not explored because the maximum rule application depth (30) was reached. Set option 'maxRuleApplicationDepth' to increase the limit.\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:91:6: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case right.right.left.h\n  X Y : ℤ\n  h_precond : SwapArithmetic_precond X Y\n  h_ne : ¬X = Y\n  a : (SwapArithmetic__rp_helper_2265221a X Y h_precond).1 = X\n  ⊢ False\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:91:6: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case right.right.right.h\n  X Y : ℤ\n  h_precond : SwapArithmetic_precond X Y\n  h_ne : ¬X = Y\n  a : (SwapArithmetic__rp_helper_2265221a X Y h_precond).2 = Y\n  ⊢ False\n",
+ "stderr": "",
+ "elapsed_seconds": 10.593,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 38,
+   "severity": "warning",
+   "text": "unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 68,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'SwapArithmetic__rp_helper_2265221a' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 45,
+   "col": 71,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 64,
+   "col": 6,
+   "severity": "error",
+   "text": "simp made no progress"
+  },
+  {
+   "line": 70,
+   "col": 6,
+   "severity": "error",
+   "text": "simp made no progress"
+  },
+  {
+   "line": 78,
+   "col": 11,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal. Some goals were not explored because the maximum rule application depth (30) was reached. Set option 'maxRuleApplicationDepth' to increase the limit."
+  },
+  {
+   "line": 91,
+   "col": 6,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case right.right.left.h\n  X Y : ℤ\n  h_precond : SwapArithmetic_precond X Y\n  h_ne : ¬X = Y\n  a : (SwapArithmetic__rp_helper_2265221a X Y h_precond).1 = X\n  ⊢ False"
+  },
+  {
+   "line": 91,
+   "col": 6,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case right.right.right.h\n  X Y : ℤ\n  h_precond : SwapArithmetic_precond X Y\n  h_ne : ¬X = Y\n  a : (SwapArithmetic__rp_helper_2265221a X Y h_precond).2 = Y\n  ⊢ False\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "simp_failed"
+}

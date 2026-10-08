@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_59/lean_1/verina_basic_59__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_59/lean_1/verina_basic_59__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_59/lean_1/verina_basic_59__T2_helper_extract__0.lean:15:29: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_59/lean_1/verina_basic_59__T2_helper_extract__0.lean:23:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_59/lean_1/verina_basic_59__T2_helper_extract__0.lean:23:12: warning: The declaration 'DoubleQuadruple__rp_helper_8062be2e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_59/lean_1/verina_basic_59__T2_helper_extract__0.lean:42:62: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_59/lean_1/verina_basic_59__T2_helper_extract__0.lean:71:4: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case left\n  x : ℤ\n  h_precond : DoubleQuadruple_precond x\n  ⊢ (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 = x * 2\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_59/lean_1/verina_basic_59__T2_helper_extract__0.lean:71:4: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case right\n  x : ℤ\n  h_precond : DoubleQuadruple_precond x\n  ⊢ (DoubleQuadruple__rp_helper_8062be2e x h_precond).2 = (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 * 2\n",
+ "stderr": "",
+ "elapsed_seconds": 11.232,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'DoubleQuadruple__rp_helper_8062be2e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 42,
+   "col": 62,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 71,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case left\n  x : ℤ\n  h_precond : DoubleQuadruple_precond x\n  ⊢ (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 = x * 2"
+  },
+  {
+   "line": 71,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case right\n  x : ℤ\n  h_precond : DoubleQuadruple_precond x\n  ⊢ (DoubleQuadruple__rp_helper_8062be2e x h_precond).2 = (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 * 2\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

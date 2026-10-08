@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_13__T2_helper_extract__0",
+ "task_id": "verina_basic_13",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "cubeElements",
+ "helper": "cubeElements__rp_helper_2cb44842",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold cubeElements cubeElements_postcond\n  simp_all\n  intro i hi\n  have h_maplen : (Array.map (fun x => x * x * x) a).size = a.size := by\n    apply Array.size_map\n  have h1 : (Array.map (fun x => x * x * x) a)[i] = (fun x => x * x * x) a[i] := by\n    apply Array.getElem_map\n  have h_eq : (Array.map (fun x => x * x * x) a)[i] = (Array.map (fun x => x * x * x) a)[i]! := by\n    have hi' : i < (Array.map (fun x => x * x * x) a).size := by\n      simp only [hi, h_maplen]\n    rw [Array.getElem!_eq_getD]\n    simp [hi', hi]\n  rw [\u2190 h_eq]\n  simp only [h1]\n  have h_eq' : a[i] = a[i]! := by\n    have hi_a : i < a.size := by\n      simp only [hi]\n    rw [Array.getElem!_eq_getD]\n    simp [hi_a]\n  simp only [h_eq']\n",
+ "proof_after": "  unfold cubeElements cubeElements__rp_helper_2cb44842 cubeElements_postcond\n  simp_all\n  intro i hi\n  have h_maplen : (Array.map (fun x => x * x * x) a).size = a.size := by\n    apply Array.size_map\n  have h1 : (Array.map (fun x => x * x * x) a)[i] = (fun x => x * x * x) a[i] := by\n    apply Array.getElem_map\n  have h_eq : (Array.map (fun x => x * x * x) a)[i] = (Array.map (fun x => x * x * x) a)[i]! := by\n    have hi' : i < (Array.map (fun x => x * x * x) a).size := by\n      simp only [hi, h_maplen]\n    rw [Array.getElem!_eq_getD]\n    simp [hi', hi]\n  rw [\u2190 h_eq]\n  simp only [h1]\n  have h_eq' : a[i] = a[i]! := by\n    have hi_a : i < a.size := by\n      simp only [hi]\n    rw [Array.getElem!_eq_getD]\n    simp [hi_a]\n  simp only [h_eq']\n"
+}

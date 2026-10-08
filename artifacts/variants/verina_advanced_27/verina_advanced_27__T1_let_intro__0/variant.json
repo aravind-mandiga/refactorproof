@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_27",
+ "variant_id": "verina_advanced_27__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_b1c27a26 : String :=\n    let xs := toCharList s1\n    let ys := toCharList s2\n    let resultList := lcsAux xs ys\n    fromCharList resultList\n  __rp_tmp_b1c27a26\n",
+ "transformed_code_aux": "def toCharList (s : String) : List Char :=\n  s.data\n\ndef fromCharList (cs : List Char) : String :=\n  cs.foldl (fun acc c => acc.push c) \"\"\n\ndef lcsAux (xs : List Char) (ys : List Char) : List Char :=\n  match xs, ys with\n  | [], _ => []\n  | _, [] => []\n  | x :: xs', y :: ys' =>\n    if x == y then\n      x :: lcsAux xs' ys'\n    else\n      let left  := lcsAux xs' (y :: ys')\n      let right := lcsAux (x :: xs') ys'\n      if left.length >= right.length then left else right\ntermination_by xs.length + ys.length\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_b1c27a26",
+  "seed": 0
+ },
+ "spec_hash": "ccb26a91bdd8b42269f5b681f90e1a58870a8bc2efbabfe992aee6d6e3f77099",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "f3021fe050c9a1eb1cd96292b87ae03f51d6516be8d622dc4925ecbafb43b5c0",
+ "code_aux_hash_original": "f5234e6a5214c45a071a646ec55d1a798edbbb09227ad43c265592a628916c66",
+ "tier": "advanced",
+ "function_name": "longestCommonSubsequence",
+ "code_loc_original": 4,
+ "code_loc_refactored": 6
+}

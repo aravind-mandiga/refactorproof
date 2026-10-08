@@ -1,0 +1,14 @@
+--- goedel-prover-v2-8b:verina_advanced_72__T5_branch_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_advanced_72__T5_branch_extract__0 (simp_add_helper)
+@@ -3,7 +3,7 @@
+       by_cases hn : n = 0
+       · -- Case n = 0
+         rw [hn]
+-        simp [singleDigitPrimeFactor]
++        simp [singleDigitPrimeFactor, singleDigitPrimeFactor__rp_branch_4e87d626]
+         <;> aesop
+       · -- Case n ≠ 0
+         have h₂ : n ≠ 0 := hn
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: unsolved goals | n : ℕ | h_precond : singleDigitPrimeFactor_precond n | h₂ : ¬n = 0 | h : n % 2 = 0 | ⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2 |  | n : ℕ | h_precond : singleDigitPrimeFactor_precond n | h₂ : ¬n = 0 | h : n % 2 = 1 | h_1 : n % 3 = 0 | ⊢ singleDigitPrimeFactor__rp_

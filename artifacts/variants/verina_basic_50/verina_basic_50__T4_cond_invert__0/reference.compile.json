@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_50/verina_basic_50__T4_cond_invert__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_50/verina_basic_50__T4_cond_invert__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_50/verina_basic_50__T4_cond_invert__0/reference.lean:13:17: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_50/verina_basic_50__T4_cond_invert__0/reference.lean:24:19: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_50/verina_basic_50__T4_cond_invert__0/reference.lean:37:42: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_50/verina_basic_50__T4_cond_invert__0/reference.lean:56:38: error: application type mismatch\n  not_le.mpr ht\nargument\n  ht\nhas type\n  0 ≤ x : Prop\nbut is expected to have type\n  x < 0 : Prop\nartifacts/variants/verina_basic_50/verina_basic_50__T4_cond_invert__0/reference.lean:62:18: error: unsolved goals\nx : ℤ\nh_precond : Abs_precond x\nh : x < 0\nh✝ : 0 ≤ x\n⊢ x = 0\nartifacts/variants/verina_basic_50/verina_basic_50__T4_cond_invert__0/reference.lean:65:8: error: tactic 'contradiction' failed\nx : ℤ\nh_precond : Abs_precond x\nh : x < 0\nh✝ : ¬0 ≤ x\n⊢ x + -x = 0\n",
+ "stderr": "",
+ "elapsed_seconds": 5.347,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 17,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 37,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 56,
+   "col": 38,
+   "severity": "error",
+   "text": "application type mismatch\n  not_le.mpr ht\nargument\n  ht\nhas type\n  0 ≤ x : Prop\nbut is expected to have type\n  x < 0 : Prop"
+  },
+  {
+   "line": 62,
+   "col": 18,
+   "severity": "error",
+   "text": "unsolved goals\nx : ℤ\nh_precond : Abs_precond x\nh : x < 0\nh✝ : 0 ≤ x\n⊢ x = 0"
+  },
+  {
+   "line": 65,
+   "col": 8,
+   "severity": "error",
+   "text": "tactic 'contradiction' failed\nx : ℤ\nh_precond : Abs_precond x\nh : x < 0\nh✝ : ¬0 ≤ x\n⊢ x + -x = 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

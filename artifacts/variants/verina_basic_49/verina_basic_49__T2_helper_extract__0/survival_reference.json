@@ -1,0 +1,27 @@
+{
+ "task_id": "verina_basic_49",
+ "variant_id": "verina_basic_49__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "rewrite_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.77,
+ "proof_region_errors": [
+  "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  Option.map (fun x => x.snd) (List.find? (fun x => isOdd x.fst) a.toList.zipIdx)\ncase none\na : Array Int\nh_precond : findFirstOdd_precond a\nla : List Int := a.toList\nh_la : la = a.toList\nindexed : List (Int × Nat) := la.zipIdx\nfound : Option (Int × Nat) :=\n  List.find?\n    (fun x =>\n      match x with\n      | (x, snd) => isOdd x)\n    indexed\nres : Option Nat :=\n  Option.map\n    (fun x =>\n      match x with\n  ",
+  "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  Option.map (fun x => x.snd) (List.find? (fun x => isOdd x.fst) a.toList.zipIdx)\ncase some\na : Array Int\nh_precond : findFirstOdd_precond a\nla : List Int := a.toList\nh_la : la = a.toList\nindexed : List (Int × Nat) := la.zipIdx\nfound : Option (Int × Nat) :=\n  List.find?\n    (fun x =>\n      match x with\n      | (x, snd) => isOdd x)\n    indexed\nres : Option Nat :=\n  Option.map\n    (fun x =>\n      match x with\n  "
+ ],
+ "other_region_errors": [],
+ "proof_hash": "7237d543b1f18f1e03e986c85aab62e42f43615cbcc72481be2803509c958fce",
+ "spec_hash": "c0614a7c313b63d461dcb8e59b78ab6773c067458467a94dac29432c840ab659"
+}

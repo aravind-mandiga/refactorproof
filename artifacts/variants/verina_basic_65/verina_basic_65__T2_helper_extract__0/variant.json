@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_65",
+ "variant_id": "verina_basic_65__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  SquareRoot__rp_helper_7952c0bd N h_precond\n",
+ "transformed_code_aux": "\nprivate def SquareRoot__rp_helper_7952c0bd (N : Nat) (h_precond : SquareRoot_precond (N)) : Nat :=\n  let rec boundedLoop : Nat → Nat → Nat\n    | 0, r => r\n    | bound+1, r =>\n        if (r + 1) * (r + 1) ≤ N then\n          boundedLoop bound (r + 1)\n        else\n          r\n  boundedLoop (N+1) 0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "SquareRoot__rp_helper_7952c0bd"
+ ],
+ "metadata": {
+  "binders": [
+   "N",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "38141b257f909dd9ce9f7f88895518a4cb77f0956b2de86300f651f94e40cdef",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "88337ce7ef8387f6549ebe74c2f3162fef67d2f6d3ca2e81174a82ed152017ee",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "SquareRoot",
+ "code_loc_original": 8,
+ "code_loc_refactored": 10
+}

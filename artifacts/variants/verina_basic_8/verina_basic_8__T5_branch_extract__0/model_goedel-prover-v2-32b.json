@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_8",
+ "variant_id": "verina_basic_8__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-32b",
+ "generation_attempt": 1,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 6.756,
+ "proof_region_errors": [
+  "unsolved goals\ncase neg\na b : ℤ\nh_precond : myMin_precond a b\nh✝ : ¬a ≤ b\n⊢ (myMin__rp_branch_c77e3e9a a b h_precond ≤ a ∧ myMin__rp_branch_c77e3e9a a b h_precond ≤ b) ∧\n    (myMin__rp_branch_c77e3e9a a b h_precond = a ∨ myMin__rp_branch_c77e3e9a a b h_precond = b)\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "badbfce5554dcaf0416ba871cd13c778d176481e32bab002b0e35c707668242b",
+ "spec_hash": "9ea5f34068afa9e380bc3377f48eb3fe98217f15035d181f98b5d77bc020361e",
+ "proof_text": "  have h_main : myMin_postcond (a) (b) (myMin (a) (b) h_precond) h_precond := by\n    dsimp [myMin_postcond, myMin, myMin_precond] at *\n    split_ifs at * <;>\n    (try { contradiction }) <;>\n    (try {\n      -- Case: a ≤ b\n      constructor\n      · -- Prove (a ≤ a ∧ a ≤ b)\n        constructor <;>\n        (try { linarith }) <;>\n        (try { assumption })\n      · -- Prove (a = a ∨ a = b)\n        exact Or.inl rfl\n    }) <;>\n    (try {\n      -- Case: ¬(a ≤ b)\n      constructor\n      · -- Prove (b ≤ a ∧ b ≤ b)\n        constructor <;>\n        (try { linarith }) <;>\n        (try { assumption })\n      · -- Prove (b = a ∨ b = b)\n        exact Or.inr rfl\n    })\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-32b",
+ "strategy_condition": "default"
+}

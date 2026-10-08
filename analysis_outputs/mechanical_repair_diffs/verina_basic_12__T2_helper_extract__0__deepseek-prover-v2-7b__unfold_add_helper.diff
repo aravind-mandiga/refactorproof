@@ -1,0 +1,13 @@
+--- deepseek-prover-v2-7b:verina_basic_12__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_12__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,6 +1,6 @@
+   have h₁ : cubeSurfaceArea (size) h_precond - 6 * size * size = 0 := by
+     have h : cubeSurfaceArea (size) h_precond = 6 * size * size := by
+-      unfold cubeSurfaceArea
++      unfold cubeSurfaceArea cubeSurfaceArea__rp_helper_67e54167
+       <;> simp_all [cubeSurfaceArea_precond]
+       <;> ring
+     rw [h]
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: simp_all made no progress | 

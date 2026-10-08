@@ -1,0 +1,11 @@
+--- deepseek-prover-v2-7b:verina_basic_92__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_92__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : (SwapArithmetic (X) (Y) h_precond).1 = Y ∧ (SwapArithmetic (X) (Y) h_precond).2 = X ∧ (X ≠ Y → (SwapArithmetic (X) (Y) h_precond).1 ≠ X ∧ (SwapArithmetic (X) (Y) h_precond).2 ≠ Y) := by
+-    dsimp only [SwapArithmetic, SwapArithmetic_precond]
++    dsimp only [SwapArithmetic, SwapArithmetic_precond, SwapArithmetic__rp_helper_2265221a]
+     constructor
+     · -- Prove that (SwapArithmetic (X) (Y) h_precond).1 = Y
+       simp [Prod.fst, Prod.snd]
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

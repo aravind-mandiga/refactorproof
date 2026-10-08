@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_38",
+ "variant_id": "verina_basic_38__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  allCharactersSame__rp_helper_3a53cb13 s h_precond\n",
+ "transformed_code_aux": "\nprivate def allCharactersSame__rp_helper_3a53cb13 (s : String) (h_precond : allCharactersSame_precond (s)) : Bool :=\n  match s.toList with\n  | []      => true\n  | c :: cs => cs.all (fun x => x = c)\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "allCharactersSame__rp_helper_3a53cb13"
+ ],
+ "metadata": {
+  "binders": [
+   "s",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "a8e239b410f1a3682adcd1e31807fd947b23881645d3602781a60d48738cf53a",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "408884d43f696c4a11d75affd5e314ca85c30afcb18e5efd948d4f94ba35e94d",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "allCharactersSame",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

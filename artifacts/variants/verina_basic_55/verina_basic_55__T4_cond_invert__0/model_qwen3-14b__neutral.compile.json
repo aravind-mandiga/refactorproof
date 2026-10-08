@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_55/verina_basic_55__T4_cond_invert__0/model_qwen3-14b__neutral.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_55/verina_basic_55__T4_cond_invert__0/model_qwen3-14b__neutral.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/variants/verina_basic_55/verina_basic_55__T4_cond_invert__0/model_qwen3-14b__neutral.lean:13:21: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_55/verina_basic_55__T4_cond_invert__0/model_qwen3-14b__neutral.lean:13:31: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_55/verina_basic_55__T4_cond_invert__0/model_qwen3-14b__neutral.lean:24:33: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_55/verina_basic_55__T4_cond_invert__0/model_qwen3-14b__neutral.lean:37:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n",
+ "stderr": "",
+ "elapsed_seconds": 1.041,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 21,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 33,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 37,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

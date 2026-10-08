@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_78",
+ "variant_id": "verina_basic_78__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  MultipleReturns__rp_helper_39d93fc9 x y h_precond\n",
+ "transformed_code_aux": "\nprivate def MultipleReturns__rp_helper_39d93fc9 (x : Int) (y : Int) (h_precond : MultipleReturns_precond (x) (y)) : (Int × Int) :=\n  let more := x + y\n  let less := x - y\n  (more, less)\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "MultipleReturns__rp_helper_39d93fc9"
+ ],
+ "metadata": {
+  "binders": [
+   "x",
+   "y",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "1023c80e4b2fff27002508b81c3d6b5ac10976a798683e4c6ffd59d089cbc2d9",
+ "proof_hash": "b5da5cb0d8956bdb5ee634b4c2dfdb41abb0f7a3d8898ea4897c01a2b7efc5dd",
+ "code_hash_original": "e18e4e78dde473ad459517603a5b0fec7fa9a61c4ded2f47aaa65707be301b39",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "MultipleReturns",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

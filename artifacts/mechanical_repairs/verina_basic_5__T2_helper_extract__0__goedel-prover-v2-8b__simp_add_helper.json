@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_5__T2_helper_extract__0",
+ "task_id": "verina_basic_5",
+ "source": "goedel-prover-v2-8b",
+ "transformation": "T2_helper_extract",
+ "template": "simp_add_helper",
+ "function_name": "multiply",
+ "helper": "multiply__rp_helper_3cc08e31",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": false,
+ "outcome": "proof_fails",
+ "first_error": "simp_all made no progress\n",
+ "proof_before": "  have h_main : multiply_postcond (a) (b) (multiply (a) (b) h_precond) h_precond := by\n    constructor\n    \u00b7 -- Prove the first part: (a * b) - a * b = 0\n      simp [multiply, h_precond, multiply_precond]\n      <;> ring\n      <;> simp_all\n      <;> omega\n    \u00b7 -- Prove the second part: a * b - (a * b) = 0\n      simp [multiply, h_precond, multiply_precond]\n      <;> ring\n      <;> simp_all\n      <;> omega\n  exact h_main\n",
+ "proof_after": "  have h_main : multiply_postcond (a) (b) (multiply (a) (b) h_precond) h_precond := by\n    constructor\n    \u00b7 -- Prove the first part: (a * b) - a * b = 0\n      simp [multiply, h_precond, multiply_precond, multiply__rp_helper_3cc08e31]\n      <;> ring\n      <;> simp_all\n      <;> omega\n    \u00b7 -- Prove the second part: a * b - (a * b) = 0\n      simp [multiply, h_precond, multiply_precond]\n      <;> ring\n      <;> simp_all\n      <;> omega\n  exact h_main\n"
+}

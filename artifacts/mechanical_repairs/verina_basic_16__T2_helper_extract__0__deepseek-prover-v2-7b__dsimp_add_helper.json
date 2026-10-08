@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_16__T2_helper_extract__0",
+ "task_id": "verina_basic_16",
+ "source": "deepseek-prover-v2-7b",
+ "transformation": "T2_helper_extract",
+ "template": "dsimp_add_helper",
+ "function_name": "replaceChars",
+ "helper": "replaceChars__rp_helper_e8782fcd",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_main : replaceChars_postcond (s) (oldChar) (newChar) (replaceChars (s) (oldChar) (newChar) h_precond) h_precond := by\n    dsimp [replaceChars, replaceChars_postcond]\n    <;>\n    (try simp_all) <;>\n    (try\n      {\n        simp_all [List.length_map, List.length_toList]\n      }) <;>\n    (try\n      {\n        constructor <;>\n        intro i _ <;>\n        (try cases i <;> simp_all [List.get, List.get?, List.nthLe, List.map]) <;>\n        (try\n          {\n            split_ifs <;>\n            simp_all [List.get, List.get?, List.nthLe, List.map] <;>\n            (try omega) <;>\n            (try\n              {\n                cases s with\n                | mk l =>\n                  cases l with\n                  | nil => simp_all\n                  | cons hd tl =>\n                    simp_all [List.get]\n                    <;>\n                    (try aesop)\n                }\n              )\n          }\n        )\n      }\n    ) <;>\n    aesop\n  exact h_main\n",
+ "proof_after": "  have h_main : replaceChars_postcond (s) (oldChar) (newChar) (replaceChars (s) (oldChar) (newChar) h_precond) h_precond := by\n    dsimp [replaceChars, replaceChars_postcond, replaceChars__rp_helper_e8782fcd]\n    <;>\n    (try simp_all) <;>\n    (try\n      {\n        simp_all [List.length_map, List.length_toList]\n      }) <;>\n    (try\n      {\n        constructor <;>\n        intro i _ <;>\n        (try cases i <;> simp_all [List.get, List.get?, List.nthLe, List.map]) <;>\n        (try\n          {\n            split_ifs <;>\n            simp_all [List.get, List.get?, List.nthLe, List.map] <;>\n            (try omega) <;>\n            (try\n              {\n                cases s with\n                | mk l =>\n                  cases l with\n                  | nil => simp_all\n                  | cons hd tl =>\n                    simp_all [List.get]\n                    <;>\n                    (try aesop)\n                }\n              )\n          }\n        )\n      }\n    ) <;>\n    aesop\n  exact h_main\n"
+}

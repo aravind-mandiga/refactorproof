@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_66",
+ "variant_id": "verina_advanced_66__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_fc0a1062 : String :=\n    let rawWords : List String := words_str.splitOn \" \"\n    let rec filterNonEmpty (words : List String) : List String :=\n      match words with\n      | [] => []\n      | h :: t =>\n        if h = \"\" then\n          filterNonEmpty t\n        else\n          h :: filterNonEmpty t\n    let filteredWords : List String := filterNonEmpty rawWords\n    let revWords : List String := filteredWords.reverse\n    let rec joinWithSpace (words : List String) : String :=\n      match words with\n      | [] => \"\"\n      | [w] => w\n      | h :: t =>\n        -- Append the current word with a space and continue joining the rest.\n        h ++ \" \" ++ joinWithSpace t\n    let result : String := joinWithSpace revWords\n    result\n  __rp_tmp_fc0a1062\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_fc0a1062",
+  "seed": 0
+ },
+ "spec_hash": "8d04a51c9d9cd0f0bbea05553a6291c24ef7077d758b302d005751de769b1555",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "3392065a66a65af7a628f434b4ec0dd506f682ec914568433a9326b3c8a289a4",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "reverseWords",
+ "code_loc_original": 19,
+ "code_loc_refactored": 21
+}

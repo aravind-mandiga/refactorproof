@@ -1,0 +1,37 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_75/verina_advanced_75__T3_comm_swap__1.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_75/verina_advanced_75__T3_comm_swap__1.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_75/verina_advanced_75__T3_comm_swap__1.lean:55:80: error: type mismatch\n  rfl\nhas type\n  ?m.992 = ?m.992 : Prop\nbut is expected to have type\n  RPOrig.task_code sequence h_precond = RPRef.task_code sequence h_precond : Prop\nartifacts/certificates/verina_advanced_75/verina_advanced_75__T3_comm_swap__1.lean:59:80: error: type mismatch\n  rfl\nhas type\n  ?m.6794 = ?m.6794 : Prop\nbut is expected to have type\n  RPOrig.task_code sequence h_precond = RPRef.task_code sequence h_precond : Prop\nartifacts/certificates/verina_advanced_75/verina_advanced_75__T3_comm_swap__1.lean:64:2: error: tactic 'rfl' failed, the left-hand side\n  match sequence, h_precond with\n  | [], h_precond => 0\n  | x :: xs, h_precond =>\n    match\n      List.foldl\n        (fun acc x =>\n          match acc with\n          | (cur, maxSoFar) =>\n            let newCur := if cur + x ≥ x then cur + x else x;\n            let newMax := if maxSoFar ≥ newCur then maxSoFar else newCur;\n            (newCur, newMax))\n        (x, x) xs with\n    | (fst, maxSoFar) => maxSoFar\nis not definitionally equal to the right-hand side\n  match sequence, h_precond with\n  | [], h_precond => 0\n  | x :: xs, h_precond =>\n    match\n      List.foldl\n        (fun acc x =>\n          match acc with\n          | (cur, maxSoFar) =>\n            let newCur := if cur + x ≥ x then x + cur else x;\n            let newMax := if maxSoFar ≥ newCur then maxSoFar else newCur;\n            (newCur, newMax))\n        (x, x) xs with\n    | (fst, maxSoFar) => maxSoFar\nsequence : List Int\nh_precond : task_code_precond sequence\n⊢ (match sequence, h_precond with\n    | [], h_precond => 0\n    | x :: xs, h_precond =>\n      match\n        List.foldl\n          (fun acc x =>\n            match acc with\n            | (cur, maxSoFar) =>\n              let newCur := if cur + x ≥ x then cur + x else x;\n              let newMax := if maxSoFar ≥ newCur then maxSoFar else newCur;\n              (newCur, newMax))\n          (x, x) xs with\n      | (fst, maxSoFar) => maxSoFar) =\n    match sequence, h_precond with\n    | [], h_precond => 0\n    | x :: xs, h_precond =>\n      match\n        List.foldl\n          (fun acc x =>\n            match acc with\n            | (cur, maxSoFar) =>\n              let newCur := if cur + x ≥ x then x + cur else x;\n              let newMax := if maxSoFar ≥ newCur then maxSoFar else newCur;\n              (newCur, newMax))\n          (x, x) xs with\n      | (fst, maxSoFar) => maxSoFar\n",
+ "stderr": "",
+ "elapsed_seconds": 1.106,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 55,
+   "col": 80,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.992 = ?m.992 : Prop\nbut is expected to have type\n  RPOrig.task_code sequence h_precond = RPRef.task_code sequence h_precond : Prop"
+  },
+  {
+   "line": 59,
+   "col": 80,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.6794 = ?m.6794 : Prop\nbut is expected to have type\n  RPOrig.task_code sequence h_precond = RPRef.task_code sequence h_precond : Prop"
+  },
+  {
+   "line": 64,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  match sequence, h_precond with\n  | [], h_precond => 0\n  | x :: xs, h_precond =>\n    match\n      List.foldl\n        (fun acc x =>\n          match acc with\n          | (cur, maxSoFar) =>\n            let newCur := if cur + x ≥ x then cur + x else x;\n            let newMax := if maxSoFar ≥ newCur then maxSoFar else newCur;\n            (newCur, newMax))\n        (x, x) xs with\n    | (fst, maxSoFar) => maxSoFar\nis not definitionally equal to the right-hand side\n  match sequence, h_precond with\n  | [], h_precond => 0\n  | x :: xs, h_precond =>\n    match\n      List.foldl\n        (fun acc x =>\n          match acc with\n          | (cur, maxSoFar) =>\n            let newCur := if cur + x ≥ x then x + cur else x;\n            let newMax := if maxSoFar ≥ newCur then maxSoFar else newCur;\n            (newCur, newMax))\n        (x, x) xs with\n    | (fst, maxSoFar) => maxSoFar\nsequence : List Int\nh_precond : task_code_precond sequence\n⊢ (match sequence, h_precond with\n    | [], h_precond => 0\n    | x :: xs, h_precond =>\n      match\n        List.foldl\n          (fun acc x =>\n            match acc with\n            | (cur, maxSoFar) =>\n              let newCur := if cur + x ≥ x then cur + x else x;\n              let newMax := if maxSoFar ≥ newCur then maxSoFar else newCur;\n              (newCur, newMax))\n          (x, x) xs with\n      | (fst, maxSoFar) => maxSoFar) =\n    match sequence, h_precond with\n    | [], h_precond => 0\n    | x :: xs, h_precond =>\n      match\n        List.foldl\n          (fun acc x =>\n            match acc with\n            | (cur, maxSoFar) =>\n              let newCur := if cur + x ≥ x then x + cur else x;\n              let newMax := if maxSoFar ≥ newCur then maxSoFar else newCur;\n              (newCur, newMax))\n          (x, x) xs with\n      | (fst, maxSoFar) => maxSoFar\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

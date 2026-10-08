@@ -1,0 +1,13 @@
+--- goedel-prover-v2-32b:verina_basic_1__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_1__T2_helper_extract__0 (simp_add_helper)
+@@ -54,7 +54,7 @@
+       -- Contradiction with the assumption ¬((a < 0 ∧ b > 0) ∨ (a > 0 ∧ b < 0))
+       exact h h₃
+   -- Simplify the goal using the main result and definitions
+-  simp_all [hasOppositeSign_precond, hasOppositeSign, hasOppositeSign_postcond]
++  simp_all [hasOppositeSign_precond, hasOppositeSign, hasOppositeSign_postcond, hasOppositeSign__rp_helper_5272bffb]
+   <;>
+   (try tauto) <;>
+   (try norm_num) <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

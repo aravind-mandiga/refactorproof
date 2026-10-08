@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_78/verina_basic_78__T3_comm_swap__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_78/verina_basic_78__T3_comm_swap__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_78/verina_basic_78__T3_comm_swap__0/reference.lean:13:29: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_78/verina_basic_78__T3_comm_swap__0/reference.lean:13:39: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_78/verina_basic_78__T3_comm_swap__0/reference.lean:24:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_78/verina_basic_78__T3_comm_swap__0/reference.lean:38:72: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_78/verina_basic_78__T3_comm_swap__0/reference.lean:50:86: error: unsolved goals\nx y : Int\nh_precond : MultipleReturns_precond x y\n⊢ y + x = x + y\n",
+ "stderr": "",
+ "elapsed_seconds": 0.652,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 72,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 50,
+   "col": 86,
+   "severity": "error",
+   "text": "unsolved goals\nx y : Int\nh_precond : MultipleReturns_precond x y\n⊢ y + x = x + y\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

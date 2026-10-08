@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_100/lean_3/verina_basic_100__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_100/lean_3/verina_basic_100__T5_branch_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_100/lean_3/verina_basic_100__T5_branch_extract__0.lean:14:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_100/lean_3/verina_basic_100__T5_branch_extract__0.lean:22:50: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_100/lean_3/verina_basic_100__T5_branch_extract__0.lean:22:12: warning: The declaration 'Triple__rp_branch_9f218861' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_100/lean_3/verina_basic_100__T5_branch_extract__0.lean:41:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_100/lean_3/verina_basic_100__T5_branch_extract__0.lean:55:72: error: unsolved goals\ncase neg.ofNat\na✝ : ℕ\nh_precond : Triple_precond (Int.ofNat a✝)\nh✝ : ¬a✝ = 0\n⊢ Triple__rp_branch_9f218861 ↑a✝ ⋯ / 3 = ↑a✝ ∧\n    Triple__rp_branch_9f218861 ↑a✝ ⋯ / 3 * 3 = Triple__rp_branch_9f218861 ↑a✝ ⋯\n\ncase neg.negSucc\na✝ : ℕ\nh_precond : Triple_precond (Int.negSucc a✝)\n⊢ Triple__rp_branch_9f218861 (Int.negSucc a✝) h_precond / 3 = Int.negSucc a✝ ∧\n    Triple__rp_branch_9f218861 (Int.negSucc a✝) h_precond / 3 * 3 =\n      Triple__rp_branch_9f218861 (Int.negSucc a✝) h_precond\n",
+ "stderr": "",
+ "elapsed_seconds": 11.74,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 50,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'Triple__rp_branch_9f218861' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 41,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 55,
+   "col": 72,
+   "severity": "error",
+   "text": "unsolved goals\ncase neg.ofNat\na✝ : ℕ\nh_precond : Triple_precond (Int.ofNat a✝)\nh✝ : ¬a✝ = 0\n⊢ Triple__rp_branch_9f218861 ↑a✝ ⋯ / 3 = ↑a✝ ∧\n    Triple__rp_branch_9f218861 ↑a✝ ⋯ / 3 * 3 = Triple__rp_branch_9f218861 ↑a✝ ⋯\n\ncase neg.negSucc\na✝ : ℕ\nh_precond : Triple_precond (Int.negSucc a✝)\n⊢ Triple__rp_branch_9f218861 (Int.negSucc a✝) h_precond / 3 = Int.negSucc a✝ ∧\n    Triple__rp_branch_9f218861 (Int.negSucc a✝) h_precond / 3 * 3 =\n      Triple__rp_branch_9f218861 (Int.negSucc a✝) h_precond\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

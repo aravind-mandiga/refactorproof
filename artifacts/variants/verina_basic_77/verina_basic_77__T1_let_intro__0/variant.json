@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_77",
+ "variant_id": "verina_basic_77__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_66f0d7d4 : Array (Array Nat) :=\n    let inner := arr[index1]!\n    let inner' := updateInner inner index2 val\n    arr.set! index1 inner'\n  __rp_tmp_66f0d7d4\n",
+ "transformed_code_aux": "def updateInner (a : Array Nat) (idx val : Nat) : Array Nat :=\n  a.set! idx val\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_66f0d7d4",
+  "seed": 0
+ },
+ "spec_hash": "080d9f62ec5f44681a2d6e76a3b0018cce3fea202b38871a0c08b90256c02eb5",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "9777194f7f4fb2ba61b6ff89c4d1bb49ccdcfb231e129d75b803f005314e0172",
+ "code_aux_hash_original": "d24b55cc3fad9dbb7438c242cf178765f50ea02db3deef72985f8042e183015b",
+ "tier": "basic",
+ "function_name": "modify_array_element",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

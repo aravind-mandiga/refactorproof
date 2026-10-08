@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_4/verina_advanced_4__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_4/verina_advanced_4__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_4/verina_advanced_4__T1_let_intro__0.lean:13:42: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_4/verina_advanced_4__T1_let_intro__0.lean:26:50: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_4/verina_advanced_4__T1_let_intro__0.lean:43:50: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_4/verina_advanced_4__T1_let_intro__0.lean:76:3: error: failed to generate equality theorems for `match` expression `RPOrig.LongestIncreasingSubsequence.match_1`\ncase isTrue\nmotive : Array ℤ → Sort u_1\nx✝¹ : Array ℤ\nh_1 : Unit → motive #[]\nh_2 : (x : Array ℤ) → motive x\nx✝ : x✝¹ = #[] → False\nh✝ : x✝¹.size = 0\n⊢ (⋯ ▸ fun h => ⋯ ▸ h_1 ()) ⋯ = h_2 x✝¹\nartifacts/certificates/verina_advanced_4/verina_advanced_4__T1_let_intro__0.lean:80:3: error: (kernel) constant has already been declared 'RPOrig.LongestIncreasingSubsequence.match_1.eq_1'\n",
+ "stderr": "",
+ "elapsed_seconds": 18.196,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 50,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 43,
+   "col": 50,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 76,
+   "col": 3,
+   "severity": "error",
+   "text": "failed to generate equality theorems for `match` expression `RPOrig.LongestIncreasingSubsequence.match_1`\ncase isTrue\nmotive : Array ℤ → Sort u_1\nx✝¹ : Array ℤ\nh_1 : Unit → motive #[]\nh_2 : (x : Array ℤ) → motive x\nx✝ : x✝¹ = #[] → False\nh✝ : x✝¹.size = 0\n⊢ (⋯ ▸ fun h => ⋯ ▸ h_1 ()) ⋯ = h_2 x✝¹"
+  },
+  {
+   "line": 80,
+   "col": 3,
+   "severity": "error",
+   "text": "(kernel) constant has already been declared 'RPOrig.LongestIncreasingSubsequence.match_1.eq_1'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

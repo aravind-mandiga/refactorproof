@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_56",
+ "variant_id": "verina_advanced_56__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_69e72a79 : List Int :=\n    let nonzeros := xs.filter (fun x => x ≠ 0)\n    let zeros := xs.filter (fun x => x = 0)\n    nonzeros ++ zeros\n  __rp_tmp_69e72a79\n",
+ "transformed_code_aux": "-- Count how many times a specific value appears in the list\n\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_69e72a79",
+  "seed": 0
+ },
+ "spec_hash": "80714562674237874796b53c1bd918c90b27f934975edd95b2071c0234e5b4e5",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "8b8552bd41751cd162c9506feeed7f5292d66fe1581dac141261b8f540735bba",
+ "code_aux_hash_original": "d18c2bce94b9357798786f545e7f58fa8cad94bc11ad2eb21fd908984475788c",
+ "tier": "advanced",
+ "function_name": "moveZeroes",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

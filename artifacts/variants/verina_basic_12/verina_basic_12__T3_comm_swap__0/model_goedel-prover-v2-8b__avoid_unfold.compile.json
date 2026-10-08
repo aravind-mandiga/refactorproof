@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_goedel-prover-v2-8b__avoid_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_goedel-prover-v2-8b__avoid_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_goedel-prover-v2-8b__avoid_unfold.lean:16:29: warning: unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_goedel-prover-v2-8b__avoid_unfold.lean:27:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_goedel-prover-v2-8b__avoid_unfold.lean:39:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_goedel-prover-v2-8b__avoid_unfold.lean:55:6: error: tactic 'rfl' failed, the left-hand side\n  cubeSurfaceArea size h_precond\nis not definitionally equal to the right-hand side\n  6 * size * size\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\n⊢ cubeSurfaceArea size h_precond = 6 * size * size\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_goedel-prover-v2-8b__avoid_unfold.lean:64:6: error: tactic 'rfl' failed, the left-hand side\n  cubeSurfaceArea size h_precond\nis not definitionally equal to the right-hand side\n  6 * size * size\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\nh₁ : cubeSurfaceArea size h_precond - 6 * size * size = 0\n⊢ cubeSurfaceArea size h_precond = 6 * size * size\n",
+ "stderr": "",
+ "elapsed_seconds": 6.592,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 27,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 55,
+   "col": 6,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  cubeSurfaceArea size h_precond\nis not definitionally equal to the right-hand side\n  6 * size * size\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\n⊢ cubeSurfaceArea size h_precond = 6 * size * size"
+  },
+  {
+   "line": 64,
+   "col": 6,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  cubeSurfaceArea size h_precond\nis not definitionally equal to the right-hand side\n  6 * size * size\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\nh₁ : cubeSurfaceArea size h_precond - 6 * size * size = 0\n⊢ cubeSurfaceArea size h_precond = 6 * size * size\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

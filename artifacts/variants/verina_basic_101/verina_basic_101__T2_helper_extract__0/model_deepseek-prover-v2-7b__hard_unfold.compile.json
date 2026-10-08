@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_101/verina_basic_101__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_101/verina_basic_101__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_101/verina_basic_101__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:15:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_101/verina_basic_101__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:23:50: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_101/verina_basic_101__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:23:12: warning: The declaration 'Triple__rp_helper_65b561a3' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_101/verina_basic_101__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:41:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nTry this: ring_nf\nartifacts/variants/verina_basic_101/verina_basic_101__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:60:10: error: simp_all made no progress\nTry this: ring_nf\nartifacts/variants/verina_basic_101/verina_basic_101__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:77:10: error: simp_all made no progress\n",
+ "stderr": "",
+ "elapsed_seconds": 11.533,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 50,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'Triple__rp_helper_65b561a3' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 41,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nTry this: ring_nf"
+  },
+  {
+   "line": 60,
+   "col": 10,
+   "severity": "error",
+   "text": "simp_all made no progress\nTry this: ring_nf"
+  },
+  {
+   "line": 77,
+   "col": 10,
+   "severity": "error",
+   "text": "simp_all made no progress\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "simp_failed"
+}

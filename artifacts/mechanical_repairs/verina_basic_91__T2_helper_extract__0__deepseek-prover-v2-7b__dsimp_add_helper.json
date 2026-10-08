@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_91__T2_helper_extract__0",
+ "task_id": "verina_basic_91",
+ "source": "deepseek-prover-v2-7b",
+ "transformation": "T2_helper_extract",
+ "template": "dsimp_add_helper",
+ "function_name": "Swap",
+ "helper": "Swap__rp_helper_6bee5f12",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_main : Swap (X) (Y) h_precond = (Y, X) := by\n    dsimp [Swap]\n    <;> simp_all\n    <;> aesop\n\n  have h_result_fst : (Swap (X) (Y) h_precond).fst = Y := by\n    simp_all [Prod.fst]\n    <;> aesop\n\n  have h_result_snd : (Swap (X) (Y) h_precond).snd = X := by\n    simp_all [Prod.snd]\n    <;> aesop\n\n  have h_implication : (X \u2260 Y \u2192 ((Swap (X) (Y) h_precond).fst \u2260 X \u2227 (Swap (X) (Y) h_precond).snd \u2260 Y)) := by\n    intro h\n    have h\u2081 : (Swap (X) (Y) h_precond).fst = Y := h_result_fst\n    have h\u2082 : (Swap (X) (Y) h_precond).snd = X := h_result_snd\n    have h\u2083 : (Swap (X) (Y) h_precond).fst \u2260 X := by\n      -- Prove that Y \u2260 X when X \u2260 Y\n      intro h\u2084\n      apply h\n      simp_all [Prod.fst, Prod.snd]\n      <;> aesop\n    have h\u2084 : (Swap (X) (Y) h_precond).snd \u2260 Y := by\n      -- Prove that X \u2260 Y when X \u2260 Y\n      intro h\u2085\n      apply h\n      simp_all [Prod.fst, Prod.snd]\n      <;> aesop\n    exact \u27e8h\u2083, h\u2084\u27e9\n\n  constructor\n  \u00b7 -- Prove (Swap (X) (Y) h_precond).fst = Y\n    simp_all [h_result_fst]\n  constructor\n  \u00b7 -- Prove (Swap (X) (Y) h_precond).snd = X\n    simp_all [h_result_snd]\n  \u00b7 -- Prove (X \u2260 Y \u2192 (Swap (X) (Y) h_precond).fst \u2260 X \u2227 (Swap (X) (Y) h_precond).snd \u2260 Y)\n    simpa [h_result_fst, h_result_snd] using h_implication\n",
+ "proof_after": "  have h_main : Swap (X) (Y) h_precond = (Y, X) := by\n    dsimp [Swap, Swap__rp_helper_6bee5f12]\n    <;> simp_all\n    <;> aesop\n\n  have h_result_fst : (Swap (X) (Y) h_precond).fst = Y := by\n    simp_all [Prod.fst]\n    <;> aesop\n\n  have h_result_snd : (Swap (X) (Y) h_precond).snd = X := by\n    simp_all [Prod.snd]\n    <;> aesop\n\n  have h_implication : (X \u2260 Y \u2192 ((Swap (X) (Y) h_precond).fst \u2260 X \u2227 (Swap (X) (Y) h_precond).snd \u2260 Y)) := by\n    intro h\n    have h\u2081 : (Swap (X) (Y) h_precond).fst = Y := h_result_fst\n    have h\u2082 : (Swap (X) (Y) h_precond).snd = X := h_result_snd\n    have h\u2083 : (Swap (X) (Y) h_precond).fst \u2260 X := by\n      -- Prove that Y \u2260 X when X \u2260 Y\n      intro h\u2084\n      apply h\n      simp_all [Prod.fst, Prod.snd]\n      <;> aesop\n    have h\u2084 : (Swap (X) (Y) h_precond).snd \u2260 Y := by\n      -- Prove that X \u2260 Y when X \u2260 Y\n      intro h\u2085\n      apply h\n      simp_all [Prod.fst, Prod.snd]\n      <;> aesop\n    exact \u27e8h\u2083, h\u2084\u27e9\n\n  constructor\n  \u00b7 -- Prove (Swap (X) (Y) h_precond).fst = Y\n    simp_all [h_result_fst]\n  constructor\n  \u00b7 -- Prove (Swap (X) (Y) h_precond).snd = X\n    simp_all [h_result_snd]\n  \u00b7 -- Prove (X \u2260 Y \u2192 (Swap (X) (Y) h_precond).fst \u2260 X \u2227 (Swap (X) (Y) h_precond).snd \u2260 Y)\n    simpa [h_result_fst, h_result_snd] using h_implication\n"
+}

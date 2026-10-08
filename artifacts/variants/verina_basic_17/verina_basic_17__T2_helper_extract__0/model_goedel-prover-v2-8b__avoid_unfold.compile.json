@@ -1,0 +1,67 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:20:25: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:28:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:28:12: warning: The declaration 'toLowercase__rp_helper_b6759a4e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:47:56: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:69:14: error: unknown constant 'String.toList_eq_nil'\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:69:4: error: simp_all made no progress\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:79:18: error: unknown constant 'String.toList_eq_nil'\nartifacts/variants/verina_basic_17/verina_basic_17__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:79:8: error: simp_all made no progress\n",
+ "stderr": "",
+ "elapsed_seconds": 7.616,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 20,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'toLowercase__rp_helper_b6759a4e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 47,
+   "col": 56,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 69,
+   "col": 14,
+   "severity": "error",
+   "text": "unknown constant 'String.toList_eq_nil'"
+  },
+  {
+   "line": 69,
+   "col": 4,
+   "severity": "error",
+   "text": "simp_all made no progress"
+  },
+  {
+   "line": 79,
+   "col": 18,
+   "severity": "error",
+   "text": "unknown constant 'String.toList_eq_nil'"
+  },
+  {
+   "line": 79,
+   "col": 8,
+   "severity": "error",
+   "text": "simp_all made no progress\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unknown_constant_or_identifier"
+}

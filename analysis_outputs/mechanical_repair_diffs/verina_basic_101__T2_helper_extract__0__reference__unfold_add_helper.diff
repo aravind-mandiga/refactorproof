@@ -1,0 +1,10 @@
+--- reference:verina_basic_101__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_101__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold Triple_postcond Triple
++  unfold Triple_postcond Triple Triple__rp_helper_65b561a3
+   simp
+   rw (occs := [2]) [←Int.mul_one x]
+   rw [←Int.mul_add]
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

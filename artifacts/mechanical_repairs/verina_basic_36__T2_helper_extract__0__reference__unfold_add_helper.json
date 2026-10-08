@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_36__T2_helper_extract__0",
+ "task_id": "verina_basic_36",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "replaceWithColon",
+ "helper": "replaceWithColon__rp_helper_3e0fbdec",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold replaceWithColon replaceWithColon_postcond\n  simp\n  constructor\n  \u00b7 unfold String.length\n    simp\n  \u00b7 intro i hi\n    have hi' : i < s.data.length := by\n      unfold String.length at hi\n      simp at hi\n      exact hi\n    constructor <;> simp_all\n",
+ "proof_after": "  unfold replaceWithColon replaceWithColon__rp_helper_3e0fbdec replaceWithColon_postcond\n  simp\n  constructor\n  \u00b7 unfold String.length\n    simp\n  \u00b7 intro i hi\n    have hi' : i < s.data.length := by\n      unfold String.length at hi\n      simp at hi\n      exact hi\n    constructor <;> simp_all\n"
+}

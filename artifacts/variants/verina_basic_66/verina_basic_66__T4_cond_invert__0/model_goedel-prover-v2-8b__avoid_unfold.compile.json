@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_66/verina_basic_66__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_66/verina_basic_66__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_66/verina_basic_66__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean:14:27: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_66/verina_basic_66__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean:25:29: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_66/verina_basic_66__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean:38:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_66/verina_basic_66__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean:90:83: error: type mismatch\n  rfl\nhas type\n  ?m.8532 = ?m.8532 : Prop\nbut is expected to have type\n  ComputeIsEven x h_precond = if x % 2 = 0 then true else false : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 6.575,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 27,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 90,
+   "col": 83,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.8532 = ?m.8532 : Prop\nbut is expected to have type\n  ComputeIsEven x h_precond = if x % 2 = 0 then true else false : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

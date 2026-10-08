@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_65",
+ "variant_id": "verina_advanced_65__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  reverseString__rp_helper_0d50c7dd s h_precond\n",
+ "transformed_code_aux": "\nprivate def reverseString__rp_helper_0d50c7dd (s : String) (h_precond : reverseString_precond (s)) : String :=\n  let rec reverseAux (chars : List Char) (acc : List Char) : List Char :=\n    match chars with\n    | [] => acc\n    | h::t => reverseAux t (h::acc)\n  String.mk (reverseAux (s.toList) [])\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "reverseString__rp_helper_0d50c7dd"
+ ],
+ "metadata": {
+  "binders": [
+   "s",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "9a50d40b8dd2d9348f28c584f5670a314a022bcdf3fe40e8ebf6f75498c2f773",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "a964e16afe6b6f93655a79454484db47fc1a49a33fa654220745e03cde895704",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "reverseString",
+ "code_loc_original": 5,
+ "code_loc_refactored": 7
+}

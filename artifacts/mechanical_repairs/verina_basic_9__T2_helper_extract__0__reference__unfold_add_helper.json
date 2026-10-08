@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_9__T2_helper_extract__0",
+ "task_id": "verina_basic_9",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "hasCommonElement",
+ "helper": "hasCommonElement__rp_helper_db5fe7c5",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold hasCommonElement hasCommonElement_postcond\n  constructor\n  \u00b7 intro h\n    rcases h with \u27e8i, j, hi, hj, heq\u27e9\n    simp [Array.any_eq]\n    exists i\n    exists hi\n    exists j\n    exists hj\n    have heqa : a[i]! = a[i] := by\n      exact getElem!_pos a i hi\n    have heqb : b[j]! = b[j] := by\n      exact getElem!_pos b j hj\n    rw [heqa, heqb] at heq\n    exact heq\n  \u00b7 intro h\n    simp [Array.any_eq] at h\n    rcases h with \u27e8i, hi, j, hj, heq\u27e9\n    exists i\n    exists j\n    simp [hi, hj]\n    have heqa : a[i]! = a[i] := by\n      exact getElem!_pos a i hi\n    have heqb : b[j]! = b[j] := by\n      exact getElem!_pos b j hj\n    rw [heqa, heqb]\n    exact heq\n",
+ "proof_after": "  unfold hasCommonElement hasCommonElement__rp_helper_db5fe7c5 hasCommonElement_postcond\n  constructor\n  \u00b7 intro h\n    rcases h with \u27e8i, j, hi, hj, heq\u27e9\n    simp [Array.any_eq]\n    exists i\n    exists hi\n    exists j\n    exists hj\n    have heqa : a[i]! = a[i] := by\n      exact getElem!_pos a i hi\n    have heqb : b[j]! = b[j] := by\n      exact getElem!_pos b j hj\n    rw [heqa, heqb] at heq\n    exact heq\n  \u00b7 intro h\n    simp [Array.any_eq] at h\n    rcases h with \u27e8i, hi, j, hj, heq\u27e9\n    exists i\n    exists j\n    simp [hi, hj]\n    have heqa : a[i]! = a[i] := by\n      exact getElem!_pos a i hi\n    have heqb : b[j]! = b[j] := by\n      exact getElem!_pos b j hj\n    rw [heqa, heqb]\n    exact heq\n"
+}

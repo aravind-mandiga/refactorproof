@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_34/verina_advanced_34__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_34/verina_advanced_34__T1_let_intro__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/certificates/verina_advanced_34/verina_advanced_34__T1_let_intro__0.lean:13:42: warning: unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_34/verina_advanced_34__T1_let_intro__0.lean:36:52: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_34/verina_advanced_34__T1_let_intro__0.lean:52:52: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_34/verina_advanced_34__T1_let_intro__0.lean:84:92: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_34/verina_advanced_34__T1_let_intro__0.lean:84:92: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_34/verina_advanced_34__T1_let_intro__0.lean:88:87: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_34/verina_advanced_34__T1_let_intro__0.lean:88:87: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 2.732,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 36,
+   "col": 52,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 52,
+   "col": 52,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 84,
+   "col": 92,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 84,
+   "col": 92,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 88,
+   "col": 87,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 88,
+   "col": 87,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

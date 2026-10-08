@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_107__T2_helper_extract__0",
+ "task_id": "verina_basic_107",
+ "source": "goedel-prover-v2-32b",
+ "transformation": "T2_helper_extract",
+ "template": "simp_add_helper",
+ "function_name": "ComputeAvg",
+ "helper": "ComputeAvg__rp_helper_860051f2",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_main : 2 * (ComputeAvg a b h_precond) = a + b - (a + b) % 2 := by\n    have h\u2081 : (a + b) % 2 = (a + b) - 2 * ((a + b) / 2) := by\n      have h\u2082 := Int.emod_def (a + b) 2\n      ring_nf at h\u2082 \u22a2\n      <;> omega\n    have h\u2082 : 2 * (ComputeAvg a b h_precond) = 2 * ((a + b) / 2) := by\n      simp [ComputeAvg]\n      <;> ring_nf\n    rw [h\u2082]\n    have h\u2083 : a + b - (a + b) % 2 = 2 * ((a + b) / 2) := by\n      rw [h\u2081]\n      <;> ring_nf\n      <;> omega\n    linarith\n\n  simp only [ComputeAvg_postcond, ComputeAvg] at *\n  <;>\n  (try simp_all) <;>\n  (try omega) <;>\n  (try linarith) <;>\n  (try ring_nf at *) <;>\n  (try norm_num at *) <;>\n  (try nlinarith)\n  <;>\n  (try\n    {\n      have h\u2081 := Int.emod_def (a + b) 2\n      ring_nf at h\u2081 \u22a2\n      <;> omega\n    })\n  <;>\n  (try\n    {\n      omega\n    })\n",
+ "proof_after": "  have h_main : 2 * (ComputeAvg a b h_precond) = a + b - (a + b) % 2 := by\n    have h\u2081 : (a + b) % 2 = (a + b) - 2 * ((a + b) / 2) := by\n      have h\u2082 := Int.emod_def (a + b) 2\n      ring_nf at h\u2082 \u22a2\n      <;> omega\n    have h\u2082 : 2 * (ComputeAvg a b h_precond) = 2 * ((a + b) / 2) := by\n      simp [ComputeAvg, ComputeAvg__rp_helper_860051f2]\n      <;> ring_nf\n    rw [h\u2082]\n    have h\u2083 : a + b - (a + b) % 2 = 2 * ((a + b) / 2) := by\n      rw [h\u2081]\n      <;> ring_nf\n      <;> omega\n    linarith\n\n  simp only [ComputeAvg_postcond, ComputeAvg] at *\n  <;>\n  (try simp_all) <;>\n  (try omega) <;>\n  (try linarith) <;>\n  (try ring_nf at *) <;>\n  (try norm_num at *) <;>\n  (try nlinarith)\n  <;>\n  (try\n    {\n      have h\u2081 := Int.emod_def (a + b) 2\n      ring_nf at h\u2081 \u22a2\n      <;> omega\n    })\n  <;>\n  (try\n    {\n      omega\n    })\n"
+}

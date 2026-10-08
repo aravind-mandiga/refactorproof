@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_107__T2_helper_extract__0",
+ "task_id": "verina_basic_107",
+ "source": "deepseek-prover-v2-7b",
+ "transformation": "T2_helper_extract",
+ "template": "simp_add_helper",
+ "function_name": "ComputeAvg",
+ "helper": "ComputeAvg__rp_helper_860051f2",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h : 2 * (ComputeAvg (a) (b) h_precond) = a + b - ((a + b) % 2) := by\n    have h\u2081 : 2 * (ComputeAvg (a) (b) h_precond) = 2 * ((a + b) / 2) := by\n      simp [ComputeAvg]\n    rw [h\u2081]\n    have h\u2082 : a + b - ((a + b) % 2) = 2 * ((a + b) / 2) := by\n      have h\u2083 : a + b = 2 * ((a + b) / 2) + ((a + b) % 2) := by\n        have h\u2084 := Int.emod_add_ediv (a + b) 2\n        omega\n      have h\u2084 : a + b - ((a + b) % 2) = 2 * ((a + b) / 2) := by\n        omega\n      exact h\u2084\n    omega\n  exact h\n",
+ "proof_after": "  have h : 2 * (ComputeAvg (a) (b) h_precond) = a + b - ((a + b) % 2) := by\n    have h\u2081 : 2 * (ComputeAvg (a) (b) h_precond) = 2 * ((a + b) / 2) := by\n      simp [ComputeAvg, ComputeAvg__rp_helper_860051f2]\n    rw [h\u2081]\n    have h\u2082 : a + b - ((a + b) % 2) = 2 * ((a + b) / 2) := by\n      have h\u2083 : a + b = 2 * ((a + b) / 2) + ((a + b) % 2) := by\n        have h\u2084 := Int.emod_add_ediv (a + b) 2\n        omega\n      have h\u2084 : a + b - ((a + b) % 2) = 2 * ((a + b) / 2) := by\n        omega\n      exact h\u2084\n    omega\n  exact h\n"
+}

@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_78",
+ "variant_id": "verina_advanced_78__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_ce0239df : Prod Nat Nat :=\n    twoSumAux nums target 0\n  __rp_tmp_ce0239df\n",
+ "transformed_code_aux": "def findComplement (nums : List Int) (target : Int) (i : Nat) (x : Int) : Option Nat :=\n  let rec aux (nums : List Int) (j : Nat) : Option Nat :=\n    match nums with\n    | []      => none\n    | y :: ys => if x + y = target then some (i + j + 1) else aux ys (j + 1)\n  aux nums 0\n\ndef twoSumAux (nums : List Int) (target : Int) (i : Nat) : Prod Nat Nat :=\n  match nums with\n  | []      => panic! \"No solution exists\"\n  | x :: xs =>\n    match findComplement xs target i x with\n    | some j => (i, j)\n    | none   => twoSumAux xs target (i + 1)\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_ce0239df",
+  "seed": 0
+ },
+ "spec_hash": "aff852be8a856362fa13f386c57c16d5973c8c0ae5298e0e80ffe9302b7e63df",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "7ef39c1ced193cf3bf2c40cc3d42b9e6da9ee1252e4029dd053f8da4cbb59741",
+ "code_aux_hash_original": "77538bba2f8c8d2d3a2d5c3a7dfedf126eef1586751b6f6d2bc53d9dd0230e7c",
+ "tier": "advanced",
+ "function_name": "twoSum",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

@@ -1,0 +1,109 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:14:27: warning: unused variable `arr`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:23:37: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:38:37: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:54:78: error: type mismatch\n  rfl\nhas type\n  ?m.53262 = ?m.53262 : Prop\nbut is expected to have type\n  RPOrig.uniqueProduct arr h_precond = RPRef.uniqueProduct arr h_precond : Prop\nartifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:58:78: error: type mismatch\n  rfl\nhas type\n  ?m.53356 = ?m.53356 : Prop\nbut is expected to have type\n  RPOrig.uniqueProduct arr h_precond = RPRef.uniqueProduct arr h_precond : Prop\nartifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:63:2: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\narr : Array Int\nh_precond : uniqueProduct_precond arr\n⊢ RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩ =\n    RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\nartifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:71:224: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\narr : Array Int\nh_precond : uniqueProduct_precond arr\n⊢ RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩ =\n    RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\nartifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:66:78: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:66:78: error: unknown metavariable '?_uniq.62577'\nartifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:79:219: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\narr : Array Int\nh_precond : uniqueProduct_precond arr\n⊢ RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩ =\n    RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\nartifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:74:78: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:74:78: error: unknown metavariable '?_uniq.71326'\nartifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:83:240: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\narr : Array Int\nh_precond : uniqueProduct_precond arr\n⊢ RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩ =\n    RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\nartifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:82:78: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_20/verina_basic_20__T3_comm_swap__0.lean:82:78: error: unknown metavariable '?_uniq.74096'\n",
+ "stderr": "",
+ "elapsed_seconds": 2.595,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 27,
+   "severity": "warning",
+   "text": "unused variable `arr`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 37,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 37,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 54,
+   "col": 78,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.53262 = ?m.53262 : Prop\nbut is expected to have type\n  RPOrig.uniqueProduct arr h_precond = RPRef.uniqueProduct arr h_precond : Prop"
+  },
+  {
+   "line": 58,
+   "col": 78,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.53356 = ?m.53356 : Prop\nbut is expected to have type\n  RPOrig.uniqueProduct arr h_precond = RPRef.uniqueProduct arr h_precond : Prop"
+  },
+  {
+   "line": 63,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\narr : Array Int\nh_precond : uniqueProduct_precond arr\n⊢ RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩ =\n    RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩"
+  },
+  {
+   "line": 71,
+   "col": 224,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\narr : Array Int\nh_precond : uniqueProduct_precond arr\n⊢ RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩ =\n    RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩"
+  },
+  {
+   "line": 66,
+   "col": 78,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 66,
+   "col": 78,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.62577'"
+  },
+  {
+   "line": 79,
+   "col": 219,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\narr : Array Int\nh_precond : uniqueProduct_precond arr\n⊢ RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩ =\n    RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩"
+  },
+  {
+   "line": 74,
+   "col": 78,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 74,
+   "col": 78,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.71326'"
+  },
+  {
+   "line": 83,
+   "col": 240,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩\narr : Array Int\nh_precond : uniqueProduct_precond arr\n⊢ RPOrig.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩ =\n    RPRef.uniqueProduct.loop._unary arr ⟨0, ⟨Std.HashSet.empty, 1⟩⟩"
+  },
+  {
+   "line": 82,
+   "col": 78,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 82,
+   "col": 78,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.74096'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

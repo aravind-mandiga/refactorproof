@@ -1,0 +1,103 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean:29:44: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean:46:44: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean:64:92: error: type mismatch\n  rfl\nhas type\n  ?m.61244 = ?m.61244 : Prop\nbut is expected to have type\n  RPOrig.firstEvenOddDifference a h_precond = RPRef.firstEvenOddDifference a h_precond : Prop\nartifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean:68:92: error: type mismatch\n  rfl\nhas type\n  ?m.61338 = ?m.61338 : Prop\nbut is expected to have type\n  RPOrig.firstEvenOddDifference a h_precond = RPRef.firstEvenOddDifference a h_precond : Prop\nartifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean:73:2: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\na : Array Int\nh_precond : firstEvenOddDifference_precond a\n⊢ RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩ =\n    RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nartifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean:81:302: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\na : Array Int\nh_precond : firstEvenOddDifference_precond a\n⊢ RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩ =\n    RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nartifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean:76:92: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean:76:92: error: unknown metavariable '?_uniq.68507'\nartifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean:89:297: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\na : Array Int\nh_precond : firstEvenOddDifference_precond a\n⊢ RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩ =\n    RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nartifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean:84:92: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean:84:92: error: unknown metavariable '?_uniq.75200'\nartifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean:93:318: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\na : Array Int\nh_precond : firstEvenOddDifference_precond a\n⊢ RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩ =\n    RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nartifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean:92:92: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean:92:92: error: unknown metavariable '?_uniq.77257'\n",
+ "stderr": "",
+ "elapsed_seconds": 2.109,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 29,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 46,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 64,
+   "col": 92,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.61244 = ?m.61244 : Prop\nbut is expected to have type\n  RPOrig.firstEvenOddDifference a h_precond = RPRef.firstEvenOddDifference a h_precond : Prop"
+  },
+  {
+   "line": 68,
+   "col": 92,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.61338 = ?m.61338 : Prop\nbut is expected to have type\n  RPOrig.firstEvenOddDifference a h_precond = RPRef.firstEvenOddDifference a h_precond : Prop"
+  },
+  {
+   "line": 73,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\na : Array Int\nh_precond : firstEvenOddDifference_precond a\n⊢ RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩ =\n    RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩"
+  },
+  {
+   "line": 81,
+   "col": 302,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\na : Array Int\nh_precond : firstEvenOddDifference_precond a\n⊢ RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩ =\n    RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩"
+  },
+  {
+   "line": 76,
+   "col": 92,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 76,
+   "col": 92,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.68507'"
+  },
+  {
+   "line": 89,
+   "col": 297,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\na : Array Int\nh_precond : firstEvenOddDifference_precond a\n⊢ RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩ =\n    RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩"
+  },
+  {
+   "line": 84,
+   "col": 92,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 84,
+   "col": 92,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.75200'"
+  },
+  {
+   "line": 93,
+   "col": 318,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\na : Array Int\nh_precond : firstEvenOddDifference_precond a\n⊢ RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩ =\n    RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩"
+  },
+  {
+   "line": 92,
+   "col": 92,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 92,
+   "col": 92,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.77257'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

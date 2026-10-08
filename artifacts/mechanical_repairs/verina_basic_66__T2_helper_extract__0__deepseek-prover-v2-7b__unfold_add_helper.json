@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_66__T2_helper_extract__0",
+ "task_id": "verina_basic_66",
+ "source": "deepseek-prover-v2-7b",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "ComputeIsEven",
+ "helper": "ComputeIsEven__rp_helper_c370e361",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_main : (ComputeIsEven x h_precond = true) \u2194 \u2203 (k : Int), x = 2 * k := by\n    unfold ComputeIsEven\n    simp [h_precond]\n    constructor\n    \u00b7 -- Prove the forward direction: (x % 2 = 0) \u2192 \u2203 k, x = 2 * k\n      intro h\n      use x / 2\n      have h\u2081 : x % 2 = 0 := by simpa using h\n      have h\u2082 : x = 2 * (x / 2) := by\n        have h\u2083 := Int.emod_add_ediv x 2\n        omega\n      linarith\n    \u00b7 -- Prove the backward direction: (\u2203 k, x = 2 * k) \u2192 (x % 2 = 0)\n      rintro \u27e8k, hk\u27e9\n      have h\u2081 : x % 2 = 0 := by\n        rw [hk]\n        norm_num\n        <;>\n        (try omega) <;>\n        (try simp [Int.mul_emod, Int.add_emod, Int.emod_emod]) <;>\n        omega\n      simp_all\n      <;>\n      omega\n\n  simp_all [ComputeIsEven_postcond]\n  <;>\n  aesop\n",
+ "proof_after": "  have h_main : (ComputeIsEven x h_precond = true) \u2194 \u2203 (k : Int), x = 2 * k := by\n    unfold ComputeIsEven ComputeIsEven__rp_helper_c370e361\n    simp [h_precond]\n    constructor\n    \u00b7 -- Prove the forward direction: (x % 2 = 0) \u2192 \u2203 k, x = 2 * k\n      intro h\n      use x / 2\n      have h\u2081 : x % 2 = 0 := by simpa using h\n      have h\u2082 : x = 2 * (x / 2) := by\n        have h\u2083 := Int.emod_add_ediv x 2\n        omega\n      linarith\n    \u00b7 -- Prove the backward direction: (\u2203 k, x = 2 * k) \u2192 (x % 2 = 0)\n      rintro \u27e8k, hk\u27e9\n      have h\u2081 : x % 2 = 0 := by\n        rw [hk]\n        norm_num\n        <;>\n        (try omega) <;>\n        (try simp [Int.mul_emod, Int.add_emod, Int.emod_emod]) <;>\n        omega\n      simp_all\n      <;>\n      omega\n\n  simp_all [ComputeIsEven_postcond]\n  <;>\n  aesop\n"
+}

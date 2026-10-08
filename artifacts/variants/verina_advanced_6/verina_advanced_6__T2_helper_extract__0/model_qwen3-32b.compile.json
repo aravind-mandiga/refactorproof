@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_advanced_6/verina_advanced_6__T2_helper_extract__0/model_qwen3-32b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_advanced_6/verina_advanced_6__T2_helper_extract__0/model_qwen3-32b.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/variants/verina_advanced_6/verina_advanced_6__T2_helper_extract__0/model_qwen3-32b.lean:21:23: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_6/verina_advanced_6__T2_helper_extract__0/model_qwen3-32b.lean:29:56: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_6/verina_advanced_6__T2_helper_extract__0/model_qwen3-32b.lean:29:12: warning: The declaration 'allVowels__rp_helper_1905f5d2' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_advanced_6/verina_advanced_6__T2_helper_extract__0/model_qwen3-32b.lean:48:52: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n",
+ "stderr": "",
+ "elapsed_seconds": 6.112,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 21,
+   "col": 23,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 29,
+   "col": 56,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 29,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'allVowels__rp_helper_1905f5d2' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 48,
+   "col": 52,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

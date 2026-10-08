@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_68",
+ "variant_id": "verina_basic_68__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_dfe96427 : Nat :=\n    let rec loop (n : Nat) : Nat :=\n      if n < a.size then\n        if a[n]! = e then n\n        else loop (n + 1)\n      else n\n    loop 0\n  __rp_tmp_dfe96427\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_dfe96427",
+  "seed": 0
+ },
+ "spec_hash": "ed2ef8f276ee2125f13348cccc8e37fb356bd4d382bb4ffffb4f62ebc13372b4",
+ "proof_hash": "ddf8116f270f794889d6cbb165db0698c471baee68002fca2c17360e4570c343",
+ "code_hash_original": "6124f1ce0a50f338e12cf6874054bb5ad9f4001618f146576bd521243df17d6c",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "LinearSearch",
+ "code_loc_original": 6,
+ "code_loc_refactored": 8
+}

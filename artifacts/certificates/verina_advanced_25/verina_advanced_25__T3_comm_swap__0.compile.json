@@ -1,0 +1,181 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:13:25: warning: unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:26:35: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:43:35: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:61:76: error: type mismatch\n  rfl\nhas type\n  ?m.2504 = ?m.2504 : Prop\nbut is expected to have type\n  RPOrig.lengthOfLIS nums h_precond = RPRef.lengthOfLIS nums h_precond : Prop\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:65:76: error: type mismatch\n  rfl\nhas type\n  ?m.32389 = ?m.32389 : Prop\nbut is expected to have type\n  RPOrig.lengthOfLIS nums h_precond = RPRef.lengthOfLIS nums h_precond : Prop\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:70:2: error: tactic 'rfl' failed, the left-hand side\n  if nums.isEmpty = true then 0\n  else\n    let n := nums.length;\n    (let dp := mkArray n 1;\n      do\n      let r ←\n        forIn { start := 1, stop := n, step := 1, step_pos := Nat.zero_lt_one } dp fun i r =>\n            let dp := r;\n            do\n            let r ←\n              forIn { start := 0, stop := i, step := 1, step_pos := Nat.zero_lt_one } dp fun j r =>\n                  let dp := r;\n                  if (decide (nums[j]! < nums[i]!) && decide (dp[j]! + 1 > dp[i]!)) = true then\n                    let dp := dp.set! i (dp[j]! + 1);\n                    do\n                    pure PUnit.unit\n                    pure (ForInStep.yield dp)\n                  else do\n                    pure PUnit.unit\n                    pure (ForInStep.yield dp)\n            let dp : Array ℕ := r\n            pure PUnit.unit\n            pure (ForInStep.yield dp)\n      let dp : Array ℕ := r\n      maxInArray dp).run\nis not definitionally equal to the right-hand side\n  if nums.isEmpty = true then 0\n  else\n    let n := nums.length;\n    (let dp := mkArray n 1;\n      do\n      let r ←\n        forIn { start := 1, stop := n, step := 1, step_pos := Nat.zero_lt_one } dp fun i r =>\n            let dp := r;\n            do\n            let r ←\n              forIn { start := 0, stop := i, step := 1, step_pos := Nat.zero_lt_one } dp fun j r =>\n                  let dp := r;\n                  if (decide (nums[j]! < nums[i]!) && decide (dp[j]! + 1 > dp[i]!)) = true then\n                    let dp := dp.set! i (1 + dp[j]!);\n                    do\n                    pure PUnit.unit\n                    pure (ForInStep.yield dp)\n                  else do\n                    pure PUnit.unit\n                    pure (ForInStep.yield dp)\n            let dp : Array ℕ := r\n            pure PUnit.unit\n            pure (ForInStep.yield dp)\n      let dp : Array ℕ := r\n      maxInArray dp).run\nnums : List ℤ\nh_precond : lengthOfLIS_precond nums\n⊢ (if nums.isEmpty = true then 0\n    else\n      let n := nums.length;\n      (let dp := mkArray n 1;\n        do\n        let r ←\n          forIn { start := 1, stop := n, step := 1, step_pos := Nat.zero_lt_one } dp fun i r =>\n              let dp := r;\n              do\n              let r ←\n                forIn { start := 0, stop := i, step := 1, step_pos := Nat.zero_lt_one } dp fun j r =>\n                    let dp := r;\n                    if (decide (nums[j]! < nums[i]!) && decide (dp[j]! + 1 > dp[i]!)) = true then\n                      let dp := dp.set! i (dp[j]! + 1);\n                      do\n                      pure PUnit.unit\n                      pure (ForInStep.yield dp)\n                    else do\n                      pure PUnit.unit\n                      pure (ForInStep.yield dp)\n              let dp : Array ℕ := r\n              pure PUnit.unit\n              pure (ForInStep.yield dp)\n        let dp : Array ℕ := r\n        maxInArray dp).run) =\n    if nums.isEmpty = true then 0\n    else\n      let n := nums.length;\n      (let dp := mkArray n 1;\n        do\n        let r ←\n          forIn { start := 1, stop := n, step := 1, step_pos := Nat.zero_lt_one } dp fun i r =>\n              let dp := r;\n              do\n              let r ←\n                forIn { start := 0, stop := i, step := 1, step_pos := Nat.zero_lt_one } dp fun j r =>\n                    let dp := r;\n                    if (decide (nums[j]! < nums[i]!) && decide (dp[j]! + 1 > dp[i]!)) = true then\n                      let dp := dp.set! i (1 + dp[j]!);\n                      do\n                      pure PUnit.unit\n                      pure (ForInStep.yield dp)\n                    else do\n                      pure PUnit.unit\n                      pure (ForInStep.yield dp)\n              let dp : Array ℕ := r\n              pure PUnit.unit\n              pure (ForInStep.yield dp)\n        let dp : Array ℕ := r\n        maxInArray dp).run\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:75:6: warning: '(simp only [RPOrig.lengthOfLIS, RPRef.lengthOfLIS, add_comm, add_left_comm, add_assoc, mul_comm, mul_left_comm,\n    mul_assoc, Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm, Bool.or_left_comm, Bool.or_assoc,\n    and_comm, and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc])' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:75:302: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:76:422: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:77:6: warning: '(simp only [RPOrig.lengthOfLIS, RPRef.lengthOfLIS, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm,\n      Bool.and_comm, Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:78:6: warning: '(simp only [RPOrig.lengthOfLIS, RPRef.lengthOfLIS]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:75:302: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:76:422: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:77:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:78:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:83:6: warning: '(simp [RPOrig.lengthOfLIS, RPRef.lengthOfLIS, add_comm, add_left_comm, add_assoc, mul_comm, mul_left_comm, mul_assoc,\n    Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm, Bool.or_left_comm, Bool.or_assoc, and_comm,\n    and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc])' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:83:297: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:84:417: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:85:6: warning: '(simp [RPOrig.lengthOfLIS, RPRef.lengthOfLIS, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm, Bool.and_comm,\n      Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:86:6: warning: '(simp [RPOrig.lengthOfLIS, RPRef.lengthOfLIS]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:83:297: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:84:417: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:85:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:86:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:90:78: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:90:78: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_25/verina_advanced_25__T3_comm_swap__0.lean:90:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n",
+ "stderr": "",
+ "elapsed_seconds": 9.904,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 35,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 43,
+   "col": 35,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 61,
+   "col": 76,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.2504 = ?m.2504 : Prop\nbut is expected to have type\n  RPOrig.lengthOfLIS nums h_precond = RPRef.lengthOfLIS nums h_precond : Prop"
+  },
+  {
+   "line": 65,
+   "col": 76,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.32389 = ?m.32389 : Prop\nbut is expected to have type\n  RPOrig.lengthOfLIS nums h_precond = RPRef.lengthOfLIS nums h_precond : Prop"
+  },
+  {
+   "line": 70,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if nums.isEmpty = true then 0\n  else\n    let n := nums.length;\n    (let dp := mkArray n 1;\n      do\n      let r ←\n        forIn { start := 1, stop := n, step := 1, step_pos := Nat.zero_lt_one } dp fun i r =>\n            let dp := r;\n            do\n            let r ←\n              forIn { start := 0, stop := i, step := 1, step_pos := Nat.zero_lt_one } dp fun j r =>\n                  let dp := r;\n                  if (decide (nums[j]! < nums[i]!) && decide (dp[j]! + 1 > dp[i]!)) = true then\n                    let dp := dp.set! i (dp[j]! + 1);\n                    do\n                    pure PUnit.unit\n                    pure (ForInStep.yield dp)\n                  else do\n                    pure PUnit.unit\n                    pure (ForInStep.yield dp)\n            let dp : Array ℕ := r\n            pure PUnit.unit\n            pure (ForInStep.yield dp)\n      let dp : Array ℕ := r\n      maxInArray dp).run\nis not definitionally equal to the right-hand side\n  if nums.isEmpty = true then 0\n  else\n    let n := nums.length;\n    (let dp := mkArray n 1;\n      do\n      let r ←\n        forIn { start := 1, stop := n, step := 1, step_pos := Nat.zero_lt_one } dp fun i r =>\n            let dp := r;\n            do\n            let r ←\n              forIn { start := 0, stop := i, step := 1, step_pos := Nat.zero_lt_one } dp fun j r =>\n                  let dp := r;\n                  if (decide (nums[j]! < nums[i]!) && decide (dp[j]! + 1 > dp[i]!)) = true then\n                    let dp := dp.set! i (1 + dp[j]!);\n                    do\n                    pure PUnit.unit\n                    pure (ForInStep.yield dp)\n                  else do\n                    pure PUnit.unit\n                    pure (ForInStep.yield dp)\n            let dp : Array ℕ := r\n            pure PUnit.unit\n            pure (ForInStep.yield dp)\n      let dp : Array ℕ := r\n      maxInArray dp).run\nnums : List ℤ\nh_precond : lengthOfLIS_precond nums\n⊢ (if nums.isEmpty = true then 0\n    else\n      let n := nums.length;\n      (let dp := mkArray n 1;\n        do\n        let r ←\n          forIn { start := 1, stop := n, step := 1, step_pos := Nat.zero_lt_one } dp fun i r =>\n              let dp := r;\n              do\n              let r ←\n                forIn { start := 0, stop := i, step := 1, step_pos := Nat.zero_lt_one } dp fun j r =>\n                    let dp := r;\n                    if (decide (nums[j]! < nums[i]!) && decide (dp[j]! + 1 > dp[i]!)) = true then\n                      let dp := dp.set! i (dp[j]! + 1);\n                      do\n                      pure PUnit.unit\n                      pure (ForInStep.yield dp)\n                    else do\n                      pure PUnit.unit\n                      pure (ForInStep.yield dp)\n              let dp : Array ℕ := r\n              pure PUnit.unit\n              pure (ForInStep.yield dp)\n        let dp : Array ℕ := r\n        maxInArray dp).run) =\n    if nums.isEmpty = true then 0\n    else\n      let n := nums.length;\n      (let dp := mkArray n 1;\n        do\n        let r ←\n          forIn { start := 1, stop := n, step := 1, step_pos := Nat.zero_lt_one } dp fun i r =>\n              let dp := r;\n              do\n              let r ←\n                forIn { start := 0, stop := i, step := 1, step_pos := Nat.zero_lt_one } dp fun j r =>\n                    let dp := r;\n                    if (decide (nums[j]! < nums[i]!) && decide (dp[j]! + 1 > dp[i]!)) = true then\n                      let dp := dp.set! i (1 + dp[j]!);\n                      do\n                      pure PUnit.unit\n                      pure (ForInStep.yield dp)\n                    else do\n                      pure PUnit.unit\n                      pure (ForInStep.yield dp)\n              let dp : Array ℕ := r\n              pure PUnit.unit\n              pure (ForInStep.yield dp)\n        let dp : Array ℕ := r\n        maxInArray dp).run"
+  },
+  {
+   "line": 75,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.lengthOfLIS, RPRef.lengthOfLIS, add_comm, add_left_comm, add_assoc, mul_comm, mul_left_comm,\n    mul_assoc, Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm, Bool.or_left_comm, Bool.or_assoc,\n    and_comm, and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc])' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 75,
+   "col": 302,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 76,
+   "col": 422,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 77,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.lengthOfLIS, RPRef.lengthOfLIS, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm,\n      Bool.and_comm, Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 78,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.lengthOfLIS, RPRef.lengthOfLIS]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 75,
+   "col": 302,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 76,
+   "col": 422,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 77,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 78,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 83,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp [RPOrig.lengthOfLIS, RPRef.lengthOfLIS, add_comm, add_left_comm, add_assoc, mul_comm, mul_left_comm, mul_assoc,\n    Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm, Bool.or_left_comm, Bool.or_assoc, and_comm,\n    and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc])' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 83,
+   "col": 297,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 84,
+   "col": 417,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 85,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp [RPOrig.lengthOfLIS, RPRef.lengthOfLIS, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm, Bool.and_comm,\n      Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 86,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp [RPOrig.lengthOfLIS, RPRef.lengthOfLIS]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 83,
+   "col": 297,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 84,
+   "col": 417,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 85,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 86,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 90,
+   "col": 78,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.lengthOfLIS RPRef.lengthOfLIS; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 90,
+   "col": 78,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 90,
+   "col": 58,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,17 @@
+{
+ "model_id": "deepseek-prover-v2-7b",
+ "task_id": "verina_basic_43",
+ "attempt": 1,
+ "proof_hash": "b863d1123b8c75f8468cf9403d0984343b81a4004d4da01e94c2ae19748e376d",
+ "proof_loc": 46,
+ "proof_tokens": 311,
+ "survival": [
+  {
+   "variant_id": "verina_basic_43__T1_let_intro__0",
+   "transformation": "T1_let_intro",
+   "severity": "D",
+   "survives": true,
+   "outcome": "survives"
+  }
+ ]
+}

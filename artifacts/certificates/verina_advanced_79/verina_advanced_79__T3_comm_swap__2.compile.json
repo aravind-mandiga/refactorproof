@@ -1,0 +1,79 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_79/verina_advanced_79__T3_comm_swap__2.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_79/verina_advanced_79__T3_comm_swap__2.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_79/verina_advanced_79__T3_comm_swap__2.lean:13:20: warning: unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_79/verina_advanced_79__T3_comm_swap__2.lean:13:38: warning: unused variable `target`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_79/verina_advanced_79__T3_comm_swap__2.lean:22:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_79/verina_advanced_79__T3_comm_swap__2.lean:49:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_79/verina_advanced_79__T3_comm_swap__2.lean:77:80: error: type mismatch\n  rfl\nhas type\n  ?m.1621 = ?m.1621 : Prop\nbut is expected to have type\n  RPOrig.twoSum nums target h_precond = RPRef.twoSum nums target h_precond : Prop\nartifacts/certificates/verina_advanced_79/verina_advanced_79__T3_comm_swap__2.lean:81:80: error: type mismatch\n  rfl\nhas type\n  ?m.1751 = ?m.1751 : Prop\nbut is expected to have type\n  RPOrig.twoSum nums target h_precond = RPRef.twoSum nums target h_precond : Prop\nartifacts/certificates/verina_advanced_79/verina_advanced_79__T3_comm_swap__2.lean:88:42: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.twoSum nums target h_precond\nis not definitionally equal to the right-hand side\n  RPRef.twoSum nums target h_precond\nnums : List Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ RPOrig.twoSum nums target h_precond = RPRef.twoSum nums target h_precond\nartifacts/certificates/verina_advanced_79/verina_advanced_79__T3_comm_swap__2.lean:96:506: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.twoSum.outer target nums 0\nis not definitionally equal to the right-hand side\n  RPRef.twoSum.outer target nums 0\nnums : List Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ RPOrig.twoSum.outer target nums 0 = RPRef.twoSum.outer target nums 0\nartifacts/certificates/verina_advanced_79/verina_advanced_79__T3_comm_swap__2.lean:104:501: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.twoSum.outer target nums 0\nis not definitionally equal to the right-hand side\n  RPRef.twoSum.outer target nums 0\nnums : List Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ RPOrig.twoSum.outer target nums 0 = RPRef.twoSum.outer target nums 0\nartifacts/certificates/verina_advanced_79/verina_advanced_79__T3_comm_swap__2.lean:108:522: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.twoSum.outer target nums 0\nis not definitionally equal to the right-hand side\n  RPRef.twoSum.outer target nums 0\nnums : List Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ RPOrig.twoSum.outer target nums 0 = RPRef.twoSum.outer target nums 0\n",
+ "stderr": "",
+ "elapsed_seconds": 0.838,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 38,
+   "severity": "warning",
+   "text": "unused variable `target`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 49,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 77,
+   "col": 80,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1621 = ?m.1621 : Prop\nbut is expected to have type\n  RPOrig.twoSum nums target h_precond = RPRef.twoSum nums target h_precond : Prop"
+  },
+  {
+   "line": 81,
+   "col": 80,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1751 = ?m.1751 : Prop\nbut is expected to have type\n  RPOrig.twoSum nums target h_precond = RPRef.twoSum nums target h_precond : Prop"
+  },
+  {
+   "line": 88,
+   "col": 42,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.twoSum nums target h_precond\nis not definitionally equal to the right-hand side\n  RPRef.twoSum nums target h_precond\nnums : List Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ RPOrig.twoSum nums target h_precond = RPRef.twoSum nums target h_precond"
+  },
+  {
+   "line": 96,
+   "col": 506,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.twoSum.outer target nums 0\nis not definitionally equal to the right-hand side\n  RPRef.twoSum.outer target nums 0\nnums : List Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ RPOrig.twoSum.outer target nums 0 = RPRef.twoSum.outer target nums 0"
+  },
+  {
+   "line": 104,
+   "col": 501,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.twoSum.outer target nums 0\nis not definitionally equal to the right-hand side\n  RPRef.twoSum.outer target nums 0\nnums : List Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ RPOrig.twoSum.outer target nums 0 = RPRef.twoSum.outer target nums 0"
+  },
+  {
+   "line": 108,
+   "col": 522,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.twoSum.outer target nums 0\nis not definitionally equal to the right-hand side\n  RPRef.twoSum.outer target nums 0\nnums : List Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ RPOrig.twoSum.outer target nums 0 = RPRef.twoSum.outer target nums 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

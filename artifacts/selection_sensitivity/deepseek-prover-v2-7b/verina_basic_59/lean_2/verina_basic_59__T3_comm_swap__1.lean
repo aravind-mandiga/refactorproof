@@ -1,0 +1,73 @@
+-- !benchmark @start import type=solution
+
+import Aesop
+import Mathlib
+-- !benchmark @end import
+
+-- !benchmark @start solution_aux
+
+-- !benchmark @end solution_aux
+
+-- !benchmark @start precond_aux
+
+-- !benchmark @end precond_aux
+@[reducible, simp]
+def DoubleQuadruple_precond (x : Int) : Prop :=
+  -- !benchmark @start precond
+  True
+  -- !benchmark @end precond
+
+
+-- !benchmark @start code_aux
+
+-- !benchmark @end code_aux
+
+
+def DoubleQuadruple (x : Int) (h_precond : DoubleQuadruple_precond (x)) : (Int × Int) :=
+  -- !benchmark @start code
+  let a := 2 * x
+  let b := a * 2
+  (a, b)
+  -- !benchmark @end code
+
+
+-- !benchmark @start postcond_aux
+
+-- !benchmark @end postcond_aux
+
+
+@[reducible, simp]
+def DoubleQuadruple_postcond (x : Int) (result: (Int × Int)) (h_precond : DoubleQuadruple_precond (x)) :=
+  -- !benchmark @start postcond
+  result.fst = 2 * x ∧ result.snd = 2 * result.fst
+  -- !benchmark @end postcond
+
+
+-- !benchmark @start proof_aux
+
+-- !benchmark @end proof_aux
+
+
+theorem DoubleQuadruple_spec_satisfied (x: Int) (h_precond : DoubleQuadruple_precond (x)) :
+    DoubleQuadruple_postcond (x) (DoubleQuadruple (x) h_precond) h_precond := by
+  -- !benchmark @start proof
+  have h1 : (DoubleQuadruple (x) h_precond).fst = 2 * x := by
+    simp [DoubleQuadruple, DoubleQuadruple_precond, h_precond]
+    <;> ring
+    <;> aesop
+
+  have h2 : (DoubleQuadruple (x) h_precond).snd = 2 * (DoubleQuadruple (x) h_precond).fst := by
+    have h3 : (DoubleQuadruple (x) h_precond).snd = 2 * (DoubleQuadruple (x) h_precond).fst := by
+      simp [DoubleQuadruple, DoubleQuadruple_precond, h_precond]
+      <;> ring
+      <;> aesop
+    exact h3
+
+  have h_main : DoubleQuadruple_postcond (x) (DoubleQuadruple (x) h_precond) h_precond := by
+    constructor
+    · -- Prove the first part of the postcondition: (DoubleQuadruple (x) h_precond).fst = 2 * x
+      exact h1
+    · -- Prove the second part of the postcondition: (DoubleQuadruple (x) h_precond).snd = 2 * (DoubleQuadruple (x) h_precond).fst
+      exact h2
+  exact h_main
+  -- !benchmark @end proof

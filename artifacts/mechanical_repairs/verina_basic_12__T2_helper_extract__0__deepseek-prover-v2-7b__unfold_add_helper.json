@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_12__T2_helper_extract__0",
+ "task_id": "verina_basic_12",
+ "source": "deepseek-prover-v2-7b",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "cubeSurfaceArea",
+ "helper": "cubeSurfaceArea__rp_helper_67e54167",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": false,
+ "outcome": "proof_fails",
+ "first_error": "simp_all made no progress\n",
+ "proof_before": "  have h\u2081 : cubeSurfaceArea (size) h_precond - 6 * size * size = 0 := by\n    have h : cubeSurfaceArea (size) h_precond = 6 * size * size := by\n      unfold cubeSurfaceArea\n      <;> simp_all [cubeSurfaceArea_precond]\n      <;> ring\n    rw [h]\n    <;> simp [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib]\n    <;> induction size <;> simp_all [Nat.mul_succ, Nat.mul_zero, Nat.add_zero]\n    <;> ring_nf at * <;> omega\n\n  have h\u2082 : 6 * size * size - cubeSurfaceArea (size) h_precond = 0 := by\n    have h : cubeSurfaceArea (size) h_precond = 6 * size * size := by\n      unfold cubeSurfaceArea\n      <;> simp_all [cubeSurfaceArea_precond]\n      <;> ring\n    rw [h]\n    <;> simp [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib]\n    <;> induction size <;> simp_all [Nat.mul_succ, Nat.mul_zero, Nat.add_zero]\n    <;> ring_nf at * <;> omega\n\n  have h\u2083 : cubeSurfaceArea_postcond (size) (cubeSurfaceArea (size) h_precond) h_precond := by\n    constructor\n    \u00b7 -- Prove the first part of the conjunction\n      exact h\u2081\n    \u00b7 -- Prove the second part of the conjunction\n      exact h\u2082\n\n  exact h\u2083\n",
+ "proof_after": "  have h\u2081 : cubeSurfaceArea (size) h_precond - 6 * size * size = 0 := by\n    have h : cubeSurfaceArea (size) h_precond = 6 * size * size := by\n      unfold cubeSurfaceArea cubeSurfaceArea__rp_helper_67e54167\n      <;> simp_all [cubeSurfaceArea_precond]\n      <;> ring\n    rw [h]\n    <;> simp [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib]\n    <;> induction size <;> simp_all [Nat.mul_succ, Nat.mul_zero, Nat.add_zero]\n    <;> ring_nf at * <;> omega\n\n  have h\u2082 : 6 * size * size - cubeSurfaceArea (size) h_precond = 0 := by\n    have h : cubeSurfaceArea (size) h_precond = 6 * size * size := by\n      unfold cubeSurfaceArea\n      <;> simp_all [cubeSurfaceArea_precond]\n      <;> ring\n    rw [h]\n    <;> simp [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib]\n    <;> induction size <;> simp_all [Nat.mul_succ, Nat.mul_zero, Nat.add_zero]\n    <;> ring_nf at * <;> omega\n\n  have h\u2083 : cubeSurfaceArea_postcond (size) (cubeSurfaceArea (size) h_precond) h_precond := by\n    constructor\n    \u00b7 -- Prove the first part of the conjunction\n      exact h\u2081\n    \u00b7 -- Prove the second part of the conjunction\n      exact h\u2082\n\n  exact h\u2083\n"
+}

@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_15/verina_advanced_15__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_15/verina_advanced_15__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_15/verina_advanced_15__T1_let_intro__0.lean:13:31: warning: unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_15/verina_advanced_15__T1_let_intro__0.lean:22:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_15/verina_advanced_15__T1_let_intro__0.lean:44:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_15/verina_advanced_15__T1_let_intro__0.lean:69:88: error: type mismatch\n  rfl\nhas type\n  ?m.1150 = ?m.1150 : Prop\nbut is expected to have type\n  RPOrig.increasingTriplet nums h_precond = RPRef.increasingTriplet nums h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 1.103,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 44,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 69,
+   "col": 88,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1150 = ?m.1150 : Prop\nbut is expected to have type\n  RPOrig.increasingTriplet nums h_precond = RPRef.increasingTriplet nums h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

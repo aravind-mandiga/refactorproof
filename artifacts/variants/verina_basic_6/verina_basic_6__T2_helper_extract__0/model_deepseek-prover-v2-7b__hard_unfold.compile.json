@@ -1,0 +1,67 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:15:44: warning: unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:23:74: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:23:12: warning: The declaration 'minOfThree__rp_helper_d6baf0a7' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:42:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:60:4: error: tactic 'split_ifs' failed, no if-then-else conditions to split\na b c : ℤ\nh_precond : minOfThree_precond a b c\n⊢ minOfThree__rp_helper_d6baf0a7 a b c h_precond ≤ a ∧\n    minOfThree__rp_helper_d6baf0a7 a b c h_precond ≤ b ∧\n      minOfThree__rp_helper_d6baf0a7 a b c h_precond ≤ c ∧\n        (minOfThree__rp_helper_d6baf0a7 a b c h_precond = a ∨\n          minOfThree__rp_helper_d6baf0a7 a b c h_precond = b ∨ minOfThree__rp_helper_d6baf0a7 a b c h_precond = c)\nartifacts/variants/verina_basic_6/verina_basic_6__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:83:2: error: simp_all made no progress\n",
+ "stderr": "",
+ "elapsed_seconds": 9.791,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 74,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'minOfThree__rp_helper_d6baf0a7' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 42,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 60,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'split_ifs' failed, no if-then-else conditions to split\na b c : ℤ\nh_precond : minOfThree_precond a b c\n⊢ minOfThree__rp_helper_d6baf0a7 a b c h_precond ≤ a ∧\n    minOfThree__rp_helper_d6baf0a7 a b c h_precond ≤ b ∧\n      minOfThree__rp_helper_d6baf0a7 a b c h_precond ≤ c ∧\n        (minOfThree__rp_helper_d6baf0a7 a b c h_precond = a ∨\n          minOfThree__rp_helper_d6baf0a7 a b c h_precond = b ∨ minOfThree__rp_helper_d6baf0a7 a b c h_precond = c)"
+  },
+  {
+   "line": 83,
+   "col": 2,
+   "severity": "error",
+   "text": "simp_all made no progress\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

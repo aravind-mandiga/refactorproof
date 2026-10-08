@@ -1,0 +1,33 @@
+{
+ "task_id": "verina_basic_6",
+ "variant_id": "verina_basic_6__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  if a <= b && a <= c then a\n  else\n    minOfThree__rp_branch_73840f67 a b c h_precond\n",
+ "transformed_code_aux": "\nprivate def minOfThree__rp_branch_73840f67 (a : Int) (b : Int) (c : Int) (h_precond : minOfThree_precond (a) (b) (c)) : Int :=\n  if b <= a && b <= c then b\n   else c\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "minOfThree__rp_branch_73840f67"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "b",
+   "c",
+   "h_precond"
+  ],
+  "extracted": "else_branch",
+  "seed": 0
+ },
+ "extra_levels": [],
+ "spec_hash": "9da95e2e35cc3731ffceb30e0af09791534c0e36e1651f399906215b247ecfaa",
+ "proof_hash": "f5e345eda33dc41ac54b46013767babc5edf641aa72d5b07c9a4e9c5a4e24f94",
+ "code_hash_original": "db3a981ebc565c8f13f597c64649346091354ac192a160ef4dfe21a627bc5004",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "minOfThree",
+ "code_loc_original": 3,
+ "code_loc_refactored": 6
+}

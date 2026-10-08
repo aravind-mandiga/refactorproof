@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_105",
+ "variant_id": "verina_basic_105__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  arrayProduct__rp_helper_e23440b6 a b h_precond\n",
+ "transformed_code_aux": "def loop (a b : Array Int) (len : Nat) : Nat → Array Int → Array Int\n  | i, c =>\n    if i < len then\n      let a_val := if i < a.size then a[i]! else 0\n      let b_val := if i < b.size then b[i]! else 0\n      let new_c := Array.set! c i (a_val * b_val)\n      loop a b len (i+1) new_c\n    else c\n\nprivate def arrayProduct__rp_helper_e23440b6 (a : Array Int) (b : Array Int) (h_precond : arrayProduct_precond (a) (b)) : Array Int :=\n  let len := a.size\n  let c := Array.mkArray len 0\n  loop a b len 0 c\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "arrayProduct__rp_helper_e23440b6"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "b",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "fa13a85911f2261f30fdc162d26d43e66bc2b5316c4266c95e78e65b1894872f",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "ba89a1b7199308d5929178ca011074e6c57221dbcb2b2c1456d32d87ca863a65",
+ "code_aux_hash_original": "09d1bc852806f605a1311d645711013fb9618cab0f6bf3f5e531932814cc04e4",
+ "tier": "basic",
+ "function_name": "arrayProduct",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

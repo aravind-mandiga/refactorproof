@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_50",
+ "variant_id": "verina_basic_50__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  Abs__rp_helper_4386b369 x h_precond\n",
+ "transformed_code_aux": "\nprivate def Abs__rp_helper_4386b369 (x : Int) (h_precond : Abs_precond (x)) : Int :=\n  if x < 0 then -x else x\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "Abs__rp_helper_4386b369"
+ ],
+ "metadata": {
+  "binders": [
+   "x",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "1a867d2013983f276725cbff7e3a04fa5cefff023278f35f334438cab93ba545",
+ "proof_hash": "0c43572ae615aba693c0b554151ddd8286c84283ce8bb4601b2a9e885a44a235",
+ "code_hash_original": "47f81a55c8836d82cf8145c09ebf81a43b30752e67eb1ee4fe556756ab1c596e",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "Abs",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

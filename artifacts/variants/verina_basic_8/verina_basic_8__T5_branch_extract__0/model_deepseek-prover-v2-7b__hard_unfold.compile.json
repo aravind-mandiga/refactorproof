@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_8/verina_basic_8__T5_branch_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_8/verina_basic_8__T5_branch_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_8/verina_basic_8__T5_branch_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:16:19: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T5_branch_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:16:29: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T5_branch_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:24:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T5_branch_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:24:12: warning: The declaration 'myMin__rp_branch_c77e3e9a' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_8/verina_basic_8__T5_branch_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:42:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T5_branch_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:70:18: error: linarith failed to find a contradiction\ncase a\na b : ℤ\nh_precond : myMin_precond a b\nh : ¬a ≤ b\na✝ : myMin__rp_branch_c77e3e9a a b h_precond > a\n⊢ False failed\nartifacts/variants/verina_basic_8/verina_basic_8__T5_branch_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:70:31: error: linarith failed to find a contradiction\ncase a\na b : ℤ\nh_precond : myMin_precond a b\nh : ¬a ≤ b\na✝ : myMin__rp_branch_c77e3e9a a b h_precond > b\n⊢ False failed\n",
+ "stderr": "",
+ "elapsed_seconds": 9.083,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 16,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'myMin__rp_branch_c77e3e9a' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 42,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 70,
+   "col": 18,
+   "severity": "error",
+   "text": "linarith failed to find a contradiction\ncase a\na b : ℤ\nh_precond : myMin_precond a b\nh : ¬a ≤ b\na✝ : myMin__rp_branch_c77e3e9a a b h_precond > a\n⊢ False failed"
+  },
+  {
+   "line": 70,
+   "col": 31,
+   "severity": "error",
+   "text": "linarith failed to find a contradiction\ncase a\na b : ℤ\nh_precond : myMin_precond a b\nh : ¬a ≤ b\na✝ : myMin__rp_branch_c77e3e9a a b h_precond > b\n⊢ False failed\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

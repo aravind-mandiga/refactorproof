@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_76/verina_basic_76__T2_helper_extract__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_76/verina_basic_76__T2_helper_extract__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_76/verina_basic_76__T2_helper_extract__0/reference.lean:13:19: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_76/verina_basic_76__T2_helper_extract__0/reference.lean:13:29: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_76/verina_basic_76__T2_helper_extract__0/reference.lean:21:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_76/verina_basic_76__T2_helper_extract__0/reference.lean:38:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_76/verina_basic_76__T2_helper_extract__0/reference.lean:61:9: error: application type mismatch\n  And.intro h_left\nargument\n  h_left\nhas type\n  x ≤ y → y ≤ x → y = x : Prop\nbut is expected to have type\n  x ≤ y → myMin__rp_helper_5e5dcb4d x y h_precond = x : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.71,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 61,
+   "col": 9,
+   "severity": "error",
+   "text": "application type mismatch\n  And.intro h_left\nargument\n  h_left\nhas type\n  x ≤ y → y ≤ x → y = x : Prop\nbut is expected to have type\n  x ≤ y → myMin__rp_helper_5e5dcb4d x y h_precond = x : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

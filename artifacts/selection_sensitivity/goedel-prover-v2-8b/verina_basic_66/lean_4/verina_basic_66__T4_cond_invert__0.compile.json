@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_4/verina_basic_66__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_4/verina_basic_66__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_4/verina_basic_66__T4_cond_invert__0.lean:14:27: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_4/verina_basic_66__T4_cond_invert__0.lean:25:29: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_4/verina_basic_66__T4_cond_invert__0.lean:38:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_4/verina_basic_66__T4_cond_invert__0.lean:59:85: error: type mismatch\n  rfl\nhas type\n  ?m.584 = ?m.584 : Prop\nbut is expected to have type\n  ComputeIsEven x h_precond = if x % 2 = 0 then true else false : Prop\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_4/verina_basic_66__T4_cond_invert__0.lean:85:85: error: type mismatch\n  rfl\nhas type\n  ?m.5687 = ?m.5687 : Prop\nbut is expected to have type\n  ComputeIsEven x h_precond = if x % 2 = 0 then true else false : Prop\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_66/lean_4/verina_basic_66__T4_cond_invert__0.lean:90:2: warning: try 'simp' instead of 'simpa'\nnote: this linter can be disabled with `set_option linter.unnecessarySimpa false`\n",
+ "stderr": "",
+ "elapsed_seconds": 11.418,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 27,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 59,
+   "col": 85,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.584 = ?m.584 : Prop\nbut is expected to have type\n  ComputeIsEven x h_precond = if x % 2 = 0 then true else false : Prop"
+  },
+  {
+   "line": 85,
+   "col": 85,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.5687 = ?m.5687 : Prop\nbut is expected to have type\n  ComputeIsEven x h_precond = if x % 2 = 0 then true else false : Prop"
+  },
+  {
+   "line": 90,
+   "col": 2,
+   "severity": "warning",
+   "text": "try 'simp' instead of 'simpa'\nnote: this linter can be disabled with `set_option linter.unnecessarySimpa false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

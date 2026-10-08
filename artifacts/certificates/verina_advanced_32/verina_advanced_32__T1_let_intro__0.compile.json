@@ -1,0 +1,85 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_32/verina_advanced_32__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_32/verina_advanced_32__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_32/verina_advanced_32__T1_let_intro__0.lean:13:42: warning: unused variable `numbers`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T1_let_intro__0.lean:47:5: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T1_let_intro__0.lean:79:7: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T1_let_intro__0.lean:87:116: error: type mismatch\n  rfl\nhas type\n  ?m.3884 = ?m.3884 : Prop\nbut is expected to have type\n  RPOrig.longestIncreasingSubsequence numbers h_precond = RPRef.longestIncreasingSubsequence numbers h_precond : Prop\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T1_let_intro__0.lean:95:127: error: unknown constant 'RPOrig.longestIncreasingSubsequence.findMaxLength'\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T1_let_intro__0.lean:100:150: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T1_let_intro__0.lean:100:88: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T1_let_intro__0.lean:100:150: warning: '(delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n    RPOrig.longestIncreasingSubsequence.buildTables RPOrig.longestIncreasingSubsequence.findMaxLength\n    RPOrig.longestIncreasingSubsequence.findLengthEndingAtCurr RPRef.longestIncreasingSubsequence.buildTables\n    RPRef.longestIncreasingSubsequence.findMaxLength RPRef.longestIncreasingSubsequence.findLengthEndingAtCurr;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T1_let_intro__0.lean:104:145: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T1_let_intro__0.lean:104:83: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T1_let_intro__0.lean:104:145: warning: '(delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n    RPOrig.longestIncreasingSubsequence.buildTables RPOrig.longestIncreasingSubsequence.findMaxLength\n    RPOrig.longestIncreasingSubsequence.findLengthEndingAtCurr RPRef.longestIncreasingSubsequence.buildTables\n    RPRef.longestIncreasingSubsequence.findMaxLength RPRef.longestIncreasingSubsequence.findLengthEndingAtCurr;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 23.197,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `numbers`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 47,
+   "col": 5,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 79,
+   "col": 7,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 87,
+   "col": 116,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.3884 = ?m.3884 : Prop\nbut is expected to have type\n  RPOrig.longestIncreasingSubsequence numbers h_precond = RPRef.longestIncreasingSubsequence numbers h_precond : Prop"
+  },
+  {
+   "line": 95,
+   "col": 127,
+   "severity": "error",
+   "text": "unknown constant 'RPOrig.longestIncreasingSubsequence.findMaxLength'"
+  },
+  {
+   "line": 100,
+   "col": 150,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 100,
+   "col": 88,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 100,
+   "col": 150,
+   "severity": "warning",
+   "text": "'(delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n    RPOrig.longestIncreasingSubsequence.buildTables RPOrig.longestIncreasingSubsequence.findMaxLength\n    RPOrig.longestIncreasingSubsequence.findLengthEndingAtCurr RPRef.longestIncreasingSubsequence.buildTables\n    RPRef.longestIncreasingSubsequence.findMaxLength RPRef.longestIncreasingSubsequence.findLengthEndingAtCurr;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 104,
+   "col": 145,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 104,
+   "col": 83,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 104,
+   "col": 145,
+   "severity": "warning",
+   "text": "'(delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n    RPOrig.longestIncreasingSubsequence.buildTables RPOrig.longestIncreasingSubsequence.findMaxLength\n    RPOrig.longestIncreasingSubsequence.findLengthEndingAtCurr RPRef.longestIncreasingSubsequence.buildTables\n    RPRef.longestIncreasingSubsequence.findMaxLength RPRef.longestIncreasingSubsequence.findLengthEndingAtCurr;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

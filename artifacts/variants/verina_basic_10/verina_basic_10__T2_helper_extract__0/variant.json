@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_10",
+ "variant_id": "verina_basic_10__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  isGreater__rp_helper_d4e98f7f n a h_precond\n",
+ "transformed_code_aux": "\nprivate def isGreater__rp_helper_d4e98f7f (n : Int) (a : Array Int) (h_precond : isGreater_precond (n) (a)) : Bool :=\n  a.all fun x => n > x\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "isGreater__rp_helper_d4e98f7f"
+ ],
+ "metadata": {
+  "binders": [
+   "n",
+   "a",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "6b685531fd1dac53ef004523d208959ca04309d5100dc7b60307820548ead3d0",
+ "proof_hash": "7d3515d14e95933a588ef7f0e7a666f9404b24c5bc119ca34414f057f296b48c",
+ "code_hash_original": "d23e578925e5e5f90279a49d96c7b64d44620fd41f1c9852cf8b10fab9e550d7",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "isGreater",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

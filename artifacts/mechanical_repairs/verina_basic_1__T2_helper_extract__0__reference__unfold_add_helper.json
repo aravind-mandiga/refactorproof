@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_1__T2_helper_extract__0",
+ "task_id": "verina_basic_1",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "hasOppositeSign",
+ "helper": "hasOppositeSign__rp_helper_5272bffb",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold hasOppositeSign hasOppositeSign_postcond\n  constructor\n\n  \u00b7 intro h\n    cases h with\n    | inl h1 =>\n      simp\n      have \u27e8ha, hb\u27e9 := h1\n      exact Int.mul_neg_of_neg_of_pos ha hb\n    | inr h2 =>\n      simp\n      have \u27e8ha, hb\u27e9 := h2\n      rw [Int.mul_comm]\n      exact Int.mul_neg_of_neg_of_pos hb ha\n\n  \u00b7 rw [Bool.decide_iff, mul_neg_iff]\n    simp_all\n",
+ "proof_after": "  unfold hasOppositeSign hasOppositeSign__rp_helper_5272bffb hasOppositeSign_postcond\n  constructor\n\n  \u00b7 intro h\n    cases h with\n    | inl h1 =>\n      simp\n      have \u27e8ha, hb\u27e9 := h1\n      exact Int.mul_neg_of_neg_of_pos ha hb\n    | inr h2 =>\n      simp\n      have \u27e8ha, hb\u27e9 := h2\n      rw [Int.mul_comm]\n      exact Int.mul_neg_of_neg_of_pos hb ha\n\n  \u00b7 rw [Bool.decide_iff, mul_neg_iff]\n    simp_all\n"
+}

@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_67/verina_basic_67__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_67/verina_basic_67__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_67/verina_basic_67__T4_cond_invert__0.lean:13:26: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_67/verina_basic_67__T4_cond_invert__0.lean:31:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_67/verina_basic_67__T4_cond_invert__0.lean:37:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_67/verina_basic_67__T4_cond_invert__0.lean:45:72: error: type mismatch\n  rfl\nhas type\n  ?m.12560 = ?m.12560 : Prop\nbut is expected to have type\n  RPOrig.IsPalindrome x h_precond = RPRef.IsPalindrome x h_precond : Prop\nartifacts/certificates/verina_basic_67/verina_basic_67__T4_cond_invert__0.lean:49:72: error: type mismatch\n  rfl\nhas type\n  ?m.13475 = ?m.13475 : Prop\nbut is expected to have type\n  RPOrig.IsPalindrome x h_precond = RPRef.IsPalindrome x h_precond : Prop\nartifacts/certificates/verina_basic_67/verina_basic_67__T4_cond_invert__0.lean:54:2: error: tactic 'rfl' failed, the left-hand side\n  if x.length = 0 then true else isPalindromeHelper x 0 (x.length - 1)\nis not definitionally equal to the right-hand side\n  if ¬x.length = 0 then isPalindromeHelper x 0 (x.length - 1) else true\nx : List Char\nh_precond : IsPalindrome_precond x\n⊢ (if x.length = 0 then true else isPalindromeHelper x 0 (x.length - 1)) =\n    if ¬x.length = 0 then isPalindromeHelper x 0 (x.length - 1) else true\n",
+ "stderr": "",
+ "elapsed_seconds": 0.981,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 26,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 31,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 37,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 45,
+   "col": 72,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.12560 = ?m.12560 : Prop\nbut is expected to have type\n  RPOrig.IsPalindrome x h_precond = RPRef.IsPalindrome x h_precond : Prop"
+  },
+  {
+   "line": 49,
+   "col": 72,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.13475 = ?m.13475 : Prop\nbut is expected to have type\n  RPOrig.IsPalindrome x h_precond = RPRef.IsPalindrome x h_precond : Prop"
+  },
+  {
+   "line": 54,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if x.length = 0 then true else isPalindromeHelper x 0 (x.length - 1)\nis not definitionally equal to the right-hand side\n  if ¬x.length = 0 then isPalindromeHelper x 0 (x.length - 1) else true\nx : List Char\nh_precond : IsPalindrome_precond x\n⊢ (if x.length = 0 then true else isPalindromeHelper x 0 (x.length - 1)) =\n    if ¬x.length = 0 then isPalindromeHelper x 0 (x.length - 1) else true\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

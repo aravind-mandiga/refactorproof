@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_45",
+ "variant_id": "verina_basic_45__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_level": "simp_only",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__hard_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 8.52,
+ "proof_region_errors": [
+  "unsolved goals\nlst : List ℤ\nleft : 1 < lst.length\nw w_1 : ℤ\nleft_1 : w ∈ lst\nright : isEven w = true\nleft_2 : w_1 ∈ lst\nright_1 : isOdd w_1 = true\nx : Option (ℕ × ℕ)\nevenIndex oddIndex : Option ℕ\nei_1 oi_1 : ℕ\nheq_2 : List.findIdx? isOdd lst = some oi_1\nheq_1 : List.findIdx? isEven lst = some ei_1\n⊢ lst[oi_1]?.getD 0 * lst[ei_1]?.getD 0 = lst[ei_1]?.getD 0 * lst[oi_1]?.getD 0\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "14608fa71becd5e6696beae3a5043037bb2a430adf89f76fa2c88d1a2b8090c9",
+ "spec_hash": "43f980abe9bbf7fc3b240fd3b0dd1e82e3b0dad1b0cb970238ae4eca100fbf92",
+ "proof_text": "  unfold findProduct findProduct_postcond\n  have h_main : findProduct (lst) h_precond = match firstEvenOddIndices lst with | some (ei, oi) => lst[ei]! * lst[oi]! | none => 0 := by\n    simp [findProduct, firstEvenOddIndices]\n    <;>\n    aesop\n\n  have h_final : findProduct_postcond (lst) (findProduct (lst) h_precond) h_precond := by\n    simp_all [findProduct_postcond]\n    <;>\n    aesop\n\n  exact h_final\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "hard_unfold"
+}

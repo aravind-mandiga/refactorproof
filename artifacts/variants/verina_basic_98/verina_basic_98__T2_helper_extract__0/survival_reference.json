@@ -1,0 +1,26 @@
+{
+ "task_id": "verina_basic_98",
+ "variant_id": "verina_basic_98__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.682,
+ "proof_region_errors": [
+  "unsolved goals\nx : Int\nh_precond : Triple_precond x\n⊢ Triple__rp_helper_c4a61f58 x h_precond / 3 = x ∧\n    -1 * Triple__rp_helper_c4a61f58 x h_precond + 3 * (Triple__rp_helper_c4a61f58 x h_precond / 3) = 0\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "9cefbf5d49b8e7912377419600898a46c75ad4baee3c947e10c57bf0800893a5",
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c"
+}

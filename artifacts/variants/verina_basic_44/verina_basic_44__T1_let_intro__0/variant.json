@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_44",
+ "variant_id": "verina_basic_44__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_6b825f66 : Bool :=\n    -- First create pairs of (index, value) for all elements in the array\n    let indexedArray := a.mapIdx fun i x => (i, x)\n\n    -- Check if all elements at odd indices are odd numbers\n    indexedArray.all fun (i, x) => !(isOdd i) || isOdd x\n  __rp_tmp_6b825f66\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_6b825f66",
+  "seed": 0
+ },
+ "spec_hash": "b634f5b11952ba51154d2741573dfccbcc7db296db150aa12b4e0bc95fb39554",
+ "proof_hash": "58297dba6f847b0d10b987946aceecd76e5d531c48c51739425079f4d882b5b8",
+ "code_hash_original": "8bd7084cea1508837438a33de267c6a0b1e88b96a279f8e24f16c5b4152fd1c4",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "isOddAtIndexOdd",
+ "code_loc_original": 2,
+ "code_loc_refactored": 4
+}

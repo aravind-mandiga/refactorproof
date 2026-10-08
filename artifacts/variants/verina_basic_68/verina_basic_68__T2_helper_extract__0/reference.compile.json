@@ -1,0 +1,115 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:13:26: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:13:42: warning: unused variable `e`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:21:72: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:21:12: warning: The declaration 'LinearSearch__rp_helper_bd5bba3d' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:42:67: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:58:49: error: unknown constant 'LinearSearch.loop'\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:65:10: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  x\na : Array ℤ\ne : ℤ\nh_precond : LinearSearch_precond a e\nx : ℕ\nhx₀ : 0 ≤ x\nhx₁ : x ≤ a.size\nnx : ℕ := a.size - x\nhn₁ : nx = a.size - x\nhn₂ : x = a.size - nx\n⊢ sorry ≤ a.size\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:90:51: error: unknown constant 'LinearSearch.loop'\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:90:88: error: unknown constant 'LinearSearch.loop'\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:100:17: error: unknown constant 'LinearSearch.loop'\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:112:21: error: unknown constant 'LinearSearch.loop'\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:130:21: error: unknown constant 'LinearSearch.loop'\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:109:10: error: unsolved goals\na : Array ℤ\ne : ℤ\nh_precond : LinearSearch_precond a e\n⊢ ℕ → Type ?u.333295\n\na : Array ℤ\ne : ℤ\nh_precond : LinearSearch_precond a e\n⊢ (x : ℕ) → outParam (Array ℤ → ?m.339536 x → Prop)\n\na : Array ℤ\ne : ℤ\nh_precond : LinearSearch_precond a e\n⊢ (x : ℕ) → GetElem? (Array ℤ) (?m.339536 x) ℤ (?m.339537 x)\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:150:69: error: unknown constant 'LinearSearch.loop'\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:161:17: error: unknown constant 'LinearSearch.loop'\nartifacts/variants/verina_basic_68/verina_basic_68__T2_helper_extract__0/reference.lean:170:17: error: unknown constant 'LinearSearch.loop'\n",
+ "stderr": "",
+ "elapsed_seconds": 5.894,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 26,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `e`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 72,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'LinearSearch__rp_helper_bd5bba3d' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 42,
+   "col": 67,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 49,
+   "severity": "error",
+   "text": "unknown constant 'LinearSearch.loop'"
+  },
+  {
+   "line": 65,
+   "col": 10,
+   "severity": "error",
+   "text": "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  x\na : Array ℤ\ne : ℤ\nh_precond : LinearSearch_precond a e\nx : ℕ\nhx₀ : 0 ≤ x\nhx₁ : x ≤ a.size\nnx : ℕ := a.size - x\nhn₁ : nx = a.size - x\nhn₂ : x = a.size - nx\n⊢ sorry ≤ a.size"
+  },
+  {
+   "line": 90,
+   "col": 51,
+   "severity": "error",
+   "text": "unknown constant 'LinearSearch.loop'"
+  },
+  {
+   "line": 90,
+   "col": 88,
+   "severity": "error",
+   "text": "unknown constant 'LinearSearch.loop'"
+  },
+  {
+   "line": 100,
+   "col": 17,
+   "severity": "error",
+   "text": "unknown constant 'LinearSearch.loop'"
+  },
+  {
+   "line": 112,
+   "col": 21,
+   "severity": "error",
+   "text": "unknown constant 'LinearSearch.loop'"
+  },
+  {
+   "line": 130,
+   "col": 21,
+   "severity": "error",
+   "text": "unknown constant 'LinearSearch.loop'"
+  },
+  {
+   "line": 109,
+   "col": 10,
+   "severity": "error",
+   "text": "unsolved goals\na : Array ℤ\ne : ℤ\nh_precond : LinearSearch_precond a e\n⊢ ℕ → Type ?u.333295\n\na : Array ℤ\ne : ℤ\nh_precond : LinearSearch_precond a e\n⊢ (x : ℕ) → outParam (Array ℤ → ?m.339536 x → Prop)\n\na : Array ℤ\ne : ℤ\nh_precond : LinearSearch_precond a e\n⊢ (x : ℕ) → GetElem? (Array ℤ) (?m.339536 x) ℤ (?m.339537 x)"
+  },
+  {
+   "line": 150,
+   "col": 69,
+   "severity": "error",
+   "text": "unknown constant 'LinearSearch.loop'"
+  },
+  {
+   "line": 161,
+   "col": 17,
+   "severity": "error",
+   "text": "unknown constant 'LinearSearch.loop'"
+  },
+  {
+   "line": 170,
+   "col": 17,
+   "severity": "error",
+   "text": "unknown constant 'LinearSearch.loop'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unknown_constant_or_identifier"
+}

@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_24/verina_advanced_24__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_24/verina_advanced_24__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_24/verina_advanced_24__T2_helper_extract__0.lean:13:25: warning: unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_24/verina_advanced_24__T2_helper_extract__0.lean:22:35: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_24/verina_advanced_24__T2_helper_extract__0.lean:35:63: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_24/verina_advanced_24__T2_helper_extract__0.lean:53:76: error: type mismatch\n  rfl\nhas type\n  ?m.929 = ?m.929 : Prop\nbut is expected to have type\n  RPOrig.lengthOfLIS nums h_precond = RPRef.lengthOfLIS nums h_precond : Prop\nartifacts/certificates/verina_advanced_24/verina_advanced_24__T2_helper_extract__0.lean:61:112: error: unknown constant 'RPOrig.lengthOfLIS.replace'\n",
+ "stderr": "",
+ "elapsed_seconds": 0.724,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 35,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 35,
+   "col": 63,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 53,
+   "col": 76,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.929 = ?m.929 : Prop\nbut is expected to have type\n  RPOrig.lengthOfLIS nums h_precond = RPRef.lengthOfLIS nums h_precond : Prop"
+  },
+  {
+   "line": 61,
+   "col": 112,
+   "severity": "error",
+   "text": "unknown constant 'RPOrig.lengthOfLIS.replace'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

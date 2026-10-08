@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_advanced_6/lean_3/verina_advanced_6__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_advanced_6/lean_3/verina_advanced_6__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_advanced_6/lean_3/verina_advanced_6__T2_helper_extract__0.lean:22:23: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_advanced_6/lean_3/verina_advanced_6__T2_helper_extract__0.lean:30:56: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_advanced_6/lean_3/verina_advanced_6__T2_helper_extract__0.lean:30:12: warning: The declaration 'allVowels__rp_helper_1905f5d2' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_advanced_6/lean_3/verina_advanced_6__T2_helper_extract__0.lean:49:52: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_advanced_6/lean_3/verina_advanced_6__T2_helper_extract__0.lean:74:6: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_advanced_6/lean_3/verina_advanced_6__T2_helper_extract__0.lean:80:6: error: (deterministic) timeout at `aesop`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_advanced_6/lean_3/verina_advanced_6__T2_helper_extract__0.lean:62:66: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\n",
+ "stderr": "",
+ "elapsed_seconds": 29.527,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 23,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 30,
+   "col": 56,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 30,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'allVowels__rp_helper_1905f5d2' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 49,
+   "col": 52,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 74,
+   "col": 6,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 80,
+   "col": 6,
+   "severity": "error",
+   "text": "(deterministic) timeout at `aesop`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command."
+  },
+  {
+   "line": 62,
+   "col": 66,
+   "severity": "error",
+   "text": "(deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "timeout_or_heartbeat"
+}

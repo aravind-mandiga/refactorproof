@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_31",
+ "variant_id": "verina_basic_31__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b",
+ "generation_attempt": 3,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "simp_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 8.908,
+ "proof_region_errors": [
+  "simp made no progress",
+  "unsolved goals\ncase right\ns : String\nh_precond : toUppercase_precond s\ni : ℕ\nh₁ h₂ : i < s.length\n⊢ ('a' ≤ s.data[i]?.getD 'A' →\n      s.data[i]?.getD 'A' ≤ 'z' →\n        (toUppercase__rp_helper_8bd90157 s h_precond).data[i]?.getD 'A' =\n          Char.ofNat (((s.data[i]?.getD 'A').toNat - 32) % 128)) ∧\n    (('a' ≤ s.data[i]?.getD 'A' → 'z' < s.data[i]?.getD 'A') →\n      (toUppercase__rp_helper_8bd90157 s h_precond).data[i]?.getD 'A' = s.data[i]?.getD 'A')\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "c6b36ea7081a4a9de7354ee231ef5f6d93c60b84017ab47bc9f623eba66fc77c",
+ "spec_hash": "c4341f237f8f941c6786c44f57c9c9fee3fb8554b50e20646e64e459505e6100",
+ "proof_text": "  have h_main : toUppercase_postcond (s) (toUppercase (s) h_precond) h_precond := by\n    dsimp [toUppercase, toUppercase_postcond, isLowerCase, shiftMinus32]\n    constructor\n    · -- Prove that the lengths are the same\n      simp [List.length_map]\n    · -- Prove the condition for each index i\n      intro i h₁\n      have h₂ : i < s.length := h₁\n      -- We need to consider the i-th character of the list\n      simp [List.get]\n      <;>\n      (try\n        {\n          split <;> simp_all [List.get] <;>\n          (try omega) <;>\n          (try\n            {\n              simp_all [List.get]\n              <;>\n              (try\n                {\n                  simp_all [List.get]\n                  <;>\n                  (try\n                    {\n                      omega\n                    })\n                })\n            })\n        })\n      <;>\n      (try\n        {\n          -- If the character is lowercase, the mapping works\n          simp_all [List.get]\n          <;>\n          (try\n            {\n              simp_all [List.get]\n              <;>\n              (try\n                {\n                  omega\n                })\n            })\n        })\n      <;>\n      (try\n        {\n          -- If the character is not lowercase, the mapping works\n          simp_all [List.get]\n          <;>\n          (try\n            {\n              simp_all [List.get]\n              <;>\n              (try\n                {\n                  omega\n                })\n            })\n        })\n      <;>\n      (try\n        {\n          -- If the character is lowercase, show that the shift is correct\n          split_ifs <;> simp_all [List.get, Char.ofNat_le] <;>\n          (try\n            {\n              norm_num at *\n              <;>\n              omega\n            })\n          <;>\n          (try\n            {\n              simp_all [List.get]\n              <;>\n              omega\n            })\n        })\n      <;>\n      (try\n        {\n          -- If the character is not lowercase, the mapping works\n          split_ifs <;> simp_all [List.get, Char.ofNat_le] <;>\n          (try omega) <;> (try omega) <;>\n          (try\n            {\n              simp_all [List.get]\n              <;>\n              omega\n            })\n        })\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "default"
+}

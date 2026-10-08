@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_23/verina_basic_23__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_23/verina_basic_23__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_23/verina_basic_23__T2_helper_extract__0.lean:23:38: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_23/verina_basic_23__T2_helper_extract__0.lean:36:66: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_23/verina_basic_23__T2_helper_extract__0.lean:54:80: error: type mismatch\n  rfl\nhas type\n  ?m.61435 = ?m.61435 : Prop\nbut is expected to have type\n  RPOrig.differenceMinMax a h_precond = RPRef.differenceMinMax a h_precond : Prop\nartifacts/certificates/verina_basic_23/verina_basic_23__T2_helper_extract__0.lean:58:80: error: type mismatch\n  rfl\nhas type\n  ?m.61529 = ?m.61529 : Prop\nbut is expected to have type\n  RPOrig.differenceMinMax a h_precond = RPRef.differenceMinMax a h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 1.658,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 23,
+   "col": 38,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 36,
+   "col": 66,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 54,
+   "col": 80,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.61435 = ?m.61435 : Prop\nbut is expected to have type\n  RPOrig.differenceMinMax a h_precond = RPRef.differenceMinMax a h_precond : Prop"
+  },
+  {
+   "line": 58,
+   "col": 80,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.61529 = ?m.61529 : Prop\nbut is expected to have type\n  RPOrig.differenceMinMax a h_precond = RPRef.differenceMinMax a h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

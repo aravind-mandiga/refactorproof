@@ -1,0 +1,14 @@
+--- goedel-prover-v2-32b:verina_basic_100__T5_branch_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_100__T5_branch_extract__0 (simp_add_helper)
+@@ -2,7 +2,7 @@
+     by_cases hx : x = 0
+     · -- Case: x = 0
+       have h₁ : Triple x h_precond = 0 := by
+-        simp [hx, Triple]
++        simp [hx, Triple, Triple__rp_branch_9f218861]
+         <;> simp_all [Triple_precond]
+         <;> norm_num
+       have h₂ : (Triple x h_precond) / 3 = x := by
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: linarith failed to find a contradiction | case h1.h | x : ℤ | h_precond : Triple_precond x | h₂ : ¬x = 0 | a✝ : Triple__rp_branch_9f218861 x h_precond < x * 3 | ⊢ False failed | 

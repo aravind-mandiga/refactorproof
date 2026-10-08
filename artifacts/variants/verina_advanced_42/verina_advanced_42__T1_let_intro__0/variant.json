@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_42",
+ "variant_id": "verina_advanced_42__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_0ba69428 : Nat :=\n    match prices with\n    | [] => 0\n    | p :: ps => maxProfitAux ps p 0\n  __rp_tmp_0ba69428\n",
+ "transformed_code_aux": "def updateMinAndProfit (price : Nat) (minSoFar : Nat) (maxProfit : Nat) : (Nat × Nat) :=\n  let newMin := Nat.min minSoFar price\n  let profit := if price > minSoFar then price - minSoFar else 0\n  let newMaxProfit := Nat.max maxProfit profit\n  (newMin, newMaxProfit)\n\ndef maxProfitAux (prices : List Nat) (minSoFar : Nat) (maxProfit : Nat) : Nat :=\n  match prices with\n  | [] => maxProfit\n  | p :: ps =>\n    let (newMin, newProfit) := updateMinAndProfit p minSoFar maxProfit\n    maxProfitAux ps newMin newProfit\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_0ba69428",
+  "seed": 0
+ },
+ "spec_hash": "26a6658b65191774cb04ba48f2b16203927b8f9a904faa738c61cdc84403c158",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "b3cd7db6015a29f4819d49e45506aae082b6df2b08936b905144ef8ee64b1dcd",
+ "code_aux_hash_original": "fe5d7ce0c49474f4defbb1baba93fb74dddf730f449bbd785a85f6e28d7b2f13",
+ "tier": "advanced",
+ "function_name": "maxProfit",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

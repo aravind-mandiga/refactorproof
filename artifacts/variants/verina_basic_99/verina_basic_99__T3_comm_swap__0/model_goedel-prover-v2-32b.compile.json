@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_99/verina_basic_99__T3_comm_swap__0/model_goedel-prover-v2-32b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_99/verina_basic_99__T3_comm_swap__0/model_goedel-prover-v2-32b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_99/verina_basic_99__T3_comm_swap__0/model_goedel-prover-v2-32b.lean:14:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_99/verina_basic_99__T3_comm_swap__0/model_goedel-prover-v2-32b.lean:25:22: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_99/verina_basic_99__T3_comm_swap__0/model_goedel-prover-v2-32b.lean:43:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_99/verina_basic_99__T3_comm_swap__0/model_goedel-prover-v2-32b.lean:76:10: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  (2 * x + 4 * x) / 2\ncase pos\nx : ℤ\nh_precond : Triple_precond x\nh : x < 18\nh₁ : (2 * x + 4 * x) / 2 = 3 * x\n⊢ (x * 2 + 4 * x) / 2 / 3 = x\nartifacts/variants/verina_basic_99/verina_basic_99__T3_comm_swap__0/model_goedel-prover-v2-32b.lean:123:14: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  (2 * x + 4 * x) / 2\ncase pos\nx : ℤ\nh_precond : Triple_precond x\nh_main h₁ : Triple x h_precond / 3 = x\nh₂ : Triple x h_precond / 3 * 3 = x * 3\nh : x < 18\nh₅ : (2 * x + 4 * x) / 2 = 3 * x\n⊢ (x * 2 + 4 * x) / 2 = 3 * x\n",
+ "stderr": "",
+ "elapsed_seconds": 7.409,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 43,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 76,
+   "col": 10,
+   "severity": "error",
+   "text": "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  (2 * x + 4 * x) / 2\ncase pos\nx : ℤ\nh_precond : Triple_precond x\nh : x < 18\nh₁ : (2 * x + 4 * x) / 2 = 3 * x\n⊢ (x * 2 + 4 * x) / 2 / 3 = x"
+  },
+  {
+   "line": 123,
+   "col": 14,
+   "severity": "error",
+   "text": "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  (2 * x + 4 * x) / 2\ncase pos\nx : ℤ\nh_precond : Triple_precond x\nh_main h₁ : Triple x h_precond / 3 = x\nh₂ : Triple x h_precond / 3 * 3 = x * 3\nh : x < 18\nh₅ : (2 * x + 4 * x) / 2 = 3 * x\n⊢ (x * 2 + 4 * x) / 2 = 3 * x\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "rewrite_failed"
+}

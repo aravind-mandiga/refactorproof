@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_96__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_96__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_96__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_96__T2_helper_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_96__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_96__T2_helper_extract__0.lean:13:30: warning: unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_96__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_96__T2_helper_extract__0.lean:13:40: warning: unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_96__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_96__T2_helper_extract__0.lean:21:70: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_96__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_96__T2_helper_extract__0.lean:38:71: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n",
+ "stderr": "",
+ "elapsed_seconds": 0.853,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 30,
+   "severity": "warning",
+   "text": "unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 70,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 71,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

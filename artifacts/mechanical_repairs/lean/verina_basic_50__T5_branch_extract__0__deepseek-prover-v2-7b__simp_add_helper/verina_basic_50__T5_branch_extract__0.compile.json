@@ -1,0 +1,97 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean:14:17: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean:22:47: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean:22:12: warning: The declaration 'Abs__rp_branch_c6672445' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean:40:42: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean:58:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean:60:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean:61:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean:67:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean:69:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean:58:10: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean:60:8: warning: 'simp_all' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean:61:8: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper/verina_basic_50__T5_branch_extract__0.lean:67:10: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 9.273,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 17,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 47,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'Abs__rp_branch_c6672445' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 69,
+   "col": 4,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 58,
+   "col": 10,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 8,
+   "severity": "warning",
+   "text": "'simp_all' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 8,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 10,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

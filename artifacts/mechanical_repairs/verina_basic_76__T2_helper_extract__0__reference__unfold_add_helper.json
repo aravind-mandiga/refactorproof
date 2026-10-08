@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_76__T2_helper_extract__0",
+ "task_id": "verina_basic_76",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "myMin",
+ "helper": "myMin__rp_helper_5e5dcb4d",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold myMin_postcond myMin\n  simp\n  have h_left : (x \u2264 y \u2192 y \u2264 x \u2192 y = x) := by\n    intro h\u2081 h\u2082\n    exact Int.le_antisymm h\u2082 h\u2081\n  have h_right : (y < x \u2192 x < y \u2192 x = y) := by\n    intro h\u2081 h\u2082\n    have h_contr : False := Int.lt_irrefl x (Int.lt_trans h\u2082 h\u2081)\n    contradiction\n  exact \u27e8h_left, h_right\u27e9\n",
+ "proof_after": "  unfold myMin_postcond myMin myMin__rp_helper_5e5dcb4d\n  simp\n  have h_left : (x \u2264 y \u2192 y \u2264 x \u2192 y = x) := by\n    intro h\u2081 h\u2082\n    exact Int.le_antisymm h\u2082 h\u2081\n  have h_right : (y < x \u2192 x < y \u2192 x = y) := by\n    intro h\u2081 h\u2082\n    have h_contr : False := Int.lt_irrefl x (Int.lt_trans h\u2082 h\u2081)\n    contradiction\n  exact \u27e8h_left, h_right\u27e9\n"
+}

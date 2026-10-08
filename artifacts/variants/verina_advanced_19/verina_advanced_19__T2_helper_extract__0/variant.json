@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_19",
+ "variant_id": "verina_advanced_19__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  isCleanPalindrome__rp_helper_041e7c9a s h_precond\n",
+ "transformed_code_aux": "-- Reverse the list\ndef reverseList (xs : List Char) : List Char :=\n  xs.reverse\n\nprivate def isCleanPalindrome__rp_helper_041e7c9a (s : String) (h_precond : isCleanPalindrome_precond (s)) : Bool :=\n  let norm := normalizeString s\n  norm = reverseList norm\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "isCleanPalindrome__rp_helper_041e7c9a"
+ ],
+ "metadata": {
+  "binders": [
+   "s",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "71916228388fac717b7d6fe143cfa1dc9c87981c9fee642c7895f06209ae1057",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "8201d37db5190364dea1dcab34206989eb16d0c314b4c963c011d18727aabf04",
+ "code_aux_hash_original": "8222c3e74c9a6102222090c7fe5bafcfaa439ef317ca3a5a90251eec717a8623",
+ "tier": "advanced",
+ "function_name": "isCleanPalindrome",
+ "code_loc_original": 2,
+ "code_loc_refactored": 4
+}

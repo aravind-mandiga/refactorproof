@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_32",
+ "variant_id": "verina_basic_32__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  swapFirstAndLast__rp_helper_6bb66f38 a h_precond\n",
+ "transformed_code_aux": "\nprivate def swapFirstAndLast__rp_helper_6bb66f38 (a : Array Int) (h_precond: swapFirstAndLast_precond a) : Array Int :=\n  let first := a[0]!\n  let last := a[a.size - 1]!\n  a.set! 0 last |>.set! (a.size - 1) first\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "swapFirstAndLast__rp_helper_6bb66f38"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "60bf1e74bb237e594df243782059688123c0aef193feb089cc11f06da64bc8b8",
+ "proof_hash": "a75d3e1a11dec11b8a638bcecf8eb379bd51a37b23d9a94a37fb04c640d57f39",
+ "code_hash_original": "139477c95d812fe3c278fa9911a91718861b18816338a09646b51a32c4577c4d",
+ "code_aux_hash_original": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "tier": "basic",
+ "function_name": "swapFirstAndLast",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_72",
+ "variant_id": "verina_advanced_72__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  singleDigitPrimeFactor__rp_helper_2e72e101 n h_precond\n",
+ "transformed_code_aux": "\nprivate def singleDigitPrimeFactor__rp_helper_2e72e101 (n : Nat) (h_precond : singleDigitPrimeFactor_precond (n)) : Nat :=\n  if n == 0 then 0\n  else if n % 2 == 0 then 2\n  else if n % 3 == 0 then 3\n  else if n % 5 == 0 then 5\n  else if n % 7 == 0 then 7\n  else 0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "singleDigitPrimeFactor__rp_helper_2e72e101"
+ ],
+ "metadata": {
+  "binders": [
+   "n",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "e0563bc17c780adced024f4e033259a05dd73876e0993169d48b01664df09d28",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "ee811f8b6f45056946b4e2acb2aed9244b19ef8aec723070150a3dd57226871a",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "singleDigitPrimeFactor",
+ "code_loc_original": 6,
+ "code_loc_refactored": 8
+}

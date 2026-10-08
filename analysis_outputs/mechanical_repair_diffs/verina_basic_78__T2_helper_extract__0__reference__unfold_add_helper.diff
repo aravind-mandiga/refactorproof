@@ -1,0 +1,8 @@
+--- reference:verina_basic_78__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_78__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,2 +1,2 @@
+-  unfold MultipleReturns_postcond MultipleReturns
++  unfold MultipleReturns_postcond MultipleReturns MultipleReturns__rp_helper_39d93fc9
+   simp
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

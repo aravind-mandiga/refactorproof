@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_99/verina_basic_99__T3_comm_swap__1/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_99/verina_basic_99__T3_comm_swap__1/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_99/verina_basic_99__T3_comm_swap__1/reference.lean:13:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_99/verina_basic_99__T3_comm_swap__1/reference.lean:24:22: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_99/verina_basic_99__T3_comm_swap__1/reference.lean:42:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_99/verina_basic_99__T3_comm_swap__1/reference.lean:59:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  ?a * ?c + ?b * ?c\ncase pos\nx : ℤ\nh_precond : Triple_precond x\nh₁ : x < 18\n⊢ (2 * x + x * 4) / 2 / 3 = x ∧ (2 * x + x * 4) / 2 / 3 * 3 = (2 * x + x * 4) / 2\n",
+ "stderr": "",
+ "elapsed_seconds": 5.158,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 42,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 59,
+   "col": 8,
+   "severity": "error",
+   "text": "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  ?a * ?c + ?b * ?c\ncase pos\nx : ℤ\nh_precond : Triple_precond x\nh₁ : x < 18\n⊢ (2 * x + x * 4) / 2 / 3 = x ∧ (2 * x + x * 4) / 2 / 3 * 3 = (2 * x + x * 4) / 2\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "rewrite_failed"
+}

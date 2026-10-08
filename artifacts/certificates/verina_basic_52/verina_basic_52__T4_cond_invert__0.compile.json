@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_52/verina_basic_52__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_52/verina_basic_52__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_52/verina_basic_52__T4_cond_invert__0.lean:13:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_52/verina_basic_52__T4_cond_invert__0.lean:42:32: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_52/verina_basic_52__T4_cond_invert__0.lean:48:32: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_52/verina_basic_52__T4_cond_invert__0.lean:56:68: error: type mismatch\n  rfl\nhas type\n  ?m.27567 = ?m.27567 : Prop\nbut is expected to have type\n  RPOrig.BubbleSort a h_precond = RPRef.BubbleSort a h_precond : Prop\nartifacts/certificates/verina_basic_52/verina_basic_52__T4_cond_invert__0.lean:60:68: error: type mismatch\n  rfl\nhas type\n  ?m.28482 = ?m.28482 : Prop\nbut is expected to have type\n  RPOrig.BubbleSort a h_precond = RPRef.BubbleSort a h_precond : Prop\nartifacts/certificates/verina_basic_52/verina_basic_52__T4_cond_invert__0.lean:65:2: error: tactic 'rfl' failed, the left-hand side\n  if a.size = 0 then a else bubbleOuter (a.size - 1) a\nis not definitionally equal to the right-hand side\n  if ¬a.size = 0 then bubbleOuter (a.size - 1) a else a\na : Array Int\nh_precond : BubbleSort_precond a\n⊢ (if a.size = 0 then a else bubbleOuter (a.size - 1) a) = if ¬a.size = 0 then bubbleOuter (a.size - 1) a else a\n",
+ "stderr": "",
+ "elapsed_seconds": 1.237,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 42,
+   "col": 32,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 48,
+   "col": 32,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 56,
+   "col": 68,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.27567 = ?m.27567 : Prop\nbut is expected to have type\n  RPOrig.BubbleSort a h_precond = RPRef.BubbleSort a h_precond : Prop"
+  },
+  {
+   "line": 60,
+   "col": 68,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.28482 = ?m.28482 : Prop\nbut is expected to have type\n  RPOrig.BubbleSort a h_precond = RPRef.BubbleSort a h_precond : Prop"
+  },
+  {
+   "line": 65,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if a.size = 0 then a else bubbleOuter (a.size - 1) a\nis not definitionally equal to the right-hand side\n  if ¬a.size = 0 then bubbleOuter (a.size - 1) a else a\na : Array Int\nh_precond : BubbleSort_precond a\n⊢ (if a.size = 0 then a else bubbleOuter (a.size - 1) a) = if ¬a.size = 0 then bubbleOuter (a.size - 1) a else a\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

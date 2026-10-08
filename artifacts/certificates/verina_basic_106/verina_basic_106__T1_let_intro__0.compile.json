@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_106/verina_basic_106__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_106/verina_basic_106__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_106/verina_basic_106__T1_let_intro__0.lean:22:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_106/verina_basic_106__T1_let_intro__0.lean:38:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_106/verina_basic_106__T1_let_intro__0.lean:57:68: error: type mismatch\n  rfl\nhas type\n  ?m.40244 = ?m.40244 : Prop\nbut is expected to have type\n  RPOrig.arraySum a b h_precond = RPRef.arraySum a b h_precond : Prop\nartifacts/certificates/verina_basic_106/verina_basic_106__T1_let_intro__0.lean:61:68: error: type mismatch\n  rfl\nhas type\n  ?m.44795 = ?m.44795 : Prop\nbut is expected to have type\n  RPOrig.arraySum a b h_precond = RPRef.arraySum a b h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 2.414,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 57,
+   "col": 68,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.40244 = ?m.40244 : Prop\nbut is expected to have type\n  RPOrig.arraySum a b h_precond = RPRef.arraySum a b h_precond : Prop"
+  },
+  {
+   "line": 61,
+   "col": 68,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.44795 = ?m.44795 : Prop\nbut is expected to have type\n  RPOrig.arraySum a b h_precond = RPRef.arraySum a b h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

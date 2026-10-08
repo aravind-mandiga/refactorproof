@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:15:44: warning: unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:23:74: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:23:12: warning: The declaration 'maxOfThree__rp_branch_81742a90' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:43:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:58:258: error: unsolved goals\ncase neg\na b c : ℤ\nh_precond : True\nh✝ : ¬(decide (a ≥ b) && decide (a ≥ c)) = true\n⊢ (maxOfThree__rp_branch_81742a90 a b c h_precond ≥ a ∧\n      maxOfThree__rp_branch_81742a90 a b c h_precond ≥ b ∧ maxOfThree__rp_branch_81742a90 a b c h_precond ≥ c) ∧\n    (maxOfThree__rp_branch_81742a90 a b c h_precond = a ∨\n      maxOfThree__rp_branch_81742a90 a b c h_precond = b ∨ maxOfThree__rp_branch_81742a90 a b c h_precond = c)\n",
+ "stderr": "",
+ "elapsed_seconds": 9.469,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 74,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'maxOfThree__rp_branch_81742a90' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 43,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 258,
+   "severity": "error",
+   "text": "unsolved goals\ncase neg\na b c : ℤ\nh_precond : True\nh✝ : ¬(decide (a ≥ b) && decide (a ≥ c)) = true\n⊢ (maxOfThree__rp_branch_81742a90 a b c h_precond ≥ a ∧\n      maxOfThree__rp_branch_81742a90 a b c h_precond ≥ b ∧ maxOfThree__rp_branch_81742a90 a b c h_precond ≥ c) ∧\n    (maxOfThree__rp_branch_81742a90 a b c h_precond = a ∨\n      maxOfThree__rp_branch_81742a90 a b c h_precond = b ∨ maxOfThree__rp_branch_81742a90 a b c h_precond = c)\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

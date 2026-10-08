@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_66",
+ "variant_id": "verina_basic_66__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-32b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 8.022,
+ "proof_region_errors": [
+  "unsolved goals\nx : ℤ\nh_precond : ComputeIsEven_precond x\nh_main : 2 ∣ x ↔ ∃ k, x = 2 * k\na : ComputeIsEven__rp_branch_87fb4e70 x h_precond = true\n⊢ ∃ k, x = 2 * k\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "610e759d391c70fe6cdfb5c9ea3e442c2be6b12b03478bf0b3e453a8bc58b88d",
+ "spec_hash": "9300d16b9957b06554011b12d8985caa114c512f6eac35f42f2319056238a3b4",
+ "proof_text": "  have h_main : (if x % 2 = 0 then true else false : Bool) = true ↔ ∃ k : Int, x = 2 * k := by\n    constructor\n    · -- Prove the forward direction: if the if-then-else evaluates to true, then x is even.\n      intro h\n      have h₁ : x % 2 = 0 := by\n        split_ifs at h <;> simp_all [Bool.not_eq_true]\n        <;> norm_num at h ⊢\n        <;> omega\n      -- Since x % 2 = 0, we can write x = 2 * k for some integer k.\n      have h₂ : ∃ k : Int, x = 2 * k := by\n        use x / 2\n        have h₃ : x % 2 = 0 := h₁\n        have h₄ : x = 2 * (x / 2) := by\n          have h₅ : x % 2 = 0 := h₁\n          have h₆ : x = 2 * (x / 2) + x % 2 := by\n            have h₇ := Int.emod_add_ediv x 2\n            omega\n          rw [h₅] at h₆\n          omega\n        exact h₄\n      exact h₂\n    · -- Prove the backward direction: if x is even, then the if-then-else evaluates to true.\n      intro h\n      have h₁ : ∃ k : Int, x = 2 * k := h\n      -- Since x is even, x % 2 = 0.\n      have h₂ : x % 2 = 0 := by\n        obtain ⟨k, hk⟩ := h₁\n        have h₃ : x = 2 * k := hk\n        rw [h₃]\n        have h₄ : (2 * k : Int) % 2 = 0 := by\n          have h₅ : (2 * k : Int) % 2 = 0 := by\n            simp [Int.mul_emod, Int.emod_emod]\n          exact h₅\n        exact h₄\n      -- Therefore, the if-then-else evaluates to true.\n      have h₃ : (if x % 2 = 0 then true else false : Bool) = true := by\n        split_ifs <;> simp_all\n        <;> norm_num\n        <;> omega\n      exact h₃\n\n  -- Simplify the goal using the main lemma and the definition of ComputeIsEven.\n  dsimp [ComputeIsEven_postcond, ComputeIsEven] at *\n  <;> simp_all\n  <;> aesop\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-32b",
+ "strategy_condition": "default"
+}

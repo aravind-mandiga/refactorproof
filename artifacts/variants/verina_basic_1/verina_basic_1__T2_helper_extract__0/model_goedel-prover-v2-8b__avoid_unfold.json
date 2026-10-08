@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_1",
+ "variant_id": "verina_basic_1__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__avoid_unfold",
+ "generation_attempt": 1,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 12.73,
+ "proof_region_errors": [
+  "unsolved goals\ncase left.inl\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₁ : a * b < 0\nleft : a < 0\nright : 0 < b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = true\n\ncase left.inr\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₁ : a * b < 0\nleft : 0 < a\nright : b < 0\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = true\n\ncase right\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₂ : 0 ≤ a * b\na_1 : a < 0 → b ≤ 0\na_2 : 0 < a → 0 ≤ b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "1af321dc70618c4556af591e0d0f732ce54c85cba82d7db65afeab33be304020",
+ "spec_hash": "43e0a7d0f50b6844ce2ecb2d157e44c1ddca1b1d778219cb4401c97c796e07d2",
+ "proof_text": "  have h₁ : ((a < 0 ∧ b > 0) ∨ (a > 0 ∧ b < 0)) → (a * b < 0) := by\n    intro h\n    have h₂ : a * b < 0 := by\n      cases h with\n      | inl h =>\n        -- Case: a < 0 and b > 0\n        have h₃ : a < 0 := h.1\n        have h₄ : b > 0 := h.2\n        have h₅ : a * b < 0 := by\n          nlinarith\n        exact h₅\n      | inr h =>\n        -- Case: a > 0 and b < 0\n        have h₃ : a > 0 := h.1\n        have h₄ : b < 0 := h.2\n        have h₅ : a * b < 0 := by\n          nlinarith\n        exact h₅\n    exact h₂\n\n  have h₂ : (¬((a < 0 ∧ b > 0) ∨ (a > 0 ∧ b < 0))) → ¬(a * b < 0) := by\n    intro h\n    by_contra h₃\n    -- Assume a * b < 0 and derive a contradiction\n    have h₄ : a * b < 0 := by simpa using h₃\n    -- Consider the cases where a and b have the same sign or one of them is zero\n    have h₅ : (a < 0 ∧ b > 0) ∨ (a > 0 ∧ b < 0) := by\n      by_cases h₅ : a < 0\n      · -- Case: a < 0\n        by_cases h₆ : b > 0\n        · -- Subcase: b > 0\n          exact Or.inl ⟨h₅, h₆⟩\n        · -- Subcase: b ≤ 0\n          have h₇ : b ≤ 0 := by linarith\n          have h₈ : a > 0 := by\n            by_contra h₈\n            have h₉ : a ≤ 0 := by linarith\n            have h₁₀ : a * b ≥ 0 := by\n              nlinarith\n            linarith\n          have h₉ : b < 0 := by\n            by_contra h₉\n            have h₁₀ : b ≥ 0 := by linarith\n            have h₁₁ : a * b ≥ 0 := by\n              nlinarith\n            linarith\n          exact Or.inr ⟨h₈, h₉⟩\n      · -- Case: a ≥ 0\n        have h₆ : a ≥ 0 := by linarith\n        by_cases h₇ : b > 0\n        · -- Subcase: b > 0\n          have h₈ : a > 0 := by\n            by_contra h₈\n            have h₉ : a = 0 := by\n              by_contra h₉\n              have h₁₀ : a < 0 := by\n                omega\n              omega\n            rw [h₉] at h₄\n            norm_num at h₄ ⊢\n            <;> linarith\n          have h₉ : a > 0 := h₈\n          have h₁₀ : b > 0 := h₇\n          have h₁₁ : a * b > 0 := by nlinarith\n          linarith\n        · -- Subcase: b ≤ 0\n          have h₈ : b ≤ 0 := by linarith\n          by_cases h₉ : a > 0\n          · -- Subcase: a > 0\n            have h₁₀ : b < 0 := by\n              by_contra h₁₀\n              have h₁₁ : b ≥ 0 := by linarith\n              have h₁₂ : a * b ≥ 0 := by nlinarith\n              linarith\n            exact Or.inr ⟨h₉, h₁₀⟩\n          · -- Subcase: a ≤ 0\n            have h₁₀ : a ≤ 0 := by linarith\n            have h₁₁ : a * b ≥ 0 := by\n              nlinarith\n            linarith\n    -- Contradiction arises as h₅ contradicts h\n    exact h h₅\n\n  simp_all [hasOppositeSign_postcond, hasOppositeSign, hasOppositeSign_precond]\n  <;> aesop\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "avoid_unfold"
+}

@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_16",
+ "variant_id": "verina_basic_16__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  replaceChars__rp_helper_e8782fcd s oldChar newChar h_precond\n",
+ "transformed_code_aux": "\nprivate def replaceChars__rp_helper_e8782fcd (s : String) (oldChar : Char) (newChar : Char) (h_precond : replaceChars_precond (s) (oldChar) (newChar)) : String :=\n  let cs := s.toList\n  let cs' := cs.map (fun c => if c = oldChar then newChar else c)\n  String.mk cs'\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "replaceChars__rp_helper_e8782fcd"
+ ],
+ "metadata": {
+  "binders": [
+   "s",
+   "oldChar",
+   "newChar",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "b617df09ea729337ebf8e2c37037f8dcef0cab483a5f530ea5d8095de53c8ddd",
+ "proof_hash": "5117e5f68763180469566bdde2de20e3b678d0825ecb721bf48b7e18f13af71f",
+ "code_hash_original": "f8b5e587e8cf67a5fe9847b3e7cdcc6ead44e774d2190d486b07a7b163982a84",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "replaceChars",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

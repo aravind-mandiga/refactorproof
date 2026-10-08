@@ -1,0 +1,10 @@
+--- reference:verina_basic_95__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_95__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold swap_postcond swap
++  unfold swap_postcond swap swap__rp_helper_d46bfdfe
+   unfold swap_precond at h_precond
+   obtain ⟨h₁, h₂, h₃, h₄⟩ := h_precond
+ 
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

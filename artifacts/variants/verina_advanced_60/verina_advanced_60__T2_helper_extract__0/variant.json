@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_60",
+ "variant_id": "verina_advanced_60__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  partitionEvensOdds__rp_helper_485d665a nums h_precond\n",
+ "transformed_code_aux": "\nprivate def partitionEvensOdds__rp_helper_485d665a (nums : List Nat) (h_precond : partitionEvensOdds_precond (nums)) : (List Nat × List Nat) :=\n  let rec helper (nums : List Nat) : (List Nat × List Nat) :=\n    match nums with\n    | [] => ([], [])\n    | x :: xs =>\n      let (evens, odds) := helper xs\n      if x % 2 == 0 then (x :: evens, odds)\n      else (evens, x :: odds)\n  helper nums\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "partitionEvensOdds__rp_helper_485d665a"
+ ],
+ "metadata": {
+  "binders": [
+   "nums",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "740c795a8c3017136017f0f9f97791125b96d1e5f44d345f63595bf04422e27c",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "03fddf7869bf13e310480c599779a2ac1c6adc2ea2cbd397372581fa5a48698b",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "partitionEvensOdds",
+ "code_loc_original": 8,
+ "code_loc_refactored": 10
+}

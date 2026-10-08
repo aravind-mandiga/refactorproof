@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_1/verina_basic_1__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_1/verina_basic_1__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_1/verina_basic_1__T3_comm_swap__0.lean:15:29: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_1/verina_basic_1__T3_comm_swap__0.lean:15:39: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_1/verina_basic_1__T3_comm_swap__0.lean:26:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_1/verina_basic_1__T3_comm_swap__0.lean:38:65: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_1/verina_basic_1__T3_comm_swap__0.lean:144:4: error: tauto failed to solve some goals.\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_1/verina_basic_1__T3_comm_swap__0.lean:144:4: error: unsolved goals\ncase intro.left.inr.inl.inl.intro.intro\na b : ℤ\nleft✝² : a * b < 0\nleft✝¹ : a < 0\nright✝¹ : 0 < b\nleft✝ : a < 0\nright✝ : ¬b ≤ 0\n⊢ b * a < 0\n\ncase intro.left.inr.inl.inr.intro.intro\na b : ℤ\nleft✝² : a * b < 0\nleft✝¹ : 0 < a\nright✝¹ : b < 0\nleft✝ : a < 0\nright✝ : ¬b ≤ 0\n⊢ b * a < 0\n\ncase intro.left.inr.inr.inl.intro.inl.intro\na b : ℤ\nleft✝² : a * b < 0\nleft✝¹ : a < 0\nright✝¹ : 0 < b\nleft✝ : 0 < a\nright✝ : ¬0 ≤ b\n⊢ b * a < 0\n\ncase intro.left.inr.inr.inl.intro.inr\na b : ℤ\nleft✝¹ : a * b < 0\nleft✝ : a < 0\nright✝¹ : 0 < b\nright✝ : 0 ≤ a * b\n⊢ b * a < 0\n\ncase intro.left.inr.inr.inr.intro.inl.intro\na b : ℤ\nleft✝² : a * b < 0\nleft✝¹ : 0 < a\nright✝¹ : b < 0\nleft✝ : 0 < a\nright✝ : ¬0 ≤ b\n⊢ b * a < 0\n\ncase intro.left.inr.inr.inr.intro.inr\na b : ℤ\nleft✝¹ : a * b < 0\nleft✝ : 0 < a\nright✝¹ : b < 0\nright✝ : 0 ≤ a * b\n⊢ b * a < 0\n\ncase intro.right.inl.inr.inl.intro.inr.inl.inl.inl\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬a < 0\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inl.intro.inr.inl.inl.inr\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬a < 0\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inl.intro.inr.inl.inr.inl\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬0 < b\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inl.intro.inr.inl.inr.inr\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬0 < b\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inl.intro.inr.inr.inl.inl\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬a < 0\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inl.intro.inr.inr.inl.inr\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬a < 0\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inl.intro.inr.inr.inr.inl\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬0 < b\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inl.intro.inr.inr.inr.inr\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬0 < b\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inl.inl.inl\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬a < 0\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inl.inl.inr\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬a < 0\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inl.inr.inl\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬0 < b\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inl.inr.inr\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬0 < b\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inr.inl.inl\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬a < 0\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inr.inl.inr\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬a < 0\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inr.inr.inl\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬0 < b\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inr.inr.inr\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬0 < b\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inr.inr.inl.inr.inl\na b : ℤ\nleft✝ : a * b < 0\na✝¹ : ¬a < 0\nright✝ : 0 ≤ a * b\na✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inr.inr.inl.inr.inr\na b : ℤ\nleft✝ : a * b < 0\na✝¹ : ¬a < 0\nright✝ : 0 ≤ a * b\na✝ : 0 ≤ b\n⊢ 0 ≤ b * a\n\ncase intro.right.inr.inr.inr.inr.inl\na b : ℤ\nleft✝ : a * b < 0\na✝¹ : b ≤ 0\nright✝ : 0 ≤ a * b\na✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inr.inr.inr.inr.inr\na b : ℤ\nleft✝ : a * b < 0\na✝¹ : b ≤ 0\nright✝ : 0 ≤ a * b\na✝ : 0 ≤ b\n⊢ 0 ≤ b * a\n",
+ "stderr": "",
+ "elapsed_seconds": 35.187,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 65,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 144,
+   "col": 4,
+   "severity": "error",
+   "text": "tauto failed to solve some goals."
+  },
+  {
+   "line": 144,
+   "col": 4,
+   "severity": "error",
+   "text": "unsolved goals\ncase intro.left.inr.inl.inl.intro.intro\na b : ℤ\nleft✝² : a * b < 0\nleft✝¹ : a < 0\nright✝¹ : 0 < b\nleft✝ : a < 0\nright✝ : ¬b ≤ 0\n⊢ b * a < 0\n\ncase intro.left.inr.inl.inr.intro.intro\na b : ℤ\nleft✝² : a * b < 0\nleft✝¹ : 0 < a\nright✝¹ : b < 0\nleft✝ : a < 0\nright✝ : ¬b ≤ 0\n⊢ b * a < 0\n\ncase intro.left.inr.inr.inl.intro.inl.intro\na b : ℤ\nleft✝² : a * b < 0\nleft✝¹ : a < 0\nright✝¹ : 0 < b\nleft✝ : 0 < a\nright✝ : ¬0 ≤ b\n⊢ b * a < 0\n\ncase intro.left.inr.inr.inl.intro.inr\na b : ℤ\nleft✝¹ : a * b < 0\nleft✝ : a < 0\nright✝¹ : 0 < b\nright✝ : 0 ≤ a * b\n⊢ b * a < 0\n\ncase intro.left.inr.inr.inr.intro.inl.intro\na b : ℤ\nleft✝² : a * b < 0\nleft✝¹ : 0 < a\nright✝¹ : b < 0\nleft✝ : 0 < a\nright✝ : ¬0 ≤ b\n⊢ b * a < 0\n\ncase intro.left.inr.inr.inr.intro.inr\na b : ℤ\nleft✝¹ : a * b < 0\nleft✝ : 0 < a\nright✝¹ : b < 0\nright✝ : 0 ≤ a * b\n⊢ b * a < 0\n\ncase intro.right.inl.inr.inl.intro.inr.inl.inl.inl\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬a < 0\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inl.intro.inr.inl.inl.inr\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬a < 0\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inl.intro.inr.inl.inr.inl\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬0 < b\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inl.intro.inr.inl.inr.inr\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬0 < b\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inl.intro.inr.inr.inl.inl\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬a < 0\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inl.intro.inr.inr.inl.inr\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬a < 0\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inl.intro.inr.inr.inr.inl\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬0 < b\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inl.intro.inr.inr.inr.inr\na b : ℤ\na✝¹ : ¬a < 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬0 < b\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inl.inl.inl\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬a < 0\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inl.inl.inr\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬a < 0\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inl.inr.inl\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬0 < b\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inl.inr.inr\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : ¬0 < a\nleft✝ : ¬0 < b\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inr.inl.inl\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬a < 0\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inr.inl.inr\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬a < 0\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inr.inr.inl\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬0 < b\nright✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inl.inr.inr.intro.inr.inr.inr.inr\na b : ℤ\na✝¹ : b ≤ 0\nright✝¹ : 0 ≤ a * b\na✝ : 0 ≤ b\nleft✝ : ¬0 < b\nright✝ : ¬b < 0\n⊢ 0 ≤ b * a\n\ncase intro.right.inr.inr.inl.inr.inl\na b : ℤ\nleft✝ : a * b < 0\na✝¹ : ¬a < 0\nright✝ : 0 ≤ a * b\na✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inr.inr.inl.inr.inr\na b : ℤ\nleft✝ : a * b < 0\na✝¹ : ¬a < 0\nright✝ : 0 ≤ a * b\na✝ : 0 ≤ b\n⊢ 0 ≤ b * a\n\ncase intro.right.inr.inr.inr.inr.inl\na b : ℤ\nleft✝ : a * b < 0\na✝¹ : b ≤ 0\nright✝ : 0 ≤ a * b\na✝ : ¬0 < a\n⊢ 0 ≤ b * a\n\ncase intro.right.inr.inr.inr.inr.inr\na b : ℤ\nleft✝ : a * b < 0\na✝¹ : b ≤ 0\nright✝ : 0 ≤ a * b\na✝ : 0 ≤ b\n⊢ 0 ≤ b * a\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

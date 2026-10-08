@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_1/lean_2/verina_basic_1__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_1/lean_2/verina_basic_1__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_1/lean_2/verina_basic_1__T3_comm_swap__0.lean:15:29: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_1/lean_2/verina_basic_1__T3_comm_swap__0.lean:15:39: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_1/lean_2/verina_basic_1__T3_comm_swap__0.lean:26:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_1/lean_2/verina_basic_1__T3_comm_swap__0.lean:38:65: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_1/lean_2/verina_basic_1__T3_comm_swap__0.lean:156:4: error: type mismatch, term\n  h1\nafter simplification has type\n  a < 0 ∧ 0 < b ∨ 0 < a ∧ b < 0 → a * b < 0 : Prop\nbut is expected to have type\n  a < 0 ∧ 0 < b ∨ 0 < a ∧ b < 0 → b * a < 0 : Prop\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_1/lean_2/verina_basic_1__T3_comm_swap__0.lean:158:4: error: type mismatch, term\n  h2\nafter simplification has type\n  (a < 0 → b ≤ 0) → (0 < a → 0 ≤ b) → 0 ≤ a * b : Prop\nbut is expected to have type\n  (a < 0 → b ≤ 0) → (0 < a → 0 ≤ b) → 0 ≤ b * a : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 13.769,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 65,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 156,
+   "col": 4,
+   "severity": "error",
+   "text": "type mismatch, term\n  h1\nafter simplification has type\n  a < 0 ∧ 0 < b ∨ 0 < a ∧ b < 0 → a * b < 0 : Prop\nbut is expected to have type\n  a < 0 ∧ 0 < b ∨ 0 < a ∧ b < 0 → b * a < 0 : Prop"
+  },
+  {
+   "line": 158,
+   "col": 4,
+   "severity": "error",
+   "text": "type mismatch, term\n  h2\nafter simplification has type\n  (a < 0 → b ≤ 0) → (0 < a → 0 ≤ b) → 0 ≤ a * b : Prop\nbut is expected to have type\n  (a < 0 → b ≤ 0) → (0 < a → 0 ≤ b) → 0 ≤ b * a : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

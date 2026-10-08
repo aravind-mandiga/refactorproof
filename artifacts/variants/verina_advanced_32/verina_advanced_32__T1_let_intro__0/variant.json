@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_32",
+ "variant_id": "verina_advanced_32__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_5daba4e0 : Nat :=\n    let rec buildTables : List Int → List Int → List Nat → Nat → Nat\n      | [], _, lengths, _ =>\n          let rec findMaxLength : List Nat → Nat\n            | [] => 0\n            | x :: xs =>\n                let maxRest := findMaxLength xs\n                if x > maxRest then x else maxRest\n          findMaxLength lengths\n      | currNum :: restNums, prevNums, lengths, idx =>\n          let rec findLengthEndingAtCurr : List Int → List Nat → Nat → Nat\n            | [], _, best => best\n            | prevVal :: restVals, prevLen :: restLens, best =>\n                if prevVal < currNum then\n                  findLengthEndingAtCurr restVals restLens (max best prevLen)\n                else\n                  findLengthEndingAtCurr restVals restLens best\n            | _, _, best => best\n\n          let bestPrevLen := findLengthEndingAtCurr prevNums lengths 0\n          let currLength := bestPrevLen + 1\n          buildTables restNums (prevNums ++ [currNum]) (lengths ++ [currLength]) (idx + 1)\n\n    match numbers with\n    | [] => 0\n    | [x] => 1\n    | first :: rest => buildTables rest [first] [1] 1\n  __rp_tmp_5daba4e0\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_5daba4e0",
+  "seed": 0
+ },
+ "spec_hash": "26543b754ceb00d2243dddadcce032441c3d5b5f762fa438b4b4abc01ef5a624",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "e8229febb6ed1b205b74b8e6a5d1f0c6ae764e6d654e125389bd478c77857135",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "longestIncreasingSubsequence",
+ "code_loc_original": 24,
+ "code_loc_refactored": 26
+}

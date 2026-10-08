@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_42",
+ "variant_id": "verina_basic_42__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "qwen3-14b__neutral",
+ "generation_attempt": 1,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.883,
+ "proof_region_errors": [
+  "unsolved goals\ns : String\nh_precond : countDigits_precond s\n⊢ countDigits__rp_helper_df69abf7 s h_precond - (List.filter isDigit s.data).length = 0 ∧\n    (List.filter isDigit s.data).length - countDigits__rp_helper_df69abf7 s h_precond = 0\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "e8a0c3f75c2560f8686f4ad32f711c8a01e66fb5a9d094bc4af71fca99a4c350",
+ "spec_hash": "b3d6f5ca1418b1e4938883c8d0977c43b060642c3f8f37bf193d4b4106177533",
+ "proof_text": "  unfold countDigits countDigits_postcond\n  simp_all\n",
+ "proof_aux_text": "\n",
+ "model_family": "qwen3",
+ "base_model": "qwen3-14b",
+ "strategy_condition": "neutral_prompt"
+}

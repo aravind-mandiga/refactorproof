@@ -1,0 +1,8 @@
+--- reference:verina_basic_42__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_42__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,2 +1,2 @@
+-  unfold countDigits countDigits_postcond
++  unfold countDigits countDigits__rp_helper_df69abf7 countDigits_postcond
+   simp
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

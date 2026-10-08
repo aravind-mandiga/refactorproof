@@ -1,0 +1,121 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:25:19: error: unknown constant 'Std.HashSet.emptyWithCapacity'\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:27:13: error: invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.281\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:32:10: error: invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.281\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:36:13: error: invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.281\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:50:19: error: unknown constant 'Std.HashSet.emptyWithCapacity'\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:52:13: error: invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.5243\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:57:10: error: invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.5243\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:61:13: error: invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.5243\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:74:90: error: type mismatch\n  rfl\nhas type\n  ?m.9884 = ?m.9884 : Prop\nbut is expected to have type\n  RPOrig.longestConsecutive nums h_precond = RPRef.longestConsecutive nums h_precond : Prop\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:78:90: error: type mismatch\n  rfl\nhas type\n  ?m.9984 = ?m.9984 : Prop\nbut is expected to have type\n  RPOrig.longestConsecutive nums h_precond = RPRef.longestConsecutive nums h_precond : Prop\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:80:8: warning: declaration uses 'sorry'\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:83:2: warning: 'rfl' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:91:7: warning: declaration uses 'sorry'\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:91:7: warning: declaration uses 'sorry'\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:91:135: error: tactic 'delta' failed, did not delta reduce [RPOrig.longestConsecutive, RPRef.longestConsecutive]\nnums : List ℤ\nh_precond : longestConsecutive_precond nums\n⊢ sorry nums h_precond = sorry nums h_precond\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:99:130: error: tactic 'delta' failed, did not delta reduce [RPOrig.longestConsecutive, RPRef.longestConsecutive]\nnums : List ℤ\nh_precond : longestConsecutive_precond nums\n⊢ sorry nums h_precond = sorry nums h_precond\nartifacts/certificates/verina_advanced_28/verina_advanced_28__T3_comm_swap__0.lean:103:151: error: tactic 'delta' failed, did not delta reduce [RPOrig.longestConsecutive, RPRef.longestConsecutive]\nnums : List ℤ\nh_precond : longestConsecutive_precond nums\n⊢ sorry nums h_precond = sorry nums h_precond\n",
+ "stderr": "",
+ "elapsed_seconds": 24.693,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 25,
+   "col": 19,
+   "severity": "error",
+   "text": "unknown constant 'Std.HashSet.emptyWithCapacity'"
+  },
+  {
+   "line": 27,
+   "col": 13,
+   "severity": "error",
+   "text": "invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.281"
+  },
+  {
+   "line": 32,
+   "col": 10,
+   "severity": "error",
+   "text": "invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.281"
+  },
+  {
+   "line": 36,
+   "col": 13,
+   "severity": "error",
+   "text": "invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.281"
+  },
+  {
+   "line": 50,
+   "col": 19,
+   "severity": "error",
+   "text": "unknown constant 'Std.HashSet.emptyWithCapacity'"
+  },
+  {
+   "line": 52,
+   "col": 13,
+   "severity": "error",
+   "text": "invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.5243"
+  },
+  {
+   "line": 57,
+   "col": 10,
+   "severity": "error",
+   "text": "invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.5243"
+  },
+  {
+   "line": 61,
+   "col": 13,
+   "severity": "error",
+   "text": "invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.5243"
+  },
+  {
+   "line": 74,
+   "col": 90,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.9884 = ?m.9884 : Prop\nbut is expected to have type\n  RPOrig.longestConsecutive nums h_precond = RPRef.longestConsecutive nums h_precond : Prop"
+  },
+  {
+   "line": 78,
+   "col": 90,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.9984 = ?m.9984 : Prop\nbut is expected to have type\n  RPOrig.longestConsecutive nums h_precond = RPRef.longestConsecutive nums h_precond : Prop"
+  },
+  {
+   "line": 80,
+   "col": 8,
+   "severity": "warning",
+   "text": "declaration uses 'sorry'"
+  },
+  {
+   "line": 83,
+   "col": 2,
+   "severity": "warning",
+   "text": "'rfl' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 91,
+   "col": 7,
+   "severity": "warning",
+   "text": "declaration uses 'sorry'"
+  },
+  {
+   "line": 91,
+   "col": 7,
+   "severity": "warning",
+   "text": "declaration uses 'sorry'"
+  },
+  {
+   "line": 91,
+   "col": 135,
+   "severity": "error",
+   "text": "tactic 'delta' failed, did not delta reduce [RPOrig.longestConsecutive, RPRef.longestConsecutive]\nnums : List ℤ\nh_precond : longestConsecutive_precond nums\n⊢ sorry nums h_precond = sorry nums h_precond"
+  },
+  {
+   "line": 99,
+   "col": 130,
+   "severity": "error",
+   "text": "tactic 'delta' failed, did not delta reduce [RPOrig.longestConsecutive, RPRef.longestConsecutive]\nnums : List ℤ\nh_precond : longestConsecutive_precond nums\n⊢ sorry nums h_precond = sorry nums h_precond"
+  },
+  {
+   "line": 103,
+   "col": 151,
+   "severity": "error",
+   "text": "tactic 'delta' failed, did not delta reduce [RPOrig.longestConsecutive, RPRef.longestConsecutive]\nnums : List ℤ\nh_precond : longestConsecutive_precond nums\n⊢ sorry nums h_precond = sorry nums h_precond\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unknown_constant_or_identifier"
+}

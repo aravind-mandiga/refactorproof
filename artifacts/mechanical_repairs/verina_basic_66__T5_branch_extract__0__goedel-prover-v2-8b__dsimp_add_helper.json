@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_66__T5_branch_extract__0",
+ "task_id": "verina_basic_66",
+ "source": "goedel-prover-v2-8b",
+ "transformation": "T5_branch_extract",
+ "template": "dsimp_add_helper",
+ "function_name": "ComputeIsEven",
+ "helper": "ComputeIsEven__rp_branch_87fb4e70",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_main : ((ComputeIsEven (x) h_precond) = true \u2194 \u2203 (k : Int), x = 2 * k) := by\n    dsimp [ComputeIsEven]\n    constructor\n    \u00b7 -- Prove the forward direction: if x % 2 = 0, then \u2203 k, x = 2 * k\n      intro h\n      have h\u2081 : x % 2 = 0 := by simpa using h\n      have h\u2082 : \u2203 (k : Int), x = 2 * k := by\n        use x / 2\n        have h\u2083 : x = 2 * (x / 2) := by\n          have h\u2084 : x % 2 = 0 := h\u2081\n          have h\u2085 : x = 2 * (x / 2) + (x % 2) := by omega\n          rw [h\u2084] at h\u2085\n          omega\n        linarith\n      simpa using h\u2082\n    \u00b7 -- Prove the backward direction: if \u2203 k, x = 2 * k, then x % 2 = 0\n      intro h\n      rcases h with \u27e8k, rfl\u27e9\n      have h\u2081 : (2 * k : \u2124) % 2 = 0 := by\n        norm_num [Int.mul_emod]\n      simpa [h\u2081] using h\u2081\n\n  simpa [ComputeIsEven_postcond] using h_main\n",
+ "proof_after": "  have h_main : ((ComputeIsEven (x) h_precond) = true \u2194 \u2203 (k : Int), x = 2 * k) := by\n    dsimp [ComputeIsEven, ComputeIsEven__rp_branch_87fb4e70]\n    constructor\n    \u00b7 -- Prove the forward direction: if x % 2 = 0, then \u2203 k, x = 2 * k\n      intro h\n      have h\u2081 : x % 2 = 0 := by simpa using h\n      have h\u2082 : \u2203 (k : Int), x = 2 * k := by\n        use x / 2\n        have h\u2083 : x = 2 * (x / 2) := by\n          have h\u2084 : x % 2 = 0 := h\u2081\n          have h\u2085 : x = 2 * (x / 2) + (x % 2) := by omega\n          rw [h\u2084] at h\u2085\n          omega\n        linarith\n      simpa using h\u2082\n    \u00b7 -- Prove the backward direction: if \u2203 k, x = 2 * k, then x % 2 = 0\n      intro h\n      rcases h with \u27e8k, rfl\u27e9\n      have h\u2081 : (2 * k : \u2124) % 2 = 0 := by\n        norm_num [Int.mul_emod]\n      simpa [h\u2081] using h\u2081\n\n  simpa [ComputeIsEven_postcond] using h_main\n"
+}

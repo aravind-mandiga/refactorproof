@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_101",
+ "variant_id": "verina_basic_101__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_1171a237 : Int :=\n    let y := x * 2\n    y + x\n  __rp_tmp_1171a237\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_1171a237",
+  "seed": 0
+ },
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c",
+ "proof_hash": "cd10127c64f63a8b0871c8c9b3d9046b70446efa02f2fe089d464f5d2b51b471",
+ "code_hash_original": "9f255dee3296ea3310b6a6e42f02cc56e915f637ace0742de9cc9e5e3a55e9b5",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "Triple",
+ "code_loc_original": 2,
+ "code_loc_refactored": 4
+}

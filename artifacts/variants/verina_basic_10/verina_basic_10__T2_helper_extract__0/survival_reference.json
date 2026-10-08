@@ -1,0 +1,26 @@
+{
+ "task_id": "verina_basic_10",
+ "variant_id": "verina_basic_10__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.886,
+ "proof_region_errors": [
+  "unsolved goals\nn : Int\na : Array Int\nh_precond : isGreater_precond n a\n⊢ (∀ (i : Nat) (hi : i < a.size), a[i] < n) ↔ isGreater__rp_helper_d4e98f7f n a h_precond = true\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "7d3515d14e95933a588ef7f0e7a666f9404b24c5bc119ca34414f057f296b48c",
+ "spec_hash": "6b685531fd1dac53ef004523d208959ca04309d5100dc7b60307820548ead3d0"
+}

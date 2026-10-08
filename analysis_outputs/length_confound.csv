@@ -1,0 +1,2 @@
+n_records,n_tasks,median_loc_prover,median_loc_reference,coef_prover_unadjusted,p_prover_unadjusted,coef_prover_adjusted,p_prover_adjusted,coef_log_proof_loc,p_log_proof_loc,window10_30_reference_rate,window10_30_reference_records,window10_30_reference_tasks,window10_30_prover_rate,window10_30_prover_records,window10_30_prover_tasks
+269,52,32.0,11.0,1.4037392779347324,4.634414649091153e-06,1.3697293707667944,0.001344282863658548,0.030145630660153837,0.8844055592329357,0.10810810810810811,37,20,0.43023255813953487,86,23

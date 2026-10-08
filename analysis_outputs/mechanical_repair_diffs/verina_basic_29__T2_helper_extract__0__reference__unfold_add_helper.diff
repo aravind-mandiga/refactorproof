@@ -1,0 +1,10 @@
+--- reference:verina_basic_29__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_29__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold removeElement removeElement_postcond
++  unfold removeElement removeElement__rp_helper_718e0d1d removeElement_postcond
+   unfold removeElement_precond at h_precond
+   simp_all
+   unfold Array.eraseIdx!
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

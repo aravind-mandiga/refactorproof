@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_79",
+ "variant_id": "verina_advanced_79__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_a6beb2fc : Option (Nat × Nat) :=\n    let rec outer (lst : List Int) (i : Nat)\n              : Option (Nat × Nat) :=\n          match lst with\n          | [] =>\n              none\n          | x :: xs =>\n              let rec inner (lst' : List Int) (j : Nat)\n                      : Option Nat :=\n                  match lst' with\n                  | [] =>\n                      none\n                  | y :: ys =>\n                      if x + y = target then\n                          some j\n                      else\n                          inner ys (j + 1)\n              match inner xs (i + 1) with\n              | some j =>\n                  some (i, j)\n              | none =>\n                  outer xs (i + 1)\n          outer nums 0\n  __rp_tmp_a6beb2fc\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_a6beb2fc",
+  "seed": 0
+ },
+ "spec_hash": "daf1d5180cfbf2b539a1f5c98e74858b744aa9c9e5558d472f94481621f8ab8b",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "da54693f77456f5030d4b26f20af5e5b3b829ef9b5ae23c64ed0e2bbdcb4fbcf",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "twoSum",
+ "code_loc_original": 22,
+ "code_loc_refactored": 24
+}

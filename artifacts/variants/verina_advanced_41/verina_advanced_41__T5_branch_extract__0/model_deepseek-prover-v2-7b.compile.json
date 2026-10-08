@@ -1,0 +1,85 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:15:44: warning: unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:23:74: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:23:12: warning: The declaration 'maxOfThree__rp_branch_81742a90' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:43:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:69:8: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:76:4: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case left.left\n  a b c : ℤ\n  h_precond : maxOfThree_precond a b c\n  h : b ≤ a → a < c\n  ⊢ a ≤ maxOfThree__rp_branch_81742a90 a b c h_precond\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:76:4: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case left.right.left\n  a b c : ℤ\n  h_precond : maxOfThree_precond a b c\n  h : b ≤ a → a < c\n  ⊢ b ≤ maxOfThree__rp_branch_81742a90 a b c h_precond\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:76:4: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case left.right.right\n  a b c : ℤ\n  h_precond : maxOfThree_precond a b c\n  h : b ≤ a → a < c\n  ⊢ c ≤ maxOfThree__rp_branch_81742a90 a b c h_precond\nartifacts/variants/verina_advanced_41/verina_advanced_41__T5_branch_extract__0/model_deepseek-prover-v2-7b.lean:76:4: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case right\n  a b c : ℤ\n  h_precond : maxOfThree_precond a b c\n  h : b ≤ a → a < c\n  ⊢ maxOfThree__rp_branch_81742a90 a b c h_precond = a ∨\n      maxOfThree__rp_branch_81742a90 a b c h_precond = b ∨ maxOfThree__rp_branch_81742a90 a b c h_precond = c\n",
+ "stderr": "",
+ "elapsed_seconds": 7.878,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 74,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'maxOfThree__rp_branch_81742a90' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 43,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 69,
+   "col": 8,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 76,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case left.left\n  a b c : ℤ\n  h_precond : maxOfThree_precond a b c\n  h : b ≤ a → a < c\n  ⊢ a ≤ maxOfThree__rp_branch_81742a90 a b c h_precond"
+  },
+  {
+   "line": 76,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case left.right.left\n  a b c : ℤ\n  h_precond : maxOfThree_precond a b c\n  h : b ≤ a → a < c\n  ⊢ b ≤ maxOfThree__rp_branch_81742a90 a b c h_precond"
+  },
+  {
+   "line": 76,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case left.right.right\n  a b c : ℤ\n  h_precond : maxOfThree_precond a b c\n  h : b ≤ a → a < c\n  ⊢ c ≤ maxOfThree__rp_branch_81742a90 a b c h_precond"
+  },
+  {
+   "line": 76,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case right\n  a b c : ℤ\n  h_precond : maxOfThree_precond a b c\n  h : b ≤ a → a < c\n  ⊢ maxOfThree__rp_branch_81742a90 a b c h_precond = a ∨\n      maxOfThree__rp_branch_81742a90 a b c h_precond = b ∨ maxOfThree__rp_branch_81742a90 a b c h_precond = c\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

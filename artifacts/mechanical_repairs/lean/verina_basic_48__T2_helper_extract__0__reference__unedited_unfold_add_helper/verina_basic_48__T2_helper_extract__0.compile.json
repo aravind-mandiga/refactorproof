@@ -1,0 +1,73 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_48__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_48__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_48__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_48__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_48__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_48__T2_helper_extract__0.lean:14:29: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_48__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_48__T2_helper_extract__0.lean:22:12: warning: The declaration 'isPerfectSquare__rp_helper_521a2256' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_48__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_48__T2_helper_extract__0.lean:56:3: error: unknown constant 'isPerfectSquare.check'\nartifacts/mechanical_repairs/lean/verina_basic_48__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_48__T2_helper_extract__0.lean:60:11: error: unknown constant 'isPerfectSquare.check'\nartifacts/mechanical_repairs/lean/verina_basic_48__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_48__T2_helper_extract__0.lean:65:11: error: unknown constant 'isPerfectSquare.check'\nartifacts/mechanical_repairs/lean/verina_basic_48__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_48__T2_helper_extract__0.lean:92:2: error: unknown constant 'isPerfectSquare.check'\nartifacts/mechanical_repairs/lean/verina_basic_48__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_48__T2_helper_extract__0.lean:98:11: error: unknown constant 'isPerfectSquare.check'\nartifacts/mechanical_repairs/lean/verina_basic_48__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_48__T2_helper_extract__0.lean:104:11: error: unknown constant 'isPerfectSquare.check'\nartifacts/mechanical_repairs/lean/verina_basic_48__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_48__T2_helper_extract__0.lean:144:2: error: simp made no progress\n",
+ "stderr": "",
+ "elapsed_seconds": 51.754,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'isPerfectSquare__rp_helper_521a2256' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 56,
+   "col": 3,
+   "severity": "error",
+   "text": "unknown constant 'isPerfectSquare.check'"
+  },
+  {
+   "line": 60,
+   "col": 11,
+   "severity": "error",
+   "text": "unknown constant 'isPerfectSquare.check'"
+  },
+  {
+   "line": 65,
+   "col": 11,
+   "severity": "error",
+   "text": "unknown constant 'isPerfectSquare.check'"
+  },
+  {
+   "line": 92,
+   "col": 2,
+   "severity": "error",
+   "text": "unknown constant 'isPerfectSquare.check'"
+  },
+  {
+   "line": 98,
+   "col": 11,
+   "severity": "error",
+   "text": "unknown constant 'isPerfectSquare.check'"
+  },
+  {
+   "line": 104,
+   "col": 11,
+   "severity": "error",
+   "text": "unknown constant 'isPerfectSquare.check'"
+  },
+  {
+   "line": 144,
+   "col": 2,
+   "severity": "error",
+   "text": "simp made no progress\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unknown_constant_or_identifier"
+}

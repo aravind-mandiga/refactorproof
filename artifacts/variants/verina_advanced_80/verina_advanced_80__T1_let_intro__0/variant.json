@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_80",
+ "variant_id": "verina_advanced_80__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_0bb20044 : Array Nat :=\n    let rec findIndices (i : Nat) (j : Nat) (fuel : Nat) : Array Nat :=\n      match fuel with\n      | 0 => #[] -- Fuel exhausted, return empty array\n      | fuel+1 =>\n        if i >= nums.size then\n          #[] -- No solution found\n        else if j >= nums.size then\n          findIndices (i + 1) (i + 2) fuel -- Move to next i and reset j\n        else\n          if nums[i]! + nums[j]! == target then\n            #[i, j] -- Found solution\n          else\n            findIndices i (j + 1) fuel -- Try next j\n\n    findIndices 0 1 (nums.size * nums.size)\n  __rp_tmp_0bb20044\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_0bb20044",
+  "seed": 0
+ },
+ "spec_hash": "359de903c75bcfa113883e10d0faad0f23d9e71bce3aa2e2b8ea251c10f64db2",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "2660a91cafa94e46a9b534b646448239b9b1845bc865d8b12e3ba094ed46bb3f",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "twoSum",
+ "code_loc_original": 14,
+ "code_loc_refactored": 16
+}

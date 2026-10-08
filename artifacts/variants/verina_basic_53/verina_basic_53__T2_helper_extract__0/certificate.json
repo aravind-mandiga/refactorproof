@@ -1,0 +1,49 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_53",
+ "variant_id": "verina_basic_53__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_53/verina_basic_53__T2_helper_extract__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.803,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": "delta_rfl",
+ "certificate_level": "delta_rfl",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.5493 = ?m.5493 : Prop\nbut is expected to have type\n  RPOrig.CalSum N h_precond = RPRef.CalSum N h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.5585 = ?m.5585 : Prop\nbut is expected to have type\n  RPOrig.CalSum N h_precond = RPRef.CalSum N h_precond : Prop\n"
+   ]
+  },
+  "delta_rfl": {
+   "ok": true,
+   "errors": []
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

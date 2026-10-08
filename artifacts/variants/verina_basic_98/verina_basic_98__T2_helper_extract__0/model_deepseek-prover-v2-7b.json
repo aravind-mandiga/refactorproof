@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_98",
+ "variant_id": "verina_basic_98__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "other",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 6.944,
+ "proof_region_errors": [
+  "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  3*a - b ≥ 1\nwhere\n a := x\n b := Triple__rp_helper_c4a61f58 x h_precond",
+  "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  -2 ≤ 3*a - b ≤ 0\n  3*a - c ≥ 1\nwhere\n a := x\n b := Triple x h_precond\n c := Triple__rp_helper_c4a61f58 x h_precond"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "9971609b34517229738253d002db7f5375847f090cb9ee3bdda4727970185330",
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c",
+ "proof_text": "  have h1 : (Triple (x) h_precond) / 3 = x := by\n    have h₁ : Triple (x) h_precond = x * 3 := by\n      simp [Triple]\n      <;> ring_nf\n      <;> omega\n    rw [h₁]\n    -- Now we need to prove that (x * 3) / 3 = x\n    have h₂ : (x * 3) / 3 = x := by\n      -- Use the property of integer division to show that (x * 3) / 3 = x\n      have h₃ : x * 3 / 3 = x := by\n        -- Use the fact that 3 is a non-zero integer to simplify the division\n        have h₄ : x * 3 / 3 = x := by\n          -- Use the property of integer division to show that (x * 3) / 3 = x\n          omega\n        exact h₄\n      exact h₃\n    exact h₂\n\n  have h2 : ((Triple (x) h_precond) / 3) * 3 = Triple (x) h_precond := by\n    have h₂ : Triple (x) h_precond = x * 3 := by\n      simp [Triple]\n      <;> ring_nf\n      <;> omega\n    rw [h₂] at *\n    have h₃ : ((x * 3) / 3) * 3 = x * 3 := by\n      have h₄ : (x * 3) / 3 = x := by\n        have h₅ : x * 3 / 3 = x := by\n          omega\n        exact h₅\n      rw [h₄]\n      <;> ring_nf\n      <;> omega\n    simpa [h₂] using h₃\n\n  have h3 : Triple_postcond (x) (Triple (x) h_precond) h_precond := by\n    constructor\n    · -- Prove the first part of the postcondition: (Triple (x) h_precond) / 3 = x\n      exact h1\n    · -- Prove the second part of the postcondition: ((Triple (x) h_precond) / 3) * 3 = Triple (x) h_precond\n      exact h2\n\n  exact h3\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "default"
+}

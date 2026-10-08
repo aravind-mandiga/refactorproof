@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_98__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_98__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_98__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_98__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_98__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_98__T2_helper_extract__0.lean:13:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_98__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_98__T2_helper_extract__0.lean:21:50: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_98__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_98__T2_helper_extract__0.lean:38:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_98__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_98__T2_helper_extract__0.lean:50:60: error: unsolved goals\nx : Int\nh_precond : Triple_precond x\n⊢ Triple__rp_helper_c4a61f58 x h_precond / 3 = x ∧\n    -1 * Triple__rp_helper_c4a61f58 x h_precond + 3 * (Triple__rp_helper_c4a61f58 x h_precond / 3) = 0\n",
+ "stderr": "",
+ "elapsed_seconds": 0.802,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 50,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 50,
+   "col": 60,
+   "severity": "error",
+   "text": "unsolved goals\nx : Int\nh_precond : Triple_precond x\n⊢ Triple__rp_helper_c4a61f58 x h_precond / 3 = x ∧\n    -1 * Triple__rp_helper_c4a61f58 x h_precond + 3 * (Triple__rp_helper_c4a61f58 x h_precond / 3) = 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

@@ -1,0 +1,103 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean:14:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean:14:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean:14:44: warning: unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean:23:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean:30:74: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean:30:12: warning: The declaration 'minOfThree__rp_branch_73840f67' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean:53:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean:54:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean:53:6: warning: '(delta RPOrig.minOfThree RPRef.minOfThree RPRef.minOfThree__rp_branch_73840f67 RPOrig.minOfThree._unary;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean:54:6: warning: '(set_option smartUnfolding false in rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean:58:94: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean:58:94: warning: '(first\n  | rfl\n  | (delta RPOrig.minOfThree RPRef.minOfThree RPRef.minOfThree__rp_branch_73840f67; rfl)\n  | (delta RPOrig.minOfThree RPRef.minOfThree RPRef.minOfThree__rp_branch_73840f67 RPOrig.minOfThree._unary; rfl)\n  | (set_option smartUnfolding false in rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean:62:89: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_6/verina_basic_6__T5_branch_extract__0.lean:62:89: warning: '(first\n  | rfl\n  | (delta RPOrig.minOfThree RPRef.minOfThree RPRef.minOfThree__rp_branch_73840f67; rfl)\n  | (delta RPOrig.minOfThree RPRef.minOfThree RPRef.minOfThree__rp_branch_73840f67 RPOrig.minOfThree._unary; rfl)\n  | (set_option smartUnfolding false in rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 22.092,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 14,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 14,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 30,
+   "col": 74,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 30,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'minOfThree__rp_branch_73840f67' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 53,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 54,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 53,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(delta RPOrig.minOfThree RPRef.minOfThree RPRef.minOfThree__rp_branch_73840f67 RPOrig.minOfThree._unary;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 54,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(set_option smartUnfolding false in rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 58,
+   "col": 94,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 58,
+   "col": 94,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (delta RPOrig.minOfThree RPRef.minOfThree RPRef.minOfThree__rp_branch_73840f67; rfl)\n  | (delta RPOrig.minOfThree RPRef.minOfThree RPRef.minOfThree__rp_branch_73840f67 RPOrig.minOfThree._unary; rfl)\n  | (set_option smartUnfolding false in rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 62,
+   "col": 89,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 62,
+   "col": 89,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (delta RPOrig.minOfThree RPRef.minOfThree RPRef.minOfThree__rp_branch_73840f67; rfl)\n  | (delta RPOrig.minOfThree RPRef.minOfThree RPRef.minOfThree__rp_branch_73840f67 RPOrig.minOfThree._unary; rfl)\n  | (set_option smartUnfolding false in rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

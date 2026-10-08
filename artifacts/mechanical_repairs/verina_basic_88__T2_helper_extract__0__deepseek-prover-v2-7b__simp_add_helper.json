@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_88__T2_helper_extract__0",
+ "task_id": "verina_basic_88",
+ "source": "deepseek-prover-v2-7b",
+ "transformation": "T2_helper_extract",
+ "template": "simp_add_helper",
+ "function_name": "ToArray",
+ "helper": "ToArray__rp_helper_a2d904a6",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": false,
+ "outcome": "proof_fails",
+ "first_error": "unknown constant 'List.get_toArray'\n",
+ "proof_before": "  have h1 : (ToArray xs h_precond).size = xs.length := by\n    simp [ToArray]\n    <;>\n    rfl\n\n  have h2 : \u2200 (i : Nat), i < xs.length \u2192 (ToArray xs h_precond)[i]! = xs[i]! := by\n    intro i h\n    simp_all [ToArray]\n    <;>\n    rw [List.get_toArray] <;>\n    simp_all [h_precond]\n    <;>\n    (try omega) <;>\n    (try simp_all) <;>\n    (try aesop)\n\n  exact \u27e8h1, h2\u27e9\n",
+ "proof_after": "  have h1 : (ToArray xs h_precond).size = xs.length := by\n    simp [ToArray, ToArray__rp_helper_a2d904a6]\n    <;>\n    rfl\n\n  have h2 : \u2200 (i : Nat), i < xs.length \u2192 (ToArray xs h_precond)[i]! = xs[i]! := by\n    intro i h\n    simp_all [ToArray]\n    <;>\n    rw [List.get_toArray] <;>\n    simp_all [h_precond]\n    <;>\n    (try omega) <;>\n    (try simp_all) <;>\n    (try aesop)\n\n  exact \u27e8h1, h2\u27e9\n"
+}

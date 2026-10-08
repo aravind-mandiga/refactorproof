@@ -1,0 +1,28 @@
+{
+ "task_id": "verina_basic_1",
+ "variant_id": "verina_basic_1__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "simp_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.91,
+ "proof_region_errors": [
+  "simp made no progress",
+  "simp made no progress",
+  "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  decide ?p = true\ncase right\na b : ℤ\nh_precond : hasOppositeSign_precond a b\n⊢ ¬(a < 0 ∧ b > 0 ∨ a > 0 ∧ b < 0) → ¬hasOppositeSign__rp_helper_5272bffb a b h_precond = true\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "4cc53b16da1f3c3f504647e8ccd8d3d6e1806c4acdd6de83c1552ec203cd6e2d",
+ "spec_hash": "43e0a7d0f50b6844ce2ecb2d157e44c1ddca1b1d778219cb4401c97c796e07d2"
+}

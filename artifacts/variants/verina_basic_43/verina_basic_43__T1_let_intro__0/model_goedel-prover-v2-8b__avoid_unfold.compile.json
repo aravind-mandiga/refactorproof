@@ -1,0 +1,151 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:16:42: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:46:67: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:74:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:83:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:92:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:97:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:98:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:110:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:112:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:118:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:124:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:71:10: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:72:10: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:74:10: warning: '(try\n    {cases n with\n    | zero => norm_num\n    | succ n =>\n      simp_all [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib, Nat.mul_add, Nat.add_mul] <;> ring_nf at * <;>\n        omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:83:10: warning: '(try\n    {induction n with\n    | zero => norm_num\n    | succ n ih =>\n      simp_all [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib, Nat.mul_add, Nat.add_mul] <;> ring_nf at * <;>\n        omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:92:10: warning: '(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:97:2: warning: '(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:98:2: warning: '(try\n    {induction n with\n    | zero => norm_num [sumOfFourthPowerOfOddNumbers]\n    | succ n ih =>\n      cases n with\n      | zero => norm_num [sumOfFourthPowerOfOddNumbers]\n      | succ n =>\n        simp_all [sumOfFourthPowerOfOddNumbers, Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib, Nat.mul_add,\n              Nat.add_mul] <;>\n            ring_nf at * <;>\n          omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:110:2: warning: '(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:112:2: warning: '(try {norm_num at * <;> omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:118:2: warning: '(try {ring_nf at * <;> omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_43/verina_basic_43__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:124:2: warning: '(try {omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 10.966,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 46,
+   "col": 67,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 74,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 83,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 92,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 97,
+   "col": 2,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 98,
+   "col": 2,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 110,
+   "col": 2,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 112,
+   "col": 2,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 118,
+   "col": 2,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 124,
+   "col": 2,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 71,
+   "col": 10,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 72,
+   "col": 10,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 74,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try\n    {cases n with\n    | zero => norm_num\n    | succ n =>\n      simp_all [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib, Nat.mul_add, Nat.add_mul] <;> ring_nf at * <;>\n        omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 83,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try\n    {induction n with\n    | zero => norm_num\n    | succ n ih =>\n      simp_all [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib, Nat.mul_add, Nat.add_mul] <;> ring_nf at * <;>\n        omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 92,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 97,
+   "col": 2,
+   "severity": "warning",
+   "text": "'(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 98,
+   "col": 2,
+   "severity": "warning",
+   "text": "'(try\n    {induction n with\n    | zero => norm_num [sumOfFourthPowerOfOddNumbers]\n    | succ n ih =>\n      cases n with\n      | zero => norm_num [sumOfFourthPowerOfOddNumbers]\n      | succ n =>\n        simp_all [sumOfFourthPowerOfOddNumbers, Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib, Nat.mul_add,\n              Nat.add_mul] <;>\n            ring_nf at * <;>\n          omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 110,
+   "col": 2,
+   "severity": "warning",
+   "text": "'(try omega)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 112,
+   "col": 2,
+   "severity": "warning",
+   "text": "'(try {norm_num at * <;> omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 118,
+   "col": 2,
+   "severity": "warning",
+   "text": "'(try {ring_nf at * <;> omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 124,
+   "col": 2,
+   "severity": "warning",
+   "text": "'(try {omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T2_helper_extract__0.lean:15:19: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T2_helper_extract__0.lean:15:29: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T2_helper_extract__0.lean:23:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T2_helper_extract__0.lean:23:12: warning: The declaration 'myMin__rp_helper_5e5dcb4d' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T2_helper_extract__0.lean:40:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T2_helper_extract__0.lean:56:4: error: tactic 'split_ifs' failed, no if-then-else conditions to split\nx y : ℤ\nh_precond : myMin_precond x y\n⊢ (x ≤ y → myMin__rp_helper_5e5dcb4d x y h_precond = x) ∧ (x > y → myMin__rp_helper_5e5dcb4d x y h_precond = y)\n",
+ "stderr": "",
+ "elapsed_seconds": 11.439,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'myMin__rp_helper_5e5dcb4d' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 56,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'split_ifs' failed, no if-then-else conditions to split\nx y : ℤ\nh_precond : myMin_precond x y\n⊢ (x ≤ y → myMin__rp_helper_5e5dcb4d x y h_precond = x) ∧ (x > y → myMin__rp_helper_5e5dcb4d x y h_precond = y)\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

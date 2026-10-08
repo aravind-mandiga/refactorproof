@@ -1,0 +1,109 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:15:44: warning: unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:26:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:42:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:74:10: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:76:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:84:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:105:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:71:10: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:62:4: warning: '(try {contradiction\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:74:10: warning: '(try nlinarith)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:76:8: warning: '(try {simp_all [Int.and_eq_max] <;> omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:84:4: warning: '(try {\n    -- Case: ¬(a ≥ b ∧ a ≥ c) and b ≥ a ∧ b ≥ c\n    constructor\n    ·\n      -- Prove b ≥ a, b ≥ b, b ≥ cconstructor <;>\n            (try {nlinarith\n              }) <;>\n          (try {norm_num at * <;> (try omega) <;> (try nlinarith)\n            }) <;>\n        (try {simp_all [Int.and_eq_max] <;> omega\n          })\n    ·\n      -- Prove b is one of a, b, csimp\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T1_let_intro__0/model_goedel-prover-v2-32b.lean:105:4: warning: '(try {\n    -- Case: ¬(a ≥ b ∧ a ≥ c) and ¬(b ≥ a ∧ b ≥ c)\n    have h₂ : (if a >= b && a >= c then a else if b >= a && b >= c then b else c) = c := by\n      simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;> (try omega)\n    have h₃ : c ≥ a := by\n      by_cases h₄ : a < c\n      ·\n        -- Subcase: a < clinarith\n      ·\n        -- Subcase: a ≥ c\n        have h₅ : a < b := by\n          by_contra h₅\n          have h₆ : a ≥ b := by linarith\n          have h₇ : a >= b && a >= c := by\n            simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n              (try omega)\n          simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n            (try omega)\n        have h₆ : b < c := by\n          by_contra h₆\n          have h₇ : b ≥ c := by linarith\n          have h₈ : b >= a && b >= c := by\n            simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n              (try omega)\n          simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n            (try omega)\n        linarith\n    have h₄ : c ≥ b := by\n      by_cases h₅ : b < c\n      ·\n        -- Subcase: b < clinarith\n      ·\n        -- Subcase: b ≥ c\n        have h₆ : b < a := by\n          by_contra h₆\n          have h₇ : b ≥ a := by linarith\n          have h₈ : b >= a && b >= c := by\n            simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n              (try omega)\n          simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n            (try omega)\n        have h₇ : a < c := by\n          by_contra h₇\n          have h₈ : a ≥ c := by linarith\n          have h₉ : a >= b && a >= c := by\n            have h₁₀ : a ≥ b := by linarith\n            simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n              (try omega)\n          simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n            (try omega)\n        linarith\n          -- Prove c ≥ a, c ≥ b, c ≥ c and c is one of a, b, c\n    constructor\n    ·\n      -- Prove c ≥ a, c ≥ b, c ≥ cconstructor <;>\n            (try {nlinarith\n              }) <;>\n          (try {norm_num at * <;> (try omega) <;> (try nlinarith)\n            }) <;>\n        (try {simp_all [Int.and_eq_max] <;> omega\n          })\n    ·\n      -- Prove c is one of a, b, csimp\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 7.908,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 42,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 74,
+   "col": 10,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 76,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 84,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 105,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 71,
+   "col": 10,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 62,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {contradiction\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 74,
+   "col": 10,
+   "severity": "warning",
+   "text": "'(try nlinarith)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 76,
+   "col": 8,
+   "severity": "warning",
+   "text": "'(try {simp_all [Int.and_eq_max] <;> omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 84,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {\n    -- Case: ¬(a ≥ b ∧ a ≥ c) and b ≥ a ∧ b ≥ c\n    constructor\n    ·\n      -- Prove b ≥ a, b ≥ b, b ≥ cconstructor <;>\n            (try {nlinarith\n              }) <;>\n          (try {norm_num at * <;> (try omega) <;> (try nlinarith)\n            }) <;>\n        (try {simp_all [Int.and_eq_max] <;> omega\n          })\n    ·\n      -- Prove b is one of a, b, csimp\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 105,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {\n    -- Case: ¬(a ≥ b ∧ a ≥ c) and ¬(b ≥ a ∧ b ≥ c)\n    have h₂ : (if a >= b && a >= c then a else if b >= a && b >= c then b else c) = c := by\n      simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;> (try omega)\n    have h₃ : c ≥ a := by\n      by_cases h₄ : a < c\n      ·\n        -- Subcase: a < clinarith\n      ·\n        -- Subcase: a ≥ c\n        have h₅ : a < b := by\n          by_contra h₅\n          have h₆ : a ≥ b := by linarith\n          have h₇ : a >= b && a >= c := by\n            simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n              (try omega)\n          simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n            (try omega)\n        have h₆ : b < c := by\n          by_contra h₆\n          have h₇ : b ≥ c := by linarith\n          have h₈ : b >= a && b >= c := by\n            simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n              (try omega)\n          simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n            (try omega)\n        linarith\n    have h₄ : c ≥ b := by\n      by_cases h₅ : b < c\n      ·\n        -- Subcase: b < clinarith\n      ·\n        -- Subcase: b ≥ c\n        have h₆ : b < a := by\n          by_contra h₆\n          have h₇ : b ≥ a := by linarith\n          have h₈ : b >= a && b >= c := by\n            simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n              (try omega)\n          simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n            (try omega)\n        have h₇ : a < c := by\n          by_contra h₇\n          have h₈ : a ≥ c := by linarith\n          have h₉ : a >= b && a >= c := by\n            have h₁₀ : a ≥ b := by linarith\n            simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n              (try omega)\n          simp_all [Int.and_eq_max] <;> (try omega) <;> (try norm_num) <;> (try simp_all [Int.and_eq_max]) <;>\n            (try omega)\n        linarith\n          -- Prove c ≥ a, c ≥ b, c ≥ c and c is one of a, b, c\n    constructor\n    ·\n      -- Prove c ≥ a, c ≥ b, c ≥ cconstructor <;>\n            (try {nlinarith\n              }) <;>\n          (try {norm_num at * <;> (try omega) <;> (try nlinarith)\n            }) <;>\n        (try {simp_all [Int.and_eq_max] <;> omega\n          })\n    ·\n      -- Prove c is one of a, b, csimp\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

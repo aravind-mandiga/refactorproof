@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_12",
+ "variant_id": "verina_advanced_12__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  firstDuplicate__rp_helper_69f1430c lst h_precond\n",
+ "transformed_code_aux": "\nprivate def firstDuplicate__rp_helper_69f1430c (lst : List Int) (h_precond : firstDuplicate_precond (lst)) : Option Int :=\n  let rec helper (seen : List Int) (rem : List Int) : Option Int :=\n    match rem with\n    | [] => none\n    | h :: t => if seen.contains h then some h else helper (h :: seen) t\n  helper [] lst\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "firstDuplicate__rp_helper_69f1430c"
+ ],
+ "metadata": {
+  "binders": [
+   "lst",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "81c8dccfbc5c9a28eae822235f1087c7d3cedc916814e844b423fea6bafc952e",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "9fbf9d0fc6b8a0d21d6bd1b1938cfa53c9b006aaa10ddfac8db7d347120b73d9",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "firstDuplicate",
+ "code_loc_original": 5,
+ "code_loc_refactored": 7
+}

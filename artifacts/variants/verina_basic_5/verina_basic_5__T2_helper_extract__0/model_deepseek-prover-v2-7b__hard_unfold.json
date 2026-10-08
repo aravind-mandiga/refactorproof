@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_5",
+ "variant_id": "verina_basic_5__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b__hard_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 10.474,
+ "proof_region_errors": [
+  "unsolved goals\ncase left\na b : ℤ\nh_precond : multiply_precond a b\n⊢ multiply__rp_helper_3cc08e31 a b h_precond - a * b = 0\n\ncase right\na b : ℤ\nh_precond : multiply_precond a b\n⊢ -multiply__rp_helper_3cc08e31 a b h_precond + a * b = 0\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "45439167a75bb8aaca2192aac82a30a0f29750828f4a72060302825aaba81d18",
+ "spec_hash": "fb0e1b99e5101d2e21739f877c4c112fe60644ed1f3f3d4687b975e1527cff42",
+ "proof_text": "  unfold multiply multiply_postcond\n  have h_main : multiply_postcond (a) (b) (multiply (a) (b) h_precond) h_precond := by\n    unfold multiply_postcond\n    simp [multiply, multiply_precond] at *\n    <;>\n    (try norm_num) <;>\n    (try ring_nf) <;>\n    (try simp_all [Int.sub_self]) <;>\n    (try norm_num) <;>\n    (try ring_nf) <;>\n    (try simp_all [Int.sub_self]) <;>\n    (try aesop)\n    <;>\n    (try omega)\n    <;>\n    (try ring_nf at *) <;>\n    (try aesop)\n    <;>\n    (try\n      {\n        simp_all [Int.sub_self]\n        <;>\n        aesop\n      })\n    <;>\n    (try\n      {\n        aesop\n      })\n    <;>\n    (try\n      {\n        ring_nf at *\n        <;>\n        aesop\n      })\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "hard_unfold"
+}

@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_108/verina_basic_108__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_108/verina_basic_108__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_108/verina_basic_108__T2_helper_extract__0.lean:13:24: warning: unused variable `operations`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_108/verina_basic_108__T2_helper_extract__0.lean:31:40: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_108/verina_basic_108__T2_helper_extract__0.lean:43:68: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_108/verina_basic_108__T2_helper_extract__0.lean:59:86: error: type mismatch\n  rfl\nhas type\n  ?m.690 = ?m.690 : Prop\nbut is expected to have type\n  RPOrig.below_zero operations h_precond = RPRef.below_zero operations h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.701,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `operations`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 31,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 43,
+   "col": 68,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 59,
+   "col": 86,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.690 = ?m.690 : Prop\nbut is expected to have type\n  RPOrig.below_zero operations h_precond = RPRef.below_zero operations h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,11 @@
+--- goedel-prover-v2-32b:verina_basic_59__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_59__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : DoubleQuadruple_postcond (x) (DoubleQuadruple (x) h_precond) h_precond := by
+-    dsimp [DoubleQuadruple, DoubleQuadruple_postcond] at *
++    dsimp [DoubleQuadruple, DoubleQuadruple_postcond, DoubleQuadruple__rp_helper_8062be2e] at *
+     <;>
+     (try simp_all) <;>
+     (try ring_nf) <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

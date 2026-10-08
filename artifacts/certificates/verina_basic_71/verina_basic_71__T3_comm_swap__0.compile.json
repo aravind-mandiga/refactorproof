@@ -1,0 +1,115 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:13:33: warning: unused variable `str1`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:13:52: warning: unused variable `str2`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:22:63: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:37:63: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:53:102: error: type mismatch\n  rfl\nhas type\n  ?m.37854 = ?m.37854 : Prop\nbut is expected to have type\n  RPOrig.LongestCommonPrefix str1 str2 h_precond = RPRef.LongestCommonPrefix str1 str2 h_precond : Prop\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:57:102: error: type mismatch\n  rfl\nhas type\n  ?m.37953 = ?m.37953 : Prop\nbut is expected to have type\n  RPOrig.LongestCommonPrefix str1 str2 h_precond = RPRef.LongestCommonPrefix str1 str2 h_precond : Prop\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:62:2: error: tactic 'rfl' failed, the left-hand side\n  let minLength := str1.length.min str2.length;\n  RPOrig.LongestCommonPrefix.aux._unary str1 str2 minLength ⟨0, []⟩\nis not definitionally equal to the right-hand side\n  let minLength := str1.length.min str2.length;\n  RPRef.LongestCommonPrefix.aux._unary str1 str2 minLength ⟨0, []⟩\nstr1 str2 : List Char\nh_precond : LongestCommonPrefix_precond str1 str2\n⊢ (let minLength := str1.length.min str2.length;\n    RPOrig.LongestCommonPrefix.aux._unary str1 str2 minLength ⟨0, []⟩) =\n    let minLength := str1.length.min str2.length;\n    RPRef.LongestCommonPrefix.aux._unary str1 str2 minLength ⟨0, []⟩\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:70:258: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nis not definitionally equal to the right-hand side\n  RPRef.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nstr1 str2 : List Char\nh_precond : LongestCommonPrefix_precond str1 str2\n⊢ RPOrig.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩ =\n    RPRef.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:65:102: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:65:102: error: unknown metavariable '?_uniq.62097'\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:78:253: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nis not definitionally equal to the right-hand side\n  RPRef.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nstr1 str2 : List Char\nh_precond : LongestCommonPrefix_precond str1 str2\n⊢ RPOrig.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩ =\n    RPRef.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:73:102: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:73:102: error: unknown metavariable '?_uniq.85647'\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:82:274: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nis not definitionally equal to the right-hand side\n  RPRef.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nstr1 str2 : List Char\nh_precond : LongestCommonPrefix_precond str1 str2\n⊢ RPOrig.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩ =\n    RPRef.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:81:102: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_71/verina_basic_71__T3_comm_swap__0.lean:81:102: error: unknown metavariable '?_uniq.93391'\n",
+ "stderr": "",
+ "elapsed_seconds": 2.663,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 33,
+   "severity": "warning",
+   "text": "unused variable `str1`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 52,
+   "severity": "warning",
+   "text": "unused variable `str2`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 63,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 37,
+   "col": 63,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 53,
+   "col": 102,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.37854 = ?m.37854 : Prop\nbut is expected to have type\n  RPOrig.LongestCommonPrefix str1 str2 h_precond = RPRef.LongestCommonPrefix str1 str2 h_precond : Prop"
+  },
+  {
+   "line": 57,
+   "col": 102,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.37953 = ?m.37953 : Prop\nbut is expected to have type\n  RPOrig.LongestCommonPrefix str1 str2 h_precond = RPRef.LongestCommonPrefix str1 str2 h_precond : Prop"
+  },
+  {
+   "line": 62,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  let minLength := str1.length.min str2.length;\n  RPOrig.LongestCommonPrefix.aux._unary str1 str2 minLength ⟨0, []⟩\nis not definitionally equal to the right-hand side\n  let minLength := str1.length.min str2.length;\n  RPRef.LongestCommonPrefix.aux._unary str1 str2 minLength ⟨0, []⟩\nstr1 str2 : List Char\nh_precond : LongestCommonPrefix_precond str1 str2\n⊢ (let minLength := str1.length.min str2.length;\n    RPOrig.LongestCommonPrefix.aux._unary str1 str2 minLength ⟨0, []⟩) =\n    let minLength := str1.length.min str2.length;\n    RPRef.LongestCommonPrefix.aux._unary str1 str2 minLength ⟨0, []⟩"
+  },
+  {
+   "line": 70,
+   "col": 258,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nis not definitionally equal to the right-hand side\n  RPRef.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nstr1 str2 : List Char\nh_precond : LongestCommonPrefix_precond str1 str2\n⊢ RPOrig.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩ =\n    RPRef.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩"
+  },
+  {
+   "line": 65,
+   "col": 102,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 65,
+   "col": 102,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.62097'"
+  },
+  {
+   "line": 78,
+   "col": 253,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nis not definitionally equal to the right-hand side\n  RPRef.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nstr1 str2 : List Char\nh_precond : LongestCommonPrefix_precond str1 str2\n⊢ RPOrig.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩ =\n    RPRef.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩"
+  },
+  {
+   "line": 73,
+   "col": 102,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 73,
+   "col": 102,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.85647'"
+  },
+  {
+   "line": 82,
+   "col": 274,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nis not definitionally equal to the right-hand side\n  RPRef.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩\nstr1 str2 : List Char\nh_precond : LongestCommonPrefix_precond str1 str2\n⊢ RPOrig.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩ =\n    RPRef.LongestCommonPrefix.aux._unary str1 str2 (str1.length.min str2.length) ⟨0, []⟩"
+  },
+  {
+   "line": 81,
+   "col": 102,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 81,
+   "col": 102,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.93391'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

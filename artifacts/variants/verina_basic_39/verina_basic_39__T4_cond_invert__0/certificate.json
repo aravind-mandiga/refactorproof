@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_39",
+ "variant_id": "verina_basic_39__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_39/verina_basic_39__T4_cond_invert__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 1.015,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": "simp_only",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.473 = ?m.473 : Prop\nbut is expected to have type\n  RPOrig.rotateRight l n h_precond = RPRef.rotateRight l n h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1394 = ?m.1394 : Prop\nbut is expected to have type\n  RPOrig.rotateRight l n h_precond = RPRef.rotateRight l n h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  let len := l.length;\n  if len = 0 then l\n  else\n    List.map\n      (fun i =>\n        let idx_int := (Int.ofNat i - Int.ofNat n + Int.ofNat len) % Int.ofNat len;\n        let idx_nat := idx_int.toNat;\n        l.getD idx_nat (l.headD 0))\n      (List.range len)\nis not definitionally equal to the right-hand side\n  let len := l.length;\n  if ¬len = 0 then\n    List.map\n      (fun i =>\n        let idx_int := (Int.ofNat i - Int.ofNat n + Int.ofNat len) % Int.ofNat"
+   ]
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": true,
+   "errors": []
+  },
+  "bycases": {
+   "ok": false,
+   "errors": [
+    "unknown identifier 'len'"
+   ]
+  },
+  "bycases_ite": {
+   "ok": false,
+   "errors": [
+    "unknown identifier 'len'\n"
+   ]
+  },
+  "split_simp_all": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

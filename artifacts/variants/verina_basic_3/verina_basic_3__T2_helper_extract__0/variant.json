@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_3",
+ "variant_id": "verina_basic_3__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  isDivisibleBy11__rp_helper_c39b37ae n h_precond\n",
+ "transformed_code_aux": "\nprivate def isDivisibleBy11__rp_helper_c39b37ae (n : Int) (h_precond : isDivisibleBy11_precond (n)) : Bool :=\n  n % 11 == 0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "isDivisibleBy11__rp_helper_c39b37ae"
+ ],
+ "metadata": {
+  "binders": [
+   "n",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "2f01b2a2c66c6b65fb25ac619f4002a4b7ba13ae770c8c7faffc8784d450d630",
+ "proof_hash": "e3b4b70ad41ad4d95f0b49210caf5240324bc8fe7fe2e93b1ac0eb9052e12d90",
+ "code_hash_original": "ecc607040b566708663d2ffc9f6bb10af187b094e9d6748716a860fdd57684ab",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "isDivisibleBy11",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

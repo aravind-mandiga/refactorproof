@@ -1,0 +1,38 @@
+{
+ "model_id": "deepseek-prover-v2-7b",
+ "task_id": "verina_basic_76",
+ "attempt": 0,
+ "proof_hash": "e00b8d5af5266f50ecfb1587634d4dea812fc3620c32e7be994c8dbb37e0f46b",
+ "proof_loc": 17,
+ "proof_tokens": 141,
+ "survival": [
+  {
+   "variant_id": "verina_basic_76__T1_let_intro__0",
+   "transformation": "T1_let_intro",
+   "severity": "D",
+   "survives": true,
+   "outcome": "survives"
+  },
+  {
+   "variant_id": "verina_basic_76__T2_helper_extract__0",
+   "transformation": "T2_helper_extract",
+   "severity": "S",
+   "survives": false,
+   "outcome": "proof_fails"
+  },
+  {
+   "variant_id": "verina_basic_76__T4_cond_invert__0",
+   "transformation": "T4_cond_invert",
+   "severity": "E",
+   "survives": true,
+   "outcome": "survives"
+  },
+  {
+   "variant_id": "verina_basic_76__T5_branch_extract__0",
+   "transformation": "T5_branch_extract",
+   "severity": "S",
+   "survives": true,
+   "outcome": "survives"
+  }
+ ]
+}

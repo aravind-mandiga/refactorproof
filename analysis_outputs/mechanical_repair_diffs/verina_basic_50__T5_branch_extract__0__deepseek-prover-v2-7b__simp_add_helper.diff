@@ -1,0 +1,13 @@
+--- deepseek-prover-v2-7b:verina_basic_50__T5_branch_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_50__T5_branch_extract__0 (simp_add_helper)
+@@ -1,7 +1,7 @@
+   have h_main₁ : x ≥ 0 → x = Abs (x) h_precond := by
+     intro h
+     have h₁ : Abs (x) h_precond = x := by
+-      simp [Abs, h_precond, h]
++      simp [Abs, h_precond, h, Abs__rp_branch_c6672445]
+       <;> aesop
+     rw [h₁]
+     <;> simp_all
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

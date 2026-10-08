@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_66",
+ "variant_id": "verina_basic_66__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__hard_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.243,
+ "proof_region_errors": [
+  "unsolved goals\ncase mp\nx : ℤ\nh_precond : ComputeIsEven_precond x\nh_main : 2 ∣ x ↔ ∃ k, x = 2 * k\na : ComputeIsEven__rp_helper_c370e361 x h_precond = true\n⊢ ∃ k, x = 2 * k\n\ncase mpr\nw : ℤ\nh_precond : ComputeIsEven_precond (2 * w)\n⊢ ComputeIsEven__rp_helper_c370e361 (2 * w) h_precond = true\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "6ed3c32d49a988d3f7310d5152770535beb1c28024411a01d7ebf20683b47e34",
+ "spec_hash": "9300d16b9957b06554011b12d8985caa114c512f6eac35f42f2319056238a3b4",
+ "proof_text": "  unfold ComputeIsEven ComputeIsEven_postcond\n  have h_main : (if x % 2 = 0 then true else false) = true ↔ ∃ k : Int, x = 2 * k := by\n    constructor\n    · -- Prove the forward direction: if (if x % 2 = 0 then true else false) = true, then ∃ k : Int, x = 2 * k\n      intro h\n      have h₁ : x % 2 = 0 := by\n        by_contra h₁\n        -- If x % 2 ≠ 0, then (if x % 2 = 0 then true else false) = false\n        simp [h₁] at h\n        <;> simp_all (config := {decide := true})\n        <;> aesop\n      -- Since x % 2 = 0, x is even\n      use x / 2\n      have h₂ : x = 2 * (x / 2) := by\n        have h₃ := Int.emod_add_ediv x 2\n        omega\n      linarith\n    · -- Prove the backward direction: if ∃ k : Int, x = 2 * k, then (if x % 2 = 0 then true else false) = true\n      rintro ⟨k, hk⟩\n      have h₁ : x % 2 = 0 := by\n        have h₂ : x = 2 * k := by omega\n        rw [h₂]\n        simp [Int.mul_emod, Int.emod_emod]\n        <;> omega\n      -- Since x % 2 = 0, the condition (if x % 2 = 0 then true else false) = true\n      simp [h₁]\n      <;> aesop\n  -- Use the main equivalence to complete the proof\n  simp_all [ComputeIsEven, ComputeIsEven_precond, ComputeIsEven_postcond]\n  <;> aesop\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "hard_unfold"
+}

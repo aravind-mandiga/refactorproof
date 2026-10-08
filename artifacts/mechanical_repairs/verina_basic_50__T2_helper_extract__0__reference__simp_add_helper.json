@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_50__T2_helper_extract__0",
+ "task_id": "verina_basic_50",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "simp_add_helper",
+ "function_name": "Abs",
+ "helper": "Abs__rp_helper_4386b369",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "    simp [Abs_postcond, Abs]\n    apply And.intro\n    . intro h\n      split\n      case isTrue ht =>\n        have h': \u00ac0 \u2264 x := not_le.mpr ht\n        contradiction\n      case isFalse =>\n        rfl\n    . intro h\n      split\n      case isTrue =>\n        simp\n      case isFalse =>\n        contradiction\n",
+ "proof_after": "    simp [Abs_postcond, Abs, Abs__rp_helper_4386b369]\n    apply And.intro\n    . intro h\n      split\n      case isTrue ht =>\n        have h': \u00ac0 \u2264 x := not_le.mpr ht\n        contradiction\n      case isFalse =>\n        rfl\n    . intro h\n      split\n      case isTrue =>\n        simp\n      case isFalse =>\n        contradiction\n"
+}

@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_9/verina_advanced_9__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_9/verina_advanced_9__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_9/verina_advanced_9__T2_helper_extract__0.lean:17:33: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T2_helper_extract__0.lean:30:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T2_helper_extract__0.lean:42:73: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_9/verina_advanced_9__T2_helper_extract__0.lean:58:90: error: type mismatch\n  rfl\nhas type\n  ?m.6685 = ?m.6685 : Prop\nbut is expected to have type\n  RPOrig.countSumDivisibleBy n d h_precond = RPRef.countSumDivisibleBy n d h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.878,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 17,
+   "col": 33,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 30,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 42,
+   "col": 73,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 90,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.6685 = ?m.6685 : Prop\nbut is expected to have type\n  RPOrig.countSumDivisibleBy n d h_precond = RPRef.countSumDivisibleBy n d h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

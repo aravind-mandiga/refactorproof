@@ -1,0 +1,10 @@
+--- reference:verina_basic_11__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_11__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold lastDigit lastDigit_postcond
++  unfold lastDigit lastDigit__rp_helper_8d571788 lastDigit_postcond
+   constructor
+   · constructor
+     · simp
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

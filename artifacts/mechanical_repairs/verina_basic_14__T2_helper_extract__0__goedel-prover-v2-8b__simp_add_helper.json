@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_14__T2_helper_extract__0",
+ "task_id": "verina_basic_14",
+ "source": "goedel-prover-v2-8b",
+ "transformation": "T2_helper_extract",
+ "template": "simp_add_helper",
+ "function_name": "containsZ",
+ "helper": "containsZ__rp_helper_6f400cbb",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_main : (\u2203 x, x \u2208 s.toList \u2227 (x = 'z' \u2228 x = 'Z')) \u2194 (s.toList.any fun c => c = 'z' || c = 'Z') := by\n    constructor\n    \u00b7 -- Prove the forward direction: (\u2203 x, x \u2208 s.toList \u2227 (x = 'z' \u2228 x = 'Z')) \u2192 (s.toList.any fun c => c = 'z' || c = 'Z')\n      intro h\n      -- Use the definition of `List.any` to show the equivalence\n      have h\u2081 : s.toList.any (fun c => c = 'z' || c = 'Z') := by\n        -- Use the fact that `List.any` is equivalent to the existential form\n        simpa [List.any_cons, List.mem_cons, or_imp, or_assoc] using h\n      exact h\u2081\n    \u00b7 -- Prove the backward direction: (s.toList.any fun c => c = 'z' || c = 'Z') \u2192 (\u2203 x, x \u2208 s.toList \u2227 (x = 'z' \u2228 x = 'Z'))\n      intro h\n      -- Use the definition of `List.any` to show the equivalence\n      have h\u2081 : \u2203 x, x \u2208 s.toList \u2227 (x = 'z' \u2228 x = 'Z') := by\n        -- Use the fact that `List.any` is equivalent to the existential form\n        simpa [List.any_cons, List.mem_cons, or_imp, or_assoc] using h\n      exact h\u2081\n\n  -- Use the main lemma to prove the final statement\n  simp_all [containsZ_postcond, containsZ]\n  <;>\n  aesop\n",
+ "proof_after": "  have h_main : (\u2203 x, x \u2208 s.toList \u2227 (x = 'z' \u2228 x = 'Z')) \u2194 (s.toList.any fun c => c = 'z' || c = 'Z') := by\n    constructor\n    \u00b7 -- Prove the forward direction: (\u2203 x, x \u2208 s.toList \u2227 (x = 'z' \u2228 x = 'Z')) \u2192 (s.toList.any fun c => c = 'z' || c = 'Z')\n      intro h\n      -- Use the definition of `List.any` to show the equivalence\n      have h\u2081 : s.toList.any (fun c => c = 'z' || c = 'Z') := by\n        -- Use the fact that `List.any` is equivalent to the existential form\n        simpa [List.any_cons, List.mem_cons, or_imp, or_assoc] using h\n      exact h\u2081\n    \u00b7 -- Prove the backward direction: (s.toList.any fun c => c = 'z' || c = 'Z') \u2192 (\u2203 x, x \u2208 s.toList \u2227 (x = 'z' \u2228 x = 'Z'))\n      intro h\n      -- Use the definition of `List.any` to show the equivalence\n      have h\u2081 : \u2203 x, x \u2208 s.toList \u2227 (x = 'z' \u2228 x = 'Z') := by\n        -- Use the fact that `List.any` is equivalent to the existential form\n        simpa [List.any_cons, List.mem_cons, or_imp, or_assoc] using h\n      exact h\u2081\n\n  -- Use the main lemma to prove the final statement\n  simp_all [containsZ_postcond, containsZ, containsZ__rp_helper_6f400cbb]\n  <;>\n  aesop\n"
+}

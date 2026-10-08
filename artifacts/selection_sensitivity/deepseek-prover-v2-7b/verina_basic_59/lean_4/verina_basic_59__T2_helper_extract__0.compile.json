@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_59/lean_4/verina_basic_59__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_59/lean_4/verina_basic_59__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_59/lean_4/verina_basic_59__T2_helper_extract__0.lean:15:29: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_59/lean_4/verina_basic_59__T2_helper_extract__0.lean:23:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_59/lean_4/verina_basic_59__T2_helper_extract__0.lean:23:12: warning: The declaration 'DoubleQuadruple__rp_helper_8062be2e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_59/lean_4/verina_basic_59__T2_helper_extract__0.lean:42:62: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_59/lean_4/verina_basic_59__T2_helper_extract__0.lean:59:8: error: tactic 'rfl' failed, the left-hand side\n  (DoubleQuadruple__rp_helper_8062be2e x h_precond).1\nis not definitionally equal to the right-hand side\n  x * 2\nx : ℤ\nh_precond : DoubleQuadruple_precond x\n⊢ (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 = x * 2\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_59/lean_4/verina_basic_59__T2_helper_extract__0.lean:65:8: error: tactic 'rfl' failed, the left-hand side\n  (DoubleQuadruple__rp_helper_8062be2e x h_precond).2\nis not definitionally equal to the right-hand side\n  (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 * 2\nx : ℤ\nh_precond : DoubleQuadruple_precond x\nh₁ : (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 = x * 2\n⊢ (DoubleQuadruple__rp_helper_8062be2e x h_precond).2 = (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 * 2\n",
+ "stderr": "",
+ "elapsed_seconds": 8.821,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'DoubleQuadruple__rp_helper_8062be2e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 42,
+   "col": 62,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 59,
+   "col": 8,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  (DoubleQuadruple__rp_helper_8062be2e x h_precond).1\nis not definitionally equal to the right-hand side\n  x * 2\nx : ℤ\nh_precond : DoubleQuadruple_precond x\n⊢ (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 = x * 2"
+  },
+  {
+   "line": 65,
+   "col": 8,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  (DoubleQuadruple__rp_helper_8062be2e x h_precond).2\nis not definitionally equal to the right-hand side\n  (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 * 2\nx : ℤ\nh_precond : DoubleQuadruple_precond x\nh₁ : (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 = x * 2\n⊢ (DoubleQuadruple__rp_helper_8062be2e x h_precond).2 = (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 * 2\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

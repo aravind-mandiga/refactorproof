@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_35",
+ "variant_id": "verina_basic_35__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_ccd247cb : Array Int :=\n    let nonZeros := arr.toList.filter (· ≠ 0)\n    let zeros := arr.toList.filter (· = 0)\n    Array.mk (nonZeros ++ zeros)\n  __rp_tmp_ccd247cb\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_ccd247cb",
+  "seed": 0
+ },
+ "spec_hash": "dd892fa21884bc2e5d7f01a644c86b986b0ae75eb1d1fc1d3f877854b3d30ce1",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "5b1f553167fe5e51cd2cdaf15247f922c93c306f9e9f76be61bf7b6a29e22d87",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "MoveZeroesToEnd",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

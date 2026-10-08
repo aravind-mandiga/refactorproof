@@ -1,0 +1,73 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_1/verina_basic_1__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_1/verina_basic_1__T2_helper_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/certificates/verina_basic_1/verina_basic_1__T2_helper_extract__0.lean:14:29: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T2_helper_extract__0.lean:14:39: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T2_helper_extract__0.lean:23:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T2_helper_extract__0.lean:28:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T2_helper_extract__0.lean:28:12: warning: The declaration 'hasOppositeSign__rp_helper_5272bffb' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T2_helper_extract__0.lean:51:109: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T2_helper_extract__0.lean:51:109: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  |\n    (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign RPRef.hasOppositeSign__rp_helper_5272bffb;\n      rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T2_helper_extract__0.lean:55:104: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_1/verina_basic_1__T2_helper_extract__0.lean:55:104: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  |\n    (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign RPRef.hasOppositeSign__rp_helper_5272bffb;\n      rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 5.414,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 14,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'hasOppositeSign__rp_helper_5272bffb' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 51,
+   "col": 109,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 51,
+   "col": 109,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  |\n    (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign RPRef.hasOppositeSign__rp_helper_5272bffb;\n      rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 55,
+   "col": 104,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 55,
+   "col": 104,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  |\n    (delta RPOrig.hasOppositeSign RPRef.hasOppositeSign RPRef.hasOppositeSign__rp_helper_5272bffb;\n      rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:16:19: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:16:29: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:24:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:24:12: warning: The declaration 'myMin__rp_branch_c77e3e9a' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:42:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__unedited_dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:57:125: error: unsolved goals\ncase neg\na b : ℤ\nh_precond : myMin_precond a b\nh✝ : b < a\n⊢ (myMin__rp_branch_c77e3e9a a b h_precond ≤ a ∧ myMin__rp_branch_c77e3e9a a b h_precond ≤ b) ∧\n    (myMin__rp_branch_c77e3e9a a b h_precond = a ∨ myMin__rp_branch_c77e3e9a a b h_precond = b)\n",
+ "stderr": "",
+ "elapsed_seconds": 9.064,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 16,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'myMin__rp_branch_c77e3e9a' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 42,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 57,
+   "col": 125,
+   "severity": "error",
+   "text": "unsolved goals\ncase neg\na b : ℤ\nh_precond : myMin_precond a b\nh✝ : b < a\n⊢ (myMin__rp_branch_c77e3e9a a b h_precond ≤ a ∧ myMin__rp_branch_c77e3e9a a b h_precond ≤ b) ∧\n    (myMin__rp_branch_c77e3e9a a b h_precond = a ∨ myMin__rp_branch_c77e3e9a a b h_precond = b)\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

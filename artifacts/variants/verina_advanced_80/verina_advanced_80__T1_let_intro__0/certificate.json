@@ -1,0 +1,47 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_80",
+ "variant_id": "verina_advanced_80__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_80/verina_advanced_80__T1_let_intro__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.856,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": "rfl_nosmart",
+ "certificate_level": "rfl_nosmart",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.2465 = ?m.2465 : Prop\nbut is expected to have type\n  RPOrig.twoSum nums target h_precond = RPRef.twoSum nums target h_precond : Prop\n"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": true,
+   "errors": []
+  },
+  "delta_rfl": {
+   "ok": true,
+   "errors": []
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

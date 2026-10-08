@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_12",
+ "variant_id": "verina_basic_12__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_level": "simp_only",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__avoid_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 6.592,
+ "proof_region_errors": [
+  "tactic 'rfl' failed, the left-hand side\n  cubeSurfaceArea size h_precond\nis not definitionally equal to the right-hand side\n  6 * size * size\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\n⊢ cubeSurfaceArea size h_precond = 6 * size * size",
+  "tactic 'rfl' failed, the left-hand side\n  cubeSurfaceArea size h_precond\nis not definitionally equal to the right-hand side\n  6 * size * size\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\nh₁ : cubeSurfaceArea size h_precond - 6 * size * size = 0\n⊢ cubeSurfaceArea size h_precond = 6 * size * size\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "b2a1b92a1496992f7eba62ac7fd9a9b9a42641e1cdfe3e02e51018192ef2e3c1",
+ "spec_hash": "35aa279200d65ed096def6c82bb7a725efca6faffdd9afab3f82ec84271da3ca",
+ "proof_text": "  have h₁ : (cubeSurfaceArea (size) h_precond) - 6 * size * size = 0 := by\n    have h₂ : cubeSurfaceArea (size) h_precond = 6 * size * size := by\n      rfl\n    rw [h₂]\n    <;> simp [Nat.mul_assoc]\n    <;> ring_nf\n    <;> simp [Nat.sub_self]\n    <;> norm_num\n\n  have h₂ : 6 * size * size - (cubeSurfaceArea (size) h_precond) = 0 := by\n    have h₃ : cubeSurfaceArea (size) h_precond = 6 * size * size := by\n      rfl\n    rw [h₃]\n    <;> simp [Nat.mul_assoc]\n    <;> ring_nf\n    <;> simp [Nat.sub_self]\n    <;> norm_num\n\n  have h_main : cubeSurfaceArea_postcond (size) (cubeSurfaceArea (size) h_precond) h_precond := by\n    constructor\n    · -- Prove the first part: (cubeSurfaceArea (size) h_precond) - 6 * size * size = 0\n      exact h₁\n    · -- Prove the second part: 6 * size * size - (cubeSurfaceArea (size) h_precond) = 0\n      exact h₂\n\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "avoid_unfold"
+}

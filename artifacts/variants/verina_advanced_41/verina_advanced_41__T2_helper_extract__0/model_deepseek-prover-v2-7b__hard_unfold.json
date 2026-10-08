@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_advanced_41",
+ "variant_id": "verina_advanced_41__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b__hard_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 11.058,
+ "proof_region_errors": [
+  "tactic 'split_ifs' failed, no if-then-else conditions to split\na b c : ℤ\nh_precond : maxOfThree_precond a b c\n⊢ maxOfThree__rp_helper_7c6c6d3d a b c h_precond ≥ a ∧\n    maxOfThree__rp_helper_7c6c6d3d a b c h_precond ≥ b ∧\n      maxOfThree__rp_helper_7c6c6d3d a b c h_precond ≥ c ∧\n        (maxOfThree__rp_helper_7c6c6d3d a b c h_precond = a ∨\n          maxOfThree__rp_helper_7c6c6d3d a b c h_precond = b ∨ maxOfThree__rp_helper_7c6c6d3d a b c h_precond = c)\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "1462a6b721c7dd095a44b641ecc945854870d24e951d9f404ec392fc573da8df",
+ "spec_hash": "29128d6527435b82d1289774bfcd553408b4defe3af053982c1b9111688cb50a",
+ "proof_text": "  unfold maxOfThree maxOfThree_postcond\n  have h_main : (maxOfThree a b c h_precond) ≥ a ∧ (maxOfThree a b c h_precond) ≥ b ∧ (maxOfThree a b c h_precond) ≥ c ∧ ((maxOfThree a b c h_precond) = a ∨ (maxOfThree a b c h_precond) = b ∨ (maxOfThree a b c h_precond) = c) := by\n    dsimp only [maxOfThree, maxOfThree_postcond]\n    split_ifs <;>\n    (try {\n      simp_all [maxOfThree_precond, Int.le_of_lt]\n      <;>\n      (try omega) <;>\n      (try aesop) <;>\n      (try\n        {\n          (try aesop)\n          <;>\n          (try omega)\n          <;>\n          (try\n            {\n              left\n              <;> omega\n            })\n          <;>\n          (try\n            {\n              right\n              <;> left\n              <;> omega\n            })\n          <;>\n          (try\n            {\n              right\n              <;> right\n              <;> omega\n            })\n        })\n    }) <;>\n    (try\n      {\n        constructor <;>\n        (try omega) <;>\n        (try aesop)\n      }) <;>\n    (try\n      {\n        constructor <;>\n        (try omega) <;>\n        (try aesop)\n      }) <;>\n    (try\n      {\n        constructor <;>\n        (try omega) <;>\n        (try aesop)\n      }) <;>\n    (try\n      {\n        aesop\n      }) <;>\n    (try\n      {\n        constructor <;>\n        (try omega) <;>\n        (try aesop)\n      }) <;>\n    (try\n      {\n        simp_all [or_iff_not_imp_left, or_iff_not_imp_left]\n        <;>\n        tauto\n      }) <;>\n    (try\n      {\n        omega\n      })\n  -- The above steps use `aesop` to automatically handle the `omega` and other logical steps.\n  tauto\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "hard_unfold"
+}

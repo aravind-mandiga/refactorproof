@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_85",
+ "variant_id": "verina_basic_85__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  reverse__rp_helper_3dce61b4 a h_precond\n",
+ "transformed_code_aux": "def reverse_core (arr : Array Int) (i : Nat) : Array Int :=\n  if i < arr.size / 2 then\n    let j := arr.size - 1 - i\n    let temp := arr[i]!\n    let arr' := arr.set! i (arr[j]!)\n    let arr'' := arr'.set! j temp\n    reverse_core arr'' (i + 1)\n  else\n    arr\n\nprivate def reverse__rp_helper_3dce61b4 (a : Array Int) (h_precond : reverse_precond (a)) : Array Int :=\n  reverse_core a 0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "reverse__rp_helper_3dce61b4"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "34a99f23b2592e2b709479ad8a37d1292929d7907e5f5de6297455afaf32460a",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "1334b44badf397698f39f7e2fe8912e9db566e8019ed5431d14e7d408a94af92",
+ "code_aux_hash_original": "e1967331674cedf3591e77a37c141ea6ddaa5cfbbd9be860df1965c55bcafef9",
+ "tier": "basic",
+ "function_name": "reverse",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

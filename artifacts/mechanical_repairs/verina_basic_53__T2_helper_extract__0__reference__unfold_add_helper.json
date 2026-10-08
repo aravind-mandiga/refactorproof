@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_53__T2_helper_extract__0",
+ "task_id": "verina_basic_53",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "CalSum",
+ "helper": "CalSum__rp_helper_f974fb52",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": false,
+ "outcome": "proof_fails",
+ "first_error": "unknown constant 'CalSum.loop'",
+ "proof_before": "  unfold CalSum_postcond CalSum\n  induction N with\n  | zero =>\n    unfold CalSum.loop\n    simp\n  | succ n ih =>\n    unfold CalSum_precond at ih\n    simp at ih\n    unfold CalSum.loop\n    simp\n    rw [Nat.mul_add]\n    rw [ih]\n    rw [\u2190 Nat.add_mul]\n    rw [Nat.add_comm, Nat.mul_comm]\n",
+ "proof_after": "  unfold CalSum_postcond CalSum CalSum__rp_helper_f974fb52\n  induction N with\n  | zero =>\n    unfold CalSum.loop\n    simp\n  | succ n ih =>\n    unfold CalSum_precond at ih\n    simp at ih\n    unfold CalSum.loop\n    simp\n    rw [Nat.mul_add]\n    rw [ih]\n    rw [\u2190 Nat.add_mul]\n    rw [Nat.add_comm, Nat.mul_comm]\n"
+}

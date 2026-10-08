@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_63",
+ "variant_id": "verina_advanced_63__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  removeDuplicates__rp_helper_4840b02c nums h_precond\n",
+ "transformed_code_aux": "\nprivate def removeDuplicates__rp_helper_4840b02c (nums : List Int) (h_precond : removeDuplicates_precond (nums)) : Nat :=\n  match nums with\n  | [] =>\n    0\n  | h :: t =>\n    let init := h\n    let initCount := 1\n    let rec countUniques (prev : Int) (xs : List Int) (k : Nat) : Nat :=\n      match xs with\n      | [] =>\n        k\n      | head :: tail =>\n        let isDuplicate := head = prev\n        if isDuplicate then\n          countUniques prev tail k\n        else\n          let newK := k + 1\n          countUniques head tail newK\n    countUniques init t initCount\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "removeDuplicates__rp_helper_4840b02c"
+ ],
+ "metadata": {
+  "binders": [
+   "nums",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "a0c6d40d228553129b2fe23ee77ae736d3e9a80f31b794a2bed77fcba4123771",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "4dbf25609fbca18c698cb32ac5972f007c2b3e43df4fd6a6b5c6f60b280ced64",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "removeDuplicates",
+ "code_loc_original": 18,
+ "code_loc_refactored": 20
+}

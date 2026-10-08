@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_59",
+ "variant_id": "verina_basic_59__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  DoubleQuadruple__rp_helper_8062be2e x h_precond\n",
+ "transformed_code_aux": "\nprivate def DoubleQuadruple__rp_helper_8062be2e (x : Int) (h_precond : DoubleQuadruple_precond (x)) : (Int × Int) :=\n  let a := 2 * x\n  let b := 2 * a\n  (a, b)\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "DoubleQuadruple__rp_helper_8062be2e"
+ ],
+ "metadata": {
+  "binders": [
+   "x",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "92aaa4d259c67625406f056da6f929a6ac3231366f2353189b87f378030d398b",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "17ffd7fd8c27a5ca73fc55729fe0d3cf6ce6a1d1e9bcffa301abfc2bc54f01bc",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "DoubleQuadruple",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

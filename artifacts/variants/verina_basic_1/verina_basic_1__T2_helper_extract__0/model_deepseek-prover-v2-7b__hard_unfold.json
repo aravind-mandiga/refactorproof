@@ -1,0 +1,33 @@
+{
+ "task_id": "verina_basic_1",
+ "variant_id": "verina_basic_1__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b__hard_unfold",
+ "generation_attempt": 3,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "type_mismatch",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 12.634,
+ "proof_region_errors": [
+  "type mismatch, term\n  h₃\nafter simplification has type\n  a * b < 0 : Prop\nbut is expected to have type\n  hasOppositeSign__rp_helper_5272bffb a b h_precond = true : Prop",
+  "type mismatch, term\n  h₃\nafter simplification has type\n  a * b < 0 : Prop\nbut is expected to have type\n  hasOppositeSign__rp_helper_5272bffb a b h_precond = true : Prop",
+  "linarith failed to find a contradiction\ncase a\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh h₁ : ¬(a < 0 ∧ b > 0 ∨ a > 0 ∧ b < 0)\nh₃ : a * b < 0\nh₅ : a > 0\na✝ : 0 > b\n⊢ False failed"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "ff638b3c10c12125d6fa25593fb16b78858275e6b5ccfaf63a9bc62b2d1c5514",
+ "spec_hash": "43e0a7d0f50b6844ce2ecb2d157e44c1ddca1b1d778219cb4401c97c796e07d2",
+ "proof_text": "  unfold hasOppositeSign hasOppositeSign_postcond\n  have h_main : hasOppositeSign_postcond a b (hasOppositeSign a b h_precond) h_precond := by\n    constructor\n    · -- First implication: if (a < 0 ∧ b > 0) ∨ (a > 0 ∧ b < 0), then a * b < 0\n      intro h\n      -- Consider the two cases of h\n      cases h with\n      | inl h =>\n        -- Case: a < 0 ∧ b > 0\n        have h₁ : a < 0 := h.1\n        have h₂ : b > 0 := h.2\n        have h₃ : a * b < 0 := by\n          -- Since a < 0 and b > 0, a * b < 0\n          nlinarith [mul_self_nonneg a, mul_self_nonneg b]\n        simpa [hasOppositeSign] using h₃\n      | inr h =>\n        -- Case: a > 0 ∧ b < 0\n        have h₁ : a > 0 := h.1\n        have h₂ : b < 0 := h.2\n        have h₃ : a * b < 0 := by\n          -- Since a > 0 and b < 0, a * b < 0\n          nlinarith [mul_self_nonneg a, mul_self_nonneg b]\n        simpa [hasOppositeSign] using h₃\n    · -- Second implication: if ¬((a < 0 ∧ b > 0) ∨ (a > 0 ∧ b < 0)), then not (a * b < 0)\n      intro h\n      -- Simplify the negation using classical reasoning\n      have h₁ : ¬((a < 0 ∧ b > 0) ∨ (a > 0 ∧ b < 0)) := h\n      have h₂ : ¬(a * b < 0) := by\n        intro h₃\n        apply h₁\n        -- If a * b < 0, then a and b have opposite signs\n        have h₄ : (a < 0 ∧ b > 0) ∨ (a > 0 ∧ b < 0) := by\n          by_cases h₅ : a > 0\n          · -- Case a > 0\n            have h₆ : b < 0 := by\n              by_contra h₆\n              -- If b ≥ 0, then a * b ≥ 0, which contradicts a * b < 0\n              have h₇ : b ≥ 0 := by linarith\n              have h₈ : a * b ≥ 0 := by nlinarith\n              nlinarith\n            exact Or.inr ⟨h₅, h₆⟩\n          · -- Case a ≤ 0\n            have h₅ : a ≤ 0 := by nlinarith\n            by_cases h₆ : a < 0\n            · -- Case a < 0\n              have h₇ : b > 0 := by\n                by_contra h₇\n                have h₈ : b ≤ 0 := by nlinarith\n                have h₉ : a * b ≥ 0 := by\n                  have h₁₀ : a * b ≤ 0 := by nlinarith\n                  nlinarith\n                nlinarith\n              exact Or.inl ⟨h₆, h₇⟩\n            · -- Case a = 0\n              have h₆ : a = 0 := by nlinarith\n              rw [h₆] at h₃\n              have h₇ : (0 : ℤ) * b < 0 := by simpa [h₆] using h₃\n              norm_num at h₇\n              <;> simp_all\n        exact h₄\n      simpa [hasOppositeSign] using h₂\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "hard_unfold"
+}

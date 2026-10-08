@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_95",
+ "variant_id": "verina_basic_95__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_11eb44d6 : Array Int :=\n    let i_nat := Int.toNat i\n    let j_nat := Int.toNat j\n    let arr1 := arr.set! i_nat (arr[j_nat]!)\n    let arr2 := arr1.set! j_nat (arr[i_nat]!)\n    arr2\n  __rp_tmp_11eb44d6\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_11eb44d6",
+  "seed": 0
+ },
+ "spec_hash": "f400ff69912907b911497ff88ee1ffa9a022ee97696ae7f99f2abe826f9368db",
+ "proof_hash": "21f04f749c0ba4d00c372384e7aa0bb582649967581fc327af3b35af84685dc1",
+ "code_hash_original": "3260199806338a7fbcbbe87fcb335f4e23fb03ea00e2a2a3a6ed8bfc11436521",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "swap",
+ "code_loc_original": 5,
+ "code_loc_refactored": 7
+}

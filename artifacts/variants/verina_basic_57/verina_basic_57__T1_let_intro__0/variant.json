@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_57",
+ "variant_id": "verina_basic_57__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_b8092f61 : Nat :=\n    countLessThan numbers threshold\n  __rp_tmp_b8092f61\n",
+ "transformed_code_aux": "def countLessThan (numbers : Array Int) (threshold : Int) : Nat :=\n  let rec count (i : Nat) (acc : Nat) : Nat :=\n    if i < numbers.size then\n      let new_acc := if numbers[i]! < threshold then acc + 1 else acc\n      count (i + 1) new_acc\n    else\n      acc\n  count 0 0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_b8092f61",
+  "seed": 0
+ },
+ "spec_hash": "c7b4e2a6fae0792b7691bbd1c453d815e2ef880ace03795c39dbf8838625907a",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "ade77f48b6ea0f8ef4f3a8fc62050fe9ad5917719bbfe0d2720e5e4125c653f6",
+ "code_aux_hash_original": "d25e4ba478889cd0cf77ff96e4c4d3c76009bda5ea06f90e6157bd5ce42f5739",
+ "tier": "basic",
+ "function_name": "CountLessThan",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

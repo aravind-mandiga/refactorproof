@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_38",
+ "variant_id": "verina_basic_38__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_25b80aff : Bool :=\n    match s.toList with\n    | []      => true\n    | c :: cs => cs.all (fun x => x = c)\n  __rp_tmp_25b80aff\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_25b80aff",
+  "seed": 0
+ },
+ "spec_hash": "a8e239b410f1a3682adcd1e31807fd947b23881645d3602781a60d48738cf53a",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "408884d43f696c4a11d75affd5e314ca85c30afcb18e5efd948d4f94ba35e94d",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "allCharactersSame",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

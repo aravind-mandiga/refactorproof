@@ -1,0 +1,24 @@
+{
+ "model_id": "deepseek-prover-v2-7b",
+ "task_id": "verina_basic_96",
+ "attempt": 3,
+ "proof_hash": "21abf09f4e1c03cce7fc699441d59313b8e40e53812b20c379487ebaac97520a",
+ "proof_loc": 53,
+ "proof_tokens": 219,
+ "survival": [
+  {
+   "variant_id": "verina_basic_96__T1_let_intro__0",
+   "transformation": "T1_let_intro",
+   "severity": "D",
+   "survives": true,
+   "outcome": "survives"
+  },
+  {
+   "variant_id": "verina_basic_96__T2_helper_extract__0",
+   "transformation": "T2_helper_extract",
+   "severity": "S",
+   "survives": true,
+   "outcome": "survives"
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_34/verina_advanced_34__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_34/verina_advanced_34__T2_helper_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/certificates/verina_advanced_34/verina_advanced_34__T2_helper_extract__0.lean:13:42: warning: unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_34/verina_advanced_34__T2_helper_extract__0.lean:36:52: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_34/verina_advanced_34__T2_helper_extract__0.lean:52:80: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_34/verina_advanced_34__T2_helper_extract__0.lean:52:12: warning: The declaration 'longestIncreasingSubsequence__rp_helper_325e1b4a' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/certificates/verina_advanced_34/verina_advanced_34__T2_helper_extract__0.lean:85:148: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  |\n    (delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n        RPRef.longestIncreasingSubsequence__rp_helper_325e1b4a;\n      rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_34/verina_advanced_34__T2_helper_extract__0.lean:85:148: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_34/verina_advanced_34__T2_helper_extract__0.lean:89:143: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  |\n    (delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n        RPRef.longestIncreasingSubsequence__rp_helper_325e1b4a;\n      rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_34/verina_advanced_34__T2_helper_extract__0.lean:89:143: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 1.95,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 36,
+   "col": 52,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 52,
+   "col": 80,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 52,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'longestIncreasingSubsequence__rp_helper_325e1b4a' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 85,
+   "col": 148,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  |\n    (delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n        RPRef.longestIncreasingSubsequence__rp_helper_325e1b4a;\n      rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 85,
+   "col": 148,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 89,
+   "col": 143,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  |\n    (delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n        RPRef.longestIncreasingSubsequence__rp_helper_325e1b4a;\n      rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 89,
+   "col": 143,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

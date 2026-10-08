@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_73",
+ "variant_id": "verina_basic_73__T3_comm_swap__1",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_73/verina_basic_73__T3_comm_swap__1.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 2.164,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.24343 = ?m.24343 : Prop\nbut is expected to have type\n  RPOrig.Match s p h_precond = RPRef.Match s p h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.24439 = ?m.24439 : Prop\nbut is expected to have type\n  RPOrig.Match s p h_precond = RPRef.Match s p h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  let sList := s.toList;\n  let pList := p.toList;\n  ⋯.fix\n    (fun i a =>\n      if h : i < sList.length then if h : sList[i]! ≠ pList[i]! ∧ pList[i]! ≠ '?' then false else a (i + 1) ⋯ else true)\n    0\nis not definitionally equal to the right-hand side\n  let sList := s.toList;\n  let pList := p.toList;\n  ⋯.fix\n    (fun i a =>\n      if h : i < sList.length then if h : sList[i]! ≠ pList[i]! ∧ pList[i]! ≠ '?' then false else a (1 + i) ⋯ else true)\n    0\ns p : S"
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < s.toList.length then\n        if h : s.toList[i]! ≠ p.toList[i]! ∧ p.toList[i]! ≠ '?' then false else a (i + 1) ⋯\n      else true)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < s.toList.length then\n        if h : s.toList[i]! ≠ p.toList[i]! ∧ p.toList[i]! ≠ '?' then false else a (1 + i) ⋯\n      else true)\n    0\ns p : String\nh_precond : Match_precond s p\n⊢ ⋯.fix\n    ",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.42070'"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < s.data.length then if h : s.data[i]! ≠ p.data[i]! ∧ p.data[i]! ≠ '?' then false else a (i + 1) ⋯\n      else true)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < s.data.length then if h : s.data[i]! ≠ p.data[i]! ∧ p.data[i]! ≠ '?' then false else a (1 + i) ⋯\n      else true)\n    0\ns p : String\nh_precond : Match_precond s p\n⊢ ⋯.fix\n      (fun i a =>\n        if h : i <",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.59146'"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < s.toList.length then\n        if h : s.toList[i]! ≠ p.toList[i]! ∧ p.toList[i]! ≠ '?' then false else a (i + 1) ⋯\n      else true)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < s.toList.length then\n        if h : s.toList[i]! ≠ p.toList[i]! ∧ p.toList[i]! ≠ '?' then false else a (1 + i) ⋯\n      else true)\n    0\ns p : String\nh_precond : Match_precond s p\n⊢ ⋯.fix\n    ",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.64665'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

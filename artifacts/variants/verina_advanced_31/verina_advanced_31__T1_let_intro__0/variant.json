@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_31",
+ "variant_id": "verina_advanced_31__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_cd533976 : Nat :=\n    let subs := subsequences xs\n    let increasing := subs.filter isStrictlyIncreasing\n    increasing.foldl (fun acc s => max acc s.length) 0\n  __rp_tmp_cd533976\n",
+ "transformed_code_aux": "-- Generate all subsequences\ndef subsequences {α : Type} : List α → List (List α)\n  | [] => [[]]\n  | x :: xs =>\n    let subs := subsequences xs\n    subs ++ subs.map (fun s => x :: s)\n\n-- Check if a list is strictly increasing\ndef isStrictlyIncreasing : List Int → Bool\n  | [] => true\n  | [_] => true\n  | x :: y :: rest => if x < y then isStrictlyIncreasing (y :: rest) else false\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_cd533976",
+  "seed": 0
+ },
+ "spec_hash": "2bca1e4804bacc83c8c9ed5e1dfec6e15fddc53367053af48bfce0bc97e43c6c",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "e14e992237ddde3503fe4a2917057211ae607f63227af70e81b1e6fe5eab7db7",
+ "code_aux_hash_original": "60f3e8587a95518e36194f1450c34d879e257fab4cb2a60002597d3531aef14d",
+ "tier": "advanced",
+ "function_name": "longestIncreasingSubseqLength",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

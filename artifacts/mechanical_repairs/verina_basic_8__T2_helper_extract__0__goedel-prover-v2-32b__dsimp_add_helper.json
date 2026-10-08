@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_8__T2_helper_extract__0",
+ "task_id": "verina_basic_8",
+ "source": "goedel-prover-v2-32b",
+ "transformation": "T2_helper_extract",
+ "template": "dsimp_add_helper",
+ "function_name": "myMin",
+ "helper": "myMin__rp_helper_829c4a21",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_main : myMin_postcond (a) (b) (myMin (a) (b) h_precond) h_precond := by\n    dsimp [myMin_postcond, myMin, myMin_precond] at *\n    split_ifs at * <;>\n    (try { contradiction }) <;>\n    (try {\n      -- Case: a \u2264 b\n      constructor\n      \u00b7 -- Prove (a \u2264 a \u2227 a \u2264 b)\n        constructor <;>\n        (try { linarith }) <;>\n        (try { assumption })\n      \u00b7 -- Prove (a = a \u2228 a = b)\n        exact Or.inl rfl\n    }) <;>\n    (try {\n      -- Case: \u00ac(a \u2264 b)\n      constructor\n      \u00b7 -- Prove (b \u2264 a \u2227 b \u2264 b)\n        constructor <;>\n        (try { linarith }) <;>\n        (try { assumption })\n      \u00b7 -- Prove (b = a \u2228 b = b)\n        exact Or.inr rfl\n    })\n  exact h_main\n",
+ "proof_after": "  have h_main : myMin_postcond (a) (b) (myMin (a) (b) h_precond) h_precond := by\n    dsimp [myMin_postcond, myMin, myMin_precond, myMin__rp_helper_829c4a21] at *\n    split_ifs at * <;>\n    (try { contradiction }) <;>\n    (try {\n      -- Case: a \u2264 b\n      constructor\n      \u00b7 -- Prove (a \u2264 a \u2227 a \u2264 b)\n        constructor <;>\n        (try { linarith }) <;>\n        (try { assumption })\n      \u00b7 -- Prove (a = a \u2228 a = b)\n        exact Or.inl rfl\n    }) <;>\n    (try {\n      -- Case: \u00ac(a \u2264 b)\n      constructor\n      \u00b7 -- Prove (b \u2264 a \u2227 b \u2264 b)\n        constructor <;>\n        (try { linarith }) <;>\n        (try { assumption })\n      \u00b7 -- Prove (b = a \u2228 b = b)\n        exact Or.inr rfl\n    })\n  exact h_main\n"
+}

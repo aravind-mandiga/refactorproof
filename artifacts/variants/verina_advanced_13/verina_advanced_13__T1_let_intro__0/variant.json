@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_13",
+ "variant_id": "verina_advanced_13__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_d2a5e62f : Bool :=\n    let sortedChords := chords.map (fun chord =>\n      let a := chord[0]!\n      let b := chord[1]!\n      if a > b then [b, a] else [a, b]\n    )\n\n    let rec checkIntersection (stack : List (List Nat)) (remaining : List (List Nat)) : Bool :=\n      match remaining with\n      | [] => false\n      | chord :: rest =>\n        let a := chord[0]!\n        let b := chord[1]!\n        let newStack := stack.dropWhile (fun c => (c)[1]! < a)\n        match newStack with\n        | [] => checkIntersection (chord :: newStack) rest\n        | top :: _ =>\n          if top[1]! > a && top[1]! < b then\n            true\n          else\n            checkIntersection (chord :: newStack) rest\n\n    let rec insert (x : List Nat) (xs : List (List Nat)) : List (List Nat) :=\n      match xs with\n      | [] => [x]\n      | y :: ys => if x[0]! < y[0]! then x :: xs else y :: insert x ys\n\n    let rec sort (xs : List (List Nat)) : List (List Nat) :=\n      match xs with\n      | [] => []\n      | x :: xs => insert x (sort xs)\n\n    let sortedChords := sort sortedChords\n    checkIntersection [] sortedChords\n  __rp_tmp_d2a5e62f\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_d2a5e62f",
+  "seed": 0
+ },
+ "spec_hash": "0253a4324880c0e845d5ca158befe907f561778b6aca9eaca961641d77d26f41",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "d015a6ea48b11db80a84418bff53563155070d480bd7add227519928ba18c023",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "hasChordIntersection",
+ "code_loc_original": 29,
+ "code_loc_refactored": 31
+}

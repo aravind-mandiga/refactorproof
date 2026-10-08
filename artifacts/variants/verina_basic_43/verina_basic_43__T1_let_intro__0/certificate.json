@@ -1,0 +1,51 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_43",
+ "variant_id": "verina_basic_43__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_43/verina_basic_43__T1_let_intro__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.731,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": "rfl_nosmart",
+ "certificate_level": "rfl_nosmart",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1244 = ?m.1244 : Prop\nbut is expected to have type\n  RPOrig.sumOfFourthPowerOfOddNumbers n h_precond = RPRef.sumOfFourthPowerOfOddNumbers n h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": true,
+   "errors": []
+  },
+  "delta_rfl": {
+   "ok": true,
+   "errors": []
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "simp made no progress"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "simp made no progress\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

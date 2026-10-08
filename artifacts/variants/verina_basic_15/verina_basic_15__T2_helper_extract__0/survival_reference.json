@@ -1,0 +1,27 @@
+{
+ "task_id": "verina_basic_15",
+ "variant_id": "verina_basic_15__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.51,
+ "proof_region_errors": [
+  "tactic 'constructor' failed, no applicable constructor found\ncase mp\na : Array ℤ\nh_precond : containsConsecutiveNumbers_precond a\ni : ℕ\nhi : i < a.size - 1\nhconsec : a[i]! + 1 = a[i + 1]!\nhi' : 1 + i < a.size\nhi'' : i < a.size\n⊢ containsConsecutiveNumbers__rp_helper_906cb743 a h_precond = true",
+  "simp made no progress\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "6bf0a86ec82ea6e8377a3bf477a9205f2d0b08ded7541aa7690a1b85776cc078",
+ "spec_hash": "2deae86e6b7418297451c43b8dff245af3365f070f05b7bd291ad4134cb28676"
+}

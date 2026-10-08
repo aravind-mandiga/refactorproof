@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_advanced_41__T2_helper_extract__0",
+ "task_id": "verina_advanced_41",
+ "source": "deepseek-prover-v2-7b",
+ "transformation": "T2_helper_extract",
+ "template": "dsimp_add_helper",
+ "function_name": "maxOfThree",
+ "helper": "maxOfThree__rp_helper_7c6c6d3d",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_main : (maxOfThree a b c h_precond >= a \u2227 maxOfThree a b c h_precond >= b \u2227 maxOfThree a b c h_precond >= c) \u2227 (maxOfThree a b c h_precond = a \u2228 maxOfThree a b c h_precond = b \u2228 maxOfThree a b c h_precond = c) := by\n    dsimp only [maxOfThree, maxOfThree_precond] at *\n    split_ifs <;> simp_all (config := {decide := true}) <;>\n    (try omega) <;>\n    (try\n      (\n        cases h <;>\n        simp_all (config := {decide := true}) <;>\n        omega\n      )) <;>\n    (try\n      (\n        aesop\n      )) <;>\n    (try\n      (\n        omega\n      ))\n    <;>\n    aesop\n  exact h_main\n",
+ "proof_after": "  have h_main : (maxOfThree a b c h_precond >= a \u2227 maxOfThree a b c h_precond >= b \u2227 maxOfThree a b c h_precond >= c) \u2227 (maxOfThree a b c h_precond = a \u2228 maxOfThree a b c h_precond = b \u2228 maxOfThree a b c h_precond = c) := by\n    dsimp only [maxOfThree, maxOfThree_precond, maxOfThree__rp_helper_7c6c6d3d] at *\n    split_ifs <;> simp_all (config := {decide := true}) <;>\n    (try omega) <;>\n    (try\n      (\n        cases h <;>\n        simp_all (config := {decide := true}) <;>\n        omega\n      )) <;>\n    (try\n      (\n        aesop\n      )) <;>\n    (try\n      (\n        omega\n      ))\n    <;>\n    aesop\n  exact h_main\n"
+}

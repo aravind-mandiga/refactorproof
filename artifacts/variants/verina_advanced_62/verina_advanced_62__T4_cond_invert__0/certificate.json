@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_62",
+ "variant_id": "verina_advanced_62__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_62/verina_advanced_62__T4_cond_invert__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 1.364,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": "simp_only",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.13939 = ?m.13939 : Prop\nbut is expected to have type\n  RPOrig.rain heights h_precond = RPRef.rain heights h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.15500 = ?m.15500 : Prop\nbut is expected to have type\n  RPOrig.rain heights h_precond = RPRef.rain heights h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if heights.length < 3 then 0\n  else\n    let n := heights.length;\n    RPOrig.rain.aux._unary heights ⟨0, ⟨n - 1, ⟨heights[0]!, ⟨heights[n - 1]!, 0⟩⟩⟩⟩\nis not definitionally equal to the right-hand side\n  if ¬heights.length < 3 then\n    let n := heights.length;\n    RPRef.rain.aux._unary heights ⟨0, ⟨n - 1, ⟨heights[0]!, ⟨heights[n - 1]!, 0⟩⟩⟩⟩\n  else 0\nheights : List Int\nh_precond : rain_precond heights\n⊢ (if heights.length < 3 then 0\n    else\n      let n "
+   ]
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if heights.length < 3 then 0\n  else\n    RPOrig.rain.aux._unary heights\n      ⟨0, ⟨heights.length - 1, ⟨heights[0]?.getD 0, ⟨heights[heights.length - 1]?.getD 0, 0⟩⟩⟩⟩\nis not definitionally equal to the right-hand side\n  if 3 ≤ heights.length then\n    RPRef.rain.aux._unary heights\n      ⟨0, ⟨heights.length - 1, ⟨heights[0]?.getD 0, ⟨heights[heights.length - 1]?.getD 0, 0⟩⟩⟩⟩\n  else 0\nheights : List Int\nh_precond : rain_precond heights\n⊢ (if heights.length",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.24673'\n"
+   ]
+  },
+  "bycases": {
+   "ok": true,
+   "errors": []
+  },
+  "bycases_ite": {
+   "ok": true,
+   "errors": []
+  },
+  "split_simp_all": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

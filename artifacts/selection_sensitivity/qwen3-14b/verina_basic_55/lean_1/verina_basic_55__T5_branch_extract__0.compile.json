@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/qwen3-14b/verina_basic_55/lean_1/verina_basic_55__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/qwen3-14b/verina_basic_55/lean_1/verina_basic_55__T5_branch_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/qwen3-14b/verina_basic_55/lean_1/verina_basic_55__T5_branch_extract__0.lean:13:21: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/qwen3-14b/verina_basic_55/lean_1/verina_basic_55__T5_branch_extract__0.lean:13:31: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/qwen3-14b/verina_basic_55/lean_1/verina_basic_55__T5_branch_extract__0.lean:21:61: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/qwen3-14b/verina_basic_55/lean_1/verina_basic_55__T5_branch_extract__0.lean:39:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/qwen3-14b/verina_basic_55/lean_1/verina_basic_55__T5_branch_extract__0.lean:51:70: error: unsolved goals\na b : Int\nh_precond : Compare_precond a b\n⊢ ¬a = b → Compare__rp_branch_e4570326 a b h_precond = false\n",
+ "stderr": "",
+ "elapsed_seconds": 0.569,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 21,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 61,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 51,
+   "col": 70,
+   "severity": "error",
+   "text": "unsolved goals\na b : Int\nh_precond : Compare_precond a b\n⊢ ¬a = b → Compare__rp_branch_e4570326 a b h_precond = false\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

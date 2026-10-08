@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_50/verina_basic_50__T2_helper_extract__0/model_goedel-prover-v2-8b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_50/verina_basic_50__T2_helper_extract__0/model_goedel-prover-v2-8b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_50/verina_basic_50__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:14:17: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_50/verina_basic_50__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:22:47: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_50/verina_basic_50__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:22:12: warning: The declaration 'Abs__rp_helper_4386b369' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_50/verina_basic_50__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:39:42: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_50/verina_basic_50__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:66:16: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≥ 0\n  a - b ≥ 1\nwhere\n a := x\n b := Abs__rp_helper_4386b369 x h_precond\nartifacts/variants/verina_basic_50/verina_basic_50__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:77:16: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≤ -1\n  a + b ≤ -1\nwhere\n a := x\n b := Abs__rp_helper_4386b369 x h_precond\n",
+ "stderr": "",
+ "elapsed_seconds": 7.017,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 17,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 47,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'Abs__rp_helper_4386b369' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 39,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 66,
+   "col": 16,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≥ 0\n  a - b ≥ 1\nwhere\n a := x\n b := Abs__rp_helper_4386b369 x h_precond"
+  },
+  {
+   "line": 77,
+   "col": 16,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≤ -1\n  a + b ≤ -1\nwhere\n a := x\n b := Abs__rp_helper_4386b369 x h_precond\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "other"
+}

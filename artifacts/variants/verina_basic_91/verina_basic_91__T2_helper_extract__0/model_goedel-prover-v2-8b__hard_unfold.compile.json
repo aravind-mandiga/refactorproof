@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_91/verina_basic_91__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_91/verina_basic_91__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_91/verina_basic_91__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:15:18: warning: unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_91/verina_basic_91__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:15:28: warning: unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_91/verina_basic_91__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:23:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_91/verina_basic_91__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:23:12: warning: The declaration 'Swap__rp_helper_6bee5f12' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_91/verina_basic_91__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:45:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_91/verina_basic_91__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:64:9: warning: aesop: failed to prove the goal. Some goals were not explored because the maximum rule application depth (30) was reached. Set option 'maxRuleApplicationDepth' to increase the limit.\nartifacts/variants/verina_basic_91/verina_basic_91__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:61:76: error: unsolved goals\ncase right.right.left.h\nX Y : ℤ\nh_precond : Swap_precond X Y\na : ¬X = Y\na_1 : (Swap__rp_helper_6bee5f12 X Y h_precond).1 = X\n⊢ False\n",
+ "stderr": "",
+ "elapsed_seconds": 10.403,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 18,
+   "severity": "warning",
+   "text": "unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'Swap__rp_helper_6bee5f12' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 45,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 64,
+   "col": 9,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal. Some goals were not explored because the maximum rule application depth (30) was reached. Set option 'maxRuleApplicationDepth' to increase the limit."
+  },
+  {
+   "line": 61,
+   "col": 76,
+   "severity": "error",
+   "text": "unsolved goals\ncase right.right.left.h\nX Y : ℤ\nh_precond : Swap_precond X Y\na : ¬X = Y\na_1 : (Swap__rp_helper_6bee5f12 X Y h_precond).1 = X\n⊢ False\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

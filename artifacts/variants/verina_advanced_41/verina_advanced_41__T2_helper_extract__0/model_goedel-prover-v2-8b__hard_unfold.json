@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_advanced_41",
+ "variant_id": "verina_advanced_41__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__hard_unfold",
+ "generation_attempt": 1,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 6.824,
+ "proof_region_errors": [
+  "tactic 'split_ifs' failed, no if-then-else conditions to split\na b c : ℤ\nh_precond : True\n⊢ (maxOfThree__rp_helper_7c6c6d3d a b c h_precond ≥ a ∧\n      maxOfThree__rp_helper_7c6c6d3d a b c h_precond ≥ b ∧ maxOfThree__rp_helper_7c6c6d3d a b c h_precond ≥ c) ∧\n    (maxOfThree__rp_helper_7c6c6d3d a b c h_precond = a ∨\n      maxOfThree__rp_helper_7c6c6d3d a b c h_precond = b ∨ maxOfThree__rp_helper_7c6c6d3d a b c h_precond = c)\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "895d8a704f5b33775369c8ab2a09446606ba20718449fb3f8dfef7ac656ec232",
+ "spec_hash": "29128d6527435b82d1289774bfcd553408b4defe3af053982c1b9111688cb50a",
+ "proof_text": "  unfold maxOfThree maxOfThree_postcond\n  have h_main : (maxOfThree (a) (b) (c) h_precond >= a ∧ maxOfThree (a) (b) (c) h_precond >= b ∧ maxOfThree (a) (b) (c) h_precond >= c) ∧ (maxOfThree (a) (b) (c) h_precond = a ∨ maxOfThree (a) (b) (c) h_precond = b ∨ maxOfThree (a) (b) (c) h_precond = c) := by\n    dsimp only [maxOfThree, maxOfThree_precond, maxOfThree_postcond] at h_precond ⊢\n    split_ifs at * <;>\n    (try { contradiction }) <;>\n    (try { simp_all }) <;>\n    (try { omega }) <;>\n    (try {\n      aesop\n    }) <;>\n    (try {\n      by_cases h : a ≥ b <;> by_cases h' : a ≥ c <;> by_cases h'' : b ≥ a <;> by_cases h''' : b ≥ c <;> simp_all [Int.le_of_lt, Int.le_of_lt] <;> omega\n    }) <;>\n    (try {\n      by_cases h : a ≥ b <;> by_cases h' : a ≥ c <;> by_cases h'' : b ≥ a <;> by_cases h''' : b ≥ c <;> simp_all [Int.le_of_lt, Int.le_of_lt] <;> omega\n    })\n    <;>\n    (try {\n      by_cases h : a ≥ b <;> by_cases h' : a ≥ c <;> by_cases h'' : b ≥ a <;> by_cases h''' : b ≥ c <;> simp_all [Int.le_of_lt, Int.le_of_lt] <;> omega\n    })\n    <;>\n    (try {\n      by_cases h : a ≥ b <;> by_cases h' : a ≥ c <;> by_cases h'' : b ≥ a <;> by_cases h''' : b ≥ c <;> simp_all [Int.le_of_lt, Int.le_of_lt] <;> omega\n    })\n\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "hard_unfold"
+}

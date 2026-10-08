@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_73",
+ "variant_id": "verina_advanced_73__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_73/verina_advanced_73__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.96,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.895 = ?m.895 : Prop\nbut is expected to have type\n  RPOrig.smallestMissing l h_precond = RPRef.smallestMissing l h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1025 = ?m.1025 : Prop\nbut is expected to have type\n  RPOrig.smallestMissing l h_precond = RPRef.smallestMissing l h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  let sortedList := l;\n  let result :=\n    List.brecOn (motive := fun lst => Nat → Nat) sortedList\n      (fun lst f n =>\n        (match (motive := (lst : List Nat) → List.below (motive := fun lst => Nat → Nat) lst → Nat) lst with\n          | [] => fun x => n\n          | x :: xs => fun x_1 =>\n            let isEqual := x = n;\n            let isGreater := x > n;\n            let nextCand := n + 1;\n            if isEqual then x_1.1 nextCand else if isGreater t"
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun lst => Nat → Nat) l\n    (fun lst f n =>\n      (match (motive := (lst : List Nat) → List.below (motive := fun lst => Nat → Nat) lst → Nat) lst with\n        | [] => fun x => n\n        | x :: xs => fun x_1 =>\n          let isEqual := x = n;\n          let isGreater := x > n;\n          let nextCand := n + 1;\n          if isEqual then x_1.1 nextCand else if isGreater then n else x_1.1 n)\n        f)\n    0\nis not definitionally equal t",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.3148'"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun lst => Nat → Nat) l\n    (fun lst f n =>\n      (match (motive := (lst : List Nat) → List.below (motive := fun lst => Nat → Nat) lst → Nat) lst with\n        | [] => fun x => n\n        | x :: xs => fun x_1 =>\n          let isEqual := x = n;\n          let isGreater := x > n;\n          let nextCand := n + 1;\n          if isEqual then x_1.1 nextCand else if isGreater then n else x_1.1 n)\n        f)\n    0\nis not definitionally equal t",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.4573'"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun lst => Nat → Nat) l\n    (fun lst f n =>\n      (match (motive := (lst : List Nat) → List.below (motive := fun lst => Nat → Nat) lst → Nat) lst with\n        | [] => fun x => n\n        | x :: xs => fun x_1 =>\n          let isEqual := x = n;\n          let isGreater := x > n;\n          let nextCand := n + 1;\n          if isEqual then x_1.1 nextCand else if isGreater then n else x_1.1 n)\n        f)\n    0\nis not definitionally equal t",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.5170'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

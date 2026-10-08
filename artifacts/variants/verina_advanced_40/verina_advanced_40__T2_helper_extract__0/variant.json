@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_40",
+ "variant_id": "verina_advanced_40__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  maxOfList__rp_helper_e1a7ec64 lst h_precond\n",
+ "transformed_code_aux": "\nprivate def maxOfList__rp_helper_e1a7ec64 (lst : List Nat) (h_precond : maxOfList_precond (lst)) : Nat :=\n  let rec helper (lst : List Nat) : Nat :=\n    match lst with\n    | [] => 0  -- technically shouldn't happen if input is always non-empty\n    | [x] => x\n    | x :: xs =>\n      let maxTail := helper xs\n      if x > maxTail then x else maxTail\n  helper lst\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "maxOfList__rp_helper_e1a7ec64"
+ ],
+ "metadata": {
+  "binders": [
+   "lst",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "b74a83f0076006e58827d19676687e65affecca4e8f263fa767be72dce141015",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "267bbc8aadc0d554adc220ae71df58d4fbece23897efd8d6f062073059cbd8ff",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "maxOfList",
+ "code_loc_original": 8,
+ "code_loc_refactored": 10
+}

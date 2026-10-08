@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_96__T2_helper_extract__0",
+ "task_id": "verina_basic_96",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "SwapSimultaneous",
+ "helper": "SwapSimultaneous__rp_helper_5fb3d255",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold SwapSimultaneous_postcond SwapSimultaneous\n  simp_all\n  exact fun a a_1 => a (id (Eq.symm a_1))\n",
+ "proof_after": "  unfold SwapSimultaneous_postcond SwapSimultaneous SwapSimultaneous__rp_helper_5fb3d255\n  simp_all\n  exact fun a a_1 => a (id (Eq.symm a_1))\n"
+}

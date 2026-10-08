@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_42__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_42__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_42__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_42__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_42__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_42__T2_helper_extract__0.lean:15:25: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_42__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_42__T2_helper_extract__0.lean:23:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_42__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_42__T2_helper_extract__0.lean:40:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_42__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_42__T2_helper_extract__0.lean:53:70: error: unsolved goals\ns : String\nh_precond : countDigits_precond s\n⊢ countDigits__rp_helper_df69abf7 s h_precond - (List.filter isDigit s.data).length = 0 ∧\n    (List.filter isDigit s.data).length - countDigits__rp_helper_df69abf7 s h_precond = 0\n",
+ "stderr": "",
+ "elapsed_seconds": 1.862,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 40,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 53,
+   "col": 70,
+   "severity": "error",
+   "text": "unsolved goals\ns : String\nh_precond : countDigits_precond s\n⊢ countDigits__rp_helper_df69abf7 s h_precond - (List.filter isDigit s.data).length = 0 ∧\n    (List.filter isDigit s.data).length - countDigits__rp_helper_df69abf7 s h_precond = 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

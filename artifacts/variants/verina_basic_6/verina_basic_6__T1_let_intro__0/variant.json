@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_6",
+ "variant_id": "verina_basic_6__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_fdb5d16f : Int :=\n    if a <= b && a <= c then a\n    else if b <= a && b <= c then b\n    else c\n  __rp_tmp_fdb5d16f\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_fdb5d16f",
+  "seed": 0
+ },
+ "spec_hash": "9da95e2e35cc3731ffceb30e0af09791534c0e36e1651f399906215b247ecfaa",
+ "proof_hash": "f5e345eda33dc41ac54b46013767babc5edf641aa72d5b07c9a4e9c5a4e24f94",
+ "code_hash_original": "db3a981ebc565c8f13f597c64649346091354ac192a160ef4dfe21a627bc5004",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "minOfThree",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

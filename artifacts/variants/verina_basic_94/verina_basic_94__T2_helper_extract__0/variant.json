@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_94",
+ "variant_id": "verina_basic_94__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  iter_copy__rp_helper_508df483 s h_precond\n",
+ "transformed_code_aux": "\nprivate def iter_copy__rp_helper_508df483 (s : Array Int) (h_precond : iter_copy_precond (s)) : Array Int :=\n  let rec loop (i : Nat) (acc : Array Int) : Array Int :=\n    if i < s.size then\n      match s[i]? with\n      | some val => loop (i + 1) (acc.push val)\n      | none => acc  -- This case shouldn't happen when i < s.size\n    else\n      acc\n  loop 0 Array.empty\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "iter_copy__rp_helper_508df483"
+ ],
+ "metadata": {
+  "binders": [
+   "s",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "29182a5ec66075744942ee924dae0db92928bbdd19ce0185148f00d353a1d868",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "d2bb534eba71659b461a5d5392651d09f6574436b2b0108dfceef7a7b178671b",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "iter_copy",
+ "code_loc_original": 8,
+ "code_loc_refactored": 10
+}

@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_77",
+ "variant_id": "verina_advanced_77__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  trapRainWater__rp_helper_bad67bda height h_precond\n",
+ "transformed_code_aux": "def trapLoop (height : List Nat) (left right leftMax rightMax water : Nat) : Nat :=\n  if h : left < right then\n    let hLeft := height[left]!\n    let hRight := height[right]!\n    if hLeft < hRight then\n      let (leftMax, water) :=\n        if hLeft >= leftMax then (hLeft, water) else (leftMax, water + (leftMax - hLeft))\n      trapLoop height (left + 1) right leftMax rightMax water\n    else\n      let (rightMax, water) :=\n        if hRight >= rightMax then (hRight, water) else (rightMax, water + (rightMax - hRight))\n      trapLoop height left (right - 1) leftMax rightMax water\n  else\n    water\ntermination_by right - left\n\nprivate def trapRainWater__rp_helper_bad67bda (height : List Nat) (h_precond : trapRainWater_precond (height)) : Nat :=\n  trapLoop height 0 (height.length - 1) 0 0 0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "trapRainWater__rp_helper_bad67bda"
+ ],
+ "metadata": {
+  "binders": [
+   "height",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "5bad9258719b35b234c53c8b0b2eab3654dd9f3d121cdd415d2ee2bdf11aed0f",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "d592d6415949fa43be73b883399525e6adc7b0f83d5662699773714b69b6929b",
+ "code_aux_hash_original": "d5c3e743463d94e71f69555f06983c5394f406b9e81bd70579921b3acd6526c2",
+ "tier": "advanced",
+ "function_name": "trapRainWater",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

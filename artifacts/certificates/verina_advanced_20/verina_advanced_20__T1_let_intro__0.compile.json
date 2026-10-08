@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_20/verina_advanced_20__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_20/verina_advanced_20__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_20/verina_advanced_20__T1_let_intro__0.lean:13:23: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_20/verina_advanced_20__T1_let_intro__0.lean:22:25: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_20/verina_advanced_20__T1_let_intro__0.lean:35:25: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_20/verina_advanced_20__T1_let_intro__0.lean:51:66: error: type mismatch\n  rfl\nhas type\n  ?m.6364 = ?m.6364 : Prop\nbut is expected to have type\n  RPOrig.isItEight n h_precond = RPRef.isItEight n h_precond : Prop\nartifacts/certificates/verina_advanced_20/verina_advanced_20__T1_let_intro__0.lean:55:66: error: type mismatch\n  rfl\nhas type\n  ?m.6720 = ?m.6720 : Prop\nbut is expected to have type\n  RPOrig.isItEight n h_precond = RPRef.isItEight n h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 1.027,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 23,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 35,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 51,
+   "col": 66,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.6364 = ?m.6364 : Prop\nbut is expected to have type\n  RPOrig.isItEight n h_precond = RPRef.isItEight n h_precond : Prop"
+  },
+  {
+   "line": 55,
+   "col": 66,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.6720 = ?m.6720 : Prop\nbut is expected to have type\n  RPOrig.isItEight n h_precond = RPRef.isItEight n h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

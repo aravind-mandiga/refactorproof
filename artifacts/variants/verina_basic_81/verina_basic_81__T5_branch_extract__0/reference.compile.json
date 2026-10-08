@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_81/verina_basic_81__T5_branch_extract__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_81/verina_basic_81__T5_branch_extract__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_81/verina_basic_81__T5_branch_extract__0/reference.lean:13:30: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_81/verina_basic_81__T5_branch_extract__0/reference.lean:13:40: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_81/verina_basic_81__T5_branch_extract__0/reference.lean:25:70: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_81/verina_basic_81__T5_branch_extract__0/reference.lean:25:12: warning: The declaration 'DivisionFunction__rp_branch_e20d15dc' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_81/verina_basic_81__T5_branch_extract__0/reference.lean:43:71: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_81/verina_basic_81__T5_branch_extract__0/reference.lean:118:4: error: unsolved goals\ncase isFalse.right\nx y : ℕ\nh_precond : DivisionFunction_precond x y\nh✝ : ¬y = 0\nh_left : (divMod x y).2 * ↑y + (divMod x y).1 = ↑x ∧ (0 ≤ (divMod x y).1 ∧ (divMod x y).1 < ↑y) ∧ 0 ≤ (divMod x y).2\n⊢ (DivisionFunction__rp_branch_e20d15dc x y h_precond).2 * ↑y + (DivisionFunction__rp_branch_e20d15dc x y h_precond).1 =\n      ↑x ∧\n    (0 ≤ (DivisionFunction__rp_branch_e20d15dc x y h_precond).1 ∧\n        (DivisionFunction__rp_branch_e20d15dc x y h_precond).1 < ↑y) ∧\n      0 ≤ (DivisionFunction__rp_branch_e20d15dc x y h_precond).2\n",
+ "stderr": "",
+ "elapsed_seconds": 18.333,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 30,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 70,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'DivisionFunction__rp_branch_e20d15dc' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 43,
+   "col": 71,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 118,
+   "col": 4,
+   "severity": "error",
+   "text": "unsolved goals\ncase isFalse.right\nx y : ℕ\nh_precond : DivisionFunction_precond x y\nh✝ : ¬y = 0\nh_left : (divMod x y).2 * ↑y + (divMod x y).1 = ↑x ∧ (0 ≤ (divMod x y).1 ∧ (divMod x y).1 < ↑y) ∧ 0 ≤ (divMod x y).2\n⊢ (DivisionFunction__rp_branch_e20d15dc x y h_precond).2 * ↑y + (DivisionFunction__rp_branch_e20d15dc x y h_precond).1 =\n      ↑x ∧\n    (0 ≤ (DivisionFunction__rp_branch_e20d15dc x y h_precond).1 ∧\n        (DivisionFunction__rp_branch_e20d15dc x y h_precond).1 < ↑y) ∧\n      0 ≤ (DivisionFunction__rp_branch_e20d15dc x y h_precond).2\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

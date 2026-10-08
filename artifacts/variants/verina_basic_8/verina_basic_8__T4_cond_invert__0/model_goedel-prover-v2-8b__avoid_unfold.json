@@ -1,0 +1,33 @@
+{
+ "task_id": "verina_basic_8",
+ "variant_id": "verina_basic_8__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_level": "simp_only",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__avoid_unfold",
+ "generation_attempt": 1,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "type_mismatch",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.688,
+ "proof_region_errors": [
+  "type mismatch\n  rfl\nhas type\n  ?m.170 = ?m.170 : Prop\nbut is expected to have type\n  myMin a b h_precond = if a ≤ b then a else b : Prop",
+  "type mismatch\n  rfl\nhas type\n  ?m.806 = ?m.806 : Prop\nbut is expected to have type\n  myMin a b h_precond = if a ≤ b then a else b : Prop",
+  "type mismatch\n  rfl\nhas type\n  ?m.1393 = ?m.1393 : Prop\nbut is expected to have type\n  myMin a b h_precond = if a ≤ b then a else b : Prop\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "def43431e2148906f4a78bc509e3a3e3568a6ceb7fc0b29af62b43e432656ca0",
+ "spec_hash": "9ea5f34068afa9e380bc3377f48eb3fe98217f15035d181f98b5d77bc020361e",
+ "proof_text": "  have h_main : myMin_postcond (a) (b) (myMin (a) (b) h_precond) h_precond := by\n    have h₁ : myMin (a) (b) h_precond ≤ a ∧ myMin (a) (b) h_precond ≤ b ∧ (myMin (a) (b) h_precond = a ∨ myMin (a) (b) h_precond = b) := by\n      constructor\n      · -- Prove that `myMin (a) (b) h_precond ≤ a`\n        have h₂ : myMin (a) (b) h_precond = if a ≤ b then a else b := rfl\n        rw [h₂]\n        split_ifs <;>\n        (try { contradiction }) <;>\n        (try { linarith }) <;>\n        (try { simp_all }) <;>\n        (try { omega }) <;>\n        (try { exact le_rfl })\n        <;>\n        (try { exact le_of_lt (by omega) })\n        <;>\n        (try { linarith })\n      · constructor\n        · -- Prove that `myMin (a) (b) h_precond ≤ b`\n          have h₃ : myMin (a) (b) h_precond = if a ≤ b then a else b := rfl\n          rw [h₃]\n          split_ifs <;>\n          (try { contradiction }) <;>\n          (try { linarith }) <;>\n          (try { simp_all }) <;>\n          (try { omega }) <;>\n          (try { exact le_rfl })\n          <;>\n          (try { exact le_of_lt (by omega) })\n          <;>\n          (try { linarith })\n        · -- Prove that `myMin (a) (b) h_precond = a ∨ myMin (a) (b) h_precond = b`\n          have h₄ : myMin (a) (b) h_precond = if a ≤ b then a else b := rfl\n          rw [h₄]\n          split_ifs <;>\n          (try { contradiction }) <;>\n          (try { aesop }) <;>\n          (try { omega }) <;>\n          (try { exact Or.inl rfl }) <;>\n          (try { exact Or.inr rfl })\n          <;>\n          (try { aesop })\n    simp_all [myMin_postcond, myMin_precond]\n    <;> aesop\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "avoid_unfold"
+}

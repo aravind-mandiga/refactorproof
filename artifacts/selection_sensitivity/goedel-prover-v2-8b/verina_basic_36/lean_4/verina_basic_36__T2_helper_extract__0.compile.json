@@ -1,0 +1,73 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_36/lean_4/verina_basic_36__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_36/lean_4/verina_basic_36__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_36/lean_4/verina_basic_36__T2_helper_extract__0.lean:20:30: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_36/lean_4/verina_basic_36__T2_helper_extract__0.lean:28:63: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_36/lean_4/verina_basic_36__T2_helper_extract__0.lean:28:12: warning: The declaration 'replaceWithColon__rp_helper_3e0fbdec' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_36/lean_4/verina_basic_36__T2_helper_extract__0.lean:47:61: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_36/lean_4/verina_basic_36__T2_helper_extract__0.lean:70:30: warning: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_36/lean_4/verina_basic_36__T2_helper_extract__0.lean:70:6: error: simp made no progress\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_36/lean_4/verina_basic_36__T2_helper_extract__0.lean:78:11: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_36/lean_4/verina_basic_36__T2_helper_extract__0.lean:100:6: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case right.left\n  s : String\n  h_precond : replaceWithColon_precond s\n  i : ℕ\n  hi : i < s.length\n  a : isSpaceCommaDot s.data[i] = true\n  ⊢ (replaceWithColon__rp_helper_3e0fbdec s h_precond).data[i]?.getD 'A' = ':'\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_36/lean_4/verina_basic_36__T2_helper_extract__0.lean:100:6: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case right.right\n  s : String\n  h_precond : replaceWithColon_precond s\n  i : ℕ\n  hi : i < s.length\n  a : isSpaceCommaDot s.data[i] = false\n  ⊢ (replaceWithColon__rp_helper_3e0fbdec s h_precond).data[i]?.getD 'A' = s.data[i]\n",
+ "stderr": "",
+ "elapsed_seconds": 13.806,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 20,
+   "col": 30,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 63,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'replaceWithColon__rp_helper_3e0fbdec' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 47,
+   "col": 61,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 70,
+   "col": 30,
+   "severity": "warning",
+   "text": "`List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead"
+  },
+  {
+   "line": 70,
+   "col": 6,
+   "severity": "error",
+   "text": "simp made no progress"
+  },
+  {
+   "line": 78,
+   "col": 11,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 100,
+   "col": 6,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case right.left\n  s : String\n  h_precond : replaceWithColon_precond s\n  i : ℕ\n  hi : i < s.length\n  a : isSpaceCommaDot s.data[i] = true\n  ⊢ (replaceWithColon__rp_helper_3e0fbdec s h_precond).data[i]?.getD 'A' = ':'"
+  },
+  {
+   "line": 100,
+   "col": 6,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case right.right\n  s : String\n  h_precond : replaceWithColon_precond s\n  i : ℕ\n  hi : i < s.length\n  a : isSpaceCommaDot s.data[i] = false\n  ⊢ (replaceWithColon__rp_helper_3e0fbdec s h_precond).data[i]?.getD 'A' = s.data[i]\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "simp_failed"
+}

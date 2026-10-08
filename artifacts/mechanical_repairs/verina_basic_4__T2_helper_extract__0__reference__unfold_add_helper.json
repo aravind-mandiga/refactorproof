@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_4__T2_helper_extract__0",
+ "task_id": "verina_basic_4",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "kthElement",
+ "helper": "kthElement__rp_helper_837a29b3",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold kthElement kthElement_postcond\n  unfold kthElement_precond at h_precond\n  have \u27e8hp1, hp2\u27e9 := h_precond\n  simp_all\n  have h': k - 1 < arr.size := by\n    exact Nat.sub_one_lt_of_le hp1 hp2\n  exists k - 1\n  exists h'\n  exact Eq.symm (getElem!_pos arr (k - 1) ((Iff.of_eq (Eq.refl (k - 1 < arr.size))).mpr h'))\n",
+ "proof_after": "  unfold kthElement kthElement__rp_helper_837a29b3 kthElement_postcond\n  unfold kthElement_precond at h_precond\n  have \u27e8hp1, hp2\u27e9 := h_precond\n  simp_all\n  have h': k - 1 < arr.size := by\n    exact Nat.sub_one_lt_of_le hp1 hp2\n  exists k - 1\n  exists h'\n  exact Eq.symm (getElem!_pos arr (k - 1) ((Iff.of_eq (Eq.refl (k - 1 < arr.size))).mpr h'))\n"
+}

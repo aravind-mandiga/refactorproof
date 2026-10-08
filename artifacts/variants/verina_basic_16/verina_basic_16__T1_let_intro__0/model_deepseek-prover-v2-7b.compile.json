@@ -1,0 +1,91 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_deepseek-prover-v2-7b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_deepseek-prover-v2-7b.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_deepseek-prover-v2-7b.lean:16:26: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_deepseek-prover-v2-7b.lean:16:39: warning: unused variable `oldChar`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_deepseek-prover-v2-7b.lean:16:56: warning: unused variable `newChar`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_deepseek-prover-v2-7b.lean:27:65: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_deepseek-prover-v2-7b.lean:43:91: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_deepseek-prover-v2-7b.lean:66:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_deepseek-prover-v2-7b.lean:70:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_deepseek-prover-v2-7b.lean:96:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_deepseek-prover-v2-7b.lean:64:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_deepseek-prover-v2-7b.lean:66:4: warning: '(try {simp_all [List.length_map, List.length_toList]\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_deepseek-prover-v2-7b.lean:70:4: warning: '(try\n    {constructor <;> intro i _ <;> (try cases i <;> simp_all [List.get, List.get?, List.nthLe, List.map]) <;>\n      (try\n          {split_ifs <;> simp_all [List.get, List.get?, List.nthLe, List.map] <;> (try omega) <;>\n            (try\n                {cases s with\n                | mk l =>\n                  cases l with\n                  | nil => simp_all\n                  | cons hd tl => simp_all [List.get] <;> (try aesop)\n              })\n        })\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_deepseek-prover-v2-7b.lean:96:4: warning: 'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 8.316,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 26,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 16,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `oldChar`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 16,
+   "col": 56,
+   "severity": "warning",
+   "text": "unused variable `newChar`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 27,
+   "col": 65,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 43,
+   "col": 91,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 66,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 70,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 96,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 64,
+   "col": 4,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 66,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {simp_all [List.length_map, List.length_toList]\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 70,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try\n    {constructor <;> intro i _ <;> (try cases i <;> simp_all [List.get, List.get?, List.nthLe, List.map]) <;>\n      (try\n          {split_ifs <;> simp_all [List.get, List.get?, List.nthLe, List.map] <;> (try omega) <;>\n            (try\n                {cases s with\n                | mk l =>\n                  cases l with\n                  | nil => simp_all\n                  | cons hd tl => simp_all [List.get] <;> (try aesop)\n              })\n        })\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 96,
+   "col": 4,
+   "severity": "warning",
+   "text": "'aesop' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

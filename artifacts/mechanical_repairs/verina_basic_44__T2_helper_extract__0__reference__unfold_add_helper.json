@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_44__T2_helper_extract__0",
+ "task_id": "verina_basic_44",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "isOddAtIndexOdd",
+ "helper": "isOddAtIndexOdd__rp_helper_eaf90141",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold isOddAtIndexOdd isOddAtIndexOdd_postcond\n  simp_all\n  constructor\n  \u00b7 intro h\n    intro i hi h_odd\n    -- Since the function returns true, all elements in satisfy the predicate\n    have h_all_odd : (a.mapIdx (fun j x => (j, x))).all (fun (i, x) => !(isOdd i) || isOdd x) = true := by\n      simp_all\n    -- Apply the property of Array.all\n    rw [Array.all_iff_forall] at h_all_odd\n    simp_all\n    have h_sat_i : !(isOdd i) || isOdd a[i] := by\n      simp\n      apply h_all_odd i hi\n    simp [h_odd] at h_sat_i\n    exact h_sat_i\n  \u00b7 intro h\n    apply Array.all_iff_forall.mpr\n    intro i hi\n    simp\n    intro hi'\n    have h_sat : isOdd i \u2192 isOdd a[i] := by\n      apply h i hi'\n    rw [Decidable.imp_iff_not_or] at h_sat\n    simp at h_sat\n    exact h_sat\n",
+ "proof_after": "  unfold isOddAtIndexOdd isOddAtIndexOdd__rp_helper_eaf90141 isOddAtIndexOdd_postcond\n  simp_all\n  constructor\n  \u00b7 intro h\n    intro i hi h_odd\n    -- Since the function returns true, all elements in satisfy the predicate\n    have h_all_odd : (a.mapIdx (fun j x => (j, x))).all (fun (i, x) => !(isOdd i) || isOdd x) = true := by\n      simp_all\n    -- Apply the property of Array.all\n    rw [Array.all_iff_forall] at h_all_odd\n    simp_all\n    have h_sat_i : !(isOdd i) || isOdd a[i] := by\n      simp\n      apply h_all_odd i hi\n    simp [h_odd] at h_sat_i\n    exact h_sat_i\n  \u00b7 intro h\n    apply Array.all_iff_forall.mpr\n    intro i hi\n    simp\n    intro hi'\n    have h_sat : isOdd i \u2192 isOdd a[i] := by\n      apply h i hi'\n    rw [Decidable.imp_iff_not_or] at h_sat\n    simp at h_sat\n    exact h_sat\n"
+}

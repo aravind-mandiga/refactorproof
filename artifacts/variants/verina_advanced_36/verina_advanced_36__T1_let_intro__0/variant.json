@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_36",
+ "variant_id": "verina_advanced_36__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_438c56d0 : Nat :=\n    let rec countOccurrences (target : Nat) (lst : List Nat) : Nat :=\n      match lst with\n      | [] => 0\n      | y :: ys =>\n        if y = target then 1 + countOccurrences target ys\n        else countOccurrences target ys\n\n    let rec findCandidate (lst : List Nat) (candidate : Option Nat) (count : Nat) : Nat :=\n      match lst with\n      | [] =>\n        match candidate with\n        | some c => c\n        | none => 0 -- unreachable since we assume majority element exists\n      | x :: xs =>\n        match candidate with\n        | some c =>\n          if x = c then\n            findCandidate xs (some c) (count + 1)\n          else if count = 0 then\n            findCandidate xs (some x) 1\n          else\n            findCandidate xs (some c) (count - 1)\n        | none =>\n          findCandidate xs (some x) 1\n\n    let cand := findCandidate xs none 0\n    cand\n  __rp_tmp_438c56d0\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_438c56d0",
+  "seed": 0
+ },
+ "spec_hash": "b80aa92915d11314acf264a10cfd05b0e4109408aeb70b8741a517bd3369d1fb",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "65b697f5803794cb0e8574d58acdf76491ebd4d7aa950140b0189e05f95e44f8",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "majorityElement",
+ "code_loc_original": 25,
+ "code_loc_refactored": 27
+}

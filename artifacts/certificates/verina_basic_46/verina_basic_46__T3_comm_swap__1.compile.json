@@ -1,0 +1,109 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:14:44: warning: unused variable `elem`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:23:49: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:35:49: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:48:86: error: type mismatch\n  rfl\nhas type\n  ?m.46351 = ?m.46351 : Prop\nbut is expected to have type\n  RPOrig.lastPosition arr elem h_precond = RPRef.lastPosition arr elem h_precond : Prop\nartifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:52:86: error: type mismatch\n  rfl\nhas type\n  ?m.46449 = ?m.46449 : Prop\nbut is expected to have type\n  RPOrig.lastPosition arr elem h_precond = RPRef.lastPosition arr elem h_precond : Prop\nartifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:57:2: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩\nis not definitionally equal to the right-hand side\n  RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩\narr : Array Int\nelem : Int\nh_precond : lastPosition_precond arr elem\n⊢ RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩ = RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩\nartifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:65:218: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩\nis not definitionally equal to the right-hand side\n  RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩\narr : Array Int\nelem : Int\nh_precond : lastPosition_precond arr elem\n⊢ RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩ = RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩\nartifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:60:86: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:60:86: error: unknown metavariable '?_uniq.57085'\nartifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:73:213: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩\nis not definitionally equal to the right-hand side\n  RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩\narr : Array Int\nelem : Int\nh_precond : lastPosition_precond arr elem\n⊢ RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩ = RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩\nartifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:68:86: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:68:86: error: unknown metavariable '?_uniq.67237'\nartifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:77:234: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩\nis not definitionally equal to the right-hand side\n  RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩\narr : Array Int\nelem : Int\nh_precond : lastPosition_precond arr elem\n⊢ RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩ = RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩\nartifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:76:86: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_46/verina_basic_46__T3_comm_swap__1.lean:76:86: error: unknown metavariable '?_uniq.70551'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.971,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `elem`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 49,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 35,
+   "col": 49,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 48,
+   "col": 86,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.46351 = ?m.46351 : Prop\nbut is expected to have type\n  RPOrig.lastPosition arr elem h_precond = RPRef.lastPosition arr elem h_precond : Prop"
+  },
+  {
+   "line": 52,
+   "col": 86,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.46449 = ?m.46449 : Prop\nbut is expected to have type\n  RPOrig.lastPosition arr elem h_precond = RPRef.lastPosition arr elem h_precond : Prop"
+  },
+  {
+   "line": 57,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩\nis not definitionally equal to the right-hand side\n  RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩\narr : Array Int\nelem : Int\nh_precond : lastPosition_precond arr elem\n⊢ RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩ = RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩"
+  },
+  {
+   "line": 65,
+   "col": 218,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩\nis not definitionally equal to the right-hand side\n  RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩\narr : Array Int\nelem : Int\nh_precond : lastPosition_precond arr elem\n⊢ RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩ = RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩"
+  },
+  {
+   "line": 60,
+   "col": 86,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 60,
+   "col": 86,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.57085'"
+  },
+  {
+   "line": 73,
+   "col": 213,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩\nis not definitionally equal to the right-hand side\n  RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩\narr : Array Int\nelem : Int\nh_precond : lastPosition_precond arr elem\n⊢ RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩ = RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩"
+  },
+  {
+   "line": 68,
+   "col": 86,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 68,
+   "col": 86,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.67237'"
+  },
+  {
+   "line": 77,
+   "col": 234,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩\nis not definitionally equal to the right-hand side\n  RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩\narr : Array Int\nelem : Int\nh_precond : lastPosition_precond arr elem\n⊢ RPOrig.lastPosition.loop._unary arr elem ⟨0, -1⟩ = RPRef.lastPosition.loop._unary arr elem ⟨0, -1⟩"
+  },
+  {
+   "line": 76,
+   "col": 86,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 76,
+   "col": 86,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.70551'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

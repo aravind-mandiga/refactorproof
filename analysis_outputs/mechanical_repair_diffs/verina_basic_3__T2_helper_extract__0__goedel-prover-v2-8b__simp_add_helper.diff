@@ -1,0 +1,11 @@
+--- goedel-prover-v2-8b:verina_basic_3__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_3__T2_helper_extract__0 (simp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : isDivisibleBy11_postcond (n) (isDivisibleBy11 (n) h_precond) h_precond := by
+-    simp only [isDivisibleBy11_precond, isDivisibleBy11, isDivisibleBy11_postcond]
++    simp only [isDivisibleBy11_precond, isDivisibleBy11, isDivisibleBy11_postcond, isDivisibleBy11__rp_helper_c39b37ae]
+     <;>
+     by_cases h : n % 11 = 0 <;>
+     simp_all [Int.emod_eq_of_lt]
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

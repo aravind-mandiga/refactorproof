@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_64",
+ "variant_id": "verina_advanced_64__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_b50f7237 : List Nat :=\n    let rec helper (lst : List Nat) (target : Nat) : List Nat :=\n      match lst with\n      | [] => []\n      | x :: xs =>\n        let rest := helper xs target\n        if x = target then rest else x :: rest\n    helper lst target\n  __rp_tmp_b50f7237\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_b50f7237",
+  "seed": 0
+ },
+ "spec_hash": "b30f6f5f092233164fe56d68fd6bf8b0d4eabc2b2509b405c4a308345fcf4b53",
+ "proof_hash": "871df16531be52eb4e62ac18634f3b8efb37b0c5a537ef3c81c8e2d6c43b82c2",
+ "code_hash_original": "2e65e231ac7c8de64240689873de866ef3457d6131491c5aad93496df736addd",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "removeElement",
+ "code_loc_original": 7,
+ "code_loc_refactored": 9
+}

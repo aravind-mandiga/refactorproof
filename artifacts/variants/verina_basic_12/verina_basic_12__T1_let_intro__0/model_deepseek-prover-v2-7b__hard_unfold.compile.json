@@ -1,0 +1,145 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:16:29: warning: unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:27:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:41:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:59:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:59:27: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:60:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:61:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:67:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:67:27: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:68:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:69:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:58:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:66:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:59:8: warning: 'induction size' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:59:27: warning: 'simp_all [Nat.mul_comm, Nat.mul_assoc, Nat.mul_left_comm]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:60:8: warning: 'ring_nf at *' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:61:8: warning: 'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:67:8: warning: 'induction size' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:67:27: warning: 'simp_all [Nat.mul_comm, Nat.mul_assoc, Nat.mul_left_comm]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:68:8: warning: 'ring_nf at *' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_12/verina_basic_12__T1_let_intro__0/model_deepseek-prover-v2-7b__hard_unfold.lean:69:8: warning: 'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 11.268,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 27,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 41,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 59,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 59,
+   "col": 27,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 27,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 68,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 69,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 58,
+   "col": 4,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 66,
+   "col": 4,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 59,
+   "col": 8,
+   "severity": "warning",
+   "text": "'induction size' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 59,
+   "col": 27,
+   "severity": "warning",
+   "text": "'simp_all [Nat.mul_comm, Nat.mul_assoc, Nat.mul_left_comm]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 8,
+   "severity": "warning",
+   "text": "'ring_nf at *' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 8,
+   "severity": "warning",
+   "text": "'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 8,
+   "severity": "warning",
+   "text": "'induction size' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 27,
+   "severity": "warning",
+   "text": "'simp_all [Nat.mul_comm, Nat.mul_assoc, Nat.mul_left_comm]' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 68,
+   "col": 8,
+   "severity": "warning",
+   "text": "'ring_nf at *' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 69,
+   "col": 8,
+   "severity": "warning",
+   "text": "'omega' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

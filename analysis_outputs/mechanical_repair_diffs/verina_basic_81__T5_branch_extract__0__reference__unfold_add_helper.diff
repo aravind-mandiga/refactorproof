@@ -1,0 +1,10 @@
+--- reference:verina_basic_81__T5_branch_extract__0 (proof as evaluated)
++++ reference:verina_basic_81__T5_branch_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold DivisionFunction_postcond DivisionFunction
++  unfold DivisionFunction_postcond DivisionFunction DivisionFunction__rp_branch_e20d15dc
+   simp
+   split
+   {
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

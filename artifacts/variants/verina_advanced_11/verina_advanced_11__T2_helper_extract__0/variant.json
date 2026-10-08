@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_11",
+ "variant_id": "verina_advanced_11__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  findMajorityElement__rp_helper_d50eade3 lst h_precond\n",
+ "transformed_code_aux": "def countOccurrences (n : Int) (lst : List Int) : Nat :=\n  lst.foldl (fun acc x => if x = n then acc + 1 else acc) 0\n\nprivate def findMajorityElement__rp_helper_d50eade3 (lst : List Int) (h_precond : findMajorityElement_precond (lst)) : Int :=\n  let n := lst.length\n  let majority := lst.find? (fun x => countOccurrences x lst > n / 2)\n  match majority with\n  | some x => x\n  | none => -1\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "findMajorityElement__rp_helper_d50eade3"
+ ],
+ "metadata": {
+  "binders": [
+   "lst",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "b93990add5fba6400a0116f9c8100e0d042aeae23bf31b2ecf1aff3112d0d37e",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "af3ea3fe5febdcc7d2226812c85cd50dfb03eab9f4f9df8f3a462a30e80f3042",
+ "code_aux_hash_original": "3abe7d01bd0cd889cf1fb8894fdf7ca1d1e245facc01e1ccf5531aa34f532f9d",
+ "tier": "advanced",
+ "function_name": "findMajorityElement",
+ "code_loc_original": 5,
+ "code_loc_refactored": 7
+}

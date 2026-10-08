@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_5",
+ "variant_id": "verina_basic_5__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_level": "simp_only",
+ "proof_source": "model",
+ "model_id": "qwen3-14b__neutral",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.907,
+ "proof_region_errors": [
+  "unsolved goals\na b : Int\n⊢ b * a - a * b = 0 ∧ a * b - b * a = 0\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "3ca19bbd9fe1d077188a805e6bc32b106903c24e76091cc0b780967a81254b28",
+ "spec_hash": "fb0e1b99e5101d2e21739f877c4c112fe60644ed1f3f3d4687b975e1527cff42",
+ "proof_text": "  unfold multiply multiply_postcond\n  simp_all\n",
+ "proof_aux_text": "\n",
+ "model_family": "qwen3",
+ "base_model": "qwen3-14b",
+ "strategy_condition": "neutral_prompt"
+}

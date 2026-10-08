@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_69",
+ "variant_id": "verina_basic_69__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_f7ec7460 : Nat :=\n    linearSearchAux a e 0\n  __rp_tmp_f7ec7460\n",
+ "transformed_code_aux": "def linearSearchAux (a : Array Int) (e : Int) (n : Nat) : Nat :=\n  if n < a.size then\n    if a[n]! = e then n else linearSearchAux a e (n + 1)\n  else\n    0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_f7ec7460",
+  "seed": 0
+ },
+ "spec_hash": "7f5d744a1f32010fcd1bcaa05d15820d26e40ec89fa09b7bb90297760a971221",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "12528df3c848d478990c53f04d33a7ee8dfe477adbdfba9f2ffca6a41162c392",
+ "code_aux_hash_original": "311f4486cfb6782844c4f05aaabe00564b397641c7c70972c015a9f0ddccb3ec",
+ "tier": "basic",
+ "function_name": "LinearSearch",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

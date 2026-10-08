@@ -1,0 +1,7 @@
+base_model,condition_a,condition_b,n_tasks,delta_E_minus_delta_S,ci_low,ci_high,p_perm
+deepseek-prover-v2-7b,hard_unfold,default,18,-0.2777777777777778,-0.5555555555555556,-0.027777777777777776,0.1196
+goedel-prover-v2-8b,avoid_unfold,default,18,-0.125,-0.5416666666666666,0.2916666666666667,0.6282
+goedel-prover-v2-8b,avoid_unfold,hard_unfold,18,-0.5,-0.8611111111111112,-0.16666666666666666,0.015
+goedel-prover-v2-8b,hard_unfold,default,18,0.375,0.05555555555555555,0.75,0.0878
+qwen3-14b,neutral_prompt,default,3,0.0,0.0,0.0,1.0
+pooled,hard_unfold,default,36,0.04861111111111111,-0.1875,0.3055555555555556,0.745

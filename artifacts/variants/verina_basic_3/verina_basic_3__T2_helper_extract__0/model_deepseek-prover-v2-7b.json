@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_3",
+ "variant_id": "verina_basic_3__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "type_mismatch",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.613,
+ "proof_region_errors": [
+  "type mismatch, term\n  h\nafter simplification has type\n  isDivisibleBy11__rp_helper_c39b37ae n h_precond = true : Prop\nbut is expected to have type\n  11 ∣ n : Prop",
+  "type mismatch, term\n  h\nafter simplification has type\n  isDivisibleBy11__rp_helper_c39b37ae n h_precond = false : Prop\nbut is expected to have type\n  ¬11 ∣ n : Prop\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "8771e54b36001274912511e660f8238dd073423fcdb41adff1d10bd8068d3064",
+ "spec_hash": "2f01b2a2c66c6b65fb25ac619f4002a4b7ba13ae770c8c7faffc8784d450d630",
+ "proof_text": "  have h_main : isDivisibleBy11_postcond n (isDivisibleBy11 n h_precond) h_precond := by\n    unfold isDivisibleBy11_postcond\n    constructor\n    · -- Prove the forward direction: if isDivisibleBy11 n h_precond, then ∃ k, n = 11 * k\n      intro h\n      have h₁ : n % 11 = 0 := by simpa [isDivisibleBy11, h_precond] using h\n      -- Since n % 11 = 0, we can write n = 11 * k for some integer k\n      have h₂ : ∃ k : Int, n = 11 * k := by\n        use n / 11\n        have h₃ : n % 11 = 0 := h₁\n        have h₄ : n = 11 * (n / 11) := by\n          have h₅ : n % 11 = 0 := h₁\n          omega\n        linarith\n      exact h₂\n    · -- Prove the backward direction: if ¬isDivisibleBy11 n h_precond, then ∀ k : Int, ¬n = 11 * k\n      intro h\n      have h₁ : ¬(n % 11 = 0) := by simpa [isDivisibleBy11, h_precond] using h\n      intro k hk\n      have h₂ : n % 11 = 0 := by\n        have h₃ : n = 11 * k := by omega\n        have h₄ : n % 11 = 0 := by\n          rw [h₃]\n          simp [Int.mul_emod, Int.emod_emod]\n        exact h₄\n      exact h₁ h₂\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "default"
+}

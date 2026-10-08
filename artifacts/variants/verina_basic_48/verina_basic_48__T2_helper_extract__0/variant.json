@@ -1,0 +1,28 @@
+{
+ "task_id": "verina_basic_48",
+ "variant_id": "verina_basic_48__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  isPerfectSquare__rp_helper_521a2256 n\n",
+ "transformed_code_aux": "\nprivate def isPerfectSquare__rp_helper_521a2256 (n : Nat) : Bool :=\n  if n = 0 then true\n  else\n    let rec check (x : Nat) (fuel : Nat) : Bool :=\n      match fuel with\n      | 0 => false\n      | fuel + 1 =>\n        if x * x > n then false\n        else if x * x = n then true\n        else check (x + 1) fuel\n    check 1 n\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "isPerfectSquare__rp_helper_521a2256"
+ ],
+ "metadata": {
+  "binders": [
+   "n"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "a11b133217d9eda6d5995001ed1c4d21a1974ac8422b298b0d85e82d237dfc94",
+ "proof_hash": "4a9c158e1e954f6a11346bf6a786168846b3d0fd76778784cc7302b69d41ae35",
+ "code_hash_original": "3a971fef1a8202aa2b40f4fab79e5a9932e56a86307656066e0f7d74f90d73fe",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "isPerfectSquare",
+ "code_loc_original": 10,
+ "code_loc_refactored": 12
+}

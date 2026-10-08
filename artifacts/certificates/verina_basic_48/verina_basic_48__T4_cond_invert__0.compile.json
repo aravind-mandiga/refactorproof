@@ -1,0 +1,181 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:14:29: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:54:58: error: type mismatch\n  rfl\nhas type\n  ?m.1108 = ?m.1108 : Prop\nbut is expected to have type\n  RPOrig.isPerfectSquare n = RPRef.isPerfectSquare n : Prop\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:58:58: error: type mismatch\n  rfl\nhas type\n  ?m.1732 = ?m.1732 : Prop\nbut is expected to have type\n  RPOrig.isPerfectSquare n = RPRef.isPerfectSquare n : Prop\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:63:2: error: tactic 'rfl' failed, the left-hand side\n  if n = 0 then true\n  else\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n          f)\n      1\nis not definitionally equal to the right-hand side\n  if ¬n = 0 then\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n          f)\n      1\n  else true\nn : ℕ\n⊢ (if n = 0 then true\n    else\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n            f)\n        1) =\n    if ¬n = 0 then\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n            f)\n        1\n    else true\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:68:137: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:69:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:70:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:68:75: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:68:137: warning: '(delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:69:6: warning: '(simp only [RPOrig.isPerfectSquare, RPRef.isPerfectSquare, ite_not, Bool.not_eq_true, decide_not, Nat.not_lt,\n      Nat.not_le, Int.not_lt, Int.not_le]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    |\n      (delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n        rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:70:6: warning: '(simp only [RPOrig.isPerfectSquare, RPRef.isPerfectSquare]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    |\n      (delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n        rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:75:132: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:76:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:77:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:75:70: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:75:132: warning: '(delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:76:6: warning: '(simp [RPOrig.isPerfectSquare, RPRef.isPerfectSquare, ite_not, Bool.not_eq_true, decide_not, Nat.not_lt, Nat.not_le,\n      Int.not_lt, Int.not_le]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    |\n      (delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n        rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:77:6: warning: '(simp [RPOrig.isPerfectSquare, RPRef.isPerfectSquare]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    |\n      (delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n        rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:81:151: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:81:89: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:81:151: warning: '(delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:85:160: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:85:98: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:85:160: warning: '(delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:89:148: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:89:86: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T4_cond_invert__0.lean:89:148: warning: '(delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 5.574,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 54,
+   "col": 58,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1108 = ?m.1108 : Prop\nbut is expected to have type\n  RPOrig.isPerfectSquare n = RPRef.isPerfectSquare n : Prop"
+  },
+  {
+   "line": 58,
+   "col": 58,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1732 = ?m.1732 : Prop\nbut is expected to have type\n  RPOrig.isPerfectSquare n = RPRef.isPerfectSquare n : Prop"
+  },
+  {
+   "line": 63,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if n = 0 then true\n  else\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n          f)\n      1\nis not definitionally equal to the right-hand side\n  if ¬n = 0 then\n    Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n      (fun fuel f x =>\n        (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n          | 0 => fun x => false\n          | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n          f)\n      1\n  else true\nn : ℕ\n⊢ (if n = 0 then true\n    else\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n            f)\n        1) =\n    if ¬n = 0 then\n      Nat.brecOn (motive := fun fuel => ℕ → Bool) n\n        (fun fuel f x =>\n          (match (motive := (fuel : ℕ) → Nat.below (motive := fun fuel => ℕ → Bool) fuel → Bool) fuel with\n            | 0 => fun x => false\n            | fuel.succ => fun x_1 => if x * x > n then false else if x * x = n then true else x_1.1 (x + 1))\n            f)\n        1\n    else true"
+  },
+  {
+   "line": 68,
+   "col": 137,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 69,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 70,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 68,
+   "col": 75,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 68,
+   "col": 137,
+   "severity": "warning",
+   "text": "'(delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 69,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.isPerfectSquare, RPRef.isPerfectSquare, ite_not, Bool.not_eq_true, decide_not, Nat.not_lt,\n      Nat.not_le, Int.not_lt, Int.not_le]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    |\n      (delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n        rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 70,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.isPerfectSquare, RPRef.isPerfectSquare]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    |\n      (delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n        rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 75,
+   "col": 132,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 76,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 77,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 75,
+   "col": 70,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 75,
+   "col": 132,
+   "severity": "warning",
+   "text": "'(delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 76,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp [RPOrig.isPerfectSquare, RPRef.isPerfectSquare, ite_not, Bool.not_eq_true, decide_not, Nat.not_lt, Nat.not_le,\n      Int.not_lt, Int.not_le]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    |\n      (delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n        rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 77,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp [RPOrig.isPerfectSquare, RPRef.isPerfectSquare]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    |\n      (delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n        rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 151,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 89,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 81,
+   "col": 151,
+   "severity": "warning",
+   "text": "'(delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 85,
+   "col": 160,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 85,
+   "col": 98,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 85,
+   "col": 160,
+   "severity": "warning",
+   "text": "'(delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 89,
+   "col": 148,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 89,
+   "col": 86,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 89,
+   "col": 148,
+   "severity": "warning",
+   "text": "'(delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

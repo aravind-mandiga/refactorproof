@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_107/lean_1/verina_basic_107__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_107/lean_1/verina_basic_107__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_107/lean_1/verina_basic_107__T3_comm_swap__0.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_107/lean_1/verina_basic_107__T3_comm_swap__0.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_107/lean_1/verina_basic_107__T3_comm_swap__0.lean:26:36: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_107/lean_1/verina_basic_107__T3_comm_swap__0.lean:38:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_107/lean_1/verina_basic_107__T3_comm_swap__0.lean:63:10: error: tactic 'rfl' failed, the left-hand side\n  (b + a) / 2\nis not definitionally equal to the right-hand side\n  (a + b) / 2\na b : ℤ\nh_precond : ComputeAvg_precond a b\nh₁ : a + b = 2 * ((a + b) / 2) + (a + b) % 2\n⊢ (b + a) / 2 = (a + b) / 2\n",
+ "stderr": "",
+ "elapsed_seconds": 11.566,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 36,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 63,
+   "col": 10,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  (b + a) / 2\nis not definitionally equal to the right-hand side\n  (a + b) / 2\na b : ℤ\nh_precond : ComputeAvg_precond a b\nh₁ : a + b = 2 * ((a + b) / 2) + (a + b) % 2\n⊢ (b + a) / 2 = (a + b) / 2\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

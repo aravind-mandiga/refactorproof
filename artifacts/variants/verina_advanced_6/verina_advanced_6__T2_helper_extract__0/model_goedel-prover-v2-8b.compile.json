@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_advanced_6/verina_advanced_6__T2_helper_extract__0/model_goedel-prover-v2-8b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_advanced_6/verina_advanced_6__T2_helper_extract__0/model_goedel-prover-v2-8b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_advanced_6/verina_advanced_6__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:22:23: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_6/verina_advanced_6__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:30:56: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_6/verina_advanced_6__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:30:12: warning: The declaration 'allVowels__rp_helper_1905f5d2' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_advanced_6/verina_advanced_6__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:49:52: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_6/verina_advanced_6__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:68:9: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_advanced_6/verina_advanced_6__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:64:78: error: unsolved goals\ncase mp.left\ns : String\nh_precond : allVowels_precond s\na : allVowels__rp_helper_1905f5d2 s h_precond = true\n⊢ 'a' ∈ normalize_str s\n\ncase mp.right.left\ns : String\nh_precond : allVowels_precond s\na : allVowels__rp_helper_1905f5d2 s h_precond = true\n⊢ 'e' ∈ normalize_str s\n\ncase mp.right.right.left\ns : String\nh_precond : allVowels_precond s\na : allVowels__rp_helper_1905f5d2 s h_precond = true\n⊢ 'i' ∈ normalize_str s\n\ncase mp.right.right.right.left\ns : String\nh_precond : allVowels_precond s\na : allVowels__rp_helper_1905f5d2 s h_precond = true\n⊢ 'o' ∈ normalize_str s\n\ncase mp.right.right.right.right\ns : String\nh_precond : allVowels_precond s\na : allVowels__rp_helper_1905f5d2 s h_precond = true\n⊢ 'u' ∈ normalize_str s\n\ncase mpr\ns : String\nh_precond : allVowels_precond s\nleft : 'a' ∈ normalize_str s\nleft_1 : 'e' ∈ normalize_str s\nleft_2 : 'i' ∈ normalize_str s\nleft_3 : 'o' ∈ normalize_str s\nright : 'u' ∈ normalize_str s\n⊢ allVowels__rp_helper_1905f5d2 s h_precond = true\n",
+ "stderr": "",
+ "elapsed_seconds": 7.596,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 23,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 30,
+   "col": 56,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 30,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'allVowels__rp_helper_1905f5d2' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 49,
+   "col": 52,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 68,
+   "col": 9,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 64,
+   "col": 78,
+   "severity": "error",
+   "text": "unsolved goals\ncase mp.left\ns : String\nh_precond : allVowels_precond s\na : allVowels__rp_helper_1905f5d2 s h_precond = true\n⊢ 'a' ∈ normalize_str s\n\ncase mp.right.left\ns : String\nh_precond : allVowels_precond s\na : allVowels__rp_helper_1905f5d2 s h_precond = true\n⊢ 'e' ∈ normalize_str s\n\ncase mp.right.right.left\ns : String\nh_precond : allVowels_precond s\na : allVowels__rp_helper_1905f5d2 s h_precond = true\n⊢ 'i' ∈ normalize_str s\n\ncase mp.right.right.right.left\ns : String\nh_precond : allVowels_precond s\na : allVowels__rp_helper_1905f5d2 s h_precond = true\n⊢ 'o' ∈ normalize_str s\n\ncase mp.right.right.right.right\ns : String\nh_precond : allVowels_precond s\na : allVowels__rp_helper_1905f5d2 s h_precond = true\n⊢ 'u' ∈ normalize_str s\n\ncase mpr\ns : String\nh_precond : allVowels_precond s\nleft : 'a' ∈ normalize_str s\nleft_1 : 'e' ∈ normalize_str s\nleft_2 : 'i' ∈ normalize_str s\nleft_3 : 'o' ∈ normalize_str s\nright : 'u' ∈ normalize_str s\n⊢ allVowels__rp_helper_1905f5d2 s h_precond = true\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

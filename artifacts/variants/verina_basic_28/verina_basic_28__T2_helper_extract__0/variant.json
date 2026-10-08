@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_28",
+ "variant_id": "verina_basic_28__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  isPrime__rp_helper_99f0df41 n h_precond\n",
+ "transformed_code_aux": "\nprivate def isPrime__rp_helper_99f0df41 (n : Nat) (h_precond : isPrime_precond (n)) : Bool :=\n  let bound := n\n  let rec check (i : Nat) (fuel : Nat) : Bool :=\n    if fuel = 0 then true\n    else if i * i > n then true\n    else if n % i = 0 then false\n    else check (i + 1) (fuel - 1)\n  check 2 bound\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "isPrime__rp_helper_99f0df41"
+ ],
+ "metadata": {
+  "binders": [
+   "n",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "783757562a4622068b9c224e4a96a99e9a4aa9fe3b763c75109158a6e5e4bc21",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "7e3f9e6109a1fddf1815b897ba185aa03236d119f09e99cdf7fad0a8ce90f999",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "isPrime",
+ "code_loc_original": 7,
+ "code_loc_refactored": 9
+}

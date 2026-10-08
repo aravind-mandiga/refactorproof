@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_35/verina_advanced_35__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_35/verina_advanced_35__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_35/verina_advanced_35__T3_comm_swap__0.lean:22:39: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_35/verina_advanced_35__T3_comm_swap__0.lean:36:39: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_35/verina_advanced_35__T3_comm_swap__0.lean:51:84: error: type mismatch\n  rfl\nhas type\n  ?m.1970 = ?m.1970 : Prop\nbut is expected to have type\n  RPOrig.majorityElement nums h_precond = RPRef.majorityElement nums h_precond : Prop\nartifacts/certificates/verina_advanced_35/verina_advanced_35__T3_comm_swap__0.lean:55:84: error: type mismatch\n  rfl\nhas type\n  ?m.50272 = ?m.50272 : Prop\nbut is expected to have type\n  RPOrig.majorityElement nums h_precond = RPRef.majorityElement nums h_precond : Prop\nartifacts/certificates/verina_advanced_35/verina_advanced_35__T3_comm_swap__0.lean:60:2: error: tactic 'rfl' failed, the left-hand side\n  (let counts := ∅;\n    let n := nums.length;\n    do\n    let r ←\n      forIn nums counts fun x r =>\n          let counts := r;\n          let count := counts.getD x 0;\n          let counts := counts.insert x (count + 1);\n          do\n          pure PUnit.unit\n          pure (ForInStep.yield counts)\n    let counts : HashMap Int Nat := r\n    match\n        List.find?\n          (fun x =>\n            match x with\n            | (fst, c) => decide (c > n / 2))\n          counts.toList with\n      | some (k, snd) => k\n      | none => 0).run\nis not definitionally equal to the right-hand side\n  (let counts := ∅;\n    let n := nums.length;\n    do\n    let r ←\n      forIn nums counts fun x r =>\n          let counts := r;\n          let count := counts.getD x 0;\n          let counts := counts.insert x (1 + count);\n          do\n          pure PUnit.unit\n          pure (ForInStep.yield counts)\n    let counts : HashMap Int Nat := r\n    match\n        List.find?\n          (fun x =>\n            match x with\n            | (fst, c) => decide (c > n / 2))\n          counts.toList with\n      | some (k, snd) => k\n      | none => 0).run\nnums : List Int\nh_precond : majorityElement_precond nums\n⊢ (let counts := ∅;\n      let n := nums.length;\n      do\n      let r ←\n        forIn nums counts fun x r =>\n            let counts := r;\n            let count := counts.getD x 0;\n            let counts := counts.insert x (count + 1);\n            do\n            pure PUnit.unit\n            pure (ForInStep.yield counts)\n      let counts : HashMap Int Nat := r\n      match\n          List.find?\n            (fun x =>\n              match x with\n              | (fst, c) => decide (c > n / 2))\n            counts.toList with\n        | some (k, snd) => k\n        | none => 0).run =\n    (let counts := ∅;\n      let n := nums.length;\n      do\n      let r ←\n        forIn nums counts fun x r =>\n            let counts := r;\n            let count := counts.getD x 0;\n            let counts := counts.insert x (1 + count);\n            do\n            pure PUnit.unit\n            pure (ForInStep.yield counts)\n      let counts : HashMap Int Nat := r\n      match\n          List.find?\n            (fun x =>\n              match x with\n              | (fst, c) => decide (c > n / 2))\n            counts.toList with\n        | some (k, snd) => k\n        | none => 0).run\n",
+ "stderr": "",
+ "elapsed_seconds": 3.618,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 36,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 51,
+   "col": 84,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1970 = ?m.1970 : Prop\nbut is expected to have type\n  RPOrig.majorityElement nums h_precond = RPRef.majorityElement nums h_precond : Prop"
+  },
+  {
+   "line": 55,
+   "col": 84,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.50272 = ?m.50272 : Prop\nbut is expected to have type\n  RPOrig.majorityElement nums h_precond = RPRef.majorityElement nums h_precond : Prop"
+  },
+  {
+   "line": 60,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  (let counts := ∅;\n    let n := nums.length;\n    do\n    let r ←\n      forIn nums counts fun x r =>\n          let counts := r;\n          let count := counts.getD x 0;\n          let counts := counts.insert x (count + 1);\n          do\n          pure PUnit.unit\n          pure (ForInStep.yield counts)\n    let counts : HashMap Int Nat := r\n    match\n        List.find?\n          (fun x =>\n            match x with\n            | (fst, c) => decide (c > n / 2))\n          counts.toList with\n      | some (k, snd) => k\n      | none => 0).run\nis not definitionally equal to the right-hand side\n  (let counts := ∅;\n    let n := nums.length;\n    do\n    let r ←\n      forIn nums counts fun x r =>\n          let counts := r;\n          let count := counts.getD x 0;\n          let counts := counts.insert x (1 + count);\n          do\n          pure PUnit.unit\n          pure (ForInStep.yield counts)\n    let counts : HashMap Int Nat := r\n    match\n        List.find?\n          (fun x =>\n            match x with\n            | (fst, c) => decide (c > n / 2))\n          counts.toList with\n      | some (k, snd) => k\n      | none => 0).run\nnums : List Int\nh_precond : majorityElement_precond nums\n⊢ (let counts := ∅;\n      let n := nums.length;\n      do\n      let r ←\n        forIn nums counts fun x r =>\n            let counts := r;\n            let count := counts.getD x 0;\n            let counts := counts.insert x (count + 1);\n            do\n            pure PUnit.unit\n            pure (ForInStep.yield counts)\n      let counts : HashMap Int Nat := r\n      match\n          List.find?\n            (fun x =>\n              match x with\n              | (fst, c) => decide (c > n / 2))\n            counts.toList with\n        | some (k, snd) => k\n        | none => 0).run =\n    (let counts := ∅;\n      let n := nums.length;\n      do\n      let r ←\n        forIn nums counts fun x r =>\n            let counts := r;\n            let count := counts.getD x 0;\n            let counts := counts.insert x (1 + count);\n            do\n            pure PUnit.unit\n            pure (ForInStep.yield counts)\n      let counts : HashMap Int Nat := r\n      match\n          List.find?\n            (fun x =>\n              match x with\n              | (fst, c) => decide (c > n / 2))\n            counts.toList with\n        | some (k, snd) => k\n        | none => 0).run\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

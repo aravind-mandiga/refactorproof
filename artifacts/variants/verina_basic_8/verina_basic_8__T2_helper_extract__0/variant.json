@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_8",
+ "variant_id": "verina_basic_8__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  myMin__rp_helper_829c4a21 a b h_precond\n",
+ "transformed_code_aux": "\nprivate def myMin__rp_helper_829c4a21 (a : Int) (b : Int) (h_precond : myMin_precond (a) (b)) : Int :=\n  if a <= b then a else b\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "myMin__rp_helper_829c4a21"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "b",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "9ea5f34068afa9e380bc3377f48eb3fe98217f15035d181f98b5d77bc020361e",
+ "proof_hash": "7ad2ae3dae289ae6f6eea98bac4689679d43ee5cdae259c501b5bcf2b7ea6215",
+ "code_hash_original": "7aadc1a1034b173ef9c5275d5679c475e523a3dc0d7951db6d74c4449dfefbe2",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "myMin",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

@@ -1,0 +1,109 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:14:51: warning: unused variable `target`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:23:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:36:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:50:104: error: type mismatch\n  rfl\nhas type\n  ?m.24515 = ?m.24515 : Prop\nbut is expected to have type\n  RPOrig.findFirstOccurrence arr target h_precond = RPRef.findFirstOccurrence arr target h_precond : Prop\nartifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:54:104: error: type mismatch\n  rfl\nhas type\n  ?m.24613 = ?m.24613 : Prop\nbut is expected to have type\n  RPOrig.findFirstOccurrence arr target h_precond = RPRef.findFirstOccurrence arr target h_precond : Prop\nartifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:59:2: error: tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n      else -1)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n      else -1)\n    0\narr : Array Int\ntarget : Int\nh_precond : findFirstOccurrence_precond arr target\n⊢ ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n        else -1)\n      0 =\n    ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n        else -1)\n      0\nartifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:67:260: error: tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n      else -1)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n      else -1)\n    0\narr : Array Int\ntarget : Int\nh_precond : findFirstOccurrence_precond arr target\n⊢ ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n        else -1)\n      0 =\n    ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n        else -1)\n      0\nartifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:62:104: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:62:104: error: unknown metavariable '?_uniq.41769'\nartifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:75:255: error: tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n      else -1)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n      else -1)\n    0\narr : Array Int\ntarget : Int\nh_precond : findFirstOccurrence_precond arr target\n⊢ ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n        else -1)\n      0 =\n    ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n        else -1)\n      0\nartifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:70:104: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:70:104: error: unknown metavariable '?_uniq.58443'\nartifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:79:276: error: tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n      else -1)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n      else -1)\n    0\narr : Array Int\ntarget : Int\nh_precond : findFirstOccurrence_precond arr target\n⊢ ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n        else -1)\n      0 =\n    ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n        else -1)\n      0\nartifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:78:104: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_37/verina_basic_37__T3_comm_swap__0.lean:78:104: error: unknown metavariable '?_uniq.63910'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.921,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 51,
+   "severity": "warning",
+   "text": "unused variable `target`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 36,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 50,
+   "col": 104,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.24515 = ?m.24515 : Prop\nbut is expected to have type\n  RPOrig.findFirstOccurrence arr target h_precond = RPRef.findFirstOccurrence arr target h_precond : Prop"
+  },
+  {
+   "line": 54,
+   "col": 104,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.24613 = ?m.24613 : Prop\nbut is expected to have type\n  RPOrig.findFirstOccurrence arr target h_precond = RPRef.findFirstOccurrence arr target h_precond : Prop"
+  },
+  {
+   "line": 59,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n      else -1)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n      else -1)\n    0\narr : Array Int\ntarget : Int\nh_precond : findFirstOccurrence_precond arr target\n⊢ ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n        else -1)\n      0 =\n    ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n        else -1)\n      0"
+  },
+  {
+   "line": 67,
+   "col": 260,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n      else -1)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n      else -1)\n    0\narr : Array Int\ntarget : Int\nh_precond : findFirstOccurrence_precond arr target\n⊢ ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n        else -1)\n      0 =\n    ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n        else -1)\n      0"
+  },
+  {
+   "line": 62,
+   "col": 104,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 62,
+   "col": 104,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.41769'"
+  },
+  {
+   "line": 75,
+   "col": 255,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n      else -1)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n      else -1)\n    0\narr : Array Int\ntarget : Int\nh_precond : findFirstOccurrence_precond arr target\n⊢ ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n        else -1)\n      0 =\n    ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n        else -1)\n      0"
+  },
+  {
+   "line": 70,
+   "col": 104,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 70,
+   "col": 104,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.58443'"
+  },
+  {
+   "line": 79,
+   "col": 276,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n      else -1)\n    0\nis not definitionally equal to the right-hand side\n  ⋯.fix\n    (fun i a =>\n      if h : i < arr.size then\n        let a_1 := arr[i]!;\n        if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n      else -1)\n    0\narr : Array Int\ntarget : Int\nh_precond : findFirstOccurrence_precond arr target\n⊢ ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (i + 1) ⋯\n        else -1)\n      0 =\n    ⋯.fix\n      (fun i a =>\n        if h : i < arr.size then\n          let a_1 := arr[i]!;\n          if h : a_1 = target then ↑i else if h : a_1 > target then -1 else a (1 + i) ⋯\n        else -1)\n      0"
+  },
+  {
+   "line": 78,
+   "col": 104,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 78,
+   "col": 104,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.63910'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_74",
+ "variant_id": "verina_basic_74__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_3108e807 : Int :=\n    maxArray_aux a 1 a[0]!\n  __rp_tmp_3108e807\n",
+ "transformed_code_aux": "def maxArray_aux (a : Array Int) (index : Nat) (current : Int) : Int :=\n  if index < a.size then\n    let new_current := if current > a[index]! then current else a[index]!\n    maxArray_aux a (index + 1) new_current\n  else\n    current\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_3108e807",
+  "seed": 0
+ },
+ "spec_hash": "1978aca6f048af3b8e8755ee646dfeb53fe8bc42e7472ecd430ec72e3e15aa0c",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "7e20ff346fbf94e92a9af191bf1127c6f97083933b577e18572edb110c78da82",
+ "code_aux_hash_original": "17f0c2de10d7e6de63c42dc7d07f15ab702063892fb95ed34b875de797af057c",
+ "tier": "basic",
+ "function_name": "maxArray",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

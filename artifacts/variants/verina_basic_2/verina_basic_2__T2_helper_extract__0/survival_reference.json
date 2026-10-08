@@ -1,0 +1,27 @@
+{
+ "task_id": "verina_basic_2",
+ "variant_id": "verina_basic_2__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "type_mismatch",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.725,
+ "proof_region_errors": [
+  "type mismatch\n  res\nhas type\n  s.toList = [] : Prop\nbut is expected to have type\n  match findSmallest__rp_helper_06efecc0 s h_precond with\n  | none => s.toList = []\n  | some r => r ∈ s.toList ∧ ∀ (x : Nat), x ∈ s.toList → r ≤ x : Prop",
+  "type mismatch\n  res\nhas type\n  r ∈ s.toList ∧ ∀ (b : Nat), b ∈ s.toList → r ≤ b : Prop\nbut is expected to have type\n  match findSmallest__rp_helper_06efecc0 s h_precond with\n  | none => s.toList = []\n  | some r => r ∈ s.toList ∧ ∀ (x : Nat), x ∈ s.toList → r ≤ x : Prop\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "87a9d46c0253d20c36fac3540f978af6921da0a9140218a5bfba06b20186ba91",
+ "spec_hash": "de1f0fd8f52c96e55dcabd9297ed3efc3c6f1a0c08b501c1250c09ea0b248bb6"
+}

@@ -1,0 +1,11 @@
+--- goedel-prover-v2-32b:verina_basic_92__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_92__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : SwapArithmetic X Y h_precond = (Y, X) := by
+-    dsimp [SwapArithmetic]
++    dsimp [SwapArithmetic, SwapArithmetic__rp_helper_2265221a]
+     <;>
+     (try ring_nf) <;>
+     (try simp_all [Prod.ext_iff]) <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

@@ -1,0 +1,169 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:13:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:22:22: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:30:22: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:39:60: error: type mismatch\n  rfl\nhas type\n  ?m.409 = ?m.409 : Prop\nbut is expected to have type\n  RPOrig.Triple x h_precond = RPRef.Triple x h_precond : Prop\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:43:60: error: type mismatch\n  rfl\nhas type\n  ?m.1087 = ?m.1087 : Prop\nbut is expected to have type\n  RPOrig.Triple x h_precond = RPRef.Triple x h_precond : Prop\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:48:2: error: tactic 'rfl' failed, the left-hand side\n  if x = 0 then 0\n  else\n    let y := 2 * x;\n    x + y\nis not definitionally equal to the right-hand side\n  if x = 0 then 0\n  else\n    let y := x * 2;\n    x + y\nx : ℤ\nh_precond : Triple_precond x\n⊢ (if x = 0 then 0\n    else\n      let y := 2 * x;\n      x + y) =\n    if x = 0 then 0\n    else\n      let y := x * 2;\n      x + y\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:53:292: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:54:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:55:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:56:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:53:292: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:54:6: warning: '(simp only [RPOrig.Triple, RPRef.Triple, Nat.add_comm, Nat.add_left_comm, Nat.add_assoc, Nat.mul_comm,\n      Nat.mul_left_comm, Nat.mul_assoc, Int.add_comm, Int.add_left_comm, Int.add_assoc, Int.mul_comm, Int.mul_left_comm,\n      Int.mul_assoc, Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm, Bool.or_left_comm, Bool.or_assoc,\n      and_comm, and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:55:6: warning: '(simp only [RPOrig.Triple, RPRef.Triple, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm, Bool.and_comm,\n      Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:56:6: warning: '(simp only [RPOrig.Triple, RPRef.Triple]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:61:287: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:62:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:63:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:64:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:61:287: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:62:6: warning: '(simp [RPOrig.Triple, RPRef.Triple, Nat.add_comm, Nat.add_left_comm, Nat.add_assoc, Nat.mul_comm, Nat.mul_left_comm,\n      Nat.mul_assoc, Int.add_comm, Int.add_left_comm, Int.add_assoc, Int.mul_comm, Int.mul_left_comm, Int.mul_assoc,\n      Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm, Bool.or_left_comm, Bool.or_assoc, and_comm,\n      and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:63:6: warning: '(simp [RPOrig.Triple, RPRef.Triple, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm, Bool.and_comm,\n      Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:64:6: warning: '(simp [RPOrig.Triple, RPRef.Triple]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:68:68: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:68:48: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T3_comm_swap__0.lean:68:68: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 5.479,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 30,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 60,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.409 = ?m.409 : Prop\nbut is expected to have type\n  RPOrig.Triple x h_precond = RPRef.Triple x h_precond : Prop"
+  },
+  {
+   "line": 43,
+   "col": 60,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1087 = ?m.1087 : Prop\nbut is expected to have type\n  RPOrig.Triple x h_precond = RPRef.Triple x h_precond : Prop"
+  },
+  {
+   "line": 48,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if x = 0 then 0\n  else\n    let y := 2 * x;\n    x + y\nis not definitionally equal to the right-hand side\n  if x = 0 then 0\n  else\n    let y := x * 2;\n    x + y\nx : ℤ\nh_precond : Triple_precond x\n⊢ (if x = 0 then 0\n    else\n      let y := 2 * x;\n      x + y) =\n    if x = 0 then 0\n    else\n      let y := x * 2;\n      x + y"
+  },
+  {
+   "line": 53,
+   "col": 292,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 54,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 55,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 56,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 53,
+   "col": 292,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 54,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.Triple, RPRef.Triple, Nat.add_comm, Nat.add_left_comm, Nat.add_assoc, Nat.mul_comm,\n      Nat.mul_left_comm, Nat.mul_assoc, Int.add_comm, Int.add_left_comm, Int.add_assoc, Int.mul_comm, Int.mul_left_comm,\n      Int.mul_assoc, Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm, Bool.or_left_comm, Bool.or_assoc,\n      and_comm, and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 55,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.Triple, RPRef.Triple, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm, Bool.and_comm,\n      Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 56,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.Triple, RPRef.Triple]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 287,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 62,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 63,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 64,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 287,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 62,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp [RPOrig.Triple, RPRef.Triple, Nat.add_comm, Nat.add_left_comm, Nat.add_assoc, Nat.mul_comm, Nat.mul_left_comm,\n      Nat.mul_assoc, Int.add_comm, Int.add_left_comm, Int.add_assoc, Int.mul_comm, Int.mul_left_comm, Int.mul_assoc,\n      Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm, Bool.or_left_comm, Bool.or_assoc, and_comm,\n      and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 63,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp [RPOrig.Triple, RPRef.Triple, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm, Bool.and_comm,\n      Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 64,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp [RPOrig.Triple, RPRef.Triple]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 68,
+   "col": 68,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 68,
+   "col": 48,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 68,
+   "col": 68,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

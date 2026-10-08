@@ -1,0 +1,11 @@
+--- deepseek-prover-v2-7b:verina_basic_66__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_66__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : (ComputeIsEven x h_precond = true) ↔ ∃ (k : Int), x = 2 * k := by
+-    unfold ComputeIsEven
++    unfold ComputeIsEven ComputeIsEven__rp_helper_c370e361
+     simp [h_precond]
+     constructor
+     · -- Prove the forward direction: (x % 2 = 0) → ∃ k, x = 2 * k
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

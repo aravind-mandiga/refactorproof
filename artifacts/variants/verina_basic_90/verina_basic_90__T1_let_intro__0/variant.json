@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_90",
+ "variant_id": "verina_basic_90__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_9f5ecdf5 : (Int × Int) :=\n    let rows := a.size\n    let cols := if rows > 0 then (a[0]!).size else 0\n\n    let rec aux (m n : Int) (fuel : Nat) : (Int × Int) :=\n      if fuel = 0 then (-1, -1)\n      else if m ≥ Int.ofNat rows || n < 0 then (-1, -1)\n      else if get2d a m n = key then (m, n)\n      else if get2d a m n < key then\n        aux (m + 1) n (fuel - 1)\n      else\n        aux m (n - 1) (fuel - 1)\n\n    aux 0 (Int.ofNat (cols - 1)) (rows + cols)\n  __rp_tmp_9f5ecdf5\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_9f5ecdf5",
+  "seed": 0
+ },
+ "spec_hash": "ce3855686a9a563858afb7262cc61e86c2ebafef225c81be04f0243a371305e6",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "3b38d06b2110381b47d1df77e6efa4a25d67d93ba96b9d1aceeedc59c1dadbc2",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "SlopeSearch",
+ "code_loc_original": 11,
+ "code_loc_refactored": 13
+}

@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-32b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-32b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-32b.lean:15:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-32b.lean:26:22: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-32b.lean:38:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-32b.lean:72:6: error: type mismatch\n  h_main\nhas type\n  x * 3 / 3 = x : Prop\nbut is expected to have type\n  3 * x / 3 = x : Prop\nartifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-32b.lean:78:6: error: type mismatch\n  h₂\nhas type\n  x * 3 / 3 * 3 = x * 3 : Prop\nbut is expected to have type\n  3 * x / 3 * 3 = 3 * x : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 7.598,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 72,
+   "col": 6,
+   "severity": "error",
+   "text": "type mismatch\n  h_main\nhas type\n  x * 3 / 3 = x : Prop\nbut is expected to have type\n  3 * x / 3 = x : Prop"
+  },
+  {
+   "line": 78,
+   "col": 6,
+   "severity": "error",
+   "text": "type mismatch\n  h₂\nhas type\n  x * 3 / 3 * 3 = x * 3 : Prop\nbut is expected to have type\n  3 * x / 3 * 3 = 3 * x : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

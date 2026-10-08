@@ -1,0 +1,91 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_15/verina_basic_15__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_15/verina_basic_15__T5_branch_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/certificates/verina_basic_15/verina_basic_15__T5_branch_extract__0.lean:14:40: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T5_branch_extract__0.lean:23:48: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T5_branch_extract__0.lean:33:76: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T5_branch_extract__0.lean:33:12: warning: The declaration 'containsConsecutiveNumbers__rp_branch_4f109154' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T5_branch_extract__0.lean:58:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T5_branch_extract__0.lean:59:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T5_branch_extract__0.lean:58:6: warning: '(delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers\n    RPRef.containsConsecutiveNumbers__rp_branch_4f109154 RPOrig.containsConsecutiveNumbers._unary;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T5_branch_extract__0.lean:59:6: warning: '(set_option smartUnfolding false in rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T5_branch_extract__0.lean:63:142: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T5_branch_extract__0.lean:63:142: warning: '(first\n  | rfl\n  |\n    (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers\n        RPRef.containsConsecutiveNumbers__rp_branch_4f109154;\n      rfl)\n  |\n    (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers\n        RPRef.containsConsecutiveNumbers__rp_branch_4f109154 RPOrig.containsConsecutiveNumbers._unary;\n      rfl)\n  | (set_option smartUnfolding false in rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T5_branch_extract__0.lean:67:137: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T5_branch_extract__0.lean:67:137: warning: '(first\n  | rfl\n  |\n    (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers\n        RPRef.containsConsecutiveNumbers__rp_branch_4f109154;\n      rfl)\n  |\n    (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers\n        RPRef.containsConsecutiveNumbers__rp_branch_4f109154 RPOrig.containsConsecutiveNumbers._unary;\n      rfl)\n  | (set_option smartUnfolding false in rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 70.1,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 48,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 33,
+   "col": 76,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 33,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'containsConsecutiveNumbers__rp_branch_4f109154' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 58,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 59,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 58,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers\n    RPRef.containsConsecutiveNumbers__rp_branch_4f109154 RPOrig.containsConsecutiveNumbers._unary;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 59,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(set_option smartUnfolding false in rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 63,
+   "col": 142,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 63,
+   "col": 142,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  |\n    (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers\n        RPRef.containsConsecutiveNumbers__rp_branch_4f109154;\n      rfl)\n  |\n    (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers\n        RPRef.containsConsecutiveNumbers__rp_branch_4f109154 RPOrig.containsConsecutiveNumbers._unary;\n      rfl)\n  | (set_option smartUnfolding false in rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 137,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 137,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  |\n    (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers\n        RPRef.containsConsecutiveNumbers__rp_branch_4f109154;\n      rfl)\n  |\n    (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers\n        RPRef.containsConsecutiveNumbers__rp_branch_4f109154 RPOrig.containsConsecutiveNumbers._unary;\n      rfl)\n  | (set_option smartUnfolding false in rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

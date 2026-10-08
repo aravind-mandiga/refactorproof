@@ -1,0 +1,37 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_55/verina_advanced_55__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_55/verina_advanced_55__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_55/verina_advanced_55__T2_helper_extract__0.lean:26:15: error: unknown constant 'Std.HashMap.emptyWithCapacity'\nartifacts/certificates/verina_advanced_55/verina_advanced_55__T2_helper_extract__0.lean:50:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_55/verina_advanced_55__T2_helper_extract__0.lean:59:62: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n",
+ "stderr": "",
+ "elapsed_seconds": 0.713,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 26,
+   "col": 15,
+   "severity": "error",
+   "text": "unknown constant 'Std.HashMap.emptyWithCapacity'"
+  },
+  {
+   "line": 50,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 59,
+   "col": 62,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unknown_constant_or_identifier"
+}

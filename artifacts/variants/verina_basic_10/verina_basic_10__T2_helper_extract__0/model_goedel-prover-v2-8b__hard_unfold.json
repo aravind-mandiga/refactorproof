@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_10",
+ "variant_id": "verina_basic_10__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__hard_unfold",
+ "generation_attempt": 1,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 8.579,
+ "proof_region_errors": [
+  "unsolved goals\ncase mp\nn : ℤ\na : Array ℤ\nh_precond : isGreater_precond n a\na_1 : ∀ (i : ℕ) (x : i < a.size), a[i] < n\n⊢ isGreater__rp_helper_d4e98f7f n a h_precond = true\n\ncase mpr\nn : ℤ\na : Array ℤ\nh_precond : isGreater_precond n a\na_1 : isGreater__rp_helper_d4e98f7f n a h_precond = true\ni : ℕ\nx : i < a.size\n⊢ a[i] < n\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "fff1ab3a2725f491e4d24aec5a0dcb565e503c880ddc814aa887544cd5426662",
+ "spec_hash": "6b685531fd1dac53ef004523d208959ca04309d5100dc7b60307820548ead3d0",
+ "proof_text": "  unfold isGreater isGreater_postcond\n  have h_main : (∀ i, (hi : i < a.size) → n > a[i]) ↔ a.all (fun x => n > x) := by\n    rw [Array.all_eq]\n    <;> simp_all [isGreater_precond]\n    <;>\n    aesop\n\n  have h_final : isGreater_postcond (n) (a) (isGreater (n) (a) h_precond) h_precond := by\n    dsimp only [isGreater_postcond, isGreater, isGreater_precond] at *\n    rw [h_main]\n    <;> simp_all [isGreater_precond]\n    <;>\n    aesop\n\n  apply h_final\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "hard_unfold"
+}

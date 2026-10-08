@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_66__T5_branch_extract__0__reference__unfold_add_helper/verina_basic_66__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_66__T5_branch_extract__0__reference__unfold_add_helper/verina_basic_66__T5_branch_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_66__T5_branch_extract__0__reference__unfold_add_helper/verina_basic_66__T5_branch_extract__0.lean:13:27: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_66__T5_branch_extract__0__reference__unfold_add_helper/verina_basic_66__T5_branch_extract__0.lean:21:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_66__T5_branch_extract__0__reference__unfold_add_helper/verina_basic_66__T5_branch_extract__0.lean:21:12: warning: The declaration 'ComputeIsEven__rp_branch_87fb4e70' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_66__T5_branch_extract__0__reference__unfold_add_helper/verina_basic_66__T5_branch_extract__0.lean:39:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n",
+ "stderr": "",
+ "elapsed_seconds": 10.111,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 27,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'ComputeIsEven__rp_branch_87fb4e70' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 39,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_4",
+ "variant_id": "verina_basic_4__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  kthElement__rp_helper_837a29b3 arr k h_precond\n",
+ "transformed_code_aux": "\nprivate def kthElement__rp_helper_837a29b3 (arr : Array Int) (k : Nat) (h_precond : kthElement_precond (arr) (k)) : Int :=\n  arr[k - 1]!\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "kthElement__rp_helper_837a29b3"
+ ],
+ "metadata": {
+  "binders": [
+   "arr",
+   "k",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "a0b811e952a5dfd311651dcb92835e384cac1d72c3a8ee62d6b017b5847e2e6a",
+ "proof_hash": "9015dc93c2a7f9c0a46da0bbf3bf0a9a7af80bd4dd1d738202cace4eceed3135",
+ "code_hash_original": "6aca5d786d7b2972d4bc20d4215ad7b9c718385a5ee3b7e97e639f4554ec5076",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "kthElement",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

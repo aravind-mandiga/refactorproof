@@ -1,0 +1,12 @@
+--- deepseek-prover-v2-7b:verina_basic_78__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_78__T2_helper_extract__0 (simp_add_helper)
+@@ -1,5 +1,5 @@
+   have h1 : (MultipleReturns (x) (y) h_precond).1 = x + y := by
+-    simp [MultipleReturns, MultipleReturns_precond, h_precond]
++    simp [MultipleReturns, MultipleReturns_precond, h_precond, MultipleReturns__rp_helper_39d93fc9]
+     <;> rfl
+ 
+   have h2 : (MultipleReturns (x) (y) h_precond).2 + y = x := by
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: linarith failed to find a contradiction | case h1.h | x y : ℤ | h_precond : MultipleReturns_precond x y | h1 : (MultipleReturns x y h_precond).1 = x + y | a✝ : y + (MultipleReturns__rp_helper_39d93fc9 x y h_precond).2 < x | ⊢ False failed | 

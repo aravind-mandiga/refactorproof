@@ -1,0 +1,11 @@
+--- goedel-prover-v2-8b:verina_advanced_6__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_advanced_6__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : allVowels_postcond (s) (allVowels (s) h_precond) h_precond := by
+-    dsimp [allVowels_postcond, allVowels]
++    dsimp [allVowels_postcond, allVowels, allVowels__rp_helper_1905f5d2]
+     <;> simp_all [List.all_cons, List.all_nil, List.mem_cons, List.mem_singleton]
+     <;>
+     (try aesop) <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

@@ -1,0 +1,26 @@
+{
+ "task_id": "verina_basic_81",
+ "variant_id": "verina_basic_81__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 18.333,
+ "proof_region_errors": [
+  "unsolved goals\ncase isFalse.right\nx y : ℕ\nh_precond : DivisionFunction_precond x y\nh✝ : ¬y = 0\nh_left : (divMod x y).2 * ↑y + (divMod x y).1 = ↑x ∧ (0 ≤ (divMod x y).1 ∧ (divMod x y).1 < ↑y) ∧ 0 ≤ (divMod x y).2\n⊢ (DivisionFunction__rp_branch_e20d15dc x y h_precond).2 * ↑y + (DivisionFunction__rp_branch_e20d15dc x y h_precond).1 =\n      ↑x ∧\n    (0 ≤ (DivisionFunction__rp_branch_e20d15dc x y h_precond).1 ∧\n        (DivisionFunction__rp_branch_e20d15dc x y h_precond).1 < ↑y) ∧\n      0 ≤ (Division"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "0369a11fac2fd4d20eeffe78e779da518dfca4f240d8b625c9b2d5b18d0aabe1",
+ "spec_hash": "716dfc85a331316a49df1cf098ae3f7e753e8b4f1cd0927243c0ec663a3c5362"
+}

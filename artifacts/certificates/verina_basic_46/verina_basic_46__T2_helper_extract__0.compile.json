@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_46/verina_basic_46__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_46/verina_basic_46__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_46/verina_basic_46__T2_helper_extract__0.lean:14:44: warning: unused variable `elem`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_46/verina_basic_46__T2_helper_extract__0.lean:23:49: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_46/verina_basic_46__T2_helper_extract__0.lean:34:77: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_46/verina_basic_46__T2_helper_extract__0.lean:50:86: error: type mismatch\n  rfl\nhas type\n  ?m.46407 = ?m.46407 : Prop\nbut is expected to have type\n  RPOrig.lastPosition arr elem h_precond = RPRef.lastPosition arr elem h_precond : Prop\nartifacts/certificates/verina_basic_46/verina_basic_46__T2_helper_extract__0.lean:54:86: error: type mismatch\n  rfl\nhas type\n  ?m.46505 = ?m.46505 : Prop\nbut is expected to have type\n  RPOrig.lastPosition arr elem h_precond = RPRef.lastPosition arr elem h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 1.429,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `elem`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 49,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 34,
+   "col": 77,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 50,
+   "col": 86,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.46407 = ?m.46407 : Prop\nbut is expected to have type\n  RPOrig.lastPosition arr elem h_precond = RPRef.lastPosition arr elem h_precond : Prop"
+  },
+  {
+   "line": 54,
+   "col": 86,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.46505 = ?m.46505 : Prop\nbut is expected to have type\n  RPOrig.lastPosition arr elem h_precond = RPRef.lastPosition arr elem h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

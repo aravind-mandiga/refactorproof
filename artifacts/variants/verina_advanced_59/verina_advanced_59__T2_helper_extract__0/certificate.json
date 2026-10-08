@@ -1,0 +1,49 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_59",
+ "variant_id": "verina_advanced_59__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_59/verina_advanced_59__T2_helper_extract__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.972,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": "delta_rfl",
+ "certificate_level": "delta_rfl",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.24463 = ?m.24463 : Prop\nbut is expected to have type\n  RPOrig.palindromeIgnoreNonAlnum s h_precond = RPRef.palindromeIgnoreNonAlnum s h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.24555 = ?m.24555 : Prop\nbut is expected to have type\n  RPOrig.palindromeIgnoreNonAlnum s h_precond = RPRef.palindromeIgnoreNonAlnum s h_precond : Prop\n"
+   ]
+  },
+  "delta_rfl": {
+   "ok": true,
+   "errors": []
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

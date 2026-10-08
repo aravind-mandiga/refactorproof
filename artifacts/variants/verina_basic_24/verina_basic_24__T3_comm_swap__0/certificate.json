@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_24",
+ "variant_id": "verina_basic_24__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_24/verina_basic_24__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 2.109,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.61244 = ?m.61244 : Prop\nbut is expected to have type\n  RPOrig.firstEvenOddDifference a h_precond = RPRef.firstEvenOddDifference a h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.61338 = ?m.61338 : Prop\nbut is expected to have type\n  RPOrig.firstEvenOddDifference a h_precond = RPRef.firstEvenOddDifference a h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\na : Array Int\nh_precond : firstEvenOddDifference_precond a\n⊢ RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩ =\n    RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩"
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\na : Array Int\nh_precond : firstEvenOddDifference_precond a\n⊢ RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩ =\n    RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.68507'"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\na : Array Int\nh_precond : firstEvenOddDifference_precond a\n⊢ RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩ =\n    RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.75200'"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩\na : Array Int\nh_precond : firstEvenOddDifference_precond a\n⊢ RPOrig.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩ =\n    RPRef.firstEvenOddDifference.findFirstEvenOdd._unary a ⟨0, ⟨none, none⟩⟩",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.77257'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

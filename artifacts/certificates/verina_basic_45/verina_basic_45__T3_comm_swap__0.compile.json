@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_45/verina_basic_45__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_45/verina_basic_45__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_45/verina_basic_45__T3_comm_swap__0.lean:36:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_45/verina_basic_45__T3_comm_swap__0.lean:44:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_45/verina_basic_45__T3_comm_swap__0.lean:53:74: error: type mismatch\n  rfl\nhas type\n  ?m.1210 = ?m.1210 : Prop\nbut is expected to have type\n  RPOrig.findProduct lst h_precond = RPRef.findProduct lst h_precond : Prop\nartifacts/certificates/verina_basic_45/verina_basic_45__T3_comm_swap__0.lean:57:74: error: type mismatch\n  rfl\nhas type\n  ?m.2036 = ?m.2036 : Prop\nbut is expected to have type\n  RPOrig.findProduct lst h_precond = RPRef.findProduct lst h_precond : Prop\nartifacts/certificates/verina_basic_45/verina_basic_45__T3_comm_swap__0.lean:62:2: error: tactic 'rfl' failed, the left-hand side\n  match firstEvenOddIndices lst with\n  | some (ei, oi) => lst[ei]! * lst[oi]!\n  | none => 0\nis not definitionally equal to the right-hand side\n  match firstEvenOddIndices lst with\n  | some (ei, oi) => lst[oi]! * lst[ei]!\n  | none => 0\nlst : List Int\nh_precond : findProduct_precond lst\n⊢ (match firstEvenOddIndices lst with\n    | some (ei, oi) => lst[ei]! * lst[oi]!\n    | none => 0) =\n    match firstEvenOddIndices lst with\n    | some (ei, oi) => lst[oi]! * lst[ei]!\n    | none => 0\n",
+ "stderr": "",
+ "elapsed_seconds": 0.919,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 36,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 44,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 53,
+   "col": 74,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1210 = ?m.1210 : Prop\nbut is expected to have type\n  RPOrig.findProduct lst h_precond = RPRef.findProduct lst h_precond : Prop"
+  },
+  {
+   "line": 57,
+   "col": 74,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.2036 = ?m.2036 : Prop\nbut is expected to have type\n  RPOrig.findProduct lst h_precond = RPRef.findProduct lst h_precond : Prop"
+  },
+  {
+   "line": 62,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  match firstEvenOddIndices lst with\n  | some (ei, oi) => lst[ei]! * lst[oi]!\n  | none => 0\nis not definitionally equal to the right-hand side\n  match firstEvenOddIndices lst with\n  | some (ei, oi) => lst[oi]! * lst[ei]!\n  | none => 0\nlst : List Int\nh_precond : findProduct_precond lst\n⊢ (match firstEvenOddIndices lst with\n    | some (ei, oi) => lst[ei]! * lst[oi]!\n    | none => 0) =\n    match firstEvenOddIndices lst with\n    | some (ei, oi) => lst[oi]! * lst[ei]!\n    | none => 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

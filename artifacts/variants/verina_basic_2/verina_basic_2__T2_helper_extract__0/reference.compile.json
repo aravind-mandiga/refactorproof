@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_2/verina_basic_2__T2_helper_extract__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_2/verina_basic_2__T2_helper_extract__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_2/verina_basic_2__T2_helper_extract__0/reference.lean:14:26: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_2/verina_basic_2__T2_helper_extract__0/reference.lean:22:62: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_2/verina_basic_2__T2_helper_extract__0/reference.lean:39:64: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_2/verina_basic_2__T2_helper_extract__0/reference.lean:61:4: error: type mismatch\n  res\nhas type\n  s.toList = [] : Prop\nbut is expected to have type\n  match findSmallest__rp_helper_06efecc0 s h_precond with\n  | none => s.toList = []\n  | some r => r ∈ s.toList ∧ ∀ (x : Nat), x ∈ s.toList → r ≤ x : Prop\nartifacts/variants/verina_basic_2/verina_basic_2__T2_helper_extract__0/reference.lean:65:4: error: type mismatch\n  res\nhas type\n  r ∈ s.toList ∧ ∀ (b : Nat), b ∈ s.toList → r ≤ b : Prop\nbut is expected to have type\n  match findSmallest__rp_helper_06efecc0 s h_precond with\n  | none => s.toList = []\n  | some r => r ∈ s.toList ∧ ∀ (x : Nat), x ∈ s.toList → r ≤ x : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.725,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 26,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 62,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 64,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 61,
+   "col": 4,
+   "severity": "error",
+   "text": "type mismatch\n  res\nhas type\n  s.toList = [] : Prop\nbut is expected to have type\n  match findSmallest__rp_helper_06efecc0 s h_precond with\n  | none => s.toList = []\n  | some r => r ∈ s.toList ∧ ∀ (x : Nat), x ∈ s.toList → r ≤ x : Prop"
+  },
+  {
+   "line": 65,
+   "col": 4,
+   "severity": "error",
+   "text": "type mismatch\n  res\nhas type\n  r ∈ s.toList ∧ ∀ (b : Nat), b ∈ s.toList → r ≤ b : Prop\nbut is expected to have type\n  match findSmallest__rp_helper_06efecc0 s h_precond with\n  | none => s.toList = []\n  | some r => r ∈ s.toList ∧ ∀ (x : Nat), x ∈ s.toList → r ≤ x : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

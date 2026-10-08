@@ -1,0 +1,10 @@
+--- reference:verina_basic_4__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_4__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold kthElement kthElement_postcond
++  unfold kthElement kthElement__rp_helper_837a29b3 kthElement_postcond
+   unfold kthElement_precond at h_precond
+   have ⟨hp1, hp2⟩ := h_precond
+   simp_all
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

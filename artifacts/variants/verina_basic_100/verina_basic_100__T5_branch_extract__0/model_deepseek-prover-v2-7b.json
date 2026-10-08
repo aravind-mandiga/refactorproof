@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_100",
+ "variant_id": "verina_basic_100__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "simp_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.003,
+ "proof_region_errors": [
+  "simp_all made no progress\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "7f3e90aae1b1955b9e82bcf476815e4a01858ed2b72f407177b4deb783434019",
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c",
+ "proof_text": "  have h_main : ((Triple (x) h_precond) / 3 = x) ∧ ((Triple (x) h_precond) / 3 * 3 = Triple (x) h_precond) := by\n    dsimp [Triple, Triple_precond, Triple_postcond]\n    split_ifs <;> simp_all [Int.mul_emod, Int.add_emod, Int.emod_emod]\n    <;>\n    (try omega) <;>\n    (try\n      {\n        -- Prove that (3 * x) / 3 = x\n        have h₀ : (3 * x) / 3 = x := by omega\n        simp_all [h₀, Int.mul_emod, Int.add_emod, Int.emod_emod]\n        <;> omega\n      }) <;>\n    (try\n      {\n        -- Prove that (3 * x) / 3 * 3 = 3 * x\n        have h₀ : (3 * x) / 3 * 3 = 3 * x := by\n          omega\n        simp_all [h₀, Int.mul_emod, Int.add_emod, Int.emod_emod]\n        <;> omega\n      })\n    <;> omega\n\n  -- We now have the two conditions we need in `h_main`, so we can use them to prove the final theorem.\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "default"
+}

@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_5",
+ "variant_id": "verina_basic_5__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  multiply__rp_helper_3cc08e31 a b h_precond\n",
+ "transformed_code_aux": "\nprivate def multiply__rp_helper_3cc08e31 (a : Int) (b : Int) (h_precond : multiply_precond (a) (b)) : Int :=\n  a * b\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "multiply__rp_helper_3cc08e31"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "b",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "fb0e1b99e5101d2e21739f877c4c112fe60644ed1f3f3d4687b975e1527cff42",
+ "proof_hash": "1f1e1d178ed69ff2cf2011f3b12452d5e94b32f0ab5414f983adfb99375bda6e",
+ "code_hash_original": "95acce535ee610eb487fc35444a9dbc0958d85358fe40e0b414e5bdfbc2179d1",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "multiply",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

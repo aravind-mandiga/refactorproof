@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_20",
+ "variant_id": "verina_basic_20__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  uniqueProduct__rp_helper_cf50253c arr h_precond\n",
+ "transformed_code_aux": "\nprivate def uniqueProduct__rp_helper_cf50253c (arr : Array Int) (h_precond : uniqueProduct_precond (arr)) : Int :=\n  let rec loop (i : Nat) (seen : Std.HashSet Int) (product : Int) : Int :=\n    if i < arr.size then\n      let x := arr[i]!\n      if seen.contains x then\n        loop (i + 1) seen product\n      else\n        loop (i + 1) (seen.insert x) (product * x)\n    else\n      product\n  loop 0 Std.HashSet.empty 1\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "uniqueProduct__rp_helper_cf50253c"
+ ],
+ "metadata": {
+  "binders": [
+   "arr",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "8136fc3eb378cab542519cd9f3779b5f298e8236ae2f678b778531cce71a68a8",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "ff4cfe4c1244cc9b9fa89a51c24ffe5f9c3d05dd5a6124ec8a9790328ee10650",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "uniqueProduct",
+ "code_loc_original": 10,
+ "code_loc_refactored": 12
+}

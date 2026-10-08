@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_12",
+ "variant_id": "verina_basic_12__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.796,
+ "proof_region_errors": [
+  "unsolved goals\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\n⊢ cubeSurfaceArea__rp_helper_67e54167 size h_precond = 6 * size * size",
+  "unsolved goals\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\nh₁ : cubeSurfaceArea size h_precond - 6 * size * size = 0\n⊢ cubeSurfaceArea__rp_helper_67e54167 size h_precond = 6 * size * size\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "57256f0cb3a6b431528d4928cf8cf2185c446e5fb4c5729e282f4f56cdc322ac",
+ "spec_hash": "35aa279200d65ed096def6c82bb7a725efca6faffdd9afab3f82ec84271da3ca",
+ "proof_text": "  have h₁ : (cubeSurfaceArea (size) h_precond) - 6 * size * size = 0 := by\n    have h₂ : cubeSurfaceArea (size) h_precond = 6 * size * size := by\n      simp [cubeSurfaceArea, cubeSurfaceArea_precond]\n    rw [h₂]\n    <;> simp [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib, Nat.mul_assoc]\n    <;> ring_nf at *\n    <;> omega\n\n  have h₂ : 6 * size * size - (cubeSurfaceArea (size) h_precond) = 0 := by\n    have h₃ : cubeSurfaceArea (size) h_precond = 6 * size * size := by\n      simp [cubeSurfaceArea, cubeSurfaceArea_precond]\n    rw [h₃]\n    <;> simp [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib, Nat.mul_assoc]\n    <;> ring_nf at *\n    <;> omega\n\n  have h₃ : cubeSurfaceArea_postcond (size) (cubeSurfaceArea (size) h_precond) h_precond := by\n    constructor <;> simp_all [cubeSurfaceArea_postcond]\n    <;> omega\n\n  exact h₃\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "default"
+}

@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_advanced_51",
+ "variant_id": "verina_advanced_51__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  mergeSorted__rp_helper_d7a1c3b5 a b h_precond\n",
+ "transformed_code_aux": "def mergeSortedAux : List Int → List Int → List Int\n| [], ys => ys\n| xs, [] => xs\n| x :: xs', y :: ys' =>\n  if x ≤ y then\n    let merged := mergeSortedAux xs' (y :: ys')\n    x :: merged\n  else\n    let merged := mergeSortedAux (x :: xs') ys'\n    y :: merged\n\nprivate def mergeSorted__rp_helper_d7a1c3b5 (a : List Int) (b : List Int) (h_precond : mergeSorted_precond (a) (b)) : List Int :=\n  let merged := mergeSortedAux a b\n  merged\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "mergeSorted__rp_helper_d7a1c3b5"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "b",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "843663c63149aa83c8013095d43e09824b15a5835b6dd79fc36c5e74fa2d3a2e",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "18406ad26d4a9dcc1da6b4138317df6c850858ec8bb7127a69b2132f5febebf9",
+ "code_aux_hash_original": "3ab06ce4f2be9b8a0305dcd63d03318cebc992e61b07ec97228ce875d954ca7b",
+ "tier": "advanced",
+ "function_name": "mergeSorted",
+ "code_loc_original": 2,
+ "code_loc_refactored": 4
+}

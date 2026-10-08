@@ -1,0 +1,67 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:15:28: warning: unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:15:38: warning: unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:23:68: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:23:12: warning: The declaration 'SwapArithmetic__rp_helper_2265221a' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:45:71: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nTry this: ring_nf\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:68:9: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:76:4: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case left\n  X Y : ℤ\n  h_precond : SwapArithmetic_precond X Y\n  ⊢ (SwapArithmetic__rp_helper_2265221a X Y h_precond).1 = Y\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:76:4: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case right\n  X Y : ℤ\n  h_precond : SwapArithmetic_precond X Y\n  ⊢ (SwapArithmetic__rp_helper_2265221a X Y h_precond).2 = X\n",
+ "stderr": "",
+ "elapsed_seconds": 9.145,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 38,
+   "severity": "warning",
+   "text": "unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 68,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'SwapArithmetic__rp_helper_2265221a' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 45,
+   "col": 71,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nTry this: ring_nf"
+  },
+  {
+   "line": 68,
+   "col": 9,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 76,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case left\n  X Y : ℤ\n  h_precond : SwapArithmetic_precond X Y\n  ⊢ (SwapArithmetic__rp_helper_2265221a X Y h_precond).1 = Y"
+  },
+  {
+   "line": 76,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case right\n  X Y : ℤ\n  h_precond : SwapArithmetic_precond X Y\n  ⊢ (SwapArithmetic__rp_helper_2265221a X Y h_precond).2 = X\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

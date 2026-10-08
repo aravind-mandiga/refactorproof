@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_10/verina_basic_10__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_10/verina_basic_10__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_10/verina_basic_10__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:16:23: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_10/verina_basic_10__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:24:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_10/verina_basic_10__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:24:12: warning: The declaration 'isGreater__rp_helper_d4e98f7f' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_10/verina_basic_10__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:41:65: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_10/verina_basic_10__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:62:9: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_10/verina_basic_10__T2_helper_extract__0/model_goedel-prover-v2-8b__avoid_unfold.lean:55:86: error: unsolved goals\ncase mp\nn : ℤ\na : Array ℤ\nh_precond : isGreater_precond n a\na_1 : ∀ (i : ℕ) (hi : i < a.size), a[i] + 1 ≤ n\n⊢ isGreater__rp_helper_d4e98f7f n a h_precond = true\n\ncase mpr\nn : ℤ\na : Array ℤ\nh_precond : isGreater_precond n a\na_1 : isGreater__rp_helper_d4e98f7f n a h_precond = true\ni : ℕ\nhi : i < a.size\n⊢ 1 + a[i] ≤ n\n",
+ "stderr": "",
+ "elapsed_seconds": 7.945,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 23,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'isGreater__rp_helper_d4e98f7f' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 41,
+   "col": 65,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 62,
+   "col": 9,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 55,
+   "col": 86,
+   "severity": "error",
+   "text": "unsolved goals\ncase mp\nn : ℤ\na : Array ℤ\nh_precond : isGreater_precond n a\na_1 : ∀ (i : ℕ) (hi : i < a.size), a[i] + 1 ≤ n\n⊢ isGreater__rp_helper_d4e98f7f n a h_precond = true\n\ncase mpr\nn : ℤ\na : Array ℤ\nh_precond : isGreater_precond n a\na_1 : isGreater__rp_helper_d4e98f7f n a h_precond = true\ni : ℕ\nhi : i < a.size\n⊢ 1 + a[i] ≤ n\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

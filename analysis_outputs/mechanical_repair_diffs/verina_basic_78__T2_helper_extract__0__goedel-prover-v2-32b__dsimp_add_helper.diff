@@ -1,0 +1,11 @@
+--- goedel-prover-v2-32b:verina_basic_78__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_78__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : MultipleReturns_postcond (x) (y) (MultipleReturns (x) (y) h_precond) h_precond := by
+-    dsimp [MultipleReturns, MultipleReturns_postcond, MultipleReturns_precond] at *
++    dsimp [MultipleReturns, MultipleReturns_postcond, MultipleReturns_precond, MultipleReturns__rp_helper_39d93fc9] at *
+     constructor
+     · -- Prove the first condition: result.1 = x + y
+       rfl
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

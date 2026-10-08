@@ -1,0 +1,14 @@
+--- goedel-prover-v2-32b:verina_basic_50__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_50__T2_helper_extract__0 (dsimp_add_helper)
+@@ -3,7 +3,7 @@
+     · -- Prove x ≥ 0 → x = Abs (x) h_precond
+       intro hx
+       have h₁ : Abs (x) h_precond = x := by
+-        dsimp [Abs]
++        dsimp [Abs, Abs__rp_helper_4386b369]
+         split_ifs <;>
+         (try { contradiction }) <;>
+         (try { linarith }) <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: tactic 'split_ifs' failed, no if-then-else conditions to split | x : ℤ | h_precond : Abs_precond x | hx : x < 0 | ⊢ Abs__rp_helper_4386b369 x h_precond = -x | 

@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_97__T2_helper_extract__0",
+ "task_id": "verina_basic_97",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "TestArrayElements",
+ "helper": "TestArrayElements__rp_helper_9bca1c3a",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold TestArrayElements_postcond TestArrayElements\n  unfold TestArrayElements_precond at h_precond\n  apply And.intro\n  . simp [Array.size_setIfInBounds]\n  apply And.intro\n  . rw [Array.getElem!_eq_getD, Array.getD]\n    simp\n    exact h_precond\n  . intro k\n    intro hk hxk\n    simp [Array.getElem!_eq_getD, Array.getD]\n    split\n    . rw [Array.getElem_setIfInBounds]\n      split\n      . rename_i h h\u2081\n        rw [eq_comm] at h\u2081\n        contradiction\n      . rfl\n    . rw [Array.getElem_setIfInBounds]\n      split\n      . rename_i h h\u2081\n        rw [eq_comm] at h\u2081\n        contradiction\n      . rfl\n",
+ "proof_after": "  unfold TestArrayElements_postcond TestArrayElements TestArrayElements__rp_helper_9bca1c3a\n  unfold TestArrayElements_precond at h_precond\n  apply And.intro\n  . simp [Array.size_setIfInBounds]\n  apply And.intro\n  . rw [Array.getElem!_eq_getD, Array.getD]\n    simp\n    exact h_precond\n  . intro k\n    intro hk hxk\n    simp [Array.getElem!_eq_getD, Array.getD]\n    split\n    . rw [Array.getElem_setIfInBounds]\n      split\n      . rename_i h h\u2081\n        rw [eq_comm] at h\u2081\n        contradiction\n      . rfl\n    . rw [Array.getElem_setIfInBounds]\n      split\n      . rename_i h h\u2081\n        rw [eq_comm] at h\u2081\n        contradiction\n      . rfl\n"
+}

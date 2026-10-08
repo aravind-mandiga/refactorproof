@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_100__T2_helper_extract__0",
+ "task_id": "verina_basic_100",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "Triple",
+ "helper": "Triple__rp_helper_574d859a",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold Triple_postcond Triple\n  split_ifs with h\u2081\n  . rw [h\u2081]\n    simp\n  . simp\n    rw (occs := [1]) [\u2190Int.one_mul x]\n    rw [\u2190Int.add_mul]\n    simp +arith\n",
+ "proof_after": "  unfold Triple_postcond Triple Triple__rp_helper_574d859a\n  split_ifs with h\u2081\n  . rw [h\u2081]\n    simp\n  . simp\n    rw (occs := [1]) [\u2190Int.one_mul x]\n    rw [\u2190Int.add_mul]\n    simp +arith\n"
+}

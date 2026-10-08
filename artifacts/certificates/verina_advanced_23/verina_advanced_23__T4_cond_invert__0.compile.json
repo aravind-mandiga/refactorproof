@@ -1,0 +1,73 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_23/verina_advanced_23__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_23/verina_advanced_23__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_23/verina_advanced_23__T4_cond_invert__0.lean:13:26: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_23/verina_advanced_23__T4_cond_invert__0.lean:22:28: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_23/verina_advanced_23__T4_cond_invert__0.lean:35:28: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_23/verina_advanced_23__T4_cond_invert__0.lean:49:72: error: type mismatch\n  rfl\nhas type\n  ?m.24080 = ?m.24080 : Prop\nbut is expected to have type\n  RPOrig.isPowerOfTwo n h_precond = RPRef.isPowerOfTwo n h_precond : Prop\nartifacts/certificates/verina_advanced_23/verina_advanced_23__T4_cond_invert__0.lean:53:72: error: type mismatch\n  rfl\nhas type\n  ?m.24847 = ?m.24847 : Prop\nbut is expected to have type\n  RPOrig.isPowerOfTwo n h_precond = RPRef.isPowerOfTwo n h_precond : Prop\nartifacts/certificates/verina_advanced_23/verina_advanced_23__T4_cond_invert__0.lean:58:2: error: tactic 'rfl' failed, the left-hand side\n  if n ≤ 0 then false else RPOrig.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩\nis not definitionally equal to the right-hand side\n  if ¬n ≤ 0 then RPRef.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩ else false\nn : Int\nh_precond : isPowerOfTwo_precond n\n⊢ (if n ≤ 0 then false else RPOrig.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩) =\n    if ¬n ≤ 0 then RPRef.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩ else false\nartifacts/certificates/verina_advanced_23/verina_advanced_23__T4_cond_invert__0.lean:72:211: error: tactic 'rfl' failed, the left-hand side\n  !decide (n ≤ 0) && RPOrig.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩\nis not definitionally equal to the right-hand side\n  decide (0 < n) && RPRef.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩\nn : Int\nh_precond : isPowerOfTwo_precond n\n⊢ (!decide (n ≤ 0) && RPOrig.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩) =\n    (decide (0 < n) && RPRef.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩)\nartifacts/certificates/verina_advanced_23/verina_advanced_23__T4_cond_invert__0.lean:68:72: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_advanced_23/verina_advanced_23__T4_cond_invert__0.lean:68:72: error: unknown metavariable '?_uniq.35481'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.282,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 26,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 35,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 49,
+   "col": 72,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.24080 = ?m.24080 : Prop\nbut is expected to have type\n  RPOrig.isPowerOfTwo n h_precond = RPRef.isPowerOfTwo n h_precond : Prop"
+  },
+  {
+   "line": 53,
+   "col": 72,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.24847 = ?m.24847 : Prop\nbut is expected to have type\n  RPOrig.isPowerOfTwo n h_precond = RPRef.isPowerOfTwo n h_precond : Prop"
+  },
+  {
+   "line": 58,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if n ≤ 0 then false else RPOrig.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩\nis not definitionally equal to the right-hand side\n  if ¬n ≤ 0 then RPRef.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩ else false\nn : Int\nh_precond : isPowerOfTwo_precond n\n⊢ (if n ≤ 0 then false else RPOrig.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩) =\n    if ¬n ≤ 0 then RPRef.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩ else false"
+  },
+  {
+   "line": 72,
+   "col": 211,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  !decide (n ≤ 0) && RPOrig.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩\nis not definitionally equal to the right-hand side\n  decide (0 < n) && RPRef.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩\nn : Int\nh_precond : isPowerOfTwo_precond n\n⊢ (!decide (n ≤ 0) && RPOrig.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩) =\n    (decide (0 < n) && RPRef.isPowerOfTwo.aux._unary ⟨n, n.natAbs⟩)"
+  },
+  {
+   "line": 68,
+   "col": 72,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 68,
+   "col": 72,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.35481'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

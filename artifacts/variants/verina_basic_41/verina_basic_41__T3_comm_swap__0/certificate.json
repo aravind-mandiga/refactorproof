@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_41",
+ "variant_id": "verina_basic_41__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 1.818,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.24765 = ?m.24765 : Prop\nbut is expected to have type\n  RPOrig.hasOnlyOneDistinctElement a h_precond = RPRef.hasOnlyOneDistinctElement a h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.25596 = ?m.25596 : Prop\nbut is expected to have type\n  RPOrig.hasOnlyOneDistinctElement a h_precond = RPRef.hasOnlyOneDistinctElement a h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if a.size = 0 then true\n  else\n    let firstElement := a[0]!;\n    ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = firstElement then a_1 (i + 1) ⋯ else false else true) 1\nis not definitionally equal to the right-hand side\n  if a.size = 0 then true\n  else\n    let firstElement := a[0]!;\n    ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = firstElement then a_1 (1 + i) ⋯ else false else true) 1\na : Array Int\nh_precond : hasOnlyOneDisti"
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if a.size = 0 then true\n  else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1\nis not definitionally equal to the right-hand side\n  if a.size = 0 then true\n  else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1\na : Array Int\nh_precond : hasOnlyOneDistinctElement_precond a\n⊢ (if a.size = 0 then true\n    else ⋯.fix (fun i a_1 => if h : ",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.38309'"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  decide (a = #[]) ||\n    ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1\nis not definitionally equal to the right-hand side\n  decide (a = #[]) ||\n    ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1\na : Array Int\nh_precond : hasOnlyOneDistinctElement_precond a\n⊢ (decide (a = #[]) ||\n      ⋯.fix (fun i a_1 => if h : i < a.size then if h_",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.50790'"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if a.size = 0 then true\n  else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1\nis not definitionally equal to the right-hand side\n  if a.size = 0 then true\n  else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1\na : Array Int\nh_precond : hasOnlyOneDistinctElement_precond a\n⊢ (if a.size = 0 then true\n    else ⋯.fix (fun i a_1 => if h : ",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.55053'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_99/lean_3/verina_basic_99__T3_comm_swap__1.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_99/lean_3/verina_basic_99__T3_comm_swap__1.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_99/lean_3/verina_basic_99__T3_comm_swap__1.lean:14:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_99/lean_3/verina_basic_99__T3_comm_swap__1.lean:25:22: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_99/lean_3/verina_basic_99__T3_comm_swap__1.lean:43:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_99/lean_3/verina_basic_99__T3_comm_swap__1.lean:60:62: error: unsolved goals\nx : ℤ\nh_precond : Triple_precond x\nhx : x < 18\n⊢ (2 * x + x * 4) / 2 = (2 * x + 4 * x) / 2\n",
+ "stderr": "",
+ "elapsed_seconds": 9.629,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 43,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 60,
+   "col": 62,
+   "severity": "error",
+   "text": "unsolved goals\nx : ℤ\nh_precond : Triple_precond x\nhx : x < 18\n⊢ (2 * x + x * 4) / 2 = (2 * x + 4 * x) / 2\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

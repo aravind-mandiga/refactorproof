@@ -1,0 +1,11 @@
+--- goedel-prover-v2-8b:verina_basic_100__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_100__T2_helper_extract__0 (simp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : Triple_postcond (x) (Triple (x) h_precond) h_precond := by
+-    simp only [Triple_precond, Triple, Triple_postcond]
++    simp only [Triple_precond, Triple, Triple_postcond, Triple__rp_helper_574d859a]
+     split_ifs <;>
+     (try { contradiction }) <;>
+     (try { simp_all [Int.mul_ediv_cancel_left, Int.mul_emod, Int.add_emod, Int.emod_emod] }) <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

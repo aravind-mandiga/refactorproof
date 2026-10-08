@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_95/verina_basic_95__T2_helper_extract__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_95/verina_basic_95__T2_helper_extract__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_95/verina_basic_95__T2_helper_extract__0/reference.lean:24:76: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_95/verina_basic_95__T2_helper_extract__0/reference.lean:45:77: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_95/verina_basic_95__T2_helper_extract__0/reference.lean:67:4: error: simp made no progress\nartifacts/variants/verina_basic_95/verina_basic_95__T2_helper_extract__0/reference.lean:69:4: error: simp made no progress\nartifacts/variants/verina_basic_95/verina_basic_95__T2_helper_extract__0/reference.lean:107:6: error: simp made no progress\nartifacts/variants/verina_basic_95/verina_basic_95__T2_helper_extract__0/reference.lean:143:10: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  arr.setIfInBounds i.toNat arr[j.toNat]!\ncase intro.intro.intro.right.right.right\narr : Array Int\ni j : Int\nh₁ : i ≥ 0\nh₂ : j ≥ 0\nh₃ : i.toNat < arr.size\nh₄ : j.toNat < arr.size\nk : Nat\nhk : k < arr.size\nhki : ¬k = i.toNat\nhkj : ¬k = j.toNat\narr₁ : Array Int := arr.setIfInBounds i.toNat arr[j.toNat]!\nharr₁ : arr₁ = arr.setIfInBounds i.toNat arr[j.toNat]! := rfl\n⊢ (swap__rp_helper_d46bfdfe arr i j ⋯)[k]! = arr[k]!\n",
+ "stderr": "",
+ "elapsed_seconds": 0.751,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 24,
+   "col": 76,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 45,
+   "col": 77,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 67,
+   "col": 4,
+   "severity": "error",
+   "text": "simp made no progress"
+  },
+  {
+   "line": 69,
+   "col": 4,
+   "severity": "error",
+   "text": "simp made no progress"
+  },
+  {
+   "line": 107,
+   "col": 6,
+   "severity": "error",
+   "text": "simp made no progress"
+  },
+  {
+   "line": 143,
+   "col": 10,
+   "severity": "error",
+   "text": "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  arr.setIfInBounds i.toNat arr[j.toNat]!\ncase intro.intro.intro.right.right.right\narr : Array Int\ni j : Int\nh₁ : i ≥ 0\nh₂ : j ≥ 0\nh₃ : i.toNat < arr.size\nh₄ : j.toNat < arr.size\nk : Nat\nhk : k < arr.size\nhki : ¬k = i.toNat\nhkj : ¬k = j.toNat\narr₁ : Array Int := arr.setIfInBounds i.toNat arr[j.toNat]!\nharr₁ : arr₁ = arr.setIfInBounds i.toNat arr[j.toNat]! := rfl\n⊢ (swap__rp_helper_d46bfdfe arr i j ⋯)[k]! = arr[k]!\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "simp_failed"
+}

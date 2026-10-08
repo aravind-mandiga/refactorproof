@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_91__T2_helper_extract__0",
+ "task_id": "verina_basic_91",
+ "source": "goedel-prover-v2-32b",
+ "transformation": "T2_helper_extract",
+ "template": "dsimp_add_helper",
+ "function_name": "Swap",
+ "helper": "Swap__rp_helper_6bee5f12",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_swap : Swap X Y h_precond = (Y, X) := by\n    dsimp [Swap]\n    <;> simp_all [Prod.mk.injEq]\n    <;> norm_num\n    <;> aesop\n\n  have h_fst : (Swap X Y h_precond).fst = Y := by\n    rw [h_swap]\n    <;> simp [Prod.fst]\n\n  have h_snd : (Swap X Y h_precond).snd = X := by\n    rw [h_swap]\n    <;> simp [Prod.snd]\n\n  have h_main : Swap_postcond X Y (Swap X Y h_precond) h_precond := by\n    dsimp [Swap_postcond] at *\n    constructor\n    \u00b7 -- Prove (Swap X Y h_precond).fst = Y\n      exact h_fst\n    constructor\n    \u00b7 -- Prove (Swap X Y h_precond).snd = X\n      exact h_snd\n    \u00b7 -- Prove X \u2260 Y \u2192 (Swap X Y h_precond).fst \u2260 X \u2227 (Swap X Y h_precond).snd \u2260 Y\n      intro h_ne\n      constructor\n      \u00b7 -- Prove (Swap X Y h_precond).fst \u2260 X\n        have h\u2081 : (Swap X Y h_precond).fst = Y := h_fst\n        have h\u2082 : Y \u2260 X := by\n          intro h_eq\n          apply h_ne\n          linarith\n        intro h_contra\n        apply h\u2082\n        linarith\n      \u00b7 -- Prove (Swap X Y h_precond).snd \u2260 Y\n        have h\u2081 : (Swap X Y h_precond).snd = X := h_snd\n        intro h_contra\n        apply h_ne\n        linarith\n\n  exact h_main\n",
+ "proof_after": "  have h_swap : Swap X Y h_precond = (Y, X) := by\n    dsimp [Swap, Swap__rp_helper_6bee5f12]\n    <;> simp_all [Prod.mk.injEq]\n    <;> norm_num\n    <;> aesop\n\n  have h_fst : (Swap X Y h_precond).fst = Y := by\n    rw [h_swap]\n    <;> simp [Prod.fst]\n\n  have h_snd : (Swap X Y h_precond).snd = X := by\n    rw [h_swap]\n    <;> simp [Prod.snd]\n\n  have h_main : Swap_postcond X Y (Swap X Y h_precond) h_precond := by\n    dsimp [Swap_postcond] at *\n    constructor\n    \u00b7 -- Prove (Swap X Y h_precond).fst = Y\n      exact h_fst\n    constructor\n    \u00b7 -- Prove (Swap X Y h_precond).snd = X\n      exact h_snd\n    \u00b7 -- Prove X \u2260 Y \u2192 (Swap X Y h_precond).fst \u2260 X \u2227 (Swap X Y h_precond).snd \u2260 Y\n      intro h_ne\n      constructor\n      \u00b7 -- Prove (Swap X Y h_precond).fst \u2260 X\n        have h\u2081 : (Swap X Y h_precond).fst = Y := h_fst\n        have h\u2082 : Y \u2260 X := by\n          intro h_eq\n          apply h_ne\n          linarith\n        intro h_contra\n        apply h\u2082\n        linarith\n      \u00b7 -- Prove (Swap X Y h_precond).snd \u2260 Y\n        have h\u2081 : (Swap X Y h_precond).snd = X := h_snd\n        intro h_contra\n        apply h_ne\n        linarith\n\n  exact h_main\n"
+}

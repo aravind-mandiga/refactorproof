@@ -1,0 +1,14 @@
+--- goedel-prover-v2-8b:verina_basic_55__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_55__T2_helper_extract__0 (simp_add_helper)
+@@ -1,7 +1,7 @@
+   have h₁ : a = b → (Compare (a) (b) h_precond) = true := by
+     intro h_eq
+     -- Simplify the expression using the definition of Compare
+-    simp [Compare, h_eq, h_precond]
++    simp [Compare, h_eq, h_precond, Compare__rp_helper_56630b5e]
+     <;> simp_all
+     <;> aesop
+ 
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: tactic 'aesop' failed, made no progress | Initial goal: |   a b : ℤ |   h_precond : Compare_precond a b |   h_ne : ¬a = b |   ⊢ Compare__rp_helper_56630b5e a b h_precond = false | 

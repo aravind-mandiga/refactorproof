@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_4",
+ "variant_id": "verina_advanced_4__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  LongestIncreasingSubsequence__rp_helper_7566854c a h_precond\n",
+ "transformed_code_aux": "def intMax (x y : Int) : Int :=\n  if x < y then y else x\n\nprivate def LongestIncreasingSubsequence__rp_helper_7566854c (a : Array Int) (h_precond : LongestIncreasingSubsequence_precond (a)) : Int :=\n  let n := a.size\n  let dp := Id.run do\n    let mut dp := Array.mkArray n 1\n    for i in [1:n] do\n      for j in [0:i] do\n        if a[j]! < a[i]! then\n          let newVal := intMax (dp[i]!) (dp[j]! + 1)\n          dp := dp.set! i newVal\n    return dp\n  match dp with\n  | #[] => 0\n  | _   => dp.foldl intMax 0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "LongestIncreasingSubsequence__rp_helper_7566854c"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "ad19cd250c7f1139c9c52d57007fcd1d92222c4e1b2c3cbc8e6065440afc6ec5",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "14c9d2c11191f506618918e14b2f319bf215bcc9256b1e6f0b71db3076b3f752",
+ "code_aux_hash_original": "4584bee4c15e749e32a48f1efa9bbf07639d25bff792479f916f21eb5773afb8",
+ "tier": "advanced",
+ "function_name": "LongestIncreasingSubsequence",
+ "code_loc_original": 12,
+ "code_loc_refactored": 14
+}

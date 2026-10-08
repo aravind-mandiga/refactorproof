@@ -1,0 +1,109 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:15:29: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:15:39: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:23:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:23:12: warning: The declaration 'hasOppositeSign__rp_helper_5272bffb' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:40:65: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:106:16: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:107:16: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:113:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:114:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:115:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:106:16: warning: 'simp_all' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:107:16: warning: 'linarith' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:113:2: warning: '(try tauto)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:114:2: warning: '(try norm_num)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper/verina_basic_1__T2_helper_extract__0.lean:115:2: warning: '(try aesop)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 10.16,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'hasOppositeSign__rp_helper_5272bffb' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 65,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 106,
+   "col": 16,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 107,
+   "col": 16,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 113,
+   "col": 2,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 114,
+   "col": 2,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 115,
+   "col": 2,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 106,
+   "col": 16,
+   "severity": "warning",
+   "text": "'simp_all' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 107,
+   "col": 16,
+   "severity": "warning",
+   "text": "'linarith' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 113,
+   "col": 2,
+   "severity": "warning",
+   "text": "'(try tauto)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 114,
+   "col": 2,
+   "severity": "warning",
+   "text": "'(try norm_num)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 115,
+   "col": 2,
+   "severity": "warning",
+   "text": "'(try aesop)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

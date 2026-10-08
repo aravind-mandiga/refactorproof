@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_8/verina_basic_8__T2_helper_extract__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_8/verina_basic_8__T2_helper_extract__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_8/verina_basic_8__T2_helper_extract__0/reference.lean:14:19: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T2_helper_extract__0/reference.lean:14:29: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T2_helper_extract__0/reference.lean:22:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T2_helper_extract__0/reference.lean:39:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T2_helper_extract__0/reference.lean:56:4: error: tactic 'split' failed, consider using `set_option trace.split.failure true`\ncase left\na b : Int\nh_precond : myMin_precond a b\n⊢ myMin__rp_helper_829c4a21 a b h_precond ≤ a ∧ myMin__rp_helper_829c4a21 a b h_precond ≤ b\nartifacts/variants/verina_basic_8/verina_basic_8__T2_helper_extract__0/reference.lean:64:4: error: tactic 'split' failed, consider using `set_option trace.split.failure true`\ncase right\na b : Int\nh_precond : myMin_precond a b\n⊢ myMin__rp_helper_829c4a21 a b h_precond = a ∨ myMin__rp_helper_829c4a21 a b h_precond = b\n",
+ "stderr": "",
+ "elapsed_seconds": 0.708,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 56,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'split' failed, consider using `set_option trace.split.failure true`\ncase left\na b : Int\nh_precond : myMin_precond a b\n⊢ myMin__rp_helper_829c4a21 a b h_precond ≤ a ∧ myMin__rp_helper_829c4a21 a b h_precond ≤ b"
+  },
+  {
+   "line": 64,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'split' failed, consider using `set_option trace.split.failure true`\ncase right\na b : Int\nh_precond : myMin_precond a b\n⊢ myMin__rp_helper_829c4a21 a b h_precond = a ∨ myMin__rp_helper_829c4a21 a b h_precond = b\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

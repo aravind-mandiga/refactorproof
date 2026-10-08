@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_76/verina_advanced_76__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_76/verina_advanced_76__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_76/verina_advanced_76__T3_comm_swap__0.lean:22:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_76/verina_advanced_76__T3_comm_swap__0.lean:32:11: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_76/verina_advanced_76__T3_comm_swap__0.lean:49:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_76/verina_advanced_76__T3_comm_swap__0.lean:59:11: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_76/verina_advanced_76__T3_comm_swap__0.lean:77:82: error: type mismatch\n  rfl\nhas type\n  ?m.2356 = ?m.2356 : Prop\nbut is expected to have type\n  RPOrig.topKFrequent nums k h_precond = RPRef.topKFrequent nums k h_precond : Prop\nartifacts/certificates/verina_advanced_76/verina_advanced_76__T3_comm_swap__0.lean:81:82: error: type mismatch\n  rfl\nhas type\n  ?m.2845 = ?m.2845 : Prop\nbut is expected to have type\n  RPOrig.topKFrequent nums k h_precond = RPRef.topKFrequent nums k h_precond : Prop\nartifacts/certificates/verina_advanced_76/verina_advanced_76__T3_comm_swap__0.lean:86:2: error: tactic 'rfl' failed, the left-hand side\n  let freqList :=\n    List.foldl\n      (fun acc n =>\n        match\n          List.find?\n            (fun x =>\n              match x with\n              | (key, snd) => key == n)\n            acc with\n        | some val =>\n          List.map\n            (fun x =>\n              match x with\n              | (key, cnt) => if (key == n) = true then (key, cnt + 1) else (key, cnt))\n            acc\n        | none => acc ++ [(n, 1)])\n      [] nums;\n  let sorted :=\n    List.foldl\n      (fun acc pair =>\n        match pair with\n        | (x, cx) =>\n          List.brecOn acc fun xs f =>\n            (match (motive := (xs : List (Int × Nat)) → List.below xs → List (Int × Nat)) xs with\n              | [] => fun x => [pair]\n              | (y, cy) :: ys => fun x => if cx > cy then pair :: (y, cy) :: ys else (y, cy) :: x.1)\n              f)\n      [] freqList;\n  List.map\n    (fun x =>\n      match x with\n      | (n, snd) => n)\n    (List.take k sorted)\nis not definitionally equal to the right-hand side\n  let freqList :=\n    List.foldl\n      (fun acc n =>\n        match\n          List.find?\n            (fun x =>\n              match x with\n              | (key, snd) => key == n)\n            acc with\n        | some val =>\n          List.map\n            (fun x =>\n              match x with\n              | (key, cnt) => if (key == n) = true then (key, 1 + cnt) else (key, cnt))\n            acc\n        | none => acc ++ [(n, 1)])\n      [] nums;\n  let sorted :=\n    List.foldl\n      (fun acc pair =>\n        match pair with\n        | (x, cx) =>\n          List.brecOn acc fun xs f =>\n            (match (motive := (xs : List (Int × Nat)) → List.below xs → List (Int × Nat)) xs with\n              | [] => fun x => [pair]\n              | (y, cy) :: ys => fun x => if cx > cy then pair :: (y, cy) :: ys else (y, cy) :: x.1)\n              f)\n      [] freqList;\n  List.map\n    (fun x =>\n      match x with\n      | (n, snd) => n)\n    (List.take k sorted)\nnums : List Int\nk : Nat\nh_precond : topKFrequent_precond nums k\n⊢ (let freqList :=\n      List.foldl\n        (fun acc n =>\n          match\n            List.find?\n              (fun x =>\n                match x with\n                | (key, snd) => key == n)\n              acc with\n          | some val =>\n            List.map\n              (fun x =>\n                match x with\n                | (key, cnt) => if (key == n) = true then (key, cnt + 1) else (key, cnt))\n              acc\n          | none => acc ++ [(n, 1)])\n        [] nums;\n    let sorted :=\n      List.foldl\n        (fun acc pair =>\n          match pair with\n          | (x, cx) =>\n            List.brecOn acc fun xs f =>\n              (match (motive := (xs : List (Int × Nat)) → List.below xs → List (Int × Nat)) xs with\n                | [] => fun x => [pair]\n                | (y, cy) :: ys => fun x => if cx > cy then pair :: (y, cy) :: ys else (y, cy) :: x.1)\n                f)\n        [] freqList;\n    List.map\n      (fun x =>\n        match x with\n        | (n, snd) => n)\n      (List.take k sorted)) =\n    let freqList :=\n      List.foldl\n        (fun acc n =>\n          match\n            List.find?\n              (fun x =>\n                match x with\n                | (key, snd) => key == n)\n              acc with\n          | some val =>\n            List.map\n              (fun x =>\n                match x with\n                | (key, cnt) => if (key == n) = true then (key, 1 + cnt) else (key, cnt))\n              acc\n          | none => acc ++ [(n, 1)])\n        [] nums;\n    let sorted :=\n      List.foldl\n        (fun acc pair =>\n          match pair with\n          | (x, cx) =>\n            List.brecOn acc fun xs f =>\n              (match (motive := (xs : List (Int × Nat)) → List.below xs → List (Int × Nat)) xs with\n                | [] => fun x => [pair]\n                | (y, cy) :: ys => fun x => if cx > cy then pair :: (y, cy) :: ys else (y, cy) :: x.1)\n                f)\n        [] freqList;\n    List.map\n      (fun x =>\n        match x with\n        | (n, snd) => n)\n      (List.take k sorted)\n",
+ "stderr": "",
+ "elapsed_seconds": 1.101,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 32,
+   "col": 11,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 49,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 59,
+   "col": 11,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 77,
+   "col": 82,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.2356 = ?m.2356 : Prop\nbut is expected to have type\n  RPOrig.topKFrequent nums k h_precond = RPRef.topKFrequent nums k h_precond : Prop"
+  },
+  {
+   "line": 81,
+   "col": 82,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.2845 = ?m.2845 : Prop\nbut is expected to have type\n  RPOrig.topKFrequent nums k h_precond = RPRef.topKFrequent nums k h_precond : Prop"
+  },
+  {
+   "line": 86,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  let freqList :=\n    List.foldl\n      (fun acc n =>\n        match\n          List.find?\n            (fun x =>\n              match x with\n              | (key, snd) => key == n)\n            acc with\n        | some val =>\n          List.map\n            (fun x =>\n              match x with\n              | (key, cnt) => if (key == n) = true then (key, cnt + 1) else (key, cnt))\n            acc\n        | none => acc ++ [(n, 1)])\n      [] nums;\n  let sorted :=\n    List.foldl\n      (fun acc pair =>\n        match pair with\n        | (x, cx) =>\n          List.brecOn acc fun xs f =>\n            (match (motive := (xs : List (Int × Nat)) → List.below xs → List (Int × Nat)) xs with\n              | [] => fun x => [pair]\n              | (y, cy) :: ys => fun x => if cx > cy then pair :: (y, cy) :: ys else (y, cy) :: x.1)\n              f)\n      [] freqList;\n  List.map\n    (fun x =>\n      match x with\n      | (n, snd) => n)\n    (List.take k sorted)\nis not definitionally equal to the right-hand side\n  let freqList :=\n    List.foldl\n      (fun acc n =>\n        match\n          List.find?\n            (fun x =>\n              match x with\n              | (key, snd) => key == n)\n            acc with\n        | some val =>\n          List.map\n            (fun x =>\n              match x with\n              | (key, cnt) => if (key == n) = true then (key, 1 + cnt) else (key, cnt))\n            acc\n        | none => acc ++ [(n, 1)])\n      [] nums;\n  let sorted :=\n    List.foldl\n      (fun acc pair =>\n        match pair with\n        | (x, cx) =>\n          List.brecOn acc fun xs f =>\n            (match (motive := (xs : List (Int × Nat)) → List.below xs → List (Int × Nat)) xs with\n              | [] => fun x => [pair]\n              | (y, cy) :: ys => fun x => if cx > cy then pair :: (y, cy) :: ys else (y, cy) :: x.1)\n              f)\n      [] freqList;\n  List.map\n    (fun x =>\n      match x with\n      | (n, snd) => n)\n    (List.take k sorted)\nnums : List Int\nk : Nat\nh_precond : topKFrequent_precond nums k\n⊢ (let freqList :=\n      List.foldl\n        (fun acc n =>\n          match\n            List.find?\n              (fun x =>\n                match x with\n                | (key, snd) => key == n)\n              acc with\n          | some val =>\n            List.map\n              (fun x =>\n                match x with\n                | (key, cnt) => if (key == n) = true then (key, cnt + 1) else (key, cnt))\n              acc\n          | none => acc ++ [(n, 1)])\n        [] nums;\n    let sorted :=\n      List.foldl\n        (fun acc pair =>\n          match pair with\n          | (x, cx) =>\n            List.brecOn acc fun xs f =>\n              (match (motive := (xs : List (Int × Nat)) → List.below xs → List (Int × Nat)) xs with\n                | [] => fun x => [pair]\n                | (y, cy) :: ys => fun x => if cx > cy then pair :: (y, cy) :: ys else (y, cy) :: x.1)\n                f)\n        [] freqList;\n    List.map\n      (fun x =>\n        match x with\n        | (n, snd) => n)\n      (List.take k sorted)) =\n    let freqList :=\n      List.foldl\n        (fun acc n =>\n          match\n            List.find?\n              (fun x =>\n                match x with\n                | (key, snd) => key == n)\n              acc with\n          | some val =>\n            List.map\n              (fun x =>\n                match x with\n                | (key, cnt) => if (key == n) = true then (key, 1 + cnt) else (key, cnt))\n              acc\n          | none => acc ++ [(n, 1)])\n        [] nums;\n    let sorted :=\n      List.foldl\n        (fun acc pair =>\n          match pair with\n          | (x, cx) =>\n            List.brecOn acc fun xs f =>\n              (match (motive := (xs : List (Int × Nat)) → List.below xs → List (Int × Nat)) xs with\n                | [] => fun x => [pair]\n                | (y, cy) :: ys => fun x => if cx > cy then pair :: (y, cy) :: ys else (y, cy) :: x.1)\n                f)\n        [] freqList;\n    List.map\n      (fun x =>\n        match x with\n        | (n, snd) => n)\n      (List.take k sorted)\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

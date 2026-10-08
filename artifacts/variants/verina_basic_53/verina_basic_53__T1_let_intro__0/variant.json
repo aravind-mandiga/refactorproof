@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_53",
+ "variant_id": "verina_basic_53__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_4430a640 : Nat :=\n    let rec loop (n : Nat) : Nat :=\n      if n = 0 then 0\n      else n + loop (n - 1)\n    loop N\n  __rp_tmp_4430a640\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_4430a640",
+  "seed": 0
+ },
+ "spec_hash": "8629636823e90e34e49787b78dc43064c079ba65a26de8b6a9acaf20b0f0f5c4",
+ "proof_hash": "78b61aa5fe54ab892a107a49049de103d55292087e026307563fb71a17c7ea95",
+ "code_hash_original": "404c7839733b57e85cf20931da22da681510fe1c3dc7912803b8b811e26b55df",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "CalSum",
+ "code_loc_original": 4,
+ "code_loc_refactored": 6
+}

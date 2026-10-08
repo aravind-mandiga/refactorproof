@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_18",
+ "variant_id": "verina_advanced_18__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_61ef0a4a : Bool :=\n    let k := countDigits n\n    sumPowers n k = n\n  __rp_tmp_61ef0a4a\n",
+ "transformed_code_aux": "def sumPowers (n : Nat) (k : Nat) : Nat :=\n  let rec go (n acc : Nat) : Nat :=\n    if n = 0 then acc\n    else\n      let digit := n % 10\n      go (n / 10) (acc + digit ^ k)\n  go n 0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_61ef0a4a",
+  "seed": 0
+ },
+ "spec_hash": "67aab518dc103923fdfaa9e2e62794c2188ab7385c56fea9415df2696a36fa82",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "8d7ccee6ec4a1652e1e5c1f738d788dbc05b74281310ccae6255de02889b49ef",
+ "code_aux_hash_original": "3a39ed9b7f0c5e7a7e9d65e9eb9531ea0746ac5b5688e73cacb51d06a9227448",
+ "tier": "advanced",
+ "function_name": "isArmstrong",
+ "code_loc_original": 2,
+ "code_loc_refactored": 4
+}

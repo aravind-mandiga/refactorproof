@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_80",
+ "variant_id": "verina_basic_80__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_8b0e79bf : Bool :=\n    only_once_loop a key 0 0\n  __rp_tmp_8b0e79bf\n",
+ "transformed_code_aux": "def only_once_loop {T : Type} [DecidableEq T] (a : Array T) (key : T) (i keyCount : Nat) : Bool :=\n  if i < a.size then\n    match a[i]? with\n    | some val =>\n        let newCount := if val = key then keyCount + 1 else keyCount\n        only_once_loop a key (i + 1) newCount\n    | none => keyCount == 1\n  else\n    keyCount == 1\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_8b0e79bf",
+  "seed": 0
+ },
+ "spec_hash": "15ebf1ba947124e3c08018e49c44a1e053ca4afa5375f0e914198b88c439f5f0",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "3398b09d778c9454c3264dcd1fb5b4f604fbf32cc765d99fc9b16aa191097e00",
+ "code_aux_hash_original": "d3463aaad32500bdf9a92c865176baa4e59ede7a7ca131e2728d8a5d00710ac3",
+ "tier": "basic",
+ "function_name": "only_once",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

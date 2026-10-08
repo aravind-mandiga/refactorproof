@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_50/lean_4/verina_basic_50__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_50/lean_4/verina_basic_50__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_50/lean_4/verina_basic_50__T4_cond_invert__0.lean:14:17: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_50/lean_4/verina_basic_50__T4_cond_invert__0.lean:25:19: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_50/lean_4/verina_basic_50__T4_cond_invert__0.lean:38:42: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_50/lean_4/verina_basic_50__T4_cond_invert__0.lean:87:58: error: unsolved goals\nx : ℤ\nh_precond : Abs_precond x\nh_main : (x ≥ 0 → x = if x < 0 then -x else x) ∧ (x < 0 → (x + if x < 0 then -x else x) = 0)\n⊢ (x ≥ 0 → x = if ¬x < 0 then x else -x) ∧ (x < 0 → (x + if ¬x < 0 then x else -x) = 0)\n",
+ "stderr": "",
+ "elapsed_seconds": 10.976,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 17,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 87,
+   "col": 58,
+   "severity": "error",
+   "text": "unsolved goals\nx : ℤ\nh_precond : Abs_precond x\nh_main : (x ≥ 0 → x = if x < 0 then -x else x) ∧ (x < 0 → (x + if x < 0 then -x else x) = 0)\n⊢ (x ≥ 0 → x = if ¬x < 0 then x else -x) ∧ (x < 0 → (x + if ¬x < 0 then x else -x) = 0)\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

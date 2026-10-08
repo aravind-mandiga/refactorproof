@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_3",
+ "variant_id": "verina_basic_3__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 6.697,
+ "proof_region_errors": [
+  "unsolved goals\ncase pos\nn : ℤ\nh_precond : isDivisibleBy11_precond n\nh : 11 ∣ n\n⊢ (isDivisibleBy11__rp_helper_c39b37ae n h_precond = true → ∃ k, n = 11 * k) ∧\n    (isDivisibleBy11__rp_helper_c39b37ae n h_precond = false → ∀ (k : ℤ), ¬n = 11 * k)\n\ncase neg\nn : ℤ\nh_precond : isDivisibleBy11_precond n\nh : ¬11 ∣ n\n⊢ (isDivisibleBy11__rp_helper_c39b37ae n h_precond = true → ∃ k, n = 11 * k) ∧\n    (isDivisibleBy11__rp_helper_c39b37ae n h_precond = false → ∀ (k : ℤ), ¬n = 11 * k)\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "614c0e3ca9a670204f20ff5590dd9cbe5bbf1cd3ff4cd63d56009091b6beb050",
+ "spec_hash": "2f01b2a2c66c6b65fb25ac619f4002a4b7ba13ae770c8c7faffc8784d450d630",
+ "proof_text": "  have h_main : isDivisibleBy11_postcond (n) (isDivisibleBy11 (n) h_precond) h_precond := by\n    simp only [isDivisibleBy11_precond, isDivisibleBy11, isDivisibleBy11_postcond]\n    <;>\n    by_cases h : n % 11 = 0 <;>\n    simp_all [Int.emod_eq_of_lt]\n    <;>\n    (try { omega }) <;>\n    (try {\n      -- For the case where n % 11 ≠ 0, we need to show that no k exists such that n = 11 * k\n      -- Assume for contradiction that n = 11 * k\n      intro k hk\n      have h₁ := congr_arg (· % 11) hk\n      simp at h₁\n      <;>\n      omega\n    }) <;>\n    (try {\n      -- For the case where n % 11 = 0, we need to find a k such that n = 11 * k\n      -- Take k = n / 11\n      use n / 11\n      have h₁ : n % 11 = 0 := by omega\n      have h₂ : n = 11 * (n / 11) := by\n        omega\n      omega\n    }) <;>\n    (try {\n      -- This is a placeholder for the actual contradiction proof\n      exfalso\n      omega\n    })\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "default"
+}

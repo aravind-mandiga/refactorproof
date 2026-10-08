@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_100",
+ "variant_id": "verina_basic_100__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 8.052,
+ "proof_region_errors": [
+  "unsolved goals\ncase neg\nx : ℤ\nh_precond : Triple_precond x\nh✝ : ¬x = 0\n⊢ Triple__rp_branch_9f218861 x h_precond / 3 = x ∧\n    Triple__rp_branch_9f218861 x h_precond / 3 * 3 = Triple__rp_branch_9f218861 x h_precond\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "72b95d88821c4fd375557dcd2d0194d09c2109a05f53d2d1c4c1be800f8cc8d8",
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c",
+ "proof_text": "  have h_main : Triple_postcond (x) (Triple (x) h_precond) h_precond := by\n    simp only [Triple_precond, Triple, Triple_postcond]\n    split_ifs <;>\n    (try { contradiction }) <;>\n    (try { simp_all [Int.mul_ediv_cancel_left, Int.mul_emod, Int.add_emod, Int.emod_emod] }) <;>\n    (try {\n      ring_nf at * <;>\n      norm_num at * <;>\n      omega\n    }) <;>\n    (try {\n      cases x <;> simp_all [Int.mul_ediv_cancel_left, Int.mul_emod, Int.add_emod, Int.emod_emod] <;>\n      ring_nf at * <;>\n      norm_num at * <;>\n      omega\n    }) <;>\n    (try {\n      aesop\n    }) <;>\n    (try {\n      omega\n    })\n    <;>\n    (try {\n      simp_all [Int.mul_ediv_cancel_left, Int.mul_emod, Int.add_emod, Int.emod_emod]\n      <;> ring_nf at * <;> norm_num at * <;> omega\n    })\n    <;>\n    (try {\n      aesop\n    })\n    <;>\n    (try {\n      omega\n    })\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "default"
+}

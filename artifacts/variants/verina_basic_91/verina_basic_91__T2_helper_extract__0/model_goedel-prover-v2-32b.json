@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_91",
+ "variant_id": "verina_basic_91__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-32b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "simp_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 6.634,
+ "proof_region_errors": [
+  "simp_all made no progress\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "739f393634ad38331423fcec619475fa45f4bd680830352e56e61a52183dcd15",
+ "spec_hash": "590c7e16696da262a23fc9280a6e4bbb0efa987345d34f6ae93bdb47eb9f202b",
+ "proof_text": "  have h_swap : Swap X Y h_precond = (Y, X) := by\n    dsimp [Swap]\n    <;> simp_all [Prod.mk.injEq]\n    <;> norm_num\n    <;> aesop\n\n  have h_fst : (Swap X Y h_precond).fst = Y := by\n    rw [h_swap]\n    <;> simp [Prod.fst]\n\n  have h_snd : (Swap X Y h_precond).snd = X := by\n    rw [h_swap]\n    <;> simp [Prod.snd]\n\n  have h_main : Swap_postcond X Y (Swap X Y h_precond) h_precond := by\n    dsimp [Swap_postcond] at *\n    constructor\n    · -- Prove (Swap X Y h_precond).fst = Y\n      exact h_fst\n    constructor\n    · -- Prove (Swap X Y h_precond).snd = X\n      exact h_snd\n    · -- Prove X ≠ Y → (Swap X Y h_precond).fst ≠ X ∧ (Swap X Y h_precond).snd ≠ Y\n      intro h_ne\n      constructor\n      · -- Prove (Swap X Y h_precond).fst ≠ X\n        have h₁ : (Swap X Y h_precond).fst = Y := h_fst\n        have h₂ : Y ≠ X := by\n          intro h_eq\n          apply h_ne\n          linarith\n        intro h_contra\n        apply h₂\n        linarith\n      · -- Prove (Swap X Y h_precond).snd ≠ Y\n        have h₁ : (Swap X Y h_precond).snd = X := h_snd\n        intro h_contra\n        apply h_ne\n        linarith\n\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-32b",
+ "strategy_condition": "default"
+}

@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_deepseek-prover-v2-7b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_deepseek-prover-v2-7b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_deepseek-prover-v2-7b.lean:16:29: warning: unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_deepseek-prover-v2-7b.lean:27:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_deepseek-prover-v2-7b.lean:39:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nTry this: ring_nf\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_deepseek-prover-v2-7b.lean:54:67: error: unsolved goals\nsize : ℕ\n⊢ True ∨ size = 0\nTry this: ring_nf\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_deepseek-prover-v2-7b.lean:64:67: error: unsolved goals\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\nh₁ : cubeSurfaceArea size h_precond - 6 * size * size = 0\n⊢ True ∨ size = 0\n",
+ "stderr": "",
+ "elapsed_seconds": 7.927,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 27,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nTry this: ring_nf"
+  },
+  {
+   "line": 54,
+   "col": 67,
+   "severity": "error",
+   "text": "unsolved goals\nsize : ℕ\n⊢ True ∨ size = 0\nTry this: ring_nf"
+  },
+  {
+   "line": 64,
+   "col": 67,
+   "severity": "error",
+   "text": "unsolved goals\nsize : ℕ\nh_precond : cubeSurfaceArea_precond size\nh₁ : cubeSurfaceArea size h_precond - 6 * size * size = 0\n⊢ True ∨ size = 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

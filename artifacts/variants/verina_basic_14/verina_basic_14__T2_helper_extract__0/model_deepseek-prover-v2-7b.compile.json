@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_14/verina_basic_14__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_14/verina_basic_14__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_14/verina_basic_14__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:16:23: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_14/verina_basic_14__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:24:56: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_14/verina_basic_14__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:24:12: warning: The declaration 'containsZ__rp_helper_6f400cbb' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_14/verina_basic_14__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:41:52: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_14/verina_basic_14__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:62:10: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_14/verina_basic_14__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:58:4: error: unsolved goals\ncase mp.inl\ns : String\nh_precond : containsZ_precond s\nleft : 'z' ∈ s.data\n⊢ containsZ__rp_helper_6f400cbb s h_precond = true\n\ncase mp.inr\ns : String\nh_precond : containsZ_precond s\nleft : 'Z' ∈ s.data\n⊢ containsZ__rp_helper_6f400cbb s h_precond = true\nartifacts/variants/verina_basic_14/verina_basic_14__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:67:10: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case mpr\n  s : String\n  h_precond : containsZ_precond s\n  h : containsZ__rp_helper_6f400cbb s h_precond = true\n  ⊢ ∃ x ∈ s.data, x = 'z' ∨ x = 'Z'\n",
+ "stderr": "",
+ "elapsed_seconds": 8.852,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 23,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 56,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'containsZ__rp_helper_6f400cbb' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 41,
+   "col": 52,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 62,
+   "col": 10,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 58,
+   "col": 4,
+   "severity": "error",
+   "text": "unsolved goals\ncase mp.inl\ns : String\nh_precond : containsZ_precond s\nleft : 'z' ∈ s.data\n⊢ containsZ__rp_helper_6f400cbb s h_precond = true\n\ncase mp.inr\ns : String\nh_precond : containsZ_precond s\nleft : 'Z' ∈ s.data\n⊢ containsZ__rp_helper_6f400cbb s h_precond = true"
+  },
+  {
+   "line": 67,
+   "col": 10,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case mpr\n  s : String\n  h_precond : containsZ_precond s\n  h : containsZ__rp_helper_6f400cbb s h_precond = true\n  ⊢ ∃ x ∈ s.data, x = 'z' ∨ x = 'Z'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

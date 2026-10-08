@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_advanced_6",
+ "variant_id": "verina_advanced_6__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b__hard_unfold",
+ "generation_attempt": 1,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 10.448,
+ "proof_region_errors": [
+  "tactic 'rfl' failed, the left-hand side\n  allVowels__rp_helper_1905f5d2 s h_precond\nis not definitionally equal to the right-hand side\n  decide ('a' ∈ normalize_str s) &&\n    (decide ('e' ∈ normalize_str s) &&\n      (decide ('i' ∈ normalize_str s) && (decide ('o' ∈ normalize_str s) && decide ('u' ∈ normalize_str s))))\ns : String\nh_precond : allVowels_precond s\n⊢ allVowels__rp_helper_1905f5d2 s h_precond =\n    (decide ('a' ∈ normalize_str s) &&\n      (decide ('e' ∈ normalize_str s) &&\n        (de"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "a1d6986592d809fef3d08ee6fd564625224c308dcd431e8935cfb150fd186067",
+ "spec_hash": "93554fe415ccfb4d51b92405c5220441d6f97b9748a3f5b58430bf14bbc39d6c",
+ "proof_text": "  unfold allVowels allVowels_postcond\n  have h_main : allVowels (s) h_precond = List.all (['a', 'e', 'i', 'o', 'u'] : List Char) (fun v => (normalize_str s).contains v) := by\n    unfold allVowels\n    <;> simp_all [List.all_cons, List.all_nil]\n    <;> rfl\n\n  have h_final : allVowels_postcond s (allVowels s h_precond) h_precond := by\n    simp_all [allVowels_postcond]\n    <;> aesop\n\n  exact h_final\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "hard_unfold"
+}

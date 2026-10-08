@@ -1,0 +1,44 @@
+RefactorProof
+Copyright 2026 The RefactorProof Authors
+
+This product includes software developed by the RefactorProof Authors, licensed
+under the Apache License, Version 2.0 (see LICENSE).
+
+------------------------------------------------------------------------------
+Material derived from VERINA
+------------------------------------------------------------------------------
+
+This repository contains material derived from VERINA
+(https://github.com/sunblaze-ucb/verina), which is licensed under the Apache
+License, Version 2.0.
+
+The benchmark variants under artifacts/variants/ and the equivalence
+certificates under artifacts/certificates/ are mechanical rewrites of VERINA
+task files at the commit pinned in configs/project.yaml.  In every variant the
+specification block and the proof block of the upstream task are reproduced
+byte-for-byte; only the implementation block is rewritten, and each rewrite is
+accompanied by a Lean proof that the rewritten implementation equals the
+original one.
+
+VERINA itself is not redistributed here.  scripts/setup_verina.sh clones it at
+the pinned commit.
+
+------------------------------------------------------------------------------
+Third-party assets used by the experiments
+------------------------------------------------------------------------------
+
+  Asset                        Role in this work                    License
+  ---------------------------  -----------------------------------  ------------------------------------
+  VERINA                       source tasks, specifications, proofs Apache License 2.0
+  Lean 4 (v4.18.0)             proof checking                       Apache License 2.0
+  Mathlib (pinned revision)    library imported by the tasks        Apache License 2.0
+  vLLM                         model serving during generation      Apache License 2.0
+  Qwen3-14B, Qwen3-32B         general-purpose models evaluated     Apache License 2.0
+  Goedel-Prover-V2-8B, -32B    prover models evaluated              Apache License 2.0
+  DeepSeek-Prover-V2-7B        prover model evaluated               DeepSeek Model License (weights);
+                                                                    MIT (accompanying code)
+
+None of these assets is redistributed in this repository.  Model weights are
+fetched from the Hugging Face Hub by the scripts under scripts/, and VERINA by
+scripts/setup_verina.sh.  The generated proofs under results/ and
+artifacts/ are outputs of the listed models produced for this evaluation.

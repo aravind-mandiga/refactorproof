@@ -1,0 +1,14 @@
+--- goedel-prover-v2-8b:verina_basic_26__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_26__T2_helper_extract__0 (simp_add_helper)
+@@ -3,7 +3,7 @@
+     have h₂ : n % 2 == 0 := by
+       simpa [isEven] using h
+     have h₃ : n % 2 = 0 := by
+-      simp_all [isEven, isEven_precond]
++      simp_all [isEven, isEven_precond, isEven__rp_helper_3a986bdd]
+       <;>
+       (try omega) <;>
+       (try norm_num at *) <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: type mismatch, term |   h | after simplification has type |   isEven__rp_helper_3a986bdd n h_precond = true : Prop | but is expected to have type |   2 ∣ n : Prop

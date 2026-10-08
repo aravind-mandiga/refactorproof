@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_30",
+ "variant_id": "verina_advanced_30__T3_comm_swap__1",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_30/verina_advanced_30__T3_comm_swap__1.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 1.049,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1171 = ?m.1171 : Prop\nbut is expected to have type\n  RPOrig.longestIncreasingStreak nums h_precond = RPRef.longestIncreasingStreak nums h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1297 = ?m.1297 : Prop\nbut is expected to have type\n  RPOrig.longestIncreasingStreak nums h_precond = RPRef.longestIncreasingStreak nums h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun lst => Option Int → Nat → Nat → Nat) nums\n    (fun lst f prev currLen maxLen =>\n      (match (motive := (lst : List Int) → List.below (motive := fun lst => Option Int → Nat → Nat → Nat) lst → Nat)\n          lst with\n        | [] => fun x => max currLen maxLen\n        | x :: xs => fun x_1 =>\n          match prev with\n          | none => x_1.1 (some x) 1 (max 1 maxLen)\n          | some p =>\n            if x > p then x_1.1 (some x"
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun lst => Option Int → Nat → Nat → Nat) nums\n    (fun lst f prev currLen maxLen =>\n      (match (motive := (lst : List Int) → List.below (motive := fun lst => Option Int → Nat → Nat → Nat) lst → Nat)\n          lst with\n        | [] => fun x => max currLen maxLen\n        | x :: xs => fun x_1 =>\n          match prev with\n          | none => x_1.1 (some x) 1 (max 1 maxLen)\n          | some p =>\n            if x > p then x_1.1 (some x",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.10063'"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun lst => Option Int → Nat → Nat → Nat) nums\n    (fun lst f prev currLen maxLen =>\n      (match (motive := (lst : List Int) → List.below (motive := fun lst => Option Int → Nat → Nat → Nat) lst → Nat)\n          lst with\n        | [] => fun x => max currLen maxLen\n        | x :: xs => fun x_1 =>\n          match prev with\n          | none => x_1.1 (some x) 1 (max 1 maxLen)\n          | some p =>\n            if x > p then x_1.1 (some x",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.15380'"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun lst => Option Int → Nat → Nat → Nat) nums\n    (fun lst f prev currLen maxLen =>\n      (match (motive := (lst : List Int) → List.below (motive := fun lst => Option Int → Nat → Nat → Nat) lst → Nat)\n          lst with\n        | [] => fun x => max currLen maxLen\n        | x :: xs => fun x_1 =>\n          match prev with\n          | none => x_1.1 (some x) 1 (max 1 maxLen)\n          | some p =>\n            if x > p then x_1.1 (some x",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.17197'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_45/verina_basic_45__T3_comm_swap__0/model_goedel-prover-v2-8b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_45/verina_basic_45__T3_comm_swap__0/model_goedel-prover-v2-8b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_45/verina_basic_45__T3_comm_swap__0/model_goedel-prover-v2-8b__hard_unfold.lean:40:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_45/verina_basic_45__T3_comm_swap__0/model_goedel-prover-v2-8b__hard_unfold.lean:54:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_45/verina_basic_45__T3_comm_swap__0/model_goedel-prover-v2-8b__hard_unfold.lean:74:4: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_45/verina_basic_45__T3_comm_swap__0/model_goedel-prover-v2-8b__hard_unfold.lean:71:135: error: unsolved goals\nlst : List ℤ\nleft : 1 < lst.length\nw w_1 : ℤ\nleft_1 : w ∈ lst\nright : isEven w = true\nleft_2 : w_1 ∈ lst\nright_1 : isOdd w_1 = true\nx : Option (ℕ × ℕ)\nevenIndex oddIndex : Option ℕ\nei_1 oi_1 : ℕ\nheq_2 : List.findIdx? isOdd lst = some oi_1\nheq_1 : List.findIdx? isEven lst = some ei_1\n⊢ lst[oi_1]?.getD 0 * lst[ei_1]?.getD 0 = lst[ei_1]?.getD 0 * lst[oi_1]?.getD 0\n",
+ "stderr": "",
+ "elapsed_seconds": 8.52,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 40,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 54,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 74,
+   "col": 4,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 71,
+   "col": 135,
+   "severity": "error",
+   "text": "unsolved goals\nlst : List ℤ\nleft : 1 < lst.length\nw w_1 : ℤ\nleft_1 : w ∈ lst\nright : isEven w = true\nleft_2 : w_1 ∈ lst\nright_1 : isOdd w_1 = true\nx : Option (ℕ × ℕ)\nevenIndex oddIndex : Option ℕ\nei_1 oi_1 : ℕ\nheq_2 : List.findIdx? isOdd lst = some oi_1\nheq_1 : List.findIdx? isEven lst = some ei_1\n⊢ lst[oi_1]?.getD 0 * lst[ei_1]?.getD 0 = lst[ei_1]?.getD 0 * lst[oi_1]?.getD 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

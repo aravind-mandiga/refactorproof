@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_91",
+ "variant_id": "verina_basic_91__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_ed7c8607 : Int × Int :=\n    let x := X\n    let y := Y\n    let tmp := x\n    let x := y\n    let y := tmp\n    (x, y)\n  __rp_tmp_ed7c8607\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_ed7c8607",
+  "seed": 0
+ },
+ "spec_hash": "590c7e16696da262a23fc9280a6e4bbb0efa987345d34f6ae93bdb47eb9f202b",
+ "proof_hash": "11a241da7a71c347f0308869f8f07dd088dfbdb373127ef4c276d0407546286b",
+ "code_hash_original": "2947985182ec558a124fed20dd8d32d591b1be669d1052b956ac9ac52ef177ac",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "Swap",
+ "code_loc_original": 6,
+ "code_loc_refactored": 8
+}

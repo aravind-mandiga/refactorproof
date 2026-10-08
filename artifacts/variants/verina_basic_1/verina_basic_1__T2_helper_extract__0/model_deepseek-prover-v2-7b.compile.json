@@ -1,0 +1,79 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_1/verina_basic_1__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_1/verina_basic_1__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_1/verina_basic_1__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:15:29: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_1/verina_basic_1__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:15:39: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_1/verina_basic_1__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:23:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_1/verina_basic_1__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:23:12: warning: The declaration 'hasOppositeSign__rp_helper_5272bffb' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_1/verina_basic_1__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:40:65: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_1/verina_basic_1__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:67:8: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_1/verina_basic_1__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:59:14: error: unsolved goals\ncase inl\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₂ : a * b < 0\nleft : a < 0\nright : 0 < b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = true\nartifacts/variants/verina_basic_1/verina_basic_1__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:76:8: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_1/verina_basic_1__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:68:14: error: unsolved goals\ncase inr\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₂ : a * b < 0\nleft : 0 < a\nright : b < 0\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = true\nartifacts/variants/verina_basic_1/verina_basic_1__T2_helper_extract__0/model_deepseek-prover-v2-7b.lean:81:57: error: unsolved goals\ncase pos\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : a < 0\nh₄ : b ≤ 0\nh₅ : a ≤ 0\nh₆ : b < 0\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n\ncase neg\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : a < 0\nh₄ : b ≤ 0\nh₅ : a ≤ 0\nh₆ : 0 ≤ b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n\ncase neg\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : 0 ≤ a\nh₄ : 0 < b\nh₅ : 0 < a\nh₆ : 0 ≤ b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n\ncase neg\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : 0 ≤ a\nh₄ : 0 < b\nh₅ : a ≤ 0\nh₆ : 0 ≤ b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n\ncase neg\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : 0 ≤ a\nh₄ : b ≤ 0\nh₅ : 0 < a\nh₆ : 0 ≤ b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n\ncase pos\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : 0 ≤ a\nh₄ : b ≤ 0\nh₅ : a ≤ 0\nh₆ : b < 0\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n\ncase neg\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : 0 ≤ a\nh₄ : b ≤ 0\nh₅ : a ≤ 0\nh₆ : 0 ≤ b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n",
+ "stderr": "",
+ "elapsed_seconds": 11.488,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'hasOppositeSign__rp_helper_5272bffb' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 65,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 67,
+   "col": 8,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 59,
+   "col": 14,
+   "severity": "error",
+   "text": "unsolved goals\ncase inl\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₂ : a * b < 0\nleft : a < 0\nright : 0 < b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = true"
+  },
+  {
+   "line": 76,
+   "col": 8,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 68,
+   "col": 14,
+   "severity": "error",
+   "text": "unsolved goals\ncase inr\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₂ : a * b < 0\nleft : 0 < a\nright : b < 0\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = true"
+  },
+  {
+   "line": 81,
+   "col": 57,
+   "severity": "error",
+   "text": "unsolved goals\ncase pos\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : a < 0\nh₄ : b ≤ 0\nh₅ : a ≤ 0\nh₆ : b < 0\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n\ncase neg\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : a < 0\nh₄ : b ≤ 0\nh₅ : a ≤ 0\nh₆ : 0 ≤ b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n\ncase neg\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : 0 ≤ a\nh₄ : 0 < b\nh₅ : 0 < a\nh₆ : 0 ≤ b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n\ncase neg\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : 0 ≤ a\nh₄ : 0 < b\nh₅ : a ≤ 0\nh₆ : 0 ≤ b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n\ncase neg\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : 0 ≤ a\nh₄ : b ≤ 0\nh₅ : 0 < a\nh₆ : 0 ≤ b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n\ncase pos\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : 0 ≤ a\nh₄ : b ≤ 0\nh₅ : a ≤ 0\nh₆ : b < 0\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n\ncase neg\na b : ℤ\nh_precond : hasOppositeSign_precond a b\nh₃ : 0 ≤ a\nh₄ : b ≤ 0\nh₅ : a ≤ 0\nh₆ : 0 ≤ b\n⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = false\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

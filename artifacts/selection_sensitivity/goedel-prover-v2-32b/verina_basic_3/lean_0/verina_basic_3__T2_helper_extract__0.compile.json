@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_3/lean_0/verina_basic_3__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_3/lean_0/verina_basic_3__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_3/lean_0/verina_basic_3__T2_helper_extract__0.lean:15:29: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_3/lean_0/verina_basic_3__T2_helper_extract__0.lean:23:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_3/lean_0/verina_basic_3__T2_helper_extract__0.lean:23:12: warning: The declaration 'isDivisibleBy11__rp_helper_c39b37ae' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_3/lean_0/verina_basic_3__T2_helper_extract__0.lean:40:55: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_3/lean_0/verina_basic_3__T2_helper_extract__0.lean:79:10: warning: try 'simp' instead of 'simpa'\nnote: this linter can be disabled with `set_option linter.unnecessarySimpa false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_3/lean_0/verina_basic_3__T2_helper_extract__0.lean:52:78: error: unsolved goals\ncase pos\nn : ℤ\nh_precond : isDivisibleBy11_precond n\nh✝ : 11 ∣ n\nh_main : ∃ k, n = 11 * k\n⊢ isDivisibleBy11__rp_helper_c39b37ae n h_precond = false → ∀ (k : ℤ), ¬n = 11 * k\n\ncase neg\nn : ℤ\nh_precond : isDivisibleBy11_precond n\nh✝ : ¬11 ∣ n\nh_main : ∀ (k : ℤ), ¬n = 11 * k\n⊢ isDivisibleBy11__rp_helper_c39b37ae n h_precond = false\n",
+ "stderr": "",
+ "elapsed_seconds": 9.875,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'isDivisibleBy11__rp_helper_c39b37ae' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 55,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 79,
+   "col": 10,
+   "severity": "warning",
+   "text": "try 'simp' instead of 'simpa'\nnote: this linter can be disabled with `set_option linter.unnecessarySimpa false`"
+  },
+  {
+   "line": 52,
+   "col": 78,
+   "severity": "error",
+   "text": "unsolved goals\ncase pos\nn : ℤ\nh_precond : isDivisibleBy11_precond n\nh✝ : 11 ∣ n\nh_main : ∃ k, n = 11 * k\n⊢ isDivisibleBy11__rp_helper_c39b37ae n h_precond = false → ∀ (k : ℤ), ¬n = 11 * k\n\ncase neg\nn : ℤ\nh_precond : isDivisibleBy11_precond n\nh✝ : ¬11 ∣ n\nh_main : ∀ (k : ℤ), ¬n = 11 * k\n⊢ isDivisibleBy11__rp_helper_c39b37ae n h_precond = false\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

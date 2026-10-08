@@ -1,0 +1,91 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_32/verina_advanced_32__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_32/verina_advanced_32__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_32/verina_advanced_32__T2_helper_extract__0.lean:13:42: warning: unused variable `numbers`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T2_helper_extract__0.lean:47:5: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T2_helper_extract__0.lean:77:5: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T2_helper_extract__0.lean:52:12: warning: The declaration 'longestIncreasingSubsequence__rp_helper_88436887' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T2_helper_extract__0.lean:87:116: error: type mismatch\n  rfl\nhas type\n  ?m.3891 = ?m.3891 : Prop\nbut is expected to have type\n  RPOrig.longestIncreasingSubsequence numbers h_precond = RPRef.longestIncreasingSubsequence numbers h_precond : Prop\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T2_helper_extract__0.lean:95:182: error: unknown constant 'RPOrig.longestIncreasingSubsequence.findMaxLength'\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T2_helper_extract__0.lean:100:206: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T2_helper_extract__0.lean:100:144: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T2_helper_extract__0.lean:100:206: warning: '(delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887 RPOrig.longestIncreasingSubsequence.buildTables\n    RPOrig.longestIncreasingSubsequence.findMaxLength RPOrig.longestIncreasingSubsequence.findLengthEndingAtCurr\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887.buildTables\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887.findMaxLength\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887.findLengthEndingAtCurr;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T2_helper_extract__0.lean:104:201: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T2_helper_extract__0.lean:104:139: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T2_helper_extract__0.lean:104:201: warning: '(delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887 RPOrig.longestIncreasingSubsequence.buildTables\n    RPOrig.longestIncreasingSubsequence.findMaxLength RPOrig.longestIncreasingSubsequence.findLengthEndingAtCurr\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887.buildTables\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887.findMaxLength\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887.findLengthEndingAtCurr;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 23.277,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `numbers`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 47,
+   "col": 5,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 77,
+   "col": 5,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 52,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'longestIncreasingSubsequence__rp_helper_88436887' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 87,
+   "col": 116,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.3891 = ?m.3891 : Prop\nbut is expected to have type\n  RPOrig.longestIncreasingSubsequence numbers h_precond = RPRef.longestIncreasingSubsequence numbers h_precond : Prop"
+  },
+  {
+   "line": 95,
+   "col": 182,
+   "severity": "error",
+   "text": "unknown constant 'RPOrig.longestIncreasingSubsequence.findMaxLength'"
+  },
+  {
+   "line": 100,
+   "col": 206,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 100,
+   "col": 144,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 100,
+   "col": 206,
+   "severity": "warning",
+   "text": "'(delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887 RPOrig.longestIncreasingSubsequence.buildTables\n    RPOrig.longestIncreasingSubsequence.findMaxLength RPOrig.longestIncreasingSubsequence.findLengthEndingAtCurr\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887.buildTables\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887.findMaxLength\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887.findLengthEndingAtCurr;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 104,
+   "col": 201,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 104,
+   "col": 139,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 104,
+   "col": 201,
+   "severity": "warning",
+   "text": "'(delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887 RPOrig.longestIncreasingSubsequence.buildTables\n    RPOrig.longestIncreasingSubsequence.findMaxLength RPOrig.longestIncreasingSubsequence.findLengthEndingAtCurr\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887.buildTables\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887.findMaxLength\n    RPRef.longestIncreasingSubsequence__rp_helper_88436887.findLengthEndingAtCurr;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

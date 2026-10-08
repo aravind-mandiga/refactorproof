@@ -1,0 +1,13 @@
+--- goedel-prover-v2-8b:verina_basic_12__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_12__T2_helper_extract__0 (simp_add_helper)
+@@ -1,6 +1,6 @@
+   have h₁ : (cubeSurfaceArea (size) h_precond) - 6 * size * size = 0 := by
+     have h₂ : cubeSurfaceArea (size) h_precond = 6 * size * size := by
+-      simp [cubeSurfaceArea, cubeSurfaceArea_precond]
++      simp [cubeSurfaceArea, cubeSurfaceArea_precond, cubeSurfaceArea__rp_helper_67e54167]
+     rw [h₂]
+     <;> simp [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib, Nat.mul_assoc]
+     <;> ring_nf at *
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: unsolved goals | size : ℕ | h_precond : cubeSurfaceArea_precond size | h₁ : cubeSurfaceArea size h_precond - 6 * size * size = 0 | ⊢ cubeSurfaceArea__rp_helper_67e54167 size h_precond = 6 * size * size | 

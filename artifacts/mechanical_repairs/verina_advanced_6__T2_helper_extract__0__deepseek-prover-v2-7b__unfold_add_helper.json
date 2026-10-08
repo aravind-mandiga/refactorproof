@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_advanced_6__T2_helper_extract__0",
+ "task_id": "verina_advanced_6",
+ "source": "deepseek-prover-v2-7b",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "allVowels",
+ "helper": "allVowels__rp_helper_1905f5d2",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_main : allVowels (s) h_precond = (List.all ['a', 'e', 'i', 'o', 'u'] (fun v => (normalize_str s).contains v)) := by\n    unfold allVowels\n    <;> simp [List.all_cons, List.all_nil, List.map]\n    <;> rfl\n\n  have h_final : allVowels_postcond (s) (allVowels (s) h_precond) h_precond := by\n    simp only [allVowels_postcond, h_main]\n    <;>\n    aesop\n\n  apply h_final\n",
+ "proof_after": "  have h_main : allVowels (s) h_precond = (List.all ['a', 'e', 'i', 'o', 'u'] (fun v => (normalize_str s).contains v)) := by\n    unfold allVowels allVowels__rp_helper_1905f5d2\n    <;> simp [List.all_cons, List.all_nil, List.map]\n    <;> rfl\n\n  have h_final : allVowels_postcond (s) (allVowels (s) h_precond) h_precond := by\n    simp only [allVowels_postcond, h_main]\n    <;>\n    aesop\n\n  apply h_final\n"
+}

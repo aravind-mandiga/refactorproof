@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_15",
+ "variant_id": "verina_advanced_15__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_9377c922 : Bool :=\n    if nums.length < 3 then\n      false\n    else\n      let rec loop (xs : List Int) (first : Option Int) (second : Option Int) : Bool :=\n      match xs with\n      | [] => false\n      | x :: rest =>\n        match first with\n        | none => loop rest (some x) none\n        | some f =>\n          if x ≤ f then loop rest (some x) second\n          else match second with\n          | none => loop rest first (some x)\n          | some s =>\n            if x ≤ s then loop rest first (some x)\n            else true\n    loop nums none none\n  __rp_tmp_9377c922\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_9377c922",
+  "seed": 0
+ },
+ "spec_hash": "f70874c7acc5b758e9c47c3f9ba588a6384ca247526e1117f89ba80b6e774344",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "0b0b27e12e56af672a21f300ed2b976595e737d2c40bf564b6476ae6c6ed3ae0",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "increasingTriplet",
+ "code_loc_original": 17,
+ "code_loc_refactored": 19
+}

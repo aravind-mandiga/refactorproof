@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_99",
+ "variant_id": "verina_basic_99__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__avoid_unfold",
+ "generation_attempt": 1,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "other",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.582,
+ "proof_region_errors": [
+  "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≥ 18\n  3*a - b ≥ 1\nwhere\n a := x\n b := Triple__rp_branch_609232c2 x h_precond\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "23544f22ac6ccb90d3f1eb271c20effdbe5a55d9e678a92b1eadb5b54569801b",
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c",
+ "proof_text": "  by_cases h : x < 18\n  · -- Case: x < 18\n    have h₁ : Triple (x) h_precond = 3 * x := by\n      have h₂ : Triple (x) h_precond = (2 * x + 4 * x) / 2 := by\n        rw [Triple]\n        <;> simp_all [h, Triple_precond]\n        <;> norm_num\n        <;> omega\n      rw [h₂]\n      have h₃ : (2 * x + 4 * x : ℤ) / 2 = 3 * x := by\n        have h₄ : (2 * x + 4 * x : ℤ) = 6 * x := by ring\n        rw [h₄]\n        have h₅ : (6 * x : ℤ) / 2 = 3 * x := by\n          have h₆ : (6 : ℤ) * x / 2 = 3 * x := by\n            have h₇ : x % 2 = 0 ∨ x % 2 = 1 ∨ x % 2 = -1 := by\n              omega\n            rcases h₇ with (h₇ | h₇ | h₇)\n            · -- Case: x % 2 = 0\n              have h₈ : x % 2 = 0 := h₇\n              have h₉ : (6 : ℤ) * x / 2 = 3 * x := by\n                have h₁₀ : (6 : ℤ) * x = 2 * (3 * x) := by ring\n                rw [h₁₀]\n                have h₁₁ : (2 : ℤ) * (3 * x) / 2 = 3 * x := by\n                  have h₁₂ : (2 : ℤ) * (3 * x) / 2 = 3 * x := by\n                    omega\n                  exact h₁₂\n                exact h₁₁\n              exact h₉\n            · -- Case: x % 2 = 1\n              have h₈ : x % 2 = 1 := h₇\n              have h₉ : (6 : ℤ) * x / 2 = 3 * x := by\n                have h₁₀ : (6 : ℤ) * x = 2 * (3 * x) + 0 := by\n                  omega\n                rw [h₁₀]\n                have h₁₁ : (2 : ℤ) * (3 * x) / 2 = 3 * x := by\n                  omega\n                omega\n              exact h₉\n            · -- Case: x % 2 = -1\n              have h₈ : x % 2 = -1 := h₇\n              have h₉ : (6 : ℤ) * x / 2 = 3 * x := by\n                have h₁₀ : (6 : ℤ) * x = 2 * (3 * x) + 0 := by\n                  omega\n                rw [h₁₀]\n                have h₁₁ : (2 : ℤ) * (3 * x) / 2 = 3 * x := by\n                  omega\n                omega\n              exact h₉\n          exact h₆\n        exact h₅\n      rw [h₃]\n    have h₂ : Triple_postcond (x) (3 * x) h_precond := by\n      constructor\n      · -- Prove (3 * x) / 3 = x\n        have h₃ : (3 * x : ℤ) / 3 = x := by\n          have h₄ : (3 * x : ℤ) / 3 = x := by\n            omega\n          exact h₄\n        exact h₃\n      · -- Prove (3 * x) / 3 * 3 = 3 * x\n        have h₃ : (3 * x : ℤ) / 3 * 3 = 3 * x := by\n          have h₄ : (3 * x : ℤ) / 3 = x := by\n            omega\n          rw [h₄]\n          <;> ring\n          <;> omega\n        exact h₃\n    rw [h₁] at *\n    exact h₂\n  · -- Case: x ≥ 18\n    have h₁ : Triple (x) h_precond = 3 * x := by\n      have h₂ : Triple (x) h_precond = x + 2 * x := by\n        rw [Triple]\n        <;> simp_all [h, Triple_precond]\n        <;> norm_num\n        <;> omega\n      rw [h₂]\n      <;> ring\n      <;> omega\n    have h₂ : Triple_postcond (x) (3 * x) h_precond := by\n      constructor\n      · -- Prove (3 * x) / 3 = x\n        have h₃ : (3 * x : ℤ) / 3 = x := by\n          have h₄ : (3 * x : ℤ) / 3 = x := by\n            omega\n          exact h₄\n        exact h₃\n      · -- Prove (3 * x) / 3 * 3 = 3 * x\n        have h₃ : (3 * x : ℤ) / 3 * 3 = 3 * x := by\n          have h₄ : (3 * x : ℤ) / 3 = x := by\n            omega\n          rw [h₄]\n          <;> ring\n          <;> omega\n        exact h₃\n    rw [h₁] at *\n    exact h₂\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "avoid_unfold"
+}

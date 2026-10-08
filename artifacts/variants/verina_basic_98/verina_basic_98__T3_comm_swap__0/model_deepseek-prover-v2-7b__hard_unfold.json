@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_98",
+ "variant_id": "verina_basic_98__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_level": "simp_only",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b__hard_unfold",
+ "generation_attempt": 2,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 9.594,
+ "proof_region_errors": [
+  "tactic 'rfl' failed, the left-hand side\n  Triple x h_precond\nis not definitionally equal to the right-hand side\n  x * 3\nx : ℤ\nh_precond : Triple_precond x\n⊢ Triple x h_precond = x * 3"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "da4cbb7e3ed13c4d58bc6d2bd98bede811b8341ec753d8656fcac7681adab474",
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c",
+ "proof_text": "  unfold Triple Triple_postcond\n  have h₁ : (Triple x h_precond) / 3 = x := by\n    have h₂ : Triple x h_precond = x * 3 := by\n      rfl\n    rw [h₂]\n    -- Now we need to prove that (x * 3) / 3 = x\n    -- This is a property of integer division, which is exact here\n    have h₃ : (x * 3) / 3 = x := by\n      have h₄ : x * 3 / 3 = x := by\n        -- Use the fact that x * 3 is divisible by 3\n        have h₅ : x * 3 = 3 * x := by ring\n        rw [h₅]\n        -- Simplify the expression using the property of integer division\n        simp [Int.mul_ediv_cancel_left, Int.emod_eq_of_lt] <;> omega\n      exact h₄\n    exact h₃\n\n  have h₂ : ((Triple x h_precond) / 3) * 3 = Triple x h_precond := by\n    have h₃ : (Triple x h_precond) / 3 = x := h₁\n    have h₄ : ((Triple x h_precond) / 3) * 3 = Triple x h_precond := by\n      rw [h₃]\n      <;>\n      (try simp [Triple]) <;>\n      (try ring) <;>\n      (try omega) <;>\n      (try simp_all [Triple]) <;>\n      (try omega)\n    exact h₄\n\n  have h₃ : Triple_postcond (x) (Triple x h_precond) h_precond := by\n    constructor\n    · -- Prove the first part: (Triple x h_precond) / 3 = x\n      simpa [Triple] using h₁\n    · -- Prove the second part: ((Triple x h_precond) / 3) * 3 = Triple x h_precond\n      simpa [Triple] using h₂\n  exact h₃\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "hard_unfold"
+}

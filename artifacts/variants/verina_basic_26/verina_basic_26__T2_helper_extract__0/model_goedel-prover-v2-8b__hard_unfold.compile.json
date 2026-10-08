@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_26/verina_basic_26__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_26/verina_basic_26__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_26/verina_basic_26__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:16:20: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_26/verina_basic_26__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:24:50: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_26/verina_basic_26__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:24:12: warning: The declaration 'isEven__rp_helper_3a986bdd' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_26/verina_basic_26__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:41:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_26/verina_basic_26__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:62:10: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case left\n  n : ℤ\n  h_precond : isEven_precond n\n  h : isEven__rp_helper_3a986bdd n h_precond = true\n  ⊢ 2 ∣ n\nartifacts/variants/verina_basic_26/verina_basic_26__T2_helper_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:67:10: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case right\n  n : ℤ\n  h_precond : isEven_precond n\n  h : isEven__rp_helper_3a986bdd n h_precond = false\n  ⊢ n % 2 = 1\n",
+ "stderr": "",
+ "elapsed_seconds": 6.571,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 50,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'isEven__rp_helper_3a986bdd' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 41,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 62,
+   "col": 10,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case left\n  n : ℤ\n  h_precond : isEven_precond n\n  h : isEven__rp_helper_3a986bdd n h_precond = true\n  ⊢ 2 ∣ n"
+  },
+  {
+   "line": 67,
+   "col": 10,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case right\n  n : ℤ\n  h_precond : isEven_precond n\n  h : isEven__rp_helper_3a986bdd n h_precond = false\n  ⊢ n % 2 = 1\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

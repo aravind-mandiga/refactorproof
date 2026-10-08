@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_84",
+ "variant_id": "verina_basic_84__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_0f9f6f3c : Array Int :=\n    replace_loop arr k 0 arr\n  __rp_tmp_0f9f6f3c\n",
+ "transformed_code_aux": "def replace_loop (oldArr : Array Int) (k : Int) : Nat → Array Int → Array Int\n| i, acc =>\n  if i < oldArr.size then\n    if (oldArr[i]!) > k then\n      replace_loop oldArr k (i+1) (acc.set! i (-1))\n    else\n      replace_loop oldArr k (i+1) acc\n  else\n    acc\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_0f9f6f3c",
+  "seed": 0
+ },
+ "spec_hash": "f4507e1b69e496d8306d65def856ff407bba14fb0ccb3a9475572324393ec877",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "1417894ea545e4d4e654e1ad2598867995b6fd1882c6c6e874f05881ca043684",
+ "code_aux_hash_original": "739a60f40788cc473a210d524284dcf31a6f1c460baa5f31801b2e7ae659121a",
+ "tier": "basic",
+ "function_name": "replace",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

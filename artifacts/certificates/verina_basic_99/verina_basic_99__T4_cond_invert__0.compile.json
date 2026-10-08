@@ -1,0 +1,133 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:13:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:22:22: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:34:22: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:47:60: error: type mismatch\n  rfl\nhas type\n  ?m.833 = ?m.833 : Prop\nbut is expected to have type\n  RPOrig.Triple x h_precond = RPRef.Triple x h_precond : Prop\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:51:60: error: type mismatch\n  rfl\nhas type\n  ?m.1880 = ?m.1880 : Prop\nbut is expected to have type\n  RPOrig.Triple x h_precond = RPRef.Triple x h_precond : Prop\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:56:2: error: tactic 'rfl' failed, the left-hand side\n  if x < 18 then\n    let a := 2 * x;\n    let b := 4 * x;\n    (a + b) / 2\n  else\n    let y := 2 * x;\n    x + y\nis not definitionally equal to the right-hand side\n  if ¬x < 18 then\n    let y := 2 * x;\n    x + y\n  else\n    let a := 2 * x;\n    let b := 4 * x;\n    (a + b) / 2\nx : ℤ\nh_precond : Triple_precond x\n⊢ (if x < 18 then\n      let a := 2 * x;\n      let b := 4 * x;\n      (a + b) / 2\n    else\n      let y := 2 * x;\n      x + y) =\n    if ¬x < 18 then\n      let y := 2 * x;\n      x + y\n    else\n      let a := 2 * x;\n      let b := 4 * x;\n      (a + b) / 2\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:61:61: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:62:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:63:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:61:61: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:62:6: warning: '(simp only [RPOrig.Triple, RPRef.Triple, ite_not, Bool.not_eq_true, decide_not, Nat.not_lt, Nat.not_le, Int.not_lt,\n      Int.not_le]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:63:6: warning: '(simp only [RPOrig.Triple, RPRef.Triple]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:70:106: error: tactic 'delta' failed, did not delta reduce [RPOrig.Triple, RPRef.Triple]\nx : ℤ\nh_precond : Triple_precond x\n⊢ (if x < 18 then (2 * x + 4 * x) / 2 else x + 2 * x) = if 18 ≤ x then x + 2 * x else (2 * x + 4 * x) / 2\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:74:76: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:74:76: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:78:85: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:78:85: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:82:72: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_99/verina_basic_99__T4_cond_invert__0.lean:82:72: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 5.167,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 34,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 47,
+   "col": 60,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.833 = ?m.833 : Prop\nbut is expected to have type\n  RPOrig.Triple x h_precond = RPRef.Triple x h_precond : Prop"
+  },
+  {
+   "line": 51,
+   "col": 60,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1880 = ?m.1880 : Prop\nbut is expected to have type\n  RPOrig.Triple x h_precond = RPRef.Triple x h_precond : Prop"
+  },
+  {
+   "line": 56,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if x < 18 then\n    let a := 2 * x;\n    let b := 4 * x;\n    (a + b) / 2\n  else\n    let y := 2 * x;\n    x + y\nis not definitionally equal to the right-hand side\n  if ¬x < 18 then\n    let y := 2 * x;\n    x + y\n  else\n    let a := 2 * x;\n    let b := 4 * x;\n    (a + b) / 2\nx : ℤ\nh_precond : Triple_precond x\n⊢ (if x < 18 then\n      let a := 2 * x;\n      let b := 4 * x;\n      (a + b) / 2\n    else\n      let y := 2 * x;\n      x + y) =\n    if ¬x < 18 then\n      let y := 2 * x;\n      x + y\n    else\n      let a := 2 * x;\n      let b := 4 * x;\n      (a + b) / 2"
+  },
+  {
+   "line": 61,
+   "col": 61,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 62,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 63,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 61,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 62,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.Triple, RPRef.Triple, ite_not, Bool.not_eq_true, decide_not, Nat.not_lt, Nat.not_le, Int.not_lt,\n      Int.not_le]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 63,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.Triple, RPRef.Triple]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 70,
+   "col": 106,
+   "severity": "error",
+   "text": "tactic 'delta' failed, did not delta reduce [RPOrig.Triple, RPRef.Triple]\nx : ℤ\nh_precond : Triple_precond x\n⊢ (if x < 18 then (2 * x + 4 * x) / 2 else x + 2 * x) = if 18 ≤ x then x + 2 * x else (2 * x + 4 * x) / 2"
+  },
+  {
+   "line": 74,
+   "col": 76,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 74,
+   "col": 76,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 78,
+   "col": 85,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 78,
+   "col": 85,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 82,
+   "col": 72,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 82,
+   "col": 72,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.Triple RPRef.Triple; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

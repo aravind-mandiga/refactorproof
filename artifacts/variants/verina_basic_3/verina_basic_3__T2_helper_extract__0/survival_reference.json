@@ -1,0 +1,27 @@
+{
+ "task_id": "verina_basic_3",
+ "variant_id": "verina_basic_3__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "simp_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 6.279,
+ "proof_region_errors": [
+  "simp_all made no progress",
+  "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  (?m.1312 == ?m.1313) = true\ncase right.a\nn : ℤ\nh_precond : isDivisibleBy11_precond n\nh : ∃ x, n = 11 * x\n⊢ isDivisibleBy11__rp_helper_c39b37ae n h_precond = true\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "e3b4b70ad41ad4d95f0b49210caf5240324bc8fe7fe2e93b1ac0eb9052e12d90",
+ "spec_hash": "2f01b2a2c66c6b65fb25ac619f4002a4b7ba13ae770c8c7faffc8784d450d630"
+}

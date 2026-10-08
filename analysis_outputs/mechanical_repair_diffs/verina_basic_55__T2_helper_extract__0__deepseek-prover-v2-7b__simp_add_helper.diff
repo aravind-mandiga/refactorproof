@@ -1,0 +1,14 @@
+--- deepseek-prover-v2-7b:verina_basic_55__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_55__T2_helper_extract__0 (simp_add_helper)
+@@ -2,7 +2,7 @@
+     constructor
+     · -- Prove that if a = b, then Compare a b h_precond = true
+       intro h
+-      simp [h, Compare, h_precond]
++      simp [h, Compare, h_precond, Compare__rp_helper_56630b5e]
+       <;> aesop
+     · -- Prove that if a ≠ b, then Compare a b h_precond = false
+       intro h
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: unsolved goals | case right | a b : ℤ | h_precond : Compare_precond a b | h : ¬a = b | ⊢ Compare__rp_helper_56630b5e a b h_precond = false | 

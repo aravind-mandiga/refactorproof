@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_64/verina_advanced_64__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_64/verina_advanced_64__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_64/verina_advanced_64__T1_let_intro__0.lean:13:27: warning: unused variable `lst`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_64/verina_advanced_64__T1_let_intro__0.lean:13:44: warning: unused variable `target`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_64/verina_advanced_64__T1_let_intro__0.lean:22:51: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_64/verina_advanced_64__T1_let_intro__0.lean:34:51: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_64/verina_advanced_64__T1_let_intro__0.lean:49:92: error: type mismatch\n  rfl\nhas type\n  ?m.573 = ?m.573 : Prop\nbut is expected to have type\n  RPOrig.removeElement lst target h_precond = RPRef.removeElement lst target h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.604,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 27,
+   "severity": "warning",
+   "text": "unused variable `lst`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `target`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 51,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 34,
+   "col": 51,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 49,
+   "col": 92,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.573 = ?m.573 : Prop\nbut is expected to have type\n  RPOrig.removeElement lst target h_precond = RPRef.removeElement lst target h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,63 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_106",
+ "variant_id": "verina_basic_106__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_106/verina_basic_106__T4_cond_invert__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 2.945,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": "simp_only",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.40234 = ?m.40234 : Prop\nbut is expected to have type\n  RPOrig.arraySum a b h_precond = RPRef.arraySum a b h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.41301 = ?m.41301 : Prop\nbut is expected to have type\n  RPOrig.arraySum a b h_precond = RPRef.arraySum a b h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if a.size ≠ b.size then panicWithPosWithDecl \"_stdin\" \"RPOrig.arraySum\" 24 4 \"Array lengths mismatch\"\n  else\n    let n := a.size;\n    let c := mkArray n 0;\n    RPOrig.arraySum.loop._unary a b n ⟨0, c⟩\nis not definitionally equal to the right-hand side\n  if ¬a.size ≠ b.size then\n    let n := a.size;\n    let c := mkArray n 0;\n    RPRef.arraySum.loop._unary a b n ⟨0, c⟩\n  else panicWithPosWithDecl \"_stdin\" \"RPRef.arraySum\" 49 4 \"Array lengths mismatch\"\na b "
+   ]
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": true,
+   "errors": []
+  },
+  "bycases": {
+   "ok": true,
+   "errors": []
+  },
+  "bycases_ite": {
+   "ok": true,
+   "errors": []
+  },
+  "split_simp_all": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

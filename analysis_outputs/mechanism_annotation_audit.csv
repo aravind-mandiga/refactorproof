@@ -1,0 +1,195 @@
+task_id,proof_source,variant_id,transformation,class,survives,survival_outcome,mechanism,supporting_fragment,unambiguous,all_matched_categories,notes
+verina_advanced_41,deepseek-prover-v2-7b,verina_advanced_41__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp only [maxOfThree, maxOfThree_precond]",True,simp[f],single bridging construct
+verina_advanced_41,goedel-prover-v2-32b,verina_advanced_41__T2_helper_extract__0,T2_helper_extract,structural,True,survives,rfl_equation,"have h₁ : maxOfThree a b c h_precond = if a >= b && a >= c then a else if b >= a && b >= c then b else c := by
+      rfl",True,rfl_equation,single bridging construct
+verina_advanced_41,goedel-prover-v2-8b,verina_advanced_41__T2_helper_extract__0,T2_helper_extract,structural,True,survives,rfl_equation,"have h₁ : maxOfThree (a) (b) (c) h_precond = if a >= b && a >= c then a else if b >= a && b >= c then b else c := by
+        rfl",True,rfl_equation,single bridging construct
+verina_advanced_41,deepseek-prover-v2-7b,verina_advanced_41__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"dsimp only [maxOfThree, maxOfThree_precond]",True,simp[f],single bridging construct
+verina_advanced_41,goedel-prover-v2-32b,verina_advanced_41__T4_cond_invert__0,T4_cond_invert,semantic,False,proof_fails,rfl_equation,"have h₁ : maxOfThree a b c h_precond = if a >= b && a >= c then a else if b >= a && b >= c then b else c := by
+      rfl",True,rfl_equation,single bridging construct
+verina_advanced_41,goedel-prover-v2-8b,verina_advanced_41__T4_cond_invert__0,T4_cond_invert,semantic,False,proof_fails,rfl_equation,"have h₁ : maxOfThree (a) (b) (c) h_precond = if a >= b && a >= c then a else if b >= a && b >= c then b else c := by
+        rfl",True,rfl_equation,single bridging construct
+verina_advanced_41,deepseek-prover-v2-7b,verina_advanced_41__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"dsimp only [maxOfThree, maxOfThree_precond]",True,simp[f],single bridging construct
+verina_advanced_41,goedel-prover-v2-32b,verina_advanced_41__T5_branch_extract__0,T5_branch_extract,structural,True,survives,rfl_equation,"have h₁ : maxOfThree a b c h_precond = if a >= b && a >= c then a else if b >= a && b >= c then b else c := by
+      rfl",True,rfl_equation,single bridging construct
+verina_advanced_41,goedel-prover-v2-8b,verina_advanced_41__T5_branch_extract__0,T5_branch_extract,structural,True,survives,rfl_equation,"have h₁ : maxOfThree (a) (b) (c) h_precond = if a >= b && a >= c then a else if b >= a && b >= c then b else c := by
+        rfl",True,rfl_equation,single bridging construct
+verina_advanced_6,deepseek-prover-v2-7b,verina_advanced_6__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,unfold,unfold allVowels,True,unfold,single bridging construct
+verina_advanced_6,goedel-prover-v2-32b,verina_advanced_6__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp only [allVowels_postcond, allVowels]",True,simp[f],single bridging construct
+verina_advanced_6,goedel-prover-v2-8b,verina_advanced_6__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [allVowels_postcond, allVowels]",True,simp[f],single bridging construct
+verina_advanced_72,goedel-prover-v2-8b,verina_advanced_72__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],simp [singleDigitPrimeFactor],True,simp[f],single bridging construct
+verina_advanced_72,goedel-prover-v2-8b,verina_advanced_72__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],simp [singleDigitPrimeFactor],True,simp[f],single bridging construct
+verina_advanced_72,goedel-prover-v2-8b,verina_advanced_72__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],simp [singleDigitPrimeFactor],True,simp[f],single bridging construct
+verina_basic_1,deepseek-prover-v2-7b,verina_basic_1__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp_all [hasOppositeSign, h_precond]",True,simp[f],single bridging construct
+verina_basic_1,goedel-prover-v2-32b,verina_basic_1__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp_all [hasOppositeSign_precond, hasOppositeSign, hasOppositeSign_postcond]",True,simp[f],single bridging construct
+verina_basic_1,goedel-prover-v2-8b,verina_basic_1__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,rw[f],rw [hasOppositeSign],True,rw[f],single bridging construct
+verina_basic_1,deepseek-prover-v2-7b,verina_basic_1__T3_comm_swap__0,T3_comm_swap,semantic,False,proof_fails,simp[f],"simp_all [hasOppositeSign, h_precond]",True,simp[f],single bridging construct
+verina_basic_1,goedel-prover-v2-32b,verina_basic_1__T3_comm_swap__0,T3_comm_swap,semantic,False,proof_fails,simp[f],"simp_all [hasOppositeSign_precond, hasOppositeSign, hasOppositeSign_postcond]",True,simp[f],single bridging construct
+verina_basic_1,goedel-prover-v2-8b,verina_basic_1__T3_comm_swap__0,T3_comm_swap,semantic,False,proof_fails,rw[f],rw [hasOppositeSign],True,rw[f],single bridging construct
+verina_basic_100,deepseek-prover-v2-7b,verina_basic_100__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [Triple, Triple_precond, Triple_postcond]",True,simp[f],single bridging construct
+verina_basic_100,goedel-prover-v2-32b,verina_basic_100__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp [hx, Triple]",True,simp[f],single bridging construct
+verina_basic_100,goedel-prover-v2-8b,verina_basic_100__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp only [Triple_precond, Triple, Triple_postcond]",True,simp[f],single bridging construct
+verina_basic_100,deepseek-prover-v2-7b,verina_basic_100__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],"dsimp [Triple, Triple_precond, Triple_postcond]",True,simp[f],single bridging construct
+verina_basic_100,goedel-prover-v2-32b,verina_basic_100__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],"simp [hx, Triple]",True,simp[f],single bridging construct
+verina_basic_100,goedel-prover-v2-8b,verina_basic_100__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],"simp only [Triple_precond, Triple, Triple_postcond]",True,simp[f],single bridging construct
+verina_basic_100,deepseek-prover-v2-7b,verina_basic_100__T3_comm_swap__1,T3_comm_swap,semantic,True,survives,simp[f],"dsimp [Triple, Triple_precond, Triple_postcond]",True,simp[f],single bridging construct
+verina_basic_100,goedel-prover-v2-32b,verina_basic_100__T3_comm_swap__1,T3_comm_swap,semantic,True,survives,simp[f],"simp [hx, Triple]",True,simp[f],single bridging construct
+verina_basic_100,goedel-prover-v2-8b,verina_basic_100__T3_comm_swap__1,T3_comm_swap,semantic,True,survives,simp[f],"simp only [Triple_precond, Triple, Triple_postcond]",True,simp[f],single bridging construct
+verina_basic_100,deepseek-prover-v2-7b,verina_basic_100__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"dsimp [Triple, Triple_precond, Triple_postcond]",True,simp[f],single bridging construct
+verina_basic_100,goedel-prover-v2-32b,verina_basic_100__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"simp [hx, Triple]",True,simp[f],single bridging construct
+verina_basic_100,goedel-prover-v2-8b,verina_basic_100__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"simp only [Triple_precond, Triple, Triple_postcond]",True,simp[f],single bridging construct
+verina_basic_100,deepseek-prover-v2-7b,verina_basic_100__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"dsimp [Triple, Triple_precond, Triple_postcond]",True,simp[f],single bridging construct
+verina_basic_100,goedel-prover-v2-32b,verina_basic_100__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"simp [hx, Triple]",True,simp[f],single bridging construct
+verina_basic_100,goedel-prover-v2-8b,verina_basic_100__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"simp only [Triple_precond, Triple, Triple_postcond]",True,simp[f],single bridging construct
+verina_basic_101,deepseek-prover-v2-7b,verina_basic_101__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp [Triple, Triple_precond]",True,simp[f],single bridging construct
+verina_basic_101,goedel-prover-v2-32b,verina_basic_101__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_101,goedel-prover-v2-8b,verina_basic_101__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [Triple, Triple_postcond, Triple_precond]",True,simp[f],single bridging construct
+verina_basic_101,deepseek-prover-v2-7b,verina_basic_101__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],"simp [Triple, Triple_precond]",True,simp[f],single bridging construct
+verina_basic_101,goedel-prover-v2-32b,verina_basic_101__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_101,goedel-prover-v2-8b,verina_basic_101__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],"dsimp [Triple, Triple_postcond, Triple_precond]",True,simp[f],single bridging construct
+verina_basic_101,deepseek-prover-v2-7b,verina_basic_101__T3_comm_swap__1,T3_comm_swap,semantic,True,survives,simp[f],"simp [Triple, Triple_precond]",True,simp[f],single bridging construct
+verina_basic_101,goedel-prover-v2-32b,verina_basic_101__T3_comm_swap__1,T3_comm_swap,semantic,True,survives,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_101,goedel-prover-v2-8b,verina_basic_101__T3_comm_swap__1,T3_comm_swap,semantic,True,survives,simp[f],"dsimp [Triple, Triple_postcond, Triple_precond]",True,simp[f],single bridging construct
+verina_basic_107,deepseek-prover-v2-7b,verina_basic_107__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],simp [ComputeAvg],True,simp[f],single bridging construct
+verina_basic_107,goedel-prover-v2-32b,verina_basic_107__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],simp [ComputeAvg],True,simp[f],single bridging construct
+verina_basic_107,goedel-prover-v2-8b,verina_basic_107__T2_helper_extract__0,T2_helper_extract,structural,True,survives,rfl_equation,"have h₁ : ComputeAvg (a) (b) h_precond = (a + b) / 2 := by
+    rfl",True,rfl_equation,single bridging construct
+verina_basic_107,deepseek-prover-v2-7b,verina_basic_107__T3_comm_swap__0,T3_comm_swap,semantic,False,proof_fails,simp[f],simp [ComputeAvg],True,simp[f],single bridging construct
+verina_basic_107,goedel-prover-v2-32b,verina_basic_107__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],simp [ComputeAvg],True,simp[f],single bridging construct
+verina_basic_107,goedel-prover-v2-8b,verina_basic_107__T3_comm_swap__0,T3_comm_swap,semantic,False,proof_fails,rfl_equation,"have h₁ : ComputeAvg (a) (b) h_precond = (a + b) / 2 := by
+    rfl",True,rfl_equation,single bridging construct
+verina_basic_11,deepseek-prover-v2-7b,verina_basic_11__T2_helper_extract__0,T2_helper_extract,structural,True,survives,rfl_equation,have h₁ : lastDigit n h_precond = n % 10 := rfl,True,rfl_equation,single bridging construct
+verina_basic_11,goedel-prover-v2-32b,verina_basic_11__T2_helper_extract__0,T2_helper_extract,structural,True,survives,rfl_equation,"have h_last_digit : lastDigit n h_precond = n % 10 := by
+    rfl",True,rfl_equation,single bridging construct
+verina_basic_11,goedel-prover-v2-8b,verina_basic_11__T2_helper_extract__0,T2_helper_extract,structural,True,survives,simp[f],"simp [lastDigit, h_precond]",True,simp[f],single bridging construct
+verina_basic_12,deepseek-prover-v2-7b,verina_basic_12__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,unfold,unfold cubeSurfaceArea,True,unfold,single bridging construct
+verina_basic_12,goedel-prover-v2-32b,verina_basic_12__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],simp [cubeSurfaceArea],True,simp[f],single bridging construct
+verina_basic_12,goedel-prover-v2-8b,verina_basic_12__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp [cubeSurfaceArea, cubeSurfaceArea_precond]",True,simp[f],single bridging construct
+verina_basic_12,deepseek-prover-v2-7b,verina_basic_12__T3_comm_swap__0,T3_comm_swap,semantic,False,proof_fails,unfold,unfold cubeSurfaceArea,True,unfold,single bridging construct
+verina_basic_12,goedel-prover-v2-32b,verina_basic_12__T3_comm_swap__0,T3_comm_swap,semantic,False,proof_fails,simp[f],simp [cubeSurfaceArea],True,simp[f],single bridging construct
+verina_basic_12,goedel-prover-v2-8b,verina_basic_12__T3_comm_swap__0,T3_comm_swap,semantic,False,proof_fails,simp[f],"simp [cubeSurfaceArea, cubeSurfaceArea_precond]",True,simp[f],single bridging construct
+verina_basic_14,deepseek-prover-v2-7b,verina_basic_14__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp_all [containsZ, containsZ_precond]",True,simp[f],single bridging construct
+verina_basic_14,goedel-prover-v2-32b,verina_basic_14__T2_helper_extract__0,T2_helper_extract,structural,True,survives,rfl_equation,have h₁ : containsZ s h_precond = s.toList.any (fun c : Char => c = 'z' || c = 'Z') := rfl,True,rfl_equation,single bridging construct
+verina_basic_14,goedel-prover-v2-8b,verina_basic_14__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp_all [containsZ_postcond, containsZ]",True,simp[f],single bridging construct
+verina_basic_16,deepseek-prover-v2-7b,verina_basic_16__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [replaceChars, replaceChars_postcond]",True,simp[f],single bridging construct
+verina_basic_17,deepseek-prover-v2-7b,verina_basic_17__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp [toLowercase, List.length_map]",True,simp[f],single bridging construct
+verina_basic_26,deepseek-prover-v2-7b,verina_basic_26__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp only [isEven_postcond, isEven_precond, isEven, and_true]",True,simp[f],single bridging construct
+verina_basic_26,goedel-prover-v2-32b,verina_basic_26__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp [isEven, h, Int.emod_eq_of_lt]",True,simp[f],single bridging construct
+verina_basic_26,goedel-prover-v2-8b,verina_basic_26__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],simpa [isEven],True,simp[f],single bridging construct
+verina_basic_3,deepseek-prover-v2-7b,verina_basic_3__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simpa [isDivisibleBy11, h_precond]",True,simp[f],single bridging construct
+verina_basic_3,goedel-prover-v2-32b,verina_basic_3__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [isDivisibleBy11_postcond, isDivisibleBy11]",True,simp[f],single bridging construct
+verina_basic_3,goedel-prover-v2-8b,verina_basic_3__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp only [isDivisibleBy11_precond, isDivisibleBy11, isDivisibleBy11_postcond]",True,simp[f],single bridging construct
+verina_basic_31,deepseek-prover-v2-7b,verina_basic_31__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [toUppercase, toUppercase_postcond, isLowerCase, shiftMinus32]",True,simp[f],single bridging construct
+verina_basic_36,goedel-prover-v2-8b,verina_basic_36__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [replaceWithColon_precond, replaceWithColon_postcond, replaceWithColon]",True,simp[f],single bridging construct
+verina_basic_42,deepseek-prover-v2-7b,verina_basic_42__T2_helper_extract__0,T2_helper_extract,structural,True,survives,rfl_equation,have h₁ : countDigits (s) h_precond = List.length (List.filter isDigit (s.toList)) := rfl,True,rfl_equation,single bridging construct
+verina_basic_42,goedel-prover-v2-32b,verina_basic_42__T2_helper_extract__0,T2_helper_extract,structural,True,survives,rfl_equation,have h₁ : countDigits s h_precond = List.length (List.filter isDigit s.toList) := by rfl,True,rfl_equation,single bridging construct
+verina_basic_42,goedel-prover-v2-8b,verina_basic_42__T2_helper_extract__0,T2_helper_extract,structural,True,survives,rfl_equation,have h₁ : countDigits (s) h_precond = List.length (List.filter isDigit s.toList) := rfl,True,rfl_equation,single bridging construct
+verina_basic_5,deepseek-prover-v2-7b,verina_basic_5__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,rw[f],rw [multiply],True,rw[f],single bridging construct
+verina_basic_5,goedel-prover-v2-32b,verina_basic_5__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [multiply_postcond, multiply_precond, multiply]",True,simp[f],single bridging construct
+verina_basic_5,goedel-prover-v2-8b,verina_basic_5__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp [multiply, h_precond, multiply_precond]",True,simp[f],single bridging construct
+verina_basic_5,deepseek-prover-v2-7b,verina_basic_5__T3_comm_swap__0,T3_comm_swap,semantic,False,proof_fails,rw[f],rw [multiply],True,rw[f],single bridging construct
+verina_basic_5,goedel-prover-v2-32b,verina_basic_5__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],"dsimp [multiply_postcond, multiply_precond, multiply]",True,simp[f],single bridging construct
+verina_basic_5,goedel-prover-v2-8b,verina_basic_5__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],"simp [multiply, h_precond, multiply_precond]",True,simp[f],single bridging construct
+verina_basic_50,deepseek-prover-v2-7b,verina_basic_50__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp [Abs, h_precond, h]",True,simp[f],single bridging construct
+verina_basic_50,goedel-prover-v2-32b,verina_basic_50__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],dsimp [Abs],True,simp[f],single bridging construct
+verina_basic_50,goedel-prover-v2-8b,verina_basic_50__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp [Abs, h₂]",True,simp[f],single bridging construct
+verina_basic_50,deepseek-prover-v2-7b,verina_basic_50__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"simp [Abs, h_precond, h]",True,simp[f],single bridging construct
+verina_basic_50,goedel-prover-v2-32b,verina_basic_50__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],dsimp [Abs],True,simp[f],single bridging construct
+verina_basic_50,goedel-prover-v2-8b,verina_basic_50__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"simp [Abs, h₂]",True,simp[f],single bridging construct
+verina_basic_50,deepseek-prover-v2-7b,verina_basic_50__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"simp [Abs, h_precond, h]",True,simp[f],single bridging construct
+verina_basic_50,goedel-prover-v2-32b,verina_basic_50__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],dsimp [Abs],True,simp[f],single bridging construct
+verina_basic_50,goedel-prover-v2-8b,verina_basic_50__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"simp [Abs, h₂]",True,simp[f],single bridging construct
+verina_basic_55,deepseek-prover-v2-7b,verina_basic_55__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp [h, Compare, h_precond]",True,simp[f],single bridging construct
+verina_basic_55,goedel-prover-v2-32b,verina_basic_55__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp [Compare, h_ab]",True,simp[f],single bridging construct
+verina_basic_55,goedel-prover-v2-8b,verina_basic_55__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp [Compare, h_eq, h_precond]",True,simp[f],single bridging construct
+verina_basic_55,deepseek-prover-v2-7b,verina_basic_55__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"simp [h, Compare, h_precond]",True,simp[f],single bridging construct
+verina_basic_55,goedel-prover-v2-32b,verina_basic_55__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"simp [Compare, h_ab]",True,simp[f],single bridging construct
+verina_basic_55,goedel-prover-v2-8b,verina_basic_55__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"simp [Compare, h_eq, h_precond]",True,simp[f],single bridging construct
+verina_basic_55,deepseek-prover-v2-7b,verina_basic_55__T5_branch_extract__0,T5_branch_extract,structural,True,survives,simp[f],"simp [h, Compare, h_precond]",True,simp[f],single bridging construct
+verina_basic_55,goedel-prover-v2-32b,verina_basic_55__T5_branch_extract__0,T5_branch_extract,structural,True,survives,simp[f],"simp [Compare, h_ab]",True,simp[f],single bridging construct
+verina_basic_55,goedel-prover-v2-8b,verina_basic_55__T5_branch_extract__0,T5_branch_extract,structural,True,survives,simp[f],"simp [Compare, h_eq, h_precond]",True,simp[f],single bridging construct
+verina_basic_59,deepseek-prover-v2-7b,verina_basic_59__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp [DoubleQuadruple, DoubleQuadruple_precond, Int.mul_emod]",True,simp[f],single bridging construct
+verina_basic_59,goedel-prover-v2-32b,verina_basic_59__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [DoubleQuadruple, DoubleQuadruple_postcond]",True,simp[f],single bridging construct
+verina_basic_59,goedel-prover-v2-8b,verina_basic_59__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp [DoubleQuadruple, DoubleQuadruple_postcond, Prod.fst, Prod.snd]",True,simp[f],single bridging construct
+verina_basic_59,deepseek-prover-v2-7b,verina_basic_59__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],"simp [DoubleQuadruple, DoubleQuadruple_precond, Int.mul_emod]",True,simp[f],single bridging construct
+verina_basic_59,goedel-prover-v2-32b,verina_basic_59__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],"dsimp [DoubleQuadruple, DoubleQuadruple_postcond]",True,simp[f],single bridging construct
+verina_basic_59,goedel-prover-v2-8b,verina_basic_59__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],"simp [DoubleQuadruple, DoubleQuadruple_postcond, Prod.fst, Prod.snd]",True,simp[f],single bridging construct
+verina_basic_59,deepseek-prover-v2-7b,verina_basic_59__T3_comm_swap__1,T3_comm_swap,semantic,True,survives,simp[f],"simp [DoubleQuadruple, DoubleQuadruple_precond, Int.mul_emod]",True,simp[f],single bridging construct
+verina_basic_59,goedel-prover-v2-32b,verina_basic_59__T3_comm_swap__1,T3_comm_swap,semantic,True,survives,simp[f],"dsimp [DoubleQuadruple, DoubleQuadruple_postcond]",True,simp[f],single bridging construct
+verina_basic_59,goedel-prover-v2-8b,verina_basic_59__T3_comm_swap__1,T3_comm_swap,semantic,True,survives,simp[f],"simp [DoubleQuadruple, DoubleQuadruple_postcond, Prod.fst, Prod.snd]",True,simp[f],single bridging construct
+verina_basic_6,deepseek-prover-v2-7b,verina_basic_6__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp only [minOfThree, minOfThree_postcond, minOfThree_precond]",True,simp[f],single bridging construct
+verina_basic_6,goedel-prover-v2-8b,verina_basic_6__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp only [minOfThree, minOfThree_precond, minOfThree_postcond]",True,simp[f],single bridging construct
+verina_basic_6,deepseek-prover-v2-7b,verina_basic_6__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"dsimp only [minOfThree, minOfThree_postcond, minOfThree_precond]",True,simp[f],single bridging construct
+verina_basic_6,goedel-prover-v2-8b,verina_basic_6__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"dsimp only [minOfThree, minOfThree_precond, minOfThree_postcond]",True,simp[f],single bridging construct
+verina_basic_6,deepseek-prover-v2-7b,verina_basic_6__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"dsimp only [minOfThree, minOfThree_postcond, minOfThree_precond]",True,simp[f],single bridging construct
+verina_basic_6,goedel-prover-v2-8b,verina_basic_6__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"dsimp only [minOfThree, minOfThree_precond, minOfThree_postcond]",True,simp[f],single bridging construct
+verina_basic_66,deepseek-prover-v2-7b,verina_basic_66__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,unfold,unfold ComputeIsEven,True,unfold,single bridging construct
+verina_basic_66,goedel-prover-v2-32b,verina_basic_66__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [ComputeIsEven_postcond, ComputeIsEven]",True,simp[f],single bridging construct
+verina_basic_66,goedel-prover-v2-8b,verina_basic_66__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],dsimp [ComputeIsEven],True,simp[f],single bridging construct
+verina_basic_66,deepseek-prover-v2-7b,verina_basic_66__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,unfold,unfold ComputeIsEven,True,unfold,single bridging construct
+verina_basic_66,goedel-prover-v2-32b,verina_basic_66__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"dsimp [ComputeIsEven_postcond, ComputeIsEven]",True,simp[f],single bridging construct
+verina_basic_66,goedel-prover-v2-8b,verina_basic_66__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],dsimp [ComputeIsEven],True,simp[f],single bridging construct
+verina_basic_66,deepseek-prover-v2-7b,verina_basic_66__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,unfold,unfold ComputeIsEven,True,unfold,single bridging construct
+verina_basic_66,goedel-prover-v2-32b,verina_basic_66__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"dsimp [ComputeIsEven_postcond, ComputeIsEven]",True,simp[f],single bridging construct
+verina_basic_66,goedel-prover-v2-8b,verina_basic_66__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],dsimp [ComputeIsEven],True,simp[f],single bridging construct
+verina_basic_76,deepseek-prover-v2-7b,verina_basic_76__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp_all [myMin, myMin_precond]",True,simp[f],single bridging construct
+verina_basic_76,goedel-prover-v2-32b,verina_basic_76__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp only [myMin_postcond, myMin]",True,simp[f],single bridging construct
+verina_basic_76,goedel-prover-v2-8b,verina_basic_76__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp only [myMin_precond, myMin_postcond, myMin]",True,simp[f],single bridging construct
+verina_basic_76,deepseek-prover-v2-7b,verina_basic_76__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"simp_all [myMin, myMin_precond]",True,simp[f],single bridging construct
+verina_basic_76,goedel-prover-v2-32b,verina_basic_76__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"simp only [myMin_postcond, myMin]",True,simp[f],single bridging construct
+verina_basic_76,goedel-prover-v2-8b,verina_basic_76__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"dsimp only [myMin_precond, myMin_postcond, myMin]",True,simp[f],single bridging construct
+verina_basic_76,deepseek-prover-v2-7b,verina_basic_76__T5_branch_extract__0,T5_branch_extract,structural,True,survives,simp[f],"simp_all [myMin, myMin_precond]",True,simp[f],single bridging construct
+verina_basic_76,goedel-prover-v2-32b,verina_basic_76__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"simp only [myMin_postcond, myMin]",True,simp[f],single bridging construct
+verina_basic_76,goedel-prover-v2-8b,verina_basic_76__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"dsimp only [myMin_precond, myMin_postcond, myMin]",True,simp[f],single bridging construct
+verina_basic_78,deepseek-prover-v2-7b,verina_basic_78__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"simp [MultipleReturns, MultipleReturns_precond, h_precond]",True,simp[f],single bridging construct
+verina_basic_78,goedel-prover-v2-32b,verina_basic_78__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [MultipleReturns, MultipleReturns_postcond, MultipleReturns_precond]",True,simp[f],single bridging construct
+verina_basic_78,goedel-prover-v2-8b,verina_basic_78__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [MultipleReturns_postcond, MultipleReturns, MultipleReturns_precond]",True,simp[f],single bridging construct
+verina_basic_78,deepseek-prover-v2-7b,verina_basic_78__T3_comm_swap__0,T3_comm_swap,semantic,False,proof_fails,simp[f],"simp [MultipleReturns, MultipleReturns_precond, h_precond]",True,simp[f],single bridging construct
+verina_basic_78,goedel-prover-v2-32b,verina_basic_78__T3_comm_swap__0,T3_comm_swap,semantic,False,proof_fails,simp[f],"dsimp [MultipleReturns, MultipleReturns_postcond, MultipleReturns_precond]",True,simp[f],single bridging construct
+verina_basic_78,goedel-prover-v2-8b,verina_basic_78__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],"dsimp [MultipleReturns_postcond, MultipleReturns, MultipleReturns_precond]",True,simp[f],single bridging construct
+verina_basic_8,deepseek-prover-v2-7b,verina_basic_8__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [myMin, myMin_precond]",True,simp[f],single bridging construct
+verina_basic_8,goedel-prover-v2-32b,verina_basic_8__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [myMin_postcond, myMin, myMin_precond]",True,simp[f],single bridging construct
+verina_basic_8,goedel-prover-v2-8b,verina_basic_8__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [myMin, myMin_precond, myMin_postcond]",True,simp[f],single bridging construct
+verina_basic_8,deepseek-prover-v2-7b,verina_basic_8__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"dsimp [myMin, myMin_precond]",True,simp[f],single bridging construct
+verina_basic_8,goedel-prover-v2-32b,verina_basic_8__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"dsimp [myMin_postcond, myMin, myMin_precond]",True,simp[f],single bridging construct
+verina_basic_8,goedel-prover-v2-8b,verina_basic_8__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"dsimp [myMin, myMin_precond, myMin_postcond]",True,simp[f],single bridging construct
+verina_basic_8,deepseek-prover-v2-7b,verina_basic_8__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"dsimp [myMin, myMin_precond]",True,simp[f],single bridging construct
+verina_basic_8,goedel-prover-v2-32b,verina_basic_8__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"dsimp [myMin_postcond, myMin, myMin_precond]",True,simp[f],single bridging construct
+verina_basic_8,goedel-prover-v2-8b,verina_basic_8__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"dsimp [myMin, myMin_precond, myMin_postcond]",True,simp[f],single bridging construct
+verina_basic_88,deepseek-prover-v2-7b,verina_basic_88__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],simp [ToArray],True,simp[f],single bridging construct
+verina_basic_91,deepseek-prover-v2-7b,verina_basic_91__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],dsimp [Swap],True,simp[f],single bridging construct
+verina_basic_91,goedel-prover-v2-32b,verina_basic_91__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],dsimp [Swap],True,simp[f],single bridging construct
+verina_basic_91,goedel-prover-v2-8b,verina_basic_91__T2_helper_extract__0,T2_helper_extract,structural,True,survives,simp[f],"simp [Swap, Swap_precond, Prod.ext_iff]",True,simp[f],single bridging construct
+verina_basic_92,deepseek-prover-v2-7b,verina_basic_92__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp only [SwapArithmetic, SwapArithmetic_precond]",True,simp[f],single bridging construct
+verina_basic_92,goedel-prover-v2-32b,verina_basic_92__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],dsimp [SwapArithmetic],True,simp[f],single bridging construct
+verina_basic_92,goedel-prover-v2-8b,verina_basic_92__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [SwapArithmetic, Prod.mk.injEq]",True,simp[f],single bridging construct
+verina_basic_92,deepseek-prover-v2-7b,verina_basic_92__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],"dsimp only [SwapArithmetic, SwapArithmetic_precond]",True,simp[f],single bridging construct
+verina_basic_92,goedel-prover-v2-32b,verina_basic_92__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],dsimp [SwapArithmetic],True,simp[f],single bridging construct
+verina_basic_92,goedel-prover-v2-8b,verina_basic_92__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],"dsimp [SwapArithmetic, Prod.mk.injEq]",True,simp[f],single bridging construct
+verina_basic_96,deepseek-prover-v2-7b,verina_basic_96__T2_helper_extract__0,T2_helper_extract,structural,True,survives,simp[f],simp [SwapSimultaneous],True,simp[f],single bridging construct
+verina_basic_96,goedel-prover-v2-32b,verina_basic_96__T2_helper_extract__0,T2_helper_extract,structural,True,survives,simp[f],simp [SwapSimultaneous],True,simp[f],single bridging construct
+verina_basic_96,goedel-prover-v2-8b,verina_basic_96__T2_helper_extract__0,T2_helper_extract,structural,True,survives,simp[f],"simp [SwapSimultaneous, SwapSimultaneous_precond, SwapSimultaneous_postcond, Prod.ext_iff]",True,simp[f],single bridging construct
+verina_basic_98,deepseek-prover-v2-7b,verina_basic_98__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],simp [Triple],True,simp[f],single bridging construct
+verina_basic_98,goedel-prover-v2-32b,verina_basic_98__T2_helper_extract__0,T2_helper_extract,structural,True,survives,simp[f],"dsimp [Triple_postcond, Triple]",True,simp[f],single bridging construct
+verina_basic_98,goedel-prover-v2-8b,verina_basic_98__T2_helper_extract__0,T2_helper_extract,structural,True,survives,rfl_equation,have h₂ : Triple (x) h_precond = x * 3 := rfl,True,rfl_equation,single bridging construct
+verina_basic_98,deepseek-prover-v2-7b,verina_basic_98__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],simp [Triple],True,simp[f],single bridging construct
+verina_basic_98,goedel-prover-v2-32b,verina_basic_98__T3_comm_swap__0,T3_comm_swap,semantic,False,proof_fails,simp[f],"dsimp [Triple_postcond, Triple]",True,simp[f],single bridging construct
+verina_basic_98,goedel-prover-v2-8b,verina_basic_98__T3_comm_swap__0,T3_comm_swap,semantic,False,proof_fails,rfl_equation,have h₂ : Triple (x) h_precond = x * 3 := rfl,True,rfl_equation,single bridging construct
+verina_basic_99,deepseek-prover-v2-7b,verina_basic_99__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_99,goedel-prover-v2-32b,verina_basic_99__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_99,goedel-prover-v2-8b,verina_basic_99__T2_helper_extract__0,T2_helper_extract,structural,False,proof_fails,simp[f],"dsimp [Triple, Triple_precond, h]",True,simp[f],single bridging construct
+verina_basic_99,deepseek-prover-v2-7b,verina_basic_99__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_99,goedel-prover-v2-32b,verina_basic_99__T3_comm_swap__0,T3_comm_swap,semantic,False,proof_fails,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_99,goedel-prover-v2-8b,verina_basic_99__T3_comm_swap__0,T3_comm_swap,semantic,True,survives,simp[f],"dsimp [Triple, Triple_precond, h]",True,simp[f],single bridging construct
+verina_basic_99,deepseek-prover-v2-7b,verina_basic_99__T3_comm_swap__1,T3_comm_swap,semantic,True,survives,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_99,goedel-prover-v2-32b,verina_basic_99__T3_comm_swap__1,T3_comm_swap,semantic,False,proof_fails,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_99,goedel-prover-v2-8b,verina_basic_99__T3_comm_swap__1,T3_comm_swap,semantic,True,survives,simp[f],"dsimp [Triple, Triple_precond, h]",True,simp[f],single bridging construct
+verina_basic_99,deepseek-prover-v2-7b,verina_basic_99__T3_comm_swap__2,T3_comm_swap,semantic,True,survives,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_99,goedel-prover-v2-32b,verina_basic_99__T3_comm_swap__2,T3_comm_swap,semantic,True,survives,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_99,goedel-prover-v2-8b,verina_basic_99__T3_comm_swap__2,T3_comm_swap,semantic,False,proof_fails,simp[f],"dsimp [Triple, Triple_precond, h]",True,simp[f],single bridging construct
+verina_basic_99,deepseek-prover-v2-7b,verina_basic_99__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_99,goedel-prover-v2-32b,verina_basic_99__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_99,goedel-prover-v2-8b,verina_basic_99__T4_cond_invert__0,T4_cond_invert,semantic,True,survives,simp[f],"dsimp [Triple, Triple_precond, h]",True,simp[f],single bridging construct
+verina_basic_99,deepseek-prover-v2-7b,verina_basic_99__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_99,goedel-prover-v2-32b,verina_basic_99__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],dsimp [Triple],True,simp[f],single bridging construct
+verina_basic_99,goedel-prover-v2-8b,verina_basic_99__T5_branch_extract__0,T5_branch_extract,structural,False,proof_fails,simp[f],"dsimp [Triple, Triple_precond, h]",True,simp[f],single bridging construct

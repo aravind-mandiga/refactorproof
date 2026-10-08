@@ -1,0 +1,145 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:20:25: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:28:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:28:12: warning: The declaration 'toLowercase__rp_helper_b6759a4e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:47:56: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:68:8: error: tactic 'rfl' failed, the left-hand side\n  (toLowercase__rp_helper_b6759a4e s h_precond).length\nis not definitionally equal to the right-hand side\n  s.length\ns : String\nh_precond : toLowercase_precond s\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).length = s.length\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:71:18: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:71:37: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:71:90: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:72:19: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:72:38: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:72:82: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:77:16: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:77:69: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:90:16: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:90:60: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:110:30: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:110:49: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:110:102: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:111:31: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:111:50: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_17/lean_1/verina_basic_17__T2_helper_extract__0.lean:111:94: warning: `List.get!` has been deprecated: Use `a[i]!` instead.\n",
+ "stderr": "",
+ "elapsed_seconds": 9.7,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 20,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'toLowercase__rp_helper_b6759a4e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 47,
+   "col": 56,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 68,
+   "col": 8,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  (toLowercase__rp_helper_b6759a4e s h_precond).length\nis not definitionally equal to the right-hand side\n  s.length\ns : String\nh_precond : toLowercase_precond s\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).length = s.length"
+  },
+  {
+   "line": 71,
+   "col": 18,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 71,
+   "col": 37,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 71,
+   "col": 90,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 72,
+   "col": 19,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 72,
+   "col": 38,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 72,
+   "col": 82,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 77,
+   "col": 16,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 77,
+   "col": 69,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 90,
+   "col": 16,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 90,
+   "col": 60,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 110,
+   "col": 30,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 110,
+   "col": 49,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 110,
+   "col": 102,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 111,
+   "col": 31,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 111,
+   "col": 50,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead."
+  },
+  {
+   "line": 111,
+   "col": 94,
+   "severity": "warning",
+   "text": "`List.get!` has been deprecated: Use `a[i]!` instead.\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

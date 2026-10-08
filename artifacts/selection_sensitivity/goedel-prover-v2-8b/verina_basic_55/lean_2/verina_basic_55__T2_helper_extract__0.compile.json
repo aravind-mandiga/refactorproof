@@ -1,0 +1,73 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_55/lean_2/verina_basic_55__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_55/lean_2/verina_basic_55__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_55/lean_2/verina_basic_55__T2_helper_extract__0.lean:15:21: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_55/lean_2/verina_basic_55__T2_helper_extract__0.lean:15:31: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_55/lean_2/verina_basic_55__T2_helper_extract__0.lean:23:61: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_55/lean_2/verina_basic_55__T2_helper_extract__0.lean:23:12: warning: The declaration 'Compare__rp_helper_56630b5e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_55/lean_2/verina_basic_55__T2_helper_extract__0.lean:40:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_55/lean_2/verina_basic_55__T2_helper_extract__0.lean:59:10: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_55/lean_2/verina_basic_55__T2_helper_extract__0.lean:56:4: error: unsolved goals\ncase left\na : ℤ\nh_precond : Compare_precond a a\n⊢ Compare__rp_helper_56630b5e a a ⋯ = true\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_55/lean_2/verina_basic_55__T2_helper_extract__0.lean:63:10: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_55/lean_2/verina_basic_55__T2_helper_extract__0.lean:60:4: error: unsolved goals\ncase right\na b : ℤ\nh_precond : Compare_precond a b\nh : ¬a = b\n⊢ Compare__rp_helper_56630b5e a b h_precond = false\n",
+ "stderr": "",
+ "elapsed_seconds": 13.858,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 21,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 61,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'Compare__rp_helper_56630b5e' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 59,
+   "col": 10,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 56,
+   "col": 4,
+   "severity": "error",
+   "text": "unsolved goals\ncase left\na : ℤ\nh_precond : Compare_precond a a\n⊢ Compare__rp_helper_56630b5e a a ⋯ = true"
+  },
+  {
+   "line": 63,
+   "col": 10,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 60,
+   "col": 4,
+   "severity": "error",
+   "text": "unsolved goals\ncase right\na b : ℤ\nh_precond : Compare_precond a b\nh : ¬a = b\n⊢ Compare__rp_helper_56630b5e a b h_precond = false\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

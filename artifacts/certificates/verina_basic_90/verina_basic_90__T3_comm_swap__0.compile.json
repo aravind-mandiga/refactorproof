@@ -1,0 +1,109 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:15:49: warning: unused variable `key`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:30:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:48:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:67:78: error: type mismatch\n  rfl\nhas type\n  ?m.48971 = ?m.48971 : Prop\nbut is expected to have type\n  RPOrig.SlopeSearch a key h_precond = RPRef.SlopeSearch a key h_precond : Prop\nartifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:71:78: error: type mismatch\n  rfl\nhas type\n  ?m.49070 = ?m.49070 : Prop\nbut is expected to have type\n  RPOrig.SlopeSearch a key h_precond = RPRef.SlopeSearch a key h_precond : Prop\nartifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:76:2: error: tactic 'rfl' failed, the left-hand side\n  let rows := a.size;\n  let cols := if rows > 0 then a[0]!.size else 0;\n  RPOrig.SlopeSearch.aux._unary a key rows ⟨0, ⟨Int.ofNat (cols - 1), rows + cols⟩⟩\nis not definitionally equal to the right-hand side\n  let rows := a.size;\n  let cols := if rows > 0 then a[0]!.size else 0;\n  RPRef.SlopeSearch.aux._unary a key rows ⟨0, ⟨Int.ofNat (cols - 1), rows + cols⟩⟩\na : Array (Array Int)\nkey : Int\nh_precond : SlopeSearch_precond a key\n⊢ (let rows := a.size;\n    let cols := if rows > 0 then a[0]!.size else 0;\n    RPOrig.SlopeSearch.aux._unary a key rows ⟨0, ⟨Int.ofNat (cols - 1), rows + cols⟩⟩) =\n    let rows := a.size;\n    let cols := if rows > 0 then a[0]!.size else 0;\n    RPRef.SlopeSearch.aux._unary a key rows ⟨0, ⟨Int.ofNat (cols - 1), rows + cols⟩⟩\nartifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:84:210: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.SlopeSearch.aux._unary a key a.size\n    ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.SlopeSearch.aux._unary a key a.size\n    ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩\na : Array (Array Int)\nkey : Int\nh_precond : SlopeSearch_precond a key\n⊢ RPOrig.SlopeSearch.aux._unary a key a.size\n      ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩ =\n    RPRef.SlopeSearch.aux._unary a key a.size\n      ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩\nartifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:79:78: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:79:78: error: unknown metavariable '?_uniq.104595'\nartifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:92:205: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.SlopeSearch.aux._unary a key a.size\n    ⟨0, ⟨↑((if 0 < a.size then a[0]!.size else 0) - 1), a.size + if 0 < a.size then a[0]!.size else 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.SlopeSearch.aux._unary a key a.size\n    ⟨0, ⟨↑((if 0 < a.size then a[0]!.size else 0) - 1), a.size + if 0 < a.size then a[0]!.size else 0⟩⟩\na : Array (Array Int)\nkey : Int\nh_precond : SlopeSearch_precond a key\n⊢ RPOrig.SlopeSearch.aux._unary a key a.size\n      ⟨0, ⟨↑((if 0 < a.size then a[0]!.size else 0) - 1), a.size + if 0 < a.size then a[0]!.size else 0⟩⟩ =\n    RPRef.SlopeSearch.aux._unary a key a.size\n      ⟨0, ⟨↑((if 0 < a.size then a[0]!.size else 0) - 1), a.size + if 0 < a.size then a[0]!.size else 0⟩⟩\nartifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:87:78: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:87:78: error: unknown metavariable '?_uniq.159927'\nartifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:96:226: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.SlopeSearch.aux._unary a key a.size\n    ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.SlopeSearch.aux._unary a key a.size\n    ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩\na : Array (Array Int)\nkey : Int\nh_precond : SlopeSearch_precond a key\n⊢ RPOrig.SlopeSearch.aux._unary a key a.size\n      ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩ =\n    RPRef.SlopeSearch.aux._unary a key a.size\n      ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩\nartifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:95:78: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_90/verina_basic_90__T3_comm_swap__0.lean:95:78: error: unknown metavariable '?_uniq.178400'\n",
+ "stderr": "",
+ "elapsed_seconds": 4.219,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 49,
+   "severity": "warning",
+   "text": "unused variable `key`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 30,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 48,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 67,
+   "col": 78,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.48971 = ?m.48971 : Prop\nbut is expected to have type\n  RPOrig.SlopeSearch a key h_precond = RPRef.SlopeSearch a key h_precond : Prop"
+  },
+  {
+   "line": 71,
+   "col": 78,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.49070 = ?m.49070 : Prop\nbut is expected to have type\n  RPOrig.SlopeSearch a key h_precond = RPRef.SlopeSearch a key h_precond : Prop"
+  },
+  {
+   "line": 76,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  let rows := a.size;\n  let cols := if rows > 0 then a[0]!.size else 0;\n  RPOrig.SlopeSearch.aux._unary a key rows ⟨0, ⟨Int.ofNat (cols - 1), rows + cols⟩⟩\nis not definitionally equal to the right-hand side\n  let rows := a.size;\n  let cols := if rows > 0 then a[0]!.size else 0;\n  RPRef.SlopeSearch.aux._unary a key rows ⟨0, ⟨Int.ofNat (cols - 1), rows + cols⟩⟩\na : Array (Array Int)\nkey : Int\nh_precond : SlopeSearch_precond a key\n⊢ (let rows := a.size;\n    let cols := if rows > 0 then a[0]!.size else 0;\n    RPOrig.SlopeSearch.aux._unary a key rows ⟨0, ⟨Int.ofNat (cols - 1), rows + cols⟩⟩) =\n    let rows := a.size;\n    let cols := if rows > 0 then a[0]!.size else 0;\n    RPRef.SlopeSearch.aux._unary a key rows ⟨0, ⟨Int.ofNat (cols - 1), rows + cols⟩⟩"
+  },
+  {
+   "line": 84,
+   "col": 210,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.SlopeSearch.aux._unary a key a.size\n    ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.SlopeSearch.aux._unary a key a.size\n    ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩\na : Array (Array Int)\nkey : Int\nh_precond : SlopeSearch_precond a key\n⊢ RPOrig.SlopeSearch.aux._unary a key a.size\n      ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩ =\n    RPRef.SlopeSearch.aux._unary a key a.size\n      ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩"
+  },
+  {
+   "line": 79,
+   "col": 78,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 79,
+   "col": 78,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.104595'"
+  },
+  {
+   "line": 92,
+   "col": 205,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.SlopeSearch.aux._unary a key a.size\n    ⟨0, ⟨↑((if 0 < a.size then a[0]!.size else 0) - 1), a.size + if 0 < a.size then a[0]!.size else 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.SlopeSearch.aux._unary a key a.size\n    ⟨0, ⟨↑((if 0 < a.size then a[0]!.size else 0) - 1), a.size + if 0 < a.size then a[0]!.size else 0⟩⟩\na : Array (Array Int)\nkey : Int\nh_precond : SlopeSearch_precond a key\n⊢ RPOrig.SlopeSearch.aux._unary a key a.size\n      ⟨0, ⟨↑((if 0 < a.size then a[0]!.size else 0) - 1), a.size + if 0 < a.size then a[0]!.size else 0⟩⟩ =\n    RPRef.SlopeSearch.aux._unary a key a.size\n      ⟨0, ⟨↑((if 0 < a.size then a[0]!.size else 0) - 1), a.size + if 0 < a.size then a[0]!.size else 0⟩⟩"
+  },
+  {
+   "line": 87,
+   "col": 78,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 87,
+   "col": 78,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.159927'"
+  },
+  {
+   "line": 96,
+   "col": 226,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.SlopeSearch.aux._unary a key a.size\n    ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.SlopeSearch.aux._unary a key a.size\n    ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩\na : Array (Array Int)\nkey : Int\nh_precond : SlopeSearch_precond a key\n⊢ RPOrig.SlopeSearch.aux._unary a key a.size\n      ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩ =\n    RPRef.SlopeSearch.aux._unary a key a.size\n      ⟨0, ⟨Int.ofNat ((if a.size > 0 then a[0]!.size else 0) - 1), a.size + if a.size > 0 then a[0]!.size else 0⟩⟩"
+  },
+  {
+   "line": 95,
+   "col": 78,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 95,
+   "col": 78,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.178400'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

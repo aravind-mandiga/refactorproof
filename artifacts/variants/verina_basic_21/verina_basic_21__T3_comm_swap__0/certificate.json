@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_21",
+ "variant_id": "verina_basic_21__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 1.48,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.6229 = ?m.6229 : Prop\nbut is expected to have type\n  RPOrig.isSublist sub main h_precond = RPRef.isSublist sub main h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.7547 = ?m.7547 : Prop\nbut is expected to have type\n  RPOrig.isSublist sub main h_precond = RPRef.isSublist sub main h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  let subLen := sub.length;\n  let mainLen := main.length;\n  if subLen > mainLen then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + subLen > mainLen then false\n        else\n          if h : sub = List.take subLen (List.drop i main) then true\n          else if h : i + 1 ≤ mainLen then a (i + 1) ⋯ else false)\n      0\nis not definitionally equal to the right-hand side\n  let subLen := sub.length;\n  let mainLen := main.length;\n  if subLen > mainLen"
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if sub.length > main.length then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n      0\nis not definitionally equal to the right-hand side\n  if sub.length > main.length then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : sub.length + i > main.",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.18180'"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  !decide (main.length < sub.length) &&\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n      0\nis not definitionally equal to the right-hand side\n  !decide (main.length < sub.length) &&\n    ⋯.fix\n      (fun i a =>\n        if h : sub.length + i > main.length then fals",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.28303'"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if sub.length > main.length then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n      0\nis not definitionally equal to the right-hand side\n  if sub.length > main.length then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : sub.length + i > main.",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.31426'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

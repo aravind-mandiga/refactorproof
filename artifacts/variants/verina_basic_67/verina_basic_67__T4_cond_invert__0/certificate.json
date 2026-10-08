@@ -1,0 +1,63 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_67",
+ "variant_id": "verina_basic_67__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_67/verina_basic_67__T4_cond_invert__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.981,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": "simp_only",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.12560 = ?m.12560 : Prop\nbut is expected to have type\n  RPOrig.IsPalindrome x h_precond = RPRef.IsPalindrome x h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.13475 = ?m.13475 : Prop\nbut is expected to have type\n  RPOrig.IsPalindrome x h_precond = RPRef.IsPalindrome x h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if x.length = 0 then true else isPalindromeHelper x 0 (x.length - 1)\nis not definitionally equal to the right-hand side\n  if ¬x.length = 0 then isPalindromeHelper x 0 (x.length - 1) else true\nx : List Char\nh_precond : IsPalindrome_precond x\n⊢ (if x.length = 0 then true else isPalindromeHelper x 0 (x.length - 1)) =\n    if ¬x.length = 0 then isPalindromeHelper x 0 (x.length - 1) else true\n"
+   ]
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": true,
+   "errors": []
+  },
+  "bycases": {
+   "ok": true,
+   "errors": []
+  },
+  "bycases_ite": {
+   "ok": true,
+   "errors": []
+  },
+  "split_simp_all": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

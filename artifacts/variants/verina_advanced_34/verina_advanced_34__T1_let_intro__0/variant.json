@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_34",
+ "variant_id": "verina_advanced_34__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_0665879a : Int :=\n    Id.run do\n      if nums.isEmpty then return 0\n      let mut sub : Array Int := Array.empty\n      sub := sub.push nums.head!\n      for num in nums.tail do\n        if num > sub[sub.size - 1]! then\n          sub := sub.push num\n        else\n          let left := binarySearchLeft sub num 0 (sub.size - 1)\n          sub := sub.set! left num\n      return Int.ofNat sub.size\n  __rp_tmp_0665879a\n",
+ "transformed_code_aux": "def binarySearchLeft (sub : Array Int) (num : Int) (left right : Nat) : Nat :=\n  if h : left < right then\n    let mid := (left + right) / 2\n    if sub[mid]! == num then\n      binarySearchLeft sub num left mid\n    else if sub[mid]! < num then\n      binarySearchLeft sub num (mid + 1) right\n    else\n      binarySearchLeft sub num left mid\n  else\n    left\ntermination_by right - left\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_0665879a",
+  "seed": 0
+ },
+ "spec_hash": "6aa264058e65b43b72055082433d5669b38371fdcc573606de4c1f4b77f0ff91",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "e1ef426a4081d98085bc3cc201bf2df514520e55a2ef8c07bd5dff68edc4b013",
+ "code_aux_hash_original": "efcab2f06ec1017027e29ab02a34073b03badbcbcb6cc54ebbfc293321d7b1c6",
+ "tier": "advanced",
+ "function_name": "longestIncreasingSubsequence",
+ "code_loc_original": 11,
+ "code_loc_refactored": 13
+}

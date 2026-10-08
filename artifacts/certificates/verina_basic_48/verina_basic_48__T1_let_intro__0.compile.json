@@ -1,0 +1,67 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_48/verina_basic_48__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_48/verina_basic_48__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_48/verina_basic_48__T1_let_intro__0.lean:14:29: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T1_let_intro__0.lean:56:58: error: type mismatch\n  rfl\nhas type\n  ?m.1109 = ?m.1109 : Prop\nbut is expected to have type\n  RPOrig.isPerfectSquare n = RPRef.isPerfectSquare n : Prop\nartifacts/certificates/verina_basic_48/verina_basic_48__T1_let_intro__0.lean:69:124: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T1_let_intro__0.lean:69:62: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T1_let_intro__0.lean:69:124: warning: '(delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T1_let_intro__0.lean:73:119: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T1_let_intro__0.lean:73:57: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_basic_48/verina_basic_48__T1_let_intro__0.lean:73:119: warning: '(delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 5.452,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 56,
+   "col": 58,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1109 = ?m.1109 : Prop\nbut is expected to have type\n  RPOrig.isPerfectSquare n = RPRef.isPerfectSquare n : Prop"
+  },
+  {
+   "line": 69,
+   "col": 124,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 69,
+   "col": 62,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 69,
+   "col": 124,
+   "severity": "warning",
+   "text": "'(delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 73,
+   "col": 119,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 73,
+   "col": 57,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 73,
+   "col": 119,
+   "severity": "warning",
+   "text": "'(delta RPOrig.isPerfectSquare RPRef.isPerfectSquare RPOrig.isPerfectSquare.check RPRef.isPerfectSquare.check;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

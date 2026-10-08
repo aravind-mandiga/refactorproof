@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_72",
+ "variant_id": "verina_basic_72__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_5c71bf88 : Array Int :=\n    let c_initial := copy a 0 (Array.empty)\n    let c_full := c_initial.push b\n    c_full\n  __rp_tmp_5c71bf88\n",
+ "transformed_code_aux": "def copy (a : Array Int) (i : Nat) (acc : Array Int) : Array Int :=\n  if i < a.size then\n    copy a (i + 1) (acc.push (a[i]!))\n  else\n    acc\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_5c71bf88",
+  "seed": 0
+ },
+ "spec_hash": "37a311e7a7a67f350fc89a781688fa3b889bf0f3476adc6b6d4da5a6c252f28c",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "530500633afc2e3ea74d2dd02530cf1a0072922ae19664def537a74e4948b263",
+ "code_aux_hash_original": "0525c4f900937a4683967ff703d4d0794f8ec0a0f0b078372315d8a70b76737d",
+ "tier": "basic",
+ "function_name": "append",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_70",
+ "variant_id": "verina_basic_70__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  LinearSearch3__rp_helper_7883d640 a P h_precond\n",
+ "transformed_code_aux": "\nprivate def LinearSearch3__rp_helper_7883d640 (a : Array Int) (P : Int -> Bool) (h_precond : LinearSearch3_precond (a) (P)) : Nat :=\n  let rec loop (n : Nat) : Nat :=\n    if n < a.size then\n      if P (a[n]!) then n else loop (n + 1)\n    else\n      0\n  loop 0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "LinearSearch3__rp_helper_7883d640"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "P",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "db21c9e0f945a7e0cee255496680d65112ced346bcc1bc40c5abc9a5b08cc79f",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "632dc0d0563b82ca113bb0c93e0cac14e6a3e26239b5f5a630795767b1d6e1e8",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "LinearSearch3",
+ "code_loc_original": 6,
+ "code_loc_refactored": 8
+}

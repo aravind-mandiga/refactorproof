@@ -1,0 +1,67 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_102/verina_basic_102__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_102/verina_basic_102__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_102/verina_basic_102__T3_comm_swap__0.lean:22:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_102/verina_basic_102__T3_comm_swap__0.lean:46:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_102/verina_basic_102__T3_comm_swap__0.lean:71:80: error: type mismatch\n  rfl\nhas type\n  ?m.50383 = ?m.50383 : Prop\nbut is expected to have type\n  RPOrig.twoSum nums target h_precond = RPRef.twoSum nums target h_precond : Prop\nartifacts/certificates/verina_basic_102/verina_basic_102__T3_comm_swap__0.lean:75:80: error: type mismatch\n  rfl\nhas type\n  ?m.50578 = ?m.50578 : Prop\nbut is expected to have type\n  RPOrig.twoSum nums target h_precond = RPRef.twoSum nums target h_precond : Prop\nartifacts/certificates/verina_basic_102/verina_basic_102__T3_comm_swap__0.lean:82:42: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.twoSum nums target h_precond\nis not definitionally equal to the right-hand side\n  RPRef.twoSum nums target h_precond\nnums : Array Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ RPOrig.twoSum nums target h_precond = RPRef.twoSum nums target h_precond\nartifacts/certificates/verina_basic_102/verina_basic_102__T3_comm_swap__0.lean:90:506: error: tactic 'rfl' failed, the left-hand side\n  match RPOrig.twoSum.outer nums target nums.size 0 with\n  | some pair => pair\n  | none => panic \"twoSum: no solution found\"\nis not definitionally equal to the right-hand side\n  match RPRef.twoSum.outer nums target nums.size 0 with\n  | some pair => pair\n  | none => panic \"twoSum: no solution found\"\nnums : Array Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ (match RPOrig.twoSum.outer nums target nums.size 0 with\n    | some pair => pair\n    | none => panic \"twoSum: no solution found\") =\n    match RPRef.twoSum.outer nums target nums.size 0 with\n    | some pair => pair\n    | none => panic \"twoSum: no solution found\"\nartifacts/certificates/verina_basic_102/verina_basic_102__T3_comm_swap__0.lean:98:501: error: tactic 'rfl' failed, the left-hand side\n  match RPOrig.twoSum.outer nums target nums.size 0 with\n  | some pair => pair\n  | none => panic \"twoSum: no solution found\"\nis not definitionally equal to the right-hand side\n  match RPRef.twoSum.outer nums target nums.size 0 with\n  | some pair => pair\n  | none => panic \"twoSum: no solution found\"\nnums : Array Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ (match RPOrig.twoSum.outer nums target nums.size 0 with\n    | some pair => pair\n    | none => panic \"twoSum: no solution found\") =\n    match RPRef.twoSum.outer nums target nums.size 0 with\n    | some pair => pair\n    | none => panic \"twoSum: no solution found\"\nartifacts/certificates/verina_basic_102/verina_basic_102__T3_comm_swap__0.lean:102:522: error: tactic 'rfl' failed, the left-hand side\n  match RPOrig.twoSum.outer nums target nums.size 0 with\n  | some pair => pair\n  | none => panic \"twoSum: no solution found\"\nis not definitionally equal to the right-hand side\n  match RPRef.twoSum.outer nums target nums.size 0 with\n  | some pair => pair\n  | none => panic \"twoSum: no solution found\"\nnums : Array Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ (match RPOrig.twoSum.outer nums target nums.size 0 with\n    | some pair => pair\n    | none => panic \"twoSum: no solution found\") =\n    match RPRef.twoSum.outer nums target nums.size 0 with\n    | some pair => pair\n    | none => panic \"twoSum: no solution found\"\n",
+ "stderr": "",
+ "elapsed_seconds": 3.433,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 46,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 71,
+   "col": 80,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.50383 = ?m.50383 : Prop\nbut is expected to have type\n  RPOrig.twoSum nums target h_precond = RPRef.twoSum nums target h_precond : Prop"
+  },
+  {
+   "line": 75,
+   "col": 80,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.50578 = ?m.50578 : Prop\nbut is expected to have type\n  RPOrig.twoSum nums target h_precond = RPRef.twoSum nums target h_precond : Prop"
+  },
+  {
+   "line": 82,
+   "col": 42,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.twoSum nums target h_precond\nis not definitionally equal to the right-hand side\n  RPRef.twoSum nums target h_precond\nnums : Array Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ RPOrig.twoSum nums target h_precond = RPRef.twoSum nums target h_precond"
+  },
+  {
+   "line": 90,
+   "col": 506,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  match RPOrig.twoSum.outer nums target nums.size 0 with\n  | some pair => pair\n  | none => panic \"twoSum: no solution found\"\nis not definitionally equal to the right-hand side\n  match RPRef.twoSum.outer nums target nums.size 0 with\n  | some pair => pair\n  | none => panic \"twoSum: no solution found\"\nnums : Array Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ (match RPOrig.twoSum.outer nums target nums.size 0 with\n    | some pair => pair\n    | none => panic \"twoSum: no solution found\") =\n    match RPRef.twoSum.outer nums target nums.size 0 with\n    | some pair => pair\n    | none => panic \"twoSum: no solution found\""
+  },
+  {
+   "line": 98,
+   "col": 501,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  match RPOrig.twoSum.outer nums target nums.size 0 with\n  | some pair => pair\n  | none => panic \"twoSum: no solution found\"\nis not definitionally equal to the right-hand side\n  match RPRef.twoSum.outer nums target nums.size 0 with\n  | some pair => pair\n  | none => panic \"twoSum: no solution found\"\nnums : Array Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ (match RPOrig.twoSum.outer nums target nums.size 0 with\n    | some pair => pair\n    | none => panic \"twoSum: no solution found\") =\n    match RPRef.twoSum.outer nums target nums.size 0 with\n    | some pair => pair\n    | none => panic \"twoSum: no solution found\""
+  },
+  {
+   "line": 102,
+   "col": 522,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  match RPOrig.twoSum.outer nums target nums.size 0 with\n  | some pair => pair\n  | none => panic \"twoSum: no solution found\"\nis not definitionally equal to the right-hand side\n  match RPRef.twoSum.outer nums target nums.size 0 with\n  | some pair => pair\n  | none => panic \"twoSum: no solution found\"\nnums : Array Int\ntarget : Int\nh_precond : twoSum_precond nums target\n⊢ (match RPOrig.twoSum.outer nums target nums.size 0 with\n    | some pair => pair\n    | none => panic \"twoSum: no solution found\") =\n    match RPRef.twoSum.outer nums target nums.size 0 with\n    | some pair => pair\n    | none => panic \"twoSum: no solution found\"\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

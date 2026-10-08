@@ -1,0 +1,11 @@
+--- goedel-prover-v2-8b:verina_basic_59__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_59__T2_helper_extract__0 (simp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : DoubleQuadruple_postcond (x) (DoubleQuadruple (x) h_precond) h_precond := by
+-    simp [DoubleQuadruple, DoubleQuadruple_postcond, Prod.fst, Prod.snd]
++    simp [DoubleQuadruple, DoubleQuadruple_postcond, Prod.fst, Prod.snd, DoubleQuadruple__rp_helper_8062be2e]
+     <;> ring_nf
+     <;> simp_all
+     <;> norm_num
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

@@ -1,0 +1,24 @@
+{
+ "model_id": "goedel-prover-v2-32b",
+ "task_id": "verina_basic_3",
+ "attempt": 0,
+ "proof_hash": "e34bf210eaab07d7db0d6d0bbae8863b0c042bf9d8ad14479e189f9d03d4b671",
+ "proof_loc": 43,
+ "proof_tokens": 363,
+ "survival": [
+  {
+   "variant_id": "verina_basic_3__T1_let_intro__0",
+   "transformation": "T1_let_intro",
+   "severity": "D",
+   "survives": true,
+   "outcome": "survives"
+  },
+  {
+   "variant_id": "verina_basic_3__T2_helper_extract__0",
+   "transformation": "T2_helper_extract",
+   "severity": "S",
+   "survives": false,
+   "outcome": "proof_fails"
+  }
+ ]
+}

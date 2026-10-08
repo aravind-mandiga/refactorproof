@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_52",
+ "variant_id": "verina_basic_52__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  BubbleSort__rp_helper_d6395bc7 a h_precond\n",
+ "transformed_code_aux": "def swap (a : Array Int) (i j : Nat) : Array Int :=\n  let temp := a[i]!\n  let a₁ := a.set! i (a[j]!)\n  a₁.set! j temp\n\ndef bubbleInner (j i : Nat) (a : Array Int) : Array Int :=\n  if j < i then\n    let a' := if a[j]! > a[j+1]! then swap a j (j+1) else a\n    bubbleInner (j+1) i a'\n  else\n    a\n\ndef bubbleOuter (i : Nat) (a : Array Int) : Array Int :=\n  if i > 0 then\n    let a' := bubbleInner 0 i a\n    bubbleOuter (i - 1) a'\n  else\n    a\n\nprivate def BubbleSort__rp_helper_d6395bc7 (a : Array Int) (h_precond : BubbleSort_precond (a)) : Array Int :=\n  if a.size = 0 then a else bubbleOuter (a.size - 1) a\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "BubbleSort__rp_helper_d6395bc7"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "38175dd9f11c9c442afbfae4479f1aed9d583c3a1d0013f2d25c2a139ebeebf9",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "3ebb67bbdc007d23ebfa89a3f4429665e4974998cca8cafc620c5cedcebb424f",
+ "code_aux_hash_original": "979dcba4f96bb57ab7a74118f57c50cf658eba89126315d380615910260a5252",
+ "tier": "basic",
+ "function_name": "BubbleSort",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

@@ -1,0 +1,133 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:16:19: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:16:29: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:24:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:24:12: warning: The declaration 'myMin__rp_branch_c77e3e9a' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:42:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:60:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:61:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:63:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:65:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:68:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:73:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:78:4: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:60:4: warning: '(try {omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:61:4: warning: '(try {exact Or.inl (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:63:4: warning: '(try {exact Or.inr (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:65:4: warning: '(try {exact ⟨by linarith, by linarith⟩\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:68:4: warning: '(try {exact Or.inl (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:73:4: warning: '(try {exact Or.inr (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/mechanical_repairs/lean/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper/verina_basic_8__T5_branch_extract__0.lean:78:4: warning: '(try {exact ⟨by linarith, by linarith⟩\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 9.284,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 16,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'myMin__rp_branch_c77e3e9a' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 42,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 60,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 63,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 65,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 68,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 73,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 78,
+   "col": 4,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {omega\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact Or.inl (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 63,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact Or.inr (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 65,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact ⟨by linarith, by linarith⟩\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 68,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact Or.inl (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 73,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact Or.inr (by linarith)\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 78,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {exact ⟨by linarith, by linarith⟩\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

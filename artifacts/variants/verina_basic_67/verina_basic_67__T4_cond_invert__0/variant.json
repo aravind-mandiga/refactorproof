@@ -1,0 +1,55 @@
+{
+ "task_id": "verina_basic_67",
+ "variant_id": "verina_basic_67__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "transformed_code": "  if ¬ (x.length = 0) then isPalindromeHelper x 0 (x.length - 1)\n  else true\n",
+ "transformed_code_aux": "def isPalindromeHelper (x : List Char) (i j : Nat) : Bool :=\n  if i < j then\n    match x[i]?, x[j]? with\n    | some ci, some cj =>\n      if ci ≠ cj then false else isPalindromeHelper x (i + 1) (j - 1)\n    | _, _ => false  -- This case should not occur due to valid indices\n  else true\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [
+  "ite_not"
+ ],
+ "helper_names": [],
+ "metadata": {
+  "law_sets": [
+   [
+    "ite_not"
+   ],
+   [
+    "ite_not",
+    "Bool.not_eq_true",
+    "decide_not",
+    "Nat.not_lt",
+    "Nat.not_le",
+    "Int.not_lt",
+    "Int.not_le"
+   ]
+  ],
+  "condition": "x.length = 0",
+  "then_multiline": false,
+  "seed": 0
+ },
+ "extra_levels": [
+  [
+   "bycases",
+   "by_cases h : (x.length = 0) <;> (try simp [h, {DEFS}]) <;> {CLOSER}"
+  ],
+  [
+   "bycases_ite",
+   "by_cases h : (x.length = 0) <;> (try simp [h, ite_not, {DEFS}]) <;> {CLOSER}"
+  ],
+  [
+   "split_simp_all",
+   "simp only [{DEFS}]; split <;> (try simp_all) <;> {CLOSER}"
+  ]
+ ],
+ "spec_hash": "7f112bac3d60476416fffe19380348bf97a27332d9a5441649f30c41fbe8aef3",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "0e0a3d09a05d3b95b6b734a754c66c4c72c1ba49d528ba6b8ff6b2f080372cec",
+ "code_aux_hash_original": "1ae5d386302541e43144ee9145b8259a3aad02e19f6f1beb9e871d896c817685",
+ "tier": "basic",
+ "function_name": "IsPalindrome",
+ "code_loc_original": 1,
+ "code_loc_refactored": 2
+}

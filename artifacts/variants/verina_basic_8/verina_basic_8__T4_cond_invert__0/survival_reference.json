@@ -1,0 +1,27 @@
+{
+ "task_id": "verina_basic_8",
+ "variant_id": "verina_basic_8__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_level": "simp_only",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "type_mismatch",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.749,
+ "proof_region_errors": [
+  "type mismatch\n  h\nhas type\n  ¬a ≤ b : Prop\nbut is expected to have type\n  b ≤ a : Prop",
+  "application type mismatch\n  Int.le_of_lt h\nargument\n  h\nhas type\n  ¬b < a : Prop\nbut is expected to have type\n  a < b : Prop\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "7ad2ae3dae289ae6f6eea98bac4689679d43ee5cdae259c501b5bcf2b7ea6215",
+ "spec_hash": "9ea5f34068afa9e380bc3377f48eb3fe98217f15035d181f98b5d77bc020361e"
+}

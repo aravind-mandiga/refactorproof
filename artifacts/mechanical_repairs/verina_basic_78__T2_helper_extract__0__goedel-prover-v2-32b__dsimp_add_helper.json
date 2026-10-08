@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_78__T2_helper_extract__0",
+ "task_id": "verina_basic_78",
+ "source": "goedel-prover-v2-32b",
+ "transformation": "T2_helper_extract",
+ "template": "dsimp_add_helper",
+ "function_name": "MultipleReturns",
+ "helper": "MultipleReturns__rp_helper_39d93fc9",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_main : MultipleReturns_postcond (x) (y) (MultipleReturns (x) (y) h_precond) h_precond := by\n    dsimp [MultipleReturns, MultipleReturns_postcond, MultipleReturns_precond] at *\n    constructor\n    \u00b7 -- Prove the first condition: result.1 = x + y\n      rfl\n    \u00b7 -- Prove the second condition: result.2 + y = x\n      simp [add_assoc, add_comm, add_left_comm]\n      <;> ring_nf at *\n      <;> norm_num\n      <;> linarith\n  exact h_main\n",
+ "proof_after": "  have h_main : MultipleReturns_postcond (x) (y) (MultipleReturns (x) (y) h_precond) h_precond := by\n    dsimp [MultipleReturns, MultipleReturns_postcond, MultipleReturns_precond, MultipleReturns__rp_helper_39d93fc9] at *\n    constructor\n    \u00b7 -- Prove the first condition: result.1 = x + y\n      rfl\n    \u00b7 -- Prove the second condition: result.2 + y = x\n      simp [add_assoc, add_comm, add_left_comm]\n      <;> ring_nf at *\n      <;> norm_num\n      <;> linarith\n  exact h_main\n"
+}

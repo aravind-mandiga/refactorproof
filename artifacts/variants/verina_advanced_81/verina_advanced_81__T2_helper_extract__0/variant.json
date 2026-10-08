@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_81",
+ "variant_id": "verina_advanced_81__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "uniqueSorted__rp_helper_3919ed7e arr h_precond\n",
+ "transformed_code_aux": "\nprivate def uniqueSorted__rp_helper_3919ed7e (arr : List Int) (h_precond : uniqueSorted_precond (arr)) : List Int :=\n  let rec insert (x : Int) (sorted : List Int) : List Int :=\n  match sorted with\n  | [] =>\n    [x]\n  | head :: tail =>\n    if x <= head then\n      x :: head :: tail\n    else\n      head :: insert x tail\n\nlet rec insertionSort (xs : List Int) : List Int :=\n  match xs with\n  | [] =>\n    []\n  | h :: t =>\n    let sortedTail := insertionSort t\n    insert h sortedTail\n\nlet removeDups : List Int → List Int\n| xs =>\n  let rec aux (remaining : List Int) (seen : List Int) (acc : List Int) : List Int :=\n    match remaining with\n    | [] =>\n      acc.reverse\n    | h :: t =>\n      if h ∈ seen then\n        aux t seen acc\n      else\n        aux t (h :: seen) (h :: acc)\n  aux xs [] []\n\ninsertionSort (removeDups arr)\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "uniqueSorted__rp_helper_3919ed7e"
+ ],
+ "metadata": {
+  "binders": [
+   "arr",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "43929fba7620a42919ef00c3aaa6ddd38ac4fcfcb6894e9876297e7e63fc3880",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "174e21a7a4a0f37e35ef2b6fb70d34da5e569a14b8ef4fd5facbf832fd412639",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "uniqueSorted",
+ "code_loc_original": 29,
+ "code_loc_refactored": 31
+}

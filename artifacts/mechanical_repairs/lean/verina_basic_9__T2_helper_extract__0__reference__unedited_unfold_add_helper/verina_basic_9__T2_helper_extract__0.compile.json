@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_9__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_9__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_9__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_9__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_9__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_9__T2_helper_extract__0.lean:22:82: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_9__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_9__T2_helper_extract__0.lean:39:78: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_9__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_9__T2_helper_extract__0.lean:57:4: error: simp made no progress\nartifacts/mechanical_repairs/lean/verina_basic_9__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_9__T2_helper_extract__0.lean:70:18: error: tactic 'cases' failed, nested error:\ndependent elimination failed, failed to solve equation\n  true =\n    Decidable.rec\n      (fun h =>\n        (fun h => (fun stop h => Array.anyM.loop (fun x => b.any fun y => decide (x = y)) a stop h 0) a.size ⋯) h)\n      (fun h =>\n        (fun h => (fun stop h => Array.anyM.loop (fun x => b.any fun y => decide (x = y)) a stop h 0) a.size h) h)\n      (a.size.decLe a.size)\nat case Eq.refl\n",
+ "stderr": "",
+ "elapsed_seconds": 0.886,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 82,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 78,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 57,
+   "col": 4,
+   "severity": "error",
+   "text": "simp made no progress"
+  },
+  {
+   "line": 70,
+   "col": 18,
+   "severity": "error",
+   "text": "tactic 'cases' failed, nested error:\ndependent elimination failed, failed to solve equation\n  true =\n    Decidable.rec\n      (fun h =>\n        (fun h => (fun stop h => Array.anyM.loop (fun x => b.any fun y => decide (x = y)) a stop h 0) a.size ⋯) h)\n      (fun h =>\n        (fun h => (fun stop h => Array.anyM.loop (fun x => b.any fun y => decide (x = y)) a stop h 0) a.size h) h)\n      (a.size.decLe a.size)\nat case Eq.refl\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "simp_failed"
+}

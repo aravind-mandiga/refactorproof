@@ -1,0 +1,27 @@
+{
+ "task_id": "verina_basic_17",
+ "variant_id": "verina_basic_17__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.888,
+ "proof_region_errors": [
+  "unsolved goals\ncase left\ns : String\nh_precond : toLowercase_precond s\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).data.length = s.data.length",
+  "unsolved goals\ncase right.left\ns : String\nh_precond : toLowercase_precond s\ni : Nat\nhi : i < s.length\nhi' : i < s.data.length\n⊢ isUpperCase s.data[i] = true → (toLowercase__rp_helper_b6759a4e s h_precond).data[i]?.getD 'A' = shift32 s.data[i]\n\ncase right.right\ns : String\nh_precond : toLowercase_precond s\ni : Nat\nhi : i < s.length\nhi' : i < s.data.length\n⊢ isUpperCase s.data[i] = false → (toLowercase__rp_helper_b6759a4e s h_precond).data[i]?.getD 'A' = s.data[i]\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "96703100998013e4e52bc8672c90539a6b5d7d141c75154b019125dc1375650a",
+ "spec_hash": "d839440679889d5d1a206f994624fb1b175593e8717bd61149063e998717c0e7"
+}

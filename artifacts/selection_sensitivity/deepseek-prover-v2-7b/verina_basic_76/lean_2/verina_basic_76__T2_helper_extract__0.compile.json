@@ -1,0 +1,91 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_76/lean_2/verina_basic_76__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_76/lean_2/verina_basic_76__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_76/lean_2/verina_basic_76__T2_helper_extract__0.lean:15:19: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_76/lean_2/verina_basic_76__T2_helper_extract__0.lean:15:29: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_76/lean_2/verina_basic_76__T2_helper_extract__0.lean:23:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_76/lean_2/verina_basic_76__T2_helper_extract__0.lean:23:12: warning: The declaration 'myMin__rp_helper_5e5dcb4d' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_76/lean_2/verina_basic_76__T2_helper_extract__0.lean:40:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_76/lean_2/verina_basic_76__T2_helper_extract__0.lean:62:12: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  b - c ≥ 1\n  a - b ≥ 1\nwhere\n a := y\n b := x\n c := myMin__rp_helper_5e5dcb4d x y h_precond\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_76/lean_2/verina_basic_76__T2_helper_extract__0.lean:69:34: error: unknown identifier 'hxy''\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_76/lean_2/verina_basic_76__T2_helper_extract__0.lean:69:54: error: omega could not prove the goal:\nNo usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_76/lean_2/verina_basic_76__T2_helper_extract__0.lean:69:54: error: omega could not prove the goal:\nNo usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_76/lean_2/verina_basic_76__T2_helper_extract__0.lean:65:28: error: unsolved goals\ncase refine_2\nx y : ℤ\nh_precond : myMin_precond x y\nhxy : x ≤ y\nh : ¬x < y\nh' : x ≥ y\nhxy' : ¬x = y\n⊢ False\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_76/lean_2/verina_basic_76__T2_helper_extract__0.lean:72:12: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a - b ≥ 1\nwhere\n a := y\n b := myMin__rp_helper_5e5dcb4d y y ⋯\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_76/lean_2/verina_basic_76__T2_helper_extract__0.lean:73:4: error: unsolved goals\ncase right\nx y : ℤ\nh_precond : myMin_precond x y\nhxy : y + 1 ≤ x\nh₂ : y ≤ x\n⊢ myMin__rp_helper_5e5dcb4d x y h_precond = y\n",
+ "stderr": "",
+ "elapsed_seconds": 9.806,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'myMin__rp_helper_5e5dcb4d' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 62,
+   "col": 12,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  b - c ≥ 1\n  a - b ≥ 1\nwhere\n a := y\n b := x\n c := myMin__rp_helper_5e5dcb4d x y h_precond"
+  },
+  {
+   "line": 69,
+   "col": 34,
+   "severity": "error",
+   "text": "unknown identifier 'hxy''"
+  },
+  {
+   "line": 69,
+   "col": 54,
+   "severity": "error",
+   "text": "omega could not prove the goal:\nNo usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants."
+  },
+  {
+   "line": 69,
+   "col": 54,
+   "severity": "error",
+   "text": "omega could not prove the goal:\nNo usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants."
+  },
+  {
+   "line": 65,
+   "col": 28,
+   "severity": "error",
+   "text": "unsolved goals\ncase refine_2\nx y : ℤ\nh_precond : myMin_precond x y\nhxy : x ≤ y\nh : ¬x < y\nh' : x ≥ y\nhxy' : ¬x = y\n⊢ False"
+  },
+  {
+   "line": 72,
+   "col": 12,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a - b ≥ 1\nwhere\n a := y\n b := myMin__rp_helper_5e5dcb4d y y ⋯"
+  },
+  {
+   "line": 73,
+   "col": 4,
+   "severity": "error",
+   "text": "unsolved goals\ncase right\nx y : ℤ\nh_precond : myMin_precond x y\nhxy : y + 1 ≤ x\nh₂ : y ≤ x\n⊢ myMin__rp_helper_5e5dcb4d x y h_precond = y\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "other"
+}

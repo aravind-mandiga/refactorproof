@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_9",
+ "variant_id": "verina_advanced_9__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_ae05aafa : Nat :=\n    let rec go (i acc : Nat) : Nat :=\n      match i with\n      | 0 => acc\n      | i'+1 =>\n        let acc' := if isSumDivisibleBy i' d then acc + 1 else acc\n        go i' acc'\n    go n 0\n  __rp_tmp_ae05aafa\n",
+ "transformed_code_aux": "def isSumDivisibleBy (x : Nat) (d:Nat) : Bool :=\n  (sumOfDigits x) % d = 0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_ae05aafa",
+  "seed": 0
+ },
+ "spec_hash": "cd37a69eeba048e7cf4c3d808be161d42b0001db0287180ebdfa0acdb0ef2f87",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "9cce0df7e9f13ad2a99fb221b075eca487f344d098d543ce9a6cbba3abcfde9d",
+ "code_aux_hash_original": "d5cf9a39a3b67d45cf7e1eda8c611deac60c06be14862aac0dda1e8ac128f17f",
+ "tier": "advanced",
+ "function_name": "countSumDivisibleBy",
+ "code_loc_original": 7,
+ "code_loc_refactored": 9
+}

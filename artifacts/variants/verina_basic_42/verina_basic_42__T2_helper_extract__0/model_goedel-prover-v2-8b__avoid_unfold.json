@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_42",
+ "variant_id": "verina_basic_42__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__avoid_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.513,
+ "proof_region_errors": [
+  "tactic 'rfl' failed, the left-hand side\n  countDigits__rp_helper_df69abf7 s h_precond - (List.filter isDigit s.data).length\nis not definitionally equal to the right-hand side\n  0\ns : String\nh_precond : countDigits_precond s\n⊢ countDigits__rp_helper_df69abf7 s h_precond - (List.filter isDigit s.data).length = 0",
+  "tactic 'rfl' failed, the left-hand side\n  (List.filter isDigit s.data).length - countDigits__rp_helper_df69abf7 s h_precond\nis not definitionally equal to the right-hand side\n  0\ns : String\nh_precond : countDigits_precond s\nh1 : countDigits s h_precond - (List.filter isDigit s.toList).length = 0\n⊢ (List.filter isDigit s.data).length - countDigits__rp_helper_df69abf7 s h_precond = 0\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "1e6cfa384d523be7128a2824d50d5cf6db14447bfdd4c0932c304815b3e6465f",
+ "spec_hash": "b3d6f5ca1418b1e4938883c8d0977c43b060642c3f8f37bf193d4b4106177533",
+ "proof_text": "  have h1 : countDigits (s) h_precond - List.length (List.filter isDigit s.toList) = 0 := by\n    simp [countDigits, List.length, List.filter]\n    <;>\n    rfl\n\n  have h2 : List.length (List.filter isDigit s.toList) - countDigits (s) h_precond = 0 := by\n    simp [countDigits, List.length, List.filter]\n    <;>\n    rfl\n\n  have h_main : countDigits_postcond (s) (countDigits (s) h_precond) h_precond := by\n    constructor <;> simp_all [countDigits_postcond]\n    <;> omega\n\n  apply h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "avoid_unfold"
+}

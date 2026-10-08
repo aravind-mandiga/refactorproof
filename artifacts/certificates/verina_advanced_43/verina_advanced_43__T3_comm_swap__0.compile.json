@@ -1,0 +1,163 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:22:35: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:42:35: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:63:76: error: type mismatch\n  rfl\nhas type\n  ?m.17557 = ?m.17557 : Prop\nbut is expected to have type\n  RPOrig.maxStrength nums h_precond = RPRef.maxStrength nums h_precond : Prop\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:67:76: error: type mismatch\n  rfl\nhas type\n  ?m.27315 = ?m.27315 : Prop\nbut is expected to have type\n  RPOrig.maxStrength nums h_precond = RPRef.maxStrength nums h_precond : Prop\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:72:2: error: tactic 'rfl' failed, the left-hand side\n  let powerSet := fun l =>\n    let n := l.length;\n    let masks := List.range (2 ^ n);\n    List.map\n      (fun mask =>\n        List.foldr (fun i acc => if ((mask.shiftRight i).land 1 == 1) = true then l[i]! :: acc else acc) []\n          (List.range n))\n      masks;\n  let subsets := powerSet nums;\n  let nonEmpty := List.filter (fun x => decide (x ≠ [])) subsets;\n  let products := List.map (fun subset => List.foldl (fun acc x => acc * x) 1 subset) nonEmpty;\n  products.max?.getD (-1000000)\nis not definitionally equal to the right-hand side\n  let powerSet := fun l =>\n    let n := l.length;\n    let masks := List.range (2 ^ n);\n    List.map\n      (fun mask =>\n        List.foldr (fun i acc => if ((mask.shiftRight i).land 1 == 1) = true then l[i]! :: acc else acc) []\n          (List.range n))\n      masks;\n  let subsets := powerSet nums;\n  let nonEmpty := List.filter (fun x => decide (x ≠ [])) subsets;\n  let products := List.map (fun subset => List.foldl (fun acc x => x * acc) 1 subset) nonEmpty;\n  products.max?.getD (-1000000)\nnums : List ℤ\nh_precond : maxStrength_precond nums\n⊢ (let powerSet := fun l =>\n      let n := l.length;\n      let masks := List.range (2 ^ n);\n      List.map\n        (fun mask =>\n          List.foldr (fun i acc => if ((mask.shiftRight i).land 1 == 1) = true then l[i]! :: acc else acc) []\n            (List.range n))\n        masks;\n    let subsets := powerSet nums;\n    let nonEmpty := List.filter (fun x => decide (x ≠ [])) subsets;\n    let products := List.map (fun subset => List.foldl (fun acc x => acc * x) 1 subset) nonEmpty;\n    products.max?.getD (-1000000)) =\n    let powerSet := fun l =>\n      let n := l.length;\n      let masks := List.range (2 ^ n);\n      List.map\n        (fun mask =>\n          List.foldr (fun i acc => if ((mask.shiftRight i).land 1 == 1) = true then l[i]! :: acc else acc) []\n            (List.range n))\n        masks;\n    let subsets := powerSet nums;\n    let nonEmpty := List.filter (fun x => decide (x ≠ [])) subsets;\n    let products := List.map (fun subset => List.foldl (fun acc x => x * acc) 1 subset) nonEmpty;\n    products.max?.getD (-1000000)\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:77:302: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:78:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:79:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:80:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:77:302: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:78:6: warning: '(simp only [RPOrig.maxStrength, RPRef.maxStrength, Nat.add_comm, Nat.add_left_comm, Nat.add_assoc, Nat.mul_comm,\n      Nat.mul_left_comm, Nat.mul_assoc, Int.add_comm, Int.add_left_comm, Int.add_assoc, Int.mul_comm, Int.mul_left_comm,\n      Int.mul_assoc, Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm, Bool.or_left_comm, Bool.or_assoc,\n      and_comm, and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:79:6: warning: '(simp only [RPOrig.maxStrength, RPRef.maxStrength, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm,\n      Bool.and_comm, Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:80:6: warning: '(simp only [RPOrig.maxStrength, RPRef.maxStrength]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:85:297: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:86:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:87:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:88:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:85:297: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:86:6: warning: '(simp [RPOrig.maxStrength, RPRef.maxStrength, Nat.add_comm, Nat.add_left_comm, Nat.add_assoc, Nat.mul_comm,\n      Nat.mul_left_comm, Nat.mul_assoc, Int.add_comm, Int.add_left_comm, Int.add_assoc, Int.mul_comm, Int.mul_left_comm,\n      Int.mul_assoc, Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm, Bool.or_left_comm, Bool.or_assoc,\n      and_comm, and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:87:6: warning: '(simp [RPOrig.maxStrength, RPRef.maxStrength, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm, Bool.and_comm,\n      Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:88:6: warning: '(simp [RPOrig.maxStrength, RPRef.maxStrength]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:92:78: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:92:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_advanced_43/verina_advanced_43__T3_comm_swap__0.lean:92:78: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 17.389,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 35,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 42,
+   "col": 35,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 63,
+   "col": 76,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.17557 = ?m.17557 : Prop\nbut is expected to have type\n  RPOrig.maxStrength nums h_precond = RPRef.maxStrength nums h_precond : Prop"
+  },
+  {
+   "line": 67,
+   "col": 76,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.27315 = ?m.27315 : Prop\nbut is expected to have type\n  RPOrig.maxStrength nums h_precond = RPRef.maxStrength nums h_precond : Prop"
+  },
+  {
+   "line": 72,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  let powerSet := fun l =>\n    let n := l.length;\n    let masks := List.range (2 ^ n);\n    List.map\n      (fun mask =>\n        List.foldr (fun i acc => if ((mask.shiftRight i).land 1 == 1) = true then l[i]! :: acc else acc) []\n          (List.range n))\n      masks;\n  let subsets := powerSet nums;\n  let nonEmpty := List.filter (fun x => decide (x ≠ [])) subsets;\n  let products := List.map (fun subset => List.foldl (fun acc x => acc * x) 1 subset) nonEmpty;\n  products.max?.getD (-1000000)\nis not definitionally equal to the right-hand side\n  let powerSet := fun l =>\n    let n := l.length;\n    let masks := List.range (2 ^ n);\n    List.map\n      (fun mask =>\n        List.foldr (fun i acc => if ((mask.shiftRight i).land 1 == 1) = true then l[i]! :: acc else acc) []\n          (List.range n))\n      masks;\n  let subsets := powerSet nums;\n  let nonEmpty := List.filter (fun x => decide (x ≠ [])) subsets;\n  let products := List.map (fun subset => List.foldl (fun acc x => x * acc) 1 subset) nonEmpty;\n  products.max?.getD (-1000000)\nnums : List ℤ\nh_precond : maxStrength_precond nums\n⊢ (let powerSet := fun l =>\n      let n := l.length;\n      let masks := List.range (2 ^ n);\n      List.map\n        (fun mask =>\n          List.foldr (fun i acc => if ((mask.shiftRight i).land 1 == 1) = true then l[i]! :: acc else acc) []\n            (List.range n))\n        masks;\n    let subsets := powerSet nums;\n    let nonEmpty := List.filter (fun x => decide (x ≠ [])) subsets;\n    let products := List.map (fun subset => List.foldl (fun acc x => acc * x) 1 subset) nonEmpty;\n    products.max?.getD (-1000000)) =\n    let powerSet := fun l =>\n      let n := l.length;\n      let masks := List.range (2 ^ n);\n      List.map\n        (fun mask =>\n          List.foldr (fun i acc => if ((mask.shiftRight i).land 1 == 1) = true then l[i]! :: acc else acc) []\n            (List.range n))\n        masks;\n    let subsets := powerSet nums;\n    let nonEmpty := List.filter (fun x => decide (x ≠ [])) subsets;\n    let products := List.map (fun subset => List.foldl (fun acc x => x * acc) 1 subset) nonEmpty;\n    products.max?.getD (-1000000)"
+  },
+  {
+   "line": 77,
+   "col": 302,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 78,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 79,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 80,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 77,
+   "col": 302,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 78,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.maxStrength, RPRef.maxStrength, Nat.add_comm, Nat.add_left_comm, Nat.add_assoc, Nat.mul_comm,\n      Nat.mul_left_comm, Nat.mul_assoc, Int.add_comm, Int.add_left_comm, Int.add_assoc, Int.mul_comm, Int.mul_left_comm,\n      Int.mul_assoc, Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm, Bool.or_left_comm, Bool.or_assoc,\n      and_comm, and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 79,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.maxStrength, RPRef.maxStrength, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm,\n      Bool.and_comm, Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 80,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.maxStrength, RPRef.maxStrength]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 85,
+   "col": 297,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 86,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 87,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 88,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 85,
+   "col": 297,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 86,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp [RPOrig.maxStrength, RPRef.maxStrength, Nat.add_comm, Nat.add_left_comm, Nat.add_assoc, Nat.mul_comm,\n      Nat.mul_left_comm, Nat.mul_assoc, Int.add_comm, Int.add_left_comm, Int.add_assoc, Int.mul_comm, Int.mul_left_comm,\n      Int.mul_assoc, Bool.and_comm, Bool.and_left_comm, Bool.and_assoc, Bool.or_comm, Bool.or_left_comm, Bool.or_assoc,\n      and_comm, and_left_comm, and_assoc, or_comm, or_left_comm, or_assoc]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 87,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp [RPOrig.maxStrength, RPRef.maxStrength, Nat.add_comm, Int.add_comm, Nat.mul_comm, Int.mul_comm, Bool.and_comm,\n      Bool.or_comm, and_comm, or_comm]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 88,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp [RPOrig.maxStrength, RPRef.maxStrength]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 92,
+   "col": 78,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 92,
+   "col": 58,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 92,
+   "col": 78,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.maxStrength RPRef.maxStrength; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_5/verina_basic_5__T3_comm_swap__0/model_qwen3-14b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_5/verina_basic_5__T3_comm_swap__0/model_qwen3-14b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_5/verina_basic_5__T3_comm_swap__0/model_qwen3-14b.lean:14:22: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_5/verina_basic_5__T3_comm_swap__0/model_qwen3-14b.lean:14:32: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_5/verina_basic_5__T3_comm_swap__0/model_qwen3-14b.lean:25:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_5/verina_basic_5__T3_comm_swap__0/model_qwen3-14b.lean:37:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_5/verina_basic_5__T3_comm_swap__0/model_qwen3-14b.lean:49:72: error: unsolved goals\na b : Int\n⊢ b * a - a * b = 0 ∧ a * b - b * a = 0\n",
+ "stderr": "",
+ "elapsed_seconds": 0.938,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 14,
+   "col": 32,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 37,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 49,
+   "col": 72,
+   "severity": "error",
+   "text": "unsolved goals\na b : Int\n⊢ b * a - a * b = 0 ∧ a * b - b * a = 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

@@ -1,0 +1,21 @@
+model,term,coef,se,z,p,n,n_tasks,separated_or_collinear,note
+strategy_only,Intercept,-0.4849404112531447,0.7223399369139765,-0.6713465315581689,0.5019997983066207,500,52,False,
+strategy_only,C(severity)[T.S],-2.4872718936851226,0.40305641608764564,-6.171026671224753,6.784797477818248e-10,500,52,False,
+strategy_only,unfold,-0.4373742533118017,0.2339674686562225,-1.8693806272463147,0.061569877885072,500,52,False,
+strategy_only,simp_f,0.12784658237049704,0.332249735534157,0.38479062192467495,0.7003925477894334,500,52,False,
+strategy_only,log_loc,0.4366451739914539,0.19811128543147735,2.204039881122676,0.027521539490056326,500,52,False,
+strategy_plus_source,Intercept,1.6084560852902179,1.0411877539553358,1.544828086173607,0.12238785180900856,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)
+strategy_plus_source,"C(group, Treatment('reference'))[T.deepseek-prover-v2-7b]",0.12504054671820508,0.6990471496552303,0.17887283680346172,0.8580375518671812,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)
+strategy_plus_source,"C(group, Treatment('reference'))[T.deepseek-prover-v2-7b__hard_unfold]",2.0143490038598952,0.7511115057961169,2.6818241876415536,0.007322193001220983,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)
+strategy_plus_source,"C(group, Treatment('reference'))[T.goedel-prover-v2-32b]",0.14962773374140684,0.8014408121813862,0.18669842047866952,0.8518970946012802,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)
+strategy_plus_source,"C(group, Treatment('reference'))[T.goedel-prover-v2-8b]",0.2548069434233403,0.7641631524587367,0.3334457342041226,0.7387978455461391,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)
+strategy_plus_source,"C(group, Treatment('reference'))[T.goedel-prover-v2-8b__avoid_unfold]",-0.02869773602394628,0.757545487884426,-0.03788252518550347,0.9697813459295306,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)
+strategy_plus_source,"C(group, Treatment('reference'))[T.goedel-prover-v2-8b__hard_unfold]",2.5125331042020784,0.8544778405199035,2.940430968547222,0.003277560244100629,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)
+strategy_plus_source,"C(group, Treatment('reference'))[T.goedel-prover-v2-8b__unfold]",-17.94368120042064,1.332658989024064,-13.464570717795706,2.5278306812177257e-41,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)
+strategy_plus_source,"C(group, Treatment('reference'))[T.qwen3-14b]",-0.9203202854029453,1.0297378142487774,-0.8937423416603815,0.3714597651617315,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)
+strategy_plus_source,"C(group, Treatment('reference'))[T.qwen3-14b__neutral]",-0.11019117520311399,0.9605017222861456,-0.11472251704124133,0.9086650657458633,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)
+strategy_plus_source,"C(group, Treatment('reference'))[T.qwen3-32b]",1.457465129782726,1.264411917519015,1.152682215019385,0.24904084393644688,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)
+strategy_plus_source,C(severity)[T.S],-2.6076018226460285,0.45958421097447544,-5.673828126334067,1.3964123921208358e-08,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)
+strategy_plus_source,unfold,-2.257872769160235,0.7429462235182103,-3.039079677218243,0.0023730208416944485,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)
+strategy_plus_source,simp_f,-0.8454182574470549,0.4475195619686397,-1.8891202291315665,0.05887572041746926,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)
+strategy_plus_source,log_loc,0.05347086737640809,0.2903645159820959,0.18415083260278658,0.8538951296473201,500,52,True,coefficients not identifiable (perfect separation / source and strategy collinear)

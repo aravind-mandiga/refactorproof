@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_36__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_36__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_36__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_36__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_36__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_36__T2_helper_extract__0.lean:18:30: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_36__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_36__T2_helper_extract__0.lean:26:63: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_36__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_36__T2_helper_extract__0.lean:45:61: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_36__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_36__T2_helper_extract__0.lean:67:2: error: unsolved goals\ncase left\ns : String\nh_precond : replaceWithColon_precond s\n⊢ (replaceWithColon__rp_helper_3e0fbdec s h_precond).data.length = s.data.length\nartifacts/mechanical_repairs/lean/verina_basic_36__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_36__T2_helper_extract__0.lean:69:2: error: unsolved goals\ncase right.left\ns : String\nh_precond : replaceWithColon_precond s\ni : Nat\nhi : i < s.length\nhi' : i < s.data.length\n⊢ isSpaceCommaDot s.data[i] = true → (replaceWithColon__rp_helper_3e0fbdec s h_precond).data[i]?.getD 'A' = ':'\n\ncase right.right\ns : String\nh_precond : replaceWithColon_precond s\ni : Nat\nhi : i < s.length\nhi' : i < s.data.length\n⊢ isSpaceCommaDot s.data[i] = false → (replaceWithColon__rp_helper_3e0fbdec s h_precond).data[i]?.getD 'A' = s.data[i]\n",
+ "stderr": "",
+ "elapsed_seconds": 1.983,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 18,
+   "col": 30,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 63,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 45,
+   "col": 61,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 67,
+   "col": 2,
+   "severity": "error",
+   "text": "unsolved goals\ncase left\ns : String\nh_precond : replaceWithColon_precond s\n⊢ (replaceWithColon__rp_helper_3e0fbdec s h_precond).data.length = s.data.length"
+  },
+  {
+   "line": 69,
+   "col": 2,
+   "severity": "error",
+   "text": "unsolved goals\ncase right.left\ns : String\nh_precond : replaceWithColon_precond s\ni : Nat\nhi : i < s.length\nhi' : i < s.data.length\n⊢ isSpaceCommaDot s.data[i] = true → (replaceWithColon__rp_helper_3e0fbdec s h_precond).data[i]?.getD 'A' = ':'\n\ncase right.right\ns : String\nh_precond : replaceWithColon_precond s\ni : Nat\nhi : i < s.length\nhi' : i < s.data.length\n⊢ isSpaceCommaDot s.data[i] = false → (replaceWithColon__rp_helper_3e0fbdec s h_precond).data[i]?.getD 'A' = s.data[i]\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

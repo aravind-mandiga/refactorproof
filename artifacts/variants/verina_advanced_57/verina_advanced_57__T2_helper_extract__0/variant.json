@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_advanced_57",
+ "variant_id": "verina_advanced_57__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  nextGreaterElement__rp_helper_a6d69d4b nums1 nums2 h_precond\n",
+ "transformed_code_aux": "\nprivate def nextGreaterElement__rp_helper_a6d69d4b (nums1 : List Int) (nums2 : List Int) (h_precond : nextGreaterElement_precond (nums1) (nums2)) : List Int :=\n  let len1 := nums1.length\n\n  let buildNextGreaterMap : List (Int × Int) :=\n    let rec mapLoop (index : Nat) (stack : List Nat) (map : List (Int × Int)) : List (Int × Int) :=\n      if h : index >= nums2.length then\n        stack.foldl (fun acc pos => (nums2[pos]!, -1) :: acc) map\n      else\n        let currentValue := nums2[index]!\n\n        let rec processStack (s : List Nat) (m : List (Int × Int)) : List Nat × List (Int × Int) :=\n          match s with\n          | [] => ([], m)\n          | topIndex :: rest =>\n              let topValue := nums2[topIndex]!\n              if currentValue > topValue then\n                let newMap := (topValue, currentValue) :: m\n                processStack rest newMap\n              else\n                (s, m)\n\n        let (newStack, newMap) := processStack stack map\n\n        mapLoop (index + 1) (index :: newStack) newMap\n      termination_by nums2.length - index\n\n    mapLoop 0 [] []\n\n  let buildResult : List Int :=\n    let rec resultLoop (i : Nat) (result : List Int) : List Int :=\n      if i >= len1 then\n        result.reverse\n      else\n        let val := nums1[i]!\n        let rec findInMap (m : List (Int × Int)) : Int :=\n          match m with\n          | [] => -1\n          | (num, nextGreater) :: rest =>\n              if num == val then nextGreater\n              else findInMap rest\n\n        let nextGreater := findInMap buildNextGreaterMap\n        resultLoop (i + 1) (nextGreater :: result)\n      termination_by len1 - i\n\n    resultLoop 0 []\n\n  buildResult\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "nextGreaterElement__rp_helper_a6d69d4b"
+ ],
+ "metadata": {
+  "binders": [
+   "nums1",
+   "nums2",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "2169443f93df3b7b2589ea9fc39adb4bbe6088f2237f051373fab4a60a9a0b9d",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "097594a25d5bcf40db07809886af8419f653f744e0f6791127061a8a979dbc66",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "nextGreaterElement",
+ "code_loc_original": 38,
+ "code_loc_refactored": 40
+}

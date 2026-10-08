@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_goedel-prover-v2-8b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_goedel-prover-v2-8b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_goedel-prover-v2-8b__hard_unfold.lean:16:29: warning: unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_goedel-prover-v2-8b__hard_unfold.lean:27:34: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_goedel-prover-v2-8b__hard_unfold.lean:39:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_goedel-prover-v2-8b__hard_unfold.lean:66:6: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_12/verina_basic_12__T3_comm_swap__0/model_goedel-prover-v2-8b__hard_unfold.lean:51:84: error: unsolved goals\ncase left\nsize : ℕ\n⊢ size * 6 * size - 6 * size * size = 0\n\ncase right\nsize : ℕ\n⊢ 6 * size * size - size * 6 * size = 0\n",
+ "stderr": "",
+ "elapsed_seconds": 7.556,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 27,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 39,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 66,
+   "col": 6,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 51,
+   "col": 84,
+   "severity": "error",
+   "text": "unsolved goals\ncase left\nsize : ℕ\n⊢ size * 6 * size - 6 * size * size = 0\n\ncase right\nsize : ℕ\n⊢ 6 * size * size - size * 6 * size = 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

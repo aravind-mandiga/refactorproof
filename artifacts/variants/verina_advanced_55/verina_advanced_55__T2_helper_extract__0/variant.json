@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_55",
+ "variant_id": "verina_advanced_55__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  mostFrequent__rp_helper_6e447617 xs h_precond\n",
+ "transformed_code_aux": "-- Build a frequency map from the list\ndef countMap (xs : List Int) : HashMap Int Nat :=\n  let step := fun m x =>\n    let current := m.getD x 0\n    m.insert x (current + 1)\n  let init := (HashMap.emptyWithCapacity : HashMap Int Nat)\n  xs.foldl step init\n\n-- Compute the maximum frequency in the map\ndef getMaxFrequency (m : HashMap Int Nat) : Nat :=\n  let step := fun acc (_k, v) =>\n    if v > acc then v else acc\n  let init := 0\n  m.toList.foldl step init\n\n-- Extract all keys whose frequency == maxFreq\ndef getCandidates (m : HashMap Int Nat) (maxFreq : Nat) : List Int :=\n  let isTarget := fun (_k, v) => v = maxFreq\n  let extract := fun (k, _) => k\n  m.toList.filter isTarget |>.map extract\n\n-- Return the first candidate element from original list\ndef getFirstWithFreq (xs : List Int) (candidates : List Int) : Int :=\n  match xs.find? (fun x => candidates.contains x) with\n  | some x => x\n  | none => 0\n\nprivate def mostFrequent__rp_helper_6e447617 (xs : List Int) (h_precond : mostFrequent_precond (xs)) : Int :=\n  let freqMap := countMap xs\n  let maxF := getMaxFrequency freqMap\n  let candidates := getCandidates freqMap maxF\n  getFirstWithFreq xs candidates\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "mostFrequent__rp_helper_6e447617"
+ ],
+ "metadata": {
+  "binders": [
+   "xs",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "8047de1a7682dcbc85460d47df568ea257eb0c0bae509d2f22638240ae47f1bc",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "0abd39999df7ab30b22716582908c3d826b4e8e04f11bcde9d681ac45bd5f51f",
+ "code_aux_hash_original": "f5f6e93cc20009f0ba277b557ba0f38d80a6c1a22d0ade47449b80e366ecb315",
+ "tier": "advanced",
+ "function_name": "mostFrequent",
+ "code_loc_original": 4,
+ "code_loc_refactored": 6
+}

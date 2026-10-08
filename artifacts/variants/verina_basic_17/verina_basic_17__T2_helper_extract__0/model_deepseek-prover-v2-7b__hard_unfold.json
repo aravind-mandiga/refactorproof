@@ -1,0 +1,33 @@
+{
+ "task_id": "verina_basic_17",
+ "variant_id": "verina_basic_17__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b__hard_unfold",
+ "generation_attempt": 2,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 14.351,
+ "proof_region_errors": [
+  "tactic 'rfl' failed, the left-hand side\n  (toLowercase__rp_helper_b6759a4e s h_precond).length\nis not definitionally equal to the right-hand side\n  s.length\ns : String\nh_precond : toLowercase_precond s\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).length = s.length",
+  "unsolved goals\ns : String\nh_precond : toLowercase_precond s\nh_len_1 : (toLowercase s h_precond).length = s.length\ni : ℕ\nhi_1 : i < s.length\nh_len : (toLowercase__rp_helper_b6759a4e s h_precond).length = s.length\nh : isUpperCase s.data[i] = true\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).data[i] = shift32 s.data[i]",
+  "unsolved goals\ns : String\nh_precond : toLowercase_precond s\nh_len_1 : (toLowercase s h_precond).length = s.length\ni : ℕ\nhi_1 : i < s.length\nh_len : (toLowercase__rp_helper_b6759a4e s h_precond).length = s.length\nh : isUpperCase s.data[i] = false\n⊢ (toLowercase__rp_helper_b6759a4e s h_precond).data[i] = s.data[i]"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "1d876170d40fc673d960bfcbceffa3164e2c798d4fb859f10631934219c3096e",
+ "spec_hash": "d839440679889d5d1a206f994624fb1b175593e8717bd61149063e998717c0e7",
+ "proof_text": "  unfold toLowercase toLowercase_postcond\n  have h_len : (toLowercase (s) h_precond).length = s.length := by\n    simp [toLowercase, List.length_map]\n    <;>\n    rfl\n\n  have h_main : ∀ (i : Nat), i < s.length → (isUpperCase (s.toList[i]!) → (toLowercase (s) h_precond).toList[i]! = shift32 (s.toList[i]!)) ∧ (¬isUpperCase (s.toList[i]!) → (toLowercase (s) h_precond).toList[i]! = s.toList[i]!) := by\n    intro i hi\n    constructor\n    · -- Prove the first implication: if c is uppercase, then toLowercase_postcond holds\n      intro h\n      simp_all [toLowercase, List.get]\n      <;>\n      (try aesop) <;>\n      (try {\n        simp_all [isUpperCase, shift32, List.get]\n        <;>\n        (try\n          {\n            split_ifs <;>\n            simp_all [List.get] <;>\n            (try omega) <;>\n            (try aesop) <;>\n            (try contradiction)\n          })\n        <;>\n        (try omega)\n        <;>\n        (try aesop)\n        <;>\n        (try contradiction)\n      }) <;>\n      (try {\n        cases s with\n        | mk s' =>\n          cases s' with\n          | nil => contradiction\n          | cons s0 ss =>\n            simp_all [List.get]\n            <;>\n            aesop\n      })\n    · -- Prove the second implication: if c is not uppercase, then toLowercase_postcond holds\n      intro h\n      simp_all [toLowercase, List.get]\n      <;>\n      (try aesop) <;>\n      (try {\n        simp_all [isUpperCase, shift32, List.get]\n        <;>\n        (try\n          {\n            split_ifs <;>\n            simp_all [List.get] <;>\n            (try omega) <;>\n            (try aesop) <;>\n            (try contradiction)\n          })\n        <;>\n        (try omega)\n        <;>\n        (try aesop)\n        <;>\n        (try contradiction)\n      }) <;>\n      (try {\n        cases s with\n        | mk s' =>\n          cases s' with\n          | nil => contradiction\n          | cons s0 ss =>\n            simp_all [List.get]\n            <;>\n            aesop\n      })\n\n  constructor\n  · exact h_len\n  · intro i hi\n    have h := h_main i hi\n    aesop\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "hard_unfold"
+}

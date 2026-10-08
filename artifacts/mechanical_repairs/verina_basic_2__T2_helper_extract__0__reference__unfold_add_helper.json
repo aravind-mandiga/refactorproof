@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_2__T2_helper_extract__0",
+ "task_id": "verina_basic_2",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "findSmallest",
+ "helper": "findSmallest__rp_helper_06efecc0",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold findSmallest_postcond findSmallest\n  cases res : s.toList.min? with\n  | none =>\n    simp only [res]\n    rw [List.min?_eq_none_iff] at res\n    exact res\n  | some r =>\n    simp only [res]\n    rw [List.min?_eq_some_iff'] at res\n    exact res\n",
+ "proof_after": "  unfold findSmallest_postcond findSmallest findSmallest__rp_helper_06efecc0\n  cases res : s.toList.min? with\n  | none =>\n    simp only [res]\n    rw [List.min?_eq_none_iff] at res\n    exact res\n  | some r =>\n    simp only [res]\n    rw [List.min?_eq_some_iff'] at res\n    exact res\n"
+}

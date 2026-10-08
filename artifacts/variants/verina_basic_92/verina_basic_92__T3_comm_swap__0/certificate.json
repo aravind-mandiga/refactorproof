@@ -1,0 +1,55 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_92",
+ "variant_id": "verina_basic_92__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_92/verina_basic_92__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.796,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": "simp_only",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.330 = ?m.330 : Prop\nbut is expected to have type\n  RPOrig.SwapArithmetic X Y h_precond = RPRef.SwapArithmetic X Y h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1096 = ?m.1096 : Prop\nbut is expected to have type\n  RPOrig.SwapArithmetic X Y h_precond = RPRef.SwapArithmetic X Y h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  let x1 := X;\n  let y1 := Y;\n  let x2 := y1 - x1;\n  let y2 := y1 - x2;\n  let x3 := y2 + x2;\n  (x3, y2)\nis not definitionally equal to the right-hand side\n  let x1 := X;\n  let y1 := Y;\n  let x2 := y1 - x1;\n  let y2 := y1 - x2;\n  let x3 := x2 + y2;\n  (x3, y2)\nX Y : Int\nh_precond : SwapArithmetic_precond X Y\n⊢ (let x1 := X;\n    let y1 := Y;\n    let x2 := y1 - x1;\n    let y2 := y1 - x2;\n    let x3 := y2 + x2;\n    (x3, y2)) =\n    let x1 := X;\n    let y1 := Y;\n"
+   ]
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": true,
+   "errors": []
+  },
+  "ac_rfl": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

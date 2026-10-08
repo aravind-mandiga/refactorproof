@@ -1,0 +1,13 @@
+--- goedel-prover-v2-8b:verina_basic_101__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_101__T2_helper_extract__0 (dsimp_add_helper)
+@@ -20,7 +20,7 @@
+     <;> omega
+ 
+   have h₃ : Triple_postcond x (Triple x h_precond) h_precond := by
+-    dsimp [Triple, Triple_postcond, Triple_precond] at *
++    dsimp [Triple, Triple_postcond, Triple_precond, Triple__rp_helper_65b561a3] at *
+     <;> simp_all [Int.mul_ediv_cancel_left]
+     <;> ring_nf at *
+     <;> omega
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

@@ -1,0 +1,33 @@
+{
+ "task_id": "verina_advanced_41",
+ "variant_id": "verina_advanced_41__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  if a >= b && a >= c then a\n  else\n    maxOfThree__rp_branch_81742a90 a b c h_precond\n",
+ "transformed_code_aux": "\nprivate def maxOfThree__rp_branch_81742a90 (a : Int) (b : Int) (c : Int) (h_precond : maxOfThree_precond (a) (b) (c)) : Int :=\n  if b >= a && b >= c then b\n   else c\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "maxOfThree__rp_branch_81742a90"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "b",
+   "c",
+   "h_precond"
+  ],
+  "extracted": "else_branch",
+  "seed": 0
+ },
+ "extra_levels": [],
+ "spec_hash": "29128d6527435b82d1289774bfcd553408b4defe3af053982c1b9111688cb50a",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "0e8295cf87ceedd4d97d21c912d300a32c19e9c6e855f44c251805296c3b6a6a",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "maxOfThree",
+ "code_loc_original": 3,
+ "code_loc_refactored": 6
+}

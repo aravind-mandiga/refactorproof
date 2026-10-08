@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_53__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_53__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_53__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_53__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_53__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_53__T2_helper_extract__0.lean:13:20: warning: unused variable `N`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_53__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_53__T2_helper_extract__0.lean:21:50: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_53__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_53__T2_helper_extract__0.lean:41:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_53__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_53__T2_helper_extract__0.lean:58:11: error: unknown constant 'CalSum.loop'\nartifacts/mechanical_repairs/lean/verina_basic_53__T2_helper_extract__0__reference__unfold_add_helper/verina_basic_53__T2_helper_extract__0.lean:63:11: error: unknown constant 'CalSum.loop'\n",
+ "stderr": "",
+ "elapsed_seconds": 0.907,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `N`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 50,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 41,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 11,
+   "severity": "error",
+   "text": "unknown constant 'CalSum.loop'"
+  },
+  {
+   "line": 63,
+   "col": 11,
+   "severity": "error",
+   "text": "unknown constant 'CalSum.loop'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unknown_constant_or_identifier"
+}

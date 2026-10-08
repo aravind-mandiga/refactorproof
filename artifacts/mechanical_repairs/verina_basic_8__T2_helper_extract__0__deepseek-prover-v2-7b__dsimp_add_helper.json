@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_8__T2_helper_extract__0",
+ "task_id": "verina_basic_8",
+ "source": "deepseek-prover-v2-7b",
+ "transformation": "T2_helper_extract",
+ "template": "dsimp_add_helper",
+ "function_name": "myMin",
+ "helper": "myMin__rp_helper_829c4a21",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_main : (myMin a b h_precond \u2264 a \u2227 myMin a b h_precond \u2264 b) \u2227 (myMin a b h_precond = a \u2228 myMin a b h_precond = b) := by\n    dsimp [myMin, myMin_precond] at *\n    split_ifs <;> simp_all [Int.le_refl, Int.le_of_lt] <;>\n    (try { omega }) <;>\n    (try {\n      exact Or.inl (by linarith) }) <;>\n    (try {\n      exact Or.inr (by linarith) }) <;>\n    (try {\n      exact \u27e8by linarith, by linarith\u27e9 })\n    <;>\n    (try\n      {\n        exact Or.inl (by linarith)\n      })\n    <;>\n    (try\n      {\n        exact Or.inr (by linarith)\n      })\n    <;>\n    (try\n      {\n        exact \u27e8by linarith, by linarith\u27e9\n      })\n  exact h_main\n",
+ "proof_after": "  have h_main : (myMin a b h_precond \u2264 a \u2227 myMin a b h_precond \u2264 b) \u2227 (myMin a b h_precond = a \u2228 myMin a b h_precond = b) := by\n    dsimp [myMin, myMin_precond, myMin__rp_helper_829c4a21] at *\n    split_ifs <;> simp_all [Int.le_refl, Int.le_of_lt] <;>\n    (try { omega }) <;>\n    (try {\n      exact Or.inl (by linarith) }) <;>\n    (try {\n      exact Or.inr (by linarith) }) <;>\n    (try {\n      exact \u27e8by linarith, by linarith\u27e9 })\n    <;>\n    (try\n      {\n        exact Or.inl (by linarith)\n      })\n    <;>\n    (try\n      {\n        exact Or.inr (by linarith)\n      })\n    <;>\n    (try\n      {\n        exact \u27e8by linarith, by linarith\u27e9\n      })\n  exact h_main\n"
+}

@@ -1,0 +1,109 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:13:24: warning: unused variable `N`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:22:26: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:35:26: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:49:68: error: type mismatch\n  rfl\nhas type\n  ?m.1126 = ?m.1126 : Prop\nbut is expected to have type\n  RPOrig.SquareRoot N h_precond = RPRef.SquareRoot N h_precond : Prop\nartifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:53:68: error: type mismatch\n  rfl\nhas type\n  ?m.2170 = ?m.2170 : Prop\nbut is expected to have type\n  RPOrig.SquareRoot N h_precond = RPRef.SquareRoot N h_precond : Prop\nartifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:58:2: error: tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nN : Nat\nh_precond : SquareRoot_precond N\n⊢ Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0 =\n    Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0\nartifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:66:220: error: tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nN : Nat\nh_precond : SquareRoot_precond N\n⊢ Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0 =\n    Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0\nartifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:61:68: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:61:68: error: unknown metavariable '?_uniq.13620'\nartifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:74:215: error: tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nN : Nat\nh_precond : SquareRoot_precond N\n⊢ Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0 =\n    Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0\nartifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:69:68: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:69:68: error: unknown metavariable '?_uniq.21283'\nartifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:78:236: error: tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nN : Nat\nh_precond : SquareRoot_precond N\n⊢ Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0 =\n    Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0\nartifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:77:68: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_65/verina_basic_65__T3_comm_swap__0.lean:77:68: error: unknown metavariable '?_uniq.24212'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.472,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `N`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 26,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 35,
+   "col": 26,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 49,
+   "col": 68,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1126 = ?m.1126 : Prop\nbut is expected to have type\n  RPOrig.SquareRoot N h_precond = RPRef.SquareRoot N h_precond : Prop"
+  },
+  {
+   "line": 53,
+   "col": 68,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.2170 = ?m.2170 : Prop\nbut is expected to have type\n  RPOrig.SquareRoot N h_precond = RPRef.SquareRoot N h_precond : Prop"
+  },
+  {
+   "line": 58,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nN : Nat\nh_precond : SquareRoot_precond N\n⊢ Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0 =\n    Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0"
+  },
+  {
+   "line": 66,
+   "col": 220,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nN : Nat\nh_precond : SquareRoot_precond N\n⊢ Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0 =\n    Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0"
+  },
+  {
+   "line": 61,
+   "col": 68,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 61,
+   "col": 68,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.13620'"
+  },
+  {
+   "line": 74,
+   "col": 215,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nN : Nat\nh_precond : SquareRoot_precond N\n⊢ Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0 =\n    Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0"
+  },
+  {
+   "line": 69,
+   "col": 68,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 69,
+   "col": 68,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.21283'"
+  },
+  {
+   "line": 78,
+   "col": 236,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n    (fun x f x_1 =>\n      (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n        | 0, r => fun x => r\n        | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n        f)\n    0\nN : Nat\nh_precond : SquareRoot_precond N\n⊢ Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (r + 1) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0 =\n    Nat.brecOn (motive := fun x => Nat → Nat) (N + 1)\n      (fun x f x_1 =>\n        (match (motive := (x : Nat) → Nat → Nat.below (motive := fun x => Nat → Nat) x → Nat) x, x_1 with\n          | 0, r => fun x => r\n          | bound.succ, r => fun x => if (1 + r) * (r + 1) ≤ N then x.1 (r + 1) else r)\n          f)\n      0"
+  },
+  {
+   "line": 77,
+   "col": 68,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 77,
+   "col": 68,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.24212'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

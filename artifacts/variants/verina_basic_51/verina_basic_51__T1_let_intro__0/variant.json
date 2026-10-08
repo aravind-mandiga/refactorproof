@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_51",
+ "variant_id": "verina_basic_51__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_9dfd666a : Nat :=\n    binarySearchLoop a key 0 a.size\n  __rp_tmp_9dfd666a\n",
+ "transformed_code_aux": "def binarySearchLoop (a : Array Int) (key : Int) (lo hi : Nat) : Nat :=\n  if lo < hi then\n    let mid := (lo + hi) / 2\n    if (a[mid]! < key) then binarySearchLoop a key (mid + 1) hi\n    else binarySearchLoop a key lo mid\n  else\n    lo\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_9dfd666a",
+  "seed": 0
+ },
+ "spec_hash": "22af60f336eeffb0274928952b143422f3e1e89d2da20833192243e528c04a4b",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "2cbbc4c8847c28a9c4d061f38e0c973b296fb478be03972baa9d6308da82147b",
+ "code_aux_hash_original": "6faecc5f4a7ba08b6329fc9b71edb9ac7b475e74d331a9b1427168a35b82e960",
+ "tier": "basic",
+ "function_name": "BinarySearch",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

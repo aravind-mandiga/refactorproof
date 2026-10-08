@@ -1,0 +1,10 @@
+--- reference:verina_basic_31__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_31__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold toUppercase toUppercase_postcond
++  unfold toUppercase toUppercase__rp_helper_8bd90157 toUppercase_postcond
+   simp_all
+   constructor
+   · unfold String.length
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

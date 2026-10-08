@@ -1,0 +1,309 @@
+variant_id,task_id,source,transformation,template,function_name,helper,control_unedited_fails,repaired,outcome,first_error,material_provenance,tokens_changed,lines_changed,diff_file
+verina_advanced_41__T2_helper_extract__0,verina_advanced_41,deepseek-prover-v2-7b,T2_helper_extract,dsimp_add_helper,maxOfThree,maxOfThree__rp_helper_7c6c6d3d,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_advanced_41__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper.diff
+verina_advanced_41__T5_branch_extract__0,verina_advanced_41,deepseek-prover-v2-7b,T5_branch_extract,dsimp_add_helper,maxOfThree,maxOfThree__rp_branch_81742a90,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_advanced_41__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper.diff
+verina_advanced_6__T2_helper_extract__0,verina_advanced_6,deepseek-prover-v2-7b,T2_helper_extract,unfold_add_helper,allVowels,allVowels__rp_helper_1905f5d2,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",1,1,mechanical_repair_diffs/verina_advanced_6__T2_helper_extract__0__deepseek-prover-v2-7b__unfold_add_helper.diff
+verina_advanced_6__T2_helper_extract__0,verina_advanced_6,goedel-prover-v2-32b,T2_helper_extract,dsimp_add_helper,allVowels,allVowels__rp_helper_1905f5d2,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_advanced_6__T2_helper_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_advanced_6__T2_helper_extract__0,verina_advanced_6,goedel-prover-v2-8b,T2_helper_extract,dsimp_add_helper,allVowels,allVowels__rp_helper_1905f5d2,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_advanced_6__T2_helper_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_advanced_72__T2_helper_extract__0,verina_advanced_72,goedel-prover-v2-8b,T2_helper_extract,simp_add_helper,singleDigitPrimeFactor,singleDigitPrimeFactor__rp_helper_2e72e101,True,False,proof_fails,"unsolved goals
+n : ℕ
+h_precond : singleDigitPrimeFactor_precond n
+h₂ : ¬n = 0
+h : n % 2 = 0
+⊢ singleDigitPrimeFactor__rp_helper_2e72e101 n h_precond = 2
+
+n : ℕ
+h_precond : singleDigitPrimeFactor_precond n
+h₂ : ¬n = 0
+h : n % 2 = 1
+h_1 : n % 3 = 0
+⊢ singleDigitPrimeFactor__rp_helper_2e72e101 n h_prec","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_advanced_72__T2_helper_extract__0__goedel-prover-v2-8b__simp_add_helper.diff
+verina_advanced_72__T5_branch_extract__0,verina_advanced_72,goedel-prover-v2-8b,T5_branch_extract,simp_add_helper,singleDigitPrimeFactor,singleDigitPrimeFactor__rp_branch_4e87d626,True,False,proof_fails,"unsolved goals
+n : ℕ
+h_precond : singleDigitPrimeFactor_precond n
+h₂ : ¬n = 0
+h : n % 2 = 0
+⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2
+
+n : ℕ
+h_precond : singleDigitPrimeFactor_precond n
+h₂ : ¬n = 0
+h : n % 2 = 1
+h_1 : n % 3 = 0
+⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_prec","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__simp_add_helper.diff
+verina_basic_100__T2_helper_extract__0,verina_basic_100,deepseek-prover-v2-7b,T2_helper_extract,dsimp_add_helper,Triple,Triple__rp_helper_574d859a,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_100__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper.diff
+verina_basic_100__T2_helper_extract__0,verina_basic_100,goedel-prover-v2-32b,T2_helper_extract,simp_add_helper,Triple,Triple__rp_helper_574d859a,True,False,proof_fails,"linarith failed to find a contradiction
+case h1.h
+x : ℤ
+h_precond : Triple_precond x
+h₂ : ¬x = 0
+a✝ : Triple__rp_helper_574d859a x h_precond < x * 3
+⊢ False failed
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_100__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper.diff
+verina_basic_100__T2_helper_extract__0,verina_basic_100,goedel-prover-v2-8b,T2_helper_extract,simp_add_helper,Triple,Triple__rp_helper_574d859a,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_100__T2_helper_extract__0__goedel-prover-v2-8b__simp_add_helper.diff
+verina_basic_100__T2_helper_extract__0,verina_basic_100,reference,T2_helper_extract,unfold_add_helper,Triple,Triple__rp_helper_574d859a,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_100__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_100__T5_branch_extract__0,verina_basic_100,deepseek-prover-v2-7b,T5_branch_extract,dsimp_add_helper,Triple,Triple__rp_branch_9f218861,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_100__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper.diff
+verina_basic_100__T5_branch_extract__0,verina_basic_100,goedel-prover-v2-32b,T5_branch_extract,simp_add_helper,Triple,Triple__rp_branch_9f218861,True,False,proof_fails,"linarith failed to find a contradiction
+case h1.h
+x : ℤ
+h_precond : Triple_precond x
+h₂ : ¬x = 0
+a✝ : Triple__rp_branch_9f218861 x h_precond < x * 3
+⊢ False failed
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_100__T5_branch_extract__0__goedel-prover-v2-32b__simp_add_helper.diff
+verina_basic_100__T5_branch_extract__0,verina_basic_100,goedel-prover-v2-8b,T5_branch_extract,simp_add_helper,Triple,Triple__rp_branch_9f218861,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_100__T5_branch_extract__0__goedel-prover-v2-8b__simp_add_helper.diff
+verina_basic_100__T5_branch_extract__0,verina_basic_100,reference,T5_branch_extract,unfold_add_helper,Triple,Triple__rp_branch_9f218861,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_100__T5_branch_extract__0__reference__unfold_add_helper.diff
+verina_basic_101__T2_helper_extract__0,verina_basic_101,deepseek-prover-v2-7b,T2_helper_extract,simp_add_helper,Triple,Triple__rp_helper_65b561a3,True,False,proof_fails,"omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  -2 ≤ 3*a - b ≤ 0
+  3*a - c ≥ 1
+where
+ a := x
+ b := Triple x h_precond
+ c := Triple__rp_helper_65b561a3 x h_precond
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_101__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper.diff
+verina_basic_101__T2_helper_extract__0,verina_basic_101,goedel-prover-v2-32b,T2_helper_extract,dsimp_add_helper,Triple,Triple__rp_helper_65b561a3,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_101__T2_helper_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_101__T2_helper_extract__0,verina_basic_101,goedel-prover-v2-8b,T2_helper_extract,dsimp_add_helper,Triple,Triple__rp_helper_65b561a3,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_101__T2_helper_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_basic_101__T2_helper_extract__0,verina_basic_101,reference,T2_helper_extract,unfold_add_helper,Triple,Triple__rp_helper_65b561a3,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_101__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_107__T2_helper_extract__0,verina_basic_107,deepseek-prover-v2-7b,T2_helper_extract,simp_add_helper,ComputeAvg,ComputeAvg__rp_helper_860051f2,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_107__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper.diff
+verina_basic_107__T2_helper_extract__0,verina_basic_107,goedel-prover-v2-32b,T2_helper_extract,simp_add_helper,ComputeAvg,ComputeAvg__rp_helper_860051f2,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_107__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper.diff
+verina_basic_10__T2_helper_extract__0,verina_basic_10,reference,T2_helper_extract,unfold_add_helper,isGreater,isGreater__rp_helper_d4e98f7f,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_10__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_11__T2_helper_extract__0,verina_basic_11,reference,T2_helper_extract,unfold_add_helper,lastDigit,lastDigit__rp_helper_8d571788,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_11__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_12__T2_helper_extract__0,verina_basic_12,deepseek-prover-v2-7b,T2_helper_extract,unfold_add_helper,cubeSurfaceArea,cubeSurfaceArea__rp_helper_67e54167,True,False,proof_fails,"simp_all made no progress
+","primary row of results/model_proofs.jsonl, proof hash verified",1,1,mechanical_repair_diffs/verina_basic_12__T2_helper_extract__0__deepseek-prover-v2-7b__unfold_add_helper.diff
+verina_basic_12__T2_helper_extract__0,verina_basic_12,goedel-prover-v2-32b,T2_helper_extract,simp_add_helper,cubeSurfaceArea,cubeSurfaceArea__rp_helper_67e54167,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_12__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper.diff
+verina_basic_12__T2_helper_extract__0,verina_basic_12,goedel-prover-v2-8b,T2_helper_extract,simp_add_helper,cubeSurfaceArea,cubeSurfaceArea__rp_helper_67e54167,True,False,proof_fails,"unsolved goals
+size : ℕ
+h_precond : cubeSurfaceArea_precond size
+h₁ : cubeSurfaceArea size h_precond - 6 * size * size = 0
+⊢ cubeSurfaceArea__rp_helper_67e54167 size h_precond = 6 * size * size
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_12__T2_helper_extract__0__goedel-prover-v2-8b__simp_add_helper.diff
+verina_basic_12__T2_helper_extract__0,verina_basic_12,reference,T2_helper_extract,unfold_add_helper,cubeSurfaceArea,cubeSurfaceArea__rp_helper_67e54167,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_12__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_13__T2_helper_extract__0,verina_basic_13,reference,T2_helper_extract,unfold_add_helper,cubeElements,cubeElements__rp_helper_2cb44842,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_13__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_14__T2_helper_extract__0,verina_basic_14,deepseek-prover-v2-7b,T2_helper_extract,simp_add_helper,containsZ,containsZ__rp_helper_6f400cbb,True,False,proof_fails,"tactic 'aesop' failed, made no progress
+Initial goal:
+  case mpr
+  s : String
+  h_precond : containsZ_precond s
+  h : containsZ__rp_helper_6f400cbb s h_precond = true
+  ⊢ ∃ x ∈ s.data, x = 'z' ∨ x = 'Z'
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_14__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper.diff
+verina_basic_14__T2_helper_extract__0,verina_basic_14,goedel-prover-v2-8b,T2_helper_extract,simp_add_helper,containsZ,containsZ__rp_helper_6f400cbb,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_14__T2_helper_extract__0__goedel-prover-v2-8b__simp_add_helper.diff
+verina_basic_14__T2_helper_extract__0,verina_basic_14,reference,T2_helper_extract,unfold_add_helper,containsZ,containsZ__rp_helper_6f400cbb,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_14__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_15__T2_helper_extract__0,verina_basic_15,reference,T2_helper_extract,unfold_add_helper,containsConsecutiveNumbers,containsConsecutiveNumbers__rp_helper_906cb743,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_15__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_16__T2_helper_extract__0,verina_basic_16,deepseek-prover-v2-7b,T2_helper_extract,dsimp_add_helper,replaceChars,replaceChars__rp_helper_e8782fcd,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_16__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper.diff
+verina_basic_16__T2_helper_extract__0,verina_basic_16,reference,T2_helper_extract,unfold_add_helper,replaceChars,replaceChars__rp_helper_e8782fcd,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_16__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_17__T2_helper_extract__0,verina_basic_17,deepseek-prover-v2-7b,T2_helper_extract,simp_add_helper,toLowercase,toLowercase__rp_helper_b6759a4e,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_17__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper.diff
+verina_basic_17__T2_helper_extract__0,verina_basic_17,reference,T2_helper_extract,unfold_add_helper,toLowercase,toLowercase__rp_helper_b6759a4e,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_17__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_19__T2_helper_extract__0,verina_basic_19,reference,T2_helper_extract,unfold_add_helper,isSorted,isSorted__rp_helper_f8cad7cc,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_19__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_19__T5_branch_extract__0,verina_basic_19,reference,T5_branch_extract,unfold_add_helper,isSorted,isSorted__rp_branch_e1b18854,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_19__T5_branch_extract__0__reference__unfold_add_helper.diff
+verina_basic_1__T2_helper_extract__0,verina_basic_1,deepseek-prover-v2-7b,T2_helper_extract,simp_add_helper,hasOppositeSign,hasOppositeSign__rp_helper_5272bffb,True,False,proof_fails,"unsolved goals
+case inr
+a b : ℤ
+h_precond : hasOppositeSign_precond a b
+h₂ : a * b < 0
+left : 0 < a
+right : b < 0
+⊢ hasOppositeSign__rp_helper_5272bffb a b h_precond = true","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_1__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper.diff
+verina_basic_1__T2_helper_extract__0,verina_basic_1,goedel-prover-v2-32b,T2_helper_extract,simp_add_helper,hasOppositeSign,hasOppositeSign__rp_helper_5272bffb,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_1__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper.diff
+verina_basic_1__T2_helper_extract__0,verina_basic_1,reference,T2_helper_extract,unfold_add_helper,hasOppositeSign,hasOppositeSign__rp_helper_5272bffb,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_1__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_26__T2_helper_extract__0,verina_basic_26,deepseek-prover-v2-7b,T2_helper_extract,simp_add_helper,isEven,isEven__rp_helper_3a986bdd,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_26__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper.diff
+verina_basic_26__T2_helper_extract__0,verina_basic_26,goedel-prover-v2-32b,T2_helper_extract,simp_add_helper,isEven,isEven__rp_helper_3a986bdd,True,False,proof_fails,"unsolved goals
+n : ℤ
+h_precond : isEven_precond n
+h : ¬n % 2 = 0
+⊢ isEven__rp_helper_3a986bdd n h_precond = false
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_26__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper.diff
+verina_basic_26__T2_helper_extract__0,verina_basic_26,goedel-prover-v2-8b,T2_helper_extract,simp_add_helper,isEven,isEven__rp_helper_3a986bdd,True,False,proof_fails,"type mismatch, term
+  h
+after simplification has type
+  isEven__rp_helper_3a986bdd n h_precond = true : Prop
+but is expected to have type
+  2 ∣ n : Prop","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_26__T2_helper_extract__0__goedel-prover-v2-8b__simp_add_helper.diff
+verina_basic_26__T2_helper_extract__0,verina_basic_26,reference,T2_helper_extract,unfold_add_helper,isEven,isEven__rp_helper_3a986bdd,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_26__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_29__T2_helper_extract__0,verina_basic_29,reference,T2_helper_extract,unfold_add_helper,removeElement,removeElement__rp_helper_718e0d1d,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_29__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_2__T2_helper_extract__0,verina_basic_2,reference,T2_helper_extract,unfold_add_helper,findSmallest,findSmallest__rp_helper_06efecc0,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_2__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_30__T2_helper_extract__0,verina_basic_30,reference,T2_helper_extract,unfold_add_helper,elementWiseModulo,elementWiseModulo__rp_helper_81e2cf70,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_30__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_31__T2_helper_extract__0,verina_basic_31,deepseek-prover-v2-7b,T2_helper_extract,dsimp_add_helper,toUppercase,toUppercase__rp_helper_8bd90157,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_31__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper.diff
+verina_basic_31__T2_helper_extract__0,verina_basic_31,reference,T2_helper_extract,unfold_add_helper,toUppercase,toUppercase__rp_helper_8bd90157,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_31__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_32__T2_helper_extract__0,verina_basic_32,reference,T2_helper_extract,unfold_add_helper,swapFirstAndLast,swapFirstAndLast__rp_helper_6bb66f38,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_32__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_36__T2_helper_extract__0,verina_basic_36,goedel-prover-v2-8b,T2_helper_extract,dsimp_add_helper,replaceWithColon,replaceWithColon__rp_helper_3e0fbdec,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_36__T2_helper_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_basic_36__T2_helper_extract__0,verina_basic_36,reference,T2_helper_extract,unfold_add_helper,replaceWithColon,replaceWithColon__rp_helper_3e0fbdec,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_36__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_3__T2_helper_extract__0,verina_basic_3,goedel-prover-v2-32b,T2_helper_extract,dsimp_add_helper,isDivisibleBy11,isDivisibleBy11__rp_helper_c39b37ae,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_3__T2_helper_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_3__T2_helper_extract__0,verina_basic_3,goedel-prover-v2-8b,T2_helper_extract,simp_add_helper,isDivisibleBy11,isDivisibleBy11__rp_helper_c39b37ae,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_3__T2_helper_extract__0__goedel-prover-v2-8b__simp_add_helper.diff
+verina_basic_3__T2_helper_extract__0,verina_basic_3,reference,T2_helper_extract,unfold_add_helper,isDivisibleBy11,isDivisibleBy11__rp_helper_c39b37ae,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_3__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_42__T2_helper_extract__0,verina_basic_42,reference,T2_helper_extract,unfold_add_helper,countDigits,countDigits__rp_helper_df69abf7,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_42__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_44__T2_helper_extract__0,verina_basic_44,reference,T2_helper_extract,unfold_add_helper,isOddAtIndexOdd,isOddAtIndexOdd__rp_helper_eaf90141,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_44__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_45__T2_helper_extract__0,verina_basic_45,reference,T2_helper_extract,unfold_add_helper,findProduct,findProduct__rp_helper_883509e2,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_45__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_48__T2_helper_extract__0,verina_basic_48,reference,T2_helper_extract,unfold_add_helper,isPerfectSquare,isPerfectSquare__rp_helper_521a2256,True,False,proof_fails,unknown constant 'isPerfectSquare.check',VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_48__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_49__T2_helper_extract__0,verina_basic_49,reference,T2_helper_extract,unfold_add_helper,findFirstOdd,findFirstOdd__rp_helper_ae0c5502,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_49__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_4__T2_helper_extract__0,verina_basic_4,reference,T2_helper_extract,unfold_add_helper,kthElement,kthElement__rp_helper_837a29b3,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_4__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_50__T2_helper_extract__0,verina_basic_50,deepseek-prover-v2-7b,T2_helper_extract,simp_add_helper,Abs,Abs__rp_helper_4386b369,True,False,proof_fails,"unsolved goals
+x : ℤ
+h_precond : Abs_precond x
+h : x < 0
+⊢ Abs__rp_helper_4386b369 x h_precond = -x
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_50__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper.diff
+verina_basic_50__T2_helper_extract__0,verina_basic_50,goedel-prover-v2-32b,T2_helper_extract,dsimp_add_helper,Abs,Abs__rp_helper_4386b369,True,False,proof_fails,"tactic 'split_ifs' failed, no if-then-else conditions to split
+x : ℤ
+h_precond : Abs_precond x
+hx : x < 0
+⊢ Abs__rp_helper_4386b369 x h_precond = -x
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_50__T2_helper_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_50__T2_helper_extract__0,verina_basic_50,goedel-prover-v2-8b,T2_helper_extract,simp_add_helper,Abs,Abs__rp_helper_4386b369,True,False,proof_fails,"omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a ≤ -1
+  a + b ≤ -1
+where
+ a := x
+ b := Abs__rp_helper_4386b369 x h_precond
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_50__T2_helper_extract__0__goedel-prover-v2-8b__simp_add_helper.diff
+verina_basic_50__T2_helper_extract__0,verina_basic_50,reference,T2_helper_extract,simp_add_helper,Abs,Abs__rp_helper_4386b369,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,2,1,mechanical_repair_diffs/verina_basic_50__T2_helper_extract__0__reference__simp_add_helper.diff
+verina_basic_50__T5_branch_extract__0,verina_basic_50,deepseek-prover-v2-7b,T5_branch_extract,simp_add_helper,Abs,Abs__rp_branch_c6672445,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_50__T5_branch_extract__0__deepseek-prover-v2-7b__simp_add_helper.diff
+verina_basic_50__T5_branch_extract__0,verina_basic_50,goedel-prover-v2-32b,T5_branch_extract,dsimp_add_helper,Abs,Abs__rp_branch_c6672445,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_50__T5_branch_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_50__T5_branch_extract__0,verina_basic_50,goedel-prover-v2-8b,T5_branch_extract,simp_add_helper,Abs,Abs__rp_branch_c6672445,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_50__T5_branch_extract__0__goedel-prover-v2-8b__simp_add_helper.diff
+verina_basic_53__T2_helper_extract__0,verina_basic_53,reference,T2_helper_extract,unfold_add_helper,CalSum,CalSum__rp_helper_f974fb52,True,False,proof_fails,unknown constant 'CalSum.loop',VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_53__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_55__T2_helper_extract__0,verina_basic_55,deepseek-prover-v2-7b,T2_helper_extract,simp_add_helper,Compare,Compare__rp_helper_56630b5e,True,False,proof_fails,"unsolved goals
+case right
+a b : ℤ
+h_precond : Compare_precond a b
+h : ¬a = b
+⊢ Compare__rp_helper_56630b5e a b h_precond = false
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_55__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper.diff
+verina_basic_55__T2_helper_extract__0,verina_basic_55,goedel-prover-v2-32b,T2_helper_extract,simp_add_helper,Compare,Compare__rp_helper_56630b5e,True,False,proof_fails,"tactic 'aesop' failed, made no progress
+Initial goal:
+  a b : ℤ
+  h_precond : Compare_precond a b
+  h_ab_ne : ¬a = b
+  ⊢ Compare__rp_helper_56630b5e a b h_precond = false
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_55__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper.diff
+verina_basic_55__T2_helper_extract__0,verina_basic_55,goedel-prover-v2-8b,T2_helper_extract,simp_add_helper,Compare,Compare__rp_helper_56630b5e,True,False,proof_fails,"tactic 'aesop' failed, made no progress
+Initial goal:
+  a b : ℤ
+  h_precond : Compare_precond a b
+  h_ne : ¬a = b
+  ⊢ Compare__rp_helper_56630b5e a b h_precond = false
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_55__T2_helper_extract__0__goedel-prover-v2-8b__simp_add_helper.diff
+verina_basic_55__T2_helper_extract__0,verina_basic_55,reference,T2_helper_extract,unfold_add_helper,Compare,Compare__rp_helper_56630b5e,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_55__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_55__T5_branch_extract__0,verina_basic_55,reference,T5_branch_extract,unfold_add_helper,Compare,Compare__rp_branch_e4570326,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_55__T5_branch_extract__0__reference__unfold_add_helper.diff
+verina_basic_59__T2_helper_extract__0,verina_basic_59,deepseek-prover-v2-7b,T2_helper_extract,simp_add_helper,DoubleQuadruple,DoubleQuadruple__rp_helper_8062be2e,True,False,proof_fails,"tactic 'aesop' failed, made no progress
+Initial goal:
+  case right
+  x : ℤ
+  h_precond : DoubleQuadruple_precond x
+  ⊢ (DoubleQuadruple__rp_helper_8062be2e x h_precond).2 = (DoubleQuadruple__rp_helper_8062be2e x h_precond).1 * 2
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_59__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper.diff
+verina_basic_59__T2_helper_extract__0,verina_basic_59,goedel-prover-v2-32b,T2_helper_extract,dsimp_add_helper,DoubleQuadruple,DoubleQuadruple__rp_helper_8062be2e,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_59__T2_helper_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_59__T2_helper_extract__0,verina_basic_59,goedel-prover-v2-8b,T2_helper_extract,simp_add_helper,DoubleQuadruple,DoubleQuadruple__rp_helper_8062be2e,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_59__T2_helper_extract__0__goedel-prover-v2-8b__simp_add_helper.diff
+verina_basic_5__T2_helper_extract__0,verina_basic_5,goedel-prover-v2-32b,T2_helper_extract,dsimp_add_helper,multiply,multiply__rp_helper_3cc08e31,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_5__T2_helper_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_5__T2_helper_extract__0,verina_basic_5,goedel-prover-v2-8b,T2_helper_extract,simp_add_helper,multiply,multiply__rp_helper_3cc08e31,True,False,proof_fails,"simp_all made no progress
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_5__T2_helper_extract__0__goedel-prover-v2-8b__simp_add_helper.diff
+verina_basic_5__T2_helper_extract__0,verina_basic_5,reference,T2_helper_extract,unfold_add_helper,multiply,multiply__rp_helper_3cc08e31,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_5__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_66__T2_helper_extract__0,verina_basic_66,deepseek-prover-v2-7b,T2_helper_extract,unfold_add_helper,ComputeIsEven,ComputeIsEven__rp_helper_c370e361,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",1,1,mechanical_repair_diffs/verina_basic_66__T2_helper_extract__0__deepseek-prover-v2-7b__unfold_add_helper.diff
+verina_basic_66__T2_helper_extract__0,verina_basic_66,goedel-prover-v2-32b,T2_helper_extract,dsimp_add_helper,ComputeIsEven,ComputeIsEven__rp_helper_c370e361,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_66__T2_helper_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_66__T2_helper_extract__0,verina_basic_66,goedel-prover-v2-8b,T2_helper_extract,dsimp_add_helper,ComputeIsEven,ComputeIsEven__rp_helper_c370e361,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_66__T2_helper_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_basic_66__T2_helper_extract__0,verina_basic_66,reference,T2_helper_extract,unfold_add_helper,ComputeIsEven,ComputeIsEven__rp_helper_c370e361,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_66__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_66__T5_branch_extract__0,verina_basic_66,deepseek-prover-v2-7b,T5_branch_extract,unfold_add_helper,ComputeIsEven,ComputeIsEven__rp_branch_87fb4e70,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",1,1,mechanical_repair_diffs/verina_basic_66__T5_branch_extract__0__deepseek-prover-v2-7b__unfold_add_helper.diff
+verina_basic_66__T5_branch_extract__0,verina_basic_66,goedel-prover-v2-32b,T5_branch_extract,dsimp_add_helper,ComputeIsEven,ComputeIsEven__rp_branch_87fb4e70,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_66__T5_branch_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_66__T5_branch_extract__0,verina_basic_66,goedel-prover-v2-8b,T5_branch_extract,dsimp_add_helper,ComputeIsEven,ComputeIsEven__rp_branch_87fb4e70,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_66__T5_branch_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_basic_66__T5_branch_extract__0,verina_basic_66,reference,T5_branch_extract,unfold_add_helper,ComputeIsEven,ComputeIsEven__rp_branch_87fb4e70,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_66__T5_branch_extract__0__reference__unfold_add_helper.diff
+verina_basic_68__T2_helper_extract__0,verina_basic_68,reference,T2_helper_extract,unfold_add_helper,LinearSearch,LinearSearch__rp_helper_bd5bba3d,True,False,proof_fails,unknown constant 'LinearSearch.loop',VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_68__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_6__T2_helper_extract__0,verina_basic_6,deepseek-prover-v2-7b,T2_helper_extract,dsimp_add_helper,minOfThree,minOfThree__rp_helper_d6baf0a7,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_6__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper.diff
+verina_basic_6__T2_helper_extract__0,verina_basic_6,goedel-prover-v2-8b,T2_helper_extract,dsimp_add_helper,minOfThree,minOfThree__rp_helper_d6baf0a7,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_6__T2_helper_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_basic_6__T2_helper_extract__0,verina_basic_6,reference,T2_helper_extract,unfold_add_helper,minOfThree,minOfThree__rp_helper_d6baf0a7,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_6__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_6__T5_branch_extract__0,verina_basic_6,deepseek-prover-v2-7b,T5_branch_extract,dsimp_add_helper,minOfThree,minOfThree__rp_branch_73840f67,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_6__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper.diff
+verina_basic_6__T5_branch_extract__0,verina_basic_6,goedel-prover-v2-8b,T5_branch_extract,dsimp_add_helper,minOfThree,minOfThree__rp_branch_73840f67,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_6__T5_branch_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_basic_6__T5_branch_extract__0,verina_basic_6,reference,T5_branch_extract,unfold_add_helper,minOfThree,minOfThree__rp_branch_73840f67,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_6__T5_branch_extract__0__reference__unfold_add_helper.diff
+verina_basic_76__T2_helper_extract__0,verina_basic_76,deepseek-prover-v2-7b,T2_helper_extract,simp_add_helper,myMin,myMin__rp_helper_5e5dcb4d,True,False,proof_fails,"tactic 'aesop' failed, made no progress
+Initial goal:
+  case left
+  x y : ℤ
+  h_precond : myMin_precond x y
+  h : x ≤ y
+  h₁ : y ≤ x → y = x
+  ⊢ myMin__rp_helper_5e5dcb4d x y h_precond = x","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_76__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper.diff
+verina_basic_76__T2_helper_extract__0,verina_basic_76,goedel-prover-v2-32b,T2_helper_extract,simp_add_helper,myMin,myMin__rp_helper_5e5dcb4d,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_76__T2_helper_extract__0__goedel-prover-v2-32b__simp_add_helper.diff
+verina_basic_76__T2_helper_extract__0,verina_basic_76,goedel-prover-v2-8b,T2_helper_extract,dsimp_add_helper,myMin,myMin__rp_helper_5e5dcb4d,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_76__T2_helper_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_basic_76__T2_helper_extract__0,verina_basic_76,reference,T2_helper_extract,unfold_add_helper,myMin,myMin__rp_helper_5e5dcb4d,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_76__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_76__T5_branch_extract__0,verina_basic_76,goedel-prover-v2-32b,T5_branch_extract,simp_add_helper,myMin,myMin__rp_branch_b558f2ed,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_76__T5_branch_extract__0__goedel-prover-v2-32b__simp_add_helper.diff
+verina_basic_76__T5_branch_extract__0,verina_basic_76,goedel-prover-v2-8b,T5_branch_extract,dsimp_add_helper,myMin,myMin__rp_branch_b558f2ed,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_76__T5_branch_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_basic_76__T5_branch_extract__0,verina_basic_76,reference,T5_branch_extract,unfold_add_helper,myMin,myMin__rp_branch_b558f2ed,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_76__T5_branch_extract__0__reference__unfold_add_helper.diff
+verina_basic_78__T2_helper_extract__0,verina_basic_78,deepseek-prover-v2-7b,T2_helper_extract,simp_add_helper,MultipleReturns,MultipleReturns__rp_helper_39d93fc9,True,False,proof_fails,"linarith failed to find a contradiction
+case h1.h
+x y : ℤ
+h_precond : MultipleReturns_precond x y
+h1 : (MultipleReturns x y h_precond).1 = x + y
+a✝ : y + (MultipleReturns__rp_helper_39d93fc9 x y h_precond).2 < x
+⊢ False failed
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_78__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper.diff
+verina_basic_78__T2_helper_extract__0,verina_basic_78,goedel-prover-v2-32b,T2_helper_extract,dsimp_add_helper,MultipleReturns,MultipleReturns__rp_helper_39d93fc9,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_78__T2_helper_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_78__T2_helper_extract__0,verina_basic_78,goedel-prover-v2-8b,T2_helper_extract,dsimp_add_helper,MultipleReturns,MultipleReturns__rp_helper_39d93fc9,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_78__T2_helper_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_basic_78__T2_helper_extract__0,verina_basic_78,reference,T2_helper_extract,unfold_add_helper,MultipleReturns,MultipleReturns__rp_helper_39d93fc9,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_78__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_81__T2_helper_extract__0,verina_basic_81,reference,T2_helper_extract,unfold_add_helper,DivisionFunction,DivisionFunction__rp_helper_e90423eb,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_81__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_81__T5_branch_extract__0,verina_basic_81,reference,T5_branch_extract,unfold_add_helper,DivisionFunction,DivisionFunction__rp_branch_e20d15dc,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_81__T5_branch_extract__0__reference__unfold_add_helper.diff
+verina_basic_88__T2_helper_extract__0,verina_basic_88,deepseek-prover-v2-7b,T2_helper_extract,simp_add_helper,ToArray,ToArray__rp_helper_a2d904a6,True,False,proof_fails,"unknown constant 'List.get_toArray'
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_88__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper.diff
+verina_basic_8__T2_helper_extract__0,verina_basic_8,deepseek-prover-v2-7b,T2_helper_extract,dsimp_add_helper,myMin,myMin__rp_helper_829c4a21,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_8__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper.diff
+verina_basic_8__T2_helper_extract__0,verina_basic_8,goedel-prover-v2-32b,T2_helper_extract,dsimp_add_helper,myMin,myMin__rp_helper_829c4a21,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_8__T2_helper_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_8__T2_helper_extract__0,verina_basic_8,goedel-prover-v2-8b,T2_helper_extract,dsimp_add_helper,myMin,myMin__rp_helper_829c4a21,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_8__T2_helper_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_basic_8__T2_helper_extract__0,verina_basic_8,reference,T2_helper_extract,unfold_add_helper,myMin,myMin__rp_helper_829c4a21,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_8__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_8__T5_branch_extract__0,verina_basic_8,deepseek-prover-v2-7b,T5_branch_extract,dsimp_add_helper,myMin,myMin__rp_branch_c77e3e9a,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_8__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper.diff
+verina_basic_8__T5_branch_extract__0,verina_basic_8,goedel-prover-v2-32b,T5_branch_extract,dsimp_add_helper,myMin,myMin__rp_branch_c77e3e9a,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_8__T5_branch_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_8__T5_branch_extract__0,verina_basic_8,goedel-prover-v2-8b,T5_branch_extract,dsimp_add_helper,myMin,myMin__rp_branch_c77e3e9a,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_8__T5_branch_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_basic_8__T5_branch_extract__0,verina_basic_8,reference,T5_branch_extract,unfold_add_helper,myMin,myMin__rp_branch_c77e3e9a,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_8__T5_branch_extract__0__reference__unfold_add_helper.diff
+verina_basic_91__T2_helper_extract__0,verina_basic_91,deepseek-prover-v2-7b,T2_helper_extract,dsimp_add_helper,Swap,Swap__rp_helper_6bee5f12,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_91__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper.diff
+verina_basic_91__T2_helper_extract__0,verina_basic_91,goedel-prover-v2-32b,T2_helper_extract,dsimp_add_helper,Swap,Swap__rp_helper_6bee5f12,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_91__T2_helper_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_91__T2_helper_extract__0,verina_basic_91,reference,T2_helper_extract,unfold_add_helper,Swap,Swap__rp_helper_6bee5f12,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_91__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_92__T2_helper_extract__0,verina_basic_92,deepseek-prover-v2-7b,T2_helper_extract,dsimp_add_helper,SwapArithmetic,SwapArithmetic__rp_helper_2265221a,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_92__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper.diff
+verina_basic_92__T2_helper_extract__0,verina_basic_92,goedel-prover-v2-32b,T2_helper_extract,dsimp_add_helper,SwapArithmetic,SwapArithmetic__rp_helper_2265221a,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_92__T2_helper_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_92__T2_helper_extract__0,verina_basic_92,goedel-prover-v2-8b,T2_helper_extract,dsimp_add_helper,SwapArithmetic,SwapArithmetic__rp_helper_2265221a,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_92__T2_helper_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_basic_92__T2_helper_extract__0,verina_basic_92,reference,T2_helper_extract,unfold_add_helper,SwapArithmetic,SwapArithmetic__rp_helper_2265221a,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_92__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_95__T2_helper_extract__0,verina_basic_95,reference,T2_helper_extract,unfold_add_helper,swap,swap__rp_helper_d46bfdfe,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_95__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_96__T2_helper_extract__0,verina_basic_96,reference,T2_helper_extract,unfold_add_helper,SwapSimultaneous,SwapSimultaneous__rp_helper_5fb3d255,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_96__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_97__T2_helper_extract__0,verina_basic_97,reference,T2_helper_extract,unfold_add_helper,TestArrayElements,TestArrayElements__rp_helper_9bca1c3a,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_97__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_98__T2_helper_extract__0,verina_basic_98,deepseek-prover-v2-7b,T2_helper_extract,simp_add_helper,Triple,Triple__rp_helper_c4a61f58,True,False,proof_fails,"omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  -2 ≤ 3*a - b ≤ 0
+  3*a - c ≥ 1
+where
+ a := x
+ b := Triple x h_precond
+ c := Triple__rp_helper_c4a61f58 x h_precond","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_98__T2_helper_extract__0__deepseek-prover-v2-7b__simp_add_helper.diff
+verina_basic_98__T2_helper_extract__0,verina_basic_98,reference,T2_helper_extract,unfold_add_helper,Triple,Triple__rp_helper_c4a61f58,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_98__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_99__T2_helper_extract__0,verina_basic_99,deepseek-prover-v2-7b,T2_helper_extract,dsimp_add_helper,Triple,Triple__rp_helper_5b862de8,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_99__T2_helper_extract__0__deepseek-prover-v2-7b__dsimp_add_helper.diff
+verina_basic_99__T2_helper_extract__0,verina_basic_99,goedel-prover-v2-32b,T2_helper_extract,dsimp_add_helper,Triple,Triple__rp_helper_5b862de8,True,False,proof_fails,"tactic 'split_ifs' failed, no if-then-else conditions to split
+x : ℤ
+h_precond : Triple_precond x
+h_main h₁ : Triple x h_precond / 3 = x
+h₂ : Triple x h_precond / 3 * 3 = x * 3
+⊢ Triple__rp_helper_5b862de8 x h_precond = 3 * x
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_99__T2_helper_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_99__T2_helper_extract__0,verina_basic_99,goedel-prover-v2-8b,T2_helper_extract,dsimp_add_helper,Triple,Triple__rp_helper_5b862de8,True,False,proof_fails,"linarith failed to find a contradiction
+case h1.h
+x : ℤ
+h_precond : Triple_precond x
+h : 18 ≤ x
+a✝ : Triple__rp_helper_5b862de8 x h_precond < x * 3
+⊢ False failed
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_99__T2_helper_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_basic_99__T2_helper_extract__0,verina_basic_99,reference,T2_helper_extract,unfold_add_helper,Triple,Triple__rp_helper_5b862de8,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_99__T2_helper_extract__0__reference__unfold_add_helper.diff
+verina_basic_99__T5_branch_extract__0,verina_basic_99,deepseek-prover-v2-7b,T5_branch_extract,dsimp_add_helper,Triple,Triple__rp_branch_609232c2,True,True,survives,,"primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_99__T5_branch_extract__0__deepseek-prover-v2-7b__dsimp_add_helper.diff
+verina_basic_99__T5_branch_extract__0,verina_basic_99,goedel-prover-v2-32b,T5_branch_extract,dsimp_add_helper,Triple,Triple__rp_branch_609232c2,True,False,proof_fails,"omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a ≥ 18
+  -2 ≤ 3*a - b ≤ 0
+  3*a - c ≥ 1
+where
+ a := x
+ b := Triple x h_precond
+ c := Triple__rp_branch_609232c2 x h_precond
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_99__T5_branch_extract__0__goedel-prover-v2-32b__dsimp_add_helper.diff
+verina_basic_99__T5_branch_extract__0,verina_basic_99,goedel-prover-v2-8b,T5_branch_extract,dsimp_add_helper,Triple,Triple__rp_branch_609232c2,True,False,proof_fails,"linarith failed to find a contradiction
+case h1.h
+x : ℤ
+h_precond : Triple_precond x
+h : 18 ≤ x
+a✝ : (if x < 18 then x * 6 / 2 else Triple__rp_branch_609232c2 x h_precond) < x * 3
+⊢ False failed
+","primary row of results/model_proofs.jsonl, proof hash verified",2,1,mechanical_repair_diffs/verina_basic_99__T5_branch_extract__0__goedel-prover-v2-8b__dsimp_add_helper.diff
+verina_basic_99__T5_branch_extract__0,verina_basic_99,reference,T5_branch_extract,unfold_add_helper,Triple,Triple__rp_branch_609232c2,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_99__T5_branch_extract__0__reference__unfold_add_helper.diff
+verina_basic_9__T2_helper_extract__0,verina_basic_9,reference,T2_helper_extract,unfold_add_helper,hasCommonElement,hasCommonElement__rp_helper_db5fe7c5,True,True,survives,,VERINA task.lean proof/proof_aux/import blocks,1,1,mechanical_repair_diffs/verina_basic_9__T2_helper_extract__0__reference__unfold_add_helper.diff

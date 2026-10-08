@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_3",
+ "variant_id": "verina_basic_3__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__hard_unfold",
+ "generation_attempt": 2,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "type_mismatch",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.192,
+ "proof_region_errors": [
+  "type mismatch, term\n  h\nafter simplification has type\n  isDivisibleBy11__rp_helper_c39b37ae n h_precond = true : Prop\nbut is expected to have type\n  11 ∣ n : Prop",
+  "type mismatch, term\n  h₂\nafter simplification has type\n  11 ∣ n : Prop\nbut is expected to have type\n  isDivisibleBy11__rp_helper_c39b37ae n h_precond = true : Prop\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "451d135bf02195916eaf48e522d8fd520ff63670c2c06d64cae66938c0ed4eae",
+ "spec_hash": "2f01b2a2c66c6b65fb25ac619f4002a4b7ba13ae770c8c7faffc8784d450d630",
+ "proof_text": "  unfold isDivisibleBy11 isDivisibleBy11_postcond\n  have h_main₁ : (isDivisibleBy11 (n) h_precond → (∃ k : Int, n = 11 * k)) := by\n    intro h\n    have h₁ : n % 11 = 0 := by simpa [isDivisibleBy11] using h\n    have h₂ : n = 11 * (n / 11) := by\n      have h₃ : n % 11 = 0 := h₁\n      have h₄ : n = 11 * (n / 11) + (n % 11) := by\n        rw [Int.emod_def]\n        <;> ring_nf\n        <;> omega\n      rw [h₃] at h₄\n      linarith\n    exact ⟨n / 11, by linarith⟩\n\n  have h_main₂ : (¬ isDivisibleBy11 (n) h_precond → (∀ k : Int, ¬ n = 11 * k)) := by\n    intro h\n    intro k hk\n    have h₁ : n % 11 ≠ 0 := by\n      intro h₂\n      apply h\n      simpa [isDivisibleBy11] using h₂\n    have h₂ : n % 11 = 0 := by\n      have h₃ : n = 11 * k := hk\n      rw [h₃]\n      simp [Int.mul_emod, Int.emod_emod]\n    contradiction\n\n  constructor\n  · -- Prove the first part: (isDivisibleBy11 (n) h_precond → (∃ k : Int, n = 11 * k))\n    exact h_main₁\n  · -- Prove the second part: (¬ isDivisibleBy11 (n) h_precond → (∀ k : Int, ¬ n = 11 * k))\n    exact h_main₂\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "hard_unfold"
+}

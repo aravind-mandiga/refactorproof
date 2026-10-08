@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_27/verina_basic_27__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_27/verina_basic_27__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_27/verina_basic_27__T1_let_intro__0.lean:14:35: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_27/verina_basic_27__T1_let_intro__0.lean:23:40: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_27/verina_basic_27__T1_let_intro__0.lean:40:40: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_27/verina_basic_27__T1_let_intro__0.lean:60:90: error: type mismatch\n  rfl\nhas type\n  ?m.27695 = ?m.27695 : Prop\nbut is expected to have type\n  RPOrig.findFirstRepeatedChar s h_precond = RPRef.findFirstRepeatedChar s h_precond : Prop\nartifacts/certificates/verina_basic_27/verina_basic_27__T1_let_intro__0.lean:64:90: error: type mismatch\n  rfl\nhas type\n  ?m.27788 = ?m.27788 : Prop\nbut is expected to have type\n  RPOrig.findFirstRepeatedChar s h_precond = RPRef.findFirstRepeatedChar s h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 1.106,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 35,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 40,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 60,
+   "col": 90,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.27695 = ?m.27695 : Prop\nbut is expected to have type\n  RPOrig.findFirstRepeatedChar s h_precond = RPRef.findFirstRepeatedChar s h_precond : Prop"
+  },
+  {
+   "line": 64,
+   "col": 90,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.27788 = ?m.27788 : Prop\nbut is expected to have type\n  RPOrig.findFirstRepeatedChar s h_precond = RPRef.findFirstRepeatedChar s h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_13",
+ "variant_id": "verina_basic_13__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  cubeElements__rp_helper_2cb44842 a h_precond\n",
+ "transformed_code_aux": "\nprivate def cubeElements__rp_helper_2cb44842 (a : Array Int) (h_precond : cubeElements_precond (a)) : Array Int :=\n  a.map (fun x => x * x * x)\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "cubeElements__rp_helper_2cb44842"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "af894eff89370af68f9d84119f04d12450404afdfde79f9c0dcd0205721fbb15",
+ "proof_hash": "dd2d5c281fe7d638b715a52de1908845611a7cc0afe57644562dbf6b1d011911",
+ "code_hash_original": "e5461a600d3dcae23cc8329789feb774faf9d2b6353923a6e87156320fd7da3a",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "cubeElements",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_46",
+ "variant_id": "verina_basic_46__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  lastPosition__rp_helper_e19f1960 arr elem h_precond\n",
+ "transformed_code_aux": "\nprivate def lastPosition__rp_helper_e19f1960 (arr : Array Int) (elem : Int) (h_precond : lastPosition_precond (arr) (elem)) : Int :=\n  let rec loop (i : Nat) (pos : Int) : Int :=\n    if i < arr.size then\n      let a := arr[i]!\n      if a = elem then loop (i + 1) i\n      else loop (i + 1) pos\n    else pos\n  loop 0 (-1)\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "lastPosition__rp_helper_e19f1960"
+ ],
+ "metadata": {
+  "binders": [
+   "arr",
+   "elem",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "49e86cf39f56a9d3a50ede4de348863a5efc2e226bae5b7e02f39e101fb10048",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "17142648c9ef6d3f1e9324c3e7ba69c2cbba7b9e24585bb27e62fde94aa4c1da",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "lastPosition",
+ "code_loc_original": 7,
+ "code_loc_refactored": 9
+}

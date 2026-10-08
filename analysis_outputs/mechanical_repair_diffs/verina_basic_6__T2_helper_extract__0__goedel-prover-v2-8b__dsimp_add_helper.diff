@@ -1,0 +1,11 @@
+--- goedel-prover-v2-8b:verina_basic_6__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_6__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : minOfThree_postcond (a) (b) (c) (minOfThree (a) (b) (c) h_precond) h_precond := by
+-    dsimp only [minOfThree, minOfThree_precond, minOfThree_postcond] at *
++    dsimp only [minOfThree, minOfThree_precond, minOfThree_postcond, minOfThree__rp_helper_d6baf0a7] at *
+     split_ifs at * <;>
+     (try { contradiction }) <;>
+     (try {
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

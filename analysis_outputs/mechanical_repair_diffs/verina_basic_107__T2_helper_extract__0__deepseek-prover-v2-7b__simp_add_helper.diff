@@ -1,0 +1,12 @@
+--- deepseek-prover-v2-7b:verina_basic_107__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_107__T2_helper_extract__0 (simp_add_helper)
+@@ -1,6 +1,6 @@
+   have h : 2 * (ComputeAvg (a) (b) h_precond) = a + b - ((a + b) % 2) := by
+     have h₁ : 2 * (ComputeAvg (a) (b) h_precond) = 2 * ((a + b) / 2) := by
+-      simp [ComputeAvg]
++      simp [ComputeAvg, ComputeAvg__rp_helper_860051f2]
+     rw [h₁]
+     have h₂ : a + b - ((a + b) % 2) = 2 * ((a + b) / 2) := by
+       have h₃ : a + b = 2 * ((a + b) / 2) + ((a + b) % 2) := by
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_78__T2_helper_extract__0",
+ "task_id": "verina_basic_78",
+ "source": "deepseek-prover-v2-7b",
+ "transformation": "T2_helper_extract",
+ "template": "simp_add_helper",
+ "function_name": "MultipleReturns",
+ "helper": "MultipleReturns__rp_helper_39d93fc9",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": false,
+ "outcome": "proof_fails",
+ "first_error": "linarith failed to find a contradiction\ncase h1.h\nx y : \u2124\nh_precond : MultipleReturns_precond x y\nh1 : (MultipleReturns x y h_precond).1 = x + y\na\u271d : y + (MultipleReturns__rp_helper_39d93fc9 x y h_precond).2 < x\n\u22a2 False failed\n",
+ "proof_before": "  have h1 : (MultipleReturns (x) (y) h_precond).1 = x + y := by\n    simp [MultipleReturns, MultipleReturns_precond, h_precond]\n    <;> rfl\n\n  have h2 : (MultipleReturns (x) (y) h_precond).2 + y = x := by\n    simp [MultipleReturns, MultipleReturns_precond, h_precond]\n    <;> ring\n    <;> simp_all [Int.add_comm, Int.add_left_comm, Int.add_assoc]\n    <;> linarith\n\n  have h_main : MultipleReturns_postcond (x) (y) (MultipleReturns (x) (y) h_precond) h_precond := by\n    constructor\n    \u00b7 -- Prove the first part of the postcondition: (MultipleReturns (x) (y) h_precond).1 = x + y\n      exact h1\n    \u00b7 -- Prove the second part of the postcondition: (MultipleReturns (x) (y) h_precond).2 + y = x\n      exact h2\n\n  exact h_main\n",
+ "proof_after": "  have h1 : (MultipleReturns (x) (y) h_precond).1 = x + y := by\n    simp [MultipleReturns, MultipleReturns_precond, h_precond, MultipleReturns__rp_helper_39d93fc9]\n    <;> rfl\n\n  have h2 : (MultipleReturns (x) (y) h_precond).2 + y = x := by\n    simp [MultipleReturns, MultipleReturns_precond, h_precond]\n    <;> ring\n    <;> simp_all [Int.add_comm, Int.add_left_comm, Int.add_assoc]\n    <;> linarith\n\n  have h_main : MultipleReturns_postcond (x) (y) (MultipleReturns (x) (y) h_precond) h_precond := by\n    constructor\n    \u00b7 -- Prove the first part of the postcondition: (MultipleReturns (x) (y) h_precond).1 = x + y\n      exact h1\n    \u00b7 -- Prove the second part of the postcondition: (MultipleReturns (x) (y) h_precond).2 + y = x\n      exact h2\n\n  exact h_main\n"
+}

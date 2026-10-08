@@ -1,0 +1,115 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:14:23: warning: unused variable `sub`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:14:40: warning: unused variable `main`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:23:50: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:44:50: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:66:80: error: type mismatch\n  rfl\nhas type\n  ?m.6211 = ?m.6211 : Prop\nbut is expected to have type\n  RPOrig.isSublist sub main h_precond = RPRef.isSublist sub main h_precond : Prop\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:70:80: error: type mismatch\n  rfl\nhas type\n  ?m.7529 = ?m.7529 : Prop\nbut is expected to have type\n  RPOrig.isSublist sub main h_precond = RPRef.isSublist sub main h_precond : Prop\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:75:2: error: tactic 'rfl' failed, the left-hand side\n  let subLen := sub.length;\n  let mainLen := main.length;\n  if subLen > mainLen then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + subLen > mainLen then false\n        else\n          if h : sub = List.take subLen (List.drop i main) then true\n          else if h : i + 1 ≤ mainLen then a (i + 1) ⋯ else false)\n      0\nis not definitionally equal to the right-hand side\n  let subLen := sub.length;\n  let mainLen := main.length;\n  if subLen > mainLen then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + subLen > mainLen then false\n        else\n          if h : sub = List.take subLen (List.drop i main) then true\n          else if h : i + 1 ≤ mainLen then a (1 + i) ⋯ else false)\n      0\nsub main : List Int\nh_precond : isSublist_precond sub main\n⊢ (let subLen := sub.length;\n    let mainLen := main.length;\n    if subLen > mainLen then false\n    else\n      ⋯.fix\n        (fun i a =>\n          if h : i + subLen > mainLen then false\n          else\n            if h : sub = List.take subLen (List.drop i main) then true\n            else if h : i + 1 ≤ mainLen then a (i + 1) ⋯ else false)\n        0) =\n    let subLen := sub.length;\n    let mainLen := main.length;\n    if subLen > mainLen then false\n    else\n      ⋯.fix\n        (fun i a =>\n          if h : i + subLen > mainLen then false\n          else\n            if h : sub = List.take subLen (List.drop i main) then true\n            else if h : i + 1 ≤ mainLen then a (1 + i) ⋯ else false)\n        0\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:83:202: error: tactic 'rfl' failed, the left-hand side\n  if sub.length > main.length then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n      0\nis not definitionally equal to the right-hand side\n  if sub.length > main.length then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (1 + i) ⋯ else false)\n      0\nsub main : List Int\nh_precond : isSublist_precond sub main\n⊢ (if sub.length > main.length then false\n    else\n      ⋯.fix\n        (fun i a =>\n          if h : i + sub.length > main.length then false\n          else\n            if h : sub = List.take sub.length (List.drop i main) then true\n            else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n        0) =\n    if sub.length > main.length then false\n    else\n      ⋯.fix\n        (fun i a =>\n          if h : i + sub.length > main.length then false\n          else\n            if h : sub = List.take sub.length (List.drop i main) then true\n            else if h : i + 1 ≤ main.length then a (1 + i) ⋯ else false)\n        0\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:78:80: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:78:80: error: unknown metavariable '?_uniq.23486'\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:91:197: error: tactic 'rfl' failed, the left-hand side\n  !decide (main.length < sub.length) &&\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n      0\nis not definitionally equal to the right-hand side\n  !decide (main.length < sub.length) &&\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (1 + i) ⋯ else false)\n      0\nsub main : List Int\nh_precond : isSublist_precond sub main\n⊢ (!decide (main.length < sub.length) &&\n      ⋯.fix\n        (fun i a =>\n          if h : i + sub.length > main.length then false\n          else\n            if h : sub = List.take sub.length (List.drop i main) then true\n            else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n        0) =\n    (!decide (main.length < sub.length) &&\n      ⋯.fix\n        (fun i a =>\n          if h : i + sub.length > main.length then false\n          else\n            if h : sub = List.take sub.length (List.drop i main) then true\n            else if h : i + 1 ≤ main.length then a (1 + i) ⋯ else false)\n        0)\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:86:80: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:86:80: error: unknown metavariable '?_uniq.38935'\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:95:218: error: tactic 'rfl' failed, the left-hand side\n  if sub.length > main.length then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n      0\nis not definitionally equal to the right-hand side\n  if sub.length > main.length then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (1 + i) ⋯ else false)\n      0\nsub main : List Int\nh_precond : isSublist_precond sub main\n⊢ (if sub.length > main.length then false\n    else\n      ⋯.fix\n        (fun i a =>\n          if h : i + sub.length > main.length then false\n          else\n            if h : sub = List.take sub.length (List.drop i main) then true\n            else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n        0) =\n    if sub.length > main.length then false\n    else\n      ⋯.fix\n        (fun i a =>\n          if h : i + sub.length > main.length then false\n          else\n            if h : sub = List.take sub.length (List.drop i main) then true\n            else if h : i + 1 ≤ main.length then a (1 + i) ⋯ else false)\n        0\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:94:80: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_21/verina_basic_21__T3_comm_swap__2.lean:94:80: error: unknown metavariable '?_uniq.43834'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.777,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 23,
+   "severity": "warning",
+   "text": "unused variable `sub`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 14,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `main`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 50,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 44,
+   "col": 50,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 66,
+   "col": 80,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.6211 = ?m.6211 : Prop\nbut is expected to have type\n  RPOrig.isSublist sub main h_precond = RPRef.isSublist sub main h_precond : Prop"
+  },
+  {
+   "line": 70,
+   "col": 80,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.7529 = ?m.7529 : Prop\nbut is expected to have type\n  RPOrig.isSublist sub main h_precond = RPRef.isSublist sub main h_precond : Prop"
+  },
+  {
+   "line": 75,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  let subLen := sub.length;\n  let mainLen := main.length;\n  if subLen > mainLen then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + subLen > mainLen then false\n        else\n          if h : sub = List.take subLen (List.drop i main) then true\n          else if h : i + 1 ≤ mainLen then a (i + 1) ⋯ else false)\n      0\nis not definitionally equal to the right-hand side\n  let subLen := sub.length;\n  let mainLen := main.length;\n  if subLen > mainLen then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + subLen > mainLen then false\n        else\n          if h : sub = List.take subLen (List.drop i main) then true\n          else if h : i + 1 ≤ mainLen then a (1 + i) ⋯ else false)\n      0\nsub main : List Int\nh_precond : isSublist_precond sub main\n⊢ (let subLen := sub.length;\n    let mainLen := main.length;\n    if subLen > mainLen then false\n    else\n      ⋯.fix\n        (fun i a =>\n          if h : i + subLen > mainLen then false\n          else\n            if h : sub = List.take subLen (List.drop i main) then true\n            else if h : i + 1 ≤ mainLen then a (i + 1) ⋯ else false)\n        0) =\n    let subLen := sub.length;\n    let mainLen := main.length;\n    if subLen > mainLen then false\n    else\n      ⋯.fix\n        (fun i a =>\n          if h : i + subLen > mainLen then false\n          else\n            if h : sub = List.take subLen (List.drop i main) then true\n            else if h : i + 1 ≤ mainLen then a (1 + i) ⋯ else false)\n        0"
+  },
+  {
+   "line": 83,
+   "col": 202,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if sub.length > main.length then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n      0\nis not definitionally equal to the right-hand side\n  if sub.length > main.length then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (1 + i) ⋯ else false)\n      0\nsub main : List Int\nh_precond : isSublist_precond sub main\n⊢ (if sub.length > main.length then false\n    else\n      ⋯.fix\n        (fun i a =>\n          if h : i + sub.length > main.length then false\n          else\n            if h : sub = List.take sub.length (List.drop i main) then true\n            else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n        0) =\n    if sub.length > main.length then false\n    else\n      ⋯.fix\n        (fun i a =>\n          if h : i + sub.length > main.length then false\n          else\n            if h : sub = List.take sub.length (List.drop i main) then true\n            else if h : i + 1 ≤ main.length then a (1 + i) ⋯ else false)\n        0"
+  },
+  {
+   "line": 78,
+   "col": 80,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 78,
+   "col": 80,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.23486'"
+  },
+  {
+   "line": 91,
+   "col": 197,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  !decide (main.length < sub.length) &&\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n      0\nis not definitionally equal to the right-hand side\n  !decide (main.length < sub.length) &&\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (1 + i) ⋯ else false)\n      0\nsub main : List Int\nh_precond : isSublist_precond sub main\n⊢ (!decide (main.length < sub.length) &&\n      ⋯.fix\n        (fun i a =>\n          if h : i + sub.length > main.length then false\n          else\n            if h : sub = List.take sub.length (List.drop i main) then true\n            else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n        0) =\n    (!decide (main.length < sub.length) &&\n      ⋯.fix\n        (fun i a =>\n          if h : i + sub.length > main.length then false\n          else\n            if h : sub = List.take sub.length (List.drop i main) then true\n            else if h : i + 1 ≤ main.length then a (1 + i) ⋯ else false)\n        0)"
+  },
+  {
+   "line": 86,
+   "col": 80,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 86,
+   "col": 80,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.38935'"
+  },
+  {
+   "line": 95,
+   "col": 218,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if sub.length > main.length then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n      0\nis not definitionally equal to the right-hand side\n  if sub.length > main.length then false\n  else\n    ⋯.fix\n      (fun i a =>\n        if h : i + sub.length > main.length then false\n        else\n          if h : sub = List.take sub.length (List.drop i main) then true\n          else if h : i + 1 ≤ main.length then a (1 + i) ⋯ else false)\n      0\nsub main : List Int\nh_precond : isSublist_precond sub main\n⊢ (if sub.length > main.length then false\n    else\n      ⋯.fix\n        (fun i a =>\n          if h : i + sub.length > main.length then false\n          else\n            if h : sub = List.take sub.length (List.drop i main) then true\n            else if h : i + 1 ≤ main.length then a (i + 1) ⋯ else false)\n        0) =\n    if sub.length > main.length then false\n    else\n      ⋯.fix\n        (fun i a =>\n          if h : i + sub.length > main.length then false\n          else\n            if h : sub = List.take sub.length (List.drop i main) then true\n            else if h : i + 1 ≤ main.length then a (1 + i) ⋯ else false)\n        0"
+  },
+  {
+   "line": 94,
+   "col": 80,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 94,
+   "col": 80,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.43834'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

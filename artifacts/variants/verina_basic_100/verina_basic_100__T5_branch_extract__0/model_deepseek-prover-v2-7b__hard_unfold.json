@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_100",
+ "variant_id": "verina_basic_100__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b__hard_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "other",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 11.393,
+ "proof_region_errors": [
+  "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  -2 ≤ 3*b - c ≤ 0\n  a ≤ -1\n  a - b ≥ 1\nwhere\n a := x\n b := Triple__rp_branch_9f218861 x h_precond / 3\n c := Triple__rp_branch_9f218861 x h_precond\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "ab6c40881812f7df193ba57e079b37bdeabaf19a758a0a9f8960a178557e61c7",
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c",
+ "proof_text": "  unfold Triple Triple_postcond\n  have h_main : Triple_postcond (x) (Triple (x) h_precond) h_precond := by\n    dsimp [Triple, Triple_postcond, Triple_precond] at *\n    split_ifs with h\n    · -- Case: x = 0\n      simp_all (config := {decide := true})\n    · -- Case: x ≠ 0\n      have h₁ : (3 * x) / 3 = x := by\n        -- Prove that (3 * x) / 3 = x for x ≠ 0\n        have h₂ : x ≠ 0 := by simpa using h\n        have h₃ : (3 * x) / 3 = x := by\n          omega\n        exact h₃\n      have h₂ : (3 * x) / 3 * 3 = 3 * x := by\n        -- Prove that ((3 * x) / 3) * 3 = 3 * x\n        have h₃ : (3 * x) / 3 * 3 = 3 * x := by\n          omega\n        exact h₃\n      simp_all (config := {decide := true}) <;> omega\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "hard_unfold"
+}

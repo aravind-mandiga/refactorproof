@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_54",
+ "variant_id": "verina_basic_54__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_767dd6b5 : Nat :=\n    let init : Nat :=\n      if a[0]! < b[0]! then (b[0]! - a[0]!).natAbs\n      else (a[0]! - b[0]!).natAbs\n    canyonSearchAux a b 0 0 init\n  __rp_tmp_767dd6b5\n",
+ "transformed_code_aux": "def canyonSearchAux (a : Array Int) (b : Array Int) (m n d : Nat) : Nat :=\n  if m < a.size ∧ n < b.size then\n    let diff : Nat := ((a[m]! - b[n]!).natAbs)\n    let new_d := if diff < d then diff else d\n    if a[m]! <= b[n]! then\n      canyonSearchAux a b (m + 1) n new_d\n    else\n      canyonSearchAux a b m (n + 1) new_d\n  else\n    d\ntermination_by a.size + b.size - m - n\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_767dd6b5",
+  "seed": 0
+ },
+ "spec_hash": "8469b17786710a119cb4af2393c71fdcb20e4f9442d75227e9c0cd5e4f083379",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "0f12808ba382a17408207a42a542d121f4077dbe6284446152ed055ab3a98fef",
+ "code_aux_hash_original": "1bb95fd1476d23c091215bab5258c81c4107585b3123d1089c5ba4da6b77841d",
+ "tier": "basic",
+ "function_name": "CanyonSearch",
+ "code_loc_original": 4,
+ "code_loc_refactored": 6
+}

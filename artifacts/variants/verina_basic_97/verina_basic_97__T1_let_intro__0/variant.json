@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_97",
+ "variant_id": "verina_basic_97__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_21a440b8 : Array Int :=\n    a.set! j 60\n  __rp_tmp_21a440b8\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_21a440b8",
+  "seed": 0
+ },
+ "spec_hash": "86342cdca20933506b809c908e8d05c1000625921d59749b3f4240025f6e2c40",
+ "proof_hash": "6a15a3eee4643d452e205e161eca9ce2eed53b77249c5486c8368cf0e1d84636",
+ "code_hash_original": "f8bafb504d5ca8cb82d46233c10a134217b8b1001d711a7f9af4f8a91b7bc577",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "TestArrayElements",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

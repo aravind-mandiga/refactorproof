@@ -1,0 +1,66 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_28",
+ "variant_id": "verina_advanced_28__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_28/verina_advanced_28__T1_let_intro__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 24.762,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "variant_does_not_elaborate",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.9887 = ?m.9887 : Prop\nbut is expected to have type\n  RPOrig.longestConsecutive nums h_precond = RPRef.longestConsecutive nums h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.9987 = ?m.9987 : Prop\nbut is expected to have type\n  RPOrig.longestConsecutive nums h_precond = RPRef.longestConsecutive nums h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": true,
+   "errors": []
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'delta' failed, did not delta reduce [RPOrig.longestConsecutive, RPRef.longestConsecutive]\nnums : List ℤ\nh_precond : longestConsecutive_precond nums\n⊢ sorry nums h_precond = sorry nums h_precond"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'delta' failed, did not delta reduce [RPOrig.longestConsecutive, RPRef.longestConsecutive]\nnums : List ℤ\nh_precond : longestConsecutive_precond nums\n⊢ sorry nums h_precond = sorry nums h_precond\n"
+   ]
+  }
+ },
+ "region_errors": {
+  "orig": [
+   "unknown constant 'Std.HashSet.emptyWithCapacity'",
+   "invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.281",
+   "invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.281",
+   "invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.281"
+  ],
+  "ref": [
+   "unknown constant 'Std.HashSet.emptyWithCapacity'",
+   "invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.5244",
+   "invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.5244",
+   "invalid field notation, type is not of the form (C ...) where C is a constant\n  set\nhas type\n  ?m.5244"
+  ]
+ },
+ "unattributed_errors": []
+}

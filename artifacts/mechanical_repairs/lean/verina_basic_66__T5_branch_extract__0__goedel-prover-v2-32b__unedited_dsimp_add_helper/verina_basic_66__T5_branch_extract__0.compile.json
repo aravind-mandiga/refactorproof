@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_66__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_66__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_66__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_66__T5_branch_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_66__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_66__T5_branch_extract__0.lean:14:27: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_66__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_66__T5_branch_extract__0.lean:22:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_66__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_66__T5_branch_extract__0.lean:22:12: warning: The declaration 'ComputeIsEven__rp_branch_87fb4e70' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_66__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_66__T5_branch_extract__0.lean:40:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_66__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_66__T5_branch_extract__0.lean:98:6: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/mechanical_repairs/lean/verina_basic_66__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_66__T5_branch_extract__0.lean:52:74: error: unsolved goals\nx : ℤ\nh_precond : ComputeIsEven_precond x\nh_main : 2 ∣ x ↔ ∃ k, x = 2 * k\na : ComputeIsEven__rp_branch_87fb4e70 x h_precond = true\n⊢ ∃ k, x = 2 * k\n",
+ "stderr": "",
+ "elapsed_seconds": 10.211,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 27,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'ComputeIsEven__rp_branch_87fb4e70' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 98,
+   "col": 6,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 52,
+   "col": 74,
+   "severity": "error",
+   "text": "unsolved goals\nx : ℤ\nh_precond : ComputeIsEven_precond x\nh_main : 2 ∣ x ↔ ∃ k, x = 2 * k\na : ComputeIsEven__rp_branch_87fb4e70 x h_precond = true\n⊢ ∃ k, x = 2 * k\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

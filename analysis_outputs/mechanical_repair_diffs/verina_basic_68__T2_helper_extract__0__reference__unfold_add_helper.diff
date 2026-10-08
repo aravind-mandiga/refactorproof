@@ -1,0 +1,11 @@
+--- reference:verina_basic_68__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_68__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold LinearSearch_postcond LinearSearch
++  unfold LinearSearch_postcond LinearSearch LinearSearch__rp_helper_bd5bba3d
+   apply And.intro
+   . let aux (x : Nat) : (0 ≤ x) → (x ≤ a.size) → LinearSearch.loop a e x ≤ a.size := by
+       intro hx₀ hx₁
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: unknown constant 'LinearSearch.loop'

@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_31",
+ "variant_id": "verina_basic_31__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__hard_unfold",
+ "generation_attempt": 3,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.757,
+ "proof_region_errors": [
+  "unsolved goals\ncase left\ns : String\nh_precond : toUppercase_precond s\n⊢ (toUppercase__rp_helper_8bd90157 s h_precond).length = s.length\n\ncase right.left\ns : String\nh_precond : toUppercase_precond s\ni : ℕ\na : i < s.length\na_1 : isLowerCase s.data[i] = true\n⊢ (toUppercase__rp_helper_8bd90157 s h_precond).data[i]?.getD 'A' = shiftMinus32 s.data[i]\n\ncase right.right\ns : String\nh_precond : toUppercase_precond s\ni : ℕ\na : i < s.length\na_1 : isLowerCase s.data[i] = false\n⊢ (toUppercase__rp_helper_8bd90"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "ba909f456f8e982fa6d9858877f9da7e756ce1a7c3f1b096e1e6185fc2deaafe",
+ "spec_hash": "c4341f237f8f941c6786c44f57c9c9fee3fb8554b50e20646e64e459505e6100",
+ "proof_text": "  unfold toUppercase toUppercase_postcond\n  have h_main : toUppercase_postcond (s) (toUppercase (s) h_precond) h_precond := by\n    unfold toUppercase toUppercase_postcond\n    dsimp only [List.length, List.map, List.map_append, List.map_nil, List.append]\n    <;>\n    (try simp_all) <;>\n    (try aesop) <;>\n    (try\n      {\n        ext i\n        by_cases h : isLowerCase (s[i]!)\n        <;> simp_all [isLowerCase, shiftMinus32, Char.ofNat]\n        <;> omega\n      }) <;>\n    (try\n      {\n        cases s <;> simp_all [String.toList, List.map, List.map, List.length, List.append, List.nil]\n        <;> aesop\n      }) <;>\n    (try\n      {\n        cases i <;> simp_all [String.toList, List.map, List.map, List.length, List.append, List.nil]\n        <;> aesop\n      }) <;>\n    (try\n      {\n        omega\n      }) <;>\n    (try\n      {\n        aesop\n      })\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "hard_unfold"
+}

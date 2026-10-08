@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_50/lean_4/verina_basic_50__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_50/lean_4/verina_basic_50__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_50/lean_4/verina_basic_50__T2_helper_extract__0.lean:14:17: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_50/lean_4/verina_basic_50__T2_helper_extract__0.lean:22:47: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_50/lean_4/verina_basic_50__T2_helper_extract__0.lean:22:12: warning: The declaration 'Abs__rp_helper_4386b369' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_50/lean_4/verina_basic_50__T2_helper_extract__0.lean:39:42: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_50/lean_4/verina_basic_50__T2_helper_extract__0.lean:60:43: error: unsolved goals\nx : ℤ\nh_precond : Abs_precond x\nhx : x ≥ 0\nh₂ : ¬x < 0\n⊢ Abs__rp_helper_4386b369 x h_precond = x\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_50/lean_4/verina_basic_50__T2_helper_extract__0.lean:70:44: error: unsolved goals\nx : ℤ\nh_precond : Abs_precond x\nhx h₂ : x < 0\n⊢ Abs__rp_helper_4386b369 x h_precond = -x\n",
+ "stderr": "",
+ "elapsed_seconds": 11.076,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 17,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 47,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'Abs__rp_helper_4386b369' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 39,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 60,
+   "col": 43,
+   "severity": "error",
+   "text": "unsolved goals\nx : ℤ\nh_precond : Abs_precond x\nhx : x ≥ 0\nh₂ : ¬x < 0\n⊢ Abs__rp_helper_4386b369 x h_precond = x"
+  },
+  {
+   "line": 70,
+   "col": 44,
+   "severity": "error",
+   "text": "unsolved goals\nx : ℤ\nh_precond : Abs_precond x\nhx h₂ : x < 0\n⊢ Abs__rp_helper_4386b369 x h_precond = -x\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

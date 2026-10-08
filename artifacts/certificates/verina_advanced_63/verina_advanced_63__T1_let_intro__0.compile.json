@@ -1,0 +1,25 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_63/verina_advanced_63__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_63/verina_advanced_63__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_63/verina_advanced_63__T1_let_intro__0.lean:72:86: error: type mismatch\n  rfl\nhas type\n  ?m.1228 = ?m.1228 : Prop\nbut is expected to have type\n  RPOrig.removeDuplicates nums h_precond = RPRef.removeDuplicates nums h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.647,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 72,
+   "col": 86,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1228 = ?m.1228 : Prop\nbut is expected to have type\n  RPOrig.removeDuplicates nums h_precond = RPRef.removeDuplicates nums h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

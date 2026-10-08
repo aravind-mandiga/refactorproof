@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_103",
+ "variant_id": "verina_basic_103__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  UpdateElements__rp_helper_b80f086d a h_precond\n",
+ "transformed_code_aux": "\nprivate def UpdateElements__rp_helper_b80f086d (a : Array Int) (h_precond : UpdateElements_precond (a)) : Array Int :=\n  let a1 := a.set! 4 ((a[4]!) + 3)\n  let a2 := a1.set! 7 516\n  a2\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "UpdateElements__rp_helper_b80f086d"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "fc06369b2d6c1e569033434250449483b913c3e49eb090d8223b4cfe99fd94b1",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "0c46fd54d2382eba58baf11f86d7dae57d55a31d0a8ad4ed490bb228d812dab1",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "UpdateElements",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

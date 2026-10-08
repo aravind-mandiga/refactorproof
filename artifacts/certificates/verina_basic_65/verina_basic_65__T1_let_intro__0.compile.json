@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_65/verina_basic_65__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_65/verina_basic_65__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_65/verina_basic_65__T1_let_intro__0.lean:13:24: warning: unused variable `N`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_65/verina_basic_65__T1_let_intro__0.lean:22:26: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_65/verina_basic_65__T1_let_intro__0.lean:35:26: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_65/verina_basic_65__T1_let_intro__0.lean:51:68: error: type mismatch\n  rfl\nhas type\n  ?m.1133 = ?m.1133 : Prop\nbut is expected to have type\n  RPOrig.SquareRoot N h_precond = RPRef.SquareRoot N h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.714,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `N`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 26,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 35,
+   "col": 26,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 51,
+   "col": 68,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1133 = ?m.1133 : Prop\nbut is expected to have type\n  RPOrig.SquareRoot N h_precond = RPRef.SquareRoot N h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_30",
+ "variant_id": "verina_basic_30__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  elementWiseModulo__rp_helper_81e2cf70 a b h_precond\n",
+ "transformed_code_aux": "\nprivate def elementWiseModulo__rp_helper_81e2cf70 (a : Array Int) (b : Array Int) (h_precond : elementWiseModulo_precond (a) (b)) : Array Int :=\n  a.mapIdx (fun i x => x % b[i]!)\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "elementWiseModulo__rp_helper_81e2cf70"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "b",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "2e2d8aa1e266c27a1ef94836fbbb4918016eab012e43c8a142424a7e1a246363",
+ "proof_hash": "546a0c3a5010d8e23ee7ab19a85f70aee2311bddca0f8c8904eb728fd239f21b",
+ "code_hash_original": "83306a605498b99468612b8c5ddbc0cf9da8bdde0b4017c845c8c7beed2c2721",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "elementWiseModulo",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

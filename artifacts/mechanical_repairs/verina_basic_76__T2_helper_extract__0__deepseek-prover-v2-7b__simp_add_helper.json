@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_76__T2_helper_extract__0",
+ "task_id": "verina_basic_76",
+ "source": "deepseek-prover-v2-7b",
+ "transformation": "T2_helper_extract",
+ "template": "simp_add_helper",
+ "function_name": "myMin",
+ "helper": "myMin__rp_helper_5e5dcb4d",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": false,
+ "outcome": "proof_fails",
+ "first_error": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case left\n  x y : \u2124\n  h_precond : myMin_precond x y\n  h : x \u2264 y\n  h\u2081 : y \u2264 x \u2192 y = x\n  \u22a2 myMin__rp_helper_5e5dcb4d x y h_precond = x",
+ "proof_before": "  have h_main : myMin_postcond x y (myMin x y h_precond) h_precond := by\n    unfold myMin_postcond\n    constructor\n    \u00b7 -- Prove x \u2264 y \u2192 myMin x y h_precond = x\n      intro h\n      have h\u2081 : (if x < y then x else y) = x := by\n        split_ifs <;> simp_all [myMin, myMin_precond] <;> omega\n      simp_all [myMin]\n      <;> aesop\n    \u00b7 -- Prove x > y \u2192 myMin x y h_precond = y\n      intro h\n      have h\u2081 : (if x < y then x else y) = y := by\n        split_ifs <;> simp_all [myMin, myMin_precond] <;> try omega\n        <;> try linarith\n      simp_all [myMin]\n      <;> aesop\n  exact h_main\n",
+ "proof_after": "  have h_main : myMin_postcond x y (myMin x y h_precond) h_precond := by\n    unfold myMin_postcond\n    constructor\n    \u00b7 -- Prove x \u2264 y \u2192 myMin x y h_precond = x\n      intro h\n      have h\u2081 : (if x < y then x else y) = x := by\n        split_ifs <;> simp_all [myMin, myMin_precond, myMin__rp_helper_5e5dcb4d] <;> omega\n      simp_all [myMin]\n      <;> aesop\n    \u00b7 -- Prove x > y \u2192 myMin x y h_precond = y\n      intro h\n      have h\u2081 : (if x < y then x else y) = y := by\n        split_ifs <;> simp_all [myMin, myMin_precond] <;> try omega\n        <;> try linarith\n      simp_all [myMin]\n      <;> aesop\n  exact h_main\n"
+}

@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_12",
+ "variant_id": "verina_basic_12__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b__hard_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "other",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 11.587,
+ "proof_region_errors": [
+  "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≥ 1\nwhere\n a := ↑(cubeSurfaceArea__rp_helper_67e54167 0 h_precond)",
+  "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  c ≥ 0\n  c ≥ 0\n  b ≥ 0\n  a ≥ 0\n  a - 12*b - 6*c ≥ 7\nwhere\n a := ↑(cubeSurfaceArea__rp_helper_67e54167 (1 + n✝) ⋯)\n b := ↑n✝\n c := ↑(n✝ ^ 2)\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "31f237471d8c72ab145b79e6495f8bdb96f63aa0205076c7d132d2f5855d38fa",
+ "spec_hash": "35aa279200d65ed096def6c82bb7a725efca6faffdd9afab3f82ec84271da3ca",
+ "proof_text": "  unfold cubeSurfaceArea cubeSurfaceArea_postcond\n  have h₁ : (cubeSurfaceArea (size) h_precond) - (6 * size * size) = 0 := by\n    unfold cubeSurfaceArea\n    <;> simp [Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm]\n    <;> induction size <;> simp_all [Nat.mul_comm, Nat.mul_assoc, Nat.mul_left_comm]\n    <;> ring_nf at *\n    <;> omega\n\n  have h₂ : (6 * size * size) - (cubeSurfaceArea (size) h_precond) = 0 := by\n    have h₃ : cubeSurfaceArea (size) h_precond = 6 * size * size := rfl\n    rw [h₃]\n    <;> simp [Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm]\n    <;> induction size <;> simp_all [Nat.mul_comm, Nat.mul_assoc, Nat.mul_left_comm]\n    <;> ring_nf at *\n    <;> omega\n\n  have h_main : cubeSurfaceArea_postcond (size) (cubeSurfaceArea (size) h_precond) h_precond := by\n    constructor\n    · -- Prove (cubeSurfaceArea (size) h_precond) - (6 * size * size) = 0\n      exact h₁\n    · -- Prove (6 * size * size) - (cubeSurfaceArea (size) h_precond) = 0\n      exact h₂\n\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "hard_unfold"
+}

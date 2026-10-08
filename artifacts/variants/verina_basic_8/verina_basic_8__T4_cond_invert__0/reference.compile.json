@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/reference.lean:14:19: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/reference.lean:14:29: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/reference.lean:25:31: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/reference.lean:38:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/reference.lean:58:6: error: type mismatch\n  h\nhas type\n  ¬a ≤ b : Prop\nbut is expected to have type\n  b ≤ a : Prop\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/reference.lean:62:25: error: application type mismatch\n  Int.le_of_lt h\nargument\n  h\nhas type\n  ¬b < a : Prop\nbut is expected to have type\n  a < b : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.749,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 6,
+   "severity": "error",
+   "text": "type mismatch\n  h\nhas type\n  ¬a ≤ b : Prop\nbut is expected to have type\n  b ≤ a : Prop"
+  },
+  {
+   "line": 62,
+   "col": 25,
+   "severity": "error",
+   "text": "application type mismatch\n  Int.le_of_lt h\nargument\n  h\nhas type\n  ¬b < a : Prop\nbut is expected to have type\n  a < b : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

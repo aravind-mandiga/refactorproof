@@ -1,0 +1,8 @@
+--- reference:verina_basic_12__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_12__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,2 +1,2 @@
+-  unfold cubeSurfaceArea cubeSurfaceArea_postcond
++  unfold cubeSurfaceArea cubeSurfaceArea__rp_helper_67e54167 cubeSurfaceArea_postcond
+   simp
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

@@ -1,0 +1,10 @@
+--- reference:verina_basic_97__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_97__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold TestArrayElements_postcond TestArrayElements
++  unfold TestArrayElements_postcond TestArrayElements TestArrayElements__rp_helper_9bca1c3a
+   unfold TestArrayElements_precond at h_precond
+   apply And.intro
+   . simp [Array.size_setIfInBounds]
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

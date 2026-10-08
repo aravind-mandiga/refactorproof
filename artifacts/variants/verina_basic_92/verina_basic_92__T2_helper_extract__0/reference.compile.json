@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/reference.lean:13:28: warning: unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/reference.lean:13:38: warning: unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/reference.lean:21:68: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/reference.lean:43:71: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_92/verina_basic_92__T2_helper_extract__0/reference.lean:60:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  ?a - (?a - ?b)\nX Y : Int\nh_precond : SwapArithmetic_precond X Y\n⊢ (SwapArithmetic__rp_helper_2265221a X Y h_precond).fst = Y ∧\n    (SwapArithmetic__rp_helper_2265221a X Y h_precond).snd = X ∧\n      (¬X = Y →\n        ¬(SwapArithmetic__rp_helper_2265221a X Y h_precond).fst = X ∧\n          ¬(SwapArithmetic__rp_helper_2265221a X Y h_precond).snd = Y)\n",
+ "stderr": "",
+ "elapsed_seconds": 0.725,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 38,
+   "severity": "warning",
+   "text": "unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 68,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 43,
+   "col": 71,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 60,
+   "col": 6,
+   "severity": "error",
+   "text": "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  ?a - (?a - ?b)\nX Y : Int\nh_precond : SwapArithmetic_precond X Y\n⊢ (SwapArithmetic__rp_helper_2265221a X Y h_precond).fst = Y ∧\n    (SwapArithmetic__rp_helper_2265221a X Y h_precond).snd = X ∧\n      (¬X = Y →\n        ¬(SwapArithmetic__rp_helper_2265221a X Y h_precond).fst = X ∧\n          ¬(SwapArithmetic__rp_helper_2265221a X Y h_precond).snd = Y)\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "rewrite_failed"
+}

@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_76/verina_advanced_76__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_76/verina_advanced_76__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_76/verina_advanced_76__T1_let_intro__0.lean:22:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_76/verina_advanced_76__T1_let_intro__0.lean:32:11: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_76/verina_advanced_76__T1_let_intro__0.lean:49:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_76/verina_advanced_76__T1_let_intro__0.lean:60:13: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_76/verina_advanced_76__T1_let_intro__0.lean:79:82: error: type mismatch\n  rfl\nhas type\n  ?m.2365 = ?m.2365 : Prop\nbut is expected to have type\n  RPOrig.topKFrequent nums k h_precond = RPRef.topKFrequent nums k h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.805,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 32,
+   "col": 11,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 49,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 60,
+   "col": 13,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 79,
+   "col": 82,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.2365 = ?m.2365 : Prop\nbut is expected to have type\n  RPOrig.topKFrequent nums k h_precond = RPRef.topKFrequent nums k h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

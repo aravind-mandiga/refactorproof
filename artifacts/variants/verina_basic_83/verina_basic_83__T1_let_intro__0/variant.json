@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_83",
+ "variant_id": "verina_basic_83__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_140e2179 : Array Int :=\n    let n := a.size + b.size\n    let rec loop (i : Nat) (c : Array Int) : Array Int :=\n      if i < n then\n        let value := if i < a.size then a[i]! else b[i - a.size]!\n        loop (i + 1) (c.set! i value)\n      else\n        c\n    loop 0 (Array.mkArray n 0)\n  __rp_tmp_140e2179\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_140e2179",
+  "seed": 0
+ },
+ "spec_hash": "d290571a2c033afa84341ef0301c0d6f5124b6d1a404413b5921bb0db4ca8ee1",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "fce2ecd1640a1cf9ee5381b40a504a109534084934df7982764dc5f7266c9ad4",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "concat",
+ "code_loc_original": 8,
+ "code_loc_refactored": 10
+}

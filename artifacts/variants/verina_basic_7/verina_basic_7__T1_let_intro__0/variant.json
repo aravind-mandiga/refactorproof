@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_7",
+ "variant_id": "verina_basic_7__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_13c7894d : Nat :=\n    let rec loop (k : Nat) (sum : Nat) : Nat :=\n      if k = 0 then\n        sum\n      else\n        loop (k - 1) (sum + (2 * k - 1) * (2 * k - 1))\n    loop n 0\n  __rp_tmp_13c7894d\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_13c7894d",
+  "seed": 0
+ },
+ "spec_hash": "6611e1110c76b43bfb14deb5dd25163b4b31f6b32c0c1e8b890be27b24451c04",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "47a71b6cb52c8e8a1e2439cb40345b536d68d717c76ae7f820b824b570be07dc",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "sumOfSquaresOfFirstNOddNumbers",
+ "code_loc_original": 6,
+ "code_loc_refactored": 8
+}

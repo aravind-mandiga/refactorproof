@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_99/lean_0/verina_basic_99__T3_comm_swap__2.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_99/lean_0/verina_basic_99__T3_comm_swap__2.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_99/lean_0/verina_basic_99__T3_comm_swap__2.lean:14:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_99/lean_0/verina_basic_99__T3_comm_swap__2.lean:25:22: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_99/lean_0/verina_basic_99__T3_comm_swap__2.lean:43:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_99/lean_0/verina_basic_99__T3_comm_swap__2.lean:87:12: error: linarith failed to find a contradiction\nx : ℤ\nh : 18 ≤ x\n⊢ False failed\n",
+ "stderr": "",
+ "elapsed_seconds": 9.984,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 25,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 43,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 87,
+   "col": 12,
+   "severity": "error",
+   "text": "linarith failed to find a contradiction\nx : ℤ\nh : 18 ≤ x\n⊢ False failed\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

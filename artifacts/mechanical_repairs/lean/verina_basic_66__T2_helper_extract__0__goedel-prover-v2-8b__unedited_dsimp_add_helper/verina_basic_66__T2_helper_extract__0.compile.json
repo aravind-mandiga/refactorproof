@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_66__T2_helper_extract__0__goedel-prover-v2-8b__unedited_dsimp_add_helper/verina_basic_66__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_66__T2_helper_extract__0__goedel-prover-v2-8b__unedited_dsimp_add_helper/verina_basic_66__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_66__T2_helper_extract__0__goedel-prover-v2-8b__unedited_dsimp_add_helper/verina_basic_66__T2_helper_extract__0.lean:14:27: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_66__T2_helper_extract__0__goedel-prover-v2-8b__unedited_dsimp_add_helper/verina_basic_66__T2_helper_extract__0.lean:22:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_66__T2_helper_extract__0__goedel-prover-v2-8b__unedited_dsimp_add_helper/verina_basic_66__T2_helper_extract__0.lean:22:12: warning: The declaration 'ComputeIsEven__rp_helper_c370e361' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_66__T2_helper_extract__0__goedel-prover-v2-8b__unedited_dsimp_add_helper/verina_basic_66__T2_helper_extract__0.lean:39:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_66__T2_helper_extract__0__goedel-prover-v2-8b__unedited_dsimp_add_helper/verina_basic_66__T2_helper_extract__0.lean:58:32: error: type mismatch, term\n  h\nafter simplification has type\n  ComputeIsEven__rp_helper_c370e361 x h_precond = true : Prop\nbut is expected to have type\n  2 ∣ x : Prop\nartifacts/mechanical_repairs/lean/verina_basic_66__T2_helper_extract__0__goedel-prover-v2-8b__unedited_dsimp_add_helper/verina_basic_66__T2_helper_extract__0.lean:73:6: error: type mismatch, term\n  h₁\nafter simplification has type\n  True : Prop\nbut is expected to have type\n  ComputeIsEven__rp_helper_c370e361 (2 * k) h_precond = true : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 9.054,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 27,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'ComputeIsEven__rp_helper_c370e361' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 39,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 32,
+   "severity": "error",
+   "text": "type mismatch, term\n  h\nafter simplification has type\n  ComputeIsEven__rp_helper_c370e361 x h_precond = true : Prop\nbut is expected to have type\n  2 ∣ x : Prop"
+  },
+  {
+   "line": 73,
+   "col": 6,
+   "severity": "error",
+   "text": "type mismatch, term\n  h₁\nafter simplification has type\n  True : Prop\nbut is expected to have type\n  ComputeIsEven__rp_helper_c370e361 (2 * k) h_precond = true : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

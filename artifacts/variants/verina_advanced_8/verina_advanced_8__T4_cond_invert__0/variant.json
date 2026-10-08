@@ -1,0 +1,55 @@
+{
+ "task_id": "verina_advanced_8",
+ "variant_id": "verina_advanced_8__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "transformed_code": "  let totalGas := gas.foldl (· + ·) 0\n  let totalCost := cost.foldl (· + ·) 0\n\n  if ¬ (totalGas < totalCost) then\n    let rec loop (g c : List Int) (idx : Nat) (tank : Int) (start : Nat) : Int :=\n      match g, c with\n      | [], [] => start\n      | gi :: gs, ci :: cs =>\n        let tank' := tank + gi - ci\n        if tank' < 0 then\n          loop gs cs (idx + 1) 0 (idx + 1)\n        else\n          loop gs cs (idx + 1) tank' start\n      | _, _ => -1  -- lengths don’t match\n\n    let zipped := List.zip gas cost\n    let rec walk (pairs : List (Int × Int)) (i : Nat) (tank : Int) (start : Nat) : Int :=\n      match pairs with\n      | [] => start\n      | (g, c) :: rest =>\n        let newTank := tank + g - c\n        if newTank < 0 then\n          walk rest (i + 1) 0 (i + 1)\n        else\n          walk rest (i + 1) newTank start\n\n    walk zipped 0 0 0\n  else\n    -1\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [
+  "ite_not"
+ ],
+ "helper_names": [],
+ "metadata": {
+  "law_sets": [
+   [
+    "ite_not"
+   ],
+   [
+    "ite_not",
+    "Bool.not_eq_true",
+    "decide_not",
+    "Nat.not_lt",
+    "Nat.not_le",
+    "Int.not_lt",
+    "Int.not_le"
+   ]
+  ],
+  "condition": "totalGas < totalCost",
+  "then_multiline": true,
+  "seed": 0
+ },
+ "extra_levels": [
+  [
+   "bycases",
+   "by_cases h : (totalGas < totalCost) <;> (try simp [h, {DEFS}]) <;> {CLOSER}"
+  ],
+  [
+   "bycases_ite",
+   "by_cases h : (totalGas < totalCost) <;> (try simp [h, ite_not, {DEFS}]) <;> {CLOSER}"
+  ],
+  [
+   "split_simp_all",
+   "simp only [{DEFS}]; split <;> (try simp_all) <;> {CLOSER}"
+  ]
+ ],
+ "spec_hash": "e38ecef58d8b43d59ec2633fe9817e8d829055b6b2b37028f1598f138587fde6",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "60b882b62df394d3ff564b6a9f92f323fd91e6fa124dcde7b15887a028e52ff6",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "canCompleteCircuit",
+ "code_loc_original": 26,
+ "code_loc_refactored": 26
+}

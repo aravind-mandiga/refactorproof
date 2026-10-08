@@ -1,0 +1,67 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_6/lean_4/verina_basic_6__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_6/lean_4/verina_basic_6__T5_branch_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_6/lean_4/verina_basic_6__T5_branch_extract__0.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_6/lean_4/verina_basic_6__T5_branch_extract__0.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_6/lean_4/verina_basic_6__T5_branch_extract__0.lean:15:44: warning: unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_6/lean_4/verina_basic_6__T5_branch_extract__0.lean:23:74: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_6/lean_4/verina_basic_6__T5_branch_extract__0.lean:23:12: warning: The declaration 'minOfThree__rp_branch_73840f67' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_6/lean_4/verina_basic_6__T5_branch_extract__0.lean:43:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_6/lean_4/verina_basic_6__T5_branch_extract__0.lean:59:132: error: unsolved goals\ncase neg\na b c : ℤ\nh_precond : True\nh✝ : ¬(decide (a ≤ b) && decide (a ≤ c)) = true\n⊢ minOfThree__rp_branch_73840f67 a b c h_precond ≤ a ∧\n    minOfThree__rp_branch_73840f67 a b c h_precond ≤ b ∧ minOfThree__rp_branch_73840f67 a b c h_precond ≤ c\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_6/lean_4/verina_basic_6__T5_branch_extract__0.lean:79:132: error: unsolved goals\ncase neg\na b c : ℤ\nh_precond : True\nh₁ : minOfThree a b c h_precond ≤ a ∧ minOfThree a b c h_precond ≤ b ∧ minOfThree a b c h_precond ≤ c\nh✝ : ¬(decide (a ≤ b) && decide (a ≤ c)) = true\n⊢ minOfThree__rp_branch_73840f67 a b c h_precond = a ∨\n    minOfThree__rp_branch_73840f67 a b c h_precond = b ∨ minOfThree__rp_branch_73840f67 a b c h_precond = c\n",
+ "stderr": "",
+ "elapsed_seconds": 15.423,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 74,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'minOfThree__rp_branch_73840f67' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 43,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 59,
+   "col": 132,
+   "severity": "error",
+   "text": "unsolved goals\ncase neg\na b c : ℤ\nh_precond : True\nh✝ : ¬(decide (a ≤ b) && decide (a ≤ c)) = true\n⊢ minOfThree__rp_branch_73840f67 a b c h_precond ≤ a ∧\n    minOfThree__rp_branch_73840f67 a b c h_precond ≤ b ∧ minOfThree__rp_branch_73840f67 a b c h_precond ≤ c"
+  },
+  {
+   "line": 79,
+   "col": 132,
+   "severity": "error",
+   "text": "unsolved goals\ncase neg\na b c : ℤ\nh_precond : True\nh₁ : minOfThree a b c h_precond ≤ a ∧ minOfThree a b c h_precond ≤ b ∧ minOfThree a b c h_precond ≤ c\nh✝ : ¬(decide (a ≤ b) && decide (a ≤ c)) = true\n⊢ minOfThree__rp_branch_73840f67 a b c h_precond = a ∨\n    minOfThree__rp_branch_73840f67 a b c h_precond = b ∨ minOfThree__rp_branch_73840f67 a b c h_precond = c\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

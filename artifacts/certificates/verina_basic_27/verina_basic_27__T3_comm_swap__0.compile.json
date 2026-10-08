@@ -1,0 +1,109 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:14:35: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:23:40: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:40:40: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:58:90: error: type mismatch\n  rfl\nhas type\n  ?m.27639 = ?m.27639 : Prop\nbut is expected to have type\n  RPOrig.findFirstRepeatedChar s h_precond = RPRef.findFirstRepeatedChar s h_precond : Prop\nartifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:62:90: error: type mismatch\n  rfl\nhas type\n  ?m.27731 = ?m.27731 : Prop\nbut is expected to have type\n  RPOrig.findFirstRepeatedChar s h_precond = RPRef.findFirstRepeatedChar s h_precond : Prop\nartifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:67:2: error: tactic 'rfl' failed, the left-hand side\n  let cs := s.toList;\n  RPOrig.findFirstRepeatedChar.loop._unary cs ⟨0, Std.HashSet.empty⟩\nis not definitionally equal to the right-hand side\n  let cs := s.toList;\n  RPRef.findFirstRepeatedChar.loop._unary cs ⟨0, Std.HashSet.empty⟩\ns : String\nh_precond : findFirstRepeatedChar_precond s\n⊢ (let cs := s.toList;\n    RPOrig.findFirstRepeatedChar.loop._unary cs ⟨0, Std.HashSet.empty⟩) =\n    let cs := s.toList;\n    RPRef.findFirstRepeatedChar.loop._unary cs ⟨0, Std.HashSet.empty⟩\nartifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:75:272: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩\nis not definitionally equal to the right-hand side\n  RPRef.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩\ns : String\nh_precond : findFirstRepeatedChar_precond s\n⊢ RPOrig.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩ =\n    RPRef.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩\nartifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:70:90: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:70:90: error: unknown metavariable '?_uniq.36916'\nartifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:83:267: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.findFirstRepeatedChar.loop._unary s.data ⟨0, Std.HashSet.empty⟩\nis not definitionally equal to the right-hand side\n  RPRef.findFirstRepeatedChar.loop._unary s.data ⟨0, Std.HashSet.empty⟩\ns : String\nh_precond : findFirstRepeatedChar_precond s\n⊢ RPOrig.findFirstRepeatedChar.loop._unary s.data ⟨0, Std.HashSet.empty⟩ =\n    RPRef.findFirstRepeatedChar.loop._unary s.data ⟨0, Std.HashSet.empty⟩\nartifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:78:90: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:78:90: error: unknown metavariable '?_uniq.45623'\nartifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:87:288: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩\nis not definitionally equal to the right-hand side\n  RPRef.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩\ns : String\nh_precond : findFirstRepeatedChar_precond s\n⊢ RPOrig.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩ =\n    RPRef.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩\nartifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:86:90: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_27/verina_basic_27__T3_comm_swap__0.lean:86:90: error: unknown metavariable '?_uniq.48368'\n",
+ "stderr": "",
+ "elapsed_seconds": 2.265,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 35,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 40,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 90,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.27639 = ?m.27639 : Prop\nbut is expected to have type\n  RPOrig.findFirstRepeatedChar s h_precond = RPRef.findFirstRepeatedChar s h_precond : Prop"
+  },
+  {
+   "line": 62,
+   "col": 90,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.27731 = ?m.27731 : Prop\nbut is expected to have type\n  RPOrig.findFirstRepeatedChar s h_precond = RPRef.findFirstRepeatedChar s h_precond : Prop"
+  },
+  {
+   "line": 67,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  let cs := s.toList;\n  RPOrig.findFirstRepeatedChar.loop._unary cs ⟨0, Std.HashSet.empty⟩\nis not definitionally equal to the right-hand side\n  let cs := s.toList;\n  RPRef.findFirstRepeatedChar.loop._unary cs ⟨0, Std.HashSet.empty⟩\ns : String\nh_precond : findFirstRepeatedChar_precond s\n⊢ (let cs := s.toList;\n    RPOrig.findFirstRepeatedChar.loop._unary cs ⟨0, Std.HashSet.empty⟩) =\n    let cs := s.toList;\n    RPRef.findFirstRepeatedChar.loop._unary cs ⟨0, Std.HashSet.empty⟩"
+  },
+  {
+   "line": 75,
+   "col": 272,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩\nis not definitionally equal to the right-hand side\n  RPRef.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩\ns : String\nh_precond : findFirstRepeatedChar_precond s\n⊢ RPOrig.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩ =\n    RPRef.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩"
+  },
+  {
+   "line": 70,
+   "col": 90,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 70,
+   "col": 90,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.36916'"
+  },
+  {
+   "line": 83,
+   "col": 267,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.findFirstRepeatedChar.loop._unary s.data ⟨0, Std.HashSet.empty⟩\nis not definitionally equal to the right-hand side\n  RPRef.findFirstRepeatedChar.loop._unary s.data ⟨0, Std.HashSet.empty⟩\ns : String\nh_precond : findFirstRepeatedChar_precond s\n⊢ RPOrig.findFirstRepeatedChar.loop._unary s.data ⟨0, Std.HashSet.empty⟩ =\n    RPRef.findFirstRepeatedChar.loop._unary s.data ⟨0, Std.HashSet.empty⟩"
+  },
+  {
+   "line": 78,
+   "col": 90,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 78,
+   "col": 90,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.45623'"
+  },
+  {
+   "line": 87,
+   "col": 288,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩\nis not definitionally equal to the right-hand side\n  RPRef.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩\ns : String\nh_precond : findFirstRepeatedChar_precond s\n⊢ RPOrig.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩ =\n    RPRef.findFirstRepeatedChar.loop._unary s.toList ⟨0, Std.HashSet.empty⟩"
+  },
+  {
+   "line": 86,
+   "col": 90,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 86,
+   "col": 90,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.48368'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,10 @@
+--- reference:verina_basic_19__T5_branch_extract__0 (proof as evaluated)
++++ reference:verina_basic_19__T5_branch_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold isSorted isSorted_postcond
++  unfold isSorted isSorted__rp_branch_e1b18854 isSorted_postcond
+   simp_all
+   cases a with | mk a =>
+     simp
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

@@ -1,0 +1,7 @@
+{
+ "lean_version": "Lean (version 4.18.0, x86_64-unknown-linux-gnu, commit 11ccbced7964, Release)",
+ "lake_version": "Lake version 5.0.0-11ccbce (Lean version 4.18.0)",
+ "lean_toolchain_file": "leanprover/lean4:v4.18.0",
+ "verina_commit": "66b3ce5014edafb20cb26b87c681e7f31847249f",
+ "lake_manifest_sha256": "09fe8c190c7c2a1f34c042f1b2748aa5fbe556274b6742f788fd1644672d60d5"
+}

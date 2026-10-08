@@ -1,0 +1,31 @@
+{
+ "model_id": "qwen3-32b",
+ "task_id": "verina_basic_78",
+ "attempt": 4,
+ "proof_hash": "837a875093424745a597dd83444c26d7dc526d7d84476a62174da6f8c4716f87",
+ "proof_loc": 4,
+ "proof_tokens": 8,
+ "survival": [
+  {
+   "variant_id": "verina_basic_78__T1_let_intro__0",
+   "transformation": "T1_let_intro",
+   "severity": "D",
+   "survives": true,
+   "outcome": "survives"
+  },
+  {
+   "variant_id": "verina_basic_78__T2_helper_extract__0",
+   "transformation": "T2_helper_extract",
+   "severity": "S",
+   "survives": false,
+   "outcome": "proof_fails"
+  },
+  {
+   "variant_id": "verina_basic_78__T3_comm_swap__0",
+   "transformation": "T3_comm_swap",
+   "severity": "E",
+   "survives": false,
+   "outcome": "proof_fails"
+  }
+ ]
+}

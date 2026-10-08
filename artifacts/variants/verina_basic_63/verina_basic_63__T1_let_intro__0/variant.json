@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_63",
+ "variant_id": "verina_basic_63__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_16f75f64 : Bool :=\n    let len := numbers.length\n    let rec outer (idx : Nat) : Bool :=\n      if idx < len then\n        let rec inner (idx2 : Nat) : Bool :=\n          if idx2 < idx then\n            let a := numbers.getD idx2 0.0\n            let b := numbers.getD idx 0.0\n            let d := absDiff a b\n            if d < threshold then true else inner (idx2 + 1)\n          else\n            false\n        if inner 0 then true else outer (idx + 1)\n      else\n        false\n    outer 0\n  __rp_tmp_16f75f64\n",
+ "transformed_code_aux": "",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_16f75f64",
+  "seed": 0
+ },
+ "spec_hash": "67c6c33b0d22ac72aad3a67bd49ff1c6185440bb83a1b9b6e06146fbeaed672a",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "15f104e35ddb154c99f8823b85ce8d9fc640366e83f8dd6092365d32078966dc",
+ "code_aux_hash_original": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "tier": "basic",
+ "function_name": "has_close_elements",
+ "code_loc_original": 15,
+ "code_loc_refactored": 17
+}

@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_92/verina_basic_92__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_92/verina_basic_92__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_92/verina_basic_92__T3_comm_swap__0.lean:13:28: warning: unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_92/verina_basic_92__T3_comm_swap__0.lean:13:38: warning: unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_92/verina_basic_92__T3_comm_swap__0.lean:22:40: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_92/verina_basic_92__T3_comm_swap__0.lean:33:40: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_92/verina_basic_92__T3_comm_swap__0.lean:45:80: error: type mismatch\n  rfl\nhas type\n  ?m.330 = ?m.330 : Prop\nbut is expected to have type\n  RPOrig.SwapArithmetic X Y h_precond = RPRef.SwapArithmetic X Y h_precond : Prop\nartifacts/certificates/verina_basic_92/verina_basic_92__T3_comm_swap__0.lean:49:80: error: type mismatch\n  rfl\nhas type\n  ?m.1096 = ?m.1096 : Prop\nbut is expected to have type\n  RPOrig.SwapArithmetic X Y h_precond = RPRef.SwapArithmetic X Y h_precond : Prop\nartifacts/certificates/verina_basic_92/verina_basic_92__T3_comm_swap__0.lean:54:2: error: tactic 'rfl' failed, the left-hand side\n  let x1 := X;\n  let y1 := Y;\n  let x2 := y1 - x1;\n  let y2 := y1 - x2;\n  let x3 := y2 + x2;\n  (x3, y2)\nis not definitionally equal to the right-hand side\n  let x1 := X;\n  let y1 := Y;\n  let x2 := y1 - x1;\n  let y2 := y1 - x2;\n  let x3 := x2 + y2;\n  (x3, y2)\nX Y : Int\nh_precond : SwapArithmetic_precond X Y\n⊢ (let x1 := X;\n    let y1 := Y;\n    let x2 := y1 - x1;\n    let y2 := y1 - x2;\n    let x3 := y2 + x2;\n    (x3, y2)) =\n    let x1 := X;\n    let y1 := Y;\n    let x2 := y1 - x1;\n    let y2 := y1 - x2;\n    let x3 := x2 + y2;\n    (x3, y2)\n",
+ "stderr": "",
+ "elapsed_seconds": 0.796,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 28,
+   "severity": "warning",
+   "text": "unused variable `X`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 38,
+   "severity": "warning",
+   "text": "unused variable `Y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 33,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 45,
+   "col": 80,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.330 = ?m.330 : Prop\nbut is expected to have type\n  RPOrig.SwapArithmetic X Y h_precond = RPRef.SwapArithmetic X Y h_precond : Prop"
+  },
+  {
+   "line": 49,
+   "col": 80,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1096 = ?m.1096 : Prop\nbut is expected to have type\n  RPOrig.SwapArithmetic X Y h_precond = RPRef.SwapArithmetic X Y h_precond : Prop"
+  },
+  {
+   "line": 54,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  let x1 := X;\n  let y1 := Y;\n  let x2 := y1 - x1;\n  let y2 := y1 - x2;\n  let x3 := y2 + x2;\n  (x3, y2)\nis not definitionally equal to the right-hand side\n  let x1 := X;\n  let y1 := Y;\n  let x2 := y1 - x1;\n  let y2 := y1 - x2;\n  let x3 := x2 + y2;\n  (x3, y2)\nX Y : Int\nh_precond : SwapArithmetic_precond X Y\n⊢ (let x1 := X;\n    let y1 := Y;\n    let x2 := y1 - x1;\n    let y2 := y1 - x2;\n    let x3 := y2 + x2;\n    (x3, y2)) =\n    let x1 := X;\n    let y1 := Y;\n    let x2 := y1 - x1;\n    let y2 := y1 - x2;\n    let x3 := x2 + y2;\n    (x3, y2)\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,11 @@
+--- deepseek-prover-v2-7b:verina_basic_31__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_31__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : toUppercase_postcond (s) (toUppercase (s) h_precond) h_precond := by
+-    dsimp [toUppercase, toUppercase_postcond, isLowerCase, shiftMinus32]
++    dsimp [toUppercase, toUppercase_postcond, isLowerCase, shiftMinus32, toUppercase__rp_helper_8bd90157]
+     constructor
+     · -- Prove that the lengths are the same
+       simp [List.length_map]
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

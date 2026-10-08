@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_3__T2_helper_extract__0",
+ "task_id": "verina_basic_3",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "isDivisibleBy11",
+ "helper": "isDivisibleBy11__rp_helper_c39b37ae",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold isDivisibleBy11 isDivisibleBy11_postcond\n  constructor\n  \u00b7 simp_all\n    exact fun a => a\n  \u00b7 apply Not.imp_symm\n    rw [not_forall_not]\n    intro h\n    rw [beq_iff_eq]\n    exact Int.emod_eq_zero_of_dvd h\n",
+ "proof_after": "  unfold isDivisibleBy11 isDivisibleBy11__rp_helper_c39b37ae isDivisibleBy11_postcond\n  constructor\n  \u00b7 simp_all\n    exact fun a => a\n  \u00b7 apply Not.imp_symm\n    rw [not_forall_not]\n    intro h\n    rw [beq_iff_eq]\n    exact Int.emod_eq_zero_of_dvd h\n"
+}

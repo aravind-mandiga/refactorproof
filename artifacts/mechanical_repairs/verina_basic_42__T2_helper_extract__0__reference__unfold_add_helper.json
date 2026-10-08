@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_42__T2_helper_extract__0",
+ "task_id": "verina_basic_42",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "countDigits",
+ "helper": "countDigits__rp_helper_df69abf7",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold countDigits countDigits_postcond\n  simp\n",
+ "proof_after": "  unfold countDigits countDigits__rp_helper_df69abf7 countDigits_postcond\n  simp\n"
+}

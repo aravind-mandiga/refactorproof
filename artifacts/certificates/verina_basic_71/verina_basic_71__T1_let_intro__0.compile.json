@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_71/verina_basic_71__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_71/verina_basic_71__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_71/verina_basic_71__T1_let_intro__0.lean:13:33: warning: unused variable `str1`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_71/verina_basic_71__T1_let_intro__0.lean:13:52: warning: unused variable `str2`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_71/verina_basic_71__T1_let_intro__0.lean:22:63: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_71/verina_basic_71__T1_let_intro__0.lean:37:63: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_71/verina_basic_71__T1_let_intro__0.lean:55:102: error: type mismatch\n  rfl\nhas type\n  ?m.37897 = ?m.37897 : Prop\nbut is expected to have type\n  RPOrig.LongestCommonPrefix str1 str2 h_precond = RPRef.LongestCommonPrefix str1 str2 h_precond : Prop\nartifacts/certificates/verina_basic_71/verina_basic_71__T1_let_intro__0.lean:59:102: error: type mismatch\n  rfl\nhas type\n  ?m.37997 = ?m.37997 : Prop\nbut is expected to have type\n  RPOrig.LongestCommonPrefix str1 str2 h_precond = RPRef.LongestCommonPrefix str1 str2 h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 1.26,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 33,
+   "severity": "warning",
+   "text": "unused variable `str1`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 13,
+   "col": 52,
+   "severity": "warning",
+   "text": "unused variable `str2`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 63,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 37,
+   "col": 63,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 55,
+   "col": 102,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.37897 = ?m.37897 : Prop\nbut is expected to have type\n  RPOrig.LongestCommonPrefix str1 str2 h_precond = RPRef.LongestCommonPrefix str1 str2 h_precond : Prop"
+  },
+  {
+   "line": 59,
+   "col": 102,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.37997 = ?m.37997 : Prop\nbut is expected to have type\n  RPOrig.LongestCommonPrefix str1 str2 h_precond = RPRef.LongestCommonPrefix str1 str2 h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

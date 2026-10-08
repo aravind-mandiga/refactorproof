@@ -1,0 +1,28 @@
+[project]
+name = "refactorproof"
+version = "0.1.0"
+description = "Proof-survival stress test of LLM-generated Lean proofs under certified behavior-preserving refactorings (VERINA)."
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+    "pyyaml>=6.0",
+    "statsmodels>=0.14",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/refactorproof"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

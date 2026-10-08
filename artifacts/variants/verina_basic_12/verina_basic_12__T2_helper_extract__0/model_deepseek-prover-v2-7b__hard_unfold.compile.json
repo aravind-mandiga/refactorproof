@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_12/verina_basic_12__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_12/verina_basic_12__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_12/verina_basic_12__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:16:29: warning: unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:24:62: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:24:12: warning: The declaration 'cubeSurfaceArea__rp_helper_67e54167' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_12/verina_basic_12__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:41:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_12/verina_basic_12__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:61:8: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≥ 1\nwhere\n a := ↑(cubeSurfaceArea__rp_helper_67e54167 0 h_precond)\nartifacts/variants/verina_basic_12/verina_basic_12__T2_helper_extract__0/model_deepseek-prover-v2-7b__hard_unfold.lean:61:8: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  c ≥ 0\n  c ≥ 0\n  b ≥ 0\n  a ≥ 0\n  a - 12*b - 6*c ≥ 7\nwhere\n a := ↑(cubeSurfaceArea__rp_helper_67e54167 (1 + n✝) ⋯)\n b := ↑n✝\n c := ↑(n✝ ^ 2)\n",
+ "stderr": "",
+ "elapsed_seconds": 11.587,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `size`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 62,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'cubeSurfaceArea__rp_helper_67e54167' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 41,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 61,
+   "col": 8,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≥ 1\nwhere\n a := ↑(cubeSurfaceArea__rp_helper_67e54167 0 h_precond)"
+  },
+  {
+   "line": 61,
+   "col": 8,
+   "severity": "error",
+   "text": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  c ≥ 0\n  c ≥ 0\n  b ≥ 0\n  a ≥ 0\n  a - 12*b - 6*c ≥ 7\nwhere\n a := ↑(cubeSurfaceArea__rp_helper_67e54167 (1 + n✝) ⋯)\n b := ↑n✝\n c := ↑(n✝ ^ 2)\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "other"
+}

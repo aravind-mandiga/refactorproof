@@ -1,0 +1,12 @@
+--- goedel-prover-v2-32b:verina_basic_99__T5_branch_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_99__T5_branch_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : (Triple (x) h_precond) / 3 = x := by
+-    dsimp [Triple]
++    dsimp [Triple, Triple__rp_branch_609232c2]
+     split_ifs with h
+     · -- Case: x < 18
+       have h₁ : ((2 * x + 4 * x) / 2 : ℤ) = 3 * x := by
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: omega could not prove the goal: | a possible counterexample may satisfy the constraints |   a ≥ 18 |   -2 ≤ 3*a - b ≤ 0 |   3*a - c ≥ 1 | where |  a := x |  b := Triple x h_precond |  c := Triple__rp_branch_609232c2 x h_precond | 

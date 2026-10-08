@@ -1,0 +1,49 @@
+# RefactorProof pinned environment. Do not edit after primary data collection begins.
+project: refactorproof
+frozen_at: "2026-09-06"
+
+verina:
+  repo: https://github.com/sunblaze-ucb/verina
+  commit: 66b3ce5014edafb20cb26b87c681e7f31847249f
+  commit_date: "2026-08-16T19:04:30-07:00"
+  local_path: external/verina
+  license: Apache-2.0
+  dataset_dir: datasets/verina
+  n_tasks_expected: 189
+  n_reference_proofs_expected: 46
+
+lean:
+  toolchain: leanprover/lean4:v4.18.0
+  lakefile_sha256: 6e190d34be92636771f47fe7a73be28cd85ca044bc0772f386deea8eedb8ecfc
+  lake_manifest_sha256: 09fe8c190c7c2a1f34c042f1b2748aa5fbe556274b6742f788fd1644672d60d5
+  mathlib_rev: aa936c36e8484abd300577139faf8e945850831a
+  batteries_rev: 613510345e4d4b3ce3d8c129595e7241990d5b39
+  plausible_rev: 115177554fb2f67d583586886a9cfe1db2899945
+  compile_timeout_seconds: 300
+
+paths:
+  variants: artifacts/variants
+  certificates: artifacts/certificates
+  results: results
+  data: data
+  paper_artifacts: paper_artifacts
+
+protocol:
+  K_attempts_per_task: 5
+  select_rule: first_lean_valid_in_fixed_order
+  bootstrap_replicates: 10000
+  ci_level: 0.95
+  severity_ladder: [D, S, E]
+compute:
+  cluster: SLURM; one GPU node per generation run, CPU nodes for Lean checking
+  gpu: one NVIDIA A100-80GB per generation run
+  lean_workers: 24 CPU cores per Lean job
+  python_envs:
+    verina: .venv-verina      # VERINA dependencies + vLLM (generation arm)
+    refactorproof: .venv      # analysis dependencies (this package)
+
+storage:
+  note: "artifacts/ and logs/ may be symlinks to scratch storage; every path in the code is repository-relative"
+  lean_build_dir: external/verina/.lake
+  mathlib_cache_dir: ${MATHLIB_CACHE_DIR}    # used by `lake exe cache get`
+  model_weights: models                      # or a Hugging Face cache; see configs/models.yaml

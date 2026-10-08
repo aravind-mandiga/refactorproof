@@ -1,0 +1,11 @@
+--- goedel-prover-v2-8b:verina_basic_76__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_76__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : myMin_postcond (x) (y) (myMin (x) (y) h_precond) h_precond := by
+-    dsimp only [myMin_precond, myMin_postcond, myMin] at *
++    dsimp only [myMin_precond, myMin_postcond, myMin, myMin__rp_helper_5e5dcb4d] at *
+     split_ifs <;> simp_all [Int.lt_iff_le_and_ne, Int.le_of_lt]
+     <;>
+     (try { contradiction }) <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

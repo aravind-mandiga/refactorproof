@@ -1,0 +1,11 @@
+--- reference:verina_basic_16__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_16__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,5 +1,5 @@
+   -- Unfold the definitions of replaceChars and replaceChars_postcond
+-  unfold replaceChars replaceChars_postcond
++  unfold replaceChars replaceChars__rp_helper_e8782fcd replaceChars_postcond
+   -- Split the goal into two parts
+   constructor
+   · -- First part: length is preserved
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_55__T5_branch_extract__0",
+ "task_id": "verina_basic_55",
+ "source": "reference",
+ "transformation": "T5_branch_extract",
+ "template": "unfold_add_helper",
+ "function_name": "Compare",
+ "helper": "Compare__rp_branch_e4570326",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold Compare_postcond Compare\n  simp\n",
+ "proof_after": "  unfold Compare_postcond Compare Compare__rp_branch_e4570326\n  simp\n"
+}

@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_2",
+ "variant_id": "verina_basic_2__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  findSmallest__rp_helper_06efecc0 s h_precond\n",
+ "transformed_code_aux": "\nprivate def findSmallest__rp_helper_06efecc0 (s : Array Nat) (h_precond : findSmallest_precond (s)) : Option Nat :=\n  s.toList.min?\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "findSmallest__rp_helper_06efecc0"
+ ],
+ "metadata": {
+  "binders": [
+   "s",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "de1f0fd8f52c96e55dcabd9297ed3efc3c6f1a0c08b501c1250c09ea0b248bb6",
+ "proof_hash": "87a9d46c0253d20c36fac3540f978af6921da0a9140218a5bfba06b20186ba91",
+ "code_hash_original": "599d529da74423e37b94d043ac69b034992d7dcb5ae7733a89e19fea11b9e5ac",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "findSmallest",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_15",
+ "variant_id": "verina_advanced_15__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_15/verina_advanced_15__T4_cond_invert__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 1.373,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": "simp_only",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1148 = ?m.1148 : Prop\nbut is expected to have type\n  RPOrig.increasingTriplet nums h_precond = RPRef.increasingTriplet nums h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.2709 = ?m.2709 : Prop\nbut is expected to have type\n  RPOrig.increasingTriplet nums h_precond = RPRef.increasingTriplet nums h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if nums.length < 3 then false\n  else\n    List.brecOn (motive := fun xs => Option Int → Option Int → Bool) nums\n      (fun xs f first second =>\n        (match (motive := (xs : List Int) → List.below (motive := fun xs => Option Int → Option Int → Bool) xs → Bool)\n            xs with\n          | [] => fun x => false\n          | x :: rest => fun x_1 =>\n            match first with\n            | none => x_1.1 (some x) none\n            | some f =>\n            "
+   ]
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  !decide (nums.length < 3) &&\n    List.brecOn (motive := fun xs => Option Int → Option Int → Bool) nums\n      (fun xs f first second =>\n        (match (motive := (xs : List Int) → List.below (motive := fun xs => Option Int → Option Int → Bool) xs → Bool)\n            xs with\n          | [] => fun x => false\n          | x :: rest => fun x_1 =>\n            match first with\n            | none => x_1.1 (some x) none\n            | some f =>\n              if x ≤",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.13747'\n"
+   ]
+  },
+  "bycases": {
+   "ok": true,
+   "errors": []
+  },
+  "bycases_ite": {
+   "ok": true,
+   "errors": []
+  },
+  "split_simp_all": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

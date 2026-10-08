@@ -1,0 +1,12 @@
+--- goedel-prover-v2-32b:verina_basic_99__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_99__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : (Triple (x) h_precond) / 3 = x := by
+-    dsimp [Triple]
++    dsimp [Triple, Triple__rp_helper_5b862de8]
+     split_ifs with h
+     · -- Case: x < 18
+       have h₁ : ((2 * x + 4 * x) / 2 : ℤ) = 3 * x := by
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: tactic 'split_ifs' failed, no if-then-else conditions to split | x : ℤ | h_precond : Triple_precond x | h_main h₁ : Triple x h_precond / 3 = x | h₂ : Triple x h_precond / 3 * 3 = x * 3 | ⊢ Triple__rp_helper_5b862de8 x h_precond = 3 * x | 

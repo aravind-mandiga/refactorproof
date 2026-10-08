@@ -1,0 +1,67 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_57/verina_advanced_57__T3_comm_swap__1.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_57/verina_advanced_57__T3_comm_swap__1.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_57/verina_advanced_57__T3_comm_swap__1.lean:24:62: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_57/verina_advanced_57__T3_comm_swap__1.lean:76:62: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_57/verina_advanced_57__T3_comm_swap__1.lean:129:104: error: type mismatch\n  rfl\nhas type\n  ?m.16318 = ?m.16318 : Prop\nbut is expected to have type\n  RPOrig.nextGreaterElement nums1 nums2 h_precond = RPRef.nextGreaterElement nums1 nums2 h_precond : Prop\nartifacts/certificates/verina_advanced_57/verina_advanced_57__T3_comm_swap__1.lean:133:104: error: type mismatch\n  rfl\nhas type\n  ?m.16423 = ?m.16423 : Prop\nbut is expected to have type\n  RPOrig.nextGreaterElement nums1 nums2 h_precond = RPRef.nextGreaterElement nums1 nums2 h_precond : Prop\nartifacts/certificates/verina_advanced_57/verina_advanced_57__T3_comm_swap__1.lean:140:42: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.nextGreaterElement nums1 nums2 h_precond\nis not definitionally equal to the right-hand side\n  RPRef.nextGreaterElement nums1 nums2 h_precond\nnums1 nums2 : List Int\nh_precond : nextGreaterElement_precond nums1 nums2\n⊢ RPOrig.nextGreaterElement nums1 nums2 h_precond = RPRef.nextGreaterElement nums1 nums2 h_precond\nartifacts/certificates/verina_advanced_57/verina_advanced_57__T3_comm_swap__1.lean:148:1326: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nis not definitionally equal to the right-hand side\n  RPRef.nextGreaterElement.resultLoop nums1 nums1.length (RPRef.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nnums1 nums2 : List Int\nh_precond : nextGreaterElement_precond nums1 nums2\n⊢ RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 [] =\n    RPRef.nextGreaterElement.resultLoop nums1 nums1.length (RPRef.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nartifacts/certificates/verina_advanced_57/verina_advanced_57__T3_comm_swap__1.lean:156:1321: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nis not definitionally equal to the right-hand side\n  RPRef.nextGreaterElement.resultLoop nums1 nums1.length (RPRef.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nnums1 nums2 : List Int\nh_precond : nextGreaterElement_precond nums1 nums2\n⊢ RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 [] =\n    RPRef.nextGreaterElement.resultLoop nums1 nums1.length (RPRef.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nartifacts/certificates/verina_advanced_57/verina_advanced_57__T3_comm_swap__1.lean:160:1342: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nis not definitionally equal to the right-hand side\n  RPRef.nextGreaterElement.resultLoop nums1 nums1.length (RPRef.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nnums1 nums2 : List Int\nh_precond : nextGreaterElement_precond nums1 nums2\n⊢ RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 [] =\n    RPRef.nextGreaterElement.resultLoop nums1 nums1.length (RPRef.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\n",
+ "stderr": "",
+ "elapsed_seconds": 1.324,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 24,
+   "col": 62,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 76,
+   "col": 62,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 129,
+   "col": 104,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.16318 = ?m.16318 : Prop\nbut is expected to have type\n  RPOrig.nextGreaterElement nums1 nums2 h_precond = RPRef.nextGreaterElement nums1 nums2 h_precond : Prop"
+  },
+  {
+   "line": 133,
+   "col": 104,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.16423 = ?m.16423 : Prop\nbut is expected to have type\n  RPOrig.nextGreaterElement nums1 nums2 h_precond = RPRef.nextGreaterElement nums1 nums2 h_precond : Prop"
+  },
+  {
+   "line": 140,
+   "col": 42,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.nextGreaterElement nums1 nums2 h_precond\nis not definitionally equal to the right-hand side\n  RPRef.nextGreaterElement nums1 nums2 h_precond\nnums1 nums2 : List Int\nh_precond : nextGreaterElement_precond nums1 nums2\n⊢ RPOrig.nextGreaterElement nums1 nums2 h_precond = RPRef.nextGreaterElement nums1 nums2 h_precond"
+  },
+  {
+   "line": 148,
+   "col": 1326,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nis not definitionally equal to the right-hand side\n  RPRef.nextGreaterElement.resultLoop nums1 nums1.length (RPRef.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nnums1 nums2 : List Int\nh_precond : nextGreaterElement_precond nums1 nums2\n⊢ RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 [] =\n    RPRef.nextGreaterElement.resultLoop nums1 nums1.length (RPRef.nextGreaterElement.mapLoop nums2 0 [] []) 0 []"
+  },
+  {
+   "line": 156,
+   "col": 1321,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nis not definitionally equal to the right-hand side\n  RPRef.nextGreaterElement.resultLoop nums1 nums1.length (RPRef.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nnums1 nums2 : List Int\nh_precond : nextGreaterElement_precond nums1 nums2\n⊢ RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 [] =\n    RPRef.nextGreaterElement.resultLoop nums1 nums1.length (RPRef.nextGreaterElement.mapLoop nums2 0 [] []) 0 []"
+  },
+  {
+   "line": 160,
+   "col": 1342,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nis not definitionally equal to the right-hand side\n  RPRef.nextGreaterElement.resultLoop nums1 nums1.length (RPRef.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\nnums1 nums2 : List Int\nh_precond : nextGreaterElement_precond nums1 nums2\n⊢ RPOrig.nextGreaterElement.resultLoop nums1 nums1.length (RPOrig.nextGreaterElement.mapLoop nums2 0 [] []) 0 [] =\n    RPRef.nextGreaterElement.resultLoop nums1 nums1.length (RPRef.nextGreaterElement.mapLoop nums2 0 [] []) 0 []\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

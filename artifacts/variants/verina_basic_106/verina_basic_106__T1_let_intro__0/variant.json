@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_106",
+ "variant_id": "verina_basic_106__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_808e270b : Array Int :=\n    if a.size ≠ b.size then\n      panic! \"Array lengths mismatch\"\n    else\n      let n := a.size;\n      let c := Array.mkArray n 0;\n      let rec loop (i : Nat) (c : Array Int) : Array Int :=\n        if i < n then\n          let c' := c.set! i (a[i]! + b[i]!);\n          loop (i + 1) c'\n        else c;\n      loop 0 c\n  __rp_tmp_808e270b\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_808e270b",
+  "seed": 0
+ },
+ "spec_hash": "3356f8ce5fb52516f712f97acb12fa9e0fd5432d7b6a888673a323e5e1317d76",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "581a8c2f04589c542d10d526aa6639fb5b2aa0a061e4592548d6d7c899c37e99",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "arraySum",
+ "code_loc_original": 11,
+ "code_loc_refactored": 13
+}

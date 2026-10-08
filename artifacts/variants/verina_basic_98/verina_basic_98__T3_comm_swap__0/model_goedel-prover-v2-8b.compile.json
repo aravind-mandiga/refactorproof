@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-8b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-8b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-8b.lean:15:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-8b.lean:26:22: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-8b.lean:38:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-8b.lean:53:46: error: type mismatch\n  rfl\nhas type\n  ?m.495 = ?m.495 : Prop\nbut is expected to have type\n  Triple x h_precond = x * 3 : Prop\nartifacts/variants/verina_basic_98/verina_basic_98__T3_comm_swap__0/model_goedel-prover-v2-8b.lean:67:46: error: type mismatch\n  rfl\nhas type\n  ?m.879 = ?m.879 : Prop\nbut is expected to have type\n  Triple x h_precond = x * 3 : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 7.745,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 53,
+   "col": 46,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.495 = ?m.495 : Prop\nbut is expected to have type\n  Triple x h_precond = x * 3 : Prop"
+  },
+  {
+   "line": 67,
+   "col": 46,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.879 = ?m.879 : Prop\nbut is expected to have type\n  Triple x h_precond = x * 3 : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

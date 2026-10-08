@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T5_branch_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T5_branch_extract__0.lean:15:19: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T5_branch_extract__0.lean:15:29: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T5_branch_extract__0.lean:23:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T5_branch_extract__0.lean:23:12: warning: The declaration 'myMin__rp_branch_b558f2ed' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T5_branch_extract__0.lean:41:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_76/lean_1/verina_basic_76__T5_branch_extract__0.lean:55:78: error: unsolved goals\ncase neg\nx y : ℤ\nh_precond : myMin_precond x y\nh✝¹ : ¬x < y\nh✝ : x ≤ y → x = y\n⊢ (∀ (a : x ≤ y), myMin__rp_branch_b558f2ed y y ⋯ = y) ∧ (y ≤ x → ¬y = x → myMin__rp_branch_b558f2ed x y h_precond = y)\n",
+ "stderr": "",
+ "elapsed_seconds": 11.278,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'myMin__rp_branch_b558f2ed' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 41,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 55,
+   "col": 78,
+   "severity": "error",
+   "text": "unsolved goals\ncase neg\nx y : ℤ\nh_precond : myMin_precond x y\nh✝¹ : ¬x < y\nh✝ : x ≤ y → x = y\n⊢ (∀ (a : x ≤ y), myMin__rp_branch_b558f2ed y y ⋯ = y) ∧ (y ≤ x → ¬y = x → myMin__rp_branch_b558f2ed x y h_precond = y)\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

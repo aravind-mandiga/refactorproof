@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_28/verina_basic_28__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_28/verina_basic_28__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_28/verina_basic_28__T2_helper_extract__0.lean:23:23: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_28/verina_basic_28__T2_helper_extract__0.lean:34:51: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_28/verina_basic_28__T2_helper_extract__0.lean:50:62: error: type mismatch\n  rfl\nhas type\n  ?m.24778 = ?m.24778 : Prop\nbut is expected to have type\n  RPOrig.isPrime n h_precond = RPRef.isPrime n h_precond : Prop\nartifacts/certificates/verina_basic_28/verina_basic_28__T2_helper_extract__0.lean:54:62: error: type mismatch\n  rfl\nhas type\n  ?m.24870 = ?m.24870 : Prop\nbut is expected to have type\n  RPOrig.isPrime n h_precond = RPRef.isPrime n h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 1.028,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 23,
+   "col": 23,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 34,
+   "col": 51,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 50,
+   "col": 62,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.24778 = ?m.24778 : Prop\nbut is expected to have type\n  RPOrig.isPrime n h_precond = RPRef.isPrime n h_precond : Prop"
+  },
+  {
+   "line": 54,
+   "col": 62,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.24870 = ?m.24870 : Prop\nbut is expected to have type\n  RPOrig.isPrime n h_precond = RPRef.isPrime n h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

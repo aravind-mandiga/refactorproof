@@ -1,0 +1,26 @@
+{
+ "task_id": "verina_basic_76",
+ "variant_id": "verina_basic_76__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "type_mismatch",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 2.471,
+ "proof_region_errors": [
+  "application type mismatch\n  ⟨h_left, h_right⟩\nargument\n  h_right\nhas type\n  y < x → x < y → x = y : Prop\nbut is expected to have type\n  y < x → (if x < y then x else myMin__rp_branch_b558f2ed x y h_precond) = y : Prop\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "ad8f0fab293b2f133dded5a6c7ce64bfe5c910305aac960e8b485dd5834a96c0",
+ "spec_hash": "d9901d31ec443cc0361ca053ba855756bcebd3f7b2721795ecbe1c0af761407d"
+}

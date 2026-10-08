@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_32",
+ "variant_id": "verina_basic_32__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_fd8f9183 : Array Int :=\n    let first := a[0]!\n    let last := a[a.size - 1]!\n    a.set! 0 last |>.set! (a.size - 1) first\n  __rp_tmp_fd8f9183\n",
+ "transformed_code_aux": "",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_fd8f9183",
+  "seed": 0
+ },
+ "spec_hash": "60bf1e74bb237e594df243782059688123c0aef193feb089cc11f06da64bc8b8",
+ "proof_hash": "a75d3e1a11dec11b8a638bcecf8eb379bd51a37b23d9a94a37fb04c640d57f39",
+ "code_hash_original": "139477c95d812fe3c278fa9911a91718861b18816338a09646b51a32c4577c4d",
+ "code_aux_hash_original": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "tier": "basic",
+ "function_name": "swapFirstAndLast",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

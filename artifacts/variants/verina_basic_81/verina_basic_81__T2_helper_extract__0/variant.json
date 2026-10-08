@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_81",
+ "variant_id": "verina_basic_81__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  DivisionFunction__rp_helper_e90423eb x y h_precond\n",
+ "transformed_code_aux": "def divMod (x y : Nat) : Int × Int :=\n  let q : Int := Int.ofNat (x / y)\n  let r : Int := Int.ofNat (x % y)\n  (r, q)\n\nprivate def DivisionFunction__rp_helper_e90423eb (x : Nat) (y : Nat) (h_precond : DivisionFunction_precond (x) (y)) : Int × Int :=\n  if y = 0 then (Int.ofNat x, 0) else divMod x y\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "DivisionFunction__rp_helper_e90423eb"
+ ],
+ "metadata": {
+  "binders": [
+   "x",
+   "y",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "716dfc85a331316a49df1cf098ae3f7e753e8b4f1cd0927243c0ec663a3c5362",
+ "proof_hash": "0369a11fac2fd4d20eeffe78e779da518dfca4f240d8b625c9b2d5b18d0aabe1",
+ "code_hash_original": "fcaa0786746c29ab66df33e27f63dbe3bae3150eb147fa07c7d9aa8fb003bc7f",
+ "code_aux_hash_original": "b3ffa6d4fdc3ad254b87d216b04c657d544a0b91a72e7acbea9ea6dc79061f91",
+ "tier": "basic",
+ "function_name": "DivisionFunction",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

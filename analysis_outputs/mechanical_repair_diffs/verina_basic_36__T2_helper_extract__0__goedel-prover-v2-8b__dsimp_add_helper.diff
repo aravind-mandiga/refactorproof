@@ -1,0 +1,11 @@
+--- goedel-prover-v2-8b:verina_basic_36__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_36__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : replaceWithColon_postcond (s) (replaceWithColon (s) h_precond) h_precond := by
+-    dsimp [replaceWithColon_precond, replaceWithColon_postcond, replaceWithColon]
++    dsimp [replaceWithColon_precond, replaceWithColon_postcond, replaceWithColon, replaceWithColon__rp_helper_3e0fbdec]
+     constructor
+     · -- Prove that the length of the result is the same as the length of s
+       simp [List.length_cons, List.length_eq_zero]
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

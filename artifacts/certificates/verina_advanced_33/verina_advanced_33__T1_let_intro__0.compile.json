@@ -1,0 +1,79 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_33/verina_advanced_33__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_33/verina_advanced_33__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_33/verina_advanced_33__T1_let_intro__0.lean:13:42: warning: unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_33/verina_advanced_33__T1_let_intro__0.lean:22:52: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_33/verina_advanced_33__T1_let_intro__0.lean:49:52: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_33/verina_advanced_33__T1_let_intro__0.lean:79:110: error: type mismatch\n  rfl\nhas type\n  ?m.1737 = ?m.1737 : Prop\nbut is expected to have type\n  RPOrig.longestIncreasingSubsequence nums h_precond = RPRef.longestIncreasingSubsequence nums h_precond : Prop\nartifacts/certificates/verina_advanced_33/verina_advanced_33__T1_let_intro__0.lean:92:150: warning: '(delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n    RPOrig.longestIncreasingSubsequence.listLength RPOrig.longestIncreasingSubsequence.helper\n    RPRef.longestIncreasingSubsequence.listLength RPRef.longestIncreasingSubsequence.helper;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_33/verina_advanced_33__T1_let_intro__0.lean:92:150: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_33/verina_advanced_33__T1_let_intro__0.lean:92:88: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/certificates/verina_advanced_33/verina_advanced_33__T1_let_intro__0.lean:96:145: warning: '(delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n    RPOrig.longestIncreasingSubsequence.listLength RPOrig.longestIncreasingSubsequence.helper\n    RPRef.longestIncreasingSubsequence.listLength RPRef.longestIncreasingSubsequence.helper;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_advanced_33/verina_advanced_33__T1_let_intro__0.lean:96:145: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_advanced_33/verina_advanced_33__T1_let_intro__0.lean:96:83: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n",
+ "stderr": "",
+ "elapsed_seconds": 3.109,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 52,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 49,
+   "col": 52,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 79,
+   "col": 110,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1737 = ?m.1737 : Prop\nbut is expected to have type\n  RPOrig.longestIncreasingSubsequence nums h_precond = RPRef.longestIncreasingSubsequence nums h_precond : Prop"
+  },
+  {
+   "line": 92,
+   "col": 150,
+   "severity": "warning",
+   "text": "'(delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n    RPOrig.longestIncreasingSubsequence.listLength RPOrig.longestIncreasingSubsequence.helper\n    RPRef.longestIncreasingSubsequence.listLength RPRef.longestIncreasingSubsequence.helper;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 92,
+   "col": 150,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 92,
+   "col": 88,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 96,
+   "col": 145,
+   "severity": "warning",
+   "text": "'(delta RPOrig.longestIncreasingSubsequence RPRef.longestIncreasingSubsequence\n    RPOrig.longestIncreasingSubsequence.listLength RPOrig.longestIncreasingSubsequence.helper\n    RPRef.longestIncreasingSubsequence.listLength RPRef.longestIncreasingSubsequence.helper;\n  rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 96,
+   "col": 145,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 96,
+   "col": 83,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

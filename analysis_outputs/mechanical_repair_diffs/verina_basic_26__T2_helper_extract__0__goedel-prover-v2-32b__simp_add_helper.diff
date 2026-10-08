@@ -1,0 +1,14 @@
+--- goedel-prover-v2-32b:verina_basic_26__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_26__T2_helper_extract__0 (simp_add_helper)
+@@ -2,7 +2,7 @@
+     by_cases h : n % 2 = 0
+     · -- Case 1: n % 2 = 0
+       have h₁ : isEven (n) h_precond = true := by
+-        simp [isEven, h, Int.emod_eq_of_lt]
++        simp [isEven, h, Int.emod_eq_of_lt, isEven__rp_helper_3a986bdd]
+         <;> norm_num
+       constructor
+       · -- Prove (isEven (n) h_precond → n % 2 = 0)
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: unsolved goals | n : ℤ | h_precond : isEven_precond n | h : ¬n % 2 = 0 | ⊢ isEven__rp_helper_3a986bdd n h_precond = false | 

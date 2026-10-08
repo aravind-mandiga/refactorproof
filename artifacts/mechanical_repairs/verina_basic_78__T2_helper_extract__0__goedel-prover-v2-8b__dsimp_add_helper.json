@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_78__T2_helper_extract__0",
+ "task_id": "verina_basic_78",
+ "source": "goedel-prover-v2-8b",
+ "transformation": "T2_helper_extract",
+ "template": "dsimp_add_helper",
+ "function_name": "MultipleReturns",
+ "helper": "MultipleReturns__rp_helper_39d93fc9",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_main : MultipleReturns_postcond (x) (y) (MultipleReturns (x) (y) h_precond) h_precond := by\n    dsimp [MultipleReturns_postcond, MultipleReturns, MultipleReturns_precond] at *\n    <;>\n    (try constructor) <;>\n    (try simp_all) <;>\n    (try ring_nf) <;>\n    (try omega) <;>\n    (try aesop)\n    <;>\n    (try\n      norm_num) <;>\n    (try\n      simp_all [Int.mul_emod, Int.add_emod, Int.sub_emod]) <;>\n    (try\n      aesop)\n    <;>\n    (try\n      norm_num) <;>\n    (try\n      omega)\n  exact h_main\n",
+ "proof_after": "  have h_main : MultipleReturns_postcond (x) (y) (MultipleReturns (x) (y) h_precond) h_precond := by\n    dsimp [MultipleReturns_postcond, MultipleReturns, MultipleReturns_precond, MultipleReturns__rp_helper_39d93fc9] at *\n    <;>\n    (try constructor) <;>\n    (try simp_all) <;>\n    (try ring_nf) <;>\n    (try omega) <;>\n    (try aesop)\n    <;>\n    (try\n      norm_num) <;>\n    (try\n      simp_all [Int.mul_emod, Int.add_emod, Int.sub_emod]) <;>\n    (try\n      aesop)\n    <;>\n    (try\n      norm_num) <;>\n    (try\n      omega)\n  exact h_main\n"
+}

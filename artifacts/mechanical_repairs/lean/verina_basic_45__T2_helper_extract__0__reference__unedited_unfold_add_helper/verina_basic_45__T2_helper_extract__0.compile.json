@@ -1,0 +1,37 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_45__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_45__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_45__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_45__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_45__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_45__T2_helper_extract__0.lean:35:62: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_45__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_45__T2_helper_extract__0.lean:54:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_45__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_45__T2_helper_extract__0.lean:73:4: error: tactic 'split' failed, consider using `set_option trace.split.failure true`\nlst : List Int\nh_precond : findProduct_precond lst\nx✝ : Option (Nat × Nat)\nei oi : Nat\nheq✝ : firstEvenOddIndices lst = some (ei, oi)\n⊢ findProduct__rp_helper_883509e2 lst h_precond = lst[ei]! * lst[oi]!\n",
+ "stderr": "",
+ "elapsed_seconds": 1.019,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 35,
+   "col": 62,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 54,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 73,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'split' failed, consider using `set_option trace.split.failure true`\nlst : List Int\nh_precond : findProduct_precond lst\nx✝ : Option (Nat × Nat)\nei oi : Nat\nheq✝ : firstEvenOddIndices lst = some (ei, oi)\n⊢ findProduct__rp_helper_883509e2 lst h_precond = lst[ei]! * lst[oi]!\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

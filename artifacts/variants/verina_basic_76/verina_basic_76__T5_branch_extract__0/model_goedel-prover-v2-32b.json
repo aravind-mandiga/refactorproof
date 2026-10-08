@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_76",
+ "variant_id": "verina_basic_76__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-32b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "type_mismatch",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 6.856,
+ "proof_region_errors": [
+  "type mismatch, term\n  h₃\nafter simplification has type\n  x < y → x = y : Prop\nbut is expected to have type\n  (if x < y then x else myMin__rp_branch_b558f2ed x y h_precond) = y : Prop\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "e4a8d168930bcac63a3be94015e37af75e8c0846298cb654a6246e938404ff44",
+ "spec_hash": "d9901d31ec443cc0361ca053ba855756bcebd3f7b2721795ecbe1c0af761407d",
+ "proof_text": "  have h_main : (x ≤ y → (if x < y then x else y) = x) ∧ (x > y → (if x < y then x else y) = y) := by\n    constructor\n    · -- Prove x ≤ y → (if x < y then x else y) = x\n      intro h_xy\n      split_ifs with h_lt\n      · -- Case x < y\n        -- Since x < y, the if condition is true, and we need to show x = x\n        rfl\n      · -- Case ¬(x < y)\n        -- Here, x ≥ y. But we have x ≤ y, so x = y\n        have h_eq : x = y := by\n          have h₁ : x ≥ y := by\n            -- Since ¬(x < y), we have x ≥ y\n            omega\n          -- Given x ≤ y and x ≥ y, we have x = y\n          omega\n        -- Substitute x = y into the else branch\n        rw [h_eq]\n        <;> simp_all\n        <;> omega\n    · -- Prove x > y → (if x < y then x else y) = y\n      intro h_xy\n      split_ifs with h_lt\n      · -- Case x < y\n        -- This case is impossible because x > y\n        exfalso\n        omega\n      · -- Case ¬(x < y)\n        -- The else branch directly gives y\n        rfl\n\n  have h_final : myMin_postcond (x) (y) (myMin (x) (y) h_precond) h_precond := by\n    simp only [myMin_postcond, myMin] at *\n    -- Use the result from h_main to directly conclude the proof\n    have h₁ : (x ≤ y → (if x < y then x else y) = x) := h_main.1\n    have h₂ : (x > y → (if x < y then x else y) = y) := h_main.2\n    constructor\n    · -- Prove x ≤ y → (if x < y then x else y) = x\n      intro h\n      have h₃ := h₁ h\n      simpa using h₃\n    · -- Prove x > y → (if x < y then x else y) = y\n      intro h\n      have h₃ := h₂ h\n      simpa using h₃\n\n  exact h_final\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-32b",
+ "strategy_condition": "default"
+}

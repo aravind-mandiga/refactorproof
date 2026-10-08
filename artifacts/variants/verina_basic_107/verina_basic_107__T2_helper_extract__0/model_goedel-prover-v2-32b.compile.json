@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-32b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-32b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-32b.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-32b.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-32b.lean:23:64: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-32b.lean:23:12: warning: The declaration 'ComputeAvg__rp_helper_860051f2' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-32b.lean:40:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_107/verina_basic_107__T2_helper_extract__0/model_goedel-prover-v2-32b.lean:59:68: error: unsolved goals\na b : ℤ\nh_precond : ComputeAvg_precond a b\nh₁ : (a + b) % 2 = a + b - 2 * ((a + b) / 2)\n⊢ ComputeAvg__rp_helper_860051f2 a b h_precond = (a + b) / 2\n",
+ "stderr": "",
+ "elapsed_seconds": 8.479,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 64,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'ComputeAvg__rp_helper_860051f2' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 59,
+   "col": 68,
+   "severity": "error",
+   "text": "unsolved goals\na b : ℤ\nh_precond : ComputeAvg_precond a b\nh₁ : (a + b) % 2 = a + b - 2 * ((a + b) / 2)\n⊢ ComputeAvg__rp_helper_860051f2 a b h_precond = (a + b) / 2\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

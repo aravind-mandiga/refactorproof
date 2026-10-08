@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_78/verina_basic_78__T2_helper_extract__0/model_goedel-prover-v2-8b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_78/verina_basic_78__T2_helper_extract__0/model_goedel-prover-v2-8b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_78/verina_basic_78__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:15:29: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_78/verina_basic_78__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:15:39: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_78/verina_basic_78__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:23:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_78/verina_basic_78__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:23:12: warning: The declaration 'MultipleReturns__rp_helper_39d93fc9' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_78/verina_basic_78__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:42:72: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_78/verina_basic_78__T2_helper_extract__0/model_goedel-prover-v2-8b.lean:56:98: error: unsolved goals\ncase right\nx y : ℤ\nh_precond : MultipleReturns_precond x y\n⊢ (MultipleReturns__rp_helper_39d93fc9 x y h_precond).2 + y = x\n",
+ "stderr": "",
+ "elapsed_seconds": 7.205,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'MultipleReturns__rp_helper_39d93fc9' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 42,
+   "col": 72,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 56,
+   "col": 98,
+   "severity": "error",
+   "text": "unsolved goals\ncase right\nx y : ℤ\nh_precond : MultipleReturns_precond x y\n⊢ (MultipleReturns__rp_helper_39d93fc9 x y h_precond).2 + y = x\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

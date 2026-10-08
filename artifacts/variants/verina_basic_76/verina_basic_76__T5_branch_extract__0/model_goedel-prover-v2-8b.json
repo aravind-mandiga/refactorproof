@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_76",
+ "variant_id": "verina_basic_76__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b",
+ "generation_attempt": 1,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.952,
+ "proof_region_errors": [
+  "unsolved goals\ncase neg\nx y : ℤ\nh_precond : myMin_precond x y\nh✝¹ : ¬x < y\nh✝ : x ≤ y → x = y\n⊢ (∀ (a : x ≤ y), myMin__rp_branch_b558f2ed y y ⋯ = y) ∧ (y ≤ x → ¬y = x → myMin__rp_branch_b558f2ed x y h_precond = y)\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "914b72e335db32efe88fa8d307ddb36f548f713ce7ec283bc480c8435490c4b7",
+ "spec_hash": "d9901d31ec443cc0361ca053ba855756bcebd3f7b2721795ecbe1c0af761407d",
+ "proof_text": "  have h_main : myMin_postcond (x) (y) (myMin (x) (y) h_precond) h_precond := by\n    dsimp only [myMin_precond, myMin_postcond, myMin] at *\n    split_ifs <;> simp_all [Int.lt_iff_le_and_ne, Int.le_of_lt]\n    <;>\n    (try { contradiction }) <;>\n    (try { omega }) <;>\n    (try {\n      constructor <;> intro h <;>\n      (try { contradiction }) <;>\n      (try { omega }) <;>\n      (try { linarith })\n    })\n    <;>\n    (try {\n      by_cases h : x = y <;> simp_all [h, Int.lt_iff_le_and_ne, Int.le_of_lt]\n      <;>\n      (try { contradiction }) <;>\n      (try { omega }) <;>\n      (try { linarith })\n    })\n    <;>\n    (try {\n      by_cases h : x < y <;> simp_all [h, Int.lt_iff_le_and_ne, Int.le_of_lt]\n      <;>\n      (try { contradiction }) <;>\n      (try { omega }) <;>\n      (try { linarith })\n    })\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "default"
+}

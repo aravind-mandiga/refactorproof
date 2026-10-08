@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_73",
+ "variant_id": "verina_basic_73__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  Match__rp_helper_231c04cc s p h_precond\n",
+ "transformed_code_aux": "\nprivate def Match__rp_helper_231c04cc (s : String) (p : String) (h_precond : Match_precond (s) (p)) : Bool :=\n  let sList := s.toList\n  let pList := p.toList\n  let rec loop (i : Nat) : Bool :=\n    if i < sList.length then\n      if (sList[i]! ≠ pList[i]!) ∧ (pList[i]! ≠ '?') then false\n      else loop (i + 1)\n    else true\n  loop 0\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "Match__rp_helper_231c04cc"
+ ],
+ "metadata": {
+  "binders": [
+   "s",
+   "p",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "45fa1c4eacc329c47931f9eac9383eb5cf7e8baf2692301bdd469f4535522db0",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "a8fe8ec683faecda878577e5fa5fb66314ce3f3b56b54b326c3f8c37ad08bf7e",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "Match",
+ "code_loc_original": 8,
+ "code_loc_refactored": 10
+}

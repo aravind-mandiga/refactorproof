@@ -1,0 +1,13 @@
+--- goedel-prover-v2-8b:verina_basic_50__T5_branch_extract__0 (proof as evaluated)
++++ goedel-prover-v2-8b:verina_basic_50__T5_branch_extract__0 (simp_add_helper)
+@@ -10,7 +10,7 @@
+         · -- Case: x ≥ 0
+           have h₂ : x ≥ 0 := by linarith
+           have h₃ : Abs (x) h_precond = x := by
+-            simp [Abs, h₂]
++            simp [Abs, h₂, Abs__rp_branch_c6672445]
+             <;> omega
+           simp_all
+           <;> omega
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

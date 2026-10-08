@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_32__T2_helper_extract__0",
+ "task_id": "verina_basic_32",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "swapFirstAndLast",
+ "helper": "swapFirstAndLast__rp_helper_6bb66f38",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold swapFirstAndLast swapFirstAndLast_postcond\n  unfold swapFirstAndLast_precond at h_precond\n  simp_all\n  -- have ha : 0 < a.toList.length := by simp [h_precond]\n  constructor\n  \u00b7 simp [Array.getElem!_eq_getD]\n    rw [\u2190 Array.getElem?_toList, \u2190 Array.getElem?_toList]\n    simp\n    rw [List.getElem?_set]\n    cases ha' : a.size with\n    | zero => simp_all\n    | succ n =>\n      cases hn : n with\n      | zero =>\n        simp [h_precond]\n      | succ n' => simp_all\n  \u00b7 constructor\n    \u00b7 simp_all [Array.getElem!_eq_getD]\n    \u00b7 intro i hi\n      simp [Array.getElem!_eq_getD]\n      rw [\u2190 Array.getElem?_toList, \u2190 Array.getElem?_toList]\n      simp\n      rw [List.getElem?_set, List.length_set]\n      simp_all\n      have : i + 2 < a.size := by\n        exact Nat.add_lt_of_lt_sub hi\n      have : a.size \u2260 i + 2 := by\n        exact Ne.symm (Nat.ne_of_lt this)\n      simp [this]\n",
+ "proof_after": "  unfold swapFirstAndLast swapFirstAndLast__rp_helper_6bb66f38 swapFirstAndLast_postcond\n  unfold swapFirstAndLast_precond at h_precond\n  simp_all\n  -- have ha : 0 < a.toList.length := by simp [h_precond]\n  constructor\n  \u00b7 simp [Array.getElem!_eq_getD]\n    rw [\u2190 Array.getElem?_toList, \u2190 Array.getElem?_toList]\n    simp\n    rw [List.getElem?_set]\n    cases ha' : a.size with\n    | zero => simp_all\n    | succ n =>\n      cases hn : n with\n      | zero =>\n        simp [h_precond]\n      | succ n' => simp_all\n  \u00b7 constructor\n    \u00b7 simp_all [Array.getElem!_eq_getD]\n    \u00b7 intro i hi\n      simp [Array.getElem!_eq_getD]\n      rw [\u2190 Array.getElem?_toList, \u2190 Array.getElem?_toList]\n      simp\n      rw [List.getElem?_set, List.length_set]\n      simp_all\n      have : i + 2 < a.size := by\n        exact Nat.add_lt_of_lt_sub hi\n      have : a.size \u2260 i + 2 := by\n        exact Ne.symm (Nat.ne_of_lt this)\n      simp [this]\n"
+}

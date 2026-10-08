@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean:16:19: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean:16:29: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean:27:31: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean:40:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean:59:70: error: type mismatch\n  rfl\nhas type\n  ?m.170 = ?m.170 : Prop\nbut is expected to have type\n  myMin a b h_precond = if a ≤ b then a else b : Prop\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean:73:72: error: type mismatch\n  rfl\nhas type\n  ?m.806 = ?m.806 : Prop\nbut is expected to have type\n  myMin a b h_precond = if a ≤ b then a else b : Prop\nartifacts/variants/verina_basic_8/verina_basic_8__T4_cond_invert__0/model_goedel-prover-v2-8b__avoid_unfold.lean:86:72: error: type mismatch\n  rfl\nhas type\n  ?m.1393 = ?m.1393 : Prop\nbut is expected to have type\n  myMin a b h_precond = if a ≤ b then a else b : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 7.688,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 16,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 27,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 40,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 59,
+   "col": 70,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.170 = ?m.170 : Prop\nbut is expected to have type\n  myMin a b h_precond = if a ≤ b then a else b : Prop"
+  },
+  {
+   "line": 73,
+   "col": 72,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.806 = ?m.806 : Prop\nbut is expected to have type\n  myMin a b h_precond = if a ≤ b then a else b : Prop"
+  },
+  {
+   "line": 86,
+   "col": 72,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1393 = ?m.1393 : Prop\nbut is expected to have type\n  myMin a b h_precond = if a ≤ b then a else b : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,99 @@
+-- !benchmark @start import type=solution
+
+import Aesop
+import Mathlib
+-- !benchmark @end import
+
+-- !benchmark @start solution_aux
+
+-- !benchmark @end solution_aux
+
+-- !benchmark @start precond_aux
+
+-- !benchmark @end precond_aux
+
+@[reducible, simp]
+def lastDigit_precond (n : Nat) : Prop :=
+  -- !benchmark @start precond
+  True
+  -- !benchmark @end precond
+
+
+-- !benchmark @start code_aux
+
+-- !benchmark @end code_aux
+
+
+def lastDigit (n : Nat) (h_precond : lastDigit_precond (n)) : Nat :=
+  -- !benchmark @start code
+  let __rp_tmp_c1b8a8ca : Nat :=
+    n % 10
+  __rp_tmp_c1b8a8ca
+  -- !benchmark @end code
+
+
+-- !benchmark @start postcond_aux
+
+-- !benchmark @end postcond_aux
+
+
+@[reducible, simp]
+def lastDigit_postcond (n : Nat) (result: Nat) (h_precond : lastDigit_precond (n)) :=
+  -- !benchmark @start postcond
+  (0 ≤ result ∧ result < 10) ∧
+  (n % 10 - result = 0 ∧ result - n % 10 = 0)
+  -- !benchmark @end postcond
+
+
+-- !benchmark @start proof_aux
+
+-- !benchmark @end proof_aux
+
+
+theorem lastDigit_spec_satisfied (n: Nat) (h_precond : lastDigit_precond (n)) :
+    lastDigit_postcond (n) (lastDigit (n) h_precond) h_precond := by
+  -- !benchmark @start proof
+  have h₁ : lastDigit (n) h_precond = n % 10 := by
+    simp [lastDigit, h_precond]
+    <;> rfl
+
+  have h₂ : 0 ≤ n % 10 ∧ n % 10 < 10 := by
+    have h₂₁ : 0 ≤ n % 10 := by
+      omega
+    have h₂₂ : n % 10 < 10 := by
+      have h₂₂₁ : n % 10 < 10 := by
+        omega
+      exact h₂₂₁
+    exact ⟨h₂₁, h₂₂⟩
+
+  have h₃ : n % 10 - n % 10 = 0 := by
+    have h₃ : n % 10 - n % 10 = 0 := by
+      simp [Nat.sub_self]
+    exact h₃
+
+  have h₄ : n % 10 - n % 10 = 0 := by
+    have h₄ : n % 10 - n % 10 = 0 := by
+      simp [Nat.sub_self]
+    exact h₄
+
+  have h₅ : (0 ≤ n % 10 ∧ n % 10 < 10) ∧ (n % 10 - n % 10 = 0 ∧ n % 10 - n % 10 = 0) := by
+    constructor
+    · -- Prove 0 ≤ n % 10 ∧ n % 10 < 10
+      exact h₂
+    · -- Prove n % 10 - n % 10 = 0 ∧ n % 10 - n % 10 = 0
+      constructor
+      · -- Prove n % 10 - n % 10 = 0
+        exact h₃
+      · -- Prove n % 10 - n % 10 = 0
+        exact h₄
+
+  simp_all [lastDigit, h₁]
+  <;>
+  (try omega) <;>
+  (try aesop) <;>
+  (try simp_all [lastDigit_precond, lastDigit_postcond]) <;>
+  (try aesop) <;>
+  (try omega)
+  <;>
+  aesop
+  -- !benchmark @end proof

@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_26/lean_0/verina_basic_26__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_26/lean_0/verina_basic_26__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_26/lean_0/verina_basic_26__T2_helper_extract__0.lean:16:20: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_26/lean_0/verina_basic_26__T2_helper_extract__0.lean:24:50: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_26/lean_0/verina_basic_26__T2_helper_extract__0.lean:24:12: warning: The declaration 'isEven__rp_helper_3a986bdd' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_26/lean_0/verina_basic_26__T2_helper_extract__0.lean:41:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_26/lean_0/verina_basic_26__T2_helper_extract__0.lean:58:6: error: type mismatch, term\n  h\nafter simplification has type\n  isEven__rp_helper_3a986bdd n h_precond = true : Prop\nbut is expected to have type\n  2 ∣ n : Prop\nartifacts/selection_sensitivity/goedel-prover-v2-8b/verina_basic_26/lean_0/verina_basic_26__T2_helper_extract__0.lean:74:40: error: unsolved goals\nn : ℤ\nh_precond : isEven_precond n\nh : isEven__rp_helper_3a986bdd n h_precond = false\nh₅ : 2 ∣ n\n⊢ False\n",
+ "stderr": "",
+ "elapsed_seconds": 16.781,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 50,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'isEven__rp_helper_3a986bdd' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 41,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 6,
+   "severity": "error",
+   "text": "type mismatch, term\n  h\nafter simplification has type\n  isEven__rp_helper_3a986bdd n h_precond = true : Prop\nbut is expected to have type\n  2 ∣ n : Prop"
+  },
+  {
+   "line": 74,
+   "col": 40,
+   "severity": "error",
+   "text": "unsolved goals\nn : ℤ\nh_precond : isEven_precond n\nh : isEven__rp_helper_3a986bdd n h_precond = false\nh₅ : 2 ∣ n\n⊢ False\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

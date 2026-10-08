@@ -1,0 +1,13 @@
+--- goedel-prover-v2-32b:verina_basic_76__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_76__T2_helper_extract__0 (simp_add_helper)
+@@ -30,7 +30,7 @@
+         rfl
+ 
+   have h_final : myMin_postcond (x) (y) (myMin (x) (y) h_precond) h_precond := by
+-    simp only [myMin_postcond, myMin] at *
++    simp only [myMin_postcond, myMin, myMin__rp_helper_5e5dcb4d] at *
+     -- Use the result from h_main to directly conclude the proof
+     have h₁ : (x ≤ y → (if x < y then x else y) = x) := h_main.1
+     have h₂ : (x > y → (if x < y then x else y) = y) := h_main.2
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

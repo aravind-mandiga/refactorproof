@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_15",
+ "variant_id": "verina_basic_15__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "qwen3-32b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 6.694,
+ "proof_region_errors": [
+  "tactic 'constructor' failed, no applicable constructor found\ncase mp\na : Array ℤ\nh_precond : containsConsecutiveNumbers_precond a\ni : ℕ\nhi : i < a.size - 1\nhconsec : a[i]! + 1 = a[i + 1]!\nhi' : 1 + i < a.size\nhi'' : i < a.size\n⊢ containsConsecutiveNumbers__rp_helper_906cb743 a h_precond = true",
+  "simp made no progress\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "6bf0a86ec82ea6e8377a3bf477a9205f2d0b08ded7541aa7690a1b85776cc078",
+ "spec_hash": "2deae86e6b7418297451c43b8dff245af3365f070f05b7bd291ad4134cb28676",
+ "proof_text": "  unfold containsConsecutiveNumbers containsConsecutiveNumbers_postcond\n  constructor\n  · simp_all\n    intro i hi hconsec\n    have hi' : 1 + i < a.size := by\n        rw [Nat.add_comm]\n        exact Nat.add_lt_of_lt_sub hi\n    have hi'' : i < a.size := by\n      have : i < 1 + i := by\n        simp [Nat.lt_add_of_pos_left]\n      exact Nat.lt_trans this hi'\n    constructor\n    · exact Nat.lt_of_add_right_lt hi'\n    · apply Array.any_iff_exists.mpr\n      simp\n      exists i\n      simp [hi, hi'']\n      have : a[i]! = a[i] := by\n        exact getElem!_pos a i hi''\n      rw [←this]\n      exact hconsec\n  · simp\n    intro ha h\n    have h' := Array.any_iff_exists.mp h\n    simp at h'\n    rcases h' with ⟨i, hi, ⟨hi', hconsec⟩⟩\n    have : a[i]! = a[i] := by\n      exact getElem!_pos a i hi\n    exists i\n    rw [this]\n    simp_all\n",
+ "proof_aux_text": "\n",
+ "model_family": "qwen3",
+ "base_model": "qwen3-32b",
+ "strategy_condition": "default"
+}

@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_66/verina_basic_66__T2_helper_extract__0/model_goedel-prover-v2-32b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_66/verina_basic_66__T2_helper_extract__0/model_goedel-prover-v2-32b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_66/verina_basic_66__T2_helper_extract__0/model_goedel-prover-v2-32b.lean:14:27: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_66/verina_basic_66__T2_helper_extract__0/model_goedel-prover-v2-32b.lean:22:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_66/verina_basic_66__T2_helper_extract__0/model_goedel-prover-v2-32b.lean:22:12: warning: The declaration 'ComputeIsEven__rp_helper_c370e361' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_66/verina_basic_66__T2_helper_extract__0/model_goedel-prover-v2-32b.lean:39:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_66/verina_basic_66__T2_helper_extract__0/model_goedel-prover-v2-32b.lean:97:6: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_66/verina_basic_66__T2_helper_extract__0/model_goedel-prover-v2-32b.lean:51:74: error: unsolved goals\ncase mp\nx : ℤ\nh_precond : ComputeIsEven_precond x\nh_main : 2 ∣ x ↔ ∃ k, x = 2 * k\na : ComputeIsEven__rp_helper_c370e361 x h_precond = true\n⊢ ∃ k, x = 2 * k\n\ncase mpr\nw : ℤ\nh_precond : ComputeIsEven_precond (2 * w)\n⊢ ComputeIsEven__rp_helper_c370e361 (2 * w) h_precond = true\n",
+ "stderr": "",
+ "elapsed_seconds": 8.624,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 27,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'ComputeIsEven__rp_helper_c370e361' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 39,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 97,
+   "col": 6,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 51,
+   "col": 74,
+   "severity": "error",
+   "text": "unsolved goals\ncase mp\nx : ℤ\nh_precond : ComputeIsEven_precond x\nh_main : 2 ∣ x ↔ ∃ k, x = 2 * k\na : ComputeIsEven__rp_helper_c370e361 x h_precond = true\n⊢ ∃ k, x = 2 * k\n\ncase mpr\nw : ℤ\nh_precond : ComputeIsEven_precond (2 * w)\n⊢ ComputeIsEven__rp_helper_c370e361 (2 * w) h_precond = true\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

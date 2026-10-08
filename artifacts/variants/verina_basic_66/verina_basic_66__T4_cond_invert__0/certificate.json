@@ -1,0 +1,65 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_basic_66",
+ "variant_id": "verina_basic_66__T4_cond_invert__0",
+ "transformation": "T4_cond_invert",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 5.654,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": "simp_only",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.295 = ?m.295 : Prop\nbut is expected to have type\n  RPOrig.ComputeIsEven x h_precond = RPRef.ComputeIsEven x h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.923 = ?m.923 : Prop\nbut is expected to have type\n  RPOrig.ComputeIsEven x h_precond = RPRef.ComputeIsEven x h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  if x % 2 = 0 then true else false\nis not definitionally equal to the right-hand side\n  if ¬x % 2 = 0 then false else true\nx : ℤ\nh_precond : ComputeIsEven_precond x\n⊢ (if x % 2 = 0 then true else false) = if ¬x % 2 = 0 then false else true"
+   ]
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'delta' failed, did not delta reduce [RPOrig.ComputeIsEven, RPRef.ComputeIsEven]\nx : ℤ\nh_precond : ComputeIsEven_precond x\n⊢ decide (2 ∣ x) = !decide (x % 2 = 1)"
+   ]
+  },
+  "bycases": {
+   "ok": true,
+   "errors": []
+  },
+  "bycases_ite": {
+   "ok": true,
+   "errors": []
+  },
+  "split_simp_all": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

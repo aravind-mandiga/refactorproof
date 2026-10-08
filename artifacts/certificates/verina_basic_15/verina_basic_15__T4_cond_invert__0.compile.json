@@ -1,0 +1,133 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:14:40: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:23:48: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:34:48: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:46:100: error: type mismatch\n  rfl\nhas type\n  ?m.1118 = ?m.1118 : Prop\nbut is expected to have type\n  RPOrig.containsConsecutiveNumbers a h_precond = RPRef.containsConsecutiveNumbers a h_precond : Prop\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:50:100: error: type mismatch\n  rfl\nhas type\n  ?m.2343 = ?m.2343 : Prop\nbut is expected to have type\n  RPOrig.containsConsecutiveNumbers a h_precond = RPRef.containsConsecutiveNumbers a h_precond : Prop\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:55:2: error: tactic 'rfl' failed, the left-hand side\n  if a.size ≤ 1 then false\n  else\n    let withIndices := Array.mapIdx (fun i x => (i, x)) a;\n    withIndices.any fun x =>\n      match x with\n      | (i, x) => decide (i < a.size - 1) && x + 1 == a[i + 1]!\nis not definitionally equal to the right-hand side\n  if ¬a.size ≤ 1 then\n    let withIndices := Array.mapIdx (fun i x => (i, x)) a;\n    withIndices.any fun x =>\n      match x with\n      | (i, x) => decide (i < a.size - 1) && x + 1 == a[i + 1]!\n  else false\na : Array ℤ\nh_precond : containsConsecutiveNumbers_precond a\n⊢ (if a.size ≤ 1 then false\n    else\n      let withIndices := Array.mapIdx (fun i x => (i, x)) a;\n      withIndices.any fun x =>\n        match x with\n        | (i, x) => decide (i < a.size - 1) && x + 1 == a[i + 1]!) =\n    if ¬a.size ≤ 1 then\n      let withIndices := Array.mapIdx (fun i x => (i, x)) a;\n      withIndices.any fun x =>\n        match x with\n        | (i, x) => decide (i < a.size - 1) && x + 1 == a[i + 1]!\n    else false\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:60:101: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:61:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:62:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:60:101: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:61:6: warning: '(simp only [RPOrig.containsConsecutiveNumbers, RPRef.containsConsecutiveNumbers, ite_not, Bool.not_eq_true, decide_not,\n      Nat.not_lt, Nat.not_le, Int.not_lt, Int.not_le]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:62:6: warning: '(simp only [RPOrig.containsConsecutiveNumbers, RPRef.containsConsecutiveNumbers]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:69:146: error: tactic 'delta' failed, did not delta reduce [RPOrig.containsConsecutiveNumbers, RPRef.containsConsecutiveNumbers]\na : Array ℤ\nh_precond : containsConsecutiveNumbers_precond a\n⊢ (!decide (a.size ≤ 1) &&\n      (Array.mapIdx (fun i x => (i, x)) a).any (fun a_1 => decide (a_1.1 < a.size - 1) && a_1.2 + 1 == a[a_1.1 + 1]!) 0\n        a.size) =\n    (decide (1 < a.size) &&\n      (Array.mapIdx (fun i x => (i, x)) a).any (fun a_1 => decide (a_1.1 < a.size - 1) && a_1.2 + 1 == a[a_1.1 + 1]!) 0\n        a.size)\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:73:120: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:73:120: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:77:129: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:77:129: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:81:112: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_15/verina_basic_15__T4_cond_invert__0.lean:81:112: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 5.836,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 48,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 34,
+   "col": 48,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 46,
+   "col": 100,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1118 = ?m.1118 : Prop\nbut is expected to have type\n  RPOrig.containsConsecutiveNumbers a h_precond = RPRef.containsConsecutiveNumbers a h_precond : Prop"
+  },
+  {
+   "line": 50,
+   "col": 100,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.2343 = ?m.2343 : Prop\nbut is expected to have type\n  RPOrig.containsConsecutiveNumbers a h_precond = RPRef.containsConsecutiveNumbers a h_precond : Prop"
+  },
+  {
+   "line": 55,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if a.size ≤ 1 then false\n  else\n    let withIndices := Array.mapIdx (fun i x => (i, x)) a;\n    withIndices.any fun x =>\n      match x with\n      | (i, x) => decide (i < a.size - 1) && x + 1 == a[i + 1]!\nis not definitionally equal to the right-hand side\n  if ¬a.size ≤ 1 then\n    let withIndices := Array.mapIdx (fun i x => (i, x)) a;\n    withIndices.any fun x =>\n      match x with\n      | (i, x) => decide (i < a.size - 1) && x + 1 == a[i + 1]!\n  else false\na : Array ℤ\nh_precond : containsConsecutiveNumbers_precond a\n⊢ (if a.size ≤ 1 then false\n    else\n      let withIndices := Array.mapIdx (fun i x => (i, x)) a;\n      withIndices.any fun x =>\n        match x with\n        | (i, x) => decide (i < a.size - 1) && x + 1 == a[i + 1]!) =\n    if ¬a.size ≤ 1 then\n      let withIndices := Array.mapIdx (fun i x => (i, x)) a;\n      withIndices.any fun x =>\n        match x with\n        | (i, x) => decide (i < a.size - 1) && x + 1 == a[i + 1]!\n    else false"
+  },
+  {
+   "line": 60,
+   "col": 101,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 62,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 101,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.containsConsecutiveNumbers, RPRef.containsConsecutiveNumbers, ite_not, Bool.not_eq_true, decide_not,\n      Nat.not_lt, Nat.not_le, Int.not_lt, Int.not_le]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 62,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.containsConsecutiveNumbers, RPRef.containsConsecutiveNumbers]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 69,
+   "col": 146,
+   "severity": "error",
+   "text": "tactic 'delta' failed, did not delta reduce [RPOrig.containsConsecutiveNumbers, RPRef.containsConsecutiveNumbers]\na : Array ℤ\nh_precond : containsConsecutiveNumbers_precond a\n⊢ (!decide (a.size ≤ 1) &&\n      (Array.mapIdx (fun i x => (i, x)) a).any (fun a_1 => decide (a_1.1 < a.size - 1) && a_1.2 + 1 == a[a_1.1 + 1]!) 0\n        a.size) =\n    (decide (1 < a.size) &&\n      (Array.mapIdx (fun i x => (i, x)) a).any (fun a_1 => decide (a_1.1 < a.size - 1) && a_1.2 + 1 == a[a_1.1 + 1]!) 0\n        a.size)"
+  },
+  {
+   "line": 73,
+   "col": 120,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 73,
+   "col": 120,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 77,
+   "col": 129,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 77,
+   "col": 129,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 112,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 81,
+   "col": 112,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.containsConsecutiveNumbers RPRef.containsConsecutiveNumbers; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_6",
+ "variant_id": "verina_basic_6__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__hard_unfold",
+ "generation_attempt": 2,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 8.111,
+ "proof_region_errors": [
+  "unsolved goals\ncase left.left\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh : a ≤ b → c < a\n⊢ minOfThree__rp_branch_73840f67 a b c h_precond ≤ a\n\ncase left.right.left\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh : a ≤ b → c < a\n⊢ minOfThree__rp_branch_73840f67 a b c h_precond ≤ b\n\ncase left.right.right\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh : a ≤ b → c < a\n⊢ minOfThree__rp_branch_73840f67 a b c h_precond ≤ c\n\ncase right\na b c : ℤ\nh_precond : minOfThree_precond a b c\nh : a ≤ b → "
+ ],
+ "other_region_errors": [],
+ "proof_hash": "56b6ac1109ad7af90b113f43144af1d6742d81cc8a8fc58c85fc2c9b2029563e",
+ "spec_hash": "9da95e2e35cc3731ffceb30e0af09791534c0e36e1651f399906215b247ecfaa",
+ "proof_text": "  unfold minOfThree minOfThree_postcond\n  have h_main : minOfThree_postcond (a) (b) (c) (minOfThree (a) (b) (c) h_precond) h_precond := by\n    dsimp [minOfThree, minOfThree_postcond, minOfThree_precond] at *\n    split_ifs at * <;>\n    (try { contradiction }) <;>\n    (try { aesop }) <;>\n    (try {\n      constructor <;>\n      (try { constructor <;> omega }) <;>\n      (try { simp_all [Int.le_of_lt] <;> omega }) <;>\n      (try { aesop })\n    }) <;>\n    (try {\n      aesop\n    }) <;>\n    (try {\n      omega\n    }) <;>\n    (try {\n      aesop\n    }) <;>\n    (try {\n      simp_all [Int.le_of_lt] <;> omega\n    })\n    <;>\n    aesop\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "hard_unfold"
+}

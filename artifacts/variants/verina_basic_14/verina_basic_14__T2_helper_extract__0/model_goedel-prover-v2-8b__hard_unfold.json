@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_14",
+ "variant_id": "verina_basic_14__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__hard_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.103,
+ "proof_region_errors": [
+  "unsolved goals\ncase mp.inl\ns : String\nh_precond : containsZ_precond s\nleft : 'z' ∈ s.data\n⊢ containsZ__rp_helper_6f400cbb s h_precond = true\n\ncase mp.inr\ns : String\nh_precond : containsZ_precond s\nleft : 'Z' ∈ s.data\n⊢ containsZ__rp_helper_6f400cbb s h_precond = true\n\ncase mpr\ns : String\nh_precond : containsZ_precond s\na : containsZ__rp_helper_6f400cbb s h_precond = true\n⊢ ∃ x ∈ s.data, x = 'z' ∨ x = 'Z'\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "1a1e0adcfb658f3fdaba47e503df828d7c33d194840b1579ae7bf66f5bdf5a04",
+ "spec_hash": "8b422f0f0718a6d5587cf0f1b04c62ad78afdfafab0eb53a3521396f6b627702",
+ "proof_text": "  unfold containsZ containsZ_postcond\n  have h₁ : (s.toList.any (fun c => c = 'z' ∨ c = 'Z')) ↔ (s.toList.any (fun c => c = 'z' ∨ c = 'Z')) := by\n    apply Iff.intro\n    · intro h\n      exact h\n    · intro h\n      exact h\n\n  simp_all [containsZ_postcond, containsZ, List.any_cons, List.mem_cons, List.mem_nil_iff]\n  <;>\n  aesop\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "hard_unfold"
+}

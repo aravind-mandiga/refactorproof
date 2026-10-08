@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_71",
+ "variant_id": "verina_basic_71__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  LongestCommonPrefix__rp_helper_cb9daf18 str1 str2 h_precond\n",
+ "transformed_code_aux": "\nprivate def LongestCommonPrefix__rp_helper_cb9daf18 (str1 : List Char) (str2 : List Char) (h_precond : LongestCommonPrefix_precond (str1) (str2)) : List Char :=\n  let minLength := Nat.min str1.length str2.length\n  let rec aux (idx : Nat) (acc : List Char) : List Char :=\n    if idx < minLength then\n      match str1[idx]?, str2[idx]? with\n      | some c1, some c2 =>\n          if c1 ≠ c2 then acc\n          else aux (idx + 1) (acc ++ [c1])\n      | _, _ => acc\n    else acc\n  aux 0 []\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "LongestCommonPrefix__rp_helper_cb9daf18"
+ ],
+ "metadata": {
+  "binders": [
+   "str1",
+   "str2",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "ff28360aa5af0987bbfc1ac345f5802b0908bdf517a5349510a70437d358ad1b",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "7af20fdb6a86b8cb40f939d54b7955cb969d3bcf1851f485636af8054ff582d3",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "LongestCommonPrefix",
+ "code_loc_original": 10,
+ "code_loc_refactored": 12
+}

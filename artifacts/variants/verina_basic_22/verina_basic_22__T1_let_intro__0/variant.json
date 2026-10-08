@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_22",
+ "variant_id": "verina_basic_22__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_bd718fcd : Array Int :=\n    let res := a.foldl (fun acc x => if !inArray b x then acc.insert x else acc) Std.HashSet.emptyWithCapacity\n    let res := b.foldl (fun acc x => if !inArray a x then acc.insert x else acc) res\n    (res.toList.mergeSort (· ≤ ·)).toArray\n  __rp_tmp_bd718fcd\n",
+ "transformed_code_aux": "",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_bd718fcd",
+  "seed": 0
+ },
+ "spec_hash": "504d0e7ebb3741ba83fe00dba2451d7804bf8d7da1d9b3725f1afca837844f5b",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "bb2902445032610b53a8b43e618c872c05551759ab42230a96d0d05b1aca29cf",
+ "code_aux_hash_original": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "tier": "basic",
+ "function_name": "dissimilarElements",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

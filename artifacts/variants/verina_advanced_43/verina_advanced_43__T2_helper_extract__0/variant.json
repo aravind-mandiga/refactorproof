@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_43",
+ "variant_id": "verina_advanced_43__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  maxStrength__rp_helper_2ce7585c nums h_precond\n",
+ "transformed_code_aux": "\nprivate def maxStrength__rp_helper_2ce7585c (nums : List Int) (h_precond : maxStrength_precond (nums)) : Int :=\n  let powerSet := fun (l : List Int) =>\n    let n := l.length\n    let masks := List.range (2^n)\n    masks.map fun mask =>\n      (List.range n).foldr (fun i acc =>\n        if (mask.shiftRight i).land 1 == 1 then l[i]! :: acc else acc\n      ) []\n\n  let subsets := powerSet nums\n  let nonEmpty := subsets.filter (· ≠ [])\n  let products := List.map (fun subset =>\n    List.foldl (fun acc x =>\n      acc * x) (1 : Int) subset)\n    nonEmpty\n  (List.max? products).getD (-1000000)\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "maxStrength__rp_helper_2ce7585c"
+ ],
+ "metadata": {
+  "binders": [
+   "nums",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "5c7dcb352e93f0204b74c831dd65df144972103668928cc33864ea38a6dfd260",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "cc454ce1bd2c85487cc25f924ea919817bb70739443e3befbcc5071882fcbae2",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "maxStrength",
+ "code_loc_original": 14,
+ "code_loc_refactored": 16
+}

@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_40",
+ "variant_id": "verina_basic_40__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  secondSmallest__rp_helper_73d614f2 s h_precond\n",
+ "transformed_code_aux": "def secondSmallestAux (s : Array Int) (i minIdx : Nat) (secondIdx : Option Nat) : Int :=\n  if i ≥ s.size then\n    match secondIdx with\n    | some si => s[si]!\n    | none => panic! \"no second smallest\"  -- unreachable given precondition\n  else\n    let x := s[i]!\n    let m := s[minIdx]!\n    match secondIdx with\n    | none =>\n      if x < m then\n        secondSmallestAux s (i + 1) i (some minIdx)\n      else if x > m then\n        secondSmallestAux s (i + 1) minIdx (some i)\n      else\n        secondSmallestAux s (i + 1) minIdx none\n    | some si =>\n      let smin := s[si]!\n      if x < m then\n        secondSmallestAux s (i + 1) i (some minIdx)\n      else if x < smin ∧ x > m then\n        secondSmallestAux s (i + 1) minIdx (some i)\n      else\n        secondSmallestAux s (i + 1) minIdx (some si)\ntermination_by s.size - i\n\nprivate def secondSmallest__rp_helper_73d614f2 (s : Array Int) (h_precond : secondSmallest_precond (s)) : Int :=\n  secondSmallestAux s 1 0 none\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "secondSmallest__rp_helper_73d614f2"
+ ],
+ "metadata": {
+  "binders": [
+   "s",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "c0c79f6a790f59679ed46f55050e102a8b21420dd7ab4bea69047f640ef243c8",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "3fae0445ff7295361f8da33b3373df8fc4d6ecca1b72a81fdf56f9304558b393",
+ "code_aux_hash_original": "c17944aa836ce4f86f236cc386db0abf0ffd901e4157268d48bd6ee544e02128",
+ "tier": "basic",
+ "function_name": "secondSmallest",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

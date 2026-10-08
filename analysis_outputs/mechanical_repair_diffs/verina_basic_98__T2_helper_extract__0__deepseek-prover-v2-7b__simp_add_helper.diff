@@ -1,0 +1,13 @@
+--- deepseek-prover-v2-7b:verina_basic_98__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_98__T2_helper_extract__0 (simp_add_helper)
+@@ -1,6 +1,6 @@
+   have h1 : (Triple (x) h_precond) / 3 = x := by
+     have h₁ : Triple (x) h_precond = x * 3 := by
+-      simp [Triple]
++      simp [Triple, Triple__rp_helper_c4a61f58]
+       <;> ring_nf
+       <;> omega
+     rw [h₁]
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: omega could not prove the goal: | a possible counterexample may satisfy the constraints |   -2 ≤ 3*a - b ≤ 0 |   3*a - c ≥ 1 | where |  a := x |  b := Triple x h_precond |  c := Triple__rp_helper_c4a61f58 x h_precond

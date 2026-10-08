@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_50__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_50__T5_branch_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_50__T5_branch_extract__0.lean:14:17: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_50__T5_branch_extract__0.lean:22:47: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_50__T5_branch_extract__0.lean:22:12: warning: The declaration 'Abs__rp_branch_c6672445' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_50__T5_branch_extract__0.lean:40:42: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_50__T5_branch_extract__0__goedel-prover-v2-32b__unedited_dsimp_add_helper/verina_basic_50__T5_branch_extract__0.lean:68:8: error: linarith failed to find a contradiction\ncase neg.h1.h\nx : ℤ\nh_precond : Abs_precond x\nhx : 0 ≤ x\na✝ : Abs__rp_branch_c6672445 x h_precond < x\n⊢ False failed\n",
+ "stderr": "",
+ "elapsed_seconds": 9.523,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 17,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 47,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'Abs__rp_branch_c6672445' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 68,
+   "col": 8,
+   "severity": "error",
+   "text": "linarith failed to find a contradiction\ncase neg.h1.h\nx : ℤ\nh_precond : Abs_precond x\nhx : 0 ≤ x\na✝ : Abs__rp_branch_c6672445 x h_precond < x\n⊢ False failed\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

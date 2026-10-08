@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_8__T5_branch_extract__0",
+ "task_id": "verina_basic_8",
+ "source": "goedel-prover-v2-8b",
+ "transformation": "T5_branch_extract",
+ "template": "dsimp_add_helper",
+ "function_name": "myMin",
+ "helper": "myMin__rp_branch_c77e3e9a",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h_main : myMin_postcond (a) (b) (myMin (a) (b) h_precond) h_precond := by\n    dsimp [myMin, myMin_precond, myMin_postcond] at *\n    <;>\n    split_ifs <;>\n    (try {\n      -- Case 1: a \u2264 b\n      simp_all [le_refl, le_of_lt]\n      <;>\n      (try { contradiction }) <;>\n      (try { aesop }) <;>\n      (try { omega })\n    }) <;>\n    (try {\n      -- Case 2: a > b\n      simp_all [le_refl, le_of_lt]\n      <;>\n      (try { contradiction }) <;>\n      (try { aesop }) <;>\n      (try { omega })\n    }) <;>\n    (try {\n      -- Common cases\n      aesop\n    })\n    <;>\n    (try {\n      -- Use omega to handle inequalities\n      omega\n    })\n    <;>\n    (try {\n      -- Use aesop to handle logical implications\n      aesop\n    })\n  exact h_main\n",
+ "proof_after": "  have h_main : myMin_postcond (a) (b) (myMin (a) (b) h_precond) h_precond := by\n    dsimp [myMin, myMin_precond, myMin_postcond, myMin__rp_branch_c77e3e9a] at *\n    <;>\n    split_ifs <;>\n    (try {\n      -- Case 1: a \u2264 b\n      simp_all [le_refl, le_of_lt]\n      <;>\n      (try { contradiction }) <;>\n      (try { aesop }) <;>\n      (try { omega })\n    }) <;>\n    (try {\n      -- Case 2: a > b\n      simp_all [le_refl, le_of_lt]\n      <;>\n      (try { contradiction }) <;>\n      (try { aesop }) <;>\n      (try { omega })\n    }) <;>\n    (try {\n      -- Common cases\n      aesop\n    })\n    <;>\n    (try {\n      -- Use omega to handle inequalities\n      omega\n    })\n    <;>\n    (try {\n      -- Use aesop to handle logical implications\n      aesop\n    })\n  exact h_main\n"
+}

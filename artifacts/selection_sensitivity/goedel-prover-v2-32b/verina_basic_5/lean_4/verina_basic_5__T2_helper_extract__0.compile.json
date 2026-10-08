@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_4/verina_basic_5__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_4/verina_basic_5__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_4/verina_basic_5__T2_helper_extract__0.lean:16:22: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_4/verina_basic_5__T2_helper_extract__0.lean:16:32: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_4/verina_basic_5__T2_helper_extract__0.lean:24:62: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_4/verina_basic_5__T2_helper_extract__0.lean:24:12: warning: The declaration 'multiply__rp_helper_3cc08e31' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_4/verina_basic_5__T2_helper_extract__0.lean:41:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_5/lean_4/verina_basic_5__T2_helper_extract__0.lean:55:84: error: unsolved goals\na b : ℤ\nh_precond : multiply_precond a b\n⊢ multiply__rp_helper_3cc08e31 a b h_precond - a * b = 0 ∧ -multiply__rp_helper_3cc08e31 a b h_precond + a * b = 0\n",
+ "stderr": "",
+ "elapsed_seconds": 9.05,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 16,
+   "col": 32,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 62,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 24,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'multiply__rp_helper_3cc08e31' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 41,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 55,
+   "col": 84,
+   "severity": "error",
+   "text": "unsolved goals\na b : ℤ\nh_precond : multiply_precond a b\n⊢ multiply__rp_helper_3cc08e31 a b h_precond - a * b = 0 ∧ -multiply__rp_helper_3cc08e31 a b h_precond + a * b = 0\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

@@ -1,0 +1,24 @@
+{
+ "model_id": "qwen3-32b",
+ "task_id": "verina_basic_42",
+ "attempt": 0,
+ "proof_hash": "0d6e7b198861659a892dd93c9348f133ffc56b60b6a613cf085a6021a000abbb",
+ "proof_loc": 2,
+ "proof_tokens": 7,
+ "survival": [
+  {
+   "variant_id": "verina_basic_42__T1_let_intro__0",
+   "transformation": "T1_let_intro",
+   "severity": "D",
+   "survives": true,
+   "outcome": "survives"
+  },
+  {
+   "variant_id": "verina_basic_42__T2_helper_extract__0",
+   "transformation": "T2_helper_extract",
+   "severity": "S",
+   "survives": false,
+   "outcome": "proof_fails"
+  }
+ ]
+}

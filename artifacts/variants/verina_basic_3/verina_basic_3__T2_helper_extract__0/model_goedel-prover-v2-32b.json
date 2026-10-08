@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_3",
+ "variant_id": "verina_basic_3__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-32b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.697,
+ "proof_region_errors": [
+  "unsolved goals\ncase pos\nn : ℤ\nh_precond : isDivisibleBy11_precond n\nh✝ : 11 ∣ n\nh_main : ∃ k, n = 11 * k\n⊢ isDivisibleBy11__rp_helper_c39b37ae n h_precond = false → ∀ (k : ℤ), ¬n = 11 * k\n\ncase neg\nn : ℤ\nh_precond : isDivisibleBy11_precond n\nh✝ : ¬11 ∣ n\nh_main : ∀ (k : ℤ), ¬n = 11 * k\n⊢ isDivisibleBy11__rp_helper_c39b37ae n h_precond = false\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "e34bf210eaab07d7db0d6d0bbae8863b0c042bf9d8ad14479e189f9d03d4b671",
+ "spec_hash": "2f01b2a2c66c6b65fb25ac619f4002a4b7ba13ae770c8c7faffc8784d450d630",
+ "proof_text": "  have h_main : (if n % 11 == 0 then (∃ k : Int, n = 11 * k) else (∀ k : Int, ¬ n = 11 * k)) := by\n    split_ifs with h\n    · -- Case: n % 11 == 0\n      have h₁ : ∃ k : Int, n = 11 * k := by\n        have h₂ : (11 : Int) ∣ n := by\n          -- Since n % 11 == 0, 11 divides n\n          have h₃ : n % 11 = 0 := by simpa using h\n          exact Int.dvd_of_emod_eq_zero h₃\n        -- There exists an integer k such that n = 11 * k\n        obtain ⟨k, hk⟩ := h₂\n        exact ⟨k, by linarith⟩\n      exact h₁\n    · -- Case: n % 11 ≠ 0\n      have h₁ : ∀ k : Int, ¬ n = 11 * k := by\n        intro k hk\n        have h₂ : n % 11 = 0 := by\n          have h₃ : n = 11 * k := hk\n          have h₄ : (11 * k : Int) % 11 = 0 := by\n            -- (11 * k) % 11 = 0 for any integer k\n            norm_num [Int.mul_emod, Int.emod_emod]\n          rw [h₃]\n          exact h₄\n        -- This contradicts the assumption that n % 11 ≠ 0\n        have h₃ : ¬(n % 11 == 0) := by simpa using h\n        have h₄ : n % 11 == 0 := by\n          simpa [h₂] using h₃\n        contradiction\n      exact h₁\n\n  dsimp [isDivisibleBy11_postcond, isDivisibleBy11] at *\n  split_ifs at h_main <;> simp_all (config := {decide := true})\n  <;>\n  (try { contradiction }) <;>\n  (try {\n    intro k hk\n    have h₁ := h_main\n    exfalso\n    apply h₁\n    <;> linarith\n  }) <;>\n  (try {\n    obtain ⟨k, hk⟩ := h_main\n    exact ⟨k, by linarith⟩\n  })\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-32b",
+ "strategy_condition": "default"
+}

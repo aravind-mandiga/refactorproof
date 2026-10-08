@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_88",
+ "variant_id": "verina_basic_88__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unknown_constant_or_identifier",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.476,
+ "proof_region_errors": [
+  "unknown constant 'List.get_toArray'\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "ca46d701c6c3885afa88fb42beb5f59996adba1f25cbdff758ff65a52a7e4762",
+ "spec_hash": "420ad8c684fe2237154ef98a8242f5acee41c78a8b8fd7921720bb26ddcd05bb",
+ "proof_text": "  have h1 : (ToArray xs h_precond).size = xs.length := by\n    simp [ToArray]\n    <;>\n    rfl\n\n  have h2 : ∀ (i : Nat), i < xs.length → (ToArray xs h_precond)[i]! = xs[i]! := by\n    intro i h\n    simp_all [ToArray]\n    <;>\n    rw [List.get_toArray] <;>\n    simp_all [h_precond]\n    <;>\n    (try omega) <;>\n    (try simp_all) <;>\n    (try aesop)\n\n  exact ⟨h1, h2⟩\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "default"
+}

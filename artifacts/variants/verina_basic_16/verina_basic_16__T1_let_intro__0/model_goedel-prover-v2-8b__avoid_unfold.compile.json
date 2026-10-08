@@ -1,0 +1,115 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:16:26: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:16:39: warning: unused variable `oldChar`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:16:56: warning: unused variable `newChar`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:27:65: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:43:91: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:70:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:87:8: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:64:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:65:17: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:66:68: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:82:9: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:89:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:65:4: warning: '(try decide)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:66:4: warning: '(try simp_all [String.length, List.map, List.length, List.get])' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:67:4: warning: '(try {\n    ext i\n    induction s using String.induction_on with\n    | nil => simp_all\n    | cons a s ih =>\n      cases i with\n      | zero => simp_all [String.get, List.get] <;> aesop\n      | succ i => simp_all [String.get, List.get] <;> aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/variants/verina_basic_16/verina_basic_16__T1_let_intro__0/model_goedel-prover-v2-8b__avoid_unfold.lean:83:4: warning: '(try {simp_all [String.length, List.map, List.length, List.get] <;> aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 7.265,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 16,
+   "col": 26,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 16,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `oldChar`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 16,
+   "col": 56,
+   "severity": "warning",
+   "text": "unused variable `newChar`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 27,
+   "col": 65,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 43,
+   "col": 91,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 70,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 87,
+   "col": 8,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 64,
+   "col": 4,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 65,
+   "col": 17,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 66,
+   "col": 68,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 82,
+   "col": 9,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 89,
+   "col": 4,
+   "severity": "warning",
+   "text": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`"
+  },
+  {
+   "line": 65,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try decide)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 66,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try simp_all [String.length, List.map, List.length, List.get])' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {\n    ext i\n    induction s using String.induction_on with\n    | nil => simp_all\n    | cons a s ih =>\n      cases i with\n      | zero => simp_all [String.get, List.get] <;> aesop\n      | succ i => simp_all [String.get, List.get] <;> aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 83,
+   "col": 4,
+   "severity": "warning",
+   "text": "'(try {simp_all [String.length, List.map, List.length, List.get] <;> aesop\n  })' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

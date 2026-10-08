@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_30__T2_helper_extract__0",
+ "task_id": "verina_basic_30",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "elementWiseModulo",
+ "helper": "elementWiseModulo__rp_helper_81e2cf70",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold elementWiseModulo elementWiseModulo_postcond\n  unfold elementWiseModulo_precond at h_precond\n  simp_all\n  intro i hi\n  have h_maplen : (Array.mapIdx (fun i x => x % b[i]!) a).size = a.size := by\n    apply Array.size_mapIdx\n  have h1 : (Array.mapIdx (fun i x => x % b[i]!) a)[i] = (fun i x => x % b[i]!) i a[i] := by\n    apply Array.getElem_mapIdx\n  have h_eq : (Array.mapIdx (fun i x => x % b[i]!) a)[i] = (Array.mapIdx (fun i x => x % b[i]!) a)[i]! := by\n    have hi' : i < (Array.mapIdx (fun i x => x % b[i]!) a).size := by\n      simp only [h_precond, hi, h_maplen]\n    rw [Array.getElem!_eq_getD]\n    unfold Array.getD\n    simp [hi', hi, h_precond]\n  rw [\u2190 h_eq]\n  simp only [h1]\n  have h_eq' : a[i] = a[i]! := by\n    have hi_a : i < a.size := by\n      simp only [h_precond, hi]\n    simp_all [Array.getElem!_eq_getD]\n  simp only [h_eq']\n",
+ "proof_after": "  unfold elementWiseModulo elementWiseModulo__rp_helper_81e2cf70 elementWiseModulo_postcond\n  unfold elementWiseModulo_precond at h_precond\n  simp_all\n  intro i hi\n  have h_maplen : (Array.mapIdx (fun i x => x % b[i]!) a).size = a.size := by\n    apply Array.size_mapIdx\n  have h1 : (Array.mapIdx (fun i x => x % b[i]!) a)[i] = (fun i x => x % b[i]!) i a[i] := by\n    apply Array.getElem_mapIdx\n  have h_eq : (Array.mapIdx (fun i x => x % b[i]!) a)[i] = (Array.mapIdx (fun i x => x % b[i]!) a)[i]! := by\n    have hi' : i < (Array.mapIdx (fun i x => x % b[i]!) a).size := by\n      simp only [h_precond, hi, h_maplen]\n    rw [Array.getElem!_eq_getD]\n    unfold Array.getD\n    simp [hi', hi, h_precond]\n  rw [\u2190 h_eq]\n  simp only [h1]\n  have h_eq' : a[i] = a[i]! := by\n    have hi_a : i < a.size := by\n      simp only [h_precond, hi]\n    simp_all [Array.getElem!_eq_getD]\n  simp only [h_eq']\n"
+}

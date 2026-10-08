@@ -1,0 +1,73 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_32/verina_advanced_32__T3_comm_swap__1.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_32/verina_advanced_32__T3_comm_swap__1.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_32/verina_advanced_32__T3_comm_swap__1.lean:13:42: warning: unused variable `numbers`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T3_comm_swap__1.lean:47:5: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T3_comm_swap__1.lean:78:5: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T3_comm_swap__1.lean:85:116: error: type mismatch\n  rfl\nhas type\n  ?m.3879 = ?m.3879 : Prop\nbut is expected to have type\n  RPOrig.longestIncreasingSubsequence numbers h_precond = RPRef.longestIncreasingSubsequence numbers h_precond : Prop\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T3_comm_swap__1.lean:89:116: error: type mismatch\n  rfl\nhas type\n  ?m.4182 = ?m.4182 : Prop\nbut is expected to have type\n  RPOrig.longestIncreasingSubsequence numbers h_precond = RPRef.longestIncreasingSubsequence numbers h_precond : Prop\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T3_comm_swap__1.lean:96:42: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.longestIncreasingSubsequence numbers h_precond\nis not definitionally equal to the right-hand side\n  RPRef.longestIncreasingSubsequence numbers h_precond\nnumbers : List ℤ\nh_precond : longestIncreasingSubsequence_precond numbers\n⊢ RPOrig.longestIncreasingSubsequence numbers h_precond = RPRef.longestIncreasingSubsequence numbers h_precond\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T3_comm_swap__1.lean:104:1481: error: tactic 'rfl' failed, the left-hand side\n  match numbers, h_precond with\n  | [], h_precond => 0\n  | [x], h_precond => 1\n  | first :: rest, h_precond => RPOrig.longestIncreasingSubsequence.buildTables rest [first] [1] 1\nis not definitionally equal to the right-hand side\n  match numbers, h_precond with\n  | [], h_precond => 0\n  | [x], h_precond => 1\n  | first :: rest, h_precond => RPRef.longestIncreasingSubsequence.buildTables rest [first] [1] 1\nnumbers : List ℤ\nh_precond : longestIncreasingSubsequence_precond numbers\n⊢ (match numbers, h_precond with\n    | [], h_precond => 0\n    | [x], h_precond => 1\n    | first :: rest, h_precond => RPOrig.longestIncreasingSubsequence.buildTables rest [first] [1] 1) =\n    match numbers, h_precond with\n    | [], h_precond => 0\n    | [x], h_precond => 1\n    | first :: rest, h_precond => RPRef.longestIncreasingSubsequence.buildTables rest [first] [1] 1\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T3_comm_swap__1.lean:112:1476: error: tactic 'rfl' failed, the left-hand side\n  match numbers, h_precond with\n  | [], h_precond => 0\n  | [x], h_precond => 1\n  | first :: rest, h_precond => RPOrig.longestIncreasingSubsequence.buildTables rest [first] [1] 1\nis not definitionally equal to the right-hand side\n  match numbers, h_precond with\n  | [], h_precond => 0\n  | [x], h_precond => 1\n  | first :: rest, h_precond => RPRef.longestIncreasingSubsequence.buildTables rest [first] [1] 1\nnumbers : List ℤ\nh_precond : longestIncreasingSubsequence_precond numbers\n⊢ (match numbers, h_precond with\n    | [], h_precond => 0\n    | [x], h_precond => 1\n    | first :: rest, h_precond => RPOrig.longestIncreasingSubsequence.buildTables rest [first] [1] 1) =\n    match numbers, h_precond with\n    | [], h_precond => 0\n    | [x], h_precond => 1\n    | first :: rest, h_precond => RPRef.longestIncreasingSubsequence.buildTables rest [first] [1] 1\nartifacts/certificates/verina_advanced_32/verina_advanced_32__T3_comm_swap__1.lean:116:1497: error: tactic 'rfl' failed, the left-hand side\n  match numbers, h_precond with\n  | [], h_precond => 0\n  | [x], h_precond => 1\n  | first :: rest, h_precond => RPOrig.longestIncreasingSubsequence.buildTables rest [first] [1] 1\nis not definitionally equal to the right-hand side\n  match numbers, h_precond with\n  | [], h_precond => 0\n  | [x], h_precond => 1\n  | first :: rest, h_precond => RPRef.longestIncreasingSubsequence.buildTables rest [first] [1] 1\nnumbers : List ℤ\nh_precond : longestIncreasingSubsequence_precond numbers\n⊢ (match numbers, h_precond with\n    | [], h_precond => 0\n    | [x], h_precond => 1\n    | first :: rest, h_precond => RPOrig.longestIncreasingSubsequence.buildTables rest [first] [1] 1) =\n    match numbers, h_precond with\n    | [], h_precond => 0\n    | [x], h_precond => 1\n    | first :: rest, h_precond => RPRef.longestIncreasingSubsequence.buildTables rest [first] [1] 1\n",
+ "stderr": "",
+ "elapsed_seconds": 6.125,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `numbers`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 47,
+   "col": 5,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 78,
+   "col": 5,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 85,
+   "col": 116,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.3879 = ?m.3879 : Prop\nbut is expected to have type\n  RPOrig.longestIncreasingSubsequence numbers h_precond = RPRef.longestIncreasingSubsequence numbers h_precond : Prop"
+  },
+  {
+   "line": 89,
+   "col": 116,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.4182 = ?m.4182 : Prop\nbut is expected to have type\n  RPOrig.longestIncreasingSubsequence numbers h_precond = RPRef.longestIncreasingSubsequence numbers h_precond : Prop"
+  },
+  {
+   "line": 96,
+   "col": 42,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.longestIncreasingSubsequence numbers h_precond\nis not definitionally equal to the right-hand side\n  RPRef.longestIncreasingSubsequence numbers h_precond\nnumbers : List ℤ\nh_precond : longestIncreasingSubsequence_precond numbers\n⊢ RPOrig.longestIncreasingSubsequence numbers h_precond = RPRef.longestIncreasingSubsequence numbers h_precond"
+  },
+  {
+   "line": 104,
+   "col": 1481,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  match numbers, h_precond with\n  | [], h_precond => 0\n  | [x], h_precond => 1\n  | first :: rest, h_precond => RPOrig.longestIncreasingSubsequence.buildTables rest [first] [1] 1\nis not definitionally equal to the right-hand side\n  match numbers, h_precond with\n  | [], h_precond => 0\n  | [x], h_precond => 1\n  | first :: rest, h_precond => RPRef.longestIncreasingSubsequence.buildTables rest [first] [1] 1\nnumbers : List ℤ\nh_precond : longestIncreasingSubsequence_precond numbers\n⊢ (match numbers, h_precond with\n    | [], h_precond => 0\n    | [x], h_precond => 1\n    | first :: rest, h_precond => RPOrig.longestIncreasingSubsequence.buildTables rest [first] [1] 1) =\n    match numbers, h_precond with\n    | [], h_precond => 0\n    | [x], h_precond => 1\n    | first :: rest, h_precond => RPRef.longestIncreasingSubsequence.buildTables rest [first] [1] 1"
+  },
+  {
+   "line": 112,
+   "col": 1476,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  match numbers, h_precond with\n  | [], h_precond => 0\n  | [x], h_precond => 1\n  | first :: rest, h_precond => RPOrig.longestIncreasingSubsequence.buildTables rest [first] [1] 1\nis not definitionally equal to the right-hand side\n  match numbers, h_precond with\n  | [], h_precond => 0\n  | [x], h_precond => 1\n  | first :: rest, h_precond => RPRef.longestIncreasingSubsequence.buildTables rest [first] [1] 1\nnumbers : List ℤ\nh_precond : longestIncreasingSubsequence_precond numbers\n⊢ (match numbers, h_precond with\n    | [], h_precond => 0\n    | [x], h_precond => 1\n    | first :: rest, h_precond => RPOrig.longestIncreasingSubsequence.buildTables rest [first] [1] 1) =\n    match numbers, h_precond with\n    | [], h_precond => 0\n    | [x], h_precond => 1\n    | first :: rest, h_precond => RPRef.longestIncreasingSubsequence.buildTables rest [first] [1] 1"
+  },
+  {
+   "line": 116,
+   "col": 1497,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  match numbers, h_precond with\n  | [], h_precond => 0\n  | [x], h_precond => 1\n  | first :: rest, h_precond => RPOrig.longestIncreasingSubsequence.buildTables rest [first] [1] 1\nis not definitionally equal to the right-hand side\n  match numbers, h_precond with\n  | [], h_precond => 0\n  | [x], h_precond => 1\n  | first :: rest, h_precond => RPRef.longestIncreasingSubsequence.buildTables rest [first] [1] 1\nnumbers : List ℤ\nh_precond : longestIncreasingSubsequence_precond numbers\n⊢ (match numbers, h_precond with\n    | [], h_precond => 0\n    | [x], h_precond => 1\n    | first :: rest, h_precond => RPOrig.longestIncreasingSubsequence.buildTables rest [first] [1] 1) =\n    match numbers, h_precond with\n    | [], h_precond => 0\n    | [x], h_precond => 1\n    | first :: rest, h_precond => RPRef.longestIncreasingSubsequence.buildTables rest [first] [1] 1\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

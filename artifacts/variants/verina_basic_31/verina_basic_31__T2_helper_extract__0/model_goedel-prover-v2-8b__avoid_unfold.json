@@ -1,0 +1,33 @@
+{
+ "task_id": "verina_basic_31",
+ "variant_id": "verina_basic_31__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__avoid_unfold",
+ "generation_attempt": 3,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unknown_constant_or_identifier",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 8.178,
+ "proof_region_errors": [
+  "unknown constant 'String.toList_cons'",
+  "unknown constant 'Char.toNat_add'",
+  "tactic 'rfl' failed, the left-hand side\n  (toUppercase__rp_helper_8bd90157 { data := data✝ } h_precond).length\nis not definitionally equal to the right-hand side\n  data✝.length\ncase mk\ndata✝ : List Char\nh_precond : toUppercase_precond { data := data✝ }\n⊢ (toUppercase__rp_helper_8bd90157 { data := data✝ } h_precond).length = data✝.length"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "a37cfd50a3f62e3ee87c4dab6664eb6885e37afa6af47ed5e65d142a90319e69",
+ "spec_hash": "c4341f237f8f941c6786c44f57c9c9fee3fb8554b50e20646e64e459505e6100",
+ "proof_text": "  have h_main : toUppercase_postcond (s) (toUppercase (s) h_precond) h_precond := by\n    dsimp [toUppercase_precond, toUppercase_postcond]\n    have h₁ : (toUppercase (s) h_precond).length = s.length := by\n      simp [toUppercase, List.length_map, List.length_cons, List.length_nil]\n      <;>\n      induction s <;> simp_all [String.toList_cons, Char.toNat_add, List.map_cons, List.map_nil,\n        List.length_map, List.length_cons, List.length_nil]\n      <;>\n      rfl\n    have h₂ : ∀ i, i < s.length → (isLowerCase (s.toList[i]!) → (toUppercase (s) h_precond).toList[i]! = shiftMinus32 (s.toList[i]!)) ∧ (¬isLowerCase (s.toList[i]!) → (toUppercase (s) h_precond).toList[i]! = s.toList[i]!) := by\n      intro i hi\n      have h₃ : isLowerCase (s.toList[i]!) → (toUppercase (s) h_precond).toList[i]! = shiftMinus32 (s.toList[i]!) := by\n        intro h\n        have h₄ : (toUppercase (s) h_precond).toList[i]! = shiftMinus32 (s.toList[i]!) := by\n          simp_all [toUppercase, List.map]\n          <;> aesop\n        exact h₄\n      have h₅ : ¬isLowerCase (s.toList[i]!) → (toUppercase (s) h_precond).toList[i]! = s.toList[i]! := by\n        intro h\n        have h₆ : (toUppercase (s) h_precond).toList[i]! = s.toList[i]! := by\n          simp_all [toUppercase, List.map]\n          <;> aesop\n        exact h₆\n      exact ⟨h₃, h₅⟩\n    exact ⟨h₁, h₂⟩\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "avoid_unfold"
+}

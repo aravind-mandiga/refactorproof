@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_98",
+ "variant_id": "verina_basic_98__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_level": "simp_only",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b",
+ "generation_attempt": 1,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "type_mismatch",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.745,
+ "proof_region_errors": [
+  "type mismatch\n  rfl\nhas type\n  ?m.495 = ?m.495 : Prop\nbut is expected to have type\n  Triple x h_precond = x * 3 : Prop",
+  "type mismatch\n  rfl\nhas type\n  ?m.879 = ?m.879 : Prop\nbut is expected to have type\n  Triple x h_precond = x * 3 : Prop\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "8d3f03d532a32b34936f724899bc90c2a2b03a94bb85a2621302e2aff75e9683",
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c",
+ "proof_text": "  have h₁ : (Triple (x) h_precond) / 3 = x := by\n    have h₂ : Triple (x) h_precond = x * 3 := rfl\n    rw [h₂]\n    have h₃ : (x * 3 : ℤ) / 3 = x := by\n      have h₄ : (x * 3 : ℤ) = 3 * x := by ring\n      rw [h₄]\n      -- Use the lemma `Int.mul_ediv_cancel_left` to simplify the expression\n      have h₅ : (3 : ℤ) ≠ 0 := by norm_num\n      have h₆ : (3 * x : ℤ) / 3 = x := by\n        apply Int.ediv_eq_of_eq_mul_right (by norm_num : (3 : ℤ) ≠ 0)\n        <;> ring\n      exact h₆\n    exact h₃\n\n  have h₂ : (Triple (x) h_precond) / 3 * 3 = Triple (x) h_precond := by\n    have h₃ : Triple (x) h_precond = x * 3 := rfl\n    rw [h₃]\n    have h₄ : (x * 3 : ℤ) / 3 = x := by\n      have h₅ : (x * 3 : ℤ) = 3 * x := by ring\n      rw [h₅]\n      -- Use the lemma `Int.mul_ediv_cancel_left` to simplify the expression\n      have h₆ : (3 : ℤ) ≠ 0 := by norm_num\n      have h₇ : (3 * x : ℤ) / 3 = x := by\n        apply Int.ediv_eq_of_eq_mul_right (by norm_num : (3 : ℤ) ≠ 0)\n        <;> ring\n      exact h₇\n    -- Now we have (x * 3 : ℤ) / 3 = x, so we can simplify the goal\n    rw [h₄]\n    <;> ring\n\n  have h₃ : Triple_postcond (x) (Triple (x) h_precond) h_precond := by\n    refine' ⟨_, _⟩\n    · -- Prove the first condition: (Triple (x) h_precond) / 3 = x\n      exact h₁\n    · -- Prove the second condition: (Triple (x) h_precond) / 3 * 3 = Triple (x) h_precond\n      exact h₂\n\n  exact h₃\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "default"
+}

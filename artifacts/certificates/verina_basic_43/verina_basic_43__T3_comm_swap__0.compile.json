@@ -1,0 +1,73 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_43/verina_basic_43__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_43/verina_basic_43__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_43/verina_basic_43__T3_comm_swap__0.lean:14:42: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_43/verina_basic_43__T3_comm_swap__0.lean:46:104: error: type mismatch\n  rfl\nhas type\n  ?m.1231 = ?m.1231 : Prop\nbut is expected to have type\n  RPOrig.sumOfFourthPowerOfOddNumbers n h_precond = RPRef.sumOfFourthPowerOfOddNumbers n h_precond : Prop\nartifacts/certificates/verina_basic_43/verina_basic_43__T3_comm_swap__0.lean:50:104: error: type mismatch\n  rfl\nhas type\n  ?m.1356 = ?m.1356 : Prop\nbut is expected to have type\n  RPOrig.sumOfFourthPowerOfOddNumbers n h_precond = RPRef.sumOfFourthPowerOfOddNumbers n h_precond : Prop\nartifacts/certificates/verina_basic_43/verina_basic_43__T3_comm_swap__0.lean:55:2: error: tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n    (fun n f h_precond =>\n      (match (motive :=\n          (n : Nat) →\n            sumOfFourthPowerOfOddNumbers_precond n →\n              Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n          n, h_precond with\n        | 0, h_precond => fun x => 0\n        | n.succ, h_precond => fun x =>\n          let prev := x.1 h_precond;\n          let nextOdd := 2 * n + 1;\n          prev + nextOdd ^ 4)\n        f)\n    h_precond\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n    (fun n f h_precond =>\n      (match (motive :=\n          (n : Nat) →\n            sumOfFourthPowerOfOddNumbers_precond n →\n              Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n          n, h_precond with\n        | 0, h_precond => fun x => 0\n        | n.succ, h_precond => fun x =>\n          let prev := x.1 h_precond;\n          let nextOdd := n * 2 + 1;\n          prev + nextOdd ^ 4)\n        f)\n    h_precond\nn : Nat\nh_precond : sumOfFourthPowerOfOddNumbers_precond n\n⊢ Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n      (fun n f h_precond =>\n        (match (motive :=\n            (n : Nat) →\n              sumOfFourthPowerOfOddNumbers_precond n →\n                Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n            n, h_precond with\n          | 0, h_precond => fun x => 0\n          | n.succ, h_precond => fun x =>\n            let prev := x.1 h_precond;\n            let nextOdd := 2 * n + 1;\n            prev + nextOdd ^ 4)\n          f)\n      h_precond =\n    Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n      (fun n f h_precond =>\n        (match (motive :=\n            (n : Nat) →\n              sumOfFourthPowerOfOddNumbers_precond n →\n                Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n            n, h_precond with\n          | 0, h_precond => fun x => 0\n          | n.succ, h_precond => fun x =>\n            let prev := x.1 h_precond;\n            let nextOdd := n * 2 + 1;\n            prev + nextOdd ^ 4)\n          f)\n      h_precond\nartifacts/certificates/verina_basic_43/verina_basic_43__T3_comm_swap__0.lean:63:7: error: simp made no progress\nartifacts/certificates/verina_basic_43/verina_basic_43__T3_comm_swap__0.lean:71:7: error: simp made no progress\nartifacts/certificates/verina_basic_43/verina_basic_43__T3_comm_swap__0.lean:75:249: error: tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n    (fun n f h_precond =>\n      (match (motive :=\n          (n : Nat) →\n            sumOfFourthPowerOfOddNumbers_precond n →\n              Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n          n, h_precond with\n        | 0, h_precond => fun x => 0\n        | n.succ, h_precond => fun x =>\n          let prev := x.1 h_precond;\n          let nextOdd := 2 * n + 1;\n          prev + nextOdd ^ 4)\n        f)\n    h_precond\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n    (fun n f h_precond =>\n      (match (motive :=\n          (n : Nat) →\n            sumOfFourthPowerOfOddNumbers_precond n →\n              Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n          n, h_precond with\n        | 0, h_precond => fun x => 0\n        | n.succ, h_precond => fun x =>\n          let prev := x.1 h_precond;\n          let nextOdd := n * 2 + 1;\n          prev + nextOdd ^ 4)\n        f)\n    h_precond\nn : Nat\nh_precond : sumOfFourthPowerOfOddNumbers_precond n\n⊢ Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n      (fun n f h_precond =>\n        (match (motive :=\n            (n : Nat) →\n              sumOfFourthPowerOfOddNumbers_precond n →\n                Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n            n, h_precond with\n          | 0, h_precond => fun x => 0\n          | n.succ, h_precond => fun x =>\n            let prev := x.1 h_precond;\n            let nextOdd := 2 * n + 1;\n            prev + nextOdd ^ 4)\n          f)\n      h_precond =\n    Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n      (fun n f h_precond =>\n        (match (motive :=\n            (n : Nat) →\n              sumOfFourthPowerOfOddNumbers_precond n →\n                Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n            n, h_precond with\n          | 0, h_precond => fun x => 0\n          | n.succ, h_precond => fun x =>\n            let prev := x.1 h_precond;\n            let nextOdd := n * 2 + 1;\n            prev + nextOdd ^ 4)\n          f)\n      h_precond\nartifacts/certificates/verina_basic_43/verina_basic_43__T3_comm_swap__0.lean:74:104: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_43/verina_basic_43__T3_comm_swap__0.lean:74:104: error: unknown metavariable '?_uniq.28984'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.623,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 46,
+   "col": 104,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1231 = ?m.1231 : Prop\nbut is expected to have type\n  RPOrig.sumOfFourthPowerOfOddNumbers n h_precond = RPRef.sumOfFourthPowerOfOddNumbers n h_precond : Prop"
+  },
+  {
+   "line": 50,
+   "col": 104,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1356 = ?m.1356 : Prop\nbut is expected to have type\n  RPOrig.sumOfFourthPowerOfOddNumbers n h_precond = RPRef.sumOfFourthPowerOfOddNumbers n h_precond : Prop"
+  },
+  {
+   "line": 55,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n    (fun n f h_precond =>\n      (match (motive :=\n          (n : Nat) →\n            sumOfFourthPowerOfOddNumbers_precond n →\n              Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n          n, h_precond with\n        | 0, h_precond => fun x => 0\n        | n.succ, h_precond => fun x =>\n          let prev := x.1 h_precond;\n          let nextOdd := 2 * n + 1;\n          prev + nextOdd ^ 4)\n        f)\n    h_precond\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n    (fun n f h_precond =>\n      (match (motive :=\n          (n : Nat) →\n            sumOfFourthPowerOfOddNumbers_precond n →\n              Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n          n, h_precond with\n        | 0, h_precond => fun x => 0\n        | n.succ, h_precond => fun x =>\n          let prev := x.1 h_precond;\n          let nextOdd := n * 2 + 1;\n          prev + nextOdd ^ 4)\n        f)\n    h_precond\nn : Nat\nh_precond : sumOfFourthPowerOfOddNumbers_precond n\n⊢ Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n      (fun n f h_precond =>\n        (match (motive :=\n            (n : Nat) →\n              sumOfFourthPowerOfOddNumbers_precond n →\n                Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n            n, h_precond with\n          | 0, h_precond => fun x => 0\n          | n.succ, h_precond => fun x =>\n            let prev := x.1 h_precond;\n            let nextOdd := 2 * n + 1;\n            prev + nextOdd ^ 4)\n          f)\n      h_precond =\n    Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n      (fun n f h_precond =>\n        (match (motive :=\n            (n : Nat) →\n              sumOfFourthPowerOfOddNumbers_precond n →\n                Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n            n, h_precond with\n          | 0, h_precond => fun x => 0\n          | n.succ, h_precond => fun x =>\n            let prev := x.1 h_precond;\n            let nextOdd := n * 2 + 1;\n            prev + nextOdd ^ 4)\n          f)\n      h_precond"
+  },
+  {
+   "line": 63,
+   "col": 7,
+   "severity": "error",
+   "text": "simp made no progress"
+  },
+  {
+   "line": 71,
+   "col": 7,
+   "severity": "error",
+   "text": "simp made no progress"
+  },
+  {
+   "line": 75,
+   "col": 249,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n    (fun n f h_precond =>\n      (match (motive :=\n          (n : Nat) →\n            sumOfFourthPowerOfOddNumbers_precond n →\n              Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n          n, h_precond with\n        | 0, h_precond => fun x => 0\n        | n.succ, h_precond => fun x =>\n          let prev := x.1 h_precond;\n          let nextOdd := 2 * n + 1;\n          prev + nextOdd ^ 4)\n        f)\n    h_precond\nis not definitionally equal to the right-hand side\n  Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n    (fun n f h_precond =>\n      (match (motive :=\n          (n : Nat) →\n            sumOfFourthPowerOfOddNumbers_precond n →\n              Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n          n, h_precond with\n        | 0, h_precond => fun x => 0\n        | n.succ, h_precond => fun x =>\n          let prev := x.1 h_precond;\n          let nextOdd := n * 2 + 1;\n          prev + nextOdd ^ 4)\n        f)\n    h_precond\nn : Nat\nh_precond : sumOfFourthPowerOfOddNumbers_precond n\n⊢ Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n      (fun n f h_precond =>\n        (match (motive :=\n            (n : Nat) →\n              sumOfFourthPowerOfOddNumbers_precond n →\n                Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n            n, h_precond with\n          | 0, h_precond => fun x => 0\n          | n.succ, h_precond => fun x =>\n            let prev := x.1 h_precond;\n            let nextOdd := 2 * n + 1;\n            prev + nextOdd ^ 4)\n          f)\n      h_precond =\n    Nat.brecOn (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n\n      (fun n f h_precond =>\n        (match (motive :=\n            (n : Nat) →\n              sumOfFourthPowerOfOddNumbers_precond n →\n                Nat.below (motive := fun n => sumOfFourthPowerOfOddNumbers_precond n → Nat) n → Nat)\n            n, h_precond with\n          | 0, h_precond => fun x => 0\n          | n.succ, h_precond => fun x =>\n            let prev := x.1 h_precond;\n            let nextOdd := n * 2 + 1;\n            prev + nextOdd ^ 4)\n          f)\n      h_precond"
+  },
+  {
+   "line": 74,
+   "col": 104,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 74,
+   "col": 104,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.28984'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

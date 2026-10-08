@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_8",
+ "variant_id": "verina_basic_8__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b__hard_unfold",
+ "generation_attempt": 2,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 8.395,
+ "proof_region_errors": [
+  "tactic 'split_ifs' failed, no if-then-else conditions to split\na b : ℤ\nh_precond : myMin_precond a b\n⊢ (myMin__rp_helper_829c4a21 a b h_precond ≤ a ∧ myMin__rp_helper_829c4a21 a b h_precond ≤ b) ∧\n    (myMin__rp_helper_829c4a21 a b h_precond = a ∨ myMin__rp_helper_829c4a21 a b h_precond = b)\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "dc36f27d2756076193179c0bb4a7f46501a8ba6922e6f814041c6d553f787e0c",
+ "spec_hash": "9ea5f34068afa9e380bc3377f48eb3fe98217f15035d181f98b5d77bc020361e",
+ "proof_text": "  unfold myMin myMin_postcond\n  have h_main : ((myMin a b h_precond ≤ a ∧ myMin a b h_precond ≤ b) ∧ (myMin a b h_precond = a ∨ myMin a b h_precond = b)) := by\n    dsimp only [myMin, myMin_postcond]\n    split_ifs with h\n    · -- Case: a ≤ b\n      constructor\n      · -- Prove that a is the minimum and a ≤ b\n        exact ⟨by linarith, by linarith⟩\n      · -- Prove that a = a (true by reflexivity)\n        exact Or.inl rfl\n    · -- Case: b < a\n      constructor\n      · -- Prove that b is the minimum and b ≤ a\n        exact ⟨by linarith, by linarith⟩\n      · -- Prove that b = b (true by reflexivity)\n        exact Or.inr rfl\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "hard_unfold"
+}

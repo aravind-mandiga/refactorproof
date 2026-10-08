@@ -1,0 +1,37 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_1/verina_advanced_1__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_1/verina_advanced_1__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_1/verina_advanced_1__T1_let_intro__0.lean:28:40: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_1/verina_advanced_1__T1_let_intro__0.lean:47:40: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_1/verina_advanced_1__T1_let_intro__0.lean:69:86: error: type mismatch\n  rfl\nhas type\n  ?m.1095 = ?m.1095 : Prop\nbut is expected to have type\n  RPOrig.FindSingleNumber nums h_precond = RPRef.FindSingleNumber nums h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 1.07,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 28,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 47,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 69,
+   "col": 86,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1095 = ?m.1095 : Prop\nbut is expected to have type\n  RPOrig.FindSingleNumber nums h_precond = RPRef.FindSingleNumber nums h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

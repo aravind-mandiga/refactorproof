@@ -1,0 +1,73 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_39/verina_basic_39__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_39/verina_basic_39__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_39/verina_basic_39__T4_cond_invert__0.lean:14:25: warning: unused variable `l`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_39/verina_basic_39__T4_cond_invert__0.lean:14:40: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_39/verina_basic_39__T4_cond_invert__0.lean:23:42: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_39/verina_basic_39__T4_cond_invert__0.lean:36:42: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_39/verina_basic_39__T4_cond_invert__0.lean:50:74: error: type mismatch\n  rfl\nhas type\n  ?m.473 = ?m.473 : Prop\nbut is expected to have type\n  RPOrig.rotateRight l n h_precond = RPRef.rotateRight l n h_precond : Prop\nartifacts/certificates/verina_basic_39/verina_basic_39__T4_cond_invert__0.lean:54:74: error: type mismatch\n  rfl\nhas type\n  ?m.1394 = ?m.1394 : Prop\nbut is expected to have type\n  RPOrig.rotateRight l n h_precond = RPRef.rotateRight l n h_precond : Prop\nartifacts/certificates/verina_basic_39/verina_basic_39__T4_cond_invert__0.lean:59:2: error: tactic 'rfl' failed, the left-hand side\n  let len := l.length;\n  if len = 0 then l\n  else\n    List.map\n      (fun i =>\n        let idx_int := (Int.ofNat i - Int.ofNat n + Int.ofNat len) % Int.ofNat len;\n        let idx_nat := idx_int.toNat;\n        l.getD idx_nat (l.headD 0))\n      (List.range len)\nis not definitionally equal to the right-hand side\n  let len := l.length;\n  if ¬len = 0 then\n    List.map\n      (fun i =>\n        let idx_int := (Int.ofNat i - Int.ofNat n + Int.ofNat len) % Int.ofNat len;\n        let idx_nat := idx_int.toNat;\n        l.getD idx_nat (l.headD 0))\n      (List.range len)\n  else l\nl : List Int\nn : Nat\nh_precond : rotateRight_precond l n\n⊢ (let len := l.length;\n    if len = 0 then l\n    else\n      List.map\n        (fun i =>\n          let idx_int := (Int.ofNat i - Int.ofNat n + Int.ofNat len) % Int.ofNat len;\n          let idx_nat := idx_int.toNat;\n          l.getD idx_nat (l.headD 0))\n        (List.range len)) =\n    let len := l.length;\n    if ¬len = 0 then\n      List.map\n        (fun i =>\n          let idx_int := (Int.ofNat i - Int.ofNat n + Int.ofNat len) % Int.ofNat len;\n          let idx_nat := idx_int.toNat;\n          l.getD idx_nat (l.headD 0))\n        (List.range len)\n    else l\nartifacts/certificates/verina_basic_39/verina_basic_39__T4_cond_invert__0.lean:77:16: error: unknown identifier 'len'\nartifacts/certificates/verina_basic_39/verina_basic_39__T4_cond_invert__0.lean:81:16: error: unknown identifier 'len'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.015,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `l`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 14,
+   "col": 40,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 36,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 50,
+   "col": 74,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.473 = ?m.473 : Prop\nbut is expected to have type\n  RPOrig.rotateRight l n h_precond = RPRef.rotateRight l n h_precond : Prop"
+  },
+  {
+   "line": 54,
+   "col": 74,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1394 = ?m.1394 : Prop\nbut is expected to have type\n  RPOrig.rotateRight l n h_precond = RPRef.rotateRight l n h_precond : Prop"
+  },
+  {
+   "line": 59,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  let len := l.length;\n  if len = 0 then l\n  else\n    List.map\n      (fun i =>\n        let idx_int := (Int.ofNat i - Int.ofNat n + Int.ofNat len) % Int.ofNat len;\n        let idx_nat := idx_int.toNat;\n        l.getD idx_nat (l.headD 0))\n      (List.range len)\nis not definitionally equal to the right-hand side\n  let len := l.length;\n  if ¬len = 0 then\n    List.map\n      (fun i =>\n        let idx_int := (Int.ofNat i - Int.ofNat n + Int.ofNat len) % Int.ofNat len;\n        let idx_nat := idx_int.toNat;\n        l.getD idx_nat (l.headD 0))\n      (List.range len)\n  else l\nl : List Int\nn : Nat\nh_precond : rotateRight_precond l n\n⊢ (let len := l.length;\n    if len = 0 then l\n    else\n      List.map\n        (fun i =>\n          let idx_int := (Int.ofNat i - Int.ofNat n + Int.ofNat len) % Int.ofNat len;\n          let idx_nat := idx_int.toNat;\n          l.getD idx_nat (l.headD 0))\n        (List.range len)) =\n    let len := l.length;\n    if ¬len = 0 then\n      List.map\n        (fun i =>\n          let idx_int := (Int.ofNat i - Int.ofNat n + Int.ofNat len) % Int.ofNat len;\n          let idx_nat := idx_int.toNat;\n          l.getD idx_nat (l.headD 0))\n        (List.range len)\n    else l"
+  },
+  {
+   "line": 77,
+   "col": 16,
+   "severity": "error",
+   "text": "unknown identifier 'len'"
+  },
+  {
+   "line": 81,
+   "col": 16,
+   "severity": "error",
+   "text": "unknown identifier 'len'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

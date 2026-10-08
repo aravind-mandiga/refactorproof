@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_advanced_74",
+ "variant_id": "verina_advanced_74__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_a1cca5a9 : Nat :=\n    let n := nums.length\n    let subarray := fun (i j : Nat) => (nums.drop i).take (j - i + 1)\n    let distinctCount := fun (l : List Nat) =>\n      let hashSet := l.foldl (fun (s : HashSet Nat) a => s.insert a) HashSet.emptyWithCapacity\n      hashSet.size\n    List.range n |>.foldl (fun acc i =>\n      acc +\n        (List.range (n - i) |>.foldl (fun acc' d =>\n          let subarr := subarray i (i + d)\n          let cnt := distinctCount subarr\n          acc' + cnt * cnt\n        ) 0)\n    ) 0\n  __rp_tmp_a1cca5a9\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_a1cca5a9",
+  "seed": 0
+ },
+ "spec_hash": "eeb38d9df2a1574003bf1fbf2ce8d0c9736f490cc2dfcc1862e9e171a8613c6e",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "2d008260f7f209f98888aeb45db94ecfb19c0232cda7bb167daaa04ffd8a1844",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "solution",
+ "code_loc_original": 13,
+ "code_loc_refactored": 15
+}

@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_97__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_97__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_97__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_97__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_97__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_97__T2_helper_extract__0.lean:21:77: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_97__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_97__T2_helper_extract__0.lean:38:78: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_97__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_97__T2_helper_extract__0.lean:56:4: error: simp made no progress\nartifacts/mechanical_repairs/lean/verina_basic_97__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_97__T2_helper_extract__0.lean:60:4: error: type mismatch\n  h_precond\nhas type\n  j < a.size : Prop\nbut is expected to have type\n  (if h : j < (TestArrayElements__rp_helper_9bca1c3a a j h_precond).size then\n      (TestArrayElements__rp_helper_9bca1c3a a j h_precond)[j]\n    else 0) =\n    60 : Prop\nartifacts/mechanical_repairs/lean/verina_basic_97__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_97__T2_helper_extract__0.lean:65:10: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  (Array.setIfInBounds ?xs ?i ?a)[?j]\ncase right.right.isTrue\na : Array Int\nj : Nat\nh_precond : j < a.size\nk : Nat\nhk : k < a.size\nhxk : k ≠ j\nh✝ : k < (TestArrayElements__rp_helper_9bca1c3a a j h_precond).size\n⊢ (TestArrayElements__rp_helper_9bca1c3a a j h_precond)[k] = a[k]\nartifacts/mechanical_repairs/lean/verina_basic_97__T2_helper_extract__0__reference__unedited_unfold_add_helper/verina_basic_97__T2_helper_extract__0.lean:71:10: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  (Array.setIfInBounds ?xs ?i ?a)[?j]\ncase right.right.isFalse\na : Array Int\nj : Nat\nh_precond : j < a.size\nk : Nat\nhk : k < a.size\nhxk : k ≠ j\nh✝ : ¬k < (TestArrayElements__rp_helper_9bca1c3a a j h_precond).size\n⊢ 0 = a[k]\n",
+ "stderr": "",
+ "elapsed_seconds": 0.93,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 21,
+   "col": 77,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 78,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 56,
+   "col": 4,
+   "severity": "error",
+   "text": "simp made no progress"
+  },
+  {
+   "line": 60,
+   "col": 4,
+   "severity": "error",
+   "text": "type mismatch\n  h_precond\nhas type\n  j < a.size : Prop\nbut is expected to have type\n  (if h : j < (TestArrayElements__rp_helper_9bca1c3a a j h_precond).size then\n      (TestArrayElements__rp_helper_9bca1c3a a j h_precond)[j]\n    else 0) =\n    60 : Prop"
+  },
+  {
+   "line": 65,
+   "col": 10,
+   "severity": "error",
+   "text": "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  (Array.setIfInBounds ?xs ?i ?a)[?j]\ncase right.right.isTrue\na : Array Int\nj : Nat\nh_precond : j < a.size\nk : Nat\nhk : k < a.size\nhxk : k ≠ j\nh✝ : k < (TestArrayElements__rp_helper_9bca1c3a a j h_precond).size\n⊢ (TestArrayElements__rp_helper_9bca1c3a a j h_precond)[k] = a[k]"
+  },
+  {
+   "line": 71,
+   "col": 10,
+   "severity": "error",
+   "text": "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  (Array.setIfInBounds ?xs ?i ?a)[?j]\ncase right.right.isFalse\na : Array Int\nj : Nat\nh_precond : j < a.size\nk : Nat\nhk : k < a.size\nhxk : k ≠ j\nh✝ : ¬k < (TestArrayElements__rp_helper_9bca1c3a a j h_precond).size\n⊢ 0 = a[k]\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "simp_failed"
+}

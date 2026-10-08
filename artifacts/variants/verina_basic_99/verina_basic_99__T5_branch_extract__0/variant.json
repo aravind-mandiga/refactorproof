@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_99",
+ "variant_id": "verina_basic_99__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  if x < 18 then\n    let a := 2 * x\n    let b := 4 * x\n    (a + b) / 2\n  else\n    Triple__rp_branch_609232c2 x h_precond\n",
+ "transformed_code_aux": "\nprivate def Triple__rp_branch_609232c2 (x : Int) (h_precond : Triple_precond (x)) : Int :=\n  let y := 2 * x\n  x + y\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "Triple__rp_branch_609232c2"
+ ],
+ "metadata": {
+  "binders": [
+   "x",
+   "h_precond"
+  ],
+  "extracted": "else_branch",
+  "seed": 0
+ },
+ "extra_levels": [],
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c",
+ "proof_hash": "2572871e989024d02382816ae1e567ec1cc9198e8c597ccde123cb1b5d979b13",
+ "code_hash_original": "98bc946614737e7e9efec81d1c7a4bdf582ecb3df3b991710847ca0c3bf47824",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "Triple",
+ "code_loc_original": 7,
+ "code_loc_refactored": 9
+}

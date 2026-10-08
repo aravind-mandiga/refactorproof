@@ -1,0 +1,127 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:15:36: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:23:66: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:23:12: warning: The declaration 'singleDigitPrimeFactor__rp_branch_4e87d626' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:46:61: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:73:14: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:71:162: error: unsolved goals\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₂ : ¬n = 0\nh : n % 2 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₂ : ¬n = 0\nh : n % 2 = 1\nh_1 : n % 3 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 3\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₂ : ¬n = 0\nh : n % 2 = 1\nh_1 : ¬n % 3 = 0\nh_2 : n % 5 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 5\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₂ : ¬n = 0\nh : n % 2 = 1\nh_1 : ¬n % 3 = 0\nh_2 : ¬n % 5 = 0\nh_3 : n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 7\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₂ : ¬n = 0\nh : n % 2 = 1\nh_1 : ¬n % 3 = 0\nh_2 : ¬n % 5 = 0\nh_3 : ¬n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 0\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:96:14: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:94:162: error: unsolved goals\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 0\nh_1 : n % 2 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 0\nh_1 : n % 2 = 1\nh_2 : n % 3 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 3\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 0\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : n % 5 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 5\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 0\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 7\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 0\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : ¬n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 0\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 2\nh_1 : n % 2 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 2\nh_1 : n % 2 = 1\nh_2 : n % 3 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 3\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 2\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : n % 5 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 5\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 2\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 7\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 2\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : ¬n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 0\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 3\nh_1 : n % 2 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 3\nh_1 : n % 2 = 1\nh_2 : n % 3 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 3\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 3\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : n % 5 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 5\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 3\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 7\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 3\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : ¬n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 0\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 5\nh_1 : n % 2 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 5\nh_1 : n % 2 = 1\nh_2 : n % 3 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 3\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 5\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : n % 5 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 5\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 5\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 7\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 5\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : ¬n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 0\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh_2 : singleDigitPrimeFactor n h_precond = 7\nh : n % 2 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh_2 : singleDigitPrimeFactor n h_precond = 7\nh : n % 2 = 1\nh_1 : n % 3 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 3\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh_2 : singleDigitPrimeFactor n h_precond = 7\nh : n % 2 = 1\nh_1 : ¬n % 3 = 0\nh_3 : n % 5 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 5\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh_2 : singleDigitPrimeFactor n h_precond = 7\nh : n % 2 = 1\nh_1 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 7\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh_2 : singleDigitPrimeFactor n h_precond = 7\nh : n % 2 = 1\nh_1 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : ¬n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 0\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:135:16: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:133:164: error: unsolved goals\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh₄ : singleDigitPrimeFactor n h_precond = 2\nh_1 : n % 2 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh₄ : singleDigitPrimeFactor n h_precond = 3\nh_1 : n % 2 = 1\nh_2 : n % 3 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 3\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh₄ : singleDigitPrimeFactor n h_precond = 5\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : n % 5 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 5\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh₄ : singleDigitPrimeFactor n h_precond = 7\nh : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 7\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:140:14: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:142:14: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:144:14: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:146:14: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:147:12: error: no goals to be solved\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:150:10: error: (deterministic) timeout at `elaborator`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:205:4: error: (deterministic) timeout at `elaborator`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nartifacts/mechanical_repairs/lean/verina_advanced_72__T5_branch_extract__0__goedel-prover-v2-8b__unedited_simp_add_helper/verina_advanced_72__T5_branch_extract__0.lean:60:92: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\n",
+ "stderr": "",
+ "elapsed_seconds": 73.459,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 36,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 66,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'singleDigitPrimeFactor__rp_branch_4e87d626' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 46,
+   "col": 61,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 73,
+   "col": 14,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 71,
+   "col": 162,
+   "severity": "error",
+   "text": "unsolved goals\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₂ : ¬n = 0\nh : n % 2 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₂ : ¬n = 0\nh : n % 2 = 1\nh_1 : n % 3 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 3\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₂ : ¬n = 0\nh : n % 2 = 1\nh_1 : ¬n % 3 = 0\nh_2 : n % 5 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 5\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₂ : ¬n = 0\nh : n % 2 = 1\nh_1 : ¬n % 3 = 0\nh_2 : ¬n % 5 = 0\nh_3 : n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 7\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₂ : ¬n = 0\nh : n % 2 = 1\nh_1 : ¬n % 3 = 0\nh_2 : ¬n % 5 = 0\nh_3 : ¬n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 0"
+  },
+  {
+   "line": 96,
+   "col": 14,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 94,
+   "col": 162,
+   "severity": "error",
+   "text": "unsolved goals\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 0\nh_1 : n % 2 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 0\nh_1 : n % 2 = 1\nh_2 : n % 3 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 3\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 0\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : n % 5 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 5\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 0\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 7\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 0\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : ¬n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 0\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 2\nh_1 : n % 2 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 2\nh_1 : n % 2 = 1\nh_2 : n % 3 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 3\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 2\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : n % 5 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 5\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 2\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 7\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 2\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : ¬n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 0\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 3\nh_1 : n % 2 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 3\nh_1 : n % 2 = 1\nh_2 : n % 3 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 3\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 3\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : n % 5 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 5\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 3\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 7\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 3\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : ¬n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 0\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 5\nh_1 : n % 2 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 5\nh_1 : n % 2 = 1\nh_2 : n % 3 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 3\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 5\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : n % 5 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 5\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 5\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 7\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh : singleDigitPrimeFactor n h_precond = 5\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : ¬n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 0\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh_2 : singleDigitPrimeFactor n h_precond = 7\nh : n % 2 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh_2 : singleDigitPrimeFactor n h_precond = 7\nh : n % 2 = 1\nh_1 : n % 3 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 3\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh_2 : singleDigitPrimeFactor n h_precond = 7\nh : n % 2 = 1\nh_1 : ¬n % 3 = 0\nh_3 : n % 5 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 5\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh_2 : singleDigitPrimeFactor n h_precond = 7\nh : n % 2 = 1\nh_1 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 7\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh_2 : singleDigitPrimeFactor n h_precond = 7\nh : n % 2 = 1\nh_1 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : ¬n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 0"
+  },
+  {
+   "line": 135,
+   "col": 16,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 133,
+   "col": 164,
+   "severity": "error",
+   "text": "unsolved goals\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh₄ : singleDigitPrimeFactor n h_precond = 2\nh_1 : n % 2 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 2\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh₄ : singleDigitPrimeFactor n h_precond = 3\nh_1 : n % 2 = 1\nh_2 : n % 3 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 3\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh₄ : singleDigitPrimeFactor n h_precond = 5\nh_1 : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : n % 5 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 5\n\nn : ℕ\nh_precond : singleDigitPrimeFactor_precond n\nh₃ : ¬n = 0\nh₄ : singleDigitPrimeFactor n h_precond = 7\nh : n % 2 = 1\nh_2 : ¬n % 3 = 0\nh_3 : ¬n % 5 = 0\nh_4 : n % 7 = 0\n⊢ singleDigitPrimeFactor__rp_branch_4e87d626 n h_precond = 7"
+  },
+  {
+   "line": 140,
+   "col": 14,
+   "severity": "error",
+   "text": "(deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command."
+  },
+  {
+   "line": 142,
+   "col": 14,
+   "severity": "error",
+   "text": "(deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command."
+  },
+  {
+   "line": 144,
+   "col": 14,
+   "severity": "error",
+   "text": "(deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command."
+  },
+  {
+   "line": 146,
+   "col": 14,
+   "severity": "error",
+   "text": "(deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command."
+  },
+  {
+   "line": 147,
+   "col": 12,
+   "severity": "error",
+   "text": "no goals to be solved"
+  },
+  {
+   "line": 150,
+   "col": 10,
+   "severity": "error",
+   "text": "(deterministic) timeout at `elaborator`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command."
+  },
+  {
+   "line": 205,
+   "col": 4,
+   "severity": "error",
+   "text": "(deterministic) timeout at `elaborator`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command."
+  },
+  {
+   "line": 60,
+   "col": 92,
+   "severity": "error",
+   "text": "(deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached\nUse `set_option maxHeartbeats <num>` to set the limit.\n\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_11__T2_helper_extract__0",
+ "task_id": "verina_basic_11",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "lastDigit",
+ "helper": "lastDigit__rp_helper_8d571788",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold lastDigit lastDigit_postcond\n  constructor\n  \u00b7 constructor\n    \u00b7 simp\n    \u00b7 exact Nat.mod_lt n (by decide)\n  \u00b7 simp\n",
+ "proof_after": "  unfold lastDigit lastDigit__rp_helper_8d571788 lastDigit_postcond\n  constructor\n  \u00b7 constructor\n    \u00b7 simp\n    \u00b7 exact Nat.mod_lt n (by decide)\n  \u00b7 simp\n"
+}

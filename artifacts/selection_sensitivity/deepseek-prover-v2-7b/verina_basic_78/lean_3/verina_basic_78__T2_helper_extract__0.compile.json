@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_78/lean_3/verina_basic_78__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_78/lean_3/verina_basic_78__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_78/lean_3/verina_basic_78__T2_helper_extract__0.lean:15:29: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_78/lean_3/verina_basic_78__T2_helper_extract__0.lean:15:39: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_78/lean_3/verina_basic_78__T2_helper_extract__0.lean:23:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_78/lean_3/verina_basic_78__T2_helper_extract__0.lean:23:12: warning: The declaration 'MultipleReturns__rp_helper_39d93fc9' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_78/lean_3/verina_basic_78__T2_helper_extract__0.lean:42:72: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_78/lean_3/verina_basic_78__T2_helper_extract__0.lean:66:4: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  x y : ℤ\n  h_precond : MultipleReturns_precond x y\n  h1 : (MultipleReturns__rp_helper_39d93fc9 x y h_precond).1 = y + x\n  ⊢ (MultipleReturns__rp_helper_39d93fc9 x y h_precond).2 + y = x\n",
+ "stderr": "",
+ "elapsed_seconds": 10.161,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'MultipleReturns__rp_helper_39d93fc9' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 42,
+   "col": 72,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 66,
+   "col": 4,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  x y : ℤ\n  h_precond : MultipleReturns_precond x y\n  h1 : (MultipleReturns__rp_helper_39d93fc9 x y h_precond).1 = y + x\n  ⊢ (MultipleReturns__rp_helper_39d93fc9 x y h_precond).2 + y = x\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

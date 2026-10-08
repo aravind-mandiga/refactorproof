@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_10__T2_helper_extract__0",
+ "task_id": "verina_basic_10",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "isGreater",
+ "helper": "isGreater__rp_helper_d4e98f7f",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold isGreater isGreater_postcond\n  simp [Array.all_eq]\n",
+ "proof_after": "  unfold isGreater isGreater__rp_helper_d4e98f7f isGreater_postcond\n  simp [Array.all_eq]\n"
+}

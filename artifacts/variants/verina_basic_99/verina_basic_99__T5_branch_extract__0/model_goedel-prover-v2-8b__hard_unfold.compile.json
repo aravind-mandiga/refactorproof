@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_99/verina_basic_99__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_99/verina_basic_99__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_99/verina_basic_99__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:14:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_99/verina_basic_99__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:22:50: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_99/verina_basic_99__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:22:12: warning: The declaration 'Triple__rp_branch_609232c2' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_99/verina_basic_99__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:45:45: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_99/verina_basic_99__T5_branch_extract__0/model_goedel-prover-v2-8b__hard_unfold.lean:94:50: error: unsolved goals\nx : ℤ\nh_precond : Triple_precond x\nhx h₂ : ¬x < 18\nh₃ : x ≥ 18\n⊢ Triple__rp_branch_609232c2 x h_precond = x + 2 * x\n",
+ "stderr": "",
+ "elapsed_seconds": 7.155,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 50,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'Triple__rp_branch_609232c2' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 45,
+   "col": 45,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 94,
+   "col": 50,
+   "severity": "error",
+   "text": "unsolved goals\nx : ℤ\nh_precond : Triple_precond x\nhx h₂ : ¬x < 18\nh₃ : x ≥ 18\n⊢ Triple__rp_branch_609232c2 x h_precond = x + 2 * x\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

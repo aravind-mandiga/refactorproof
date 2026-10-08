@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_9",
+ "variant_id": "verina_basic_9__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  hasCommonElement__rp_helper_db5fe7c5 a b h_precond\n",
+ "transformed_code_aux": "\nprivate def hasCommonElement__rp_helper_db5fe7c5 (a : Array Int) (b : Array Int) (h_precond : hasCommonElement_precond (a) (b)) : Bool :=\n  a.any fun x => b.any fun y => x = y\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "hasCommonElement__rp_helper_db5fe7c5"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "b",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "6870d476c024923bd6776fc4376286ee6c9f95794315befd284275dfe5248ea0",
+ "proof_hash": "8000cecc97b4369f6a4148f57a8b3d48cee1dc3ab7b011b9c5cc4d9823b91aec",
+ "code_hash_original": "5baf4e66a6d099e5513330fa06a6ad8e524cabb6af0757d0a5ce7e9043331c9d",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "hasCommonElement",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

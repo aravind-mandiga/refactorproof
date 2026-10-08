@@ -1,0 +1,10 @@
+class,variant_id,task_id,rfl_sources,rfl_survived,rfl_records,comparison_sources,comparison_mechanisms,comparison_survived,comparison_records
+structural,verina_advanced_41__T2_helper_extract__0,verina_advanced_41,goedel-prover-v2-32b;goedel-prover-v2-8b,2,2,deepseek-prover-v2-7b,simp[f],0,1
+structural,verina_advanced_41__T5_branch_extract__0,verina_advanced_41,goedel-prover-v2-32b;goedel-prover-v2-8b,2,2,deepseek-prover-v2-7b,simp[f],0,1
+structural,verina_basic_107__T2_helper_extract__0,verina_basic_107,goedel-prover-v2-8b,1,1,deepseek-prover-v2-7b;goedel-prover-v2-32b,simp[f];simp[f],0,2
+structural,verina_basic_11__T2_helper_extract__0,verina_basic_11,deepseek-prover-v2-7b;goedel-prover-v2-32b,2,2,goedel-prover-v2-8b,simp[f],1,1
+structural,verina_basic_14__T2_helper_extract__0,verina_basic_14,goedel-prover-v2-32b,1,1,deepseek-prover-v2-7b;goedel-prover-v2-8b,simp[f];simp[f],0,2
+structural,verina_basic_98__T2_helper_extract__0,verina_basic_98,goedel-prover-v2-8b,1,1,deepseek-prover-v2-7b;goedel-prover-v2-32b,simp[f];simp[f],1,2
+semantic,verina_advanced_41__T4_cond_invert__0,verina_advanced_41,goedel-prover-v2-32b;goedel-prover-v2-8b,0,2,deepseek-prover-v2-7b,simp[f],1,1
+semantic,verina_basic_107__T3_comm_swap__0,verina_basic_107,goedel-prover-v2-8b,0,1,deepseek-prover-v2-7b;goedel-prover-v2-32b,simp[f];simp[f],1,2
+semantic,verina_basic_98__T3_comm_swap__0,verina_basic_98,goedel-prover-v2-8b,0,1,deepseek-prover-v2-7b;goedel-prover-v2-32b,simp[f];simp[f],1,2

@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_98",
+ "variant_id": "verina_basic_98__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_level": "simp_only",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__avoid_unfold",
+ "generation_attempt": 4,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.705,
+ "proof_region_errors": [
+  "unsolved goals\nx : ℤ\nh_precond : Triple_precond x\nh₁ : x * 3 / 3 = x\nh₂ : x * 3 / 3 * 3 = x * 3\n⊢ 3 * x = x * 3\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "cc67f010eba8145d775db37b74883f3fccb4359495470b8cef4a75a6e78b023f",
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c",
+ "proof_text": "  have h₁ : (x * 3 : ℤ) / 3 = x := by\n    have h₁₁ : (x * 3 : ℤ) / 3 = x := by\n      have h₁₂ : (x * 3 : ℤ) / 3 = x := by\n        -- Use the property of integer division to simplify the expression\n        have h₁₃ : (x * 3 : ℤ) / 3 = x := by\n          -- Prove that (x * 3) / 3 = x using the properties of integer division\n          have h₁₄ : (x * 3 : ℤ) / 3 = x := by\n            -- Use the fact that x * 3 is a multiple of 3\n            have h₁₅ : (x * 3 : ℤ) / 3 = x := by\n              -- Use the property of integer division to simplify the expression\n              omega\n            exact h₁₅\n          exact h₁₄\n        exact h₁₃\n      exact h₁₂\n    exact h₁₁\n\n  have h₂ : ((x * 3 : ℤ) / 3) * 3 = x * 3 := by\n    rw [h₁]\n    <;> ring\n    <;> omega\n\n  have h₃ : Triple_postcond x (Triple x h_precond) h_precond := by\n    have h₄ : Triple x h_precond = x * 3 := by\n      simp [Triple]\n    rw [h₄]\n    constructor\n    · -- Prove the first condition: (x * 3) / 3 = x\n      exact h₁\n    · -- Prove the second condition: ((x * 3) / 3) * 3 = x * 3\n      exact h₂\n\n  exact h₃\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "avoid_unfold"
+}

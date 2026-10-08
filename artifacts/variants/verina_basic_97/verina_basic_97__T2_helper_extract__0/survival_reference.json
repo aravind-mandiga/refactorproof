@@ -1,0 +1,28 @@
+{
+ "task_id": "verina_basic_97",
+ "variant_id": "verina_basic_97__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "simp_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.781,
+ "proof_region_errors": [
+  "simp made no progress",
+  "type mismatch\n  h_precond\nhas type\n  j < a.size : Prop\nbut is expected to have type\n  (if h : j < (TestArrayElements__rp_helper_9bca1c3a a j h_precond).size then\n      (TestArrayElements__rp_helper_9bca1c3a a j h_precond)[j]\n    else 0) =\n    60 : Prop",
+  "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  (Array.setIfInBounds ?xs ?i ?a)[?j]\ncase right.right.isTrue\na : Array Int\nj : Nat\nh_precond : j < a.size\nk : Nat\nhk : k < a.size\nhxk : k ≠ j\nh✝ : k < (TestArrayElements__rp_helper_9bca1c3a a j h_precond).size\n⊢ (TestArrayElements__rp_helper_9bca1c3a a j h_precond)[k] = a[k]"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "6a15a3eee4643d452e205e161eca9ce2eed53b77249c5486c8368cf0e1d84636",
+ "spec_hash": "86342cdca20933506b809c908e8d05c1000625921d59749b3f4240025f6e2c40"
+}

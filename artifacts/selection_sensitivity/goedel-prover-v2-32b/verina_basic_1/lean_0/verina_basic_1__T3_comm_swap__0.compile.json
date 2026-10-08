@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_0/verina_basic_1__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_0/verina_basic_1__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_0/verina_basic_1__T3_comm_swap__0.lean:15:29: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_0/verina_basic_1__T3_comm_swap__0.lean:15:39: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_0/verina_basic_1__T3_comm_swap__0.lean:26:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_0/verina_basic_1__T3_comm_swap__0.lean:38:65: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_0/verina_basic_1__T3_comm_swap__0.lean:113:7: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/selection_sensitivity/goedel-prover-v2-32b/verina_basic_1/lean_0/verina_basic_1__T3_comm_swap__0.lean:51:86: error: unsolved goals\ncase left.inl\na b : ℤ\nleft : a * b < 0\nleft_1 : a < 0\nright : 0 < b\n⊢ b * a < 0\n\ncase left.inr\na b : ℤ\nleft : a * b < 0\nleft_1 : 0 < a\nright : b < 0\n⊢ b * a < 0\n\ncase right\na b : ℤ\nright : 0 ≤ a * b\na_1 : a < 0 → b ≤ 0\na_2 : 0 < a → 0 ≤ b\n⊢ 0 ≤ b * a\n",
+ "stderr": "",
+ "elapsed_seconds": 27.465,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 65,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 113,
+   "col": 7,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 51,
+   "col": 86,
+   "severity": "error",
+   "text": "unsolved goals\ncase left.inl\na b : ℤ\nleft : a * b < 0\nleft_1 : a < 0\nright : 0 < b\n⊢ b * a < 0\n\ncase left.inr\na b : ℤ\nleft : a * b < 0\nleft_1 : 0 < a\nright : b < 0\n⊢ b * a < 0\n\ncase right\na b : ℤ\nright : 0 ≤ a * b\na_1 : a < 0 → b ≤ 0\na_2 : 0 < a → 0 ≤ b\n⊢ 0 ≤ b * a\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

@@ -1,0 +1,30 @@
+{
+ "task_id": "verina_basic_57",
+ "variant_id": "verina_basic_57__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  CountLessThan__rp_helper_29ea1684 numbers threshold h_precond\n",
+ "transformed_code_aux": "def countLessThan (numbers : Array Int) (threshold : Int) : Nat :=\n  let rec count (i : Nat) (acc : Nat) : Nat :=\n    if i < numbers.size then\n      let new_acc := if numbers[i]! < threshold then acc + 1 else acc\n      count (i + 1) new_acc\n    else\n      acc\n  count 0 0\n\nprivate def CountLessThan__rp_helper_29ea1684 (numbers : Array Int) (threshold : Int) (h_precond : CountLessThan_precond (numbers) (threshold)) : Nat :=\n  countLessThan numbers threshold\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "CountLessThan__rp_helper_29ea1684"
+ ],
+ "metadata": {
+  "binders": [
+   "numbers",
+   "threshold",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "c7b4e2a6fae0792b7691bbd1c453d815e2ef880ace03795c39dbf8838625907a",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "ade77f48b6ea0f8ef4f3a8fc62050fe9ad5917719bbfe0d2720e5e4125c653f6",
+ "code_aux_hash_original": "d25e4ba478889cd0cf77ff96e4c4d3c76009bda5ea06f90e6157bd5ce42f5739",
+ "tier": "basic",
+ "function_name": "CountLessThan",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_31/lean_3/verina_basic_31__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_31/lean_3/verina_basic_31__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_31/lean_3/verina_basic_31__T2_helper_extract__0.lean:20:25: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_31/lean_3/verina_basic_31__T2_helper_extract__0.lean:28:58: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_31/lean_3/verina_basic_31__T2_helper_extract__0.lean:28:12: warning: The declaration 'toUppercase__rp_helper_8bd90157' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_31/lean_3/verina_basic_31__T2_helper_extract__0.lean:47:56: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_31/lean_3/verina_basic_31__T2_helper_extract__0.lean:70:6: error: simp made no progress\nartifacts/selection_sensitivity/deepseek-prover-v2-7b/verina_basic_31/lean_3/verina_basic_31__T2_helper_extract__0.lean:71:4: error: unsolved goals\ncase right\ns : String\nh_precond : toUppercase_precond s\ni : ℕ\nh₁ h₂ : i < s.length\n⊢ ('a' ≤ s.data[i]?.getD 'A' →\n      s.data[i]?.getD 'A' ≤ 'z' →\n        (toUppercase__rp_helper_8bd90157 s h_precond).data[i]?.getD 'A' =\n          Char.ofNat (((s.data[i]?.getD 'A').toNat - 32) % 128)) ∧\n    (('a' ≤ s.data[i]?.getD 'A' → 'z' < s.data[i]?.getD 'A') →\n      (toUppercase__rp_helper_8bd90157 s h_precond).data[i]?.getD 'A' = s.data[i]?.getD 'A')\n",
+ "stderr": "",
+ "elapsed_seconds": 10.488,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 20,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 58,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'toUppercase__rp_helper_8bd90157' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 47,
+   "col": 56,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 70,
+   "col": 6,
+   "severity": "error",
+   "text": "simp made no progress"
+  },
+  {
+   "line": 71,
+   "col": 4,
+   "severity": "error",
+   "text": "unsolved goals\ncase right\ns : String\nh_precond : toUppercase_precond s\ni : ℕ\nh₁ h₂ : i < s.length\n⊢ ('a' ≤ s.data[i]?.getD 'A' →\n      s.data[i]?.getD 'A' ≤ 'z' →\n        (toUppercase__rp_helper_8bd90157 s h_precond).data[i]?.getD 'A' =\n          Char.ofNat (((s.data[i]?.getD 'A').toNat - 32) % 128)) ∧\n    (('a' ≤ s.data[i]?.getD 'A' → 'z' < s.data[i]?.getD 'A') →\n      (toUppercase__rp_helper_8bd90157 s h_precond).data[i]?.getD 'A' = s.data[i]?.getD 'A')\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "simp_failed"
+}

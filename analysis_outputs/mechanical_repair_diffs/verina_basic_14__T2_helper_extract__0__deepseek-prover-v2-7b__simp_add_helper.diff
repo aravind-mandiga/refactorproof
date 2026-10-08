@@ -1,0 +1,14 @@
+--- deepseek-prover-v2-7b:verina_basic_14__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_14__T2_helper_extract__0 (simp_add_helper)
+@@ -3,7 +3,7 @@
+     · -- Prove the forward direction: if there exists an x in s.toList such that x is 'z' or 'Z', then containsZ s h_precond is true.
+       intro h
+       -- Simplify the hypothesis using the definition of containsZ.
+-      simp_all [containsZ, containsZ_precond]
++      simp_all [containsZ, containsZ_precond, containsZ__rp_helper_6f400cbb]
+       <;> aesop
+     · -- Prove the backward direction: if containsZ s h_precond is true, then there exists an x in s.toList such that x is 'z' or 'Z'.
+       intro h
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: tactic 'aesop' failed, made no progress | Initial goal: |   case mpr |   s : String |   h_precond : containsZ_precond s |   h : containsZ__rp_helper_6f400cbb s h_precond = true |   ⊢ ∃ x ∈ s.data, x = 'z' ∨ x = 'Z' | 

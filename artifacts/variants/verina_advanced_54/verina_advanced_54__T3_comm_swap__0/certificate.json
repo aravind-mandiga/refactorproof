@@ -1,0 +1,55 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_54",
+ "variant_id": "verina_advanced_54__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_54/verina_advanced_54__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.668,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": "simp_only",
+ "certificate_failure_category": null,
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.739 = ?m.739 : Prop\nbut is expected to have type\n  RPOrig.missingNumber nums h_precond = RPRef.missingNumber nums h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.1245 = ?m.1245 : Prop\nbut is expected to have type\n  RPOrig.missingNumber nums h_precond = RPRef.missingNumber nums h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  let n := nums.length;\n  let expectedSum := n * (n + 1) / 2;\n  let actualSum := List.foldl (fun x1 x2 => x1 + x2) 0 nums;\n  expectedSum - actualSum\nis not definitionally equal to the right-hand side\n  let n := nums.length;\n  let expectedSum := (n + 1) * n / 2;\n  let actualSum := List.foldl (fun x1 x2 => x1 + x2) 0 nums;\n  expectedSum - actualSum\nnums : List Nat\nh_precond : missingNumber_precond nums\n⊢ (let n := nums.length;\n    let expectedSum := n * (n +"
+   ]
+  },
+  "simp_only": {
+   "ok": true,
+   "errors": []
+  },
+  "simp": {
+   "ok": true,
+   "errors": []
+  },
+  "ac_rfl": {
+   "ok": true,
+   "errors": []
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

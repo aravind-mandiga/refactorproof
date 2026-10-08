@@ -1,0 +1,67 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_6/verina_basic_6__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_6/verina_basic_6__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_6/verina_basic_6__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean:15:44: warning: unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean:26:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean:40:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_6/verina_basic_6__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean:58:25: warning: unused name: h₃\nartifacts/variants/verina_basic_6/verina_basic_6__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean:82:6: warning: aesop: failed to prove the goal after exhaustive search.\nartifacts/variants/verina_basic_6/verina_basic_6__T4_cond_invert__0/model_deepseek-prover-v2-7b__hard_unfold.lean:53:84: error: unsolved goals\ncase left\na b c : ℤ\nh_precond : minOfThree_precond a b c\nleft_1 : a ≤ b\nleft_2 : a ≤ c\nh : minOfThree a b c h_precond = a\nh_1 : c < a\nh_2 : b ≤ a → c < b\n⊢ c ≤ a\n\ncase right\na b c : ℤ\nh_precond : minOfThree_precond a b c\nleft_1 : a ≤ b\nleft_2 : a ≤ c\nh : minOfThree a b c h_precond = a\nh_1 : c < a\nh_2 : b ≤ a → c < b\n⊢ c ≤ b\n",
+ "stderr": "",
+ "elapsed_seconds": 12.675,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 40,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 58,
+   "col": 25,
+   "severity": "warning",
+   "text": "unused name: h₃"
+  },
+  {
+   "line": 82,
+   "col": 6,
+   "severity": "warning",
+   "text": "aesop: failed to prove the goal after exhaustive search."
+  },
+  {
+   "line": 53,
+   "col": 84,
+   "severity": "error",
+   "text": "unsolved goals\ncase left\na b c : ℤ\nh_precond : minOfThree_precond a b c\nleft_1 : a ≤ b\nleft_2 : a ≤ c\nh : minOfThree a b c h_precond = a\nh_1 : c < a\nh_2 : b ≤ a → c < b\n⊢ c ≤ a\n\ncase right\na b c : ℤ\nh_precond : minOfThree_precond a b c\nleft_1 : a ≤ b\nleft_2 : a ≤ c\nh : minOfThree a b c h_precond = a\nh_1 : c < a\nh_2 : b ≤ a → c < b\n⊢ c ≤ b\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unsolved_goals"
+}

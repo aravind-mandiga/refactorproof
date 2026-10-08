@@ -1,0 +1,31 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "external/verina/datasets/verina/verina_advanced_74/task.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "external/verina/datasets/verina/verina_advanced_74/task.lean",
+ "exit_code": 1,
+ "stdout": "external/verina/datasets/verina/verina_advanced_74/task.lean:29:67: error: unknown constant 'Std.HashSet.emptyWithCapacity'\nexternal/verina/datasets/verina/verina_advanced_74/task.lean:89:8: warning: declaration uses 'sorry'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.078,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 29,
+   "col": 67,
+   "severity": "error",
+   "text": "unknown constant 'Std.HashSet.emptyWithCapacity'"
+  },
+  {
+   "line": 89,
+   "col": 8,
+   "severity": "warning",
+   "text": "declaration uses 'sorry'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "unknown_constant_or_identifier"
+}

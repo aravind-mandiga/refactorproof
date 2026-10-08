@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_30",
+ "variant_id": "verina_basic_30__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_48be27a6 : Array Int :=\n    a.mapIdx (fun i x => x % b[i]!)\n  __rp_tmp_48be27a6\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_48be27a6",
+  "seed": 0
+ },
+ "spec_hash": "2e2d8aa1e266c27a1ef94836fbbb4918016eab012e43c8a142424a7e1a246363",
+ "proof_hash": "546a0c3a5010d8e23ee7ab19a85f70aee2311bddca0f8c8904eb728fd239f21b",
+ "code_hash_original": "83306a605498b99468612b8c5ddbc0cf9da8bdde0b4017c845c8c7beed2c2721",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "elementWiseModulo",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

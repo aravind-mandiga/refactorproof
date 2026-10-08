@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_12__T2_helper_extract__0",
+ "task_id": "verina_basic_12",
+ "source": "reference",
+ "transformation": "T2_helper_extract",
+ "template": "unfold_add_helper",
+ "function_name": "cubeSurfaceArea",
+ "helper": "cubeSurfaceArea__rp_helper_67e54167",
+ "material_provenance": "VERINA task.lean proof/proof_aux/import blocks",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  unfold cubeSurfaceArea cubeSurfaceArea_postcond\n  simp\n",
+ "proof_after": "  unfold cubeSurfaceArea cubeSurfaceArea__rp_helper_67e54167 cubeSurfaceArea_postcond\n  simp\n"
+}

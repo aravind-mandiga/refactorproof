@@ -1,0 +1,91 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_100/verina_basic_100__T5_branch_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_100/verina_basic_100__T5_branch_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/certificates/verina_basic_100/verina_basic_100__T5_branch_extract__0.lean:13:20: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T5_branch_extract__0.lean:22:22: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T5_branch_extract__0.lean:29:50: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T5_branch_extract__0.lean:29:12: warning: The declaration 'Triple__rp_branch_9f218861' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T5_branch_extract__0.lean:51:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T5_branch_extract__0.lean:52:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T5_branch_extract__0.lean:51:6: warning: '(delta RPOrig.Triple RPRef.Triple RPRef.Triple__rp_branch_9f218861 RPOrig.Triple._unary; rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T5_branch_extract__0.lean:52:6: warning: '(set_option smartUnfolding false in rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T5_branch_extract__0.lean:56:82: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T5_branch_extract__0.lean:56:82: warning: '(first\n  | rfl\n  | (delta RPOrig.Triple RPRef.Triple RPRef.Triple__rp_branch_9f218861; rfl)\n  | (delta RPOrig.Triple RPRef.Triple RPRef.Triple__rp_branch_9f218861 RPOrig.Triple._unary; rfl)\n  | (set_option smartUnfolding false in rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T5_branch_extract__0.lean:60:77: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_100/verina_basic_100__T5_branch_extract__0.lean:60:77: warning: '(first\n  | rfl\n  | (delta RPOrig.Triple RPRef.Triple RPRef.Triple__rp_branch_9f218861; rfl)\n  | (delta RPOrig.Triple RPRef.Triple RPRef.Triple__rp_branch_9f218861 RPOrig.Triple._unary; rfl)\n  | (set_option smartUnfolding false in rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 91.86,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 20,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 22,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 29,
+   "col": 50,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 29,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'Triple__rp_branch_9f218861' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 51,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 52,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 51,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(delta RPOrig.Triple RPRef.Triple RPRef.Triple__rp_branch_9f218861 RPOrig.Triple._unary; rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 52,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(set_option smartUnfolding false in rfl)' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 56,
+   "col": 82,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 56,
+   "col": 82,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (delta RPOrig.Triple RPRef.Triple RPRef.Triple__rp_branch_9f218861; rfl)\n  | (delta RPOrig.Triple RPRef.Triple RPRef.Triple__rp_branch_9f218861 RPOrig.Triple._unary; rfl)\n  | (set_option smartUnfolding false in rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 77,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 60,
+   "col": 77,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (delta RPOrig.Triple RPRef.Triple RPRef.Triple__rp_branch_9f218861; rfl)\n  | (delta RPOrig.Triple RPRef.Triple RPRef.Triple__rp_branch_9f218861 RPOrig.Triple._unary; rfl)\n  | (set_option smartUnfolding false in rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

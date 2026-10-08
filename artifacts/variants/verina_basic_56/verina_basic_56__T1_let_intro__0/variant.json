@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_56",
+ "variant_id": "verina_basic_56__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_4c8bb9b3 : Array Int :=\n    if len = 0 then dest\n    else\n      let r := dest\n      updateSegment r src sStart dStart len\n  __rp_tmp_4c8bb9b3\n",
+ "transformed_code_aux": "def updateSegment : Array Int → Array Int → Nat → Nat → Nat → Array Int\n  | r, src, sStart, dStart, 0 => r\n  | r, src, sStart, dStart, n+1 =>\n      let rNew := r.set! (dStart + n) (src[sStart + n]!)\n      updateSegment rNew src sStart dStart n\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_4c8bb9b3",
+  "seed": 0
+ },
+ "spec_hash": "597f03235cd9d293c256953d8356ec8464fc2e5ea26d82dbecd234d3e63c1168",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "9e5fc25b06a4ca4502984d8db20c68dd609bb2f841f8cdbeafa3621dd025b169",
+ "code_aux_hash_original": "6146a8512b896bd2296fa4b1765ae282cf7c7067937d212593324bb9eb416e9d",
+ "tier": "basic",
+ "function_name": "copy",
+ "code_loc_original": 4,
+ "code_loc_refactored": 6
+}

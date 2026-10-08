@@ -1,0 +1,127 @@
+# Frozen model configuration for the LLM proof-generation arm (Phase 5).
+# Exact identifiers here are what the paper reports.  Do not edit after the final run starts.
+#
+# prompt_style:
+#   baseline       – VERINA's dspy `Predict` proof-generation signature (GEN_PROOF_PROMPT) with the
+#                    two few-shot examples VERINA uses (verina_basic_15, verina_basic_44).
+#   custom_prompt  – VERINA's DEEPSEEK_PROVER_COT_PROMPT + `parse_model_response`, the path VERINA
+#                    used for Goedel-Prover-V2 / DeepSeek-Prover-V2.
+protocol:
+  K: 5                       # fixed number of independent samples per (model, task), original implementation only
+  selection: first_lean_valid # primary proof = first attempt (in index order) that Lean verifies
+  fewshot_example_names: [verina_basic_15, verina_basic_44]   # excluded from the evaluated task set for `baseline` runs? no: kept, see note
+  lean_timeout_seconds: 300
+  exclude_fewshot_tasks_from_generation: false   # VERINA drops them from evaluation; we keep them in the denominator but flag them
+
+models:
+  qwen3-14b: &qwen14b
+    family: qwen3
+    provider: local
+    served_model_name: Qwen3-14B
+    model_path: Qwen/Qwen3-14B
+    prompt_style: baseline
+    temperature: 1.0
+    max_tokens: 16000
+    vllm:
+      tensor_parallel: 1
+      max_model_len: 32768
+      extra_args: "--enable-reasoning --reasoning-parser deepseek_r1"   # Qwen3 <think> blocks -> reasoning_content
+
+  qwen3-32b:
+    family: qwen3
+    provider: local
+    served_model_name: Qwen3-32B
+    model_path: Qwen/Qwen3-32B
+    prompt_style: baseline
+    temperature: 1.0
+    max_tokens: 16000
+    quantization: fp8_weight_only   # vLLM on-the-fly FP8 (W8A16 Marlin on Ampere): weights ~33 GB so one A100-80GB has KV-cache headroom.
+    vllm:
+      tensor_parallel: 1
+      max_model_len: 32768
+      extra_args: "--enable-reasoning --reasoning-parser deepseek_r1 --quantization fp8 --gpu-memory-utilization 0.92"
+
+  goedel-prover-v2-8b: &goedel8b
+    family: goedel-prover
+    provider: local
+    served_model_name: Goedel-Prover-V2-8B
+    model_path: Goedel-LM/Goedel-Prover-V2-8B
+    prompt_style: custom_prompt
+    temperature: 1.0
+    max_tokens: 16000
+    vllm:
+      tensor_parallel: 1
+      max_model_len: 32768
+      extra_args: ""
+
+  goedel-prover-v2-32b:
+    family: goedel-prover
+    provider: local
+    served_model_name: Goedel-Prover-V2-32B
+    model_path: Goedel-LM/Goedel-Prover-V2-32B   # Qwen3-32B fine-tune (Goedel-LM)
+    prompt_style: custom_prompt
+    temperature: 1.0
+    max_tokens: 16000
+    quantization: fp8_weight_only   # one A100-80GB, as for qwen3-32b.
+    vllm:
+      tensor_parallel: 1
+      max_model_len: 32768
+      extra_args: "--quantization fp8 --gpu-memory-utilization 0.92"
+
+  deepseek-prover-v2-7b: &deepseek7b
+    family: deepseek-prover        # second prover FAMILY (not Qwen-based)
+    provider: local
+    served_model_name: DeepSeek-Prover-V2-7B
+    model_path: deepseek-ai/DeepSeek-Prover-V2-7B
+    prompt_style: custom_prompt    # VERINA's DEEPSEEK_PROVER_COT_PROMPT path, as VERINA used for this model
+    temperature: 1.0
+    max_tokens: 16000
+    vllm:
+      tensor_parallel: 1
+      max_model_len: 32768
+      extra_args: ""
+
+  # Control for the general-model prompt: VERINA's dspy proof prompt contains the hint "Unfold the
+  # implementation and specification definitions when necessary"; this run removes it (nothing else changes).
+  qwen3-14b__neutral:
+    <<: *qwen14b
+    base_model: qwen3-14b
+    strategy_condition: neutral_prompt
+    neutral_prompt: true
+
+  # ---- Experiment B: within-model proof-strategy conditions (same model, same tasks, same K; only the
+  # prompt carries an extra instruction; {fname}/{postcond} are filled per task). Manipulation check:
+  # unfold / simp[f] rates per condition in results/proof_features.csv.
+  goedel-prover-v2-8b__unfold:
+    <<: *goedel8b
+    base_model: goedel-prover-v2-8b
+    strategy_condition: unfold_oriented
+    strategy_instruction: "Proof-strategy constraint: begin the formal proof by unfolding the target implementation and the postcondition (`unfold {fname} {postcond}`) and reason directly over the exposed implementation body."
+  goedel-prover-v2-8b__avoid_unfold:
+    <<: *goedel8b
+    base_model: goedel-prover-v2-8b
+    strategy_condition: avoid_unfold
+    strategy_instruction: "Proof-strategy constraint: do NOT unfold the target implementation `{fname}` and do not put `{fname}` in any simp/rw/dsimp lemma list. Prefer proof strategies that do not depend on exposing the exact implementation body: reason from the specification `{postcond}`, general library lemmas, decision procedures (decide, omega, simp with library lemmas), or induction on the inputs."
+  goedel-prover-v2-8b__simp:
+    <<: *goedel8b
+    base_model: goedel-prover-v2-8b
+    strategy_condition: simp_oriented
+    strategy_instruction: "Proof-strategy constraint: prefer simplification/rewrite-based reasoning: use `simp [{fname}, {postcond}]` / `dsimp` style rewriting over the target definition instead of explicit `unfold`."
+
+  # ---- Hard intervention (separately named, NOT a fallback for the prompt conditions): the proof stub the
+  # prover completes already begins with `unfold {fname} {postcond}`; if the model does not echo that line it is
+  # prepended, and `forced_prefix_echoed` is recorded per attempt.
+  goedel-prover-v2-8b__hard_unfold:
+    <<: *goedel8b
+    base_model: goedel-prover-v2-8b
+    strategy_condition: hard_unfold
+    forced_prefix: "unfold {fname} {postcond}"
+
+  deepseek-prover-v2-7b__hard_unfold:   # replication of the hard intervention in the second prover family
+    <<: *deepseek7b
+    base_model: deepseek-prover-v2-7b
+    strategy_condition: hard_unfold
+    forced_prefix: "unfold {fname} {postcond}"
+
+  # Open-weight models only: no API models are used anywhere in the experiments.
+  # Qwen family: Qwen3-14B, Qwen3-32B, Goedel-Prover-V2-8B/32B (Qwen3 fine-tunes); DeepSeek-Prover-V2-7B added 12:15 as a second prover family.

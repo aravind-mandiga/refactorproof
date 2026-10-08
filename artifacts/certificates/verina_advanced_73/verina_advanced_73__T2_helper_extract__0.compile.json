@@ -1,0 +1,37 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_73/verina_advanced_73__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_73/verina_advanced_73__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_73/verina_advanced_73__T2_helper_extract__0.lean:22:36: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_73/verina_advanced_73__T2_helper_extract__0.lean:42:64: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_73/verina_advanced_73__T2_helper_extract__0.lean:67:78: error: type mismatch\n  rfl\nhas type\n  ?m.907 = ?m.907 : Prop\nbut is expected to have type\n  RPOrig.smallestMissing l h_precond = RPRef.smallestMissing l h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.73,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 36,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 42,
+   "col": 64,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 67,
+   "col": 78,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.907 = ?m.907 : Prop\nbut is expected to have type\n  RPOrig.smallestMissing l h_precond = RPRef.smallestMissing l h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_14/verina_advanced_14__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_14/verina_advanced_14__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_14/verina_advanced_14__T2_helper_extract__0.lean:13:27: warning: unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_14/verina_advanced_14__T2_helper_extract__0.lean:22:29: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_14/verina_advanced_14__T2_helper_extract__0.lean:40:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_14/verina_advanced_14__T2_helper_extract__0.lean:63:74: error: type mismatch\n  rfl\nhas type\n  ?m.13633 = ?m.13633 : Prop\nbut is expected to have type\n  RPOrig.ifPowerOfFour n h_precond = RPRef.ifPowerOfFour n h_precond : Prop\nartifacts/certificates/verina_advanced_14/verina_advanced_14__T2_helper_extract__0.lean:67:74: error: type mismatch\n  rfl\nhas type\n  ?m.13725 = ?m.13725 : Prop\nbut is expected to have type\n  RPOrig.ifPowerOfFour n h_precond = RPRef.ifPowerOfFour n h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 1.294,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 27,
+   "severity": "warning",
+   "text": "unused variable `n`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 40,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 63,
+   "col": 74,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.13633 = ?m.13633 : Prop\nbut is expected to have type\n  RPOrig.ifPowerOfFour n h_precond = RPRef.ifPowerOfFour n h_precond : Prop"
+  },
+  {
+   "line": 67,
+   "col": 74,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.13725 = ?m.13725 : Prop\nbut is expected to have type\n  RPOrig.ifPowerOfFour n h_precond = RPRef.ifPowerOfFour n h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,103 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean:23:38: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean:37:38: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean:52:80: error: type mismatch\n  rfl\nhas type\n  ?m.61383 = ?m.61383 : Prop\nbut is expected to have type\n  RPOrig.differenceMinMax a h_precond = RPRef.differenceMinMax a h_precond : Prop\nartifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean:56:80: error: type mismatch\n  rfl\nhas type\n  ?m.61477 = ?m.61477 : Prop\nbut is expected to have type\n  RPOrig.differenceMinMax a h_precond = RPRef.differenceMinMax a h_precond : Prop\nartifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean:61:2: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\na : Array Int\nh_precond : differenceMinMax_precond a\n⊢ RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩ = RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\nartifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean:69:242: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\na : Array Int\nh_precond : differenceMinMax_precond a\n⊢ RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩ = RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\nartifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean:64:80: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean:64:80: error: unknown metavariable '?_uniq.66228'\nartifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean:77:237: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\na : Array Int\nh_precond : differenceMinMax_precond a\n⊢ RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩ = RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\nartifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean:72:80: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean:72:80: error: unknown metavariable '?_uniq.70550'\nartifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean:81:258: error: tactic 'rfl' failed, the left-hand side\n  RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\na : Array Int\nh_precond : differenceMinMax_precond a\n⊢ RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩ = RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\nartifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean:80:80: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_23/verina_basic_23__T3_comm_swap__0.lean:80:80: error: unknown metavariable '?_uniq.71927'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.899,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 23,
+   "col": 38,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 37,
+   "col": 38,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 52,
+   "col": 80,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.61383 = ?m.61383 : Prop\nbut is expected to have type\n  RPOrig.differenceMinMax a h_precond = RPRef.differenceMinMax a h_precond : Prop"
+  },
+  {
+   "line": 56,
+   "col": 80,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.61477 = ?m.61477 : Prop\nbut is expected to have type\n  RPOrig.differenceMinMax a h_precond = RPRef.differenceMinMax a h_precond : Prop"
+  },
+  {
+   "line": 61,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\na : Array Int\nh_precond : differenceMinMax_precond a\n⊢ RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩ = RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩"
+  },
+  {
+   "line": 69,
+   "col": 242,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\na : Array Int\nh_precond : differenceMinMax_precond a\n⊢ RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩ = RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩"
+  },
+  {
+   "line": 64,
+   "col": 80,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 64,
+   "col": 80,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.66228'"
+  },
+  {
+   "line": 77,
+   "col": 237,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\na : Array Int\nh_precond : differenceMinMax_precond a\n⊢ RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩ = RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩"
+  },
+  {
+   "line": 72,
+   "col": 80,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 72,
+   "col": 80,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.70550'"
+  },
+  {
+   "line": 81,
+   "col": 258,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩\na : Array Int\nh_precond : differenceMinMax_precond a\n⊢ RPOrig.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩ = RPRef.differenceMinMax.loop._unary a ⟨1, ⟨a[0]!, a[0]!⟩⟩"
+  },
+  {
+   "line": 80,
+   "col": 80,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 80,
+   "col": 80,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.71927'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

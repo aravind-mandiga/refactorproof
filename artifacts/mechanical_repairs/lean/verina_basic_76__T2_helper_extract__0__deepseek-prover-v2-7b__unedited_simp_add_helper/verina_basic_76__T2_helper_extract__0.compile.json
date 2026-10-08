@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/mechanical_repairs/lean/verina_basic_76__T2_helper_extract__0__deepseek-prover-v2-7b__unedited_simp_add_helper/verina_basic_76__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/mechanical_repairs/lean/verina_basic_76__T2_helper_extract__0__deepseek-prover-v2-7b__unedited_simp_add_helper/verina_basic_76__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/mechanical_repairs/lean/verina_basic_76__T2_helper_extract__0__deepseek-prover-v2-7b__unedited_simp_add_helper/verina_basic_76__T2_helper_extract__0.lean:15:19: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_76__T2_helper_extract__0__deepseek-prover-v2-7b__unedited_simp_add_helper/verina_basic_76__T2_helper_extract__0.lean:15:29: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_76__T2_helper_extract__0__deepseek-prover-v2-7b__unedited_simp_add_helper/verina_basic_76__T2_helper_extract__0.lean:23:59: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_76__T2_helper_extract__0__deepseek-prover-v2-7b__unedited_simp_add_helper/verina_basic_76__T2_helper_extract__0.lean:23:12: warning: The declaration 'myMin__rp_helper_5e5dcb4d' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/mechanical_repairs/lean/verina_basic_76__T2_helper_extract__0__deepseek-prover-v2-7b__unedited_simp_add_helper/verina_basic_76__T2_helper_extract__0.lean:40:54: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/mechanical_repairs/lean/verina_basic_76__T2_helper_extract__0__deepseek-prover-v2-7b__unedited_simp_add_helper/verina_basic_76__T2_helper_extract__0.lean:62:10: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case left\n  x y : ℤ\n  h_precond : myMin_precond x y\n  h : x ≤ y\n  h₁ : y ≤ x → y = x\n  ⊢ myMin__rp_helper_5e5dcb4d x y h_precond = x\nartifacts/mechanical_repairs/lean/verina_basic_76__T2_helper_extract__0__deepseek-prover-v2-7b__unedited_simp_add_helper/verina_basic_76__T2_helper_extract__0.lean:69:10: error: tactic 'aesop' failed, made no progress\nInitial goal:\n  case right\n  x y : ℤ\n  h_precond : myMin_precond x y\n  h : y < x\n  h₁ : x < y → x = y\n  ⊢ myMin__rp_helper_5e5dcb4d x y h_precond = y\n",
+ "stderr": "",
+ "elapsed_seconds": 9.753,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 19,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 59,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'myMin__rp_helper_5e5dcb4d' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 54,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 62,
+   "col": 10,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case left\n  x y : ℤ\n  h_precond : myMin_precond x y\n  h : x ≤ y\n  h₁ : y ≤ x → y = x\n  ⊢ myMin__rp_helper_5e5dcb4d x y h_precond = x"
+  },
+  {
+   "line": 69,
+   "col": 10,
+   "severity": "error",
+   "text": "tactic 'aesop' failed, made no progress\nInitial goal:\n  case right\n  x y : ℤ\n  h_precond : myMin_precond x y\n  h : y < x\n  h₁ : x < y → x = y\n  ⊢ myMin__rp_helper_5e5dcb4d x y h_precond = y\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

@@ -1,0 +1,10 @@
+--- reference:verina_basic_32__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_32__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold swapFirstAndLast swapFirstAndLast_postcond
++  unfold swapFirstAndLast swapFirstAndLast__rp_helper_6bb66f38 swapFirstAndLast_postcond
+   unfold swapFirstAndLast_precond at h_precond
+   simp_all
+   -- have ha : 0 < a.toList.length := by simp [h_precond]
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

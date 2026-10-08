@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_60/verina_advanced_60__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_60/verina_advanced_60__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_60/verina_advanced_60__T1_let_intro__0.lean:13:32: warning: unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_60/verina_advanced_60__T1_let_intro__0.lean:22:42: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_60/verina_advanced_60__T1_let_intro__0.lean:35:42: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_60/verina_advanced_60__T1_let_intro__0.lean:51:90: error: type mismatch\n  rfl\nhas type\n  ?m.1067 = ?m.1067 : Prop\nbut is expected to have type\n  RPOrig.partitionEvensOdds nums h_precond = RPRef.partitionEvensOdds nums h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.617,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 32,
+   "severity": "warning",
+   "text": "unused variable `nums`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 35,
+   "col": 42,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 51,
+   "col": 90,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1067 = ?m.1067 : Prop\nbut is expected to have type\n  RPOrig.partitionEvensOdds nums h_precond = RPRef.partitionEvensOdds nums h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

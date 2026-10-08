@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_14",
+ "variant_id": "verina_basic_14__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b",
+ "generation_attempt": 3,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 8.852,
+ "proof_region_errors": [
+  "unsolved goals\ncase mp.inl\ns : String\nh_precond : containsZ_precond s\nleft : 'z' ∈ s.data\n⊢ containsZ__rp_helper_6f400cbb s h_precond = true\n\ncase mp.inr\ns : String\nh_precond : containsZ_precond s\nleft : 'Z' ∈ s.data\n⊢ containsZ__rp_helper_6f400cbb s h_precond = true",
+  "tactic 'aesop' failed, made no progress\nInitial goal:\n  case mpr\n  s : String\n  h_precond : containsZ_precond s\n  h : containsZ__rp_helper_6f400cbb s h_precond = true\n  ⊢ ∃ x ∈ s.data, x = 'z' ∨ x = 'Z'\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "024b0fd8d2805bdb8d92d4ab9afb9de97081e8272bed54d6ca65519eec9d4cba",
+ "spec_hash": "8b422f0f0718a6d5587cf0f1b04c62ad78afdfafab0eb53a3521396f6b627702",
+ "proof_text": "  have h_main : (∃ x, x ∈ s.toList ∧ (x = 'z' ∨ x = 'Z')) ↔ containsZ (s) h_precond := by\n    constructor\n    · -- Prove the forward direction: if there exists an x in s.toList such that x is 'z' or 'Z', then containsZ s h_precond is true.\n      intro h\n      -- Simplify the hypothesis using the definition of containsZ.\n      simp_all [containsZ, containsZ_precond]\n      <;> aesop\n    · -- Prove the backward direction: if containsZ s h_precond is true, then there exists an x in s.toList such that x is 'z' or 'Z'.\n      intro h\n      -- Simplify the hypothesis using the definition of containsZ.\n      simp_all [containsZ, containsZ_precond]\n      <;> aesop\n  -- Using the main equivalence `h_main`, we conclude the proof.\n  simpa using h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "default"
+}

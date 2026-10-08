@@ -1,0 +1,17 @@
+source,aggregation,psr,ci_low,ci_high,n_tasks,n_variants,weighting_formula
+reference,task_normalized,0.4791925465838509,0.44114906832298134,0.5195652173913042,46,130,mean over tasks of (mean over that task's certified variants)
+reference,excluding_T1,0.11485507246376811,0.05651268115942029,0.18115942028985504,46,84,"same, restricted to variants outside T1"
+reference,family_balanced,0.48369565217391314,0.4478260869565217,0.522463768115942,46,130,mean over tasks of (mean over that task's available families of (mean over that family's variants))
+reference,one_per_task_family_cell,0.46825396825396826,0.4253731343283582,0.5126050420168067,46,130,"unweighted mean over (task, family) cells, averaging multiple variants of a family first"
+deepseek-prover-v2-7b,task_normalized,0.5929339477726575,0.5230414746543778,0.6666666666666666,31,95,mean over tasks of (mean over that task's certified variants)
+deepseek-prover-v2-7b,excluding_T1,0.32,0.19999999999999998,0.4455555555555556,30,64,"same, restricted to variants outside T1"
+deepseek-prover-v2-7b,family_balanced,0.5817204301075269,0.513978494623656,0.6537634408602151,31,95,mean over tasks of (mean over that task's available families of (mean over that family's variants))
+deepseek-prover-v2-7b,one_per_task_family_cell,0.5666666666666667,0.5102040816326531,0.625,31,95,"unweighted mean over (task, family) cells, averaging multiple variants of a family first"
+goedel-prover-v2-8b,task_normalized,0.6461412151067324,0.5767651888341543,0.7183908045977011,29,93,mean over tasks of (mean over that task's certified variants)
+goedel-prover-v2-8b,excluding_T1,0.43809523809523804,0.3190476190476191,0.5595238095238095,28,64,"same, restricted to variants outside T1"
+goedel-prover-v2-8b,family_balanced,0.6367816091954024,0.5672413793103448,0.7086350574712643,29,93,mean over tasks of (mean over that task's available families of (mean over that family's variants))
+goedel-prover-v2-8b,one_per_task_family_cell,0.6098484848484849,0.5555555555555556,0.6704130490296221,29,93,"unweighted mean over (task, family) cells, averaging multiple variants of a family first"
+goedel-prover-v2-32b,task_normalized,0.6446886446886446,0.5645604395604396,0.7275641025641026,26,83,mean over tasks of (mean over that task's certified variants)
+goedel-prover-v2-32b,excluding_T1,0.43733333333333335,0.30393333333333333,0.5706666666666667,25,57,"same, restricted to variants outside T1"
+goedel-prover-v2-32b,family_balanced,0.6371794871794871,0.558974358974359,0.7185897435897436,26,83,mean over tasks of (mean over that task's available families of (mean over that family's variants))
+goedel-prover-v2-32b,one_per_task_family_cell,0.6068376068376069,0.5436507936507936,0.6754385964912281,26,83,"unweighted mean over (task, family) cells, averaging multiple variants of a family first"

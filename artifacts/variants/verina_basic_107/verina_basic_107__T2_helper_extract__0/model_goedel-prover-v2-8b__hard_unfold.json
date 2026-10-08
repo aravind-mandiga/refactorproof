@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_107",
+ "variant_id": "verina_basic_107__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__hard_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "simp_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.731,
+ "proof_region_errors": [
+  "simp_all made no progress\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "0ff9dd9feaf25ba492402dbedf0e58d7567a12d3eca0ff005542081c1869cc84",
+ "spec_hash": "e5a8892336d64101467f8c1dd6c6b5d219714824a5f73823f1ab8e0581c2c269",
+ "proof_text": "  unfold ComputeAvg ComputeAvg_postcond\n  have h_main : 2 * ((a + b) / 2 : ℤ) = a + b - ((a + b) % 2 : ℤ) := by\n    have h₁ : a + b = 2 * ((a + b) / 2) + ((a + b) % 2) := by\n      have h₂ := Int.emod_add_ediv (a + b) 2\n      linarith\n    have h₂ : 2 * ((a + b) / 2 : ℤ) = a + b - ((a + b) % 2 : ℤ) := by\n      linarith\n    exact h₂\n\n  simp_all [ComputeAvg, ComputeAvg_precond, ComputeAvg_postcond]\n  <;>\n  (try omega) <;>\n  (try linarith) <;>\n  (try\n    {\n      omega\n    }) <;>\n  (try\n    {\n      simp_all [Int.mul_emod, Int.add_emod, Int.sub_emod]\n      <;> omega\n    }) <;>\n  (try\n    {\n      ring_nf at *\n      <;> omega\n    }) <;>\n  (try\n    {\n      omega\n    })\n  <;>\n  omega\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "hard_unfold"
+}

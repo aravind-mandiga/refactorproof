@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_17",
+ "variant_id": "verina_advanced_17__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  insertionSort__rp_helper_153302ff l h_precond\n",
+ "transformed_code_aux": "-- Helper function to insert an integer into a sorted list\ndef insertElement (x : Int) (l : List Int) : List Int :=\n  match l with\n  | [] => [x]\n  | y :: ys =>\n      if x <= y then\n        x :: y :: ys\n      else\n        y :: insertElement x ys\n\n-- Helper function to sort a list using insertion sort\ndef sortList (l : List Int) : List Int :=\n  match l with\n  | [] => []\n  | x :: xs =>\n      insertElement x (sortList xs)\n\nprivate def insertionSort__rp_helper_153302ff (l : List Int) (h_precond : insertionSort_precond (l)) : List Int :=\n  let result := sortList l\n  result\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "insertionSort__rp_helper_153302ff"
+ ],
+ "metadata": {
+  "binders": [
+   "l",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "12da64ff5baf459505f1eb5d21128096a69ce05143b53a79d1480a80f656e1e3",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "1ddbfdd36fe7d8244adfb0fe394cac36f6ee41bdedfc93bb43c9dc11c13f246e",
+ "code_aux_hash_original": "21a8ab1f9045939bc5fa525915ae2789e66e5e8ee7f40b464dc7d1b4abe61a4b",
+ "tier": "advanced",
+ "function_name": "insertionSort",
+ "code_loc_original": 2,
+ "code_loc_refactored": 4
+}

@@ -1,0 +1,11 @@
+--- deepseek-prover-v2-7b:verina_advanced_41__T5_branch_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_advanced_41__T5_branch_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : (maxOfThree a b c h_precond >= a ∧ maxOfThree a b c h_precond >= b ∧ maxOfThree a b c h_precond >= c) ∧ (maxOfThree a b c h_precond = a ∨ maxOfThree a b c h_precond = b ∨ maxOfThree a b c h_precond = c) := by
+-    dsimp only [maxOfThree, maxOfThree_precond] at *
++    dsimp only [maxOfThree, maxOfThree_precond, maxOfThree__rp_branch_81742a90] at *
+     split_ifs <;> simp_all (config := {decide := true}) <;>
+     (try omega) <;>
+     (try
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

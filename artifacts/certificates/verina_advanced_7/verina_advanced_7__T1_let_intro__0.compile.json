@@ -1,0 +1,37 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_7/verina_advanced_7__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_7/verina_advanced_7__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_7/verina_advanced_7__T1_let_intro__0.lean:22:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_7/verina_advanced_7__T1_let_intro__0.lean:32:41: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_7/verina_advanced_7__T1_let_intro__0.lean:45:88: error: type mismatch\n  rfl\nhas type\n  ?m.801 = ?m.801 : Prop\nbut is expected to have type\n  RPOrig.binaryToDecimal digits h_precond = RPRef.binaryToDecimal digits h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.673,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 32,
+   "col": 41,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 45,
+   "col": 88,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.801 = ?m.801 : Prop\nbut is expected to have type\n  RPOrig.binaryToDecimal digits h_precond = RPRef.binaryToDecimal digits h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

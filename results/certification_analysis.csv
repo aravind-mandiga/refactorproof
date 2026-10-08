@@ -1,0 +1,6 @@
+transformation,severity,tasks_attempted,tasks_applicable,applicability_rate,candidates_generated,certificates_attempted,certified,certification_rate,certified_rfl,pct_rfl_of_certified,tasks_with_certified_variant,failure_categories,tasks_excluded_original_fails,loc_orig_mean_certified
+T1_let_intro,D,185,181,0.9783783783783784,181,181,180,0.994475138121547,180,1.0,180,"{""tactic_failed"": 1}",4,7.740331491712707
+T2_helper_extract,S,185,179,0.9675675675675676,179,179,178,0.994413407821229,178,1.0,178,"{""tactic_failed"": 1}",4,7.687150837988827
+T3_comm_swap,E,185,77,0.41621621621621624,122,122,50,0.4098360655737705,2,0.04,34,"{""tactic_failed"": 72}",4,11.935064935064934
+T4_cond_invert,E,185,32,0.17297297297297298,32,32,32,1.0,0,0.0,32,{},4,8.40625
+T5_branch_extract,S,185,18,0.0972972972972973,18,18,18,1.0,18,1.0,18,{},4,3.2222222222222223

@@ -1,0 +1,43 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_22/verina_advanced_22__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_22/verina_advanced_22__T2_helper_extract__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_22/verina_advanced_22__T2_helper_extract__0.lean:13:26: warning: unused variable `lst`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_22/verina_advanced_22__T2_helper_extract__0.lean:22:35: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_22/verina_advanced_22__T2_helper_extract__0.lean:38:63: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_22/verina_advanced_22__T2_helper_extract__0.lean:59:76: error: type mismatch\n  rfl\nhas type\n  ?m.1058 = ?m.1058 : Prop\nbut is expected to have type\n  RPOrig.isPeakValley lst h_precond = RPRef.isPeakValley lst h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 0.793,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 26,
+   "severity": "warning",
+   "text": "unused variable `lst`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 35,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 63,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 59,
+   "col": 76,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1058 = ?m.1058 : Prop\nbut is expected to have type\n  RPOrig.isPeakValley lst h_precond = RPRef.isPeakValley lst h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

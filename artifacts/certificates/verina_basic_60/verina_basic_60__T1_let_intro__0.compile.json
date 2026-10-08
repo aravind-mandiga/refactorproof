@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_60/verina_basic_60__T1_let_intro__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_60/verina_basic_60__T1_let_intro__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_60/verina_basic_60__T1_let_intro__0.lean:14:29: warning: unused variable `arr`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_60/verina_basic_60__T1_let_intro__0.lean:23:39: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_60/verina_basic_60__T1_let_intro__0.lean:37:39: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_60/verina_basic_60__T1_let_intro__0.lean:54:82: error: type mismatch\n  rfl\nhas type\n  ?m.48639 = ?m.48639 : Prop\nbut is expected to have type\n  RPOrig.FindEvenNumbers arr h_precond = RPRef.FindEvenNumbers arr h_precond : Prop\nartifacts/certificates/verina_basic_60/verina_basic_60__T1_let_intro__0.lean:58:82: error: type mismatch\n  rfl\nhas type\n  ?m.48734 = ?m.48734 : Prop\nbut is expected to have type\n  RPOrig.FindEvenNumbers arr h_precond = RPRef.FindEvenNumbers arr h_precond : Prop\n",
+ "stderr": "",
+ "elapsed_seconds": 1.461,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 14,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `arr`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 37,
+   "col": 39,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 54,
+   "col": 82,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.48639 = ?m.48639 : Prop\nbut is expected to have type\n  RPOrig.FindEvenNumbers arr h_precond = RPRef.FindEvenNumbers arr h_precond : Prop"
+  },
+  {
+   "line": 58,
+   "col": 82,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.48734 = ?m.48734 : Prop\nbut is expected to have type\n  RPOrig.FindEvenNumbers arr h_precond = RPRef.FindEvenNumbers arr h_precond : Prop\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_59",
+ "variant_id": "verina_basic_59__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_883fb5c3 : (Int × Int) :=\n    let a := 2 * x\n    let b := 2 * a\n    (a, b)\n  __rp_tmp_883fb5c3\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_883fb5c3",
+  "seed": 0
+ },
+ "spec_hash": "92aaa4d259c67625406f056da6f929a6ac3231366f2353189b87f378030d398b",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "17ffd7fd8c27a5ca73fc55729fe0d3cf6ce6a1d1e9bcffa301abfc2bc54f01bc",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "DoubleQuadruple",
+ "code_loc_original": 3,
+ "code_loc_refactored": 5
+}

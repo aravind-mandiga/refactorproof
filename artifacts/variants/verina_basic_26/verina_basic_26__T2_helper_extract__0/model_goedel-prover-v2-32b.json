@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_26",
+ "variant_id": "verina_basic_26__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-32b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.259,
+ "proof_region_errors": [
+  "unsolved goals\nn : ℤ\nh_precond : isEven_precond n\nh : n % 2 = 0\n⊢ isEven__rp_helper_3a986bdd n h_precond = true",
+  "unsolved goals\nn : ℤ\nh_precond : isEven_precond n\nh : ¬n % 2 = 0\n⊢ isEven__rp_helper_3a986bdd n h_precond = false\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "b1a2600b4c52649ca134c7e160b92884ab2c8149689bc8054d792c01fde926f3",
+ "spec_hash": "1dfac8fc64ec9866708463e5c2fa04cd6ff7a2d289a66d5f60ad1be927ad1d32",
+ "proof_text": "  have h_main : (isEven (n) h_precond → n % 2 = 0) ∧ (¬ isEven (n) h_precond → n % 2 ≠ 0) := by\n    by_cases h : n % 2 = 0\n    · -- Case 1: n % 2 = 0\n      have h₁ : isEven (n) h_precond = true := by\n        simp [isEven, h, Int.emod_eq_of_lt]\n        <;> norm_num\n      constructor\n      · -- Prove (isEven (n) h_precond → n % 2 = 0)\n        intro h₂\n        rw [h₁] at h₂\n        simp at h₂\n        <;> simp_all\n      · -- Prove (¬ isEven (n) h_precond → n % 2 ≠ 0)\n        intro h₂\n        rw [h₁] at h₂\n        simp at h₂\n        <;> simp_all\n    · -- Case 2: n % 2 ≠ 0\n      have h₁ : isEven (n) h_precond = false := by\n        simp [isEven]\n        <;>\n        (try norm_num) <;>\n        (try\n          {\n            have h₂ : n % 2 ≠ 0 := h\n            have h₃ : n % 2 = 1 ∨ n % 2 = -1 := by\n              have h₄ : n % 2 = 1 ∨ n % 2 = -1 := by\n                have : n % 2 = 1 ∨ n % 2 = -1 := by\n                  have h₅ : n % 2 = 1 ∨ n % 2 = -1 := by\n                    omega\n                  exact h₅\n                exact this\n              exact h₄\n            cases h₃ with\n            | inl h₃ =>\n              simp [h₃]\n              <;> norm_num\n            | inr h₃ =>\n              simp [h₃]\n              <;> norm_num\n          }) <;>\n        (try omega)\n      constructor\n      · -- Prove (isEven (n) h_precond → n % 2 = 0)\n        intro h₂\n        rw [h₁] at h₂\n        simp at h₂\n        <;> simp_all\n      · -- Prove (¬ isEven (n) h_precond → n % 2 ≠ 0)\n        intro h₂\n        rw [h₁] at h₂\n        simp at h₂\n        <;> simp_all\n  -- Use the main result to prove the postcondition\n  simpa [isEven_postcond] using h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-32b",
+ "strategy_condition": "default"
+}

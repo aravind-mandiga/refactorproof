@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_100",
+ "variant_id": "verina_basic_100__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__avoid_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unsolved_goals",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 8.002,
+ "proof_region_errors": [
+  "unsolved goals\ncase pos\nx : ℤ\nh_precond : Triple_precond x\nhx : x = 0\n⊢ Triple__rp_helper_574d859a 0 h_precond = 0\nTry this: ring_nf",
+  "simp_all made no progress\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "1c0f6af3bd13b58736d7d02066d27f4c54caa0ab69768471e2945dc4852b19da",
+ "spec_hash": "8ea4c3de66341ef9c4cf3858383ca0ba1bd09ec82562a4f2c725938ed517ce4c",
+ "proof_text": "  have h_main : Triple_postcond (x) (Triple (x) h_precond) h_precond := by\n    have h₁ : Triple (x) h_precond = if x = 0 then 0 else 3 * x := by\n      by_cases hx : x = 0\n      · -- Case: x = 0\n        rw [hx]\n        simp [Triple, hx]\n        <;> norm_num\n      · -- Case: x ≠ 0\n        simp [Triple, hx]\n        <;> ring\n        <;> simp_all\n        <;> norm_num\n        <;> omega\n    rw [h₁]\n    constructor\n    · -- Prove (if x = 0 then 0 else 3 * x) / 3 = x\n      split_ifs with hx\n      · -- Subcase: x = 0\n        simp [hx]\n      · -- Subcase: x ≠ 0\n        have h₂ : (3 * x : ℤ) / 3 = x := by\n          have h₃ : (3 * x : ℤ) % 3 = 0 := by\n            omega\n          have h₄ : (3 * x : ℤ) / 3 = x := by\n            omega\n          exact h₄\n        simp_all\n    · -- Prove ((if x = 0 then 0 else 3 * x) / 3) * 3 = (if x = 0 then 0 else 3 * x)\n      split_ifs with hx\n      · -- Subcase: x = 0\n        simp [hx]\n      · -- Subcase: x ≠ 0\n        have h₂ : (3 * x : ℤ) / 3 = x := by\n          have h₃ : (3 * x : ℤ) % 3 = 0 := by\n            omega\n          have h₄ : (3 * x : ℤ) / 3 = x := by\n            omega\n          exact h₄\n        have h₃ : ((3 * x : ℤ) / 3) * 3 = 3 * x := by\n          rw [h₂]\n          <;> ring\n          <;> omega\n        simp_all\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "avoid_unfold"
+}

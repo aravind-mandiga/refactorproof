@@ -1,0 +1,31 @@
+{
+ "task_id": "verina_basic_66",
+ "variant_id": "verina_basic_66__T5_branch_extract__0",
+ "transformation": "T5_branch_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "deepseek-prover-v2-7b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "type_mismatch",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.541,
+ "proof_region_errors": [
+  "type mismatch, term\n  h\nafter simplification has type\n  2 ∣ x ∨ ComputeIsEven__rp_branch_87fb4e70 x h_precond = true : Prop\nbut is expected to have type\n  2 ∣ x : Prop\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "74ce17792ae3d4b88918ee93c091d6f1b3cc97f57a3efc0632e2c678b1baf0aa",
+ "spec_hash": "9300d16b9957b06554011b12d8985caa114c512f6eac35f42f2319056238a3b4",
+ "proof_text": "  have h_main : (ComputeIsEven x h_precond = true) ↔ ∃ (k : Int), x = 2 * k := by\n    unfold ComputeIsEven\n    simp [h_precond]\n    constructor\n    · -- Prove the forward direction: (x % 2 = 0) → ∃ k, x = 2 * k\n      intro h\n      use x / 2\n      have h₁ : x % 2 = 0 := by simpa using h\n      have h₂ : x = 2 * (x / 2) := by\n        have h₃ := Int.emod_add_ediv x 2\n        omega\n      linarith\n    · -- Prove the backward direction: (∃ k, x = 2 * k) → (x % 2 = 0)\n      rintro ⟨k, hk⟩\n      have h₁ : x % 2 = 0 := by\n        rw [hk]\n        norm_num\n        <;>\n        (try omega) <;>\n        (try simp [Int.mul_emod, Int.add_emod, Int.emod_emod]) <;>\n        omega\n      simp_all\n      <;>\n      omega\n\n  simp_all [ComputeIsEven_postcond]\n  <;>\n  aesop\n",
+ "proof_aux_text": "\n",
+ "model_family": "deepseek-prover",
+ "base_model": "deepseek-prover-v2-7b",
+ "strategy_condition": "default"
+}

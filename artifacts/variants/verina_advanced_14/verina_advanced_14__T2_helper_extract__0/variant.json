@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_14",
+ "variant_id": "verina_advanced_14__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  ifPowerOfFour__rp_helper_92c7f6bb n h_precond\n",
+ "transformed_code_aux": "\nprivate def ifPowerOfFour__rp_helper_92c7f6bb (n : Nat) (h_precond : ifPowerOfFour_precond (n)) : Bool :=\n  let rec helper (n : Nat) : Bool :=\n    match n with\n    | 0 =>\n      false\n    | Nat.succ m =>\n      match m with\n      | 0 =>\n        true\n      | Nat.succ l =>\n        if (l+2)%4=0 then\n          helper ((l+2)/4)\n        else\n          false\n  helper n\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "ifPowerOfFour__rp_helper_92c7f6bb"
+ ],
+ "metadata": {
+  "binders": [
+   "n",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "412892250c4ae602e9dd97b64f92ced3c6372f3c6d2fc0e635adc485a4f67238",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "73a7a54c08c0f0a76713b2049177787b152617198a939abf0a9de32cdae9ba33",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "ifPowerOfFour",
+ "code_loc_original": 14,
+ "code_loc_refactored": 16
+}

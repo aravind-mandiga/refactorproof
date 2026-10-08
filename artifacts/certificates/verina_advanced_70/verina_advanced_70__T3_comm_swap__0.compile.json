@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_70/verina_advanced_70__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_70/verina_advanced_70__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_70/verina_advanced_70__T3_comm_swap__0.lean:26:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_70/verina_advanced_70__T3_comm_swap__0.lean:52:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_70/verina_advanced_70__T3_comm_swap__0.lean:79:98: error: type mismatch\n  rfl\nhas type\n  ?m.1566 = ?m.1566 : Prop\nbut is expected to have type\n  RPOrig.semiOrderedPermutation nums h_precond = RPRef.semiOrderedPermutation nums h_precond : Prop\nartifacts/certificates/verina_advanced_70/verina_advanced_70__T3_comm_swap__0.lean:83:98: error: type mismatch\n  rfl\nhas type\n  ?m.8382 = ?m.8382 : Prop\nbut is expected to have type\n  RPOrig.semiOrderedPermutation nums h_precond = RPRef.semiOrderedPermutation nums h_precond : Prop\nartifacts/certificates/verina_advanced_70/verina_advanced_70__T3_comm_swap__0.lean:88:2: error: tactic 'rfl' failed, the left-hand side\n  let lengthList := nums.length;\n  let numOne := 1;\n  let largestNum := Int.ofNat lengthList;\n  let firstIndex := List.idxOf numOne nums;\n  let lastIndex := List.idxOf largestNum nums;\n  let startPosition := 0;\n  let endPosition := lengthList - 1;\n  let shouldMoveOne := firstIndex != startPosition;\n  let shouldMoveLast := lastIndex != endPosition;\n  let distanceOne := if shouldMoveOne = true then firstIndex else 0;\n  let distanceLast := if shouldMoveLast = true then endPosition - lastIndex else 0;\n  let totalMoves := distanceOne + distanceLast;\n  let needAdjustment := firstIndex > lastIndex;\n  let adjustedMoves := if needAdjustment then totalMoves - 1 else totalMoves;\n  ↑adjustedMoves\nis not definitionally equal to the right-hand side\n  let lengthList := nums.length;\n  let numOne := 1;\n  let largestNum := Int.ofNat lengthList;\n  let firstIndex := List.idxOf numOne nums;\n  let lastIndex := List.idxOf largestNum nums;\n  let startPosition := 0;\n  let endPosition := lengthList - 1;\n  let shouldMoveOne := firstIndex != startPosition;\n  let shouldMoveLast := lastIndex != endPosition;\n  let distanceOne := if shouldMoveOne = true then firstIndex else 0;\n  let distanceLast := if shouldMoveLast = true then endPosition - lastIndex else 0;\n  let totalMoves := distanceLast + distanceOne;\n  let needAdjustment := firstIndex > lastIndex;\n  let adjustedMoves := if needAdjustment then totalMoves - 1 else totalMoves;\n  ↑adjustedMoves\nnums : List Int\nh_precond : semiOrderedPermutation_precond nums\n⊢ (let lengthList := nums.length;\n    let numOne := 1;\n    let largestNum := Int.ofNat lengthList;\n    let firstIndex := List.idxOf numOne nums;\n    let lastIndex := List.idxOf largestNum nums;\n    let startPosition := 0;\n    let endPosition := lengthList - 1;\n    let shouldMoveOne := firstIndex != startPosition;\n    let shouldMoveLast := lastIndex != endPosition;\n    let distanceOne := if shouldMoveOne = true then firstIndex else 0;\n    let distanceLast := if shouldMoveLast = true then endPosition - lastIndex else 0;\n    let totalMoves := distanceOne + distanceLast;\n    let needAdjustment := firstIndex > lastIndex;\n    let adjustedMoves := if needAdjustment then totalMoves - 1 else totalMoves;\n    ↑adjustedMoves) =\n    let lengthList := nums.length;\n    let numOne := 1;\n    let largestNum := Int.ofNat lengthList;\n    let firstIndex := List.idxOf numOne nums;\n    let lastIndex := List.idxOf largestNum nums;\n    let startPosition := 0;\n    let endPosition := lengthList - 1;\n    let shouldMoveOne := firstIndex != startPosition;\n    let shouldMoveLast := lastIndex != endPosition;\n    let distanceOne := if shouldMoveOne = true then firstIndex else 0;\n    let distanceLast := if shouldMoveLast = true then endPosition - lastIndex else 0;\n    let totalMoves := distanceLast + distanceOne;\n    let needAdjustment := firstIndex > lastIndex;\n    let adjustedMoves := if needAdjustment then totalMoves - 1 else totalMoves;\n    ↑adjustedMoves\n",
+ "stderr": "",
+ "elapsed_seconds": 1.622,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 26,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 52,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 79,
+   "col": 98,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1566 = ?m.1566 : Prop\nbut is expected to have type\n  RPOrig.semiOrderedPermutation nums h_precond = RPRef.semiOrderedPermutation nums h_precond : Prop"
+  },
+  {
+   "line": 83,
+   "col": 98,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.8382 = ?m.8382 : Prop\nbut is expected to have type\n  RPOrig.semiOrderedPermutation nums h_precond = RPRef.semiOrderedPermutation nums h_precond : Prop"
+  },
+  {
+   "line": 88,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  let lengthList := nums.length;\n  let numOne := 1;\n  let largestNum := Int.ofNat lengthList;\n  let firstIndex := List.idxOf numOne nums;\n  let lastIndex := List.idxOf largestNum nums;\n  let startPosition := 0;\n  let endPosition := lengthList - 1;\n  let shouldMoveOne := firstIndex != startPosition;\n  let shouldMoveLast := lastIndex != endPosition;\n  let distanceOne := if shouldMoveOne = true then firstIndex else 0;\n  let distanceLast := if shouldMoveLast = true then endPosition - lastIndex else 0;\n  let totalMoves := distanceOne + distanceLast;\n  let needAdjustment := firstIndex > lastIndex;\n  let adjustedMoves := if needAdjustment then totalMoves - 1 else totalMoves;\n  ↑adjustedMoves\nis not definitionally equal to the right-hand side\n  let lengthList := nums.length;\n  let numOne := 1;\n  let largestNum := Int.ofNat lengthList;\n  let firstIndex := List.idxOf numOne nums;\n  let lastIndex := List.idxOf largestNum nums;\n  let startPosition := 0;\n  let endPosition := lengthList - 1;\n  let shouldMoveOne := firstIndex != startPosition;\n  let shouldMoveLast := lastIndex != endPosition;\n  let distanceOne := if shouldMoveOne = true then firstIndex else 0;\n  let distanceLast := if shouldMoveLast = true then endPosition - lastIndex else 0;\n  let totalMoves := distanceLast + distanceOne;\n  let needAdjustment := firstIndex > lastIndex;\n  let adjustedMoves := if needAdjustment then totalMoves - 1 else totalMoves;\n  ↑adjustedMoves\nnums : List Int\nh_precond : semiOrderedPermutation_precond nums\n⊢ (let lengthList := nums.length;\n    let numOne := 1;\n    let largestNum := Int.ofNat lengthList;\n    let firstIndex := List.idxOf numOne nums;\n    let lastIndex := List.idxOf largestNum nums;\n    let startPosition := 0;\n    let endPosition := lengthList - 1;\n    let shouldMoveOne := firstIndex != startPosition;\n    let shouldMoveLast := lastIndex != endPosition;\n    let distanceOne := if shouldMoveOne = true then firstIndex else 0;\n    let distanceLast := if shouldMoveLast = true then endPosition - lastIndex else 0;\n    let totalMoves := distanceOne + distanceLast;\n    let needAdjustment := firstIndex > lastIndex;\n    let adjustedMoves := if needAdjustment then totalMoves - 1 else totalMoves;\n    ↑adjustedMoves) =\n    let lengthList := nums.length;\n    let numOne := 1;\n    let largestNum := Int.ofNat lengthList;\n    let firstIndex := List.idxOf numOne nums;\n    let lastIndex := List.idxOf largestNum nums;\n    let startPosition := 0;\n    let endPosition := lengthList - 1;\n    let shouldMoveOne := firstIndex != startPosition;\n    let shouldMoveLast := lastIndex != endPosition;\n    let distanceOne := if shouldMoveOne = true then firstIndex else 0;\n    let distanceLast := if shouldMoveLast = true then endPosition - lastIndex else 0;\n    let totalMoves := distanceLast + distanceOne;\n    let needAdjustment := firstIndex > lastIndex;\n    let adjustedMoves := if needAdjustment then totalMoves - 1 else totalMoves;\n    ↑adjustedMoves\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

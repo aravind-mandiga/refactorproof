@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_5",
+ "variant_id": "verina_advanced_5__T3_comm_swap__1",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_5/verina_advanced_5__T3_comm_swap__1.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 1.444,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.39247 = ?m.39247 : Prop\nbut is expected to have type\n  RPOrig.addTwoNumbers l1 l2 h_precond = RPRef.addTwoNumbers l1 l2 h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.39346 = ?m.39346 : Prop\nbut is expected to have type\n  RPOrig.addTwoNumbers l1 l2 h_precond = RPRef.addTwoNumbers l1 l2 h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nl1 l2 : List Nat\nh_precond : addTwoNumbers_precond l1 l2\n⊢ RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩ = RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩"
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nl1 l2 : List Nat\nh_precond : addTwoNumbers_precond l1 l2\n⊢ RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩ = RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.42224'"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nl1 l2 : List Nat\nh_precond : addTwoNumbers_precond l1 l2\n⊢ RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩ = RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.44625'"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nis not definitionally equal to the right-hand side\n  RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩\nl1 l2 : List Nat\nh_precond : addTwoNumbers_precond l1 l2\n⊢ RPOrig.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩ = RPRef.addTwoNumbers.addAux._unary ⟨l1, ⟨l2, 0⟩⟩",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.45278'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_32/verina_basic_32__T2_helper_extract__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_32/verina_basic_32__T2_helper_extract__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_32/verina_basic_32__T2_helper_extract__0/reference.lean:23:66: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_32/verina_basic_32__T2_helper_extract__0/reference.lean:23:12: warning: The declaration 'swapFirstAndLast__rp_helper_6bb66f38' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_32/verina_basic_32__T2_helper_extract__0/reference.lean:40:68: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_32/verina_basic_32__T2_helper_extract__0/reference.lean:60:4: error: simp made no progress\nartifacts/variants/verina_basic_32/verina_basic_32__T2_helper_extract__0/reference.lean:72:4: error: unsolved goals\ncase right.left\na : Array ℤ\nh_precond : a.size > 0\n⊢ (swapFirstAndLast__rp_helper_6bb66f38 a h_precond)[0]?.getD 0 = a[a.size - 1]\nartifacts/variants/verina_basic_32/verina_basic_32__T2_helper_extract__0/reference.lean:73:12: error: tactic 'introN' failed, insufficient number of binders\ncase right.right\na : Array ℤ\nh_precond : a.size > 0\n⊢ (swapFirstAndLast__rp_helper_6bb66f38 a h_precond)[(swapFirstAndLast__rp_helper_6bb66f38 a h_precond).size - 1]! =\n      a[0]! ∧\n    ∀ x < (swapFirstAndLast__rp_helper_6bb66f38 a h_precond).size - 2,\n      (swapFirstAndLast__rp_helper_6bb66f38 a h_precond)[x + 1]! = a[x + 1]!\n",
+ "stderr": "",
+ "elapsed_seconds": 6.469,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 23,
+   "col": 66,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 23,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'swapFirstAndLast__rp_helper_6bb66f38' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 40,
+   "col": 68,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 60,
+   "col": 4,
+   "severity": "error",
+   "text": "simp made no progress"
+  },
+  {
+   "line": 72,
+   "col": 4,
+   "severity": "error",
+   "text": "unsolved goals\ncase right.left\na : Array ℤ\nh_precond : a.size > 0\n⊢ (swapFirstAndLast__rp_helper_6bb66f38 a h_precond)[0]?.getD 0 = a[a.size - 1]"
+  },
+  {
+   "line": 73,
+   "col": 12,
+   "severity": "error",
+   "text": "tactic 'introN' failed, insufficient number of binders\ncase right.right\na : Array ℤ\nh_precond : a.size > 0\n⊢ (swapFirstAndLast__rp_helper_6bb66f38 a h_precond)[(swapFirstAndLast__rp_helper_6bb66f38 a h_precond).size - 1]! =\n      a[0]! ∧\n    ∀ x < (swapFirstAndLast__rp_helper_6bb66f38 a h_precond).size - 2,\n      (swapFirstAndLast__rp_helper_6bb66f38 a h_precond)[x + 1]! = a[x + 1]!\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "simp_failed"
+}

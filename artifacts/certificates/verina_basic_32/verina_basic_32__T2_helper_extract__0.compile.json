@@ -1,0 +1,61 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_32/verina_basic_32__T2_helper_extract__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_32/verina_basic_32__T2_helper_extract__0.lean",
+ "exit_code": 0,
+ "stdout": "artifacts/certificates/verina_basic_32/verina_basic_32__T2_helper_extract__0.lean:24:38: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_32/verina_basic_32__T2_helper_extract__0.lean:32:66: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_32/verina_basic_32__T2_helper_extract__0.lean:32:12: warning: The declaration 'swapFirstAndLast__rp_helper_6bb66f38' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/certificates/verina_basic_32/verina_basic_32__T2_helper_extract__0.lean:57:112: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_32/verina_basic_32__T2_helper_extract__0.lean:57:112: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  |\n    (delta RPOrig.swapFirstAndLast RPRef.swapFirstAndLast RPRef.swapFirstAndLast__rp_helper_6bb66f38;\n      rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_32/verina_basic_32__T2_helper_extract__0.lean:61:107: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_32/verina_basic_32__T2_helper_extract__0.lean:61:107: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  |\n    (delta RPOrig.swapFirstAndLast RPRef.swapFirstAndLast RPRef.swapFirstAndLast__rp_helper_6bb66f38;\n      rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 5.316,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 24,
+   "col": 38,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 32,
+   "col": 66,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 32,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'swapFirstAndLast__rp_helper_6bb66f38' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 57,
+   "col": 112,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 57,
+   "col": 112,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  |\n    (delta RPOrig.swapFirstAndLast RPRef.swapFirstAndLast RPRef.swapFirstAndLast__rp_helper_6bb66f38;\n      rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 107,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 61,
+   "col": 107,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  |\n    (delta RPOrig.swapFirstAndLast RPRef.swapFirstAndLast RPRef.swapFirstAndLast__rp_helper_6bb66f38;\n      rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": true,
+ "primary_category": null
+}

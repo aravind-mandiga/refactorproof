@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_87",
+ "variant_id": "verina_basic_87__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_a3326dad : Array Int :=\n    let indices := List.range a.size\n    indices.foldl (fun arr i =>\n      let minIdx := findMinIndexInRange arr i a.size\n      swap arr i minIdx\n    ) a\n  __rp_tmp_a3326dad\n",
+ "transformed_code_aux": "def findMinIndexInRange (arr : Array Int) (start finish : Nat) : Nat :=\n  let indices := List.range (finish - start)\n  indices.foldl (fun minIdx i =>\n    let currIdx := start + i\n    if arr[currIdx]! < arr[minIdx]! then currIdx else minIdx\n  ) start\n\ndef swap (a : Array Int) (i j : Nat) : Array Int :=\n  if i < a.size && j < a.size && i ≠ j then\n    let temp := a[i]!\n    let a' := a.set! i a[j]!\n    a'.set! j temp\n  else a\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_a3326dad",
+  "seed": 0
+ },
+ "spec_hash": "61d906fae10a211f4d6974d7023e979f7fee83c05582bf38208a4d1d96d972d3",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "98d0fd47314c6436d460ee30f881e7b9bc07f89dd3851482577d045807f2e1d7",
+ "code_aux_hash_original": "85a952ff6ba1f4a77e933095788fe3b7aa060bde183975aaefe2a25f712d5f76",
+ "tier": "basic",
+ "function_name": "SelectionSort",
+ "code_loc_original": 5,
+ "code_loc_refactored": 7
+}

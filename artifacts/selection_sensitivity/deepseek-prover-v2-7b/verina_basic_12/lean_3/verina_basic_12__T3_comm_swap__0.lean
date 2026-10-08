@@ -1,0 +1,75 @@
+-- !benchmark @start import type=solution
+
+import Aesop
+import Mathlib
+-- !benchmark @end import
+
+-- !benchmark @start solution_aux
+
+-- !benchmark @end solution_aux
+
+-- !benchmark @start precond_aux
+
+-- !benchmark @end precond_aux
+
+@[reducible, simp]
+def cubeSurfaceArea_precond (size : Nat) : Prop :=
+  -- !benchmark @start precond
+  True
+  -- !benchmark @end precond
+
+
+-- !benchmark @start code_aux
+
+-- !benchmark @end code_aux
+
+
+def cubeSurfaceArea (size : Nat) (h_precond : cubeSurfaceArea_precond (size)) : Nat :=
+  -- !benchmark @start code
+  size * 6 * size
+  -- !benchmark @end code
+
+
+-- !benchmark @start postcond_aux
+
+-- !benchmark @end postcond_aux
+
+
+@[reducible, simp]
+def cubeSurfaceArea_postcond (size : Nat) (result: Nat) (h_precond : cubeSurfaceArea_precond (size)) :=
+  -- !benchmark @start postcond
+  result - 6 * size * size = 0 ∧ 6 * size * size - result = 0
+  -- !benchmark @end postcond
+
+
+-- !benchmark @start proof_aux
+
+-- !benchmark @end proof_aux
+
+
+theorem cubeSurfaceArea_spec_satisfied (size: Nat) (h_precond : cubeSurfaceArea_precond (size)) :
+    cubeSurfaceArea_postcond (size) (cubeSurfaceArea (size) h_precond) h_precond := by
+  -- !benchmark @start proof
+  have h_main : cubeSurfaceArea (size) h_precond = 6 * size * size := by
+    simp [cubeSurfaceArea, cubeSurfaceArea_precond]
+    <;> rfl
+
+  have h_post1 : (cubeSurfaceArea (size) h_precond) - 6 * size * size = 0 := by
+    rw [h_main]
+    <;> cases size <;> simp [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib]
+    <;> ring_nf at * <;> omega
+
+  have h_post2 : 6 * size * size - (cubeSurfaceArea (size) h_precond) = 0 := by
+    rw [h_main]
+    <;> cases size <;> simp [Nat.mul_sub_left_distrib, Nat.mul_sub_right_distrib]
+    <;> ring_nf at * <;> omega
+
+  have h_final : cubeSurfaceArea_postcond (size) (cubeSurfaceArea (size) h_precond) h_precond := by
+    constructor
+    · -- Prove the first part: result - 6 * size * size = 0
+      exact h_post1
+    · -- Prove the second part: 6 * size * size - result = 0
+      exact h_post2
+
+  exact h_final
+  -- !benchmark @end proof

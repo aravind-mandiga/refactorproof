@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_22",
+ "variant_id": "verina_advanced_22__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  isPeakValley__rp_helper_4f5e6c5d lst h_precond\n",
+ "transformed_code_aux": "\nprivate def isPeakValley__rp_helper_4f5e6c5d (lst : List Int) (h_precond : isPeakValley_precond (lst)) : Bool :=\n  let rec aux (l : List Int) (increasing : Bool) (startedDecreasing : Bool) : Bool :=\n    match l with\n    | x :: y :: rest =>\n      if x < y then\n        if startedDecreasing then false\n        else aux (y :: rest) true startedDecreasing\n      else if x > y then\n        if increasing then aux (y :: rest) increasing true\n        else false\n      else false\n    | _ => increasing && startedDecreasing\n  aux lst false false\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "isPeakValley__rp_helper_4f5e6c5d"
+ ],
+ "metadata": {
+  "binders": [
+   "lst",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "973a0f0deceec01a3d35450c6464cfa6c9369476985657157ccd6c8d9eff7213",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "a2303d3fd087117a2548aab2c747e9f76ca7ea748d7d940c6654f6a56e3413fd",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "isPeakValley",
+ "code_loc_original": 12,
+ "code_loc_refactored": 14
+}

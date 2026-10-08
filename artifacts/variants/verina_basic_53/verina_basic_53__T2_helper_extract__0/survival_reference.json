@@ -1,0 +1,27 @@
+{
+ "task_id": "verina_basic_53",
+ "variant_id": "verina_basic_53__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "delta_rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "unknown_constant_or_identifier",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.691,
+ "proof_region_errors": [
+  "unknown constant 'CalSum.loop'",
+  "simp made no progress\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "78b61aa5fe54ab892a107a49049de103d55292087e026307563fb71a17c7ea95",
+ "spec_hash": "8629636823e90e34e49787b78dc43064c079ba65a26de8b6a9acaf20b0f0f5c4"
+}

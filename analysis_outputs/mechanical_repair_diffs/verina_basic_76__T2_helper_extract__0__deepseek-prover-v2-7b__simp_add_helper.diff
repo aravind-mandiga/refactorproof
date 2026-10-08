@@ -1,0 +1,14 @@
+--- deepseek-prover-v2-7b:verina_basic_76__T2_helper_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_76__T2_helper_extract__0 (simp_add_helper)
+@@ -4,7 +4,7 @@
+     · -- Prove x ≤ y → myMin x y h_precond = x
+       intro h
+       have h₁ : (if x < y then x else y) = x := by
+-        split_ifs <;> simp_all [myMin, myMin_precond] <;> omega
++        split_ifs <;> simp_all [myMin, myMin_precond, myMin__rp_helper_5e5dcb4d] <;> omega
+       simp_all [myMin]
+       <;> aesop
+     · -- Prove x > y → myMin x y h_precond = y
+# unedited proof on this variant: fails (as recorded)
+# edited proof: still fails
+# first proof-region error: tactic 'aesop' failed, made no progress | Initial goal: |   case left |   x y : ℤ |   h_precond : myMin_precond x y |   h : x ≤ y |   h₁ : y ≤ x → y = x |   ⊢ myMin__rp_helper_5e5dcb4d x y h_precond = x

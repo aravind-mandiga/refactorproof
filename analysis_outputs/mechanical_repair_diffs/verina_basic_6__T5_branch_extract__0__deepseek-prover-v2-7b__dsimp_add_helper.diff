@@ -1,0 +1,11 @@
+--- deepseek-prover-v2-7b:verina_basic_6__T5_branch_extract__0 (proof as evaluated)
++++ deepseek-prover-v2-7b:verina_basic_6__T5_branch_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h₁ : ((minOfThree (a) (b) (c) h_precond : Int) ≤ a ∧ (minOfThree (a) (b) (c) h_precond : Int) ≤ b ∧ (minOfThree (a) (b) (c) h_precond : Int) ≤ c) ∧ ((minOfThree (a) (b) (c) h_precond : Int) = a ∨ (minOfThree (a) (b) (c) h_precond : Int) = b ∨ (minOfThree (a) (b) (c) h_precond : Int) = c) := by
+-    dsimp only [minOfThree, minOfThree_postcond, minOfThree_precond]
++    dsimp only [minOfThree, minOfThree_postcond, minOfThree_precond, minOfThree__rp_branch_73840f67]
+     -- Consider the cases based on the comparisons between a, b, and c
+     split_ifs with h₁ h₂ h₃ <;> simp_all [and_imp, Prod.exists, exists_and_right, exists_prop]
+     <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

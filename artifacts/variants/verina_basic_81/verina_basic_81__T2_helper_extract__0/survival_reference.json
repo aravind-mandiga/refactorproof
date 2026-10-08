@@ -1,0 +1,26 @@
+{
+ "task_id": "verina_basic_81",
+ "variant_id": "verina_basic_81__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "reference",
+ "model_id": null,
+ "generation_attempt": null,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "tactic_failed",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 5.112,
+ "proof_region_errors": [
+  "tactic 'split' failed, consider using `set_option trace.split.failure true`\nx y : ℕ\nh_precond : DivisionFunction_precond x y\n⊢ (y = 0 →\n      (DivisionFunction__rp_helper_e90423eb x y h_precond).1 = ↑x ∧\n        (DivisionFunction__rp_helper_e90423eb x y h_precond).2 = 0) ∧\n    (¬y = 0 →\n      (DivisionFunction__rp_helper_e90423eb x y h_precond).2 * ↑y +\n            (DivisionFunction__rp_helper_e90423eb x y h_precond).1 =\n          ↑x ∧\n        (0 ≤ (DivisionFunction__rp_helper_e90423eb x y h_pre"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "0369a11fac2fd4d20eeffe78e779da518dfca4f240d8b625c9b2d5b18d0aabe1",
+ "spec_hash": "716dfc85a331316a49df1cf098ae3f7e753e8b4f1cd0927243c0ec663a3c5362"
+}

@@ -1,0 +1,67 @@
+{
+ "header_modifier": null,
+ "retried_noncomputable": false,
+ "task_id": "verina_advanced_36",
+ "variant_id": "verina_advanced_36__T3_comm_swap__0",
+ "transformation": "T3_comm_swap",
+ "severity": "E",
+ "equivalence_class": "theorem_certified",
+ "certificate_attempted": true,
+ "certificate_file": "artifacts/certificates/verina_advanced_36/verina_advanced_36__T3_comm_swap__0.lean",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 0.827,
+ "timed_out": false,
+ "codegen_failure_hint": false,
+ "certificate_valid": false,
+ "certificate_closed_by_rfl": false,
+ "certificate_closed_by_plain_rfl": false,
+ "rfl_level": null,
+ "certificate_level": null,
+ "certificate_failure_category": "tactic_failed",
+ "per_theorem": {
+  "rfl": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.2144 = ?m.2144 : Prop\nbut is expected to have type\n  RPOrig.majorityElement xs h_precond = RPRef.majorityElement xs h_precond : Prop"
+   ]
+  },
+  "rfl_nosmart": {
+   "ok": false,
+   "errors": [
+    "type mismatch\n  rfl\nhas type\n  ?m.2272 = ?m.2272 : Prop\nbut is expected to have type\n  RPOrig.majorityElement xs h_precond = RPRef.majorityElement xs h_precond : Prop"
+   ]
+  },
+  "delta_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  let cand :=\n    List.brecOn (motive := fun lst => Option Nat → Nat → Nat) xs\n      (fun lst f candidate count =>\n        (match (motive := (lst : List Nat) → List.below (motive := fun lst => Option Nat → Nat → Nat) lst → Nat)\n            lst with\n          | [] => fun x =>\n            match candidate with\n            | some c => c\n            | none => 0\n          | y :: ys => fun x =>\n            match candidate with\n            | some c =>\n            "
+   ]
+  },
+  "simp_only": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun lst => Option Nat → Nat → Nat) xs\n    (fun lst f candidate count =>\n      (match (motive := (lst : List Nat) → List.below (motive := fun lst => Option Nat → Nat → Nat) lst → Nat) lst with\n        | [] => fun x =>\n          match candidate with\n          | some c => c\n          | none => 0\n        | y :: ys => fun x =>\n          match candidate with\n          | some c =>\n            if y = c then x.1 (some c) (count + 1) else if",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.5605'"
+   ]
+  },
+  "simp": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun lst => Option Nat → Nat → Nat) xs\n    (fun lst f candidate count =>\n      (match (motive := (lst : List Nat) → List.below (motive := fun lst => Option Nat → Nat → Nat) lst → Nat) lst with\n        | [] => fun x =>\n          match candidate with\n          | some c => c\n          | none => 0\n        | y :: ys => fun x =>\n          match candidate with\n          | some c =>\n            if y = c then x.1 (some c) (count + 1) else if",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.7890'"
+   ]
+  },
+  "ac_rfl": {
+   "ok": false,
+   "errors": [
+    "tactic 'rfl' failed, the left-hand side\n  List.brecOn (motive := fun lst => Option Nat → Nat → Nat) xs\n    (fun lst f candidate count =>\n      (match (motive := (lst : List Nat) → List.below (motive := fun lst => Option Nat → Nat → Nat) lst → Nat) lst with\n        | [] => fun x =>\n          match candidate with\n          | some c => c\n          | none => 0\n        | y :: ys => fun x =>\n          match candidate with\n          | some c =>\n            if y = c then x.1 (some c) (count + 1) else if",
+    "unsolved goals\nunknown goal",
+    "unknown metavariable '?_uniq.8673'\n"
+   ]
+  }
+ },
+ "region_errors": {},
+ "unattributed_errors": []
+}

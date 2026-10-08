@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_38/verina_advanced_38__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_38/verina_advanced_38__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_38/verina_advanced_38__T3_comm_swap__0.lean:22:67: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_38/verina_advanced_38__T3_comm_swap__0.lean:41:67: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_38/verina_advanced_38__T3_comm_swap__0.lean:61:118: error: type mismatch\n  rfl\nhas type\n  ?m.1323 = ?m.1323 : Prop\nbut is expected to have type\n  RPOrig.maxCoverageAfterRemovingOne intervals h_precond = RPRef.maxCoverageAfterRemovingOne intervals h_precond : Prop\nartifacts/certificates/verina_advanced_38/verina_advanced_38__T3_comm_swap__0.lean:65:118: error: type mismatch\n  rfl\nhas type\n  ?m.5341 = ?m.5341 : Prop\nbut is expected to have type\n  RPOrig.maxCoverageAfterRemovingOne intervals h_precond = RPRef.maxCoverageAfterRemovingOne intervals h_precond : Prop\nartifacts/certificates/verina_advanced_38/verina_advanced_38__T3_comm_swap__0.lean:70:2: error: tactic 'rfl' failed, the left-hand side\n  let n := intervals.length;\n  if n ≤ 1 then 0\n  else\n    List.foldl\n      (fun acc i =>\n        let remaining := intervals.eraseIdx i;\n        let sorted := remaining.mergeSort fun a b => decide (a.fst ≤ b.fst);\n        let merged :=\n          List.foldl\n            (fun acc curr =>\n              match acc with\n              | [] => [curr]\n              | (s, e) :: rest => if curr.fst ≤ e then (s, max e curr.snd) :: rest else curr :: acc)\n            [] sorted;\n        let coverage :=\n          List.foldl\n            (fun acc x =>\n              match x with\n              | (s, e) => acc + (e - s))\n            0 merged.reverse;\n        max acc coverage)\n      0 (List.range n)\nis not definitionally equal to the right-hand side\n  let n := intervals.length;\n  if n ≤ 1 then 0\n  else\n    List.foldl\n      (fun acc i =>\n        let remaining := intervals.eraseIdx i;\n        let sorted := remaining.mergeSort fun a b => decide (a.fst ≤ b.fst);\n        let merged :=\n          List.foldl\n            (fun acc curr =>\n              match acc with\n              | [] => [curr]\n              | (s, e) :: rest => if curr.fst ≤ e then (s, max e curr.snd) :: rest else curr :: acc)\n            [] sorted;\n        let coverage :=\n          List.foldl\n            (fun acc x =>\n              match x with\n              | (s, e) => e - s + acc)\n            0 merged.reverse;\n        max acc coverage)\n      0 (List.range n)\nintervals : List (Nat × Nat)\nh_precond : maxCoverageAfterRemovingOne_precond intervals\n⊢ (let n := intervals.length;\n    if n ≤ 1 then 0\n    else\n      List.foldl\n        (fun acc i =>\n          let remaining := intervals.eraseIdx i;\n          let sorted := remaining.mergeSort fun a b => decide (a.fst ≤ b.fst);\n          let merged :=\n            List.foldl\n              (fun acc curr =>\n                match acc with\n                | [] => [curr]\n                | (s, e) :: rest => if curr.fst ≤ e then (s, max e curr.snd) :: rest else curr :: acc)\n              [] sorted;\n          let coverage :=\n            List.foldl\n              (fun acc x =>\n                match x with\n                | (s, e) => acc + (e - s))\n              0 merged.reverse;\n          max acc coverage)\n        0 (List.range n)) =\n    let n := intervals.length;\n    if n ≤ 1 then 0\n    else\n      List.foldl\n        (fun acc i =>\n          let remaining := intervals.eraseIdx i;\n          let sorted := remaining.mergeSort fun a b => decide (a.fst ≤ b.fst);\n          let merged :=\n            List.foldl\n              (fun acc curr =>\n                match acc with\n                | [] => [curr]\n                | (s, e) :: rest => if curr.fst ≤ e then (s, max e curr.snd) :: rest else curr :: acc)\n              [] sorted;\n          let coverage :=\n            List.foldl\n              (fun acc x =>\n                match x with\n                | (s, e) => e - s + acc)\n              0 merged.reverse;\n          max acc coverage)\n        0 (List.range n)\n",
+ "stderr": "",
+ "elapsed_seconds": 0.976,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 22,
+   "col": 67,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 41,
+   "col": 67,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 61,
+   "col": 118,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.1323 = ?m.1323 : Prop\nbut is expected to have type\n  RPOrig.maxCoverageAfterRemovingOne intervals h_precond = RPRef.maxCoverageAfterRemovingOne intervals h_precond : Prop"
+  },
+  {
+   "line": 65,
+   "col": 118,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.5341 = ?m.5341 : Prop\nbut is expected to have type\n  RPOrig.maxCoverageAfterRemovingOne intervals h_precond = RPRef.maxCoverageAfterRemovingOne intervals h_precond : Prop"
+  },
+  {
+   "line": 70,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  let n := intervals.length;\n  if n ≤ 1 then 0\n  else\n    List.foldl\n      (fun acc i =>\n        let remaining := intervals.eraseIdx i;\n        let sorted := remaining.mergeSort fun a b => decide (a.fst ≤ b.fst);\n        let merged :=\n          List.foldl\n            (fun acc curr =>\n              match acc with\n              | [] => [curr]\n              | (s, e) :: rest => if curr.fst ≤ e then (s, max e curr.snd) :: rest else curr :: acc)\n            [] sorted;\n        let coverage :=\n          List.foldl\n            (fun acc x =>\n              match x with\n              | (s, e) => acc + (e - s))\n            0 merged.reverse;\n        max acc coverage)\n      0 (List.range n)\nis not definitionally equal to the right-hand side\n  let n := intervals.length;\n  if n ≤ 1 then 0\n  else\n    List.foldl\n      (fun acc i =>\n        let remaining := intervals.eraseIdx i;\n        let sorted := remaining.mergeSort fun a b => decide (a.fst ≤ b.fst);\n        let merged :=\n          List.foldl\n            (fun acc curr =>\n              match acc with\n              | [] => [curr]\n              | (s, e) :: rest => if curr.fst ≤ e then (s, max e curr.snd) :: rest else curr :: acc)\n            [] sorted;\n        let coverage :=\n          List.foldl\n            (fun acc x =>\n              match x with\n              | (s, e) => e - s + acc)\n            0 merged.reverse;\n        max acc coverage)\n      0 (List.range n)\nintervals : List (Nat × Nat)\nh_precond : maxCoverageAfterRemovingOne_precond intervals\n⊢ (let n := intervals.length;\n    if n ≤ 1 then 0\n    else\n      List.foldl\n        (fun acc i =>\n          let remaining := intervals.eraseIdx i;\n          let sorted := remaining.mergeSort fun a b => decide (a.fst ≤ b.fst);\n          let merged :=\n            List.foldl\n              (fun acc curr =>\n                match acc with\n                | [] => [curr]\n                | (s, e) :: rest => if curr.fst ≤ e then (s, max e curr.snd) :: rest else curr :: acc)\n              [] sorted;\n          let coverage :=\n            List.foldl\n              (fun acc x =>\n                match x with\n                | (s, e) => acc + (e - s))\n              0 merged.reverse;\n          max acc coverage)\n        0 (List.range n)) =\n    let n := intervals.length;\n    if n ≤ 1 then 0\n    else\n      List.foldl\n        (fun acc i =>\n          let remaining := intervals.eraseIdx i;\n          let sorted := remaining.mergeSort fun a b => decide (a.fst ≤ b.fst);\n          let merged :=\n            List.foldl\n              (fun acc curr =>\n                match acc with\n                | [] => [curr]\n                | (s, e) :: rest => if curr.fst ≤ e then (s, max e curr.snd) :: rest else curr :: acc)\n              [] sorted;\n          let coverage :=\n            List.foldl\n              (fun acc x =>\n                match x with\n                | (s, e) => e - s + acc)\n              0 merged.reverse;\n          max acc coverage)\n        0 (List.range n)\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_79",
+ "variant_id": "verina_basic_79__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_16e4aa49 : Int × Nat :=\n    let best := a[0]!\n    let m := findBest a x 1 best;\n    let p := findP a x m x;\n    (m, p)\n  __rp_tmp_16e4aa49\n",
+ "transformed_code_aux": "def findBest (a : Array Int) (x : Nat) (i : Nat) (best : Int) : Int :=\n  if i < x then\n    let newBest := if a[i]! > best then a[i]! else best\n    findBest a x (i + 1) newBest\n  else best\n\ndef findP (a : Array Int) (x : Nat) (m : Int) (i : Nat) : Nat :=\n  if i < a.size then\n    if a[i]! > m then i else findP a x m (i + 1)\n  else a.size - 1\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_16e4aa49",
+  "seed": 0
+ },
+ "spec_hash": "8c6022d54224709f9d371d50f2e3cc91e0340171bd1f959d34ca3c8ee9587558",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "b9cf012eb1870d42bb1f6dcc2b25859acba43e286936376a6a9d62e0717ef662",
+ "code_aux_hash_original": "f97e4b8c9af19eaf350184cda963fb8a676ee9581092959ebe2ee63001d70406",
+ "tier": "basic",
+ "function_name": "onlineMax",
+ "code_loc_original": 4,
+ "code_loc_refactored": 6
+}

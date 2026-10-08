@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_basic_15",
+ "variant_id": "verina_basic_15__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "  containsConsecutiveNumbers__rp_helper_906cb743 a h_precond\n",
+ "transformed_code_aux": "\nprivate def containsConsecutiveNumbers__rp_helper_906cb743 (a : Array Int) (h_precond : containsConsecutiveNumbers_precond (a)) : Bool :=\n  if a.size ≤ 1 then\n    false\n  else\n    let withIndices := a.mapIdx (fun i x => (i, x))\n    withIndices.any (fun (i, x) =>\n      i < a.size - 1 && x + 1 == a[i+1]!)\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "containsConsecutiveNumbers__rp_helper_906cb743"
+ ],
+ "metadata": {
+  "binders": [
+   "a",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "2deae86e6b7418297451c43b8dff245af3365f070f05b7bd291ad4134cb28676",
+ "proof_hash": "6bf0a86ec82ea6e8377a3bf477a9205f2d0b08ded7541aa7690a1b85776cc078",
+ "code_hash_original": "c173b84de1a99b9b3ddfd0d8dd27dbc6e8b253b7188ea36d7b666ec1a8db1933",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "containsConsecutiveNumbers",
+ "code_loc_original": 6,
+ "code_loc_refactored": 8
+}

@@ -1,0 +1,12 @@
+--- goedel-prover-v2-32b:verina_basic_66__T5_branch_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_66__T5_branch_extract__0 (dsimp_add_helper)
+@@ -40,6 +40,6 @@
+       exact h₃
+ 
+   -- Simplify the goal using the main lemma and the definition of ComputeIsEven.
+-  dsimp [ComputeIsEven_postcond, ComputeIsEven] at *
++  dsimp [ComputeIsEven_postcond, ComputeIsEven, ComputeIsEven__rp_branch_87fb4e70] at *
+   <;> simp_all
+   <;> aesop
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

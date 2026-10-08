@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_advanced_41/verina_advanced_41__T4_cond_invert__0/model_goedel-prover-v2-32b.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_advanced_41/verina_advanced_41__T4_cond_invert__0/model_goedel-prover-v2-32b.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_advanced_41/verina_advanced_41__T4_cond_invert__0/model_goedel-prover-v2-32b.lean:15:24: warning: unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T4_cond_invert__0/model_goedel-prover-v2-32b.lean:15:34: warning: unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T4_cond_invert__0/model_goedel-prover-v2-32b.lean:15:44: warning: unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T4_cond_invert__0/model_goedel-prover-v2-32b.lean:26:46: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T4_cond_invert__0/model_goedel-prover-v2-32b.lean:40:69: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_advanced_41/verina_advanced_41__T4_cond_invert__0/model_goedel-prover-v2-32b.lean:57:6: error: tactic 'rfl' failed, the left-hand side\n  maxOfThree a b c h_precond\nis not definitionally equal to the right-hand side\n  if (decide (a ≥ b) && decide (a ≥ c)) = true then a else if (decide (b ≥ a) && decide (b ≥ c)) = true then b else c\na b c : ℤ\nh_precond : maxOfThree_precond a b c\n⊢ maxOfThree a b c h_precond =\n    if (decide (a ≥ b) && decide (a ≥ c)) = true then a else if (decide (b ≥ a) && decide (b ≥ c)) = true then b else c\n",
+ "stderr": "",
+ "elapsed_seconds": 7.873,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 15,
+   "col": 24,
+   "severity": "warning",
+   "text": "unused variable `a`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 34,
+   "severity": "warning",
+   "text": "unused variable `b`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 15,
+   "col": 44,
+   "severity": "warning",
+   "text": "unused variable `c`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 26,
+   "col": 46,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 40,
+   "col": 69,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 57,
+   "col": 6,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  maxOfThree a b c h_precond\nis not definitionally equal to the right-hand side\n  if (decide (a ≥ b) && decide (a ≥ c)) = true then a else if (decide (b ≥ a) && decide (b ≥ c)) = true then b else c\na b c : ℤ\nh_precond : maxOfThree_precond a b c\n⊢ maxOfThree a b c h_precond =\n    if (decide (a ≥ b) && decide (a ≥ c)) = true then a else if (decide (b ≥ a) && decide (b ≥ c)) = true then b else c\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

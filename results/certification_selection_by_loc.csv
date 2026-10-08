@@ -1,0 +1,9 @@
+transformation,certificate_valid,n,loc_orig_mean,loc_orig_median
+T1_let_intro,False,1,38.0,38.0
+T1_let_intro,True,180,7.572222222222222,5.5
+T2_helper_extract,False,1,38.0,38.0
+T2_helper_extract,True,178,7.51685393258427,5.0
+T3_comm_swap,False,72,14.583333333333334,13.0
+T3_comm_swap,True,50,10.98,10.5
+T4_cond_invert,True,32,8.40625,6.0
+T5_branch_extract,True,18,3.2222222222222223,3.0

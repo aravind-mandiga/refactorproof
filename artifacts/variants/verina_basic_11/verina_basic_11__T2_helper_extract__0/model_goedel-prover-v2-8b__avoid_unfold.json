@@ -1,0 +1,33 @@
+{
+ "task_id": "verina_basic_11",
+ "variant_id": "verina_basic_11__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b__avoid_unfold",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "other",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 6.855,
+ "proof_region_errors": [
+  "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≥ 10\nwhere\n a := ↑(lastDigit__rp_helper_8d571788 n h_precond)",
+  "simp made no progress",
+  "simp made no progress\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "c99f9315822a3df6ed81907420cac7cd9eb84da3c13325b64b27ec8aeabaf6ae",
+ "spec_hash": "971b5573012e5ab51016af84f8536d8b6668130cc30f066c18f90e67fdbd4ce3",
+ "proof_text": "  have h_main : lastDigit_postcond (n) (lastDigit (n) h_precond) h_precond := by\n    simp only [lastDigit_precond, lastDigit, Nat.mod_eq_of_lt]\n    constructor\n    · -- Prove 0 ≤ n % 10 ∧ n % 10 < 10\n      constructor\n      · -- Prove 0 ≤ n % 10\n        omega\n      · -- Prove n % 10 < 10\n        omega\n    · -- Prove n % 10 - (n % 10) = 0 ∧ (n % 10) - (n % 10) = 0\n      constructor\n      · -- Prove n % 10 - (n % 10) = 0\n        simp [Nat.sub_self]\n      · -- Prove (n % 10) - (n % 10) = 0\n        simp [Nat.sub_self]\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "avoid_unfold"
+}

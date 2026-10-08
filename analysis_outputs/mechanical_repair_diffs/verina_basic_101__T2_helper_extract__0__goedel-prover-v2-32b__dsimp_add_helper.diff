@@ -1,0 +1,11 @@
+--- goedel-prover-v2-32b:verina_basic_101__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_101__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_triple : Triple x h_precond = 3 * x := by
+-    dsimp [Triple]
++    dsimp [Triple, Triple__rp_helper_65b561a3]
+     <;> ring_nf
+     <;> simp_all
+     <;> linarith
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

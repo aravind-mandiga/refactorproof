@@ -1,0 +1,133 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:13:27: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:22:29: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:28:29: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:36:74: error: type mismatch\n  rfl\nhas type\n  ?m.295 = ?m.295 : Prop\nbut is expected to have type\n  RPOrig.ComputeIsEven x h_precond = RPRef.ComputeIsEven x h_precond : Prop\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:40:74: error: type mismatch\n  rfl\nhas type\n  ?m.923 = ?m.923 : Prop\nbut is expected to have type\n  RPOrig.ComputeIsEven x h_precond = RPRef.ComputeIsEven x h_precond : Prop\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:45:2: error: tactic 'rfl' failed, the left-hand side\n  if x % 2 = 0 then true else false\nis not definitionally equal to the right-hand side\n  if ¬x % 2 = 0 then false else true\nx : ℤ\nh_precond : ComputeIsEven_precond x\n⊢ (if x % 2 = 0 then true else false) = if ¬x % 2 = 0 then false else true\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:50:75: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:51:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:52:6: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:50:75: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.ComputeIsEven RPRef.ComputeIsEven; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:51:6: warning: '(simp only [RPOrig.ComputeIsEven, RPRef.ComputeIsEven, ite_not, Bool.not_eq_true, decide_not, Nat.not_lt, Nat.not_le,\n      Int.not_lt, Int.not_le]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.ComputeIsEven RPRef.ComputeIsEven; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:52:6: warning: '(simp only [RPOrig.ComputeIsEven, RPRef.ComputeIsEven]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.ComputeIsEven RPRef.ComputeIsEven; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:59:120: error: tactic 'delta' failed, did not delta reduce [RPOrig.ComputeIsEven, RPRef.ComputeIsEven]\nx : ℤ\nh_precond : ComputeIsEven_precond x\n⊢ decide (2 ∣ x) = !decide (x % 2 = 1)\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:63:93: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:63:93: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.ComputeIsEven RPRef.ComputeIsEven; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:67:102: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:67:102: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.ComputeIsEven RPRef.ComputeIsEven; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:71:86: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nartifacts/certificates/verina_basic_66/verina_basic_66__T4_cond_invert__0.lean:71:86: warning: '(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.ComputeIsEven RPRef.ComputeIsEven; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n",
+ "stderr": "",
+ "elapsed_seconds": 5.654,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 27,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 28,
+   "col": 29,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 36,
+   "col": 74,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.295 = ?m.295 : Prop\nbut is expected to have type\n  RPOrig.ComputeIsEven x h_precond = RPRef.ComputeIsEven x h_precond : Prop"
+  },
+  {
+   "line": 40,
+   "col": 74,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.923 = ?m.923 : Prop\nbut is expected to have type\n  RPOrig.ComputeIsEven x h_precond = RPRef.ComputeIsEven x h_precond : Prop"
+  },
+  {
+   "line": 45,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if x % 2 = 0 then true else false\nis not definitionally equal to the right-hand side\n  if ¬x % 2 = 0 then false else true\nx : ℤ\nh_precond : ComputeIsEven_precond x\n⊢ (if x % 2 = 0 then true else false) = if ¬x % 2 = 0 then false else true"
+  },
+  {
+   "line": 50,
+   "col": 75,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 51,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 52,
+   "col": 6,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 50,
+   "col": 75,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.ComputeIsEven RPRef.ComputeIsEven; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 51,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.ComputeIsEven, RPRef.ComputeIsEven, ite_not, Bool.not_eq_true, decide_not, Nat.not_lt, Nat.not_le,\n      Int.not_lt, Int.not_le]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.ComputeIsEven RPRef.ComputeIsEven; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 52,
+   "col": 6,
+   "severity": "warning",
+   "text": "'(simp only [RPOrig.ComputeIsEven, RPRef.ComputeIsEven]) <;>\n  (first\n    | rfl\n    | (set_option smartUnfolding false in rfl)\n    | (delta RPOrig.ComputeIsEven RPRef.ComputeIsEven; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 59,
+   "col": 120,
+   "severity": "error",
+   "text": "tactic 'delta' failed, did not delta reduce [RPOrig.ComputeIsEven, RPRef.ComputeIsEven]\nx : ℤ\nh_precond : ComputeIsEven_precond x\n⊢ decide (2 ∣ x) = !decide (x % 2 = 1)"
+  },
+  {
+   "line": 63,
+   "col": 93,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 63,
+   "col": 93,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.ComputeIsEven RPRef.ComputeIsEven; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 102,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 67,
+   "col": 102,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.ComputeIsEven RPRef.ComputeIsEven; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`"
+  },
+  {
+   "line": 71,
+   "col": 86,
+   "severity": "warning",
+   "text": "this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`"
+  },
+  {
+   "line": 71,
+   "col": 86,
+   "severity": "warning",
+   "text": "'(first\n  | rfl\n  | (set_option smartUnfolding false in rfl)\n  | (delta RPOrig.ComputeIsEven RPRef.ComputeIsEven; rfl))' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_26__T2_helper_extract__0",
+ "task_id": "verina_basic_26",
+ "source": "goedel-prover-v2-8b",
+ "transformation": "T2_helper_extract",
+ "template": "simp_add_helper",
+ "function_name": "isEven",
+ "helper": "isEven__rp_helper_3a986bdd",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": false,
+ "outcome": "proof_fails",
+ "first_error": "type mismatch, term\n  h\nafter simplification has type\n  isEven__rp_helper_3a986bdd n h_precond = true : Prop\nbut is expected to have type\n  2 \u2223 n : Prop",
+ "proof_before": "  have h1 : isEven (n) h_precond \u2192 n % 2 = 0 := by\n    intro h\n    have h\u2082 : n % 2 == 0 := by\n      simpa [isEven] using h\n    have h\u2083 : n % 2 = 0 := by\n      simp_all [isEven, isEven_precond]\n      <;>\n      (try omega) <;>\n      (try norm_num at *) <;>\n      (try omega) <;>\n      (try ring_nf at *) <;>\n      (try omega)\n    exact h\u2083\n\n  have h2 : \u00ac isEven (n) h_precond \u2192 n % 2 \u2260 0 := by\n    intro h\n    have h\u2083 : n % 2 \u2260 0 := by\n      by_contra h\u2084\n      have h\u2085 : n % 2 = 0 := by simpa using h\u2084\n      have h\u2086 : isEven (n) h_precond := by\n        simp_all [isEven]\n        <;>\n        (try omega) <;>\n        (try norm_num at *) <;>\n        (try omega) <;>\n        (try ring_nf at *) <;>\n        (try omega)\n      contradiction\n    exact h\u2083\n\n  have h_main : isEven_postcond (n) (isEven (n) h_precond) h_precond := by\n    constructor\n    \u00b7 -- Prove the first part: if isEven (n) h_precond, then n % 2 = 0\n      exact h1\n    \u00b7 -- Prove the second part: if \u00ac isEven (n) h_precond, then n % 2 \u2260 0\n      exact h2\n\n  exact h_main\n",
+ "proof_after": "  have h1 : isEven (n) h_precond \u2192 n % 2 = 0 := by\n    intro h\n    have h\u2082 : n % 2 == 0 := by\n      simpa [isEven] using h\n    have h\u2083 : n % 2 = 0 := by\n      simp_all [isEven, isEven_precond, isEven__rp_helper_3a986bdd]\n      <;>\n      (try omega) <;>\n      (try norm_num at *) <;>\n      (try omega) <;>\n      (try ring_nf at *) <;>\n      (try omega)\n    exact h\u2083\n\n  have h2 : \u00ac isEven (n) h_precond \u2192 n % 2 \u2260 0 := by\n    intro h\n    have h\u2083 : n % 2 \u2260 0 := by\n      by_contra h\u2084\n      have h\u2085 : n % 2 = 0 := by simpa using h\u2084\n      have h\u2086 : isEven (n) h_precond := by\n        simp_all [isEven]\n        <;>\n        (try omega) <;>\n        (try norm_num at *) <;>\n        (try omega) <;>\n        (try ring_nf at *) <;>\n        (try omega)\n      contradiction\n    exact h\u2083\n\n  have h_main : isEven_postcond (n) (isEven (n) h_precond) h_precond := by\n    constructor\n    \u00b7 -- Prove the first part: if isEven (n) h_precond, then n % 2 = 0\n      exact h1\n    \u00b7 -- Prove the second part: if \u00ac isEven (n) h_precond, then n % 2 \u2260 0\n      exact h2\n\n  exact h_main\n"
+}

@@ -1,0 +1,16 @@
+{
+ "variant_id": "verina_basic_6__T2_helper_extract__0",
+ "task_id": "verina_basic_6",
+ "source": "deepseek-prover-v2-7b",
+ "transformation": "T2_helper_extract",
+ "template": "dsimp_add_helper",
+ "function_name": "minOfThree",
+ "helper": "minOfThree__rp_helper_d6baf0a7",
+ "material_provenance": "primary row of results/model_proofs.jsonl, proof hash verified",
+ "control_unedited_fails": true,
+ "repaired": true,
+ "outcome": "survives",
+ "first_error": null,
+ "proof_before": "  have h\u2081 : ((minOfThree (a) (b) (c) h_precond : Int) \u2264 a \u2227 (minOfThree (a) (b) (c) h_precond : Int) \u2264 b \u2227 (minOfThree (a) (b) (c) h_precond : Int) \u2264 c) \u2227 ((minOfThree (a) (b) (c) h_precond : Int) = a \u2228 (minOfThree (a) (b) (c) h_precond : Int) = b \u2228 (minOfThree (a) (b) (c) h_precond : Int) = c) := by\n    dsimp only [minOfThree, minOfThree_postcond, minOfThree_precond]\n    -- Consider the cases based on the comparisons between a, b, and c\n    split_ifs with h\u2081 h\u2082 h\u2083 <;> simp_all [and_imp, Prod.exists, exists_and_right, exists_prop]\n    <;>\n    (try {\n      aesop\n    }) <;>\n    (try {\n      omega\n    }) <;>\n    (try {\n      exact \u27e8by omega, by omega, by omega\u27e9\n    }) <;>\n    (try {\n      exact Or.inl (by omega)\n    }) <;>\n    (try {\n      exact Or.inr (Or.inl (by omega))\n    }) <;>\n    (try {\n      exact Or.inr (Or.inr (by omega))\n    })\n    <;>\n    (try {\n      aesop\n    })\n    <;>\n    (try {\n      omega\n    })\n    <;>\n    (try {\n      exact \u27e8by omega, by omega, by omega\u27e9\n    })\n    <;>\n    (try {\n      exact Or.inl (by omega)\n    })\n    <;>\n    (try {\n      exact Or.inr (Or.inl (by omega))\n    })\n    <;>\n    (try {\n      exact Or.inr (Or.inr (by omega))\n    })\n\n  exact h\u2081\n",
+ "proof_after": "  have h\u2081 : ((minOfThree (a) (b) (c) h_precond : Int) \u2264 a \u2227 (minOfThree (a) (b) (c) h_precond : Int) \u2264 b \u2227 (minOfThree (a) (b) (c) h_precond : Int) \u2264 c) \u2227 ((minOfThree (a) (b) (c) h_precond : Int) = a \u2228 (minOfThree (a) (b) (c) h_precond : Int) = b \u2228 (minOfThree (a) (b) (c) h_precond : Int) = c) := by\n    dsimp only [minOfThree, minOfThree_postcond, minOfThree_precond, minOfThree__rp_helper_d6baf0a7]\n    -- Consider the cases based on the comparisons between a, b, and c\n    split_ifs with h\u2081 h\u2082 h\u2083 <;> simp_all [and_imp, Prod.exists, exists_and_right, exists_prop]\n    <;>\n    (try {\n      aesop\n    }) <;>\n    (try {\n      omega\n    }) <;>\n    (try {\n      exact \u27e8by omega, by omega, by omega\u27e9\n    }) <;>\n    (try {\n      exact Or.inl (by omega)\n    }) <;>\n    (try {\n      exact Or.inr (Or.inl (by omega))\n    }) <;>\n    (try {\n      exact Or.inr (Or.inr (by omega))\n    })\n    <;>\n    (try {\n      aesop\n    })\n    <;>\n    (try {\n      omega\n    })\n    <;>\n    (try {\n      exact \u27e8by omega, by omega, by omega\u27e9\n    })\n    <;>\n    (try {\n      exact Or.inl (by omega)\n    })\n    <;>\n    (try {\n      exact Or.inr (Or.inl (by omega))\n    })\n    <;>\n    (try {\n      exact Or.inr (Or.inr (by omega))\n    })\n\n  exact h\u2081\n"
+}

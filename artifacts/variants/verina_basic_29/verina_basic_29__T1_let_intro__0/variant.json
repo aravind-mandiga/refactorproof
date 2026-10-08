@@ -1,0 +1,24 @@
+{
+ "task_id": "verina_basic_29",
+ "variant_id": "verina_basic_29__T1_let_intro__0",
+ "transformation": "T1_let_intro",
+ "severity": "D",
+ "equivalence_class": "definitional",
+ "transformed_code": "  let __rp_tmp_e7ff0e05 : Array Int :=\n    s.eraseIdx! k\n  __rp_tmp_e7ff0e05\n",
+ "transformed_code_aux": "\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [],
+ "metadata": {
+  "tmp_name": "__rp_tmp_e7ff0e05",
+  "seed": 0
+ },
+ "spec_hash": "d4b6d14357337581402ef29d9ca4ebe36d5d5319a18b8b62a11cbc809dfc4cd7",
+ "proof_hash": "5b28a0d354f8e4ba3677b3c3b64c7f4293c676bb38129c945a71b67de2182365",
+ "code_hash_original": "403bca0ab723edd2e7ddedca5a82a3238927a06aae5b1c6dde3669914931a2da",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "basic",
+ "function_name": "removeElement",
+ "code_loc_original": 1,
+ "code_loc_refactored": 3
+}

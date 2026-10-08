@@ -1,0 +1,11 @@
+--- goedel-prover-v2-32b:verina_basic_5__T2_helper_extract__0 (proof as evaluated)
++++ goedel-prover-v2-32b:verina_basic_5__T2_helper_extract__0 (dsimp_add_helper)
+@@ -1,5 +1,5 @@
+   have h_main : multiply_postcond (a) (b) (multiply (a) (b) h_precond) h_precond := by
+-    dsimp [multiply_postcond, multiply_precond, multiply] at *
++    dsimp [multiply_postcond, multiply_precond, multiply, multiply__rp_helper_3cc08e31] at *
+     <;>
+     (try simp_all) <;>
+     (try ring_nf) <;>
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

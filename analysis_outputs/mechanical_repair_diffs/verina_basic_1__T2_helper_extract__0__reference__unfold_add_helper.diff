@@ -1,0 +1,10 @@
+--- reference:verina_basic_1__T2_helper_extract__0 (proof as evaluated)
++++ reference:verina_basic_1__T2_helper_extract__0 (unfold_add_helper)
+@@ -1,4 +1,4 @@
+-  unfold hasOppositeSign hasOppositeSign_postcond
++  unfold hasOppositeSign hasOppositeSign__rp_helper_5272bffb hasOppositeSign_postcond
+   constructor
+ 
+   · intro h
+# unedited proof on this variant: fails (as recorded)
+# edited proof: REPAIRED (compiles on the refactored variant)

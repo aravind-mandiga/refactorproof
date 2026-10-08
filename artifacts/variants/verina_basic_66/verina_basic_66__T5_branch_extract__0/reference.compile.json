@@ -1,0 +1,49 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/variants/verina_basic_66/verina_basic_66__T5_branch_extract__0/reference.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/variants/verina_basic_66/verina_basic_66__T5_branch_extract__0/reference.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/variants/verina_basic_66/verina_basic_66__T5_branch_extract__0/reference.lean:13:27: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_66/verina_basic_66__T5_branch_extract__0/reference.lean:21:57: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_66/verina_basic_66__T5_branch_extract__0/reference.lean:21:12: warning: The declaration 'ComputeIsEven__rp_branch_87fb4e70' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`\nartifacts/variants/verina_basic_66/verina_basic_66__T5_branch_extract__0/reference.lean:39:53: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/variants/verina_basic_66/verina_basic_66__T5_branch_extract__0/reference.lean:55:2: error: tactic 'rfl' failed, the left-hand side\n  2 ∣ x ∨ ComputeIsEven__rp_branch_87fb4e70 x h_precond = true\nis not definitionally equal to the right-hand side\n  ∃ k, x = 2 * k\nx : ℤ\nh_precond : ComputeIsEven_precond x\n⊢ 2 ∣ x ∨ ComputeIsEven__rp_branch_87fb4e70 x h_precond = true ↔ ∃ k, x = 2 * k\n",
+ "stderr": "",
+ "elapsed_seconds": 19.033,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 27,
+   "severity": "warning",
+   "text": "unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 57,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 21,
+   "col": 12,
+   "severity": "warning",
+   "text": "The declaration 'ComputeIsEven__rp_branch_87fb4e70' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.\nnote: this linter can be disabled with `set_option linter.style.nameCheck false`"
+  },
+  {
+   "line": 39,
+   "col": 53,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 55,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  2 ∣ x ∨ ComputeIsEven__rp_branch_87fb4e70 x h_precond = true\nis not definitionally equal to the right-hand side\n  ∃ k, x = 2 * k\nx : ℤ\nh_precond : ComputeIsEven_precond x\n⊢ 2 ∣ x ∨ ComputeIsEven__rp_branch_87fb4e70 x h_precond = true ↔ ∃ k, x = 2 * k\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "tactic_failed"
+}

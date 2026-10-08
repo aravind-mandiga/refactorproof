@@ -1,0 +1,55 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_advanced_21/verina_advanced_21__T3_comm_swap__1.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_advanced_21/verina_advanced_21__T3_comm_swap__1.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_advanced_21/verina_advanced_21__T3_comm_swap__1.lean:13:26: warning: unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_21/verina_advanced_21__T3_comm_swap__1.lean:22:31: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_21/verina_advanced_21__T3_comm_swap__1.lean:55:31: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_advanced_21/verina_advanced_21__T3_comm_swap__1.lean:89:72: error: type mismatch\n  rfl\nhas type\n  ?m.26016 = ?m.26016 : Prop\nbut is expected to have type\n  RPOrig.isPalindrome s h_precond = RPRef.isPalindrome s h_precond : Prop\nartifacts/certificates/verina_advanced_21/verina_advanced_21__T3_comm_swap__1.lean:93:72: error: type mismatch\n  rfl\nhas type\n  ?m.27663 = ?m.27663 : Prop\nbut is expected to have type\n  RPOrig.isPalindrome s h_precond = RPRef.isPalindrome s h_precond : Prop\nartifacts/certificates/verina_advanced_21/verina_advanced_21__T3_comm_swap__1.lean:98:2: error: tactic 'rfl' failed, the left-hand side\n  let length := s.length;\n  if length ≤ 1 then true\n  else\n    let arr := s.toList;\n    let approach1 := RPOrig.isPalindrome.checkIndices._unary ⟨0, ⟨length - 1, arr⟩⟩;\n    let reversed :=\n      List.brecOn (motive := fun xs => List Char → List Char) arr\n        (fun xs f acc =>\n          (match (motive := (xs : List Char) → List.below (motive := fun xs => List Char → List Char) xs → List Char)\n              xs with\n            | [] => fun x => acc\n            | h :: t => fun x => x.1 (h :: acc))\n            f)\n        [];\n    let approach2 := arr == reversed;\n    approach1 && approach2\nis not definitionally equal to the right-hand side\n  let length := s.length;\n  if length ≤ 1 then true\n  else\n    let arr := s.toList;\n    let approach1 := RPRef.isPalindrome.checkIndices._unary ⟨0, ⟨length - 1, arr⟩⟩;\n    let reversed :=\n      List.brecOn (motive := fun xs => List Char → List Char) arr\n        (fun xs f acc =>\n          (match (motive := (xs : List Char) → List.below (motive := fun xs => List Char → List Char) xs → List Char)\n              xs with\n            | [] => fun x => acc\n            | h :: t => fun x => x.1 (h :: acc))\n            f)\n        [];\n    let approach2 := arr == reversed;\n    approach2 && approach1\ns : String\nh_precond : isPalindrome_precond s\n⊢ (let length := s.length;\n    if length ≤ 1 then true\n    else\n      let arr := s.toList;\n      let approach1 := RPOrig.isPalindrome.checkIndices._unary ⟨0, ⟨length - 1, arr⟩⟩;\n      let reversed :=\n        List.brecOn (motive := fun xs => List Char → List Char) arr\n          (fun xs f acc =>\n            (match (motive := (xs : List Char) → List.below (motive := fun xs => List Char → List Char) xs → List Char)\n                xs with\n              | [] => fun x => acc\n              | h :: t => fun x => x.1 (h :: acc))\n              f)\n          [];\n      let approach2 := arr == reversed;\n      approach1 && approach2) =\n    let length := s.length;\n    if length ≤ 1 then true\n    else\n      let arr := s.toList;\n      let approach1 := RPRef.isPalindrome.checkIndices._unary ⟨0, ⟨length - 1, arr⟩⟩;\n      let reversed :=\n        List.brecOn (motive := fun xs => List Char → List Char) arr\n          (fun xs f acc =>\n            (match (motive := (xs : List Char) → List.below (motive := fun xs => List Char → List Char) xs → List Char)\n                xs with\n              | [] => fun x => acc\n              | h :: t => fun x => x.1 (h :: acc))\n              f)\n          [];\n      let approach2 := arr == reversed;\n      approach2 && approach1\n",
+ "stderr": "",
+ "elapsed_seconds": 1.356,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 13,
+   "col": 26,
+   "severity": "warning",
+   "text": "unused variable `s`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 22,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 55,
+   "col": 31,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 89,
+   "col": 72,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.26016 = ?m.26016 : Prop\nbut is expected to have type\n  RPOrig.isPalindrome s h_precond = RPRef.isPalindrome s h_precond : Prop"
+  },
+  {
+   "line": 93,
+   "col": 72,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.27663 = ?m.27663 : Prop\nbut is expected to have type\n  RPOrig.isPalindrome s h_precond = RPRef.isPalindrome s h_precond : Prop"
+  },
+  {
+   "line": 98,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  let length := s.length;\n  if length ≤ 1 then true\n  else\n    let arr := s.toList;\n    let approach1 := RPOrig.isPalindrome.checkIndices._unary ⟨0, ⟨length - 1, arr⟩⟩;\n    let reversed :=\n      List.brecOn (motive := fun xs => List Char → List Char) arr\n        (fun xs f acc =>\n          (match (motive := (xs : List Char) → List.below (motive := fun xs => List Char → List Char) xs → List Char)\n              xs with\n            | [] => fun x => acc\n            | h :: t => fun x => x.1 (h :: acc))\n            f)\n        [];\n    let approach2 := arr == reversed;\n    approach1 && approach2\nis not definitionally equal to the right-hand side\n  let length := s.length;\n  if length ≤ 1 then true\n  else\n    let arr := s.toList;\n    let approach1 := RPRef.isPalindrome.checkIndices._unary ⟨0, ⟨length - 1, arr⟩⟩;\n    let reversed :=\n      List.brecOn (motive := fun xs => List Char → List Char) arr\n        (fun xs f acc =>\n          (match (motive := (xs : List Char) → List.below (motive := fun xs => List Char → List Char) xs → List Char)\n              xs with\n            | [] => fun x => acc\n            | h :: t => fun x => x.1 (h :: acc))\n            f)\n        [];\n    let approach2 := arr == reversed;\n    approach2 && approach1\ns : String\nh_precond : isPalindrome_precond s\n⊢ (let length := s.length;\n    if length ≤ 1 then true\n    else\n      let arr := s.toList;\n      let approach1 := RPOrig.isPalindrome.checkIndices._unary ⟨0, ⟨length - 1, arr⟩⟩;\n      let reversed :=\n        List.brecOn (motive := fun xs => List Char → List Char) arr\n          (fun xs f acc =>\n            (match (motive := (xs : List Char) → List.below (motive := fun xs => List Char → List Char) xs → List Char)\n                xs with\n              | [] => fun x => acc\n              | h :: t => fun x => x.1 (h :: acc))\n              f)\n          [];\n      let approach2 := arr == reversed;\n      approach1 && approach2) =\n    let length := s.length;\n    if length ≤ 1 then true\n    else\n      let arr := s.toList;\n      let approach1 := RPRef.isPalindrome.checkIndices._unary ⟨0, ⟨length - 1, arr⟩⟩;\n      let reversed :=\n        List.brecOn (motive := fun xs => List Char → List Char) arr\n          (fun xs f acc =>\n            (match (motive := (xs : List Char) → List.below (motive := fun xs => List Char → List Char) xs → List Char)\n                xs with\n              | [] => fun x => acc\n              | h :: t => fun x => x.1 (h :: acc))\n              f)\n          [];\n      let approach2 := arr == reversed;\n      approach2 && approach1\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

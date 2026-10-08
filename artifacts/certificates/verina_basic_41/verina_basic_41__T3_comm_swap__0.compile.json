@@ -1,0 +1,103 @@
+{
+ "command": [
+  "lake",
+  "env",
+  "lean",
+  "artifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean"
+ ],
+ "cwd": "external/verina",
+ "file": "artifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean",
+ "exit_code": 1,
+ "stdout": "artifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean:23:47: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean:38:47: warning: unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nartifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean:54:98: error: type mismatch\n  rfl\nhas type\n  ?m.24765 = ?m.24765 : Prop\nbut is expected to have type\n  RPOrig.hasOnlyOneDistinctElement a h_precond = RPRef.hasOnlyOneDistinctElement a h_precond : Prop\nartifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean:58:98: error: type mismatch\n  rfl\nhas type\n  ?m.25596 = ?m.25596 : Prop\nbut is expected to have type\n  RPOrig.hasOnlyOneDistinctElement a h_precond = RPRef.hasOnlyOneDistinctElement a h_precond : Prop\nartifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean:63:2: error: tactic 'rfl' failed, the left-hand side\n  if a.size = 0 then true\n  else\n    let firstElement := a[0]!;\n    ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = firstElement then a_1 (i + 1) ⋯ else false else true) 1\nis not definitionally equal to the right-hand side\n  if a.size = 0 then true\n  else\n    let firstElement := a[0]!;\n    ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = firstElement then a_1 (1 + i) ⋯ else false else true) 1\na : Array Int\nh_precond : hasOnlyOneDistinctElement_precond a\n⊢ (if a.size = 0 then true\n    else\n      let firstElement := a[0]!;\n      ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = firstElement then a_1 (i + 1) ⋯ else false else true)\n        1) =\n    if a.size = 0 then true\n    else\n      let firstElement := a[0]!;\n      ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = firstElement then a_1 (1 + i) ⋯ else false else true)\n        1\nartifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean:71:296: error: tactic 'rfl' failed, the left-hand side\n  if a.size = 0 then true\n  else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1\nis not definitionally equal to the right-hand side\n  if a.size = 0 then true\n  else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1\na : Array Int\nh_precond : hasOnlyOneDistinctElement_precond a\n⊢ (if a.size = 0 then true\n    else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1) =\n    if a.size = 0 then true\n    else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1\nartifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean:66:98: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean:66:98: error: unknown metavariable '?_uniq.38309'\nartifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean:79:291: error: tactic 'rfl' failed, the left-hand side\n  decide (a = #[]) ||\n    ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1\nis not definitionally equal to the right-hand side\n  decide (a = #[]) ||\n    ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1\na : Array Int\nh_precond : hasOnlyOneDistinctElement_precond a\n⊢ (decide (a = #[]) ||\n      ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1) =\n    (decide (a = #[]) ||\n      ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1)\nartifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean:74:98: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean:74:98: error: unknown metavariable '?_uniq.50790'\nartifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean:83:312: error: tactic 'rfl' failed, the left-hand side\n  if a.size = 0 then true\n  else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1\nis not definitionally equal to the right-hand side\n  if a.size = 0 then true\n  else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1\na : Array Int\nh_precond : hasOnlyOneDistinctElement_precond a\n⊢ (if a.size = 0 then true\n    else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1) =\n    if a.size = 0 then true\n    else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1\nartifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean:82:98: error: unsolved goals\nunknown goal\nartifacts/certificates/verina_basic_41/verina_basic_41__T3_comm_swap__0.lean:82:98: error: unknown metavariable '?_uniq.55053'\n",
+ "stderr": "",
+ "elapsed_seconds": 1.818,
+ "timed_out": false,
+ "messages": [
+  {
+   "line": 23,
+   "col": 47,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 38,
+   "col": 47,
+   "severity": "warning",
+   "text": "unused variable `h_precond`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+  },
+  {
+   "line": 54,
+   "col": 98,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.24765 = ?m.24765 : Prop\nbut is expected to have type\n  RPOrig.hasOnlyOneDistinctElement a h_precond = RPRef.hasOnlyOneDistinctElement a h_precond : Prop"
+  },
+  {
+   "line": 58,
+   "col": 98,
+   "severity": "error",
+   "text": "type mismatch\n  rfl\nhas type\n  ?m.25596 = ?m.25596 : Prop\nbut is expected to have type\n  RPOrig.hasOnlyOneDistinctElement a h_precond = RPRef.hasOnlyOneDistinctElement a h_precond : Prop"
+  },
+  {
+   "line": 63,
+   "col": 2,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if a.size = 0 then true\n  else\n    let firstElement := a[0]!;\n    ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = firstElement then a_1 (i + 1) ⋯ else false else true) 1\nis not definitionally equal to the right-hand side\n  if a.size = 0 then true\n  else\n    let firstElement := a[0]!;\n    ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = firstElement then a_1 (1 + i) ⋯ else false else true) 1\na : Array Int\nh_precond : hasOnlyOneDistinctElement_precond a\n⊢ (if a.size = 0 then true\n    else\n      let firstElement := a[0]!;\n      ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = firstElement then a_1 (i + 1) ⋯ else false else true)\n        1) =\n    if a.size = 0 then true\n    else\n      let firstElement := a[0]!;\n      ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = firstElement then a_1 (1 + i) ⋯ else false else true)\n        1"
+  },
+  {
+   "line": 71,
+   "col": 296,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if a.size = 0 then true\n  else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1\nis not definitionally equal to the right-hand side\n  if a.size = 0 then true\n  else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1\na : Array Int\nh_precond : hasOnlyOneDistinctElement_precond a\n⊢ (if a.size = 0 then true\n    else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1) =\n    if a.size = 0 then true\n    else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1"
+  },
+  {
+   "line": 66,
+   "col": 98,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 66,
+   "col": 98,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.38309'"
+  },
+  {
+   "line": 79,
+   "col": 291,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  decide (a = #[]) ||\n    ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1\nis not definitionally equal to the right-hand side\n  decide (a = #[]) ||\n    ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1\na : Array Int\nh_precond : hasOnlyOneDistinctElement_precond a\n⊢ (decide (a = #[]) ||\n      ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1) =\n    (decide (a = #[]) ||\n      ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1)"
+  },
+  {
+   "line": 74,
+   "col": 98,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 74,
+   "col": 98,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.50790'"
+  },
+  {
+   "line": 83,
+   "col": 312,
+   "severity": "error",
+   "text": "tactic 'rfl' failed, the left-hand side\n  if a.size = 0 then true\n  else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1\nis not definitionally equal to the right-hand side\n  if a.size = 0 then true\n  else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1\na : Array Int\nh_precond : hasOnlyOneDistinctElement_precond a\n⊢ (if a.size = 0 then true\n    else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (i + 1) ⋯ else false else true) 1) =\n    if a.size = 0 then true\n    else ⋯.fix (fun i a_1 => if h : i < a.size then if h_1 : a[i]! = a[0]! then a_1 (1 + i) ⋯ else false else true) 1"
+  },
+  {
+   "line": 82,
+   "col": 98,
+   "severity": "error",
+   "text": "unsolved goals\nunknown goal"
+  },
+  {
+   "line": 82,
+   "col": 98,
+   "severity": "error",
+   "text": "unknown metavariable '?_uniq.55053'\n"
+  }
+ ],
+ "ok": false,
+ "primary_category": "type_mismatch"
+}

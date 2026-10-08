@@ -1,0 +1,32 @@
+{
+ "task_id": "verina_basic_26",
+ "variant_id": "verina_basic_26__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "certificate_valid": true,
+ "certificate_closed_by_rfl": true,
+ "certificate_level": "rfl",
+ "proof_source": "model",
+ "model_id": "goedel-prover-v2-8b",
+ "generation_attempt": 0,
+ "original_proof_valid": true,
+ "equivalence_certified": true,
+ "outcome": "proof_fails",
+ "survives": false,
+ "failure_category": "type_mismatch",
+ "lean_exit_code": 1,
+ "lean_elapsed_seconds": 7.05,
+ "proof_region_errors": [
+  "type mismatch, term\n  h\nafter simplification has type\n  isEven__rp_helper_3a986bdd n h_precond = true : Prop\nbut is expected to have type\n  2 ∣ n : Prop",
+  "unsolved goals\nn : ℤ\nh_precond : isEven_precond n\nh : isEven__rp_helper_3a986bdd n h_precond = false\nh₅ : 2 ∣ n\n⊢ False\n"
+ ],
+ "other_region_errors": [],
+ "proof_hash": "127e3fc453467c108bedc8feb017509b74c526a3dfebac07f1f4ef2e4cd00c19",
+ "spec_hash": "1dfac8fc64ec9866708463e5c2fa04cd6ff7a2d289a66d5f60ad1be927ad1d32",
+ "proof_text": "  have h1 : isEven (n) h_precond → n % 2 = 0 := by\n    intro h\n    have h₂ : n % 2 == 0 := by\n      simpa [isEven] using h\n    have h₃ : n % 2 = 0 := by\n      simp_all [isEven, isEven_precond]\n      <;>\n      (try omega) <;>\n      (try norm_num at *) <;>\n      (try omega) <;>\n      (try ring_nf at *) <;>\n      (try omega)\n    exact h₃\n\n  have h2 : ¬ isEven (n) h_precond → n % 2 ≠ 0 := by\n    intro h\n    have h₃ : n % 2 ≠ 0 := by\n      by_contra h₄\n      have h₅ : n % 2 = 0 := by simpa using h₄\n      have h₆ : isEven (n) h_precond := by\n        simp_all [isEven]\n        <;>\n        (try omega) <;>\n        (try norm_num at *) <;>\n        (try omega) <;>\n        (try ring_nf at *) <;>\n        (try omega)\n      contradiction\n    exact h₃\n\n  have h_main : isEven_postcond (n) (isEven (n) h_precond) h_precond := by\n    constructor\n    · -- Prove the first part: if isEven (n) h_precond, then n % 2 = 0\n      exact h1\n    · -- Prove the second part: if ¬ isEven (n) h_precond, then n % 2 ≠ 0\n      exact h2\n\n  exact h_main\n",
+ "proof_aux_text": "\n",
+ "model_family": "goedel-prover",
+ "base_model": "goedel-prover-v2-8b",
+ "strategy_condition": "default"
+}

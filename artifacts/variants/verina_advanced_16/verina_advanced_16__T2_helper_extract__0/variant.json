@@ -1,0 +1,29 @@
+{
+ "task_id": "verina_advanced_16",
+ "variant_id": "verina_advanced_16__T2_helper_extract__0",
+ "transformation": "T2_helper_extract",
+ "severity": "S",
+ "equivalence_class": "definitional",
+ "transformed_code": "    insertionSort__rp_helper_bb414813 xs h_precond\n",
+ "transformed_code_aux": "\nprivate def insertionSort__rp_helper_bb414813 (xs : List Int) (h_precond : insertionSort_precond (xs)) : List Int :=\n    let rec insert (x : Int) (ys : List Int) : List Int :=\n      match ys with\n      | []      => [x]\n      | y :: ys' =>\n        if x <= y then\n          x :: y :: ys'\n        else\n          y :: insert x ys'\n\n    let rec sort (arr : List Int) : List Int :=\n      match arr with\n      | []      => []\n      | x :: xs => insert x (sort xs)\n\n    sort xs\n",
+ "certificate_strategy": "rfl_simp_ladder",
+ "certificate_laws": [],
+ "helper_names": [
+  "insertionSort__rp_helper_bb414813"
+ ],
+ "metadata": {
+  "binders": [
+   "xs",
+   "h_precond"
+  ],
+  "seed": 0
+ },
+ "spec_hash": "dd575e135f8694d7e4b7b238d6806677912db73a587086b7df0f6a2166a678d3",
+ "proof_hash": "aba5987295c6bf8fd2e008fb639743d64fb6b0cf07b56834a4f615876ad812db",
+ "code_hash_original": "224970d833b88ae71f6e5378d2b36b0671bca8ab475495e8b721a0f15f1186b8",
+ "code_aux_hash_original": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+ "tier": "advanced",
+ "function_name": "insertionSort",
+ "code_loc_original": 13,
+ "code_loc_refactored": 15
+}
